@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "./scripts/build_known_probe.py", line 31, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./scripts/build_known_probe.py", line 23, in main
+    run(['yosys','-Q','-T','-s',str(out/'synth.ys')],out/'synthesis.log')
+  File "./scripts/build_known_probe.py", line 11, in run
+    if r.returncode:raise RuntimeError(f'{cmd[0]} failed({r.returncode}); see {path}')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: yosys failed(1); see ./build/known-probe/l4-r1/synthesis.log

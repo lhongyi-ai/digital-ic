@@ -1,0 +1,56 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$851] false)
+assume (= [$auto$async2sync.cc:107:execute$857] false)
+assume (= [$auto$async2sync.cc:107:execute$863] false)
+assume (= [$auto$async2sync.cc:107:execute$869] false)
+assume (= [$auto$async2sync.cc:107:execute$899] false)
+assume (= [$auto$async2sync.cc:116:execute$855] true)
+assume (= [$auto$async2sync.cc:116:execute$861] true)
+assume (= [$auto$async2sync.cc:116:execute$867] true)
+assume (= [$auto$async2sync.cc:116:execute$873] true)
+assume (= [$auto$async2sync.cc:116:execute$879] true)
+assume (= [$auto$async2sync.cc:116:execute$885] true)
+assume (= [$auto$async2sync.cc:116:execute$891] true)
+assume (= [$auto$async2sync.cc:116:execute$897] true)
+assume (= [$auto$async2sync.cc:116:execute$903] true)
+assume (= [$auto$async2sync.cc:116:execute$909] true)
+assume (= [_witness_.anyinit_procdff_842] false)
+assume (= [age] #b0000000)
+assume (= [dut.dbg_index] #b0000000000000000)
+assume (= [dut.dbg_kind] #b0000)
+assume (= [dut.dbg_valid] false)
+assume (= [dut.dbg_value] #b0000000000000000000000000000000000000000)
+assume (= [dut.feature_index] #b0000)
+assume (= [dut.power_sum] #b000000000000000000000000000000000)
+assume (= [dut.quant_guard] false)
+assume (= [dut.quant_remaining] #b00000000)
+assume (= [dut.quant_work] #b000000000000000000000000000000000)
+assume (= [dut.state] #b00000)
+assume (= [past_valid] false)
+assume (= [pending] false)
+assume (= (select [dut.feature_shifts] #b0000) #b00000000)
+assume (= (select [dut.feature_shifts] #b0011) #b00000001)
+assume (= (select [dut.feature_shifts] #b0100) #b00000000)
+assume (= (select [dut.features] #b0000) #b00111111)
+assume (= (select [dut.features] #b0011) #b00111111)
+
+state 0
+assume (= [clk] false)
+
+state 1
+assume (= [clk] false)
+
+state 2
+assume (= [clk] false)
+
+state 3
+assume (= [clk] false)
+
+state 4
+assume (= [clk] false)
+
+state 5
+assume (= [clk] false)
+
+state 6
+assume (= [clk] false)

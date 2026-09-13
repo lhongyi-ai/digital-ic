@@ -1,0 +1,25 @@
+full512mlp 00 0 9 0 0.96387
+sparse64linear 00 0 28 0 0.99805
+full512mlp 02 0 32 0 1.0
+sparse64linear 02 0 32 0 1.0
+full512mlp 04 0 32 2 1.0
+sparse64linear 04 0 32 1 1.0
+full512mlp 06 0 32 0 1.0
+sparse64linear 06 0 32 0 1.0
+full512mlp 00 1 19 0 0.97363
+sparse64linear 00 1 21 1 0.9707
+full512mlp 02 1 32 0 1.0
+sparse64linear 02 1 32 2 1.0
+full512mlp 04 1 32 1 1.0
+sparse64linear 04 1 32 0 1.0
+full512mlp 06 1 31 0 1.0
+sparse64linear 06 1 32 0 1.0
+full512mlp 00 2 21 1 0.95996
+sparse64linear 00 2 27 3 0.94727
+full512mlp 02 2 32 0 1.0
+sparse64linear 02 2 32 1 1.0
+full512mlp 04 2 30 0 1.0
+sparse64linear 04 2 32 0 1.0
+full512mlp 06 2 30 0 1.0
+sparse64linear 06 2 32 0 1.0
+SUMMARY {"full512mlp": {"groups": {"00": {"tp": 49, "fp": 1, "normal": 96, "abnormal": 96, "recall": 0.5104166666666666, "fpr": 0.010416666666666666, "auc": 0.9658203125, "passed": false}, "02": {"tp": 96, "fp": 0, "normal": 96, "abnormal": 96, "recall": 1.0, "fpr": 0.0, "auc": 1.0, "passed": true}, "04": {"tp": 94, "fp": 3, "normal": 96, "abnormal": 96, "recall": 0.9791666666666666, "fpr": 0.03125, "auc": 1.0, "passed": true}, "06": {"tp": 93, "fp": 0, "normal": 96, "abnormal": 96, "recall": 0.96875, "fpr": 0.0, "auc": 1.0, "passed": true}}, "passed": false}, "sparse64linear": {"groups": {"00": {"tp": 76, "fp": 4, "normal": 96, "abnormal": 96, "recall": 0.7916666666666666, "fpr": 0.041666666666666664, "auc": 0.9720052083333334, "passed": false}, "02": {"tp": 96, "fp": 3, "normal": 96, "abnormal": 96, "recall": 1.0, "fpr": 0.03125, "auc": 1.0, "passed": true}, "04": {"tp": 96, "fp": 1, "normal": 96, "abnormal": 96, "recall": 1.0, "fpr": 0.010416666666666666, "auc": 1.0, "passed": true}, "06": {"tp": 96, "fp": 0, "normal": 96, "abnormal": 96, "recall": 1.0, "fpr": 0.0, "auc": 1.0, "passed": true}}, "passed": false}}

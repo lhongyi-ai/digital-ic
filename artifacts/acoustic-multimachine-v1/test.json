@@ -1,0 +1,1147 @@
+{
+  "auc": 0.63875,
+  "fpr": 0.75,
+  "recall": 0.8,
+  "threshold": 1.338819727090399,
+  "confusion_matrix": [
+    [
+      20,
+      60
+    ],
+    [
+      16,
+      64
+    ]
+  ],
+  "machine": "06",
+  "candidate": "shape-linear_1",
+  "threshold_unchanged": true,
+  "normal_records": 80,
+  "abnormal_records": 80,
+  "high_standard_passed": false,
+  "predictions": [
+    {
+      "name": "fan/id_06/normal/00000084.wav",
+      "label": 0,
+      "score": 6.092109068228035,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000555.wav",
+      "label": 0,
+      "score": 21.942254114124705,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000672.wav",
+      "label": 0,
+      "score": 4.764141825624626,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000884.wav",
+      "label": 0,
+      "score": 2.773563438859803,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000235.wav",
+      "label": 0,
+      "score": 2.8935032103901484,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000170.wav",
+      "label": 0,
+      "score": 3.445799012044838,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000933.wav",
+      "label": 0,
+      "score": 8.785582064471043,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000949.wav",
+      "label": 0,
+      "score": 2.7989581782045554,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000262.wav",
+      "label": 0,
+      "score": -0.6974454597703935,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000718.wav",
+      "label": 0,
+      "score": 4.509251251174005,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000894.wav",
+      "label": 0,
+      "score": 1.3121105084645246,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000926.wav",
+      "label": 0,
+      "score": 3.2351797848566823,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000398.wav",
+      "label": 0,
+      "score": 3.698011699070502,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000613.wav",
+      "label": 0,
+      "score": 4.449516437844404,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000045.wav",
+      "label": 0,
+      "score": 0.10117912762093888,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000793.wav",
+      "label": 0,
+      "score": 3.62498898650765,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000774.wav",
+      "label": 0,
+      "score": 2.008319469721697,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000968.wav",
+      "label": 0,
+      "score": 5.593593987551128,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00001011.wav",
+      "label": 0,
+      "score": -1.0994378545013062,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000118.wav",
+      "label": 0,
+      "score": -0.5527778483783835,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000719.wav",
+      "label": 0,
+      "score": 8.270939381639907,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000786.wav",
+      "label": 0,
+      "score": -0.5695293921645105,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000297.wav",
+      "label": 0,
+      "score": -0.8997376989392302,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000420.wav",
+      "label": 0,
+      "score": -0.7265904234918689,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000837.wav",
+      "label": 0,
+      "score": 4.364299012796937,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000961.wav",
+      "label": 0,
+      "score": 2.380069678221615,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000818.wav",
+      "label": 0,
+      "score": 4.153749791865317,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000241.wav",
+      "label": 0,
+      "score": -1.0151634208385643,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000797.wav",
+      "label": 0,
+      "score": 6.936030364262158,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000911.wav",
+      "label": 0,
+      "score": 0.8357472732015027,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000014.wav",
+      "label": 0,
+      "score": -15.08709877472618,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000313.wav",
+      "label": 0,
+      "score": 3.4684283375947866,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000599.wav",
+      "label": 0,
+      "score": 3.0222233177682427,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000868.wav",
+      "label": 0,
+      "score": 2.603851177211485,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000773.wav",
+      "label": 0,
+      "score": 6.034577471770752,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000253.wav",
+      "label": 0,
+      "score": 0.9614238658553832,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000730.wav",
+      "label": 0,
+      "score": 2.362863867762659,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000738.wav",
+      "label": 0,
+      "score": 1.4079545961162199,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000034.wav",
+      "label": 0,
+      "score": 2.2994457512707593,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000737.wav",
+      "label": 0,
+      "score": 3.2585646762804674,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000247.wav",
+      "label": 0,
+      "score": -2.192221385345304,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000079.wav",
+      "label": 0,
+      "score": 1.7412454653886398,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000604.wav",
+      "label": 0,
+      "score": 3.3546872551178213,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000057.wav",
+      "label": 0,
+      "score": 5.897277769987087,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000480.wav",
+      "label": 0,
+      "score": 2.8025018881013706,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000047.wav",
+      "label": 0,
+      "score": 3.3769027643359917,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000110.wav",
+      "label": 0,
+      "score": 4.806055237447997,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000218.wav",
+      "label": 0,
+      "score": 2.8925231503999234,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000896.wav",
+      "label": 0,
+      "score": 1.1685544435374693,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000041.wav",
+      "label": 0,
+      "score": 4.206219559162945,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000240.wav",
+      "label": 0,
+      "score": 2.7425639476653694,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000859.wav",
+      "label": 0,
+      "score": 7.73325929686169,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000653.wav",
+      "label": 0,
+      "score": 9.233906703475382,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000520.wav",
+      "label": 0,
+      "score": -6.783430535252533,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000973.wav",
+      "label": 0,
+      "score": 12.712046804648248,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000824.wav",
+      "label": 0,
+      "score": 6.996322230337123,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000756.wav",
+      "label": 0,
+      "score": 4.063144280670638,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000052.wav",
+      "label": 0,
+      "score": 3.762935006018103,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000509.wav",
+      "label": 0,
+      "score": -3.268691544340934,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000959.wav",
+      "label": 0,
+      "score": 2.5320221213831724,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000698.wav",
+      "label": 0,
+      "score": 1.1393603536422918,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000336.wav",
+      "label": 0,
+      "score": 3.4253344278087305,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00001007.wav",
+      "label": 0,
+      "score": 1.608988547579056,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000501.wav",
+      "label": 0,
+      "score": 2.677786748832814,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000491.wav",
+      "label": 0,
+      "score": 6.526157906569619,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000981.wav",
+      "label": 0,
+      "score": -0.6502473475198683,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000860.wav",
+      "label": 0,
+      "score": 7.544815502186024,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000870.wav",
+      "label": 0,
+      "score": 3.652218587268292,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000917.wav",
+      "label": 0,
+      "score": 3.491707094832099,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000370.wav",
+      "label": 0,
+      "score": 3.5781700954854374,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000673.wav",
+      "label": 0,
+      "score": 2.618630652968931,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000971.wav",
+      "label": 0,
+      "score": -1.1853847939405304,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000674.wav",
+      "label": 0,
+      "score": 2.904213991854155,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000280.wav",
+      "label": 0,
+      "score": 7.222305753170158,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000922.wav",
+      "label": 0,
+      "score": 7.090972976971889,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000526.wav",
+      "label": 0,
+      "score": 6.471854195765455,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000164.wav",
+      "label": 0,
+      "score": 1.7574435527390948,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000130.wav",
+      "label": 0,
+      "score": -0.009332992150518707,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/normal/00000716.wav",
+      "label": 0,
+      "score": 2.3048216138093744,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/normal/00000595.wav",
+      "label": 0,
+      "score": 3.4829667569211438,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000304.wav",
+      "label": 1,
+      "score": 8.008130934929891,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000007.wav",
+      "label": 1,
+      "score": 11.842964098879795,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000279.wav",
+      "label": 1,
+      "score": 9.489773869161175,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000146.wav",
+      "label": 1,
+      "score": 14.312883103639052,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000099.wav",
+      "label": 1,
+      "score": 5.120441129481724,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000115.wav",
+      "label": 1,
+      "score": -4.4873890338611,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000114.wav",
+      "label": 1,
+      "score": 1.2663564871335966,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000231.wav",
+      "label": 1,
+      "score": 2.4137065981003465,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000043.wav",
+      "label": 1,
+      "score": 3.0937682454612254,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000250.wav",
+      "label": 1,
+      "score": 7.616068579553574,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000267.wav",
+      "label": 1,
+      "score": 3.6611918761943283,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000282.wav",
+      "label": 1,
+      "score": 4.622709311910677,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000223.wav",
+      "label": 1,
+      "score": 7.341965126805019,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000261.wav",
+      "label": 1,
+      "score": 3.414118754805706,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000269.wav",
+      "label": 1,
+      "score": 6.424695000286728,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000136.wav",
+      "label": 1,
+      "score": 5.675696491870077,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000198.wav",
+      "label": 1,
+      "score": 5.010057401311395,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000058.wav",
+      "label": 1,
+      "score": -2.6417159526818867,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000006.wav",
+      "label": 1,
+      "score": 4.820746757238876,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000268.wav",
+      "label": 1,
+      "score": -0.7638353354237882,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000320.wav",
+      "label": 1,
+      "score": 1.8976764909319856,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000275.wav",
+      "label": 1,
+      "score": 5.073183130974517,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000065.wav",
+      "label": 1,
+      "score": 1.1239967244159432,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000246.wav",
+      "label": 1,
+      "score": 13.314137654542566,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000125.wav",
+      "label": 1,
+      "score": 1.9668827906223045,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000080.wav",
+      "label": 1,
+      "score": -2.3357944667781596,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000234.wav",
+      "label": 1,
+      "score": 6.670996428441431,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000131.wav",
+      "label": 1,
+      "score": 11.745107626478907,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000134.wav",
+      "label": 1,
+      "score": 11.372896406816617,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000067.wav",
+      "label": 1,
+      "score": 2.8758537516032066,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000045.wav",
+      "label": 1,
+      "score": 1.5986595492078028,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000214.wav",
+      "label": 1,
+      "score": 10.523240864641869,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000029.wav",
+      "label": 1,
+      "score": 4.477666956432871,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000179.wav",
+      "label": 1,
+      "score": 10.186410327017077,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000180.wav",
+      "label": 1,
+      "score": 3.61584751444778,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000135.wav",
+      "label": 1,
+      "score": 12.897736741089592,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000038.wav",
+      "label": 1,
+      "score": 0.4965268403404643,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000280.wav",
+      "label": 1,
+      "score": 1.0987968608829535,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000025.wav",
+      "label": 1,
+      "score": 1.494175950253822,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000260.wav",
+      "label": 1,
+      "score": -1.928104662589254,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000000.wav",
+      "label": 1,
+      "score": -0.31814458296650033,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000239.wav",
+      "label": 1,
+      "score": 3.129287594592944,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000240.wav",
+      "label": 1,
+      "score": 6.816146017014875,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000004.wav",
+      "label": 1,
+      "score": 0.15147476198391246,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000055.wav",
+      "label": 1,
+      "score": 0.6923801297068936,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000201.wav",
+      "label": 1,
+      "score": 6.862611123031442,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000210.wav",
+      "label": 1,
+      "score": 12.132566942430085,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000212.wav",
+      "label": 1,
+      "score": 9.245889754831666,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000078.wav",
+      "label": 1,
+      "score": 4.476407527031635,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000299.wav",
+      "label": 1,
+      "score": 15.71636291855887,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000128.wav",
+      "label": 1,
+      "score": -0.006574447265163277,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000172.wav",
+      "label": 1,
+      "score": 6.7369091528326495,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000205.wav",
+      "label": 1,
+      "score": 9.734636794226073,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000089.wav",
+      "label": 1,
+      "score": 10.652237876874965,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000314.wav",
+      "label": 1,
+      "score": 4.679565151689547,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000093.wav",
+      "label": 1,
+      "score": 2.4116467855082124,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000167.wav",
+      "label": 1,
+      "score": 5.813714721039578,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000028.wav",
+      "label": 1,
+      "score": 5.869169836269799,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000319.wav",
+      "label": 1,
+      "score": 2.924765426718802,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000310.wav",
+      "label": 1,
+      "score": 1.1632522521968918,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000183.wav",
+      "label": 1,
+      "score": 6.344401865096014,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000343.wav",
+      "label": 1,
+      "score": 14.64423973146283,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000327.wav",
+      "label": 1,
+      "score": 9.45006501850276,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000358.wav",
+      "label": 1,
+      "score": 3.3920340202524066,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000037.wav",
+      "label": 1,
+      "score": 4.0942485875117605,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000222.wav",
+      "label": 1,
+      "score": 5.170162492534941,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000300.wav",
+      "label": 1,
+      "score": 13.726315434230498,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000063.wav",
+      "label": 1,
+      "score": 0.3815557234592803,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000105.wav",
+      "label": 1,
+      "score": 4.383676117582265,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000100.wav",
+      "label": 1,
+      "score": -0.30203171230050746,
+      "predicted_abnormal": false
+    },
+    {
+      "name": "fan/id_06/abnormal/00000150.wav",
+      "label": 1,
+      "score": 6.610551602613466,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000023.wav",
+      "label": 1,
+      "score": 1.5487230649660813,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000163.wav",
+      "label": 1,
+      "score": 5.493312632076846,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000217.wav",
+      "label": 1,
+      "score": 3.020571873984218,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000169.wav",
+      "label": 1,
+      "score": 14.698218683792584,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000335.wav",
+      "label": 1,
+      "score": 11.192614077377993,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000036.wav",
+      "label": 1,
+      "score": 2.9801781674165877,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000162.wav",
+      "label": 1,
+      "score": 6.463244952945617,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000017.wav",
+      "label": 1,
+      "score": 2.723088601727278,
+      "predicted_abnormal": true
+    },
+    {
+      "name": "fan/id_06/abnormal/00000326.wav",
+      "label": 1,
+      "score": 12.513492504265958,
+      "predicted_abnormal": true
+    }
+  ],
+  "pcm_sha256": {
+    "data/mimii-multimachine/pcm/06_normal_00000084.npy": "8cf9cc6e2e519c9017d8fb9ba527f95704cda3519892b35c45b05107e08c1298",
+    "data/mimii-multimachine/pcm/06_normal_00000555.npy": "7a7943f1d51c6df7a581b13dee675b47cda4af5a5fa3c81da12dc73a003de125",
+    "data/mimii-multimachine/pcm/06_normal_00000672.npy": "0f13110a8bec3ea7cd548d3cb6e9222639080cb7b546ff9a21d0e7e53d0e3fc0",
+    "data/mimii-multimachine/pcm/06_normal_00000884.npy": "8da56e2cb0969e4b826cad2b3510ea26e3fd35b7fbb6c8a9b0f411d9ce615c8c",
+    "data/mimii-multimachine/pcm/06_normal_00000235.npy": "3d677f8f0d2a03e54b75ac9369acae0df7d27e74aab7029a5c9934696b174752",
+    "data/mimii-multimachine/pcm/06_normal_00000170.npy": "c884f537f2f923da2ebad8fb76f37b9cf3cd1d26f06770c6bd34a0468c16abd6",
+    "data/mimii-multimachine/pcm/06_normal_00000933.npy": "ea5fddd8e3ad04764a5d799493144f8d26e3e5cc7e611e4e2675117173c9949b",
+    "data/mimii-multimachine/pcm/06_normal_00000949.npy": "2055ca68762585de3646be742e1557bda38e12fbc446685ed64cb322a0c1b0d1",
+    "data/mimii-multimachine/pcm/06_normal_00000262.npy": "d09468122d930f9c4ab8b26d97d201c8e06079dc8cdecfb3c90a5a153c0f6d93",
+    "data/mimii-multimachine/pcm/06_normal_00000718.npy": "291e42580dcd0e9afb499691172c29dfd586ac78f9eb8903fc0bd98b476fe559",
+    "data/mimii-multimachine/pcm/06_normal_00000894.npy": "98a1d7ac603cf74fae13924b40bdd882128f6d57d746615bf46a9ee35463c259",
+    "data/mimii-multimachine/pcm/06_normal_00000926.npy": "3aa41fce53e1c87096f3088862a87bee2b2bd2026921d27a7f32c60e7fe30a90",
+    "data/mimii-multimachine/pcm/06_normal_00000398.npy": "ec77f52e02c8c1381882111c0dc3a9ef40c0679e170d7487f05f6b65a57b53ab",
+    "data/mimii-multimachine/pcm/06_normal_00000613.npy": "cfd5ee43b65e55e08c42e1087dd78ef8fbf06c8132e7c3ecc987af7a0a883617",
+    "data/mimii-multimachine/pcm/06_normal_00000045.npy": "dcd5bf11a81d7225feb69870bd7a6ff718d4fde2d84a2857ef11b8bc41545a48",
+    "data/mimii-multimachine/pcm/06_normal_00000793.npy": "c4dd7f55b71dc62506c9a6cfef189efdaaf96bd98fe98796dc8c50ea389a89cf",
+    "data/mimii-multimachine/pcm/06_normal_00000774.npy": "7385e7e60b4917094b78f4953166adf111dd057fdd42ce4bf3a422ae3e28a9cc",
+    "data/mimii-multimachine/pcm/06_normal_00000968.npy": "a52a1860d0c657ad613476ca557e70280bb1490697818b5a22d27cc7027f36ce",
+    "data/mimii-multimachine/pcm/06_normal_00001011.npy": "9078b09557f9dc9f9e9481cd066de8550ce2f166cb10cbe0d3a03e8bea593c00",
+    "data/mimii-multimachine/pcm/06_normal_00000118.npy": "a04da474089ebca62e64c8bd1a8e3b4e16cd06d70c0b143bd32977d69881d6db",
+    "data/mimii-multimachine/pcm/06_normal_00000719.npy": "56b5f89302c1a267554552ed515e687c809dd9f5bb75f8c83fe1352f0a659141",
+    "data/mimii-multimachine/pcm/06_normal_00000786.npy": "edce158dab9f4b02689698cfac55ab810d9e94b6b388f01e33ae13754996b301",
+    "data/mimii-multimachine/pcm/06_normal_00000297.npy": "ec62c82129dfaf237414ffb21d604cd6555fa9fbef3bfaaa8bdeb7de1b1f7355",
+    "data/mimii-multimachine/pcm/06_normal_00000420.npy": "bfa8e2d73d84f23eea3a2eacafa158213b1e716b527b4125b5a310ff68d7d484",
+    "data/mimii-multimachine/pcm/06_normal_00000837.npy": "eda2834991158d9644740d5acd7f8b91b9cc936ee7f143b89829c50abed1ad12",
+    "data/mimii-multimachine/pcm/06_normal_00000961.npy": "ff99bdbcd124e8f8fc959dd6d5779ef3502b4f0e0b86a130bca5888e95491f48",
+    "data/mimii-multimachine/pcm/06_normal_00000818.npy": "0748b359038bc233e968e1b1c9a3cc8fdb33ae8b3f25799200329c449fac3ab9",
+    "data/mimii-multimachine/pcm/06_normal_00000241.npy": "616da6fbba16abc801f23a138eda44782694ecc3fcd5dca9d96d3d973e94ff8c",
+    "data/mimii-multimachine/pcm/06_normal_00000797.npy": "1616e65c0e4a43b5b1a154025335de60fe3eedff340b0787d3704c1746a9b7d3",
+    "data/mimii-multimachine/pcm/06_normal_00000911.npy": "6ef4775566ec7d89f1ae8fd9ca4b47d504b4edacac6235ce61e5ce659e09c41f",
+    "data/mimii-multimachine/pcm/06_normal_00000014.npy": "8d3e5c06e9fe7d954cf55bb7ea96d03f53bded5d721b261a9612733078f938b5",
+    "data/mimii-multimachine/pcm/06_normal_00000313.npy": "e0fb9c908261130f51064977058d61fa18dac9fa97f3e1d53c2e99c16e89508f",
+    "data/mimii-multimachine/pcm/06_normal_00000599.npy": "3280669be3944708bae20514cd7c2bd4b4b00198d6dbccbdbb0cae7152d287a2",
+    "data/mimii-multimachine/pcm/06_normal_00000868.npy": "c0b28754d3d46f3950af9789854a11b91b806abd3ae3a36a4bec928904f2b2dc",
+    "data/mimii-multimachine/pcm/06_normal_00000773.npy": "171e42b5faef5544e6425d832e77254e919ac00412542f89b8f46fd70320f34b",
+    "data/mimii-multimachine/pcm/06_normal_00000253.npy": "e82d769bd1008ad0346b1e7377ddd9a8f1728a989c90869160ba9a0b8afd4db2",
+    "data/mimii-multimachine/pcm/06_normal_00000730.npy": "f5b1e4f414758be310316cbf24edae12c0cd31e864498f05688b327b54c145f1",
+    "data/mimii-multimachine/pcm/06_normal_00000738.npy": "f604cbc6045eaf96bb706e6f45f921cc029ef4f04b8225faeea0d4592ba8c102",
+    "data/mimii-multimachine/pcm/06_normal_00000034.npy": "982cdb66b3ed2f62cc8af5fa7ea89c4ac5fd5c7289b99a278affcb54617f6188",
+    "data/mimii-multimachine/pcm/06_normal_00000737.npy": "aef84d4f647687a9a2d01fddc2a7c5872294926cbfa788fdead02a84075f92fc",
+    "data/mimii-multimachine/pcm/06_normal_00000247.npy": "c23c201775b74777c5aae20fa897c7368acb2f4ba2c73fef3db401cb7a34324c",
+    "data/mimii-multimachine/pcm/06_normal_00000079.npy": "2581aec376d674b217ff13cb25c64d7a8d2cb418ecfffe4352d008c703c1229f",
+    "data/mimii-multimachine/pcm/06_normal_00000604.npy": "9168804abea75cc94016d8fc86fe9a8b22ea617f3c83adc5c9db87d7e0fa2dfb",
+    "data/mimii-multimachine/pcm/06_normal_00000057.npy": "d80ce50d2c55da08cb4ba2b542bc0ff72ee48f498bfb1d5a990d01d768f9222b",
+    "data/mimii-multimachine/pcm/06_normal_00000480.npy": "4a2c5ea2608f261b33d72a56548a0f6294154c0da9e7a620c5d3cfeed58b85f1",
+    "data/mimii-multimachine/pcm/06_normal_00000047.npy": "d3abf5a7a818dbb145d6c3bbeed204af0240aa91e8b990b93995015872fa17bd",
+    "data/mimii-multimachine/pcm/06_normal_00000110.npy": "2c74e00e02f2c877d3ddeb6258f450ae1c3b71a4ebb1af2c473de60bca1e2ac9",
+    "data/mimii-multimachine/pcm/06_normal_00000218.npy": "6801674f35e419c5d29f5202b3d9ebc72b0cfb49c7cdcd935a88f8ce1673528b",
+    "data/mimii-multimachine/pcm/06_normal_00000896.npy": "52955c6749bc86be17ab47162b12c9e4c2bf9e414a664ffc17240b15aa412f0e",
+    "data/mimii-multimachine/pcm/06_normal_00000041.npy": "70aea2863e58f68daccd09fd134268c42a45b6af4d96d6de8a89f5064d14d97a",
+    "data/mimii-multimachine/pcm/06_normal_00000240.npy": "cca93c6a5a3cb904234a3f30e486cb04259905fabf01f0b621b81f44f2d6bac0",
+    "data/mimii-multimachine/pcm/06_normal_00000859.npy": "d7702794cda248d6829c5f18f8712efbbef524b4b6dd815c16099ed50693b6d4",
+    "data/mimii-multimachine/pcm/06_normal_00000653.npy": "6f2692e1d7e974c1f009e6fa3f7194991402616d6bc52ae6bfc52875662b1244",
+    "data/mimii-multimachine/pcm/06_normal_00000520.npy": "6782d8787c993d21d2baaad0852c86b782061acc67348e03b29f4edcaab386f1",
+    "data/mimii-multimachine/pcm/06_normal_00000973.npy": "00f33de64fb141d9136291555beba26e84fe989f13d99a68ed4e19f333ed74f3",
+    "data/mimii-multimachine/pcm/06_normal_00000824.npy": "ad5e3b2fd75d204092d9764d4ff3786b3f2f7fb9f934161177052f6a6b667e3f",
+    "data/mimii-multimachine/pcm/06_normal_00000756.npy": "2390375fabce755d4eb4a29f1953684906485d681163a197661604a7cb31cec7",
+    "data/mimii-multimachine/pcm/06_normal_00000052.npy": "1da1e66bb738e59871116b998bcc83fa5e6eb7530b23c27789e4e5cc998a8a73",
+    "data/mimii-multimachine/pcm/06_normal_00000509.npy": "077eb2977002e341cbef2e65fd7feb00a5f712faab2d2009523cd7d721bded8b",
+    "data/mimii-multimachine/pcm/06_normal_00000959.npy": "e4d8b415d7cd062a7c934fe30f24d2580bf12d690a3079cab4cf2cf4692578c3",
+    "data/mimii-multimachine/pcm/06_normal_00000698.npy": "77622ee39985e2e4682df498e962b02ffb20bdf334d97d3a6c5dfc80d1ebee3b",
+    "data/mimii-multimachine/pcm/06_normal_00000336.npy": "62b368e29b7daed44c06370298cf4dc8416945b5d86c17fe321852081161aead",
+    "data/mimii-multimachine/pcm/06_normal_00001007.npy": "d4052e3c8ee92ab6268e4576c64e21caea0acae3cb3d22416d16a0d1403cf596",
+    "data/mimii-multimachine/pcm/06_normal_00000501.npy": "078aba8790a984dc4413b30ca09c86fed9ee38a920d0b5ba5ba9af7b6498cd21",
+    "data/mimii-multimachine/pcm/06_normal_00000491.npy": "7ccecf1ffcbc56f0c3105ade90f8d4644f814417c00a7338cdfa053987d53b01",
+    "data/mimii-multimachine/pcm/06_normal_00000981.npy": "e097283eefd276bca9f4894626e097e8efe1ffdbb02aef947e9512378fcd127c",
+    "data/mimii-multimachine/pcm/06_normal_00000860.npy": "a5120e95dddfc17be99dd057b490111d9c92ddd46213c6451ca2daab4c397111",
+    "data/mimii-multimachine/pcm/06_normal_00000870.npy": "775119bffb4732a84831bfc56d1a31e7c18da62951ba77e98f15d80a5d5e2278",
+    "data/mimii-multimachine/pcm/06_normal_00000917.npy": "58ed0acc7074bb62d62900d7d4976e6e3522db6574ef5d8933b565e8b3fc50da",
+    "data/mimii-multimachine/pcm/06_normal_00000370.npy": "a7aa1ed6f2b63f6a2a656f3b6baa4b98de95554596043fcf92941205e9faebdb",
+    "data/mimii-multimachine/pcm/06_normal_00000673.npy": "6cea8f44897eb97a3f496bbd0c2c476c7146419cd07b822f5554923a8c48bb1d",
+    "data/mimii-multimachine/pcm/06_normal_00000971.npy": "d72b4652624b14fdf067dd3954e49e2e44a08dcc00f99f1e201d16ab3821cd0e",
+    "data/mimii-multimachine/pcm/06_normal_00000674.npy": "3e3f93c7ffe4dc85a0bbf2a882b673f54a10f4679b70dcdd6972dc6ec99394cf",
+    "data/mimii-multimachine/pcm/06_normal_00000280.npy": "ced1738b41bef9fba336f33199f7b40a1679435ba8a0acec69cfcdcf393d948f",
+    "data/mimii-multimachine/pcm/06_normal_00000922.npy": "4324ce879f1b00f27f40fb617ed87b60a180a819a8d417f2b06f060025ad84dc",
+    "data/mimii-multimachine/pcm/06_normal_00000526.npy": "bb1f1e73610856450b014eede9adb89ddec7a916669647e3ebf3e4d7778d92ac",
+    "data/mimii-multimachine/pcm/06_normal_00000164.npy": "29ec700b9228f808efba3be43acd5a882d79532e66a2c180d914f9250c8f4eec",
+    "data/mimii-multimachine/pcm/06_normal_00000130.npy": "02541e4a74b66ea566efde59968f0efa82b9916f1fa12396beb4bf0a1506fcc7",
+    "data/mimii-multimachine/pcm/06_normal_00000716.npy": "4768145b98c2712144686bb8c195a1a6873d50d045a950d2c7ed3357738ac7ce",
+    "data/mimii-multimachine/pcm/06_normal_00000595.npy": "36dd19f30cfa9084b16743aa2484a7ff994aaa7c68a88012d5fe8b1b019b8653",
+    "data/mimii-multimachine/pcm/06_abnormal_00000304.npy": "41fd4a771ff0b60083320017d5d13686377fbda376764b11665bda8ee183d5ed",
+    "data/mimii-multimachine/pcm/06_abnormal_00000007.npy": "b1ebf9f250ffdaccb5a5216999b29183428f11addf26ef3171bf57abb52dc351",
+    "data/mimii-multimachine/pcm/06_abnormal_00000279.npy": "2bc6882f0c6ffc941e3dba373b2373637cfee717c2400047a3183bf8338904fa",
+    "data/mimii-multimachine/pcm/06_abnormal_00000146.npy": "e5889e284d5508ec7f9f30dd6de2661fd53c87f911b970062a08c5d456132294",
+    "data/mimii-multimachine/pcm/06_abnormal_00000099.npy": "080d13fadee66353dae8f6f03be424447540d91e94d2c68266668310ed7f6beb",
+    "data/mimii-multimachine/pcm/06_abnormal_00000115.npy": "43106287217e4c169179b56c7c91df8a5552e1f5716bb5a3973b9013c2eddb48",
+    "data/mimii-multimachine/pcm/06_abnormal_00000114.npy": "26c0c87f3ff0cb44da2504acc9a058c57e5004fd43683c777d353f1abb390405",
+    "data/mimii-multimachine/pcm/06_abnormal_00000231.npy": "ca8615dba18b4ea92db5774e43aacf75f4aa04b3efc2fe6ecdf96558194683f2",
+    "data/mimii-multimachine/pcm/06_abnormal_00000043.npy": "358d72b5cb880b47bdfe4abbda337e1c242689d8c9e907e608ba384e87276840",
+    "data/mimii-multimachine/pcm/06_abnormal_00000250.npy": "a3fa736e90acbbdbe9d84e668f3206b35f3af8542fb7cbbdd0331a66d47c8a1b",
+    "data/mimii-multimachine/pcm/06_abnormal_00000267.npy": "41bd2aec95cec20ad6c1575d04d0f431d76f7748aa183ec8fbca4bf02f4dd95c",
+    "data/mimii-multimachine/pcm/06_abnormal_00000282.npy": "ca8e60974b3604600811e6a2ea2e7c3ce7c894cea324f5126abfc4b406790339",
+    "data/mimii-multimachine/pcm/06_abnormal_00000223.npy": "37e281af4313babe788240aa76d7a1912a4daa0e4b455edac667755f957f797b",
+    "data/mimii-multimachine/pcm/06_abnormal_00000261.npy": "a21232543af12259c3c760618be82ed275888e523a53748044aea29f8949fed4",
+    "data/mimii-multimachine/pcm/06_abnormal_00000269.npy": "53d080c1e483406bf35be865d3de7e2417df9344e81548c258c02e9d29f44549",
+    "data/mimii-multimachine/pcm/06_abnormal_00000136.npy": "654d667191856f54d37479348b429d01ff001d677ac42895e4f1760c349b53f9",
+    "data/mimii-multimachine/pcm/06_abnormal_00000198.npy": "5987129d874357435a64a2fcc95c06f4b05a1654c56435096b3357bf7b1c9492",
+    "data/mimii-multimachine/pcm/06_abnormal_00000058.npy": "278ec9bb5619a8be69d779ce77cf65bdfbb491dde5010f3b838403a7f55b2451",
+    "data/mimii-multimachine/pcm/06_abnormal_00000006.npy": "2fbfdfaae076575314a537749b16e987d2b51216f3125d5b460a07cb2bde9692",
+    "data/mimii-multimachine/pcm/06_abnormal_00000268.npy": "ad9534386e5a2211ce58f50cc609974f007d10340788c5800c952d4f5a53270c",
+    "data/mimii-multimachine/pcm/06_abnormal_00000320.npy": "bc7978c89df3f1a5858cec4c5528669c1dca4b0dace40b2692262b93873aa327",
+    "data/mimii-multimachine/pcm/06_abnormal_00000275.npy": "48fd70ad39e54302e55b4a64a72f9fdfcb99fcceb67a20b5ad5b854527b73f26",
+    "data/mimii-multimachine/pcm/06_abnormal_00000065.npy": "d90d4f8b32fd921d6a212da5990aca613f837f39140399f499798f7872ecc3a0",
+    "data/mimii-multimachine/pcm/06_abnormal_00000246.npy": "84e4df0cf58f19f54e2fcc73499d8d133ee07ffca78b7044d023ccc1f7f33de4",
+    "data/mimii-multimachine/pcm/06_abnormal_00000125.npy": "133e8106210b5d84222dbdc5a59d1635b2bf6fcb0f11df86febe4ad6d1a5089a",
+    "data/mimii-multimachine/pcm/06_abnormal_00000080.npy": "48d3a396a8689a5378309dcd3dcbcc2c86dd2e7dc9d1cb7c6241238962ed8eb5",
+    "data/mimii-multimachine/pcm/06_abnormal_00000234.npy": "0ce531c4f972108877708cf4b4a46c451ac886fb451d51cb79b71ed7ad61b45c",
+    "data/mimii-multimachine/pcm/06_abnormal_00000131.npy": "e769562517972f4c2b2c2b29b7efdbdaab941be7d384dc69a98d84cecb29150d",
+    "data/mimii-multimachine/pcm/06_abnormal_00000134.npy": "3696f4cb758c9700c50db29032476d3f919940326994e9ac113a44bcf7aa84cf",
+    "data/mimii-multimachine/pcm/06_abnormal_00000067.npy": "9f7e1a6920fbd671f4112d4e11704ae17149b9f00ed39409c030ab60f99013e3",
+    "data/mimii-multimachine/pcm/06_abnormal_00000045.npy": "075c145256e717613d1e0fee50e539a8b1ca4884a1d0a75ababa183099d714f4",
+    "data/mimii-multimachine/pcm/06_abnormal_00000214.npy": "a97b8139e51d97845054eb2b7a254bc398826dab6d9dc224f27ddb5c95c5026f",
+    "data/mimii-multimachine/pcm/06_abnormal_00000029.npy": "54ba0a408b075f66ffec3b80e6eefa083130773f0adcf5d7a9c27017139b0ca9",
+    "data/mimii-multimachine/pcm/06_abnormal_00000179.npy": "319e4d6505d69548e779defac48e819e6a607fe5e8db7fbf9cae3ce49b27ab26",
+    "data/mimii-multimachine/pcm/06_abnormal_00000180.npy": "da909fb5ee65d62b721a616e534b4af3a3aba63fac14455590d554de9ef7dea5",
+    "data/mimii-multimachine/pcm/06_abnormal_00000135.npy": "66343e45e3aba8f602fd732a059a54df01eec3ecbf1519c52a7e8eb95f260e71",
+    "data/mimii-multimachine/pcm/06_abnormal_00000038.npy": "3f9f097c6a62d7c88e73e77dc3ca5cd67a5ad23b4eb638faea652ab797d101d8",
+    "data/mimii-multimachine/pcm/06_abnormal_00000280.npy": "23ca33e73b4f66967b76b1fe12308bb11966c05201846c57b0c067d81846fade",
+    "data/mimii-multimachine/pcm/06_abnormal_00000025.npy": "9bbc400cba14ba3301c71ee177a512f59d50379af103b949184b3e7aa7a74267",
+    "data/mimii-multimachine/pcm/06_abnormal_00000260.npy": "de528f26ce9c0f8aa88d4e0781f7c0291be65c15a1c57f32dcf2f37262ec54ca",
+    "data/mimii-multimachine/pcm/06_abnormal_00000000.npy": "13a69f356b95808747d356f064dbaf15482f4f8edb1e8f0eee56846ccb3952e0",
+    "data/mimii-multimachine/pcm/06_abnormal_00000239.npy": "3e2b84044e119345ea2fd549b01b6f985c8de2bac4b7f2e367f592ecad449e49",
+    "data/mimii-multimachine/pcm/06_abnormal_00000240.npy": "e6f7d181177ca218426ab815b71135cc94a7df900c80ad94cf9efc62db84c2b7",
+    "data/mimii-multimachine/pcm/06_abnormal_00000004.npy": "8c58bc5e1d84f22b8853982a5d18f28ed21d259d475e14e40b6990701b507f84",
+    "data/mimii-multimachine/pcm/06_abnormal_00000055.npy": "d60a40401ea40381f2d50b8c11a40a5ecae573e5af774d592ce81717ae789eec",
+    "data/mimii-multimachine/pcm/06_abnormal_00000201.npy": "da21b27bbfcd2d8e0d4ba98a4188499731d25ac8dc0a31af92bc8cea5c529cfe",
+    "data/mimii-multimachine/pcm/06_abnormal_00000210.npy": "34d7aa77d474753e5d5aece71dc4acc580ed2e1a14671d47e8779bd611f8712a",
+    "data/mimii-multimachine/pcm/06_abnormal_00000212.npy": "3c823791916d908e5928426a93a64d52bde9a7016e7c24345960de2f78fcca46",
+    "data/mimii-multimachine/pcm/06_abnormal_00000078.npy": "2ab278cf8dcaaf254589ce4f5cb3d397a114eb4504f8dc5a0f8ac9d2bcd61e2a",
+    "data/mimii-multimachine/pcm/06_abnormal_00000299.npy": "e86dfaaa5e9c0f553ec8d84f719fa1c5b41a31572da1f367f84029906c12b964",
+    "data/mimii-multimachine/pcm/06_abnormal_00000128.npy": "59b8ac2653e95aaf78060752720f37bb2e57e0ce68fe3ba4d7107880dc253100",
+    "data/mimii-multimachine/pcm/06_abnormal_00000172.npy": "6a668f6d40c6e641c74312c9ebc1ac277a1cbc59243428d7b86e10eb778824ab",
+    "data/mimii-multimachine/pcm/06_abnormal_00000205.npy": "a651ec4ecdd53fb2a85fa59c33f57624e1925b540003940db8c498dc755abb34",
+    "data/mimii-multimachine/pcm/06_abnormal_00000089.npy": "577c3d65e21fa03fc5d35bee2165c24dc85972995b6f7af85f5dd767a3eaba3b",
+    "data/mimii-multimachine/pcm/06_abnormal_00000314.npy": "7b84dd09e29009794beab0d7a841d154df27737882a0cf5c0de63d7300876899",
+    "data/mimii-multimachine/pcm/06_abnormal_00000093.npy": "1044158c19e833096fbc95a9049396b5c319499fc43efea3afd184b4b7bcb0f0",
+    "data/mimii-multimachine/pcm/06_abnormal_00000167.npy": "ab8af11dd29386bddf04f013ed4591a35e20456b3e0ff4fe02f8c75b84643061",
+    "data/mimii-multimachine/pcm/06_abnormal_00000028.npy": "dc85889a08c77783cc1770ae83f62a4d5ffe04738cd4e4dcc5d42d016622ee9a",
+    "data/mimii-multimachine/pcm/06_abnormal_00000319.npy": "ef18578a1b9eb4f455ea366018637a209de33d62fc2404c496fc70f3b0ee7739",
+    "data/mimii-multimachine/pcm/06_abnormal_00000310.npy": "6e6ba5fce3ad409b150033ace884ab18f0c8755d7fb63fdd9d489c8ae44c740f",
+    "data/mimii-multimachine/pcm/06_abnormal_00000183.npy": "6d6c6dfd2cb9187878f9fa44987a9f12793563120aef10e2c28424fe9c6de6d6",
+    "data/mimii-multimachine/pcm/06_abnormal_00000343.npy": "f163818e4d6bc0cf75a07aa45d2e330fbf1adb2efa3ee3883291c6a443523a14",
+    "data/mimii-multimachine/pcm/06_abnormal_00000327.npy": "c10fc88bef081c3fa6de5c4f4360dbf0df5e5cbfdc40db23604aebbfa119fc52",
+    "data/mimii-multimachine/pcm/06_abnormal_00000358.npy": "d3ff1280752f8ba21b4fdf4d3ecc0ccdc03df245eeb0a9e50229809930f0aa01",
+    "data/mimii-multimachine/pcm/06_abnormal_00000037.npy": "828da1be0f2ae0e805208fceee829c7b6dbb510bfea3e26d5258ec89c1114776",
+    "data/mimii-multimachine/pcm/06_abnormal_00000222.npy": "89c3dd7112a9b7888e5c01e6e2dcb41c9f5c35b62825f6ff231d40eae262b741",
+    "data/mimii-multimachine/pcm/06_abnormal_00000300.npy": "56f2b1192b867261fa3227dad0aa608c721274497db815c7c8375b602d755ebb",
+    "data/mimii-multimachine/pcm/06_abnormal_00000063.npy": "13a0bc4a6e58c55d13e20c649aeba514054ef00ebc6a6f138b85d85108f6b778",
+    "data/mimii-multimachine/pcm/06_abnormal_00000105.npy": "8b9e8fe977c1aef7a86bd39ecdee8902edc661b4670b1d5b79666c28451c7e9c",
+    "data/mimii-multimachine/pcm/06_abnormal_00000100.npy": "3b327180ef79bcbcf5ea181263071a23b4fc29009309a1152fa69fc18a50b7d3",
+    "data/mimii-multimachine/pcm/06_abnormal_00000150.npy": "64b7986cc415a472ee912c736987fa657b1c715bf34213c9d866592e8a953f81",
+    "data/mimii-multimachine/pcm/06_abnormal_00000023.npy": "39ce9545fc6fc8023e91a3740f23128ac1f6beb58869e6f9cd7c0acc35bd2c6c",
+    "data/mimii-multimachine/pcm/06_abnormal_00000163.npy": "a8557f0ba8db0d85aca17642cbc7a8425e806c0247a761618e181f159c937bd3",
+    "data/mimii-multimachine/pcm/06_abnormal_00000217.npy": "c1fc157fe01af391b5bce3aad5067266cfec47c1dc2bf9dd20b38e3446c880db",
+    "data/mimii-multimachine/pcm/06_abnormal_00000169.npy": "364e3a2e4ee6f4b0daee98f8e33e9890ccacba6a8c1e03abaa6d5f024d35c95f",
+    "data/mimii-multimachine/pcm/06_abnormal_00000335.npy": "07e70f7760f20406cfdc7d75d6e19eb517fadafa5beb2fad095e5660bfd40483",
+    "data/mimii-multimachine/pcm/06_abnormal_00000036.npy": "da7452fd14d5ac569f150e1e8bd607379b0e3d101f949d6b9dda8befcc9298c4",
+    "data/mimii-multimachine/pcm/06_abnormal_00000162.npy": "70fe7d81cba6439979b1366f6540aa55308852696014c3e324d43dccc44f8d1a",
+    "data/mimii-multimachine/pcm/06_abnormal_00000017.npy": "3b257b65217f9a144f8a0f6ce9b46910c8cdac255c9dd4bd808b2c42578237d8",
+    "data/mimii-multimachine/pcm/06_abnormal_00000326.npy": "6207334662bbc1bf72f3673bb7c592348ae14e5f410df0aa613c4c747708f3b9"
+  },
+  "freeze_sha256": "85e2b957866e10a25b1f9b8ee43a293b6df278ff7fef171da42a0f3930032a85"
+}

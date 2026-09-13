@@ -1,0 +1,13 @@
+{
+  "plan_sha256": "54488a748ed513876b036aaa18926907a45f95a52a6ae0d0b30ef8bc4db8efb7",
+  "feature": "64-band log energy mean/std/p10/p90/mean absolute delta",
+  "models": [
+    "rbf",
+    "trees"
+  ],
+  "fold": "hold out section 00 or 01 in full",
+  "threshold": "maximum source-section normal calibration score",
+  "gate": "recall > .90, fpr < .05, auc >= .90 on both sections",
+  "test": "DUE section 02 unopened",
+  "source_sha256": "a565f42aeadfc668a51fb3d09f85a7b59ee318c805b63dec2a11f78edd36e535"
+}

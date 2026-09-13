@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "./scripts/calibrate_known_extra00.py", line 83, in <module>
+    with threadpool_limits(limits=2):main()
+                                     ^^^^^^
+  File "./scripts/calibrate_known_extra00.py", line 56, in main
+    np.testing.assert_allclose(reproduced[val],vs,rtol=0,atol=1e-10)
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0, atol=1e-10
+
+Mismatched elements: 61 / 64 (95.3%)
+First 5 mismatches are at indices:
+ [0]: -0.6282057762145996 (ACTUAL), -0.6282052993774414 (DESIRED)
+ [1]: -6.422735691070557 (ACTUAL), -6.422732830047607 (DESIRED)
+ [2]: -1.7795507907867432 (ACTUAL), -1.7795517444610596 (DESIRED)
+ [3]: -3.588587760925293 (ACTUAL), -3.5885887145996094 (DESIRED)
+ [4]: -4.6790008544921875 (ACTUAL), -4.678999900817871 (DESIRED)
+Max absolute difference among violations: 9.53674316e-06
+Max relative difference among violations: 2.05622608e-06
+ ACTUAL: array([-0.628206, -6.422736, -1.779551, -3.588588, -4.679001, -4.736126,
+       -3.403167, -4.667084, -6.442894, -4.257602, -4.504222, -3.014683,
+       -5.471556, -9.985583, -3.112996, -2.735158,  1.043281, -0.416859,...
+ DESIRED: array([-0.628205, -6.422733, -1.779552, -3.588589, -4.679   , -4.736125,
+       -3.40317 , -4.667079, -6.442895, -4.257603, -4.504215, -3.014689,
+       -5.471556, -9.985574, -3.112997, -2.735158,  1.043281, -0.416859,...

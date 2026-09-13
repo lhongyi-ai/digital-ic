@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-09-07T18:18:10" hostname="MacBook-Pro-3.local" package="quant" id="0" name="serial_bmc" tests="1" errors="0" failures="0" time="14" skipped="0">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="serial_bmc" name="serial_bmc" time="14">
+</testcase>
+<system-out>SBY 18:17:56 [./build/quantization_formal/serial_bmc] Removing directory './build/quantization_formal/serial_bmc'.
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] Copy './formal/../build/quantization_formal/generated/quant_extract.sv' to './build/quantization_formal/serial_bmc/src/quant_extract.sv'.
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] Copy './formal/quant_harness.sv' to './build/quantization_formal/serial_bmc/src/quant_harness.sv'.
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: abc bmc3
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] base: starting process &quot;cd ./build/quantization_formal/serial_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] base: finished (returncode=0)
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] prep: starting process &quot;cd ./build/quantization_formal/serial_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] prep: finished (returncode=0)
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] aig: starting process &quot;cd ./build/quantization_formal/serial_bmc/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] aig: Warning: Treating undriven bit quant_serial_harness.\clk like $anyseq.
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] aig: Warning: Treating a total of 1 undriven bits in quant_serial_harness like $anyseq.
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] aig: finished (returncode=0)
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: starting process &quot;cd ./build/quantization_formal/serial_bmc; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw'&quot;
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: ======== ABC command line &quot;read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw&quot;
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: Running &quot;bmc3&quot;. PI/PO/Reg = 511/10/430. And =   6370. Lev =    85. ObjNums =  3635.
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: Params: FramesMax = 64. Start = 0. ConfLimit = 0. TimeOut = 0. SolveAll = 0.
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 0 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 1 + : Var =    1225. Cla =     4236. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 2 + : Var =    2136. Cla =     6422. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 3 + : Var =    3449. Cla =    10044. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 4 + : Var =    4831. Cla =    13985. Conf =      5. Learn =      4.    0 MB   4 MB     0.01 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 5 + : Var =    6220. Cla =    17956. Conf =    594. Learn =    586.    0 MB   4 MB     0.02 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 6 + : Var =    7615. Cla =    21960. Conf =   1330. Learn =   1314.    0 MB   5 MB     0.02 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 7 + : Var =    9019. Cla =    26006. Conf =   2159. Learn =   2135.    0 MB   5 MB     0.03 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 8 + : Var =   10428. Cla =    30080. Conf =   3245. Learn =   3213.    0 MB   5 MB     0.05 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 9 + : Var =   11842. Cla =    34181. Conf =   4634. Learn =   4594.    0 MB   5 MB     0.07 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 10 + : Var =   13257. Cla =    38290. Conf =   6216. Learn =   6167.    0 MB   7 MB     0.09 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 11 + : Var =   14672. Cla =    42397. Conf =   7959. Learn =   7902.    0 MB   7 MB     0.12 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 12 + : Var =   16087. Cla =    46504. Conf =   9836. Learn =   9771.    0 MB   7 MB     0.16 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 13 + : Var =   17502. Cla =    50611. Conf =  12065. Learn =  10006.    0 MB   7 MB     0.21 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 14 + : Var =   18917. Cla =    54718. Conf =  14654. Learn =  10221.    0 MB   7 MB     0.28 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 15 + : Var =   20332. Cla =    58825. Conf =  16995. Learn =  12554.    0 MB   9 MB     0.34 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 16 + : Var =   21747. Cla =    62932. Conf =  19556. Learn =  12339.    0 MB   8 MB     0.42 sec
+SBY 18:17:56 [./build/quantization_formal/serial_bmc] engine_0: 17 + : Var =   23162. Cla =    67039. Conf =  22416. Learn =  15191.    0 MB   9 MB     0.50 sec
+SBY 18:17:57 [./build/quantization_formal/serial_bmc] engine_0: 18 + : Var =   24577. Cla =    71146. Conf =  25457. Learn =  15194.    0 MB   9 MB     0.60 sec
+SBY 18:17:57 [./build/quantization_formal/serial_bmc] engine_0: 19 + : Var =   25992. Cla =    75250. Conf =  28463. Learn =  14857.    0 MB  10 MB     0.71 sec
+SBY 18:17:57 [./build/quantization_formal/serial_bmc] engine_0: 20 + : Var =   27407. Cla =    79347. Conf =  31626. Learn =  18012.    0 MB  11 MB     0.80 sec
+SBY 18:17:57 [./build/quantization_formal/serial_bmc] engine_0: 21 + : Var =   28822. Cla =    83444. Conf =  34681. Learn =  17766.    0 MB  10 MB     0.93 sec
+SBY 18:17:57 [./build/quantization_formal/serial_bmc] engine_0: 22 + : Var =   30237. Cla =    87541. Conf =  38588. Learn =  21665.    0 MB  11 MB     1.08 sec
+SBY 18:17:57 [./build/quantization_formal/serial_bmc] engine_0: 23 + : Var =   31652. Cla =    91638. Conf =  42756. Learn =  22007.    0 MB  11 MB     1.26 sec
+SBY 18:17:57 [./build/quantization_formal/serial_bmc] engine_0: 24 + : Var =   33067. Cla =    95735. Conf =  46585. Learn =  21885.    0 MB  12 MB     1.43 sec
+SBY 18:17:58 [./build/quantization_formal/serial_bmc] engine_0: 25 + : Var =   34482. Cla =    99832. Conf =  51150. Learn =  22117.    0 MB  12 MB     1.64 sec
+SBY 18:17:58 [./build/quantization_formal/serial_bmc] engine_0: 26 + : Var =   35897. Cla =   103929. Conf =  56243. Learn =  27202.    0 MB  14 MB     1.85 sec
+SBY 18:17:58 [./build/quantization_formal/serial_bmc] engine_0: 27 + : Var =   37312. Cla =   108026. Conf =  60813. Learn =  27023.    0 MB  13 MB     2.07 sec
+SBY 18:17:58 [./build/quantization_formal/serial_bmc] engine_0: 28 + : Var =   38727. Cla =   112123. Conf =  65102. Learn =  26507.    0 MB  14 MB     2.29 sec
+SBY 18:17:58 [./build/quantization_formal/serial_bmc] engine_0: 29 + : Var =   40142. Cla =   116220. Conf =  69227. Learn =  30624.    0 MB  15 MB     2.51 sec
+SBY 18:17:59 [./build/quantization_formal/serial_bmc] engine_0: 30 + : Var =   41557. Cla =   120317. Conf =  74848. Learn =  30793.    0 MB  15 MB     2.80 sec
+SBY 18:17:59 [./build/quantization_formal/serial_bmc] engine_0: 31 + : Var =   42972. Cla =   124414. Conf =  79373. Learn =  29811.    0 MB  15 MB     3.05 sec
+SBY 18:17:59 [./build/quantization_formal/serial_bmc] engine_0: 32 + : Var =   44387. Cla =   128511. Conf =  84505. Learn =  34935.    0 MB  17 MB     3.34 sec
+SBY 18:18:00 [./build/quantization_formal/serial_bmc] engine_0: 33 + : Var =   45802. Cla =   132608. Conf =  89961. Learn =  34290.    0 MB  16 MB     3.64 sec
+SBY 18:18:00 [./build/quantization_formal/serial_bmc] engine_0: 34 + : Var =   47217. Cla =   136705. Conf =  95295. Learn =  33561.    0 MB  16 MB     3.94 sec
+SBY 18:18:00 [./build/quantization_formal/serial_bmc] engine_0: 35 + : Var =   48632. Cla =   140802. Conf = 100638. Learn =  38896.    0 MB  18 MB     4.24 sec
+SBY 18:18:01 [./build/quantization_formal/serial_bmc] engine_0: 36 + : Var =   50047. Cla =   144899. Conf = 106381. Learn =  32059.    1 MB  19 MB     4.57 sec
+SBY 18:18:01 [./build/quantization_formal/serial_bmc] engine_0: 37 + : Var =   51462. Cla =   148996. Conf = 111175. Learn =  36845.    1 MB  22 MB     4.88 sec
+SBY 18:18:01 [./build/quantization_formal/serial_bmc] engine_0: 38 + : Var =   52877. Cla =   153093. Conf = 116050. Learn =  41712.    1 MB  24 MB     5.25 sec
+SBY 18:18:02 [./build/quantization_formal/serial_bmc] engine_0: 39 + : Var =   54292. Cla =   157190. Conf = 121587. Learn =  38815.    1 MB  22 MB     5.61 sec
+SBY 18:18:02 [./build/quantization_formal/serial_bmc] engine_0: 40 + : Var =   55707. Cla =   161287. Conf = 126628. Learn =  43848.    1 MB  24 MB     5.97 sec
+SBY 18:18:02 [./build/quantization_formal/serial_bmc] engine_0: 41 + : Var =   57122. Cla =   165384. Conf = 131876. Learn =  40272.    1 MB  23 MB     6.34 sec
+SBY 18:18:03 [./build/quantization_formal/serial_bmc] engine_0: 42 + : Var =   58537. Cla =   169481. Conf = 137155. Learn =  45543.    1 MB  25 MB     6.72 sec
+SBY 18:18:03 [./build/quantization_formal/serial_bmc] engine_0: 43 + : Var =   59952. Cla =   173578. Conf = 142544. Learn =  42022.    1 MB  23 MB     7.13 sec
+SBY 18:18:04 [./build/quantization_formal/serial_bmc] engine_0: 44 + : Var =   61367. Cla =   177675. Conf = 147827. Learn =  47297.    1 MB  25 MB     7.54 sec
+SBY 18:18:04 [./build/quantization_formal/serial_bmc] engine_0: 45 + : Var =   62782. Cla =   181772. Conf = 153007. Learn =  44056.    1 MB  23 MB     7.90 sec
+SBY 18:18:04 [./build/quantization_formal/serial_bmc] engine_0: 46 + : Var =   64197. Cla =   185869. Conf = 157702. Learn =  48743.    1 MB  26 MB     8.25 sec
+SBY 18:18:05 [./build/quantization_formal/serial_bmc] engine_0: 47 + : Var =   65612. Cla =   189966. Conf = 162710. Learn =  45505.    1 MB  24 MB     8.61 sec
+SBY 18:18:05 [./build/quantization_formal/serial_bmc] engine_0: 48 + : Var =   67027. Cla =   194063. Conf = 167469. Learn =  50256.    1 MB  26 MB     8.96 sec
+SBY 18:18:05 [./build/quantization_formal/serial_bmc] engine_0: 49 + : Var =   68442. Cla =   198160. Conf = 173224. Learn =  43639.    1 MB  25 MB     9.33 sec
+SBY 18:18:06 [./build/quantization_formal/serial_bmc] engine_0: 50 + : Var =   69857. Cla =   202257. Conf = 178151. Learn =  48558.    1 MB  27 MB     9.71 sec
+SBY 18:18:06 [./build/quantization_formal/serial_bmc] engine_0: 51 + : Var =   71272. Cla =   206354. Conf = 183286. Learn =  53685.    1 MB  28 MB    10.05 sec
+SBY 18:18:06 [./build/quantization_formal/serial_bmc] engine_0: 52 + : Var =   72687. Cla =   210451. Conf = 188170. Learn =  47928.    1 MB  26 MB    10.38 sec
+SBY 18:18:07 [./build/quantization_formal/serial_bmc] engine_0: 53 + : Var =   74102. Cla =   214548. Conf = 193630. Learn =  53380.    1 MB  28 MB    10.75 sec
+SBY 18:18:07 [./build/quantization_formal/serial_bmc] engine_0: 54 + : Var =   75517. Cla =   218645. Conf = 198985. Learn =  48930.    1 MB  25 MB    11.11 sec
+SBY 18:18:07 [./build/quantization_formal/serial_bmc] engine_0: 55 + : Var =   76932. Cla =   222742. Conf = 203878. Learn =  53815.    1 MB  28 MB    11.43 sec
+SBY 18:18:08 [./build/quantization_formal/serial_bmc] engine_0: 56 + : Var =   78347. Cla =   226839. Conf = 208811. Learn =  46424.    1 MB  26 MB    11.75 sec
+SBY 18:18:08 [./build/quantization_formal/serial_bmc] engine_0: 57 + : Var =   79762. Cla =   230936. Conf = 214422. Learn =  52027.    1 MB  29 MB    12.13 sec
+SBY 18:18:08 [./build/quantization_formal/serial_bmc] engine_0: 58 + : Var =   81177. Cla =   235033. Conf = 219556. Learn =  57153.    1 MB  31 MB    12.45 sec
+SBY 18:18:09 [./build/quantization_formal/serial_bmc] engine_0: 59 + : Var =   82592. Cla =   239130. Conf = 225302. Learn =  52301.    1 MB  28 MB    12.80 sec
+SBY 18:18:09 [./build/quantization_formal/serial_bmc] engine_0: 60 + : Var =   84007. Cla =   243227. Conf = 230347. Learn =  57338.    1 MB  30 MB    13.13 sec
+SBY 18:18:09 [./build/quantization_formal/serial_bmc] engine_0: 61 + : Var =   85422. Cla =   247324. Conf = 235528. Learn =  52803.    1 MB  28 MB    13.49 sec
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] engine_0: 62 + : Var =   86837. Cla =   251421. Conf = 241070. Learn =  58337.    1 MB  30 MB    13.85 sec
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] engine_0: 63 + : Var =   88252. Cla =   255518. Conf = 246056. Learn =  63315.    1 MB  33 MB    14.19 sec
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] engine_0: Runtime:  CNF = 0.0 sec (0.3 %)  UNSAT = 14.1 sec (99.5 %)  SAT = 0.0 sec (0.0 %)  UNDEC = 0.0 sec (0.0 %)
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] engine_0: LStart(P) = 10000  LDelta(Q) = 2000  LRatio(R) = 80  ReduceDB = 27  Vars = 88252  Used = 68450 (77.56 %)
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] engine_0: Buffs = 25289. Dups = 0.   Hash hits = 55825.  Hash misses = 59166.  UniProps = 0.
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] engine_0: No output asserted in 64 frames. Resource limit reached (conf limit 0). Time =    14.19 sec
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] engine_0: Counter-example is not available.
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] engine_0: finished (returncode=0)
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] engine_0: Status returned by engine: PASS
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:14 (14)
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:14 (14)
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] summary: engine_0 (abc bmc3) returned PASS
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] summary: engine_0 did not produce any traces
+SBY 18:18:10 [./build/quantization_formal/serial_bmc] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

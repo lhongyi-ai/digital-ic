@@ -1,0 +1,25 @@
+{
+  "scope": "FIFO scenario counters only; not line/toggle coverage",
+  "runs": [
+    {
+      "schema_version": 1,
+      "test": "fifo_directed_random",
+      "width": 16,
+      "depth": 3,
+      "seed": 709448,
+      "scenario_counts": {
+        "reset_empty": 10,
+        "cycles": 3037,
+        "empty_read_blocked": 133,
+        "input_gap": 708,
+        "push": 1715,
+        "output_stall": 1196,
+        "full_write_blocked": 529,
+        "full_pop_push": 683,
+        "pop": 1537,
+        "wraparound_traffic": 1277,
+        "reset_nonempty": 75
+      }
+    }
+  ]
+}

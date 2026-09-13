@@ -1,0 +1,31 @@
+%Warning-WIDTHEXPAND: rtl/core/acoustic_core.sv:134:67: Operator LTE expects 32 bits on the LHS, but LHS's VARREF 'score' generates 18 bits.
+                                                      : ... note: In instance 'acoustic_core'
+  134 |     wire [STREAK_W-1:0] next_streak=(arithmetic_errors!=0 || score<=THRESHOLD) ? 0 :
+      |                                                                   ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.051
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl/core/acoustic_core.sv:135:45: Operator LT expects 32 bits on the LHS, but LHS's VARREF 'streak' generates 2 bits.
+                                                      : ... note: In instance 'acoustic_core'
+  135 |         !consecutive ? STREAK_W'(1) : streak<ALARM_WINDOWS ? streak+1'b1 : streak;
+      |                                             ^
+%Warning-WIDTHTRUNC: rtl/core/acoustic_core.sv:138:48: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's VARREF 'LOG_FEATURES' generates 32 bits.
+                                                     : ... note: In instance 'acoustic_core'
+  138 |     wire [7:0] acoustic_feature = LOG_FEATURES ? (log_code>127 ? 8'd127 : 8'(log_code)) : quant_result;
+      |                                                ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.051
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: rtl/core/acoustic_core.sv:401:21: Logical operator IF expects 1 bit on the If, but If's VARREF 'LOG_FEATURES' generates 32 bits.
+                                                     : ... note: In instance 'acoustic_core'
+  401 |                     if (LOG_FEATURES) begin
+      |                     ^~
+%Warning-WIDTHTRUNC: rtl/core/acoustic_core.sv:408:32: Logical operator IF expects 1 bit on the If, but If's VARREF 'LOG_FEATURES' generates 32 bits.
+                                                     : ... note: In instance 'acoustic_core'
+  408 |                 POWER_Q_SHIFT: if (LOG_FEATURES) begin
+      |                                ^~
+%Warning-WIDTHEXPAND: rtl/core/acoustic_core.sv:470:43: Operator GTE expects 32 bits on the LHS, but LHS's VARREF 'next_streak' generates 2 bits.
+                                                      : ... note: In instance 'acoustic_core'
+  470 |                     out_class<=next_streak>=ALARM_WINDOWS ? 1 : 0;out_error<=arithmetic_errors;
+      |                                           ^~
+- V e r i l a t i o n   R e p o r t: Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)
+- Verilator: Built from 0.084 MB sources in 3 modules, into 0.159 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.036 s (elab=0.009, cvt=0.016, bld=0.000); cpu 0.023 s on 1 threads; allocated 16.328 MB

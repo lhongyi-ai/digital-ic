@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "hardware_programmed": false,
+  "board_profile_verified": false,
+  "required_hardware": "UPduino v3.x reference, iCE40UP5K SG48, external 12 MHz on gpio_20, verified Flash geometry",
+  "images": [
+    {
+      "directory": "board_l1",
+      "top": "upduino_replay",
+      "bitstream_sha256": "32f9fe7362a06acb8f4c19216ff37d5c864548927598e8dbc70f707a75e948b7",
+      "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+      "target_clock_mhz": 12,
+      "post_route_fmax_mhz": 20.567245483398438,
+      "packed_lc": 4088
+    },
+    {
+      "directory": "board_l4",
+      "top": "upduino_replay",
+      "bitstream_sha256": "d15bf93d6224b8a8080d615b36f748d0e733191c7b266ccb54a958dd52fb6803",
+      "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+      "target_clock_mhz": 12,
+      "post_route_fmax_mhz": 19.365583419799805,
+      "packed_lc": 4842
+    },
+    {
+      "directory": "board_neighbor_l1",
+      "top": "upduino_replay",
+      "bitstream_sha256": "09187defa114a9d58fd1320f0f621a91c76c3755199d933a9244fdbced9bfd6a",
+      "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+      "target_clock_mhz": 12,
+      "post_route_fmax_mhz": 21.913965225219727,
+      "packed_lc": 4306
+    },
+    {
+      "directory": "board_neighbor_l4",
+      "top": "upduino_replay",
+      "bitstream_sha256": "c83ac47b8f14aae583c90e5b00368119cfc65b6fdbc1a15b598281374169f3f0",
+      "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+      "target_clock_mhz": 12,
+      "post_route_fmax_mhz": 18.57769203186035,
+      "packed_lc": 5129
+    },
+    {
+      "directory": "sensor_board_100hz_spectrum",
+      "top": "upduino_sensor",
+      "bitstream_sha256": "9576ebbcadaf8259d52dbffa88bfc582fa98ee0b16124ed27b19fb0a24a31c49",
+      "model_sha256": null,
+      "target_clock_mhz": 12,
+      "post_route_fmax_mhz": 17.01114273071289,
+      "packed_lc": 4860
+    },
+    {
+      "directory": "sensor_board_400hz_spectrum",
+      "top": "upduino_sensor",
+      "bitstream_sha256": "4c8569f65e846a9a6d599e83b21779986455f43acbef085a855e7fe2aa2f0d9d",
+      "model_sha256": null,
+      "target_clock_mhz": 12,
+      "post_route_fmax_mhz": 17.244352340698242,
+      "packed_lc": 4875
+    },
+    {
+      "directory": "sensor_board_800hz",
+      "top": "upduino_sensor",
+      "bitstream_sha256": "c48036fb7593aaa83d54c1814dd5889af5a19187260782c32af41f9318aa2493",
+      "model_sha256": null,
+      "target_clock_mhz": 12,
+      "post_route_fmax_mhz": 17.594482421875,
+      "packed_lc": 3073
+    },
+    {
+      "directory": "sensor_board_800hz_spectrum",
+      "top": "upduino_sensor",
+      "bitstream_sha256": "035d79e2a98fbd0a09a4836e45d9b08bd13ebb455d81662adf3ec90ea4587472",
+      "model_sha256": null,
+      "target_clock_mhz": 12,
+      "post_route_fmax_mhz": 17.334627151489258,
+      "packed_lc": 4874
+    }
+  ]
+}

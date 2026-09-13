@@ -1,0 +1,28 @@
+COMMAND ["./.venv/bin/python", "./scripts/run_core_coverage.py", "--dsp-only", "--build-dir", "./build/rtl_coverage/l4_b1/normal", "--model", "./artifacts/model/model.json", "--lanes", "4"]
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+     -.--ns INFO     pygpi                              ..ib/pygpi/embed.cpp:115  in initialize                      Using Python 3.12.10 interpreter at ./.venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1788830229
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_core.bit_exact_continuous_frames (1/4)
+2820620.00ns INFO     cocotb.regression                  test_core.bit_exact_continuous_frames passed
+2820620.00ns INFO     cocotb.regression                  running test_core.malformed_frames_and_reset (2/4)
+4328791.00ns INFO     cocotb.regression                  test_core.malformed_frames_and_reset passed
+4328791.00ns INFO     cocotb.regression                  running test_core.full_buffers_during_output_stall (3/4)
+5774811.00ns INFO     cocotb.regression                  test_core.full_buffers_during_output_stall passed
+5774811.00ns INFO     cocotb.regression                  running test_core.reset_cancels_each_processing_stage (4/4)
+8450922.00ns INFO     cocotb.regression                  test_core.reset_cancels_each_processing_stage passed
+8450922.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_core.bit_exact_continuous_frames           PASS     2820620.00           1.02    2764979.28  **
+                                                        ** test_core.malformed_frames_and_reset            PASS     1508171.00           0.23    6656085.16  **
+                                                        ** test_core.full_buffers_during_output_stall      PASS     1446020.00           0.21    6853516.41  **
+                                                        ** test_core.reset_cancels_each_processing_stage   PASS     2676111.00           0.61    4418161.53  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=4 PASS=4 FAIL=0 SKIP=0                             8450922.00           2.06    4093978.20  **
+                                                        *******************************************************************************************************
+- :0: Verilog $finish

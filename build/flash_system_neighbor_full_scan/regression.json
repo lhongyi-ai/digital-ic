@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "physical_hardware_tested": false,
+  "scope": "Full production log partition behavioral SPI scan; no electrical timing validation",
+  "scenarios": [
+    "full_131072_byte_log_scan_rejects_dirty_final_byte_without_any_write"
+  ],
+  "log_scan_bytes": 131072,
+  "log_scan_chunk_bytes": 32768,
+  "scan_to_rejection_simulation_ns": 26217515.0,
+  "scan_to_rejection_equivalent_at_12mhz_ms": 218.47929166666665,
+  "measurement_excludes_power_up_startup_counter": true,
+  "operations": [
+    {
+      "opcode": 3,
+      "address": 3145728,
+      "length": 32768
+    },
+    {
+      "opcode": 3,
+      "address": 3178496,
+      "length": 32768
+    },
+    {
+      "opcode": 3,
+      "address": 3211264,
+      "length": 32768
+    },
+    {
+      "opcode": 3,
+      "address": 3244032,
+      "length": 32768
+    }
+  ]
+}

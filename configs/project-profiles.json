@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "default_profile": "cwru-neighbor3",
+  "profiles": {
+    "cwru-neighbor3": {
+      "kind": "cwru_classifier",
+      "description": "Frozen CWRU neighbor3 classifier; default 4 MAC lanes",
+      "model": "artifacts/model_neighbor/model.json",
+      "vectors": "artifacts/vectors_neighbor",
+      "manifest": "data/cwru/manifest.json",
+      "board_config": "configs/upduino-reference.json",
+      "n": 1024,
+      "sample_rate_hz": 12000,
+      "lanes": 4,
+      "clock_source": "external12",
+      "model_requirements": {"feature_mode": "neighbor3_energy", "training_status": "trained_on_official_cwru_train_validation_only_candidate"}
+    },
+    "sen1-spectrum": {
+      "kind": "sensor_measurement",
+      "description": "SEN1 measurement with N256 spectrum; no classifier",
+      "model": "artifacts/sensor_spectrum/model/model.json",
+      "manifest": "data/field/manifest.json",
+      "board_config": "configs/upduino-reference.json",
+      "log_format": "SEN1",
+      "n": 256,
+      "sample_rate_hz": 800,
+      "clock_hz": 12000000,
+      "axis": "z",
+      "lanes": 1,
+      "model_requirements": {"training_status": "not_a_classifier_DSP_coefficient_profile", "not_for_classification": true}
+    },
+    "fcl1-fixture": {
+      "kind": "field_fixture",
+      "description": "FCL1 N256 / 800 Hz / L1 synthetic fixture; real field model is untrained",
+      "model": "build/field_fixture/trained/model/model.json",
+      "vectors": "build/field_fixture/trained/vectors",
+      "manifest": "build/field_fixture/trained/manifest.json",
+      "run_dir": "build/field_fixture/trained",
+      "board_config": "configs/upduino-reference.json",
+      "log_format": "FCL1",
+      "n": 256,
+      "sample_rate_hz": 800,
+      "clock_hz": 12000000,
+      "axis": "z",
+      "lanes": 1,
+      "model_requirements": {"feature_mode": "single_bin", "profile": "adxl345_field_states", "training_status": "synthetic_fixture_not_for_deployment", "source_kind": "synthetic_pipeline_fixture"}
+    }
+  }
+}

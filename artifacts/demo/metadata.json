@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-09-06T03:05:13.715954+00:00",
+  "duration_seconds": 24,
+  "fps": 12,
+  "resolution": [
+    1440,
+    810
+  ],
+  "codec": "libx264",
+  "physical_hardware_shown": false,
+  "physical_measurements": false,
+  "simulation_only": true,
+  "animation_is_realtime": false,
+  "new_test_set_evaluation": false,
+  "validated_before_rendering": [
+    "two real validation inputs reproduce actual Flash RTL logits/class",
+    "actual sensor RTL SEN1 powers reproduce Python integer frontend",
+    "model SHA matches RTL reports"
+  ],
+  "sources": [
+    {
+      "project_path": "artifacts/model_neighbor/model.json",
+      "sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+      "snapshot_file": "source_snapshots/neighbor_model.json"
+    },
+    {
+      "project_path": "build/flash_system_neighbor/regression.json",
+      "sha256": "1ed26cef12cca6c61314d8d40a6d85ef2d177eb76919dfbc7237900050569079",
+      "snapshot_file": "source_snapshots/flash_rtl_regression.json"
+    },
+    {
+      "project_path": "build/core_l4_model_neighbor/regression.json",
+      "sha256": "811d5f5152c9c385842ffe30057ba636697d255ffd7295b5a8deab245330c222",
+      "snapshot_file": "source_snapshots/core_rtl_regression.json"
+    },
+    {
+      "project_path": "artifacts/vectors_neighbor/replay_000.hex",
+      "sha256": "b657431bcf0c4d96873c74c91334b1338a0ac2053d96768bfddbc91227f136b7",
+      "snapshot_file": "source_snapshots/validation_0.hex"
+    },
+    {
+      "project_path": "artifacts/vectors_neighbor/replay_000.json",
+      "sha256": "8644b3e58a51f64be31b73cf8def624b455d39377b064da28212bf785375e07c",
+      "snapshot_file": "source_snapshots/validation_0.json"
+    },
+    {
+      "project_path": "artifacts/vectors_neighbor/replay_001.hex",
+      "sha256": "2d537c364bcd104863558bf6df0960ec8868926bd6618a6f0cb8d2bb2a09e190",
+      "snapshot_file": "source_snapshots/validation_1.hex"
+    },
+    {
+      "project_path": "artifacts/vectors_neighbor/replay_001.json",
+      "sha256": "c0d5b4cdb1288542513149171a6a5e3285a3ae8d0612b6e0ce1d404fc071a784",
+      "snapshot_file": "source_snapshots/validation_1.json"
+    },
+    {
+      "project_path": "build/sensor_system_spectrum/report.json",
+      "sha256": "dfb155cdcc9193608ff51ee60f93008c7b9087b1987bcbaf9098a27c596422e7",
+      "snapshot_file": "source_snapshots/sensor_rtl_regression.json"
+    },
+    {
+      "project_path": "build/sensor_system_spectrum/sensor_log.bin",
+      "sha256": "f39b507c71180c060dcf0d0deab741fddce61a37e1b6b326209719f49e289515",
+      "snapshot_file": "source_snapshots/sensor_spi_simulation.bin"
+    },
+    {
+      "project_path": "build/sensor_system_spectrum/sensor_stimulus.json",
+      "sha256": "b252de7efefbcfc94b371932e40ffe38f2dcb07528aa83d387b754813ec67b34",
+      "snapshot_file": "source_snapshots/sensor_simulation_stimulus.json"
+    },
+    {
+      "project_path": "artifacts/sensor_spectrum/model/model.json",
+      "sha256": "e4b47d14ec2eec60c102e147d58d9514269323b52e67326dd0756c7944a96459",
+      "snapshot_file": "source_snapshots/sensor_dsp_profile.json"
+    }
+  ],
+  "script_sha256": "2c86ea11244d131c31a1721fb87d190dc0aaf53dabfa3c8dc179eff03e5a4aff",
+  "video_sha256": "fa2a1f53024266cfdf154d51a52eb780a41c85241a19c7a4e2eb944102af8069"
+}

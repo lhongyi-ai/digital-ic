@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "test": "fifo_directed_random",
+  "width": 16,
+  "depth": 1,
+  "seed": 709446,
+  "scenario_counts": {
+    "reset_empty": 8,
+    "cycles": 3023,
+    "empty_read_blocked": 251,
+    "input_gap": 624,
+    "push": 1450,
+    "full_write_blocked": 877,
+    "output_stall": 1099,
+    "full_pop_push": 1131,
+    "pop": 1386,
+    "wraparound_traffic": 1313,
+    "reset_nonempty": 64
+  }
+}

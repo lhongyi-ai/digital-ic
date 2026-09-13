@@ -1,0 +1,29 @@
+{
+  "scope": "actual replay_fifo, 49 payload bits, depth 2; bounded safety and reachable covers only",
+  "environment": "reset on first sampled edge; later reset, input valid/data and output ready unconstrained",
+  "not_claimed": [
+    "unbounded proof",
+    "liveness under arbitrary backpressure",
+    "whole-system or physical-board correctness"
+  ],
+  "source_sha256": {
+    "rtl/upduino_replay.sv": "24e1f6857ff86f93d80dd6e4adcd5ba6b3bbf1d005195b59db8a3156d09756d0",
+    "formal/replay_fifo_harness.sv": "2052f603759d4cbcf9fe7ac85e525c10a035e96f18e16899886067e9442da876",
+    "formal/replay_fifo.sby": "9a7cc338c59b4b38f8964d267d356dd05906785f3302fc763c091a9d521e46dc"
+  },
+  "results": [
+    {
+      "task": "bmc",
+      "bound": 64,
+      "status": "PASS 0 13",
+      "returncode": 0
+    },
+    {
+      "task": "cover",
+      "bound": 64,
+      "status": "PASS 0 0",
+      "returncode": 0
+    }
+  ],
+  "passed": true
+}

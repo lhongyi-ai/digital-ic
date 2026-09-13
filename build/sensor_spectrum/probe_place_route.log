@@ -1,0 +1,593 @@
+mkdir: /home/researcher/.config/yosyshq: Operation not permitted
+mkdir: /home/researcher/.local/share/yosyshq: Operation not permitted
+Warning: No PCF file specified; IO pins will be placed automatically
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:      878 LCs used as LUT4 only
+Info:      349 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:      168 LCs used as DFF only
+Info: Packing carries..
+Info:      226 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:       11 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting clk$SB_IO_IN (fanout 534)
+Info: promoting rst$SB_IO_IN [reset] (fanout 376)
+Info: promoting spectrum.dsp.quant_work_SB_DFFESR_Q_E [cen] (fanout 43)
+Info: promoting $PACKER_GND_NET (fanout 2)
+Info: Constraining chains...
+Info:       34 LCs used to legalise carry chains.
+Info: Checksum: 0x5ac782ba
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:    1646/   5280    31%
+Info: 	        ICESTORM_RAM:       9/     30    30%
+Info: 	               SB_IO:       8/     39    20%
+Info: 	               SB_GB:       4/      8    50%
+Info: 	        ICESTORM_PLL:       0/      1     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+Info: 	        ICESTORM_DSP:       1/      8    12%
+Info: 	      ICESTORM_HFOSC:       0/      1     0%
+Info: 	      ICESTORM_LFOSC:       0/      1     0%
+Info: 	              SB_I2C:       0/      2     0%
+Info: 	              SB_SPI:       0/      2     0%
+Info: 	              IO_I3C:       0/      2     0%
+Info: 	         SB_LEDDA_IP:       0/      1     0%
+Info: 	         SB_RGBA_DRV:       0/      1     0%
+Info: 	      ICESTORM_SPRAM:       0/      4     0%
+
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 1090 cells, random placement wirelen = 37366.
+Info:     at initial placer iter 0, wirelen = 709
+Info:     at initial placer iter 1, wirelen = 697
+Info:     at initial placer iter 2, wirelen = 680
+Info:     at initial placer iter 3, wirelen = 694
+Info: Running main analytical placer, max placement attempts per cell = 347778.
+Info:     at iteration #1, type ALL: wirelen solved = 680, spread = 10944, legal = 11770; time = 0.01s
+Info:     at iteration #2, type ALL: wirelen solved = 792, spread = 11530, legal = 12713; time = 0.01s
+Info:     at iteration #3, type ALL: wirelen solved = 1045, spread = 10688, legal = 12027; time = 0.01s
+Info:     at iteration #4, type ALL: wirelen solved = 1276, spread = 9638, legal = 11560; time = 0.01s
+Info:     at iteration #5, type ALL: wirelen solved = 1570, spread = 8697, legal = 10547; time = 0.01s
+Info:     at iteration #6, type ALL: wirelen solved = 1939, spread = 7984, legal = 9936; time = 0.01s
+Info:     at iteration #7, type ALL: wirelen solved = 1974, spread = 8587, legal = 10360; time = 0.01s
+Info:     at iteration #8, type ALL: wirelen solved = 2222, spread = 8420, legal = 9776; time = 0.01s
+Info:     at iteration #9, type ALL: wirelen solved = 2378, spread = 7532, legal = 9697; time = 0.01s
+Info:     at iteration #10, type ALL: wirelen solved = 2385, spread = 8038, legal = 9909; time = 0.01s
+Info:     at iteration #11, type ALL: wirelen solved = 2575, spread = 7595, legal = 9671; time = 0.01s
+Info:     at iteration #12, type ALL: wirelen solved = 2565, spread = 7737, legal = 10132; time = 0.01s
+Info:     at iteration #13, type ALL: wirelen solved = 2791, spread = 8149, legal = 9809; time = 0.01s
+Info:     at iteration #14, type ALL: wirelen solved = 2971, spread = 7760, legal = 9463; time = 0.01s
+Info:     at iteration #15, type ALL: wirelen solved = 3031, spread = 7425, legal = 9694; time = 0.01s
+Info:     at iteration #16, type ALL: wirelen solved = 3225, spread = 7631, legal = 9733; time = 0.01s
+Info:     at iteration #17, type ALL: wirelen solved = 3410, spread = 7279, legal = 8812; time = 0.01s
+Info:     at iteration #18, type ALL: wirelen solved = 3384, spread = 6877, legal = 9011; time = 0.01s
+Info:     at iteration #19, type ALL: wirelen solved = 3444, spread = 7103, legal = 8876; time = 0.01s
+Info:     at iteration #20, type ALL: wirelen solved = 3651, spread = 6627, legal = 8723; time = 0.01s
+Info:     at iteration #21, type ALL: wirelen solved = 3519, spread = 6704, legal = 8330; time = 0.01s
+Info:     at iteration #22, type ALL: wirelen solved = 3687, spread = 6252, legal = 8618; time = 0.01s
+Info:     at iteration #23, type ALL: wirelen solved = 3723, spread = 6306, legal = 8035; time = 0.01s
+Info:     at iteration #24, type ALL: wirelen solved = 3871, spread = 6380, legal = 8609; time = 0.01s
+Info:     at iteration #25, type ALL: wirelen solved = 3962, spread = 6632, legal = 8399; time = 0.01s
+Info:     at iteration #26, type ALL: wirelen solved = 4098, spread = 6489, legal = 8748; time = 0.01s
+Info:     at iteration #27, type ALL: wirelen solved = 4145, spread = 5972, legal = 8198; time = 0.01s
+Info:     at iteration #28, type ALL: wirelen solved = 3916, spread = 6076, legal = 8354; time = 0.01s
+Info: HeAP Placer Time: 0.42s
+Info:   of which solving equations: 0.25s
+Info:   of which spreading cells: 0.03s
+Info:   of which strict legalisation: 0.06s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 616, wirelen = 8035
+Info:   at iteration #5: temp = 0.000000, timing cost = 510, wirelen = 6965
+Info:   at iteration #10: temp = 0.000000, timing cost = 509, wirelen = 6649
+Info:   at iteration #15: temp = 0.000000, timing cost = 492, wirelen = 6467
+Info:   at iteration #20: temp = 0.000000, timing cost = 490, wirelen = 6344
+Info:   at iteration #25: temp = 0.000000, timing cost = 490, wirelen = 6314
+Info:   at iteration #30: temp = 0.000000, timing cost = 490, wirelen = 6285
+Info:   at iteration #32: temp = 0.000000, timing cost = 489, wirelen = 6282 
+Info: SA placement time 0.51s
+
+Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 21.95 MHz (PASS at 12.00 MHz)
+
+Info: Clock '$PACKER_GND_NET_$glb_clk' has no interior paths
+
+Info: Max delay <async>                       -> <async>                      : 7.57 ns
+Info: Max delay <async>                       -> posedge clk$SB_IO_IN_$glb_clk: 21.90 ns
+Info: Max delay posedge clk$SB_IO_IN_$glb_clk -> <async>                      : 13.88 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 5 endpoint(s)
+Info:          + represents [1,5) endpoint(s)
+Info: [ 37776,  39869) |*+
+Info: [ 39869,  41962) |******+
+Info: [ 41962,  44055) |************+
+Info: [ 44055,  46148) |+
+Info: [ 46148,  48241) |+
+Info: [ 48241,  50334) |*+
+Info: [ 50334,  52427) |*+
+Info: [ 52427,  54520) |********+
+Info: [ 54520,  56613) |************+
+Info: [ 56613,  58706) |*******************+
+Info: [ 58706,  60799) |*********************+
+Info: [ 60799,  62892) |*****************+
+Info: [ 62892,  64985) |****************+
+Info: [ 64985,  67078) |************+
+Info: [ 67078,  69171) |****************+
+Info: [ 69171,  71264) |********************+
+Info: [ 71264,  73357) |**************+
+Info: [ 73357,  75450) |********************************+
+Info: [ 75450,  77543) |*****************************************************+
+Info: [ 77543,  79636) |************************************************************ 
+Info: Checksum: 0xb9923a56
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 5379 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       64        791 |   64   791 |      4459|       0.16       0.16|
+Info:       2000 |      224       1566 |  160   775 |      3673|       0.06       0.22|
+Info:       3000 |      506       2214 |  282   648 |      3045|       0.07       0.29|
+Info:       4000 |      698       2922 |  192   708 |      2288|       0.06       0.35|
+Info:       5000 |     1017       3534 |  319   612 |      1688|       0.08       0.43|
+Info:       6000 |     1560       3983 |  543   449 |      1500|       0.12       0.55|
+Info:       7000 |     1854       4681 |  294   698 |       925|       0.07       0.62|
+Info:       8000 |     2105       5407 |  251   726 |       318|       0.11       0.72|
+Info:       8515 |     2236       5788 |  131   381 |         0|       0.08       0.80|
+Info: Routing complete.
+Info: Router1 time 0.80s
+Info: Checksum: 0x4dfcac29
+
+Info: Critical path report for clock 'clk$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source spectrum.dsp.mean_SB_DFFESR_Q_15_DFFLC.O
+Info:    routing  1.76  3.15 Net spectrum.dsp.mean[0] (11,6) -> (11,7)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:96.23-96.27
+Info:      logic  0.87  4.03 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_O_LC.O
+Info:    routing  1.76  5.79 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I2[2] (11,7) -> (11,8)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:228.40-228.103
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.61  6.39 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.66  7.06 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI (11,8) -> (11,8)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:228.40-228.103
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  7.93 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_LC.O
+Info:    routing  1.76  9.69 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O[1] (11,8) -> (12,8)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_2_LC.I2
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  10.90 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_2_LC.O
+Info:    routing  1.76  12.66 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O[3] (12,8) -> (12,8)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  13.53 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_LUT4_O_LC.O
+Info:    routing  1.76  15.29 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1[1] (12,8) -> (12,9)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_LC.I1
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.68  15.97 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  15.97 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO (12,9) -> (12,9)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  16.25 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  16.25 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO (12,9) -> (12,9)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  16.52 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  16.52 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (12,9) -> (12,9)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  16.80 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  16.80 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (12,9) -> (12,9)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  17.08 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  17.08 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_LUT4_O_I1_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (12,9) -> (12,9)
+Info:                          Sink spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_I2_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  17.36 Source spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_I2_LC.COUT
+Info:    routing  0.00  17.36 Net spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (12,9) -> (12,9)
+Info:                          Sink spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  17.64 Source spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  17.64 Net spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI (12,9) -> (12,9)
+Info:                          Sink spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  17.91 Source spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.56  18.47 Net spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI (12,9) -> (12,10)
+Info:                          Sink spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  18.75 Source spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  18.75 Net spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I2[3] (12,10) -> (12,10)
+Info:                          Sink spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  19.03 Source spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  19.03 Net spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO (12,10) -> (12,10)
+Info:                          Sink spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  19.30 Source spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  19.30 Net spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO (12,10) -> (12,10)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  19.58 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.66  20.24 Net $nextpnr_ICESTORM_LC_32$I3 (12,10) -> (12,10)
+Info:                          Sink $nextpnr_ICESTORM_LC_32.I3
+Info:      logic  0.87  21.12 Source $nextpnr_ICESTORM_LC_32.O
+Info:    routing  3.06  24.17 Net spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O[3] (12,10) -> (13,14)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.I3
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:149.23-149.120
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.87  25.05 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.O
+Info:    routing  2.41  27.46 Net spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O[1] (13,14) -> (13,11)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.I1
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.68  28.13 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  28.13 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,11) -> (13,11)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  28.41 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  28.41 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,11) -> (13,11)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  28.69 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  28.69 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,11) -> (13,11)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  28.97 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.56  29.52 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,11) -> (13,12)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  29.80 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  29.80 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,12) -> (13,12)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  30.08 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  30.08 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,12) -> (13,12)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  30.36 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  30.36 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,12) -> (13,12)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  30.64 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  30.64 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,12) -> (13,12)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  30.91 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  30.91 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,12) -> (13,12)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  31.19 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  31.19 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,12) -> (13,12)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  31.47 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  31.47 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,12) -> (13,12)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  31.75 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.56  32.30 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,12) -> (13,13)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  32.58 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  32.58 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,13) -> (13,13)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  32.86 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  32.86 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,13) -> (13,13)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  33.14 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  33.14 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,13) -> (13,13)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  33.42 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  33.42 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,13) -> (13,13)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  33.69 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  33.69 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,13) -> (13,13)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  33.97 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  33.97 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,13) -> (13,13)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  34.25 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  34.25 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,13) -> (13,13)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  34.53 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.56  35.08 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,13) -> (13,14)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  35.36 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  35.36 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,14) -> (13,14)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  35.64 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  35.64 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,14) -> (13,14)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  35.92 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  35.92 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,14) -> (13,14)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  36.19 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  36.19 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,14) -> (13,14)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  36.47 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  36.47 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,14) -> (13,14)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  36.75 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  36.75 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,14) -> (13,14)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  37.03 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.66  37.69 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (13,14) -> (13,14)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.I3
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:156.17-156.29
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  38.56 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.O
+Info:    routing  1.76  40.33 Net spectrum.dsp.operand_a[0]_SB_LUT4_O_15_I1_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O[3] (13,14) -> (12,13)
+Info:                          Sink spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_I2_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  41.20 Source spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_I2_LC.O
+Info:    routing  4.04  45.24 Net spectrum.dsp.operand_b[0]_SB_LUT4_O_4_I1_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_I2_O[3] (12,13) -> (1,11)
+Info:                          Sink spectrum.dsp.operand_a[0]_SB_LUT4_O_7_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  46.11 Source spectrum.dsp.operand_a[0]_SB_LUT4_O_7_LC.O
+Info:    routing  2.95  49.06 Net spectrum.dsp.operand_a[0][10] (1,11) -> (0,10)
+Info:                          Sink spectrum.dsp.product[0]_SB_MAC16_O_DSP.A_10
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:128.23-128.32
+Info:      setup  0.10  49.16 Source spectrum.dsp.product[0]_SB_MAC16_O_DSP.A_10
+Info: 21.93 ns logic, 27.23 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source rst$sb_io.D_IN_0
+Info:    routing  2.41  2.41 Net rst$SB_IO_IN (16,0) -> (15,4)
+Info:                          Sink in_ready_SB_LUT4_O_LC.I1
+Info:                          Defined in:
+Info:                               ./rtl/io/sensor_spectrum.sv:6.18-6.21
+Info:      logic  1.23  3.64 Source in_ready_SB_LUT4_O_LC.O
+Info:    routing  3.06  6.70 Net in_ready$SB_IO_OUT (15,4) -> (18,0)
+Info:                          Sink in_ready$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               ./rtl/io/sensor_spectrum.sv:7.35-7.43
+Info: 1.23 ns logic, 5.47 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge clk$SB_IO_IN_$glb_clk':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source rst$sb_io.D_IN_0
+Info:    routing  2.41  2.41 Net rst$SB_IO_IN (16,0) -> (15,4)
+Info:                          Sink in_ready_SB_LUT4_O_LC.I1
+Info:                          Defined in:
+Info:                               ./rtl/io/sensor_spectrum.sv:6.18-6.21
+Info:      logic  1.23  3.64 Source in_ready_SB_LUT4_O_LC.O
+Info:    routing  2.30  5.94 Net in_ready$SB_IO_OUT (15,4) -> (17,4)
+Info:                          Sink in_valid_SB_LUT4_I2_LC.I3
+Info:                          Defined in:
+Info:                               ./rtl/io/sensor_spectrum.sv:7.35-7.43
+Info:      logic  0.87  6.82 Source in_valid_SB_LUT4_I2_LC.O
+Info:    routing  2.95  9.77 Net in_valid_SB_LUT4_I2_O[1] (17,4) -> (13,7)
+Info:                          Sink spectrum.dsp.draining_SB_LUT4_I0_I2_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  10.64 Source spectrum.dsp.draining_SB_LUT4_I0_I2_SB_LUT4_O_LC.O
+Info:    routing  1.76  12.40 Net spectrum.dsp.draining_SB_LUT4_I0_I2[1] (13,7) -> (14,6)
+Info:                          Sink spectrum.dsp.draining_SB_LUT4_I0_LC.I2
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  13.61 Source spectrum.dsp.draining_SB_LUT4_I0_LC.O
+Info:    routing  2.95  16.56 Net spectrum.dsp.draining_SB_LUT4_I0_O[1] (14,6) -> (12,4)
+Info:                          Sink spectrum.dsp.draining_SB_LUT4_I0_O_SB_LUT4_I3_1_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  17.44 Source spectrum.dsp.draining_SB_LUT4_I0_O_SB_LUT4_I3_1_LC.O
+Info:    routing  3.10  20.53 Net spectrum.dsp.draining_SB_LUT4_I0_O_SB_LUT4_I3_1_O[3] (12,4) -> (11,5)
+Info:                          Sink spectrum.dsp.frame_sums[0]_SB_DFFE_Q_3_DFFLC.CEN
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      setup  0.10  20.63 Source spectrum.dsp.frame_sums[0]_SB_DFFE_Q_3_DFFLC.CEN
+Info: 5.16 ns logic, 15.47 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk$SB_IO_IN_$glb_clk' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source spectrum.dsp.write_bank_SB_DFFESR_Q_D_SB_LUT4_O_LC.O
+Info:    routing  2.95  4.34 Net in_ready_SB_LUT4_O_I3_SB_LUT4_O_I3[2] (17,6) -> (14,4)
+Info:                          Sink in_ready_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./rtl/core/vibration_core.sv:85.9-85.19
+Info:      logic  0.87  5.22 Source in_ready_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  6.98 Net in_ready_SB_LUT4_O_I3_SB_LUT4_O_I3[3] (14,4) -> (14,4)
+Info:                          Sink in_ready_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  7.85 Source in_ready_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  9.61 Net in_ready_SB_LUT4_O_I3[2] (14,4) -> (15,4)
+Info:                          Sink in_ready_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  10.49 Source in_ready_SB_LUT4_O_LC.O
+Info:    routing  3.06  13.54 Net in_ready$SB_IO_OUT (15,4) -> (18,0)
+Info:                          Sink in_ready$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               ./rtl/io/sensor_spectrum.sv:7.35-7.43
+Info: 4.01 ns logic, 9.53 ns routing
+
+Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 20.34 MHz (PASS at 12.00 MHz)
+
+Info: Clock '$PACKER_GND_NET_$glb_clk' has no interior paths
+
+Info: Max delay <async>                       -> <async>                      : 6.70 ns
+Info: Max delay <async>                       -> posedge clk$SB_IO_IN_$glb_clk: 20.63 ns
+Info: Max delay posedge clk$SB_IO_IN_$glb_clk -> <async>                      : 13.54 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 6 endpoint(s)
+Info:          + represents [1,6) endpoint(s)
+Info: [ 34169,  36448) |+
+Info: [ 36448,  38727) |*+
+Info: [ 38727,  41006) |*********+
+Info: [ 41006,  43285) |****+
+Info: [ 43285,  45564) | 
+Info: [ 45564,  47843) |+
+Info: [ 47843,  50122) |+
+Info: [ 50122,  52401) |+
+Info: [ 52401,  54680) |*+
+Info: [ 54680,  56959) |***************+
+Info: [ 56959,  59238) |*********************+
+Info: [ 59238,  61517) |*****************+
+Info: [ 61517,  63796) |****************+
+Info: [ 63796,  66075) |**************+
+Info: [ 66075,  68354) |**********+
+Info: [ 68354,  70633) |***************+
+Info: [ 70633,  72912) |*********************+
+Info: [ 72912,  75191) |************************+
+Info: [ 75191,  77470) |***************************************+
+Info: [ 77470,  79749) |************************************************************ 
+1 warning, 0 errors
+
+Info: Program finished normally.

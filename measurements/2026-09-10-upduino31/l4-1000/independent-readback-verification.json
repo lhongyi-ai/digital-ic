@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "scope": "Independent raw rereads of the same physical L4 1000-frame run; original failed first read preserved",
+  "original_failed_manifest": "manifest.json",
+  "raw_reads_identical": true,
+  "raw_reads": [
+    "result-log-reread-1.bin",
+    "result-log-reread-2.bin"
+  ],
+  "verification": {
+    "passed": true,
+    "checked_frames": 1000,
+    "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+    "input_image_sha256": "9bd71ad81931370aa4072a42256faa6b88b5f2cb9725dbca358d4080c47f0cfc",
+    "result_log_sha256": "708abf0552f590ceaabe352af18fbc88587c3f0c20186c039242ed8547177d18",
+    "scope": "Numerical comparison of supplied files. Physical acquisition provenance is recorded separately."
+  },
+  "counters": {
+    "record_count": 1000,
+    "generated_samples": 1024000,
+    "accepted_samples": 1024000,
+    "overflow_count": 0,
+    "protocol_errors": 0,
+    "error_flags": 0
+  },
+  "bytes_removed_or_modified": false,
+  "new_hardware_replay_run": false,
+  "clock_frequency_measured": false
+}

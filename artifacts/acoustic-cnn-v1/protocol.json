@@ -1,0 +1,18 @@
+{
+  "source_sha256": "bccfaef98b442ed6b9f8f610b979bf83e9527eea3dfb10cb5a00d415b8b75e54",
+  "plan_sha256": "d5fee974de89de25fb4296c80648a959ae87f6e6c8c0506ec778118a0108fdfa",
+  "torch": "2.14.0",
+  "seed": 43,
+  "epochs": 30,
+  "batch": 64,
+  "learning_rate": 0.002,
+  "representations": [
+    "relative",
+    "timecenter"
+  ],
+  "selection": "last epoch fixed; held machine never used for stopping",
+  "score": "mean four patch logits per recording",
+  "input": "four disjoint 2.048 s spectrogram patches from first 8.192 s; 32 uniform bands",
+  "threshold": "max source-machine normal calibration threshold",
+  "test_opened": false
+}

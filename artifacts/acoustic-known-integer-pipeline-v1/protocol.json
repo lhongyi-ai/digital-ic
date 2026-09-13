@@ -1,0 +1,10 @@
+{
+  "script_sha256": "e77c084dd1d6c4731852a7f30aa88777d6e2a579c3233e1058f4907b4b17c462",
+  "fixed_source_sha256": "7ad463073f96d1be7c2ff2a71861755912604dc1e6db4120bd40a0c13200cbb8",
+  "dsp_receipt_sha256": "578afa57882f833da5ccbf31218008d8cc07da032cd6bd1c1560a3d3904fbe64",
+  "int8_reference_sha256": "d40ae0d69af9c46d188fd3ac7b38bcc4c833c95cebf027173c3f146e3a99f130",
+  "model": "unchanged saved PTQ weights and bias; normalizer meanQ12/gainQ24; int8 saturated features; int32 score",
+  "threshold": "same calibrated rank alpha=.04 using integer pipeline scores; no validation threshold fitting",
+  "scope": "complete integer software front end and classifier, not yet RTL or board",
+  "final_test_opened": false
+}

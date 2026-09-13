@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "n": 1024,
+  "count": 5,
+  "physical_board_tested": false,
+  "model_training_status": "deterministic_verification_fixture_not_trained",
+  "vectors": [
+    {
+      "frame_id": 0,
+      "samples_hex": "fixture_000.hex",
+      "provenance": {
+        "kind": "synthetic_verification_only",
+        "case": "zero"
+      }
+    },
+    {
+      "frame_id": 1,
+      "samples_hex": "fixture_001.hex",
+      "provenance": {
+        "kind": "synthetic_verification_only",
+        "case": "dc_max"
+      }
+    },
+    {
+      "frame_id": 2,
+      "samples_hex": "fixture_002.hex",
+      "provenance": {
+        "kind": "synthetic_verification_only",
+        "case": "tone_dc"
+      }
+    },
+    {
+      "frame_id": 3,
+      "samples_hex": "fixture_003.hex",
+      "provenance": {
+        "kind": "synthetic_verification_only",
+        "case": "alternating_extrema"
+      }
+    },
+    {
+      "frame_id": 4,
+      "samples_hex": "fixture_004.hex",
+      "provenance": {
+        "kind": "synthetic_verification_only",
+        "case": "two_tones"
+      }
+    }
+  ]
+}

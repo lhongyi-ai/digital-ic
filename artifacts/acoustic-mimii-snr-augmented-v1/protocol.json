@@ -1,0 +1,14 @@
+{
+  "plan_sha256": "d569ade55eaa8100260666c6372644b8d60cc22465444091ae9e19e1253b9b3a",
+  "script_sha256": "55cdb1e99314d3114b111da01c44bf96eb1e0742fcd4423bcebb2e512c4b71d6",
+  "feature": "existing 512-bin log spectrum, subtract per-record mean",
+  "models": [
+    "linear_1",
+    "trees"
+  ],
+  "additional_fit": "64 paired +6 dB records per source machine only",
+  "threshold": "unchanged source-machine normal 0 dB calibration rule",
+  "evaluation": "unchanged 0 dB whole-machine held-out development recordings",
+  "final_test_opened": false,
+  "gate": "recall > .90, FPR < .05, AUC >= .90 on all three folds"
+}

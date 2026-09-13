@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-09-07T18:17:56" hostname="MacBook-Pro-3.local" package="quant" id="0" name="functions_cover" tests="25" errors="0" failures="0" time="0" skipped="12">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="functions_cover" name="build execution" time="0">
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:36.9-36.64" time="0" type="ASSERT" location="quant_harness.sv:36.9-36.64" id="_witness_.check_assert_quant_harness_sv_36_167">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:37.27-37.52" time="0" type="ASSERT" location="quant_harness.sv:37.27-37.52" id="_witness_.check_assert_quant_harness_sv_37_170">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:38.33-38.59" time="0" type="ASSERT" location="quant_harness.sv:38.33-38.59" id="_witness_.check_assert_quant_harness_sv_38_173">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:39.14-39.49" time="0" type="ASSERT" location="quant_harness.sv:39.14-39.49" id="_witness_.check_assert_quant_harness_sv_39_175">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:40.9-40.56" time="0" type="ASSERT" location="quant_harness.sv:40.9-40.56" id="_witness_.check_assert_quant_harness_sv_40_177">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:41.28-41.54" time="0" type="ASSERT" location="quant_harness.sv:41.28-41.54" id="_witness_.check_assert_quant_harness_sv_41_182">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:42.34-42.61" time="0" type="ASSERT" location="quant_harness.sv:42.34-42.61" id="_witness_.check_assert_quant_harness_sv_42_185">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:43.14-43.49" time="0" type="ASSERT" location="quant_harness.sv:43.14-43.49" id="_witness_.check_assert_quant_harness_sv_43_187">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:44.34-44.63" time="0" type="ASSERT" location="quant_harness.sv:44.34-44.63" id="_witness_.check_assert_quant_harness_sv_44_190">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:45.41-45.72" time="0" type="ASSERT" location="quant_harness.sv:45.41-45.72" id="_witness_.check_assert_quant_harness_sv_45_193">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:46.14-46.56" time="0" type="ASSERT" location="quant_harness.sv:46.14-46.56" id="_witness_.check_assert_quant_harness_sv_46_195">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property ASSERT in quant_functions_harness at quant_harness.sv:47.9-47.40" time="0" type="ASSERT" location="quant_harness.sv:47.9-47.40" id="_witness_.check_assert_quant_harness_sv_47_197">
+<skipped />
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:49.9-49.57" time="0" type="COVER" location="quant_harness.sv:49.9-49.57" id="_witness_.check_cover_quant_harness_sv_49_199" tracefile="engine_0/trace11.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:50.9-50.56" time="0" type="COVER" location="quant_harness.sv:50.9-50.56" id="_witness_.check_cover_quant_harness_sv_50_205" tracefile="engine_0/trace4.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:51.9-51.59" time="0" type="COVER" location="quant_harness.sv:51.9-51.59" id="_witness_.check_cover_quant_harness_sv_51_211" tracefile="engine_0/trace10.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:52.9-52.58" time="0" type="COVER" location="quant_harness.sv:52.9-52.58" id="_witness_.check_cover_quant_harness_sv_52_217" tracefile="engine_0/trace7.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:53.9-53.75" time="0" type="COVER" location="quant_harness.sv:53.9-53.75" id="_witness_.check_cover_quant_harness_sv_53_223" tracefile="engine_0/trace9.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:54.9-54.71" time="0" type="COVER" location="quant_harness.sv:54.9-54.71" id="_witness_.check_cover_quant_harness_sv_54_229" tracefile="engine_0/trace8.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:55.9-55.50" time="0" type="COVER" location="quant_harness.sv:55.9-55.50" id="_witness_.check_cover_quant_harness_sv_55_235" tracefile="engine_0/trace6.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:56.9-56.52" time="0" type="COVER" location="quant_harness.sv:56.9-56.52" id="_witness_.check_cover_quant_harness_sv_56_239" tracefile="engine_0/trace5.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:57.9-57.52" time="0" type="COVER" location="quant_harness.sv:57.9-57.52" id="_witness_.check_cover_quant_harness_sv_57_243" tracefile="engine_0/trace3.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:58.9-58.54" time="0" type="COVER" location="quant_harness.sv:58.9-58.54" id="_witness_.check_cover_quant_harness_sv_58_247" tracefile="engine_0/trace1.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:59.9-59.51" time="0" type="COVER" location="quant_harness.sv:59.9-59.51" id="_witness_.check_cover_quant_harness_sv_59_251" tracefile="engine_0/trace2.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:60.9-60.74" time="0" type="COVER" location="quant_harness.sv:60.9-60.74" id="_witness_.check_cover_quant_harness_sv_60_255" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="functions_cover" name="Property COVER in quant_functions_harness at quant_harness.sv:61.9-61.78" time="0" type="COVER" location="quant_harness.sv:61.9-61.78" id="_witness_.check_cover_quant_harness_sv_61_259" tracefile="engine_0/trace3.vcd">
+</testcase>
+<system-out>SBY 18:17:55 [./build/quantization_formal/functions_cover] Removing directory './build/quantization_formal/functions_cover'.
+SBY 18:17:55 [./build/quantization_formal/functions_cover] Copy './formal/../build/quantization_formal/generated/quant_extract.sv' to './build/quantization_formal/functions_cover/src/quant_extract.sv'.
+SBY 18:17:55 [./build/quantization_formal/functions_cover] Copy './formal/quant_harness.sv' to './build/quantization_formal/functions_cover/src/quant_harness.sv'.
+SBY 18:17:55 [./build/quantization_formal/functions_cover] engine_0: smtbmc bitwuzla
+SBY 18:17:55 [./build/quantization_formal/functions_cover] base: starting process &quot;cd ./build/quantization_formal/functions_cover/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:17:55 [./build/quantization_formal/functions_cover] base: finished (returncode=0)
+SBY 18:17:55 [./build/quantization_formal/functions_cover] prep: starting process &quot;cd ./build/quantization_formal/functions_cover/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:17:55 [./build/quantization_formal/functions_cover] prep: finished (returncode=0)
+SBY 18:17:55 [./build/quantization_formal/functions_cover] smt2: starting process &quot;cd ./build/quantization_formal/functions_cover/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 18:17:56 [./build/quantization_formal/functions_cover] smt2: finished (returncode=0)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: starting process &quot;cd ./build/quantization_formal/functions_cover; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 2  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:60.9-60.74 (_witness_.check_cover_quant_harness_sv_60_255)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:58.9-58.54 (_witness_.check_cover_quant_harness_sv_58_247)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:59.9-59.51 (_witness_.check_cover_quant_harness_sv_59_251)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:57.9-57.52 (_witness_.check_cover_quant_harness_sv_57_243)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:61.9-61.78 (_witness_.check_cover_quant_harness_sv_61_259)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:50.9-50.56 (_witness_.check_cover_quant_harness_sv_50_205)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:56.9-56.52 (_witness_.check_cover_quant_harness_sv_56_239)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace5.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace5.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace5.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:55.9-55.50 (_witness_.check_cover_quant_harness_sv_55_235)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace6.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace6_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace6.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace6.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:52.9-52.58 (_witness_.check_cover_quant_harness_sv_52_217)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace7.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace7_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace7.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace7.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:54.9-54.71 (_witness_.check_cover_quant_harness_sv_54_229)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace8.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace8_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace8.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace8.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:53.9-53.75 (_witness_.check_cover_quant_harness_sv_53_223)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace9.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace9_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace9.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace9.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:51.9-51.59 (_witness_.check_cover_quant_harness_sv_51_211)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace10.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace10_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace10.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace10.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Reached cover statement in step 0 at quant_functions_harness: quant_harness.sv:49.9-49.57 (_witness_.check_cover_quant_harness_sv_49_199)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace11.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace11_tb.v
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace11.smtc
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace11.yw
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: ##   0:00:00  Status: passed
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: finished (returncode=0)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] engine_0: Status returned by engine: pass
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: cover trace: ./build/quantization_formal/functions_cover/engine_0/trace0.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary:   reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_60_255 at quant_harness.sv:60.9-60.74
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: cover trace: ./build/quantization_formal/functions_cover/engine_0/trace1.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary:   reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_58_247 at quant_harness.sv:58.9-58.54
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: cover trace: ./build/quantization_formal/functions_cover/engine_0/trace10.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary:   reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_51_211 at quant_harness.sv:51.9-51.59
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: cover trace: ./build/quantization_formal/functions_cover/engine_0/trace11.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary:   reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_49_199 at quant_harness.sv:49.9-49.57
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: cover trace: ./build/quantization_formal/functions_cover/engine_0/trace2.vcd
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary:   reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_59_251 at quant_harness.sv:59.9-59.51
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: and 7 further traces
+SBY 18:17:56 [./build/quantization_formal/functions_cover] summary: see ./build/quantization_formal/functions_cover/PASS for a complete summary
+SBY 18:17:56 [./build/quantization_formal/functions_cover] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

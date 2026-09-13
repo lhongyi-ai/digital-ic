@@ -1,0 +1,17 @@
+{
+  "top": "sensor_spectrum",
+  "cells": {
+    "SB_LUT4": 1234,
+    "SB_DFFESR": 357,
+    "SB_CARRY": 540,
+    "$scopeinfo": 3,
+    "SB_DFF": 76,
+    "SB_DFFSR": 9,
+    "SB_RAM40_4K": 9,
+    "SB_DFFE": 58,
+    "SB_MAC16": 1
+  },
+  "standalone_synthesis_only": true,
+  "integrated_sensor_fit_proven": false,
+  "physical_hardware_tested": false
+}

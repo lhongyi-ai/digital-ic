@@ -1,0 +1,25 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\clk"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_628"], "width": 16, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_630"], "width": 16, "offset": 0, "init_only": false},
+    {"path": ["\\in_data"], "width": 16, "offset": 0, "init_only": false},
+    {"path": ["\\in_valid"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\out_ready"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\rst"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\mem", "\\[0]"], "width": 16, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\occupancy"], "width": 1, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "000000000000000001000000000000000000000000000000000000000000000000000"},
+    {"bits": "0010000000000000000000000000000000000000000000000000"},
+    {"bits": "0100000000000000000000000000000000000000000000000000"},
+    {"bits": "0110000000000000000000000000000000000000000000000000"},
+    {"bits": "0000000000000000000000000000000000000000000000000000"}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "time_utc": "2026-09-12T08:13:34.634180+00:00",
+  "trace_sha256": "017e512b556b9ff817e6f1a7ff636aab8f5a8a44033113fe6a87de4388ad778a",
+  "docs_sha256": {
+    "docs/known-recording-walkthrough.md": "9aa56ccfc90b3db6bcca0561e59e3a09331557a7ffef9b03246bf7427f960d33",
+    "docs/known-interview-pack.md": "3a351b241e1609e59c6d756c1b17bae5537350742ba82405dd05fab64093487e"
+  },
+  "numerical_checks": {
+    "frozen_inputs": true,
+    "development_record": true,
+    "saved_rtl_vector_equal": true,
+    "original_board_log_equal": true,
+    "scalar_checks": true
+  },
+  "browser_checks": {
+    "normal_audio_play_pause": true,
+    "fault_audio_play_pause": true,
+    "audio_duration_seconds": [
+      9.984,
+      9.984
+    ],
+    "all_three_figures_loaded": true,
+    "numeric_selector_bins_checked": [
+      1,
+      5,
+      512
+    ],
+    "console_errors": []
+  },
+  "scope": "Teaching artifacts and browser checks only; original model/RTL/board evidence reused."
+}

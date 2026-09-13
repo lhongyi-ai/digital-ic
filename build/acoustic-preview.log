@@ -1,0 +1,8 @@
+jedec: iceprog -d i:0x0403:0x6014:0 -t
+configuration: iceprog -d i:0x0403:0x6014:0 -i 4 -o 0 './measurements/2026-09-11-acoustic/l1-preview/board.bin'
+input: iceprog -d i:0x0403:0x6014:0 -i 4 -o 262144 './measurements/2026-09-11-acoustic/l1-preview/replay.bin'
+clear_log_and_start: iceprog -d i:0x0403:0x6014:0 -i 4 -o 3145728 './measurements/2026-09-11-acoustic/l1-preview/erased-log.bin'
+read_log_1: iceprog -d i:0x0403:0x6014:0 -o 3145728 -R 131072 './measurements/2026-09-11-acoustic/l1-preview/read-log-01.bin'
+read_log_2: iceprog -d i:0x0403:0x6014:0 -o 3145728 -R 131072 './measurements/2026-09-11-acoustic/l1-preview/read-log-02.bin'
+read_log_3: iceprog -d i:0x0403:0x6014:0 -o 3145728 -R 131072 './measurements/2026-09-11-acoustic/l1-preview/read-log-03.bin'
+Wait after clear: 7 seconds. Actual clock frequency remains unmeasured.

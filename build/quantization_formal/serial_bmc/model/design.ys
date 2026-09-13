@@ -1,0 +1,8 @@
+# running in ./build/quantization_formal/serial_bmc/src/
+read -formal -sv quant_extract.sv quant_harness.sv
+prep -top quant_serial_harness
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

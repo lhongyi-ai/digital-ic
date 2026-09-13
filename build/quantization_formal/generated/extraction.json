@@ -1,0 +1,122 @@
+{
+  "source": "rtl/core/vibration_core.sv",
+  "source_sha256": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+  "generated_sha256": "e99dad6f3d3f3e24b78381d64f14cee1b1b24011ad6ba0e840717b92fb3d1472",
+  "snippets": {
+    "rne": {
+      "source_start_line": 138,
+      "source_end_line": 152,
+      "sha256": "8765b4733934872f3d626783e26627ae3efd5a15a7f55121345a6e382ae4879b",
+      "text": "    function automatic signed [39:0] rne;\n        input signed [39:0] value;\n        input integer shift;\n        reg signed [39:0] quotient;\n        reg [39:0] remainder, halfway;\n        begin\n            if (shift == 0) rne = value;\n            else begin\n                quotient = value >>> shift;\n                remainder = value & ((40'd1 << shift)-1);\n                halfway = 40'd1 << (shift-1);\n                rne = quotient + (((remainder > halfway) || ((remainder == halfway) && quotient[0])) ? 40'sd1 : 40'sd0);\n            end\n        end\n    endfunction"
+    },
+    "sat12": {
+      "source_start_line": 153,
+      "source_end_line": 160,
+      "sha256": "32acf8da245477b1a0f9f83909a71ec6e295764df94ca5be6d70ced064868149",
+      "text": "    function automatic signed [15:0] sat12;\n        input signed [39:0] value;\n        begin\n            if (value > 2047) sat12 = 16'sd2047;\n            else if (value < -2048) sat12 = -16'sd2048;\n            else sat12 = value[15:0];\n        end\n    endfunction"
+    },
+    "sat16": {
+      "source_start_line": 161,
+      "source_end_line": 168,
+      "sha256": "f7b85897ae8cd626208c9e99add9255d6561a635719834f252a94a2fa78ff23d",
+      "text": "    function automatic signed [15:0] sat16;\n        input signed [39:0] value;\n        begin\n            if (value > 32767) sat16 = 16'sd32767;\n            else if (value < -32768) sat16 = -16'sd32768;\n            else sat16 = value[15:0];\n        end\n    endfunction"
+    },
+    "relu_quant": {
+      "source_start_line": 169,
+      "source_end_line": 178,
+      "sha256": "8b7a487e4f6e2ca3aadaa1d42e186c4b941d6e911f48953c4844dcd389963a71",
+      "text": "    function automatic [7:0] relu_quant;\n        input signed [39:0] value;\n        reg signed [39:0] rounded;\n        begin\n            rounded = rne(value, HIDDEN_SHIFT);\n            if (rounded <= 0) relu_quant = 0;\n            else if (rounded > 127) relu_quant = 127;\n            else relu_quant = rounded[7:0];\n        end\n    endfunction"
+    },
+    "state_encoding": {
+      "source_start_line": 58,
+      "source_end_line": 63,
+      "sha256": "24cc569312472e7155619ae3a568dca9463d7699c1ebe1b8a648d6c100bff9dd",
+      "text": "    localparam [4:0] IDLE=0, PRE_MEAN=1, PRE_READ=2, PRE_MUL=3,\n        PRE_STORE=4, DFT_INIT=5, DFT_READ=6, DFT_MUL=7, DFT_ACC=8,\n        DFT_STORE=9, POWER_RE_MUL=10, POWER_RE_ADD=11,\n        POWER_IM_MUL=12, POWER_IM_ADD=13, POWER_Q_INIT=14,\n        POWER_Q_SHIFT=15, POWER_QUANT=16, NN_INIT=17, NN_READ=18,\n        NN_MUL=19, NN_ACC=20, NN_STORE=21, FINISH=22, HOLD=23;"
+    },
+    "serial_case_arms": {
+      "source_start_line": 364,
+      "source_end_line": 384,
+      "sha256": "5539b16b12da38a37f3b61d26c991a04a4dc7baeee9e6e2d9868190dc2113d16",
+      "text": "                POWER_Q_INIT: begin\n                    quant_work<=power_sum; quant_remaining<=feature_shifts[feature_index];\n                    quant_guard<=0; quant_sticky<=0;\n                    if (feature_shifts[feature_index] == 0) state<=POWER_QUANT;\n                    else if (feature_shifts[feature_index] > 33) begin quant_work<=0; state<=POWER_QUANT; end\n                    else state<=POWER_Q_SHIFT;\n                end\n                POWER_Q_SHIFT: begin\n                    quant_sticky<=quant_sticky | quant_guard;\n                    quant_guard<=quant_work[0];\n                    quant_work<={1'b0,quant_work[32:1]};\n                    quant_remaining<=quant_remaining-1;\n                    if (quant_remaining == 1) state<=POWER_QUANT;\n                end\n                POWER_QUANT: begin\n                    features[feature_index]<=quant_result;\n                    dbg_valid<=1; dbg_kind<=5; dbg_index<={12'd0,feature_index}; dbg_value<=$signed({32'd0,quant_result});\n                    if (feature_index == 15) begin nn_layer<=0; nn_group<=0; state<=NN_INIT; end\n                    else begin feature_index<=feature_index+1; power_index<=power_index+1; state<=POWER_RE_MUL; end\n                end\n"
+    },
+    "state": {
+      "source_start_line": 64,
+      "source_end_line": 64,
+      "sha256": "27fabc0ad43d3c48ea5fdd17fc6bbdc655e0429ead229de3ff07494211d671bf",
+      "text": "    reg [4:0] state;"
+    },
+    "feature_shifts": {
+      "source_start_line": 70,
+      "source_end_line": 70,
+      "sha256": "fb57a5d015d45b51a1e3b4b9b6deb62417614336fd61efa418dc68da4c2aee2a",
+      "text": "    reg [7:0] feature_shifts [0:15];"
+    },
+    "features": {
+      "source_start_line": 104,
+      "source_end_line": 104,
+      "sha256": "f91590a1f4ffad7f57153f8556d941de5480895f5c71b101473af5247dd78b14",
+      "text": "    reg [7:0] features [0:15], hidden [0:15];"
+    },
+    "feature_index": {
+      "source_start_line": 105,
+      "source_end_line": 105,
+      "sha256": "5e2af5553bb3aaa484ad41bdad94cfff41a48314773ec72cf7c6a6bb7dd7e245",
+      "text": "    reg [3:0] feature_index;"
+    },
+    "power_index": {
+      "source_start_line": 106,
+      "source_end_line": 106,
+      "sha256": "73c6ad8e54f3db7210a98cfebe684dfbbd15b561b954c439f094463f14942bfa",
+      "text": "    reg [BI_W-1:0] power_index;"
+    },
+    "quant_storage": {
+      "source_start_line": 111,
+      "source_end_line": 111,
+      "sha256": "5150d3c813c07fc7f29883d09f626a3fa95e7f5ee0d5c9497d4aeab40fe56402",
+      "text": "    reg [32:0] power_sum, quant_work;"
+    },
+    "quant_remaining": {
+      "source_start_line": 112,
+      "source_end_line": 112,
+      "sha256": "b8680b9d097eb24980980ced0473749a08da4f15246a61e5d63965a1407d1622",
+      "text": "    reg [7:0] quant_remaining;"
+    },
+    "guard_sticky": {
+      "source_start_line": 113,
+      "source_end_line": 113,
+      "sha256": "07c3d7b6c34e87eb936a16c39232f1673936be8bd749fa498e05d5907718ffce",
+      "text": "    reg quant_guard, quant_sticky;"
+    },
+    "nn_layer": {
+      "source_start_line": 116,
+      "source_end_line": 116,
+      "sha256": "6e1e1a444d1d1611e7b5398abff95a5873561a06ab575015e4d7da2443fa6c28",
+      "text": "    reg nn_layer;"
+    },
+    "nn_group": {
+      "source_start_line": 117,
+      "source_end_line": 117,
+      "sha256": "345f76711fd1155fd7c305622bfd7c2bd8348263890cd40efae01d0e4c487ccb",
+      "text": "    reg [3:0] nn_group;"
+    },
+    "quant_rounded": {
+      "source_start_line": 114,
+      "source_end_line": 114,
+      "sha256": "b98b922408cab4d209b231d6d05e6b1ac1a67f9d8b89513c23fe891146589bdf",
+      "text": "    wire [7:0] quant_rounded = {1'b0,quant_work[6:0]} + {7'd0,(quant_guard && (quant_sticky || quant_work[0]))};"
+    },
+    "quant_result": {
+      "source_start_line": 115,
+      "source_end_line": 115,
+      "sha256": "7adcbbd0e64495d29516fb3c720a0a550f4ee087489d05537cd0b0729d8d0925",
+      "text": "    wire [7:0] quant_result = ((|quant_work[32:7]) || quant_rounded[7]) ? 8'd127 : quant_rounded;"
+    }
+  },
+  "quantizer_reset_assignments": [
+    "quant_work<=0;",
+    "quant_remaining<=0;",
+    "quant_guard<=0;",
+    "quant_sticky<=0;"
+  ],
+  "cut": "Only arithmetic functions and feature requantization; no frontend, NN accumulation, ROM scheduling or full-core proof"
+}

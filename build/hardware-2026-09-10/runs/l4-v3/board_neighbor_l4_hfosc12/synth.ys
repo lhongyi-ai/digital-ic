@@ -1,0 +1,4 @@
+read_verilog -defer -sv -DICE40 rtl/core/vib_coeff_rom.sv rtl/core/vibration_core.sv rtl/core/sync_fifo.sv rtl/platform/spram16k.sv rtl/io/spi_master.sv rtl/io/flash_stream.sv rtl/io/replay_source.sv rtl/upduino_replay.sv;
+chparam -set LANES 4 -set BANDS 3 -set MODEL_DIR "./artifacts/model_neighbor" -set HIDDEN_SHIFT 8 -set INTERNAL_OSC 1 -set MODEL_HASH 256'h17a17f1d0e6645f5cb8ae27502430dbeb91f1c775e1315399072904afdcdab12 upduino_replay;
+synth_ice40 -dsp -top upduino_replay -json "./build/hardware-2026-09-10/runs/l4-v3/board_neighbor_l4_hfosc12/netlist.json";
+stat

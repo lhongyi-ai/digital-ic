@@ -1,0 +1,10 @@
+{
+  "normal": {"status":"passed","cycles":1423999,"generated_samples":1024,"accepted_samples":1024,"dropped_samples":0,"output_frames":1,"protocol_errors":0,"max_fifo_occupancy":1,"processing_cycles":28094,"wall_seconds":0.078988},
+  "overload_and_recovery": {"status":"passed","cycles":4504191,"generated_samples":12288,"accepted_samples":8173,"dropped_samples":4115,"output_frames":6,"protocol_errors":4,"max_fifo_occupancy":4,"processing_cycles":28094,"wall_seconds":0.251136},
+  "normal_timing_cycles": {"first_sample_to_result_min":1051098,"first_sample_to_result_max":1051098,"last_sample_to_result_min":28098,"last_sample_to_result_max":28098,"output_interval_min":0,"output_interval_max":0},
+  "overload_timing_cycles": {"first_sample_to_result_min":29121,"first_sample_to_result_max":1051098,"last_sample_to_result_min":28098,"last_sample_to_result_max":79172,"output_interval_min":28097,"output_interval_max":1998974},
+  "timing_basis":"source sample-offer edge to output handshake; includes input FIFO transit",
+  "input_fifo_depth":4,
+  "normal_sample_period_cycles":1000,
+  "target_clock_hz":12000000
+}

@@ -1,0 +1,107 @@
+{
+  "archive": {
+    "id": "c8cd727c-83f4-4135-9202-1e9615cbe7aa",
+    "key": "6_dB_fan.zip",
+    "size": 10158673161,
+    "checksum": "md5:0890f7d3c2fd8448634e69ff1d66dd47",
+    "links": {
+      "self": "https://zenodo.org/api/records/3384388/files/6_dB_fan.zip/content"
+    }
+  },
+  "plan_sha256": "d5fee974de89de25fb4296c80648a959ae87f6e6c8c0506ec778118a0108fdfa",
+  "records": [
+    {
+      "name": "fan/id_00/normal/00000000.wav",
+      "offset": 745342834,
+      "compressed": 1809605,
+      "size": 2560080,
+      "crc": 3035093786,
+      "method": 8,
+      "machine": "00",
+      "label": 0,
+      "role": "fit",
+      "local": "data/mimii/pcm/normal_00000000.npy",
+      "existing_source": {
+        "path": "data/mimii/pcm/normal_00000000.npy",
+        "source_plan": "data/mimii/plan.json"
+      }
+    },
+    {
+      "name": "fan/id_00/abnormal/00000002.wav",
+      "offset": 3745163,
+      "compressed": 1858085,
+      "size": 2560080,
+      "crc": 992824901,
+      "method": 8,
+      "machine": "00",
+      "label": 1,
+      "role": "fit",
+      "local": "data/mimii/pcm/abnormal_00000002.npy",
+      "existing_source": {
+        "path": "data/mimii/pcm/abnormal_00000002.npy",
+        "source_plan": "data/mimii/plan.json"
+      }
+    },
+    {
+      "name": "fan/id_02/normal/00000008.wav",
+      "offset": 3285041526,
+      "compressed": 1927608,
+      "size": 2560080,
+      "crc": 3557599385,
+      "method": 8,
+      "machine": "02",
+      "label": 0,
+      "role": "fit",
+      "local": "data/mimii-external-id02/pcm/normal_00000008.npy",
+      "existing_source": {
+        "path": "data/mimii-external-id02/pcm/normal_00000008.npy",
+        "source_plan": "data/mimii-external-id02/plan.json"
+      }
+    },
+    {
+      "name": "fan/id_02/abnormal/00000002.wav",
+      "offset": 2593189087,
+      "compressed": 1824935,
+      "size": 2560080,
+      "crc": 182137638,
+      "method": 8,
+      "machine": "02",
+      "label": 1,
+      "role": "fit",
+      "local": "data/mimii-external-id02/pcm/abnormal_00000002.npy",
+      "existing_source": {
+        "path": "data/mimii-external-id02/pcm/abnormal_00000002.npy",
+        "source_plan": "data/mimii-external-id02/plan.json"
+      }
+    },
+    {
+      "name": "fan/id_04/normal/00000004.wav",
+      "offset": 5882348887,
+      "compressed": 1887328,
+      "size": 2560080,
+      "crc": 2674818297,
+      "method": 8,
+      "machine": "04",
+      "label": 0,
+      "role": "fit",
+      "local": "data/mimii-multimachine/pcm/04_normal_00000004.npy",
+      "existing_source": null
+    },
+    {
+      "name": "fan/id_04/abnormal/00000000.wav",
+      "offset": 5215582866,
+      "compressed": 1876942,
+      "size": 2560080,
+      "crc": 4092287336,
+      "method": 8,
+      "machine": "04",
+      "label": 1,
+      "role": "fit",
+      "local": "data/mimii-multimachine/pcm/04_abnormal_00000000.npy",
+      "existing_source": null
+    }
+  ],
+  "selection": "alphabetically first fit record per machine and label; no score selection",
+  "final_test_opened": false,
+  "source_sha256": "2b882b9ecda34b5bc05fb1f6f615f4e908b612a55330187f80c944b17710df6c"
+}

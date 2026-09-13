@@ -1,0 +1,285 @@
+{
+  "selected": {
+    "name": "uniform-linear-ae",
+    "kind": "autoencoder",
+    "auc": 0.6533333333333333,
+    "pauc_fpr_0_1_standardized": 0.5394736842105263,
+    "threshold": 2979.755769230767,
+    "fpr": 0.05,
+    "recall": 0.13333333333333333,
+    "confusion_matrix": [
+      [
+        38,
+        2
+      ],
+      [
+        26,
+        4
+      ]
+    ],
+    "record_count": 70,
+    "float_auc": 0.6516666666666667,
+    "float_to_int_auc_change": 0.0016666666666665941,
+    "window_threshold": 8722
+  },
+  "candidates": [
+    {
+      "name": "uniform-linear-centroid",
+      "kind": "centroid",
+      "auc": 0.6383333333333333,
+      "pauc_fpr_0_1_standardized": 0.6008771929824561,
+      "threshold": 0.39154139161109924,
+      "fpr": 0.05,
+      "recall": 0.26666666666666666,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          22,
+          8
+        ]
+      ],
+      "record_count": 70
+    },
+    {
+      "name": "uniform-linear-diagonal_mahalanobis",
+      "kind": "diagonal_mahalanobis",
+      "auc": 0.6408333333333334,
+      "pauc_fpr_0_1_standardized": 0.5657894736842105,
+      "threshold": 43.4365348815918,
+      "fpr": 0.05,
+      "recall": 0.2,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          24,
+          6
+        ]
+      ],
+      "record_count": 70
+    },
+    {
+      "name": "uniform-linear-ae",
+      "kind": "autoencoder",
+      "auc": 0.6533333333333333,
+      "pauc_fpr_0_1_standardized": 0.5394736842105263,
+      "threshold": 2979.755769230767,
+      "fpr": 0.05,
+      "recall": 0.13333333333333333,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          26,
+          4
+        ]
+      ],
+      "record_count": 70,
+      "float_auc": 0.6516666666666667,
+      "float_to_int_auc_change": 0.0016666666666665941,
+      "window_threshold": 8722
+    },
+    {
+      "name": "uniform-log4-centroid",
+      "kind": "centroid",
+      "auc": 0.4683333333333333,
+      "pauc_fpr_0_1_standardized": 0.4868421052631579,
+      "threshold": 0.11926966160535812,
+      "fpr": 0.05,
+      "recall": 0.03333333333333333,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "record_count": 70
+    },
+    {
+      "name": "uniform-log4-diagonal_mahalanobis",
+      "kind": "diagonal_mahalanobis",
+      "auc": 0.5291666666666667,
+      "pauc_fpr_0_1_standardized": 0.49122807017543857,
+      "threshold": 36.444984436035156,
+      "fpr": 0.05,
+      "recall": 0.03333333333333333,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "record_count": 70
+    },
+    {
+      "name": "uniform-log4-ae",
+      "kind": "autoencoder",
+      "auc": 0.5791666666666666,
+      "pauc_fpr_0_1_standardized": 0.5043859649122807,
+      "threshold": 617.1256410256409,
+      "fpr": 0.05,
+      "recall": 0.06666666666666667,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          28,
+          2
+        ]
+      ],
+      "record_count": 70,
+      "float_auc": 0.5816666666666667,
+      "float_to_int_auc_change": -0.0025000000000000577,
+      "window_threshold": 1015
+    },
+    {
+      "name": "log-linear-centroid",
+      "kind": "centroid",
+      "auc": 0.5566666666666666,
+      "pauc_fpr_0_1_standardized": 0.6710526315789473,
+      "threshold": 0.2739991545677185,
+      "fpr": 0.05,
+      "recall": 0.4,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          18,
+          12
+        ]
+      ],
+      "record_count": 70
+    },
+    {
+      "name": "log-linear-diagonal_mahalanobis",
+      "kind": "diagonal_mahalanobis",
+      "auc": 0.5616666666666666,
+      "pauc_fpr_0_1_standardized": 0.6710526315789473,
+      "threshold": 28.773988723754883,
+      "fpr": 0.05,
+      "recall": 0.4,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          18,
+          12
+        ]
+      ],
+      "record_count": 70
+    },
+    {
+      "name": "log-linear-ae",
+      "kind": "autoencoder",
+      "auc": 0.5549999999999999,
+      "pauc_fpr_0_1_standardized": 0.5175438596491229,
+      "threshold": 1911.0115384615353,
+      "fpr": 0.05,
+      "recall": 0.1,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          27,
+          3
+        ]
+      ],
+      "record_count": 70,
+      "float_auc": 0.5541666666666666,
+      "float_to_int_auc_change": 0.0008333333333333526,
+      "window_threshold": 9017
+    },
+    {
+      "name": "log-log4-centroid",
+      "kind": "centroid",
+      "auc": 0.5775,
+      "pauc_fpr_0_1_standardized": 0.5219298245614035,
+      "threshold": 0.06444162875413895,
+      "fpr": 0.05,
+      "recall": 0.1,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          27,
+          3
+        ]
+      ],
+      "record_count": 70
+    },
+    {
+      "name": "log-log4-diagonal_mahalanobis",
+      "kind": "diagonal_mahalanobis",
+      "auc": 0.615,
+      "pauc_fpr_0_1_standardized": 0.5701754385964912,
+      "threshold": 24.854772567749023,
+      "fpr": 0.05,
+      "recall": 0.16666666666666666,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          25,
+          5
+        ]
+      ],
+      "record_count": 70
+    },
+    {
+      "name": "log-log4-ae",
+      "kind": "autoencoder",
+      "auc": 0.595,
+      "pauc_fpr_0_1_standardized": 0.5833333333333334,
+      "threshold": 617.9782051282051,
+      "fpr": 0.05,
+      "recall": 0.26666666666666666,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          22,
+          8
+        ]
+      ],
+      "record_count": 70,
+      "float_auc": 0.5958333333333332,
+      "float_to_int_auc_change": -0.0008333333333332416,
+      "window_threshold": 1154
+    }
+  ],
+  "selection": "fixed candidates, normal-only training; labeled validation selects AE by AUC; test never used",
+  "scope": "single machine ID and SNR feasibility; not cross-machine or independent-session evidence",
+  "train_records": 120,
+  "validation_records": 70,
+  "feasibility_passed": false,
+  "baseline_comparison": "All distance baselines retained; AE selection does not claim superiority over a better baseline."
+}

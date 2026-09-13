@@ -1,0 +1,18 @@
+features 200/800
+features 400/800
+features 600/800
+features 800/800
+features 1000/800
+features 1200/800
+./.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+rbf 00 0.08 0.065 0.45594999999999997
+./.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+rbf 01 0.34 0.45 0.451
+./.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+rbf 02 0.06 0.065 0.49885000000000007
+trees 00 0.275 0.3 0.4344875
+trees 01 0.015 0.005 0.490275
+trees 02 0.0 0.01 0.53265

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites name="cocotb tests"><testsuite name="test_known_core" errors="0" failures="2" skipped="0" tests="2" time="0.043" timestamp="2026-09-11T21:10:35.139523+00:00" hostname="unknown76a3b32be0df.attlocal.net"><testcase classname="test_known_core" name="stages_and_backpressure" time="0.042"><failure message="assert 2 == 0&#10; +  where 2 = int(LogicArray('00000010', Range(7, 'downto', 0)))&#10; +    where LogicArray('00000010', Range(7, 'downto', 0)) = PackedObject(known_spectral_core.out_error).value&#10; +      where PackedObject(known_spectral_core.out_error) = HierarchyObject(known_spectral_core with definition known_spectral_core).out_error" type="AssertionError">Traceback (most recent call last):
+  File "./sim/test_known_core.py", line 72, in stages_and_backpressure
+    for k,r in enumerate(refs):await receive(d,r['score'],k*WINDOWS)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./sim/test_known_core.py", line 40, in receive
+    assert int(d.out_error.value)==0
+AssertionError: assert 2 == 0
+ +  where 2 = int(LogicArray('00000010', Range(7, 'downto', 0)))
+ +    where LogicArray('00000010', Range(7, 'downto', 0)) = PackedObject(known_spectral_core.out_error).value
+ +      where PackedObject(known_spectral_core.out_error) = HierarchyObject(known_spectral_core with definition known_spectral_core).out_error
+</failure><properties><property name="cocotb" value="True" /><property name="random_seed" value="1789161035" /><property name="file" value="./sim/test_known_core.py" /><property name="line" value="46" /><property name="sim_time_unit" value="ns" /><property name="sim_time_start" value="0.0" /><property name="sim_time_stop" value="8661.0" /><property name="sim_time_duration" value="8661.0" /><property name="sim_time_ratio" value="208605.59114075376" /><property name="attachment" value="./build/known-core/small-l4-r1/test.log" /></properties><system-out>[[ATTACHMENT|./build/known-core/small-l4-r1/test.log]]
+</system-out><system-err>Test failed with COCOTB_RANDOM_SEED=1789161035
+</system-err></testcase><testcase classname="test_known_core" name="reset_cancels_transactions" time="0.002"><failure message="assert 2 == 0&#10; +  where 2 = int(LogicArray('00000010', Range(7, 'downto', 0)))&#10; +    where LogicArray('00000010', Range(7, 'downto', 0)) = PackedObject(known_spectral_core.out_error).value&#10; +      where PackedObject(known_spectral_core.out_error) = HierarchyObject(known_spectral_core with definition known_spectral_core).out_error" type="AssertionError">Traceback (most recent call last):
+  File "./sim/test_known_core.py", line 89, in reset_cancels_transactions
+    t=cocotb.start_soon(send(d,x,200,False));await receive(d,ref['score'],200);await t
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./sim/test_known_core.py", line 40, in receive
+    assert int(d.out_error.value)==0
+AssertionError: assert 2 == 0
+ +  where 2 = int(LogicArray('00000010', Range(7, 'downto', 0)))
+ +    where LogicArray('00000010', Range(7, 'downto', 0)) = PackedObject(known_spectral_core.out_error).value
+ +      where PackedObject(known_spectral_core.out_error) = HierarchyObject(known_spectral_core with definition known_spectral_core).out_error
+</failure><properties><property name="cocotb" value="True" /><property name="random_seed" value="1789161035" /><property name="file" value="./sim/test_known_core.py" /><property name="line" value="78" /><property name="sim_time_unit" value="ns" /><property name="sim_time_start" value="8661.001" /><property name="sim_time_stop" value="19412.001" /><property name="sim_time_duration" value="10751.0" /><property name="sim_time_ratio" value="5909308.510369513" /><property name="attachment" value="./build/known-core/small-l4-r1/test.log" /></properties><system-out>[[ATTACHMENT|./build/known-core/small-l4-r1/test.log]]
+</system-out><system-err>Test failed with COCOTB_RANDOM_SEED=1789161035
+</system-err></testcase></testsuite></testsuites>

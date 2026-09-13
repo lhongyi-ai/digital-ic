@@ -1,0 +1,18 @@
+{
+  "model": "spectrum1024-trees",
+  "tp": 30,
+  "fn": 0,
+  "fp": 2,
+  "tn": 38,
+  "auc_pairwise": 1.0,
+  "requirements": {
+    "tp_at_least_27": true,
+    "fp_at_most_2": true,
+    "auc_at_least_0_90": true
+  },
+  "high_standard_passed": true,
+  "task": "supervised known-fault recognition",
+  "test_opened": false,
+  "receipt_sha256": "33eb99e34dd3f38550bbfbdd0d281d20109f4c885a0dd5476e9d246b81e2f2b7",
+  "verifier_sha256": "6cde98fa3bd136235ce182579174521c6cc212e14acf9739b6cbd05a02315ec6"
+}

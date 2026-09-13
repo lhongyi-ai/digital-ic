@@ -1,0 +1,1808 @@
+{
+  "status": "passed",
+  "generated_utc": "2026-09-08T01:21:36.995193+00:00",
+  "verilator_version": "Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)",
+  "seconds": 1.177220416997443,
+  "configurations": {
+    "l1_b1": {
+      "status": "passed",
+      "coverage_types": {
+        "branch": {
+          "hit_points": 101,
+          "total_points": 118,
+          "percent": 85.59322033898304
+        },
+        "expr": {
+          "hit_points": 135,
+          "total_points": 164,
+          "percent": 82.3170731707317
+        },
+        "line": {
+          "hit_points": 77,
+          "total_points": 87,
+          "percent": 88.50574712643679
+        },
+        "toggle": {
+          "hit_points": 3724,
+          "total_points": 5514,
+          "percent": 67.53717809212912
+        },
+        "fsm_state": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "fsm_arc": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "user": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        }
+      },
+      "per_file": {
+        "./rtl/core/vib_coeff_rom.sv": {
+          "branch": {
+            "hit_points": 20,
+            "total_points": 24,
+            "percent": 83.33333333333333
+          },
+          "expr": {
+            "hit_points": 20,
+            "total_points": 20,
+            "percent": 100.0
+          },
+          "line": {
+            "hit_points": 4,
+            "total_points": 4,
+            "percent": 100.0
+          },
+          "toggle": {
+            "hit_points": 246,
+            "total_points": 256,
+            "percent": 96.09375
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        },
+        "./rtl/core/vibration_core.sv": {
+          "branch": {
+            "hit_points": 81,
+            "total_points": 94,
+            "percent": 86.17021276595744
+          },
+          "expr": {
+            "hit_points": 115,
+            "total_points": 144,
+            "percent": 79.86111111111111
+          },
+          "line": {
+            "hit_points": 73,
+            "total_points": 83,
+            "percent": 87.95180722891567
+          },
+          "toggle": {
+            "hit_points": 3478,
+            "total_points": 5258,
+            "percent": 66.14682388740967
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        }
+      },
+      "sources": [
+        {
+          "path": "build/rtl_coverage/l1_b1/normal/coverage.dat",
+          "sha256": "63df78eee6422dab29ccee145e9d1120c3faa34498f39299958455d0083c2767"
+        },
+        {
+          "path": "build/rtl_coverage/l1_b1/dsp/coverage.dat",
+          "sha256": "42a540b13df4ecf610f9a8b0efe3c8b5b239f1ce56cb986c56088524db51a083"
+        }
+      ],
+      "reports": [
+        {
+          "report": "build/rtl_coverage/l1_b1/normal/regression.json",
+          "report_sha256": "b7778a9bcac07b9d899cd46945d8caf9a253f84e27bb7abbe8e71229b3770656",
+          "xml_sha256": "14529958cb377eacdcf0ecf287758f0c10b80d0c935f6fae337d15b2692cda6f",
+          "tests": {
+            "tests": 4,
+            "passed": 4,
+            "cases": [
+              "bit_exact_continuous_frames",
+              "malformed_frames_and_reset",
+              "full_buffers_during_output_stall",
+              "reset_cancels_each_processing_stage"
+            ]
+          },
+          "result": {
+            "n": 1024,
+            "lanes": 1,
+            "bands": 1,
+            "frames": 14,
+            "distinct_inputs": 14,
+            "debug_frames": 14,
+            "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+            "assertions_enabled": true,
+            "status": "passed",
+            "cycles": {
+              "cycles_pre": 3073,
+              "cycles_dft": 98368,
+              "cycles_power": 140,
+              "cycles_nn": 950,
+              "cycles_total": 102531
+            }
+          }
+        },
+        {
+          "report": "build/rtl_coverage/l1_b1/dsp/regression.json",
+          "report_sha256": "a592130c053eb5f4c34bfa2838287544362911061eed957a7b72d0a1bf7bedb1",
+          "xml_sha256": "db12ff7c0a298e1db4f0aa9c261f294f3c6c78cd73583534a994a5dd40fa1bfb",
+          "tests": {
+            "tests": 4,
+            "passed": 4,
+            "cases": [
+              "bit_exact_continuous_frames",
+              "malformed_frames_and_reset",
+              "full_buffers_during_output_stall",
+              "reset_cancels_each_processing_stage"
+            ]
+          },
+          "result": {
+            "n": 1024,
+            "lanes": 1,
+            "bands": 1,
+            "frames": 10,
+            "distinct_inputs": 10,
+            "debug_frames": 10,
+            "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+            "assertions_enabled": true,
+            "status": "passed",
+            "cycles": {
+              "cycles_pre": 3073,
+              "cycles_dft": 98368,
+              "cycles_power": 140,
+              "cycles_nn": 950,
+              "cycles_total": 102531
+            },
+            "suite": "additional_DSP_directed",
+            "cases": [
+              {
+                "name": "zero",
+                "input_clipped_samples": 0,
+                "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+              },
+              {
+                "name": "constant_negative_DC",
+                "input_clipped_samples": 0,
+                "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+              },
+              {
+                "name": "off_bin_phase_0.000000",
+                "input_clipped_samples": 0,
+                "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.0
+              },
+              {
+                "name": "off_bin_phase_1.570796",
+                "input_clipped_samples": 0,
+                "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 1.5707963267948966
+              },
+              {
+                "name": "off_bin_phase_2.300000",
+                "input_clipped_samples": 0,
+                "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 2.3
+              },
+              {
+                "name": "integer_bin_nonzero_phase",
+                "input_clipped_samples": 0,
+                "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+                "frequency_bins": [
+                  207
+                ],
+                "phase_radians": 1.0471975511965976
+              },
+              {
+                "name": "positive_clipped_sine",
+                "input_clipped_samples": 298,
+                "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": 18000,
+                "amplitude": 24000
+              },
+              {
+                "name": "negative_clipped_sine",
+                "input_clipped_samples": 295,
+                "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": -18000,
+                "amplitude": 24000
+              },
+              {
+                "name": "both_polarities_clipped_sine",
+                "input_clipped_samples": 537,
+                "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": 0,
+                "amplitude": 48000
+              },
+              {
+                "name": "off_bin_two_tone",
+                "input_clipped_samples": 0,
+                "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+                "frequency_bins": [
+                  207.25,
+                  327.625
+                ]
+              }
+            ],
+            "checked_intermediates": [
+              "mean",
+              "windowed",
+              "real",
+              "imag",
+              "powers",
+              "features",
+              "hidden",
+              "logits"
+            ],
+            "input_sha256": {
+              "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+              "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+              "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+              "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+              "artifacts/model/weights_l4_1.hex": "602669e2d96815c337c5d92dd94fb1660b8db078d694d1b8ac5c91da9a187288",
+              "artifacts/model/w1.hex": "26b17ac441ba57495f217960b1af28f0aba78685f4bee0601ea8f52039f3397d",
+              "artifacts/model/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+              "artifacts/model/weights_l4_0.hex": "96c16efec8cd66a8f5cd7e084267057ca4016db56377555708a54cc21571e79f",
+              "artifacts/model/b1.hex": "b13efe33d5cdb4f4c08875174a2f450db9626fd34ffe6094d4d6b2ed5391944f",
+              "artifacts/model/weights_l4_2.hex": "343ea649054b7baf7ba7f1038da412b3f392423fdfb6028118c132aa94eb41c8",
+              "artifacts/model/w2.hex": "776a3529d5d2b5915def0e2e58f33b3b9c1663686ef16e3c194eeff09a3bb366",
+              "artifacts/model/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+              "artifacts/model/weights_l4_3.hex": "d5372551d44a14c6f129759103152da00c73083ea6b714ced29433bbe8f692a9",
+              "artifacts/model/b2.hex": "b48d1ee7cd1665d75421e8d5b6cc1da4524334440649f1c4fdc03cc864f95870",
+              "artifacts/model/weights_l1_0.hex": "2c600fc9949d4c72db23f61043a7a70e01d2cd5d351ff44259e9347422423453",
+              "artifacts/model/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+              "artifacts/model/feature_shifts.hex": "61202c17ec0bfae973580147e1cc06618be8c6f711baff138bf94fb327806de4",
+              "artifacts/model/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+            }
+          }
+        }
+      ],
+      "threshold": "one hit per tool-generated point (or point-specific threshold if present)",
+      "excluded_points": 0,
+      "coverage_source_filters": [],
+      "per_instance_requested_at_compile_and_runtime": true,
+      "startup_and_reset_activity_included": true,
+      "merged_data_sha256": "cf575b4211cea1e7bbc7c6a11e436c9af4f33cfd30380f9acb9fcdbf2bd4be43",
+      "lcov_sha256": "28b8aad783ccb8906d36a77eca3c3001a25fee6e96a1460befab2c3ddb3efcf0",
+      "uncovered_points_sha256": "8bbb2969e537eae8f502a595aee851c418bcef8176f90e1a20fdabc85c60137b",
+      "lanes": 1,
+      "bands": 1,
+      "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588"
+    },
+    "l4_b1": {
+      "status": "passed",
+      "coverage_types": {
+        "branch": {
+          "hit_points": 134,
+          "total_points": 154,
+          "percent": 87.01298701298701
+        },
+        "expr": {
+          "hit_points": 164,
+          "total_points": 194,
+          "percent": 84.5360824742268
+        },
+        "line": {
+          "hit_points": 84,
+          "total_points": 93,
+          "percent": 90.3225806451613
+        },
+        "toggle": {
+          "hit_points": 4964,
+          "total_points": 6762,
+          "percent": 73.41023365868087
+        },
+        "fsm_state": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "fsm_arc": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "user": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        }
+      },
+      "per_file": {
+        "./rtl/core/vib_coeff_rom.sv": {
+          "branch": {
+            "hit_points": 50,
+            "total_points": 60,
+            "percent": 83.33333333333333
+          },
+          "expr": {
+            "hit_points": 50,
+            "total_points": 50,
+            "percent": 100.0
+          },
+          "line": {
+            "hit_points": 10,
+            "total_points": 10,
+            "percent": 100.0
+          },
+          "toggle": {
+            "hit_points": 624,
+            "total_points": 640,
+            "percent": 97.5
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        },
+        "./rtl/core/vibration_core.sv": {
+          "branch": {
+            "hit_points": 84,
+            "total_points": 94,
+            "percent": 89.36170212765957
+          },
+          "expr": {
+            "hit_points": 114,
+            "total_points": 144,
+            "percent": 79.16666666666667
+          },
+          "line": {
+            "hit_points": 74,
+            "total_points": 83,
+            "percent": 89.1566265060241
+          },
+          "toggle": {
+            "hit_points": 4340,
+            "total_points": 6122,
+            "percent": 70.89186540346292
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        }
+      },
+      "sources": [
+        {
+          "path": "build/rtl_coverage/l4_b1/normal/coverage.dat",
+          "sha256": "8f10dd5c419fa56266f914858b801156cdb2c08c43e26013a0a4abe679aa605b"
+        },
+        {
+          "path": "build/rtl_coverage/l4_b1/dsp/coverage.dat",
+          "sha256": "33a2f781bd7b8b9350697aa0476e864a5c3d331ee476575771a7a7e7020e7bc0"
+        }
+      ],
+      "reports": [
+        {
+          "report": "build/rtl_coverage/l4_b1/normal/regression.json",
+          "report_sha256": "072481ac80791d1a8ff92aa7dad1fd823374387c13573dd73b13cd8d7115daaf",
+          "xml_sha256": "6dd87d41b382eae28cb64c7295563e493a830cda2352d3087bf14a627a36c205",
+          "tests": {
+            "tests": 4,
+            "passed": 4,
+            "cases": [
+              "bit_exact_continuous_frames",
+              "malformed_frames_and_reset",
+              "full_buffers_during_output_stall",
+              "reset_cancels_each_processing_stage"
+            ]
+          },
+          "result": {
+            "n": 1024,
+            "lanes": 4,
+            "bands": 1,
+            "frames": 14,
+            "distinct_inputs": 14,
+            "debug_frames": 14,
+            "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+            "assertions_enabled": true,
+            "status": "passed",
+            "cycles": {
+              "cycles_pre": 3073,
+              "cycles_dft": 24616,
+              "cycles_power": 140,
+              "cycles_nn": 265,
+              "cycles_total": 28094
+            }
+          }
+        },
+        {
+          "report": "build/rtl_coverage/l4_b1/dsp/regression.json",
+          "report_sha256": "791f42ad6c16acbf478125c00ddad10b450e5577a5e560c357b4555084ce7731",
+          "xml_sha256": "097f1c37e5b1b5dcf8b40c9de3d913dc5a5f4332a451016e526f186a170204f4",
+          "tests": {
+            "tests": 4,
+            "passed": 4,
+            "cases": [
+              "bit_exact_continuous_frames",
+              "malformed_frames_and_reset",
+              "full_buffers_during_output_stall",
+              "reset_cancels_each_processing_stage"
+            ]
+          },
+          "result": {
+            "n": 1024,
+            "lanes": 4,
+            "bands": 1,
+            "frames": 10,
+            "distinct_inputs": 10,
+            "debug_frames": 10,
+            "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+            "assertions_enabled": true,
+            "status": "passed",
+            "cycles": {
+              "cycles_pre": 3073,
+              "cycles_dft": 24616,
+              "cycles_power": 140,
+              "cycles_nn": 265,
+              "cycles_total": 28094
+            },
+            "suite": "additional_DSP_directed",
+            "cases": [
+              {
+                "name": "zero",
+                "input_clipped_samples": 0,
+                "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+              },
+              {
+                "name": "constant_negative_DC",
+                "input_clipped_samples": 0,
+                "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+              },
+              {
+                "name": "off_bin_phase_0.000000",
+                "input_clipped_samples": 0,
+                "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.0
+              },
+              {
+                "name": "off_bin_phase_1.570796",
+                "input_clipped_samples": 0,
+                "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 1.5707963267948966
+              },
+              {
+                "name": "off_bin_phase_2.300000",
+                "input_clipped_samples": 0,
+                "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 2.3
+              },
+              {
+                "name": "integer_bin_nonzero_phase",
+                "input_clipped_samples": 0,
+                "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+                "frequency_bins": [
+                  207
+                ],
+                "phase_radians": 1.0471975511965976
+              },
+              {
+                "name": "positive_clipped_sine",
+                "input_clipped_samples": 298,
+                "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": 18000,
+                "amplitude": 24000
+              },
+              {
+                "name": "negative_clipped_sine",
+                "input_clipped_samples": 295,
+                "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": -18000,
+                "amplitude": 24000
+              },
+              {
+                "name": "both_polarities_clipped_sine",
+                "input_clipped_samples": 537,
+                "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": 0,
+                "amplitude": 48000
+              },
+              {
+                "name": "off_bin_two_tone",
+                "input_clipped_samples": 0,
+                "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+                "frequency_bins": [
+                  207.25,
+                  327.625
+                ]
+              }
+            ],
+            "checked_intermediates": [
+              "mean",
+              "windowed",
+              "real",
+              "imag",
+              "powers",
+              "features",
+              "hidden",
+              "logits"
+            ],
+            "input_sha256": {
+              "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+              "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+              "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+              "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+              "artifacts/model/weights_l4_1.hex": "602669e2d96815c337c5d92dd94fb1660b8db078d694d1b8ac5c91da9a187288",
+              "artifacts/model/w1.hex": "26b17ac441ba57495f217960b1af28f0aba78685f4bee0601ea8f52039f3397d",
+              "artifacts/model/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+              "artifacts/model/weights_l4_0.hex": "96c16efec8cd66a8f5cd7e084267057ca4016db56377555708a54cc21571e79f",
+              "artifacts/model/b1.hex": "b13efe33d5cdb4f4c08875174a2f450db9626fd34ffe6094d4d6b2ed5391944f",
+              "artifacts/model/weights_l4_2.hex": "343ea649054b7baf7ba7f1038da412b3f392423fdfb6028118c132aa94eb41c8",
+              "artifacts/model/w2.hex": "776a3529d5d2b5915def0e2e58f33b3b9c1663686ef16e3c194eeff09a3bb366",
+              "artifacts/model/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+              "artifacts/model/weights_l4_3.hex": "d5372551d44a14c6f129759103152da00c73083ea6b714ced29433bbe8f692a9",
+              "artifacts/model/b2.hex": "b48d1ee7cd1665d75421e8d5b6cc1da4524334440649f1c4fdc03cc864f95870",
+              "artifacts/model/weights_l1_0.hex": "2c600fc9949d4c72db23f61043a7a70e01d2cd5d351ff44259e9347422423453",
+              "artifacts/model/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+              "artifacts/model/feature_shifts.hex": "61202c17ec0bfae973580147e1cc06618be8c6f711baff138bf94fb327806de4",
+              "artifacts/model/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+            }
+          }
+        }
+      ],
+      "threshold": "one hit per tool-generated point (or point-specific threshold if present)",
+      "excluded_points": 0,
+      "coverage_source_filters": [],
+      "per_instance_requested_at_compile_and_runtime": true,
+      "startup_and_reset_activity_included": true,
+      "merged_data_sha256": "6faef87da5c7be53831e8efcbe1aea3deb9ee1606e844d047eac79a75ea98e73",
+      "lcov_sha256": "bf3f09d640e207100c2fd04ebc1a9e38e4bf60b61fbc73ebfb64194390c79ba8",
+      "uncovered_points_sha256": "fff6bffaec4a7fec9b266a66acafe0df39ad3db9df30bed00de03e4522f220e5",
+      "lanes": 4,
+      "bands": 1,
+      "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588"
+    },
+    "l1_b3": {
+      "status": "passed",
+      "coverage_types": {
+        "branch": {
+          "hit_points": 102,
+          "total_points": 118,
+          "percent": 86.44067796610169
+        },
+        "expr": {
+          "hit_points": 136,
+          "total_points": 164,
+          "percent": 82.92682926829268
+        },
+        "line": {
+          "hit_points": 76,
+          "total_points": 87,
+          "percent": 87.35632183908046
+        },
+        "toggle": {
+          "hit_points": 2753,
+          "total_points": 4002,
+          "percent": 68.79060469765118
+        },
+        "fsm_state": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "fsm_arc": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "user": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        }
+      },
+      "per_file": {
+        "./rtl/core/vib_coeff_rom.sv": {
+          "branch": {
+            "hit_points": 20,
+            "total_points": 24,
+            "percent": 83.33333333333333
+          },
+          "expr": {
+            "hit_points": 20,
+            "total_points": 20,
+            "percent": 100.0
+          },
+          "line": {
+            "hit_points": 4,
+            "total_points": 4,
+            "percent": 100.0
+          },
+          "toggle": {
+            "hit_points": 246,
+            "total_points": 256,
+            "percent": 96.09375
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        },
+        "./rtl/core/vibration_core.sv": {
+          "branch": {
+            "hit_points": 82,
+            "total_points": 94,
+            "percent": 87.23404255319149
+          },
+          "expr": {
+            "hit_points": 116,
+            "total_points": 144,
+            "percent": 80.55555555555556
+          },
+          "line": {
+            "hit_points": 72,
+            "total_points": 83,
+            "percent": 86.74698795180723
+          },
+          "toggle": {
+            "hit_points": 2507,
+            "total_points": 3746,
+            "percent": 66.92471970101441
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        }
+      },
+      "sources": [
+        {
+          "path": "build/rtl_coverage/l1_b3/normal/coverage.dat",
+          "sha256": "184613fe62a43638dc103dc6d557dba545bd06a4d2599ad2baa9bafed1e375ae"
+        },
+        {
+          "path": "build/rtl_coverage/l1_b3/dsp/coverage.dat",
+          "sha256": "9ba6d91fa8ae51f607e36eec9f4a9af539344c03f2969cf36d934cb9cdc2ec21"
+        }
+      ],
+      "reports": [
+        {
+          "report": "build/rtl_coverage/l1_b3/normal/regression.json",
+          "report_sha256": "b90cf06820fee9a0911582526766feb287bbb4ec66ad11b6301e9a75cf8622ad",
+          "xml_sha256": "69aaf8e6422e68d824156cba016b6b9db2269d31463eebbec4f8b1fd16394025",
+          "tests": {
+            "tests": 4,
+            "passed": 4,
+            "cases": [
+              "bit_exact_continuous_frames",
+              "malformed_frames_and_reset",
+              "full_buffers_during_output_stall",
+              "reset_cancels_each_processing_stage"
+            ]
+          },
+          "result": {
+            "n": 1024,
+            "lanes": 1,
+            "bands": 3,
+            "frames": 14,
+            "distinct_inputs": 14,
+            "debug_frames": 14,
+            "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+            "assertions_enabled": true,
+            "status": "passed",
+            "cycles": {
+              "cycles_pre": 3073,
+              "cycles_dft": 295104,
+              "cycles_power": 284,
+              "cycles_nn": 950,
+              "cycles_total": 299411
+            }
+          }
+        },
+        {
+          "report": "build/rtl_coverage/l1_b3/dsp/regression.json",
+          "report_sha256": "8d4b27fed4e58574f29c98a071a3b80eed930c113155f651055ba9893143c98b",
+          "xml_sha256": "196486d1df4304c4d88c21661fa91556d3d9bf62a1830706bdbfbe2b276e17f1",
+          "tests": {
+            "tests": 4,
+            "passed": 4,
+            "cases": [
+              "bit_exact_continuous_frames",
+              "malformed_frames_and_reset",
+              "full_buffers_during_output_stall",
+              "reset_cancels_each_processing_stage"
+            ]
+          },
+          "result": {
+            "n": 1024,
+            "lanes": 1,
+            "bands": 3,
+            "frames": 10,
+            "distinct_inputs": 10,
+            "debug_frames": 10,
+            "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+            "assertions_enabled": true,
+            "status": "passed",
+            "cycles": {
+              "cycles_pre": 3073,
+              "cycles_dft": 295104,
+              "cycles_power": 284,
+              "cycles_nn": 950,
+              "cycles_total": 299411
+            },
+            "suite": "additional_DSP_directed",
+            "cases": [
+              {
+                "name": "zero",
+                "input_clipped_samples": 0,
+                "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+              },
+              {
+                "name": "constant_negative_DC",
+                "input_clipped_samples": 0,
+                "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+              },
+              {
+                "name": "off_bin_phase_0.000000",
+                "input_clipped_samples": 0,
+                "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.0
+              },
+              {
+                "name": "off_bin_phase_1.570796",
+                "input_clipped_samples": 0,
+                "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 1.5707963267948966
+              },
+              {
+                "name": "off_bin_phase_2.300000",
+                "input_clipped_samples": 0,
+                "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 2.3
+              },
+              {
+                "name": "integer_bin_nonzero_phase",
+                "input_clipped_samples": 0,
+                "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+                "frequency_bins": [
+                  207
+                ],
+                "phase_radians": 1.0471975511965976
+              },
+              {
+                "name": "positive_clipped_sine",
+                "input_clipped_samples": 298,
+                "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": 18000,
+                "amplitude": 24000
+              },
+              {
+                "name": "negative_clipped_sine",
+                "input_clipped_samples": 295,
+                "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": -18000,
+                "amplitude": 24000
+              },
+              {
+                "name": "both_polarities_clipped_sine",
+                "input_clipped_samples": 537,
+                "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": 0,
+                "amplitude": 48000
+              },
+              {
+                "name": "off_bin_two_tone",
+                "input_clipped_samples": 0,
+                "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+                "frequency_bins": [
+                  207.25,
+                  327.625
+                ]
+              }
+            ],
+            "checked_intermediates": [
+              "mean",
+              "windowed",
+              "real",
+              "imag",
+              "powers",
+              "features",
+              "hidden",
+              "logits"
+            ],
+            "input_sha256": {
+              "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+              "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+              "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+              "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+              "artifacts/model_neighbor/weights_l4_1.hex": "ba40796c514997315b5889c7287c2588640f5b8517f5b24f51c47645a4cd071e",
+              "artifacts/model_neighbor/w1.hex": "71858a94d5b82c81f01173326ec20227962b8b16a045d546cb907c16fc23ab03",
+              "artifacts/model_neighbor/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+              "artifacts/model_neighbor/weights_l4_0.hex": "eed0ac4a944abd713924da891cfee6a884361f45d4cc4139ad1ccca1c8fca69a",
+              "artifacts/model_neighbor/b1.hex": "4d93253aed7aa37f66cd67d3ee56d20bcc1dbe2b91d4c0cfcaff1491cee76f23",
+              "artifacts/model_neighbor/weights_l4_2.hex": "7c088defcaf8a3f6a7f14097ff2c00b2573b4101759a5ebbfab819163a901d04",
+              "artifacts/model_neighbor/w2.hex": "509ecb0fd7c4bdb9a9a3407464f644e36dc8cdfcdbe6c7202fe0bf8800707dc7",
+              "artifacts/model_neighbor/dft_bins.hex": "3f20337fe1354478d247847bd3135a5f15f43b17066221aa080abcef9b17ede6",
+              "artifacts/model_neighbor/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+              "artifacts/model_neighbor/weights_l4_3.hex": "afb997dd9dde9a3f710692a9a8703bf55e59bb35f3b755cc855e6968ff94d6fd",
+              "artifacts/model_neighbor/b2.hex": "7d918946adbfc9618e62b897f728978cb26b48629de0aa209cf23cbd8f89b91d",
+              "artifacts/model_neighbor/weights_l1_0.hex": "4780256de37e7eb36a9534555d2c8b62cef4ce074a8c5b5415e9d3895a109b07",
+              "artifacts/model_neighbor/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+              "artifacts/model_neighbor/feature_shifts.hex": "f9c41895a2738ca4f077b23a12d42d8fc27ef292d3d8efc718682ebeaad4ed1a",
+              "artifacts/model_neighbor/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+            }
+          }
+        }
+      ],
+      "threshold": "one hit per tool-generated point (or point-specific threshold if present)",
+      "excluded_points": 0,
+      "coverage_source_filters": [],
+      "per_instance_requested_at_compile_and_runtime": true,
+      "startup_and_reset_activity_included": true,
+      "merged_data_sha256": "87e593e11e343630a3488f191cb80e5c398e4b5d966eb7ef188570e77f4713c0",
+      "lcov_sha256": "81e2e3f6fc0ded9720213f110621f7e34e61bf4488c35622f5154f34b9911ad9",
+      "uncovered_points_sha256": "f3763a972270b385a938e1792546d03f674371b2b26094b157f63ed862911574",
+      "lanes": 1,
+      "bands": 3,
+      "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117"
+    },
+    "l4_b3": {
+      "status": "passed",
+      "coverage_types": {
+        "branch": {
+          "hit_points": 135,
+          "total_points": 154,
+          "percent": 87.66233766233766
+        },
+        "expr": {
+          "hit_points": 165,
+          "total_points": 194,
+          "percent": 85.05154639175258
+        },
+        "line": {
+          "hit_points": 83,
+          "total_points": 93,
+          "percent": 89.24731182795699
+        },
+        "toggle": {
+          "hit_points": 3989,
+          "total_points": 5250,
+          "percent": 75.98095238095237
+        },
+        "fsm_state": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "fsm_arc": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "user": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        }
+      },
+      "per_file": {
+        "./rtl/core/vib_coeff_rom.sv": {
+          "branch": {
+            "hit_points": 50,
+            "total_points": 60,
+            "percent": 83.33333333333333
+          },
+          "expr": {
+            "hit_points": 50,
+            "total_points": 50,
+            "percent": 100.0
+          },
+          "line": {
+            "hit_points": 10,
+            "total_points": 10,
+            "percent": 100.0
+          },
+          "toggle": {
+            "hit_points": 624,
+            "total_points": 640,
+            "percent": 97.5
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        },
+        "./rtl/core/vibration_core.sv": {
+          "branch": {
+            "hit_points": 85,
+            "total_points": 94,
+            "percent": 90.42553191489361
+          },
+          "expr": {
+            "hit_points": 115,
+            "total_points": 144,
+            "percent": 79.86111111111111
+          },
+          "line": {
+            "hit_points": 73,
+            "total_points": 83,
+            "percent": 87.95180722891567
+          },
+          "toggle": {
+            "hit_points": 3365,
+            "total_points": 4610,
+            "percent": 72.99349240780911
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        }
+      },
+      "sources": [
+        {
+          "path": "build/rtl_coverage/l4_b3/normal/coverage.dat",
+          "sha256": "21e0483c40cfd732dd133c2f403eb4c3c5c5d7e64ec88d88ee089b102c10c2aa"
+        },
+        {
+          "path": "build/rtl_coverage/l4_b3/dsp/coverage.dat",
+          "sha256": "d7db744172f27e1d18488e73afe1c73146a76eabe0a5e410a9fc478e24ac40f7"
+        }
+      ],
+      "reports": [
+        {
+          "report": "build/rtl_coverage/l4_b3/normal/regression.json",
+          "report_sha256": "44b4a97f7b1c75ecb3b0945fb2b6547ab7138f3549ec9901812ae9309a0a8f48",
+          "xml_sha256": "26b76b0d427d8ba7eb1e4906f7ef263ec474fb5330ee3553fa120269ad9517ec",
+          "tests": {
+            "tests": 4,
+            "passed": 4,
+            "cases": [
+              "bit_exact_continuous_frames",
+              "malformed_frames_and_reset",
+              "full_buffers_during_output_stall",
+              "reset_cancels_each_processing_stage"
+            ]
+          },
+          "result": {
+            "n": 1024,
+            "lanes": 4,
+            "bands": 3,
+            "frames": 14,
+            "distinct_inputs": 14,
+            "debug_frames": 14,
+            "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+            "assertions_enabled": true,
+            "status": "passed",
+            "cycles": {
+              "cycles_pre": 3073,
+              "cycles_dft": 73848,
+              "cycles_power": 284,
+              "cycles_nn": 265,
+              "cycles_total": 77470
+            }
+          }
+        },
+        {
+          "report": "build/rtl_coverage/l4_b3/dsp/regression.json",
+          "report_sha256": "abbd8c8b800027e8abafeaf02ee96ca8bf677eb3e8c29fe6c36103eb74302b75",
+          "xml_sha256": "d5edea94ce4ea770e66cac88d18532ce2689a3555fceb6709c53fc525c02285b",
+          "tests": {
+            "tests": 4,
+            "passed": 4,
+            "cases": [
+              "bit_exact_continuous_frames",
+              "malformed_frames_and_reset",
+              "full_buffers_during_output_stall",
+              "reset_cancels_each_processing_stage"
+            ]
+          },
+          "result": {
+            "n": 1024,
+            "lanes": 4,
+            "bands": 3,
+            "frames": 10,
+            "distinct_inputs": 10,
+            "debug_frames": 10,
+            "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+            "assertions_enabled": true,
+            "status": "passed",
+            "cycles": {
+              "cycles_pre": 3073,
+              "cycles_dft": 73848,
+              "cycles_power": 284,
+              "cycles_nn": 265,
+              "cycles_total": 77470
+            },
+            "suite": "additional_DSP_directed",
+            "cases": [
+              {
+                "name": "zero",
+                "input_clipped_samples": 0,
+                "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+              },
+              {
+                "name": "constant_negative_DC",
+                "input_clipped_samples": 0,
+                "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+              },
+              {
+                "name": "off_bin_phase_0.000000",
+                "input_clipped_samples": 0,
+                "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.0
+              },
+              {
+                "name": "off_bin_phase_1.570796",
+                "input_clipped_samples": 0,
+                "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 1.5707963267948966
+              },
+              {
+                "name": "off_bin_phase_2.300000",
+                "input_clipped_samples": 0,
+                "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 2.3
+              },
+              {
+                "name": "integer_bin_nonzero_phase",
+                "input_clipped_samples": 0,
+                "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+                "frequency_bins": [
+                  207
+                ],
+                "phase_radians": 1.0471975511965976
+              },
+              {
+                "name": "positive_clipped_sine",
+                "input_clipped_samples": 298,
+                "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": 18000,
+                "amplitude": 24000
+              },
+              {
+                "name": "negative_clipped_sine",
+                "input_clipped_samples": 295,
+                "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": -18000,
+                "amplitude": 24000
+              },
+              {
+                "name": "both_polarities_clipped_sine",
+                "input_clipped_samples": 537,
+                "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+                "frequency_bins": [
+                  207.375
+                ],
+                "phase_radians": 0.7,
+                "offset": 0,
+                "amplitude": 48000
+              },
+              {
+                "name": "off_bin_two_tone",
+                "input_clipped_samples": 0,
+                "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+                "frequency_bins": [
+                  207.25,
+                  327.625
+                ]
+              }
+            ],
+            "checked_intermediates": [
+              "mean",
+              "windowed",
+              "real",
+              "imag",
+              "powers",
+              "features",
+              "hidden",
+              "logits"
+            ],
+            "input_sha256": {
+              "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+              "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+              "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+              "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+              "artifacts/model_neighbor/weights_l4_1.hex": "ba40796c514997315b5889c7287c2588640f5b8517f5b24f51c47645a4cd071e",
+              "artifacts/model_neighbor/w1.hex": "71858a94d5b82c81f01173326ec20227962b8b16a045d546cb907c16fc23ab03",
+              "artifacts/model_neighbor/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+              "artifacts/model_neighbor/weights_l4_0.hex": "eed0ac4a944abd713924da891cfee6a884361f45d4cc4139ad1ccca1c8fca69a",
+              "artifacts/model_neighbor/b1.hex": "4d93253aed7aa37f66cd67d3ee56d20bcc1dbe2b91d4c0cfcaff1491cee76f23",
+              "artifacts/model_neighbor/weights_l4_2.hex": "7c088defcaf8a3f6a7f14097ff2c00b2573b4101759a5ebbfab819163a901d04",
+              "artifacts/model_neighbor/w2.hex": "509ecb0fd7c4bdb9a9a3407464f644e36dc8cdfcdbe6c7202fe0bf8800707dc7",
+              "artifacts/model_neighbor/dft_bins.hex": "3f20337fe1354478d247847bd3135a5f15f43b17066221aa080abcef9b17ede6",
+              "artifacts/model_neighbor/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+              "artifacts/model_neighbor/weights_l4_3.hex": "afb997dd9dde9a3f710692a9a8703bf55e59bb35f3b755cc855e6968ff94d6fd",
+              "artifacts/model_neighbor/b2.hex": "7d918946adbfc9618e62b897f728978cb26b48629de0aa209cf23cbd8f89b91d",
+              "artifacts/model_neighbor/weights_l1_0.hex": "4780256de37e7eb36a9534555d2c8b62cef4ce074a8c5b5415e9d3895a109b07",
+              "artifacts/model_neighbor/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+              "artifacts/model_neighbor/feature_shifts.hex": "f9c41895a2738ca4f077b23a12d42d8fc27ef292d3d8efc718682ebeaad4ed1a",
+              "artifacts/model_neighbor/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+            }
+          }
+        }
+      ],
+      "threshold": "one hit per tool-generated point (or point-specific threshold if present)",
+      "excluded_points": 0,
+      "coverage_source_filters": [],
+      "per_instance_requested_at_compile_and_runtime": true,
+      "startup_and_reset_activity_included": true,
+      "merged_data_sha256": "8bc89c64742be3c62847c5aa4ca01d76b58bbc76ce218c02c5899fdde1b713a2",
+      "lcov_sha256": "c73dfe0db630211cab3b9dfd3b634a1f86cbaade2eaa0daf2f659a40bf9acdd0",
+      "uncovered_points_sha256": "d731e6b0b8ae293fcb90bec2cb8c4c1a25124f6b654855d4b55cd651e111c22a",
+      "lanes": 4,
+      "bands": 3,
+      "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117"
+    },
+    "serial_quantizer_boundary_profile": {
+      "status": "passed",
+      "coverage_types": {
+        "branch": {
+          "hit_points": 135,
+          "total_points": 154,
+          "percent": 87.66233766233766
+        },
+        "expr": {
+          "hit_points": 161,
+          "total_points": 194,
+          "percent": 82.98969072164948
+        },
+        "line": {
+          "hit_points": 83,
+          "total_points": 93,
+          "percent": 89.24731182795699
+        },
+        "toggle": {
+          "hit_points": 3718,
+          "total_points": 5250,
+          "percent": 70.81904761904762
+        },
+        "fsm_state": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "fsm_arc": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "user": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        }
+      },
+      "per_file": {
+        "./rtl/core/vib_coeff_rom.sv": {
+          "branch": {
+            "hit_points": 50,
+            "total_points": 60,
+            "percent": 83.33333333333333
+          },
+          "expr": {
+            "hit_points": 50,
+            "total_points": 50,
+            "percent": 100.0
+          },
+          "line": {
+            "hit_points": 10,
+            "total_points": 10,
+            "percent": 100.0
+          },
+          "toggle": {
+            "hit_points": 624,
+            "total_points": 640,
+            "percent": 97.5
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        },
+        "./rtl/core/vibration_core.sv": {
+          "branch": {
+            "hit_points": 85,
+            "total_points": 94,
+            "percent": 90.42553191489361
+          },
+          "expr": {
+            "hit_points": 111,
+            "total_points": 144,
+            "percent": 77.08333333333333
+          },
+          "line": {
+            "hit_points": 73,
+            "total_points": 83,
+            "percent": 87.95180722891567
+          },
+          "toggle": {
+            "hit_points": 3094,
+            "total_points": 4610,
+            "percent": 67.11496746203905
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        }
+      },
+      "sources": [
+        {
+          "path": "build/rtl_coverage/quant_boundary/coverage.dat",
+          "sha256": "00bd7a74c1138bcae51c5d405a27edb05bc0820e28006fa50178284e2b648d73"
+        }
+      ],
+      "reports": [
+        {
+          "report": "build/rtl_coverage/quant_boundary/regression.json",
+          "report_sha256": "d42efe2c3d1b5dac7ff40ecf82ce8f67ce2b856793d23c9535250ed9b9d4e77b",
+          "xml_sha256": "058e54f466bf489008748796b40c1199ffbccc88cd40b4e666c2b70d6e0dd72e",
+          "tests": {
+            "tests": 4,
+            "passed": 4,
+            "cases": [
+              "bit_exact_continuous_frames",
+              "malformed_frames_and_reset",
+              "full_buffers_during_output_stall",
+              "reset_cancels_each_processing_stage"
+            ]
+          },
+          "result": {
+            "n": 1024,
+            "lanes": 4,
+            "bands": 3,
+            "frames": 5,
+            "distinct_inputs": 5,
+            "debug_frames": 5,
+            "model_sha256": "e063723a076cf91a9c6dc33358373a759a7183ca2b11d92490b25e8467f014fd",
+            "assertions_enabled": true,
+            "status": "passed",
+            "cycles": {
+              "cycles_pre": 3073,
+              "cycles_dft": 73848,
+              "cycles_power": 426,
+              "cycles_nn": 265,
+              "cycles_total": 77612
+            }
+          }
+        }
+      ],
+      "threshold": "one hit per tool-generated point (or point-specific threshold if present)",
+      "excluded_points": 0,
+      "coverage_source_filters": [],
+      "per_instance_requested_at_compile_and_runtime": true,
+      "startup_and_reset_activity_included": true,
+      "merged_data_sha256": "00bd7a74c1138bcae51c5d405a27edb05bc0820e28006fa50178284e2b648d73",
+      "lcov_sha256": "84bb5ada7e6f4aeac999d51fcd92cd55d2e1f5cc87946889c7497db6f23c5df3",
+      "uncovered_points_sha256": "60be6c26da559ef4d77d649c3cfc21a62de4e5dca0140bcd5ca61ddc90f8ca30"
+    },
+    "direct_arithmetic_functions": {
+      "status": "passed",
+      "coverage_types": {
+        "branch": {
+          "hit_points": 23,
+          "total_points": 142,
+          "percent": 16.197183098591548
+        },
+        "expr": {
+          "hit_points": 27,
+          "total_points": 170,
+          "percent": 15.882352941176471
+        },
+        "line": {
+          "hit_points": 26,
+          "total_points": 91,
+          "percent": 28.571428571428573
+        },
+        "toggle": {
+          "hit_points": 554,
+          "total_points": 7196,
+          "percent": 7.698721511951084
+        },
+        "fsm_state": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "fsm_arc": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        },
+        "user": {
+          "hit_points": 0,
+          "total_points": 0,
+          "percent": null,
+          "status": "not instrumented; no coverage claim"
+        }
+      },
+      "per_file": {
+        "./rtl/core/vib_coeff_rom.sv": {
+          "branch": {
+            "hit_points": 15,
+            "total_points": 60,
+            "percent": 25.0
+          },
+          "expr": {
+            "hit_points": 10,
+            "total_points": 50,
+            "percent": 20.0
+          },
+          "line": {
+            "hit_points": 5,
+            "total_points": 10,
+            "percent": 50.0
+          },
+          "toggle": {
+            "hit_points": 0,
+            "total_points": 640,
+            "percent": 0.0
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        },
+        "./rtl/core/vibration_core.sv": {
+          "branch": {
+            "hit_points": 8,
+            "total_points": 82,
+            "percent": 9.75609756097561
+          },
+          "expr": {
+            "hit_points": 17,
+            "total_points": 120,
+            "percent": 14.166666666666666
+          },
+          "line": {
+            "hit_points": 21,
+            "total_points": 81,
+            "percent": 25.925925925925927
+          },
+          "toggle": {
+            "hit_points": 128,
+            "total_points": 6122,
+            "percent": 2.0908199934661873
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        },
+        "./sim/arithmetic_tb.sv": {
+          "toggle": {
+            "hit_points": 426,
+            "total_points": 434,
+            "percent": 98.15668202764977
+          },
+          "fsm_state": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "fsm_arc": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          },
+          "user": {
+            "hit_points": 0,
+            "total_points": 0,
+            "percent": null,
+            "status": "not instrumented; no coverage claim"
+          }
+        }
+      },
+      "sources": [
+        {
+          "path": "build/rtl_coverage/arithmetic/arithmetic/coverage.dat",
+          "sha256": "d50744dde7ef9e0401b31dd605cb865b61f77d5541fc7cc9d02ed1adaef11f83"
+        }
+      ],
+      "reports": [
+        {
+          "report": "build/rtl_coverage/arithmetic/arithmetic/arithmetic.json",
+          "report_sha256": "47eb8038ebd4f9f19e7a1b186c4a9b83ce3134d4e38f47dadfb795c49fda0f4b",
+          "xml_sha256": "6415ca13cbf7feae3fa351c481bef39f2e1dcdafd85c4278d00c3edb667c7011",
+          "tests": {
+            "tests": 1,
+            "passed": 1,
+            "cases": [
+              "rounding_saturation_and_quantization"
+            ]
+          },
+          "result": {
+            "status": "passed",
+            "vectors": 6651,
+            "rne_shifts": [
+              0,
+              40
+            ],
+            "hidden_shift": 8,
+            "seed": 178
+          }
+        }
+      ],
+      "threshold": "one hit per tool-generated point (or point-specific threshold if present)",
+      "excluded_points": 0,
+      "coverage_source_filters": [],
+      "per_instance_requested_at_compile_and_runtime": true,
+      "startup_and_reset_activity_included": true,
+      "merged_data_sha256": "d50744dde7ef9e0401b31dd605cb865b61f77d5541fc7cc9d02ed1adaef11f83",
+      "lcov_sha256": "84b1eda13460ab50b049b3214cf06de8f3d04bf16023b8a1e3da997d590db6f9",
+      "uncovered_points_sha256": "39120d7676d2a83a9392cdeedc1253097fe4f72f89e000209a63cdb486715791"
+    }
+  },
+  "source_sha256": {
+    "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+    "sim/test_arithmetic.py": "9232f29b53d6d8aa6708e080a241cfdf4e2758978feb3feff4744e06c4fb3781",
+    "sim/arithmetic_tb.sv": "a15f1d7387845110c7ff1fe35d27e4530a72701d74e9b97a0c1194dccc9d96a1",
+    "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+    "scripts/build_core.py": "d46357f7016711fde6a85caf492b370e473f87bb7dc1e7b0cf302e87a30fe5ae",
+    "scripts/run_core_coverage.py": "3b5fb0c6a5ac214961a8f652cffa8f7ba3a365a03d293c5a50e02c285a1c5b01",
+    "artifacts/model/model.json": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+    "artifacts/model/float_parameters.npz": "ee0465637b9b50bf6516f4f54ebc1d59dfe46352eef247b52ef889c8188d93ed",
+    "artifacts/model/model_config.svh": "e69342cca1d7557760f5a25d8c0dfd80086264d04736c21a65ff965698e37407",
+    "artifacts/model/float_model.pt": "6c7151f70ecb008552a0a391df1b640415c9821dbb8bcb9d5b3d3085fd17ede1",
+    "artifacts/model/weights_l4_1.hex": "602669e2d96815c337c5d92dd94fb1660b8db078d694d1b8ac5c91da9a187288",
+    "artifacts/model/w1.hex": "26b17ac441ba57495f217960b1af28f0aba78685f4bee0601ea8f52039f3397d",
+    "artifacts/model/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+    "artifacts/model/weights_l4_0.hex": "96c16efec8cd66a8f5cd7e084267057ca4016db56377555708a54cc21571e79f",
+    "artifacts/model/b1.hex": "b13efe33d5cdb4f4c08875174a2f450db9626fd34ffe6094d4d6b2ed5391944f",
+    "artifacts/model/weights_l4_2.hex": "343ea649054b7baf7ba7f1038da412b3f392423fdfb6028118c132aa94eb41c8",
+    "artifacts/model/w2.hex": "776a3529d5d2b5915def0e2e58f33b3b9c1663686ef16e3c194eeff09a3bb366",
+    "artifacts/model/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+    "artifacts/model/weights_l4_3.hex": "d5372551d44a14c6f129759103152da00c73083ea6b714ced29433bbe8f692a9",
+    "artifacts/model/b2.hex": "b48d1ee7cd1665d75421e8d5b6cc1da4524334440649f1c4fdc03cc864f95870",
+    "artifacts/model/weights_l1_0.hex": "2c600fc9949d4c72db23f61043a7a70e01d2cd5d351ff44259e9347422423453",
+    "artifacts/model/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+    "artifacts/model/feature_shifts.hex": "61202c17ec0bfae973580147e1cc06618be8c6f711baff138bf94fb327806de4",
+    "artifacts/model/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+    "artifacts/model_neighbor/model.json": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+    "artifacts/model_neighbor/float_parameters.npz": "6f2b6588b97482774829a39fca410ba87373d859089298bfa0be8dbf5e02648c",
+    "artifacts/model_neighbor/model_config.svh": "3da8085df4cd775e031f6e5cd177c8a6d34ef45419a2b79c52d1db61a6d50486",
+    "artifacts/model_neighbor/float_model.pt": "d4664c335a6fa39f0cfd1198324a062658ef286fd5fc0a562510389ceb815268",
+    "artifacts/model_neighbor/weights_l4_1.hex": "ba40796c514997315b5889c7287c2588640f5b8517f5b24f51c47645a4cd071e",
+    "artifacts/model_neighbor/w1.hex": "71858a94d5b82c81f01173326ec20227962b8b16a045d546cb907c16fc23ab03",
+    "artifacts/model_neighbor/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+    "artifacts/model_neighbor/weights_l4_0.hex": "eed0ac4a944abd713924da891cfee6a884361f45d4cc4139ad1ccca1c8fca69a",
+    "artifacts/model_neighbor/b1.hex": "4d93253aed7aa37f66cd67d3ee56d20bcc1dbe2b91d4c0cfcaff1491cee76f23",
+    "artifacts/model_neighbor/weights_l4_2.hex": "7c088defcaf8a3f6a7f14097ff2c00b2573b4101759a5ebbfab819163a901d04",
+    "artifacts/model_neighbor/w2.hex": "509ecb0fd7c4bdb9a9a3407464f644e36dc8cdfcdbe6c7202fe0bf8800707dc7",
+    "artifacts/model_neighbor/dft_bins.hex": "3f20337fe1354478d247847bd3135a5f15f43b17066221aa080abcef9b17ede6",
+    "artifacts/model_neighbor/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+    "artifacts/model_neighbor/weights_l4_3.hex": "afb997dd9dde9a3f710692a9a8703bf55e59bb35f3b755cc855e6968ff94d6fd",
+    "artifacts/model_neighbor/b2.hex": "7d918946adbfc9618e62b897f728978cb26b48629de0aa209cf23cbd8f89b91d",
+    "artifacts/model_neighbor/weights_l1_0.hex": "4780256de37e7eb36a9534555d2c8b62cef4ce074a8c5b5415e9d3895a109b07",
+    "artifacts/model_neighbor/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+    "artifacts/model_neighbor/feature_shifts.hex": "f9c41895a2738ca4f077b23a12d42d8fc27ef292d3d8efc718682ebeaad4ed1a",
+    "artifacts/model_neighbor/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+    "artifacts/vectors/replay_007.json": "d0f834e94ac90eeeddd65c3ec1a4d8dc54ba313578c9ad66891565c3535ccaa0",
+    "artifacts/vectors/replay_006.json": "5a27d65e53c68026e9a616658616a55502116dad2ccde5dbf286d1c2e554c33c",
+    "artifacts/vectors/replay_001.json": "1ea0f403fa7a8d193ebe0192242790da80e049f1e3cea68c6da9b9b3a83267c8",
+    "artifacts/vectors/replay_000.json": "66b3ee1fcefe53ee4304ab5eabf21b3f9edc1e85dc8e0c7f490a2aba81042360",
+    "artifacts/vectors/replay_008.hex": "a4edbee7624132b70c3636e152fb943706e68d78dcc7b3b1391fbd125ffca4eb",
+    "artifacts/vectors/replay_004.hex": "6532850da3b7affde5a8ac208b166ff81cc655383d004934d6556a722d669184",
+    "artifacts/vectors/replay_005.hex": "167d08be65464159cf6fdd1f18cb53e7f5594501c24fa60dea27301ef37974eb",
+    "artifacts/vectors/replay_007.hex": "871f8433ca75420f7e1845b17b0e26da24b67ce0d814f09880650ac7c954881c",
+    "artifacts/vectors/replay_003.json": "9533caeaed02c90db38197fd11df6b05c9574533eb1234c25c4508615236b0c9",
+    "artifacts/vectors/replay_006.hex": "abfc875a450375fcf6eb350ce41f7bce6f10ee19e017170d3bc46e753db3798b",
+    "artifacts/vectors/replay_002.hex": "078bf052be2dbd85446a6d112e7dda1171b126ef67fff40a80b220212eca406d",
+    "artifacts/vectors/replay_002.json": "540a3f20e1e943137a2bb87ed36ca47019624dcb700bb17c513b89d36b48ef62",
+    "artifacts/vectors/replay_003.hex": "e3145c1de6c6c372b83d122bbf8b8da5dc78569797314d4f2cdd09480731af2e",
+    "artifacts/vectors/manifest.json": "5be558705fce404f3ce494196307d9a6299233aeb911a5220ff6bca2c86d243d",
+    "artifacts/vectors/replay_001.hex": "2d537c364bcd104863558bf6df0960ec8868926bd6618a6f0cb8d2bb2a09e190",
+    "artifacts/vectors/replay_000.hex": "b657431bcf0c4d96873c74c91334b1338a0ac2053d96768bfddbc91227f136b7",
+    "artifacts/vectors/replay_005.json": "ceb701e5ed117462d830758b53c352cce2c5a7c2560f334aa02e16216ae9bb97",
+    "artifacts/vectors/vectors.jsonl": "bd80b7d6f50db9a07c145819839e6883bc939e03f48a4b6fd59d09e8f73e3212",
+    "artifacts/vectors/replay_008.json": "27873d4d66febdd79ca41e3e9d9a21df9209df7fbb33557ee36b8b0595c80d35",
+    "artifacts/vectors/replay_004.json": "96fe9c3817a5dde7e74c670bcecabb467eb4a92d54015f18af07c320efa3d20a",
+    "artifacts/vectors_neighbor/replay_007.json": "d81881e81c2e21ff1ae057d2d67df99e90b5729597ec349ae013a5899b29242e",
+    "artifacts/vectors_neighbor/replay_006.json": "707830d8a77096c3cc25179d4f645b37bf9b33c944e4fc203616d8c920d1b23e",
+    "artifacts/vectors_neighbor/replay_001.json": "c0d5b4cdb1288542513149171a6a5e3285a3ae8d0612b6e0ce1d404fc071a784",
+    "artifacts/vectors_neighbor/replay_000.json": "8644b3e58a51f64be31b73cf8def624b455d39377b064da28212bf785375e07c",
+    "artifacts/vectors_neighbor/replay_008.hex": "a4edbee7624132b70c3636e152fb943706e68d78dcc7b3b1391fbd125ffca4eb",
+    "artifacts/vectors_neighbor/replay_004.hex": "6532850da3b7affde5a8ac208b166ff81cc655383d004934d6556a722d669184",
+    "artifacts/vectors_neighbor/replay_005.hex": "167d08be65464159cf6fdd1f18cb53e7f5594501c24fa60dea27301ef37974eb",
+    "artifacts/vectors_neighbor/replay_007.hex": "871f8433ca75420f7e1845b17b0e26da24b67ce0d814f09880650ac7c954881c",
+    "artifacts/vectors_neighbor/replay_003.json": "bc99fafcb3c24a04e2562492babf1361964a2e01791b8892594e8b4d7c83e678",
+    "artifacts/vectors_neighbor/replay_006.hex": "abfc875a450375fcf6eb350ce41f7bce6f10ee19e017170d3bc46e753db3798b",
+    "artifacts/vectors_neighbor/replay_002.hex": "078bf052be2dbd85446a6d112e7dda1171b126ef67fff40a80b220212eca406d",
+    "artifacts/vectors_neighbor/replay_002.json": "db662b8af8cffdb78893416d19b2c1b13c509d47eb31e7ec5d4739dafdc89fa1",
+    "artifacts/vectors_neighbor/replay_003.hex": "e3145c1de6c6c372b83d122bbf8b8da5dc78569797314d4f2cdd09480731af2e",
+    "artifacts/vectors_neighbor/manifest.json": "9045544393e4bbb0b1f8a13c533abbdbb61077743941c725d345a2bed9ae4fed",
+    "artifacts/vectors_neighbor/replay_001.hex": "2d537c364bcd104863558bf6df0960ec8868926bd6618a6f0cb8d2bb2a09e190",
+    "artifacts/vectors_neighbor/replay_000.hex": "b657431bcf0c4d96873c74c91334b1338a0ac2053d96768bfddbc91227f136b7",
+    "artifacts/vectors_neighbor/replay_005.json": "4b4cc3cf06be8265936c913ddd9667d6a0244fcbb88cea5c12c2ce812ed2583b",
+    "artifacts/vectors_neighbor/vectors.jsonl": "3788f1dba8e858cee9cd77f121c78669f26bead27e7e73b2adadb30c9e39e719",
+    "artifacts/vectors_neighbor/replay_008.json": "9c2201ea03a74ade296a862f87290476cf5e1f55267b029f3bc076e0bdad888b",
+    "artifacts/vectors_neighbor/replay_004.json": "a038fdaf28b2e45877fdfc5a6273e1ef9f0de665ae81c427f03cc65159e6f8ef"
+  },
+  "run_manifest_sha256": "c6831bc97b593509119cba3389fd9c4a7c54ace30f0bdc849bbc301bc1798de6",
+  "merge_rule": "Only normal and DSP runs with identical LANES/BANDS/model are merged. Parameter variants, deliberate boundary profile and direct function harness remain separate.",
+  "physical_hardware_tested": false,
+  "limits": [
+    "Tool-generated HDL points, not Python coverage and not formal reachability proof.",
+    "No point waivers or source filters were applied; unreachable/configuration-specific points remain in the raw denominators.",
+    "Default Verilator toggle width/local-variable omissions remain in effect; startup/reset transitions are included.",
+    "Zero FSM/user points mean not instrumented, never 100% complete."
+  ]
+}

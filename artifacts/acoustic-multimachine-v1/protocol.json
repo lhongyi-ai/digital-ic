@@ -1,0 +1,48 @@
+{
+  "plan_sha256": "d5fee974de89de25fb4296c80648a959ae87f6e6c8c0506ec778118a0108fdfa",
+  "task": "supervised multi-machine known-fault recognition",
+  "features": [
+    "absolute",
+    "shape",
+    "localcontrast"
+  ],
+  "models": [
+    "linear_01",
+    "linear_1",
+    "rbf_10",
+    "trees"
+  ],
+  "candidates": 12,
+  "folds": "hold out each of 00,02,04 in full; fit/calibration only from other two machines",
+  "source_fit_per_machine": 256,
+  "source_calibration_per_machine": 64,
+  "threshold": "max of source-machine normal calibration thresholds, strict score>threshold",
+  "held_machine_calibration": false,
+  "selection": "minimize maximum per-machine normalized gate violation; then maximize worst-machine recall, mean AUC; deterministic name tie",
+  "gate": {
+    "min_recall": 0.9,
+    "max_fpr": 0.05,
+    "min_auc": 0.9
+  },
+  "final_fit": "fit-role records from all three machines; calibration-role records reserved for final threshold",
+  "test": "06 once after freeze, even if development gate fails; no tuning or selective withholding of result",
+  "test_opened": false,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "sklearn": "1.9.0",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "source_sha256": {
+    "scripts/train_multimachine.py": "bbf62ab267879cb90d99bd771c2a60c178a69ad105f462eeba0ae6e2cee0b7dd",
+    "src/vibfpga/multimachine.py": "561305dbd66a8ff13a71d071e5fb09c5e70eefc0c32f32b4854b3a1ca72a7cb9",
+    "scripts/experiment_acoustic_v2.py": "e21283eb970c3b82c0f9b69614dd7fcb48933232cbd0a18352459c6ab5a5b36b",
+    "scripts/experiment_acoustic_finespectrum.py": "2f642a231767f93ec1a412aa232815fc58c6fd3b674b48a8f73ea0606b2bda02",
+    "scripts/diagnose_acoustic_v3.py": "7c5aa203af6d60fead03352cdc2c8b25204cd44938e2c25b16a8f2568dc4b76e",
+    "src/vibfpga/acoustic_experiment.py": "20dd072692ca9af0dbe852376b2030fa7fcc4f924e87d2f22bf69324a8615495",
+    "scripts/prepare_multimachine.py": "1fbec4a6cec38ab6fcec8aa9420b02a2dedd398b9b5764cb2f265ed68bfe818f",
+    "scripts/audit_multimachine.py": "f73e8f3aa92114f73f6dbb7c3aca2b54239e32e0dae6384af2d765417fd24d7c",
+    "scripts/test_multimachine.py": "3b3efe153ae2802cd525ae6f74ef6ee6e088e474c017ed74a5d663bba17c7138"
+  }
+}

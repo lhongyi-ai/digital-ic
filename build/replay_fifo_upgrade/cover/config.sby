@@ -1,0 +1,14 @@
+[options]
+mode cover
+depth 64
+
+[engines]
+smtbmc bitwuzla
+
+[script]
+read -formal -sv upduino_replay.sv replay_fifo_harness.sv
+prep -top replay_fifo_harness
+
+[files]
+../rtl/upduino_replay.sv
+replay_fifo_harness.sv

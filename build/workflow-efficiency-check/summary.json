@@ -1,0 +1,208 @@
+{
+  "status": "passed",
+  "scope": "bounded workflow efficiency and migration regression only",
+  "python_tests_passed": 14,
+  "compiler_and_simulator_runs": [
+    {
+      "run_id": "arithmetic-miss",
+      "directory": "build/workflow-efficiency-check/runs/arithmetic-miss/core_l4_artifacts/arithmetic",
+      "cache_key": "65614cc7613712226501018cf43a84b10719b223de797d9c52d2598e3cd80e1c",
+      "cache_hit": false,
+      "compiler_receipt_seconds": 1.7374447090260219,
+      "test_results_reused": false,
+      "executed_tests": 1,
+      "passed": true,
+      "xml_sha256": "b203bf76373ef99974270e3aa710f060103d08c15c171f0d4ba5b330234046f8"
+    },
+    {
+      "run_id": "arithmetic-hit",
+      "directory": "build/workflow-efficiency-check/runs/arithmetic-hit/core_l4_artifacts/arithmetic",
+      "cache_key": "65614cc7613712226501018cf43a84b10719b223de797d9c52d2598e3cd80e1c",
+      "cache_hit": true,
+      "compiler_receipt_seconds": 0.0006809589976910502,
+      "test_results_reused": false,
+      "executed_tests": 1,
+      "passed": true,
+      "xml_sha256": "c24bc6e006c7935340f66716379dd9a635170aa8b5a700ac286a43ef4fd394cf"
+    },
+    {
+      "run_id": "paced-miss",
+      "directory": "build/workflow-efficiency-check/runs/paced-miss/core_l4_artifacts/fixed_rate",
+      "cache_key": "b3c0f042fa67bdc145753c7040a3d9335133047dbfbbea397cd863969c180429",
+      "cache_hit": false,
+      "compiler_receipt_seconds": 2.1209902499977034,
+      "test_results_reused": false,
+      "passed": true,
+      "test_report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1423999,
+          "generated_samples": 1024,
+          "accepted_samples": 1024,
+          "dropped_samples": 0,
+          "output_frames": 1,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 28094,
+          "wall_seconds": 0.0830937
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8173,
+          "dropped_samples": 4115,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 28094,
+          "wall_seconds": 0.263194
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1051098,
+          "first_sample_to_result_max": 1051098,
+          "last_sample_to_result_min": 28098,
+          "last_sample_to_result_max": 28098,
+          "output_interval_min": 0,
+          "output_interval_max": 0
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 29121,
+          "first_sample_to_result_max": 1051098,
+          "last_sample_to_result_min": 28098,
+          "last_sample_to_result_max": 79172,
+          "output_interval_min": 28097,
+          "output_interval_max": 1998974
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      }
+    },
+    {
+      "run_id": "paced-hit",
+      "directory": "build/workflow-efficiency-check/runs/paced-hit/core_l4_artifacts/fixed_rate",
+      "cache_key": "b3c0f042fa67bdc145753c7040a3d9335133047dbfbbea397cd863969c180429",
+      "cache_hit": true,
+      "compiler_receipt_seconds": 0.0006988750246819109,
+      "test_results_reused": false,
+      "passed": true,
+      "test_report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1423999,
+          "generated_samples": 1024,
+          "accepted_samples": 1024,
+          "dropped_samples": 0,
+          "output_frames": 1,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 28094,
+          "wall_seconds": 0.078988
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8173,
+          "dropped_samples": 4115,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 28094,
+          "wall_seconds": 0.251136
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1051098,
+          "first_sample_to_result_max": 1051098,
+          "last_sample_to_result_min": 28098,
+          "last_sample_to_result_max": 28098,
+          "output_interval_min": 0,
+          "output_interval_max": 0
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 29121,
+          "first_sample_to_result_max": 1051098,
+          "last_sample_to_result_min": 28098,
+          "last_sample_to_result_max": 79172,
+          "output_interval_min": 28097,
+          "output_interval_max": 1998974
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      }
+    },
+    {
+      "run_id": "core-smoke",
+      "directory": "build/workflow-efficiency-check/runs/core-smoke/core_l4_artifacts",
+      "cache_key": "c6c206744cdac59b8182ea2d37be0bf824c968344d27060377d5bb1a82663732",
+      "cache_hit": false,
+      "compiler_receipt_seconds": 1.8232653329905588,
+      "test_results_reused": false,
+      "executed_tests": 4,
+      "passed": true,
+      "xml_sha256": "4b8d7d6b7347fb2b4ba69cd569a9d9ff2ec1c1172f4c0d39890ffa64119d8b2c"
+    },
+    {
+      "run_id": "quick-profile",
+      "directory": "build/workflow-efficiency-check/runs/quick-profile/core_l4_model_neighbor",
+      "cache_key": "4ef467a066b729d35bf541306259b716e707c5a646b22a0ce10149fe9d6280b2",
+      "cache_hit": false,
+      "compiler_receipt_seconds": 1.542769459018018,
+      "test_results_reused": false,
+      "executed_tests": 4,
+      "passed": true,
+      "xml_sha256": "c34e692f5efb862cba007f5f87c48e8cfc652453c0714d867939ec371e02c912"
+    },
+    {
+      "run_id": "fifo",
+      "directory": "build/workflow-efficiency-check/runs/fifo/fifo_d3",
+      "cache_key": "6707cd0373012cf3820f94a052344e1f064a98e9b52fead38fc255aeeac8e97c",
+      "cache_hit": false,
+      "compiler_receipt_seconds": 1.4629402909777127,
+      "test_results_reused": false,
+      "executed_tests": 1,
+      "passed": true,
+      "xml_sha256": "fb61a95e1b8173e50e887250ae8fe6ccc9b8ac2706d204543012e9c7909be87b"
+    }
+  ],
+  "sva": {
+    "path": "build/sva_smoke/result.json",
+    "sha256": "563d71690a1d454638caa81c55e34b0801071b5e1b5673dff63f1a57620ae061",
+    "positive_pass": true,
+    "negative_control_detected": true
+  },
+  "release_preflight": {
+    "ready": true,
+    "preexisting_dependencies": [
+      "./build/field_fixture/trained/frozen.json"
+    ],
+    "scope": "field fixture is verified; current release reruns offline checks and L1 build; historical L4/area experiments are excluded"
+  },
+  "release_dry_run_pytest_invocations": 1,
+  "unsupported_named_formal_run_rejected": true,
+  "full_release_executed": false,
+  "physical_hardware_access": false,
+  "limitations": [
+    "Compile receipt timings exclude fingerprint preparation and tests.",
+    "Flash/SEN1/FCL1 changed-system regressions are tracked independently.",
+    "No frozen model, training or evaluation artifacts were modified by these workflow checks."
+  ],
+  "logs": {
+    "sva.log": "b72cb05e463b79f651db9b561729d7efaa6fc46de4fcc991a228d936f76ef1a0",
+    "arithmetic-miss.log": "13c38fc8590ab575e0d3a0ef38e3809fcf34d1ade1946d719f4ecc6f69570399",
+    "fifo.log": "6cd700a8c219d63e920e56e73c4f20c5f8e58348bf8d4abdf0e4249a85cdf5ff",
+    "paced-hit.log": "71ccaf07a0b2bc1a5f412e7eb6cb0a8efc6311424cee3fb3d1e7cbf2f27ee32b",
+    "preflight.log": "0ec8b4ab71e5a3b97790d556232bd4a28d80c77d1118ea81105673ede5903c9c",
+    "core.log": "e47f191c31c4a72426945313fb4e6b17e82c4ddb356475014fc2b7993f114c63",
+    "module-rejection.log": "79e2cd6667b88fa7c7fcff58ea651cd09e3654478746065b4a88911f7f7870dd",
+    "quick-profile.log": "4e70b177bd594bbf0c52aef24de7d6c67894e736d73e125e8ab59b2749ce8303",
+    "release-dry-run.log": "7dd330e52b7f2f1ac1562e16509cfe7c2adca0110e0b74d38352509a51ed083f",
+    "unit.log": "a3a035c0a1954d50955063c38f419bc95528dad397e611a442da2a0ee0beafea",
+    "arithmetic-hit.log": "cf57bbc31ab54ce60a8e8f2f19f8e947eeaed26e5ea2b6ddbc92c45f27bd45b1",
+    "paced-miss.log": "bdca93ff459b59ada66332679ea8909b765f08c7d95c3ceb2919048a84c82211"
+  }
+}

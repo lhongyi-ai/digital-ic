@@ -1,0 +1,9 @@
+Compiler cache MISS 13fa9e5dc241 (1.571s)
+Traceback (most recent call last):
+  File "./scripts/test_acoustic_rtl.py", line 16, in <module>
+    r.test(hdl_toplevel='acoustic_core',test_module='test_acoustic',test_dir=b,results_xml=b/'results.xml',log_file=b/'test.log',extra_env={'ACOUSTIC_MODEL':str(mp),'ACOUSTIC_VECTORS':str(mp.parent.parent/'vectors'),'ACOUSTIC_REPORT':str(b/'report.json'),'PYTHONPATH':os.pathsep.join([str(ROOT/'src'),str(ROOT/'sim')])})
+  File "./scripts/build_support.py", line 234, in test
+    require_xml_passed(xml)
+  File "./scripts/build_support.py", line 146, in require_xml_passed
+    raise RuntimeError(f"Fresh executed passing cocotb tests required: {path}")
+RuntimeError: Fresh executed passing cocotb tests required: ./build/acoustic/fixture-log/core_l1/results.xml

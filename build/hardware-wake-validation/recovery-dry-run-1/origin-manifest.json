@@ -1,0 +1,198 @@
+{
+  "actual_clock_measured": false,
+  "backup_bytes": 4194304,
+  "backup_path": "./measurements/2026-09-10-upduino31/original-flash-4MiB.bin",
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "board": "UPduino v3.1, USB descriptor and user confirmed 2026-09-10",
+  "clock_source": "hfosc12",
+  "clock_timing_basis": "nominal only; physical oscillator frequency unmeasured",
+  "commands": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "step": "jedec"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/2026-09-10-upduino31/l4-1000/board.bin"
+      ],
+      "step": "configuration"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "262144",
+        "./measurements/2026-09-10-upduino31/l4-1000/replay.bin"
+      ],
+      "step": "input"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/2026-09-10-upduino31/l4-1000/erased-log.bin"
+      ],
+      "step": "clear_log_and_start"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-10-upduino31/l4-1000/result-log.bin"
+      ],
+      "step": "read_log"
+    }
+  ],
+  "device": "i:0x0403:0x6014:0",
+  "elapsed_seconds": 121.40651512498152,
+  "error": "result log is absent, uncommitted, or has the wrong version",
+  "error_type": "ValueError",
+  "execute_requested": true,
+  "expected_flash_id": "EF4016",
+  "finished_utc": "2026-09-10T06:07:45.481786+00:00",
+  "hardware_operations_started": true,
+  "input_sha256": {
+    "board.bin": "40192aa30c9318f9c38f57addb8b75552a6a5cde84adb519e9961a4b4931565e",
+    "build-report.json": "14e7825743d0a4610b8182062e9b421645f0645b7bd97b035657822464fae441",
+    "model.json": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+    "profile.json": "1f34f00566ae8fd4eb76a9acf5ee327df336a2f941ebf97d17c6af845217e63f",
+    "replay.bin": "9bd71ad81931370aa4072a42256faa6b88b5f2cb9725dbca358d4080c47f0cfc"
+  },
+  "measurement_scope": "Flash-fed digital replay; no sensor acquisition or calibrated timing",
+  "nominal_clock_hz": 12000000,
+  "observed_flash_id": "EF4016",
+  "original_paths": {
+    "bitstream_path": "./build/hardware-2026-09-10/runs/l4-wake/board_neighbor_l4_hfosc12/board.bin",
+    "image_path": "./measurements/2026-09-10-upduino31/replay-1000.bin",
+    "model_path": "./artifacts/model_neighbor/model.json",
+    "profile_path": "./configs/upduino31-connected.json"
+  },
+  "passed": false,
+  "replay_parameters": {
+    "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+    "n": 1024,
+    "period_cycles": 1000,
+    "run_frames": 1000,
+    "source_frames": 9
+  },
+  "result_log_sha256": "378d1d1be267f954a7df58556940a5d8700026005f4af970e1e909345acc6978",
+  "schema_version": 1,
+  "source_provenance": "build-report.json input_sha256; all listed files verified before this attempt",
+  "started_utc": "2026-09-10T06:05:44.075845+00:00",
+  "status": "failed",
+  "steps": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "elapsed_seconds": 0.6599766250001267,
+      "finished_utc": "2026-09-10T06:05:44.742979+00:00",
+      "name": "jedec",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:05:44.082814+00:00",
+      "transcript": "jedec.txt"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/2026-09-10-upduino31/l4-1000/board.bin"
+      ],
+      "elapsed_seconds": 7.129445208993275,
+      "finished_utc": "2026-09-10T06:05:51.873612+00:00",
+      "name": "configuration",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:05:44.743897+00:00",
+      "transcript": "configuration.txt"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "262144",
+        "./measurements/2026-09-10-upduino31/l4-1000/replay.bin"
+      ],
+      "elapsed_seconds": 2.107562874996802,
+      "finished_utc": "2026-09-10T06:05:53.982895+00:00",
+      "name": "input",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:05:51.874977+00:00",
+      "transcript": "input.txt"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/2026-09-10-upduino31/l4-1000/erased-log.bin"
+      ],
+      "elapsed_seconds": 8.773394582996843,
+      "finished_utc": "2026-09-10T06:06:02.757402+00:00",
+      "name": "clear_log_and_start",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:05:53.983748+00:00",
+      "transcript": "clear_log_and_start.txt"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-10-upduino31/l4-1000/result-log.bin"
+      ],
+      "elapsed_seconds": 1.690248041995801,
+      "finished_utc": "2026-09-10T06:07:45.480647+00:00",
+      "name": "read_log",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:07:43.789711+00:00",
+      "transcript": "read_log.txt"
+    }
+  ],
+  "wait_seconds": 101
+}

@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "coverage_types": {
+    "branch": {
+      "hit_points": 135,
+      "total_points": 154,
+      "percent": 87.66233766233766
+    },
+    "expr": {
+      "hit_points": 161,
+      "total_points": 194,
+      "percent": 82.98969072164948
+    },
+    "line": {
+      "hit_points": 83,
+      "total_points": 93,
+      "percent": 89.24731182795699
+    },
+    "toggle": {
+      "hit_points": 3718,
+      "total_points": 5250,
+      "percent": 70.81904761904762
+    },
+    "fsm_state": {
+      "hit_points": 0,
+      "total_points": 0,
+      "percent": null,
+      "status": "not instrumented; no coverage claim"
+    },
+    "fsm_arc": {
+      "hit_points": 0,
+      "total_points": 0,
+      "percent": null,
+      "status": "not instrumented; no coverage claim"
+    },
+    "user": {
+      "hit_points": 0,
+      "total_points": 0,
+      "percent": null,
+      "status": "not instrumented; no coverage claim"
+    }
+  },
+  "per_file": {
+    "./rtl/core/vib_coeff_rom.sv": {
+      "branch": {
+        "hit_points": 50,
+        "total_points": 60,
+        "percent": 83.33333333333333
+      },
+      "expr": {
+        "hit_points": 50,
+        "total_points": 50,
+        "percent": 100.0
+      },
+      "line": {
+        "hit_points": 10,
+        "total_points": 10,
+        "percent": 100.0
+      },
+      "toggle": {
+        "hit_points": 624,
+        "total_points": 640,
+        "percent": 97.5
+      },
+      "fsm_state": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "fsm_arc": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "user": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      }
+    },
+    "./rtl/core/vibration_core.sv": {
+      "branch": {
+        "hit_points": 85,
+        "total_points": 94,
+        "percent": 90.42553191489361
+      },
+      "expr": {
+        "hit_points": 111,
+        "total_points": 144,
+        "percent": 77.08333333333333
+      },
+      "line": {
+        "hit_points": 73,
+        "total_points": 83,
+        "percent": 87.95180722891567
+      },
+      "toggle": {
+        "hit_points": 3094,
+        "total_points": 4610,
+        "percent": 67.11496746203905
+      },
+      "fsm_state": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "fsm_arc": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "user": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      }
+    }
+  },
+  "sources": [
+    {
+      "path": "build/rtl_coverage/quant_boundary/coverage.dat",
+      "sha256": "00bd7a74c1138bcae51c5d405a27edb05bc0820e28006fa50178284e2b648d73"
+    }
+  ],
+  "reports": [
+    {
+      "report": "build/rtl_coverage/quant_boundary/regression.json",
+      "report_sha256": "d42efe2c3d1b5dac7ff40ecf82ce8f67ce2b856793d23c9535250ed9b9d4e77b",
+      "xml_sha256": "058e54f466bf489008748796b40c1199ffbccc88cd40b4e666c2b70d6e0dd72e",
+      "tests": {
+        "tests": 4,
+        "passed": 4,
+        "cases": [
+          "bit_exact_continuous_frames",
+          "malformed_frames_and_reset",
+          "full_buffers_during_output_stall",
+          "reset_cancels_each_processing_stage"
+        ]
+      },
+      "result": {
+        "n": 1024,
+        "lanes": 4,
+        "bands": 3,
+        "frames": 5,
+        "distinct_inputs": 5,
+        "debug_frames": 5,
+        "model_sha256": "e063723a076cf91a9c6dc33358373a759a7183ca2b11d92490b25e8467f014fd",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 73848,
+          "cycles_power": 426,
+          "cycles_nn": 265,
+          "cycles_total": 77612
+        }
+      }
+    }
+  ],
+  "threshold": "one hit per tool-generated point (or point-specific threshold if present)",
+  "excluded_points": 0,
+  "coverage_source_filters": [],
+  "per_instance_requested_at_compile_and_runtime": true,
+  "startup_and_reset_activity_included": true,
+  "merged_data_sha256": "00bd7a74c1138bcae51c5d405a27edb05bc0820e28006fa50178284e2b648d73",
+  "lcov_sha256": "84bb5ada7e6f4aeac999d51fcd92cd55d2e1f5cc87946889c7497db6f23c5df3",
+  "uncovered_points_sha256": "60be6c26da559ef4d77d649c3cfc21a62de4e5dca0140bcd5ca61ddc90f8ca30"
+}

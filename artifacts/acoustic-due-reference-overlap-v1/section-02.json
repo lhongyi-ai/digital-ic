@@ -1,0 +1,189 @@
+{
+  "section": "02",
+  "screened_pairs": 81200,
+  "screen_candidates": 0,
+  "raw_checked": [
+    {
+      "reference": "fan/train/section_02_source_train_normal_0160_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0076.wav",
+      "screen_correlation": -0.6443251852429879,
+      "raw_correlation": -0.3053318977008311,
+      "lag_samples": -124132,
+      "overlap_samples": 35868,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0056_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_anomaly_0093.wav",
+      "screen_correlation": 0.6019375656569267,
+      "raw_correlation": 0.3082173152493074,
+      "lag_samples": -32511,
+      "overlap_samples": 127489,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0197_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_anomaly_0087.wav",
+      "screen_correlation": 0.5796432022070285,
+      "raw_correlation": 0.46287107726719867,
+      "lag_samples": 47937,
+      "overlap_samples": 112063,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0197_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0047.wav",
+      "screen_correlation": 0.5690112104403127,
+      "raw_correlation": 0.4781975770950738,
+      "lag_samples": -126077,
+      "overlap_samples": 33923,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0125_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0047.wav",
+      "screen_correlation": -0.5658395618518783,
+      "raw_correlation": -0.4278877728537397,
+      "lag_samples": 107453,
+      "overlap_samples": 52547,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0126_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_anomaly_0087.wav",
+      "screen_correlation": 0.5474653671320253,
+      "raw_correlation": 0.43795335833251336,
+      "lag_samples": 115168,
+      "overlap_samples": 44832,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0110_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0042.wav",
+      "screen_correlation": -0.5456178503852529,
+      "raw_correlation": -0.2742318967374591,
+      "lag_samples": 127969,
+      "overlap_samples": 32031,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0197_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0039.wav",
+      "screen_correlation": -0.544941611698831,
+      "raw_correlation": -0.3991059162219431,
+      "lag_samples": -118364,
+      "overlap_samples": 41636,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0078_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0086.wav",
+      "screen_correlation": 0.5251796395632393,
+      "raw_correlation": 0.33554894663651197,
+      "lag_samples": 122339,
+      "overlap_samples": 37661,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0125_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_anomaly_0087.wav",
+      "screen_correlation": 0.5211903927726154,
+      "raw_correlation": 0.4104704276188039,
+      "lag_samples": -125759,
+      "overlap_samples": 34241,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0037_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0047.wav",
+      "screen_correlation": 0.47359054386565697,
+      "raw_correlation": 0.3487998275805174,
+      "lag_samples": -75713,
+      "overlap_samples": 84287,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0125_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0039.wav",
+      "screen_correlation": -0.4708139425402206,
+      "raw_correlation": -0.3280637556985955,
+      "lag_samples": 125218,
+      "overlap_samples": 34782,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0126_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0039.wav",
+      "screen_correlation": 0.46694886757721293,
+      "raw_correlation": 0.4074798197006048,
+      "lag_samples": 127962,
+      "overlap_samples": 32038,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0075_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_anomaly_0027.wav",
+      "screen_correlation": 0.4666752618166903,
+      "raw_correlation": 0.3668554024366777,
+      "lag_samples": -111840,
+      "overlap_samples": 48160,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0037_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0039.wav",
+      "screen_correlation": 0.4627131110663806,
+      "raw_correlation": 0.3273618131391505,
+      "lag_samples": 59587,
+      "overlap_samples": 100413,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0030_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0029.wav",
+      "screen_correlation": 0.4598004920016026,
+      "raw_correlation": 0.2730485023956136,
+      "lag_samples": -121315,
+      "overlap_samples": 38685,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0150_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_anomaly_0005.wav",
+      "screen_correlation": 0.4579746958235478,
+      "raw_correlation": 0.32810833120460936,
+      "lag_samples": -122821,
+      "overlap_samples": 37179,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0097_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_anomaly_0039.wav",
+      "screen_correlation": 0.45415910218934546,
+      "raw_correlation": 0.2877634231177521,
+      "lag_samples": 126298,
+      "overlap_samples": 33702,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0126_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0047.wav",
+      "screen_correlation": 0.45407199049781216,
+      "raw_correlation": 0.3465560724007984,
+      "lag_samples": 113375,
+      "overlap_samples": 46625,
+      "flagged": false
+    },
+    {
+      "reference": "fan/train/section_02_source_train_normal_0030_strenght_1_ambient.wav",
+      "development": "fan/source_test/section_02_source_test_normal_0027.wav",
+      "screen_correlation": 0.45211656132474065,
+      "raw_correlation": 0.24151271293861584,
+      "lag_samples": -120046,
+      "overlap_samples": 39954,
+      "flagged": false
+    }
+  ],
+  "unconfirmed_candidates": 0,
+  "flagged_pairs": 0
+}

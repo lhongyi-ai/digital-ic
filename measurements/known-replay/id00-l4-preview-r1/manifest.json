@@ -1,0 +1,82 @@
+{
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "bitstream_sha256": "62be498aae34c7c9e37cddfaa25fbfac1a6034dad90c88a1ffce02a12efa0b32",
+  "build_report_sha256": "27bf4918e9ec43a696f694d8698e3232b0aa13d17a5febca1e479caa9cdca22c",
+  "commands": [
+    [
+      "jedec",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ]
+    ],
+    [
+      "configuration",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/known-replay/id00-l4-preview-r1/board.bin"
+      ]
+    ],
+    [
+      "input",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "1048576",
+        "./measurements/known-replay/id00-l4-preview-r1/input.bin"
+      ]
+    ],
+    [
+      "clear_log_and_start",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/known-replay/id00-l4-preview-r1/erased-log.bin"
+      ]
+    ]
+  ],
+  "expected_score": -6361,
+  "input_sha256": "165262f969e4a4a6a789cd8ceedfa54e7092eff06063953a4dbabf2f3e011226",
+  "lanes": 4,
+  "machine": "00",
+  "model_sha256": "23e303fd55a484fe0704089e61e83df2cf4ddfa3a4077e0fa16c4dfa843e39e1",
+  "period": 750,
+  "physical_hardware": false,
+  "profile_sha256": "3e0cbd8dafa9ffc122d6bc2305925cefa0bec273566a4d28af1e79bbf6f7b4e5",
+  "record": {
+    "compressed": 1782348,
+    "crc": 3279980453,
+    "fold": 0,
+    "label": 0,
+    "local": "data/mimii/pcm/normal_00000304.npy",
+    "machine": "00",
+    "method": 8,
+    "name": "fan/id_00/normal/00000304.wav",
+    "npy_sha256": "991aa41b728cb988a43b82ed8f0e3ead69b7b8fc3034b552ea8e6b9e6ba3757e",
+    "offset": 1300214316,
+    "role": "cv",
+    "size": 2560080
+  },
+  "source_sha256": "b67f3527353538f0c6ac7c8acf0d0237e97864a48a11b27ef8f06482fe5a4b10",
+  "started_utc": "2026-09-11T22:07:01.453921+00:00",
+  "status": "prepared",
+  "steps": [],
+  "wait_seconds": 14
+}

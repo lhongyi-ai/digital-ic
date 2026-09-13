@@ -1,0 +1,1220 @@
+{
+  "freeze_sha256": "19704438dd56edaa2f250f66344d16dd88daaf0b9d7cdb2fd880e65708dd28a2",
+  "pcm_sha256": {
+    "data/mimii/pcm/normal_00000774.npy": "beef86038cbe1f28de182c8748f8a68016b73f50ba5ca7de92ff9497422c357f",
+    "data/mimii/pcm/normal_00000564.npy": "3972061c754da8bd32b24039aeb012fedee66f7d01f5ab44180cb5ad457fd563",
+    "data/mimii/pcm/normal_00000411.npy": "edc77792f248d5dec04232dfc45e6593dc1aefe654175fdd716de0d522cee456",
+    "data/mimii/pcm/normal_00000585.npy": "8bb6d39a2c88792e1ff14990834c92a65dfeb90446fda5e2ae90f31724cae57d",
+    "data/mimii/pcm/normal_00000131.npy": "23e932f3b80c5b1a8b2a53c7ebcd40da141cc967eb2b5f28f00e8986cbf9fc69",
+    "data/mimii/pcm/normal_00000402.npy": "ceb983cafaaeb716effc1255e1f272d0f504fbd3f89e170c4ab8133d88b0fbf9",
+    "data/mimii/pcm/normal_00000489.npy": "8b537e1df824d2a299d72994aac566f6341dc207bb124c20cc7bf330b76b91a9",
+    "data/mimii/pcm/normal_00000468.npy": "93e4dca9b228653753d51330fc3435b28729f469be49fba4c136e15ee36b4110",
+    "data/mimii/pcm/normal_00000586.npy": "650069abf212d4e62616714434cde3a9251bcd862b67c211514c0a5b7fc89636",
+    "data/mimii/pcm/normal_00000209.npy": "19e89fb2e3766f7e6cc45cc1a6961101ee959a1132006b90fdef686f003c7c79",
+    "data/mimii/pcm/normal_00000290.npy": "4fc30510d00436feec9ca94c99057c7633db62dc7a5d29693481619acd8fb0ce",
+    "data/mimii/pcm/normal_00000909.npy": "8e215cadfd91085740fe6cfe5618f1d97ab3f7397092a0e7fd46912e9b82c4ff",
+    "data/mimii/pcm/normal_00000519.npy": "f0cbc48285bcb42369940279309368ff3974dbd9bd17fb498a0d42d1653becfa",
+    "data/mimii/pcm/normal_00000986.npy": "0376f62fa46bfc667a62dbdaee864158260faaec8a61d2e69336bdfb965b231c",
+    "data/mimii/pcm/normal_00000113.npy": "e76f48a3d3500fc4dba1731f4f417ff58bd58222bc6575e8c054295e42eb1402",
+    "data/mimii/pcm/normal_00000658.npy": "f7e8f577a218992caa68c8c340822ceb41e753795fe1f383580e91c582b39161",
+    "data/mimii/pcm/normal_00000363.npy": "c175b3435928a7cac7b71600d5737ff261586693c1f0ae46d7039422f723ee8a",
+    "data/mimii/pcm/normal_00000291.npy": "a7f7ffb13754f57954dd6ce201f5370bf012657ae02f7f57dba80c4b8016a9ea",
+    "data/mimii/pcm/normal_00000518.npy": "63b395a5187869df3add211cba56eb9dfd218671680300ae7543e4e4770c87b2",
+    "data/mimii/pcm/normal_00000815.npy": "8682f9faeeb44973936674482be1538cb69a48504e866012a04f725911666033",
+    "data/mimii/pcm/normal_00000210.npy": "1e992c1b4bd2de0acc62341eeacec486f9d599d4109754363d5315b6849017ae",
+    "data/mimii/pcm/normal_00000294.npy": "219c9d121379c7eae15f8c1419308824e8bbc83ef7d08e119cfec83811b90cb0",
+    "data/mimii/pcm/normal_00000038.npy": "b886113b1264c7eac2315a6f30e8a7cb73f91300076c85d1fb69bcb91e42f447",
+    "data/mimii/pcm/normal_00000178.npy": "fa81465bf46edb9445a553e190150c75e6b1354f93227a57fbb743b49d2c3d86",
+    "data/mimii/pcm/normal_00000971.npy": "0475de4ee451a2d18c09fe3d8c99bf1173e0d0d5605ce0bd52ed2abf8608eadb",
+    "data/mimii/pcm/normal_00000246.npy": "a5e5ae966be9c396befdf9c432f1745bdb252770c450deca9266475be3622961",
+    "data/mimii/pcm/normal_00000935.npy": "2c4590a3f500d6a59bb3e1df1e8295105994a7f4970e2495c9d803ebe5df0f13",
+    "data/mimii/pcm/normal_00000554.npy": "80bc3c8d4ac3fc7ae50d0c9578b67eab5a4d3a4d0b1c0ae4dc99a83cfb65260b",
+    "data/mimii/pcm/normal_00000918.npy": "159ac0dbb683689e7377e00e09553acd4f16cf5c4ea5d5d1aa704ae0b26969ed",
+    "data/mimii/pcm/normal_00000583.npy": "8607766e5159bf4123a38acfd189d97f99f96f4a55d6590f47470bcc73c29e8a",
+    "data/mimii/pcm/normal_00000181.npy": "ac658335f045d36d3a7d5a95192dae3121412cfce0e206cd5c0b087370312cd4",
+    "data/mimii/pcm/normal_00000370.npy": "c5fe928e88b9da8d2b635a01b61c198566c99b9298e8c032607188eaef613c5b",
+    "data/mimii/pcm/normal_00000592.npy": "801e23a4fa5c5cbe26f492551e22c0050767b2a0115fa720ed47d6f1552dc6c0",
+    "data/mimii/pcm/normal_00000204.npy": "b76346255705927cda46e7f5ac2cb0f15ddecef74d51882cd3a7ac67a9b15b1e",
+    "data/mimii/pcm/normal_00000779.npy": "b8b375a100a668cf81611dad9558df60ab03a07631778ba25b071a67da0ef009",
+    "data/mimii/pcm/normal_00000175.npy": "ae0f6fdd4d88b5b0c430380177e83173fc19b19ef868576cb6f63e40c6baf6ae",
+    "data/mimii/pcm/normal_00000767.npy": "a39623079705589b2e6a301c2fd8cdc53ed9f4f757035f49476ff40e7b55df66",
+    "data/mimii/pcm/normal_00000410.npy": "fb74857f2a034c2581bc7083acfeca43343dfc74e52586d98974cda9bb15e422",
+    "data/mimii/pcm/normal_00000488.npy": "3b9bb3d9e2153e32d0d9413372a633a71c5b5bd7267cd243711a11fccb569d45",
+    "data/mimii/pcm/normal_00000258.npy": "19b767dd8a0afea45edc2f7980a52aed4967e565ecea67195806bb0a6c6713a9",
+    "data/mimii/pcm/abnormal_00000144.npy": "d26ed8ccbae01d5357e1d83fb76bdcb3c08dbbe74e44d7367c5e39037179020b",
+    "data/mimii/pcm/abnormal_00000031.npy": "d3ceb63fcec65ac88f72c573677cb80c65c4fb7e31e5c5cbdd324f68cdd6bb31",
+    "data/mimii/pcm/abnormal_00000193.npy": "34efb7ce382e8b570ec77db6ba604d338a149e7fbfe7ae3ea1881140cc970964",
+    "data/mimii/pcm/abnormal_00000194.npy": "b5584f82ac3846b30619a3be91ee14a8a8dab755b725cf56c081598944dac5ab",
+    "data/mimii/pcm/abnormal_00000107.npy": "695f34092b273ca7ac409492ca412743e81895c0be973302536165bbcab430a6",
+    "data/mimii/pcm/abnormal_00000163.npy": "bbdb789355900fde7cfa87ab955c22f17efd8e9d1873434ad1ffc4fd4ae27eb2",
+    "data/mimii/pcm/abnormal_00000402.npy": "f559f6db99a216d4920c8be662430b775283573423d0fec5336770dd6d1fe7ba",
+    "data/mimii/pcm/abnormal_00000075.npy": "31726bd95fb3e4b89eda12931f9fa947fac045c6a7c4c171619f8171415b8979",
+    "data/mimii/pcm/abnormal_00000030.npy": "0c18512b8ff9b5bfff836aa9a873bf9f157bb847f6acc149a4bdf65d6884747b",
+    "data/mimii/pcm/abnormal_00000261.npy": "dd8fdf1741df7724e9e04749c2281a65eed27a8af71018609ab2260312dc307c",
+    "data/mimii/pcm/abnormal_00000260.npy": "e08218becde683b0324d8ae1303a444218a95c8e6c8f03801050dbb23039568a",
+    "data/mimii/pcm/abnormal_00000092.npy": "b894cfe2dcda67608becdff1808b67df749099f397d681d43b6c9c8d208b5636",
+    "data/mimii/pcm/abnormal_00000076.npy": "cbd7083bf60a0c0e79c8df6df893c11e86b7658bf9953f0ea14e7ad463bf9383",
+    "data/mimii/pcm/abnormal_00000079.npy": "e2faf18468b074350d1f1167a646b7d37bb8cb04bf35bd2d504cb1961c0ac57b",
+    "data/mimii/pcm/abnormal_00000043.npy": "ab5c34539ece9f0d47ba2c68e3a6a9caee19559744288c47a8eb9804559e5190",
+    "data/mimii/pcm/abnormal_00000204.npy": "7667bb2e1cfe6280754e3e219bb7d35e24af39609e6bf0b1333edbb2e50d8911",
+    "data/mimii/pcm/abnormal_00000256.npy": "5a869fe77d2f9b8bddae49b5351bbd47231433308aee6a7ba86443047e0f6be6",
+    "data/mimii/pcm/abnormal_00000217.npy": "3dae67ec4e08a4dab8ff17b1cc45ba126000527ecefc5f921309740a63037cdd",
+    "data/mimii/pcm/abnormal_00000283.npy": "02fe9eb1855863e802040b5824f21ca9217e2c701cb349576cf1e42bd9a2e885",
+    "data/mimii/pcm/abnormal_00000156.npy": "ba3bd1f53e97817736cc7695b4fc2c37011a68ffef104118ef8ccbcff1236782",
+    "data/mimii/pcm/abnormal_00000080.npy": "bd309683e00fb23c4612b701f88ece70dafb3e2dee58a13287b0398642f56510",
+    "data/mimii/pcm/abnormal_00000287.npy": "b77b5e97fb0d8617d1dd7cc3e45807b321c5ae799e620b2021bdbae4df64ad60",
+    "data/mimii/pcm/abnormal_00000403.npy": "7685dfc584fba9dc9a20d74081d58996e53b3895d7a43adfafe7c5f9eb0cd0bb",
+    "data/mimii/pcm/abnormal_00000210.npy": "682f66ade138a963cd596e993b0d03fd3102a2116fc544739d52d55f2e50c5bb",
+    "data/mimii/pcm/abnormal_00000319.npy": "918d55921b93337f5a28dbfc4b1ae55a32a7372f1a260fd95192abfaa2106abb",
+    "data/mimii/pcm/abnormal_00000016.npy": "f75b7112a4da87ef47e8919e0989924345cea91a2d3216109bbb2feed2d6415b",
+    "data/mimii/pcm/abnormal_00000119.npy": "3b6fe79c9efd44acc33702ed63f42a97fbc9c8038287a303203c8250ac1341ac",
+    "data/mimii/pcm/abnormal_00000003.npy": "7a583146713e29b86d0a05f240976816a01e568cf4b563065de0a3b476337ef3",
+    "data/mimii/pcm/abnormal_00000241.npy": "2fa1cb4e7b318df8b3904fc541401f93258fc838dd1f233776133cc7ecadbe1b",
+    "data/mimii/pcm/abnormal_00000136.npy": "4a648c91435b0dd809055294189d47ee4a1ce2e2247bf5354ea5b3452757930a",
+    "data/mimii/pcm/abnormal_00000333.npy": "cff8d1ebee640b7887299ccec7c64f632b284060830f12903bca5190b86d5a8e",
+    "data/mimii/pcm/abnormal_00000230.npy": "13380ee90748793b4d4347511ef6238e41292075485a76fffa0e9fa0d47af433",
+    "data/mimii/pcm/abnormal_00000274.npy": "7bdd7a755cb2f35909b21144b01f4c1d45d32728cd2046a49cf497b1897c1b4c",
+    "data/mimii/pcm/abnormal_00000291.npy": "a2d9a38c60430e9d48f3157450c2f89048a835ccf94be564463a92473502e63a",
+    "data/mimii/pcm/abnormal_00000352.npy": "2aeb6a4000a887d47778f1138f0e0599eb43d646549693e5f7714a51414bfea4",
+    "data/mimii/pcm/abnormal_00000008.npy": "2d20b52cdb34ba40c75a3bf8109c56d5061dfa31d46f560b80382d85b580684a",
+    "data/mimii/pcm/abnormal_00000235.npy": "d927a0834df9f5b09871eaec23658aa06008b58275857c9607cb34434a536db8",
+    "data/mimii/pcm/abnormal_00000173.npy": "ce843254684243bba9e0cbab784e04a9a56f3abe64c9137d2b2144f3335bb334",
+    "data/mimii/pcm/abnormal_00000271.npy": "4442ff1d212e17182be5383d7f8640f6d87363d82fd300a8a86d1c0a803dd194",
+    "data/mimii/pcm/abnormal_00000275.npy": "181dde16bc9c5a96bc614148fbc4e81c5b03efa1da6e12cd68cb9d02671ed1e1",
+    "data/mimii/pcm/abnormal_00000057.npy": "5506d7ed18f03085eec4de6140d4bb40c332c8ab5376c3e74d449333e8ffe67d",
+    "data/mimii/pcm/abnormal_00000383.npy": "f537c1c27ea3c2a3ddfc47dc4f67839e4e1bdb6f6c0da3a67ab7f71fda5f29a2",
+    "data/mimii/pcm/abnormal_00000155.npy": "5af725d121284cebb4b10b911615670a8a089dd2cf7a364c2a065a86f397ffd7",
+    "data/mimii/pcm/abnormal_00000045.npy": "e375985d53717c4d408fd8df3a58d96f4a6d1192ef48d2811da0441dc775b3ad",
+    "data/mimii/pcm/abnormal_00000361.npy": "4db7fed3e518ea74f3f0949edd758650dc7269d9abb36622eb35970b5a7dc1c9",
+    "data/mimii/pcm/abnormal_00000175.npy": "37f53556a4fb5ef873165127f5c4ce0da6de36bc54a12cce619f81b9607e2ddb",
+    "data/mimii/pcm/abnormal_00000101.npy": "3537890fc8c0fafc6bfae31b25890eed51ea1cf3981213a88e613c3900522c55",
+    "data/mimii/pcm/abnormal_00000082.npy": "d70cf95a211c56d307b822a25043d6d756067a9b3c2d0f3e9d935ea3f0376cb8",
+    "data/mimii/pcm/abnormal_00000012.npy": "08360e78b0d715bf88df55dc772c5895a572ee1c879815023c18d847ed6d7c19",
+    "data/mimii/pcm/abnormal_00000125.npy": "e332b427d1dd9b55b87fc0138f5f81da985794fba6158dd9671bd81b096c0845"
+  },
+  "results": [
+    {
+      "auc": 1.0,
+      "fpr": 0.025,
+      "recall": 1.0,
+      "threshold": 0.28277777777777774,
+      "confusion_matrix": [
+        [
+          39,
+          1
+        ],
+        [
+          0,
+          50
+        ]
+      ],
+      "name": "spectrum1024-trees",
+      "high_standard_passed": true,
+      "predictions": [
+        {
+          "name": "fan/id_00/normal/00000774.wav",
+          "label": 0,
+          "score": 0.029444444444444447,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000564.wav",
+          "label": 0,
+          "score": 0.051666666666666666,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000411.wav",
+          "label": 0,
+          "score": 0.08,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000585.wav",
+          "label": 0,
+          "score": 0.24277777777777776,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000131.wav",
+          "label": 0,
+          "score": 0.07777777777777777,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000402.wav",
+          "label": 0,
+          "score": 0.06666666666666667,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000489.wav",
+          "label": 0,
+          "score": 0.10499999999999998,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000468.wav",
+          "label": 0,
+          "score": 0.013333333333333334,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000586.wav",
+          "label": 0,
+          "score": 0.057222222222222216,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000209.wav",
+          "label": 0,
+          "score": 0.065,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000290.wav",
+          "label": 0,
+          "score": 0.08944444444444445,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000909.wav",
+          "label": 0,
+          "score": 0.17666666666666667,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000519.wav",
+          "label": 0,
+          "score": 0.024444444444444442,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000986.wav",
+          "label": 0,
+          "score": 0.12222222222222222,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000113.wav",
+          "label": 0,
+          "score": 0.18555555555555553,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000658.wav",
+          "label": 0,
+          "score": 0.07666666666666667,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000363.wav",
+          "label": 0,
+          "score": 0.35777777777777775,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/normal/00000291.wav",
+          "label": 0,
+          "score": 0.06944444444444443,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000518.wav",
+          "label": 0,
+          "score": 0.09833333333333333,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000815.wav",
+          "label": 0,
+          "score": 0.0788888888888889,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000210.wav",
+          "label": 0,
+          "score": 0.023888888888888887,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000294.wav",
+          "label": 0,
+          "score": 0.06222222222222223,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000038.wav",
+          "label": 0,
+          "score": 0.21722222222222223,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000178.wav",
+          "label": 0,
+          "score": 0.009444444444444443,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000971.wav",
+          "label": 0,
+          "score": 0.04777777777777777,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000246.wav",
+          "label": 0,
+          "score": 0.057222222222222216,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000935.wav",
+          "label": 0,
+          "score": 0.1161111111111111,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000554.wav",
+          "label": 0,
+          "score": 0.021666666666666667,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000918.wav",
+          "label": 0,
+          "score": 0.14,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000583.wav",
+          "label": 0,
+          "score": 0.14111111111111113,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000181.wav",
+          "label": 0,
+          "score": 0.061666666666666654,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000370.wav",
+          "label": 0,
+          "score": 0.10777777777777779,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000592.wav",
+          "label": 0,
+          "score": 0.17444444444444443,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000204.wav",
+          "label": 0,
+          "score": 0.046666666666666676,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000779.wav",
+          "label": 0,
+          "score": 0.065,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000175.wav",
+          "label": 0,
+          "score": 0.024444444444444442,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000767.wav",
+          "label": 0,
+          "score": 0.03722222222222222,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000410.wav",
+          "label": 0,
+          "score": 0.06666666666666667,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000488.wav",
+          "label": 0,
+          "score": 0.25777777777777783,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000258.wav",
+          "label": 0,
+          "score": 0.13944444444444445,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/abnormal/00000144.wav",
+          "label": 1,
+          "score": 0.9883333333333333,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000031.wav",
+          "label": 1,
+          "score": 0.99,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000193.wav",
+          "label": 1,
+          "score": 0.5272222222222223,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000194.wav",
+          "label": 1,
+          "score": 0.841111111111111,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000107.wav",
+          "label": 1,
+          "score": 0.8894444444444444,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000163.wav",
+          "label": 1,
+          "score": 0.8005555555555555,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000402.wav",
+          "label": 1,
+          "score": 0.8783333333333333,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000075.wav",
+          "label": 1,
+          "score": 0.9355555555555555,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000030.wav",
+          "label": 1,
+          "score": 0.991111111111111,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000261.wav",
+          "label": 1,
+          "score": 0.7261111111111112,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000260.wav",
+          "label": 1,
+          "score": 0.6261111111111113,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000092.wav",
+          "label": 1,
+          "score": 0.9933333333333333,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000076.wav",
+          "label": 1,
+          "score": 0.99,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000079.wav",
+          "label": 1,
+          "score": 0.9794444444444446,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000043.wav",
+          "label": 1,
+          "score": 0.9688888888888888,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000204.wav",
+          "label": 1,
+          "score": 0.7116666666666667,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000256.wav",
+          "label": 1,
+          "score": 0.8133333333333332,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000217.wav",
+          "label": 1,
+          "score": 0.7999999999999999,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000283.wav",
+          "label": 1,
+          "score": 0.9111111111111111,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000156.wav",
+          "label": 1,
+          "score": 0.6916666666666668,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000080.wav",
+          "label": 1,
+          "score": 0.995,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000287.wav",
+          "label": 1,
+          "score": 0.7355555555555555,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000403.wav",
+          "label": 1,
+          "score": 0.8616666666666667,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000210.wav",
+          "label": 1,
+          "score": 0.605,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000319.wav",
+          "label": 1,
+          "score": 0.8811111111111111,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000016.wav",
+          "label": 1,
+          "score": 0.9733333333333335,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000119.wav",
+          "label": 1,
+          "score": 0.9488888888888888,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000003.wav",
+          "label": 1,
+          "score": 0.9905555555555556,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000241.wav",
+          "label": 1,
+          "score": 0.6133333333333334,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000136.wav",
+          "label": 1,
+          "score": 0.9655555555555556,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000333.wav",
+          "label": 1,
+          "score": 0.7816666666666666,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000230.wav",
+          "label": 1,
+          "score": 0.7705555555555557,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000274.wav",
+          "label": 1,
+          "score": 0.8661111111111113,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000291.wav",
+          "label": 1,
+          "score": 0.6188888888888888,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000352.wav",
+          "label": 1,
+          "score": 0.8855555555555554,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000008.wav",
+          "label": 1,
+          "score": 0.9761111111111113,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000235.wav",
+          "label": 1,
+          "score": 0.8022222222222222,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000173.wav",
+          "label": 1,
+          "score": 0.7094444444444444,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000271.wav",
+          "label": 1,
+          "score": 0.8266666666666667,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000275.wav",
+          "label": 1,
+          "score": 0.818888888888889,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000057.wav",
+          "label": 1,
+          "score": 0.9933333333333333,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000383.wav",
+          "label": 1,
+          "score": 0.9255555555555555,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000155.wav",
+          "label": 1,
+          "score": 0.7011111111111111,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000045.wav",
+          "label": 1,
+          "score": 0.986111111111111,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000361.wav",
+          "label": 1,
+          "score": 0.8411111111111111,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000175.wav",
+          "label": 1,
+          "score": 0.8522222222222222,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000101.wav",
+          "label": 1,
+          "score": 0.995,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000082.wav",
+          "label": 1,
+          "score": 0.9794444444444446,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000012.wav",
+          "label": 1,
+          "score": 0.995,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000125.wav",
+          "label": 1,
+          "score": 0.99,
+          "predicted_abnormal": true
+        }
+      ]
+    },
+    {
+      "auc": 0.999,
+      "fpr": 0.125,
+      "recall": 1.0,
+      "threshold": -1.0506428514724648,
+      "confusion_matrix": [
+        [
+          35,
+          5
+        ],
+        [
+          0,
+          50
+        ]
+      ],
+      "name": "spectrum1024-linear",
+      "high_standard_passed": false,
+      "predictions": [
+        {
+          "name": "fan/id_00/normal/00000774.wav",
+          "label": 0,
+          "score": -2.571541136390932,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000564.wav",
+          "label": 0,
+          "score": -5.898593509187137,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000411.wav",
+          "label": 0,
+          "score": -0.5158983243954235,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/normal/00000585.wav",
+          "label": 0,
+          "score": -0.740920486507108,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/normal/00000131.wav",
+          "label": 0,
+          "score": -3.8799140205438487,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000402.wav",
+          "label": 0,
+          "score": -1.6551635539043483,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000489.wav",
+          "label": 0,
+          "score": -1.860937959821917,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000468.wav",
+          "label": 0,
+          "score": -2.5469693455985176,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000586.wav",
+          "label": 0,
+          "score": -3.9027370864693385,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000209.wav",
+          "label": 0,
+          "score": -3.955757371956331,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000290.wav",
+          "label": 0,
+          "score": -6.2051673164157535,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000909.wav",
+          "label": 0,
+          "score": -0.23033875340985127,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/normal/00000519.wav",
+          "label": 0,
+          "score": -2.701052382597863,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000986.wav",
+          "label": 0,
+          "score": -5.084525751001363,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000113.wav",
+          "label": 0,
+          "score": -2.762807922377479,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000658.wav",
+          "label": 0,
+          "score": -0.63262796714116,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/normal/00000363.wav",
+          "label": 0,
+          "score": -1.5664053973106709,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000291.wav",
+          "label": 0,
+          "score": -3.3481195409752162,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000518.wav",
+          "label": 0,
+          "score": -2.3296756736200446,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000815.wav",
+          "label": 0,
+          "score": -2.0269869911220426,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000210.wav",
+          "label": 0,
+          "score": -2.8187866206809566,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000294.wav",
+          "label": 0,
+          "score": -5.6558557595503265,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000038.wav",
+          "label": 0,
+          "score": -1.9605185131044625,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000178.wav",
+          "label": 0,
+          "score": -2.6010083656893817,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000971.wav",
+          "label": 0,
+          "score": -1.2483356230987774,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000246.wav",
+          "label": 0,
+          "score": -2.2966137351460163,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000935.wav",
+          "label": 0,
+          "score": -5.64919363164757,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000554.wav",
+          "label": 0,
+          "score": -3.3120999787419274,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000918.wav",
+          "label": 0,
+          "score": -1.3813416662998295,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000583.wav",
+          "label": 0,
+          "score": -2.754327118205755,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000181.wav",
+          "label": 0,
+          "score": -4.746597353823359,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000370.wav",
+          "label": 0,
+          "score": -3.4184182389968845,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000592.wav",
+          "label": 0,
+          "score": -3.5408356363334574,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000204.wav",
+          "label": 0,
+          "score": -1.9721683264049568,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000779.wav",
+          "label": 0,
+          "score": -3.3499760137672356,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000175.wav",
+          "label": 0,
+          "score": -2.2162400545647563,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000767.wav",
+          "label": 0,
+          "score": -3.149358698850697,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000410.wav",
+          "label": 0,
+          "score": -3.4236207256625377,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/normal/00000488.wav",
+          "label": 0,
+          "score": -0.4369747554972658,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/normal/00000258.wav",
+          "label": 0,
+          "score": -1.668165500340595,
+          "predicted_abnormal": false
+        },
+        {
+          "name": "fan/id_00/abnormal/00000144.wav",
+          "label": 1,
+          "score": 3.5016380933707865,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000031.wav",
+          "label": 1,
+          "score": 1.733215649179774,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000193.wav",
+          "label": 1,
+          "score": -0.30336828722487325,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000194.wav",
+          "label": 1,
+          "score": 3.0088985556599726,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000107.wav",
+          "label": 1,
+          "score": 1.9376773542033323,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000163.wav",
+          "label": 1,
+          "score": 1.9012179808086709,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000402.wav",
+          "label": 1,
+          "score": 3.6994251230979147,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000075.wav",
+          "label": 1,
+          "score": 2.4974056574785624,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000030.wav",
+          "label": 1,
+          "score": 3.1161803583598715,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000261.wav",
+          "label": 1,
+          "score": 0.3602265092989772,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000260.wav",
+          "label": 1,
+          "score": 1.0448140120377596,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000092.wav",
+          "label": 1,
+          "score": 2.1468109179128927,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000076.wav",
+          "label": 1,
+          "score": 3.30945855794184,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000079.wav",
+          "label": 1,
+          "score": 4.189695215102506,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000043.wav",
+          "label": 1,
+          "score": 1.4669021620476523,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000204.wav",
+          "label": 1,
+          "score": 0.7545922187482188,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000256.wav",
+          "label": 1,
+          "score": 3.5012331608948837,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000217.wav",
+          "label": 1,
+          "score": 1.8337024108790505,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000283.wav",
+          "label": 1,
+          "score": 0.6834526975740783,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000156.wav",
+          "label": 1,
+          "score": 0.595927223404905,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000080.wav",
+          "label": 1,
+          "score": 3.176997429680404,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000287.wav",
+          "label": 1,
+          "score": 2.809412294249054,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000403.wav",
+          "label": 1,
+          "score": 3.2367269724402017,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000210.wav",
+          "label": 1,
+          "score": 0.07506720150256914,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000319.wav",
+          "label": 1,
+          "score": 2.974142595772425,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000016.wav",
+          "label": 1,
+          "score": 2.6953727594372565,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000119.wav",
+          "label": 1,
+          "score": -0.2794558898376111,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000003.wav",
+          "label": 1,
+          "score": 4.680425199565353,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000241.wav",
+          "label": 1,
+          "score": 1.0678497508513234,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000136.wav",
+          "label": 1,
+          "score": 4.2789343175752474,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000333.wav",
+          "label": 1,
+          "score": 1.6384111414378129,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000230.wav",
+          "label": 1,
+          "score": 0.9809512758142456,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000274.wav",
+          "label": 1,
+          "score": 0.9842426462325341,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000291.wav",
+          "label": 1,
+          "score": 0.3254441047918087,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000352.wav",
+          "label": 1,
+          "score": 2.7094197885590012,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000008.wav",
+          "label": 1,
+          "score": 1.649910232467485,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000235.wav",
+          "label": 1,
+          "score": 2.388771689657651,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000173.wav",
+          "label": 1,
+          "score": 2.8040813922452914,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000271.wav",
+          "label": 1,
+          "score": 4.010962111142596,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000275.wav",
+          "label": 1,
+          "score": 1.6950887565982424,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000057.wav",
+          "label": 1,
+          "score": 5.270176209259972,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000383.wav",
+          "label": 1,
+          "score": 2.3342493441150665,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000155.wav",
+          "label": 1,
+          "score": 2.59401436785399,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000045.wav",
+          "label": 1,
+          "score": 3.336638601584929,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000361.wav",
+          "label": 1,
+          "score": 2.4170987787842946,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000175.wav",
+          "label": 1,
+          "score": 2.5666759531913166,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000101.wav",
+          "label": 1,
+          "score": 4.250588235972173,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000082.wav",
+          "label": 1,
+          "score": 3.8961833499657583,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000012.wav",
+          "label": 1,
+          "score": 1.9083238297708849,
+          "predicted_abnormal": true
+        },
+        {
+          "name": "fan/id_00/abnormal/00000125.wav",
+          "label": 1,
+          "score": 4.532446906611672,
+          "predicted_abnormal": true
+        }
+      ]
+    }
+  ],
+  "test_records": 90,
+  "thresholds_unchanged": true,
+  "task": "supervised known-fault recognition"
+}

@@ -1,0 +1,88 @@
+{
+  "requirements": [
+    {
+      "requirement": "FIFO-RESET",
+      "scenarios": [
+        "reset_empty",
+        "reset_nonempty"
+      ],
+      "simulation": "PASS"
+    },
+    {
+      "requirement": "FIFO-BOUNDARY",
+      "scenarios": [
+        "empty_read_blocked",
+        "full_write_blocked"
+      ],
+      "simulation": "PASS"
+    },
+    {
+      "requirement": "FIFO-EXCHANGE",
+      "scenarios": [
+        "full_pop_push"
+      ],
+      "simulation": "PASS"
+    },
+    {
+      "requirement": "FIFO-STALL",
+      "scenarios": [
+        "output_stall",
+        "input_gap"
+      ],
+      "simulation": "PASS"
+    },
+    {
+      "requirement": "FIFO-ORDER",
+      "scenarios": [
+        "push",
+        "pop",
+        "wraparound_traffic"
+      ],
+      "simulation": "PASS"
+    }
+  ],
+  "formal": [
+    {
+      "task": "bmc_d1",
+      "bound": 64,
+      "status": "PASS 0 0"
+    },
+    {
+      "task": "bmc_d3",
+      "bound": 64,
+      "status": "PASS 0 19"
+    },
+    {
+      "task": "bmc_d4",
+      "bound": 64,
+      "status": "PASS 0 50"
+    },
+    {
+      "task": "cover_d1",
+      "bound": 64,
+      "status": "PASS 0 0"
+    },
+    {
+      "task": "cover_d3",
+      "bound": 64,
+      "status": "PASS 0 0"
+    },
+    {
+      "task": "cover_d4",
+      "bound": 64,
+      "status": "PASS 0 0"
+    }
+  ],
+  "sva_smoke": {
+    "verilator": "Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)",
+    "subset": "clocked assert property, disable iff, |=>, $past",
+    "positive_pass": true,
+    "negative_control_detected": true,
+    "negative_returncode": 1
+  },
+  "limits": [
+    "Scenario counters are not line, branch, toggle, or FSM coverage.",
+    "Formal BMC covers only 64 sampled clock steps for the tested parameters.",
+    "No CDC, JTAG, ASIC signoff, board, sensor, or power claim is made."
+  ]
+}

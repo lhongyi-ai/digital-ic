@@ -1,0 +1,15 @@
+{
+  "plan_sha256": "cbce6ce6b5bf5c94a6264dbd37e75a6ba801f3d5b158a6a4a301faf8b80bf72b",
+  "source_sha256": "5fad110fe0b335cef0d68f19c860de0e141b0548c332a2952aea0a7c1b863085",
+  "spectrum_source_sha256": "2f642a231767f93ec1a412aa232815fc58c6fd3b674b48a8f73ea0606b2bda02",
+  "stage": "float feasibility; NOT integer RTL equivalence or final release",
+  "feature": "mean power over156 periodic-Hann N1024 windows; sum3 neighboring bins; log2 floor1e-12",
+  "frequency_selection": "mean within-machine Fisher discriminant of training log-band power; 32 centers2..511, spacing>=3, low-bin tie break",
+  "scaling": "training-only per-feature mean/std, std floor1e-6",
+  "models": [
+    "logistic C1 max_iter3000",
+    "MLP32-16-ReLU-1 Adam .001 batch64 epochs100 seed71"
+  ],
+  "selection": "fixed last epoch; no extra search",
+  "final_test_opened": false
+}

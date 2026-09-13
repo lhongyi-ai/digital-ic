@@ -1,0 +1,64 @@
+Info: constrained 'flash_cs_n' to bel 'X24/Y0/io1'
+Info: constrained 'flash_sclk' to bel 'X24/Y0/io0'
+Info: constrained 'flash_mosi' to bel 'X23/Y0/io0'
+Info: constrained 'flash_miso' to bel 'X23/Y0/io1'
+Info: constrained 'status_done' to bel 'X18/Y0/io1'
+Info: constrained 'status_error' to bel 'X18/Y0/io0'
+Info: constrained 'status_running' to bel 'X19/Y0/io0'
+Info: constraining clock net 'clk' to 13.20 MHz
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:     3101 LCs used as LUT4 only
+Info:     1233 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:      547 LCs used as DFF only
+Info: Packing carries..
+Info:      384 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:       26 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info:   constrained ICESTORM_HFOSC 'oscillator_OSC' to X0/Y31/hfosc_1
+Warning:     Overriding derived constraint of 12.0 MHz on net clk with user-specified constraint of 13.2 MHz.
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting rst [reset] (fanout 955)
+Info: promoting system.core.cycles_total_SB_DFFSR_Q_19_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I1_O_SB_LUT4_O_I3[1] [reset] (fanout 230)
+Info: promoting system.core.component_base_SB_DFFESR_Q_D_SB_LUT4_O_I2_SB_CARRY_CI_CO_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_I3_1_O[0] [reset] (fanout 64)
+Info: promoting system.core.valid1_SB_LUT4_I0_O [cen] (fanout 192)
+Info: promoting system.core.exponent_SB_DFFESR_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O [cen] (fanout 64)
+Info: promoting system.core.ram_part_SB_DFFESR_Q_E_SB_LUT4_O_I3_SB_LUT4_I2_O [cen] (fanout 64)
+Info: promoting system.core.purpose_SB_DFF_Q_2_D_SB_LUT4_O_I3_SB_LUT4_I3_O [cen] (fanout 64)
+Info: Constraining chains...
+Info:       97 LCs used to legalise carry chains.
+Info: Checksum: 0x541c786c
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:    5344/   5280   101%
+Info: 	        ICESTORM_RAM:      28/     30    93%
+Info: 	               SB_IO:       7/     39    17%
+Info: 	               SB_GB:       8/      8   100%
+Info: 	        ICESTORM_PLL:       0/      1     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+Info: 	        ICESTORM_DSP:       4/      8    50%
+Info: 	      ICESTORM_HFOSC:       1/      1   100%
+Info: 	      ICESTORM_LFOSC:       0/      1     0%
+Info: 	              SB_I2C:       0/      2     0%
+Info: 	              SB_SPI:       0/      2     0%
+Info: 	              IO_I3C:       0/      2     0%
+Info: 	         SB_LEDDA_IP:       0/      1     0%
+Info: 	         SB_RGBA_DRV:       0/      1     0%
+Info: 	      ICESTORM_SPRAM:       1/      4    25%
+
+Info: Placed 9 cells based on constraints.
+Info: Creating initial analytic placement for 3635 cells, random placement wirelen = 123293.
+Info:     at initial placer iter 0, wirelen = 3767
+Info:     at initial placer iter 1, wirelen = 3552
+Info:     at initial placer iter 2, wirelen = 3554
+Info:     at initial placer iter 3, wirelen = 3547
+Info: Running main analytical placer, max placement attempts per cell = 3635556.
+ERROR: Failed to expand region (0, 0) |_> (25, 31) of 5344 ICESTORM_LCs
+1 warning, 1 error

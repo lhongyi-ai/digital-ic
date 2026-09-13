@@ -1,0 +1,19 @@
+...F                                                                     [100%]
+=================================== FAILURES ===================================
+_________________ test_log_lut_error_and_quantizer_saturation __________________
+
+    def test_log_lut_error_and_quantizer_saturation():
+        p=np.array([[0,1,2**24,2**40,2**60-1]],dtype=np.uint64)
+        out=power_log_q12(p)
+        exact=np.log2(np.maximum(p.astype(float)/(156*2**54),1e-12))*4096
+>       assert np.max(np.abs(out-exact))<7
+E       AssertionError: assert np.float64(8194.99251154023) < 7
+E        +  where np.float64(8194.99251154023) = <function max at 0x10894ae70>(array([[4.09719904e-01, 4.09719904e-01, 8.19199251e+03, 8.19199251e+03,\n        8.19499251e+03]]))
+E        +    where <function max at 0x10894ae70> = np.max
+E        +    and   array([[4.09719904e-01, 4.09719904e-01, 8.19199251e+03, 8.19199251e+03,\n        8.19499251e+03]]) = <ufunc 'absolute'>((array([[-163279, -163279, -160913,  -95377,  -13460]]) - array([[-163279.4097199 , -163279.4097199 , -152721.00748846,\n         -87185.00748846,   -5265.00748846]])))
+E        +      where <ufunc 'absolute'> = np.abs
+
+tests/test_known_fixed.py:33: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_known_fixed.py::test_log_lut_error_and_quantizer_saturation
+1 failed, 3 passed in 0.04s

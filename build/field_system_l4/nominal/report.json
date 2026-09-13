@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "case": "nominal",
+  "records_bit_exact": 3,
+  "model_sha256": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe",
+  "parsed": {
+    "schema_version": 1,
+    "committed": true,
+    "model_sha256": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe",
+    "class_names": [
+      "stopped",
+      "rigid_support_running",
+      "flexible_support_running"
+    ],
+    "source_kind": "synthetic_pipeline_fixture",
+    "synthetic_model_not_for_deployment": true,
+    "error_flags": 0,
+    "observed_samples": 773,
+    "target_samples": 773,
+    "odr_hz": 800,
+    "clock_hz": 12000000,
+    "n": 256,
+    "axis": "z",
+    "lanes": 4,
+    "accepted_samples": 773,
+    "dropped_samples": 0,
+    "canceled_frames": 0,
+    "clip_count": 1,
+    "missed_service": 0,
+    "sensor_overruns": 0,
+    "first_service_cycle": 8121,
+    "last_service_cycle": 11588121,
+    "service_wrap_count": 0,
+    "trailing_partial_samples": 5,
+    "source_cancellation_events": 0,
+    "device_id": 229,
+    "record_count": 3,
+    "records": [
+      {
+        "frame_id": 0,
+        "logits": [
+          2469,
+          18465,
+          -12109
+        ],
+        "class_id": 1,
+        "class_name": "rigid_support_running",
+        "error_flags": 0,
+        "usable_classification": true,
+        "cycles": {
+          "pre": 769,
+          "dft": 6184,
+          "power": 130,
+          "nn": 265,
+          "total": 7348
+        },
+        "first_service_cycle": 8121,
+        "last_service_cycle": 3833121,
+        "result_cycle": 3840473,
+        "last_sample_to_result_cycles_mod32": 7352,
+        "accepted_samples_snapshot": 256,
+        "dropped_samples_snapshot": 0,
+        "clip_count_snapshot": 1
+      },
+      {
+        "frame_id": 1,
+        "logits": [
+          4741,
+          11047,
+          -7849
+        ],
+        "class_id": 1,
+        "class_name": "rigid_support_running",
+        "error_flags": 0,
+        "usable_classification": true,
+        "cycles": {
+          "pre": 769,
+          "dft": 6184,
+          "power": 130,
+          "nn": 265,
+          "total": 7348
+        },
+        "first_service_cycle": 3848121,
+        "last_service_cycle": 7673121,
+        "result_cycle": 7680473,
+        "last_sample_to_result_cycles_mod32": 7352,
+        "accepted_samples_snapshot": 512,
+        "dropped_samples_snapshot": 0,
+        "clip_count_snapshot": 1
+      },
+      {
+        "frame_id": 2,
+        "logits": [
+          4741,
+          11047,
+          -7849
+        ],
+        "class_id": 1,
+        "class_name": "rigid_support_running",
+        "error_flags": 0,
+        "usable_classification": true,
+        "cycles": {
+          "pre": 769,
+          "dft": 6184,
+          "power": 130,
+          "nn": 265,
+          "total": 7348
+        },
+        "first_service_cycle": 7688121,
+        "last_service_cycle": 11513121,
+        "result_cycle": 11520473,
+        "last_sample_to_result_cycles_mod32": 7352,
+        "accepted_samples_snapshot": 768,
+        "dropped_samples_snapshot": 0,
+        "clip_count_snapshot": 1
+      }
+    ],
+    "hardware_measurement_provenance": "Log decoding alone does not establish physical hardware execution.",
+    "timing_note": "Service timestamps are register read times, not ADC apertures. Individual latencies use modulo32 (<one wrap)."
+  },
+  "independent_800hz_input": true,
+  "physical_hardware_tested": false,
+  "source_kind": "synthetic_pin_level_stimuli",
+  "configuration_flash_preserved": true,
+  "nor_page_boundary_checks": true,
+  "cycles": 11597347
+}

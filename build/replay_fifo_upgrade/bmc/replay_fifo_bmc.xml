@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-09-07T18:00:37" hostname="MacBook-Pro-3.local" package="replay_fifo" id="0" name="bmc" tests="1" errors="0" failures="0" time="13" skipped="0">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="bmc" name="bmc" time="13">
+</testcase>
+<system-out>SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] Removing directory './build/replay_fifo_upgrade/bmc'.
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] Copy './formal/../rtl/upduino_replay.sv' to './build/replay_fifo_upgrade/bmc/src/upduino_replay.sv'.
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] Copy './formal/replay_fifo_harness.sv' to './build/replay_fifo_upgrade/bmc/src/replay_fifo_harness.sv'.
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: abc bmc3
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] base: starting process &quot;cd ./build/replay_fifo_upgrade/bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] base: finished (returncode=0)
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] prep: starting process &quot;cd ./build/replay_fifo_upgrade/bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] prep: finished (returncode=0)
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] aig: starting process &quot;cd ./build/replay_fifo_upgrade/bmc/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] aig: Warning: Treating undriven bit replay_fifo_harness.\clk like $anyseq.
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] aig: Warning: Treating a total of 1 undriven bits in replay_fifo_harness like $anyseq.
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] aig: finished (returncode=0)
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: starting process &quot;cd ./build/replay_fifo_upgrade/bmc; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw'&quot;
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: ======== ABC command line &quot;read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw&quot;
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: Running &quot;bmc3&quot;. PI/PO/Reg = 260/10/224. And =   2382. Lev =    14. ObjNums =  1335.
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: Params: FramesMax = 64. Start = 0. ConfLimit = 0. TimeOut = 0. SolveAll = 0.
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 0 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 1 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 2 + : Var =     883. Cla =     2312. Conf =      2. Learn =      1.    0 MB   4 MB     0.01 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 3 + : Var =    1552. Cla =     4415. Conf =    110. Learn =    105.    0 MB   4 MB     0.01 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 4 + : Var =    2221. Cla =     6518. Conf =    733. Learn =    721.    0 MB   4 MB     0.01 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 5 + : Var =    2890. Cla =     8621. Conf =   1925. Learn =   1905.    0 MB   4 MB     0.02 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 6 + : Var =    3559. Cla =    10724. Conf =   3687. Learn =   3659.    0 MB   4 MB     0.04 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 7 + : Var =    4228. Cla =    12827. Conf =   5876. Learn =   5840.    0 MB   5 MB     0.06 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 8 + : Var =    4897. Cla =    14930. Conf =   8440. Learn =   8396.    0 MB   5 MB     0.08 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 9 + : Var =    5566. Cla =    17033. Conf =  11444. Learn =   9394.    0 MB   5 MB     0.12 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 10 + : Var =    6235. Cla =    19136. Conf =  15122. Learn =  10693.    0 MB   5 MB     0.17 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 11 + : Var =    6904. Cla =    21239. Conf =  19119. Learn =  12293.    0 MB   6 MB     0.23 sec
+SBY 18:00:24 [./build/replay_fifo_upgrade/bmc] engine_0: 12 + : Var =    7573. Cla =    23342. Conf =  23613. Learn =  12052.    0 MB   6 MB     0.30 sec
+SBY 18:00:25 [./build/replay_fifo_upgrade/bmc] engine_0: 13 + : Var =    8242. Cla =    25445. Conf =  28238. Learn =  16669.    0 MB   6 MB     0.37 sec
+SBY 18:00:25 [./build/replay_fifo_upgrade/bmc] engine_0: 14 + : Var =    8911. Cla =    27548. Conf =  33266. Learn =  18311.    0 MB   6 MB     0.46 sec
+SBY 18:00:25 [./build/replay_fifo_upgrade/bmc] engine_0: 15 + : Var =    9580. Cla =    29651. Conf =  38975. Learn =  20316.    0 MB   7 MB     0.56 sec
+SBY 18:00:25 [./build/replay_fifo_upgrade/bmc] engine_0: 16 + : Var =   10249. Cla =    31754. Conf =  45005. Learn =  22459.    0 MB   8 MB     0.67 sec
+SBY 18:00:25 [./build/replay_fifo_upgrade/bmc] engine_0: 17 + : Var =   10918. Cla =    33857. Conf =  51303. Learn =  24961.    0 MB   9 MB     0.80 sec
+SBY 18:00:25 [./build/replay_fifo_upgrade/bmc] engine_0: 18 + : Var =   11587. Cla =    35960. Conf =  57928. Learn =  26764.    0 MB   9 MB     0.95 sec
+SBY 18:00:25 [./build/replay_fifo_upgrade/bmc] engine_0: 19 + : Var =   12256. Cla =    38063. Conf =  65187. Learn =  28896.    0 MB  10 MB     1.11 sec
+SBY 18:00:25 [./build/replay_fifo_upgrade/bmc] engine_0: 20 + : Var =   12925. Cla =    40166. Conf =  72445. Learn =  30729.    0 MB  10 MB     1.26 sec
+SBY 18:00:26 [./build/replay_fifo_upgrade/bmc] engine_0: 21 + : Var =   13594. Cla =    42269. Conf =  80080. Learn =  28522.    0 MB  10 MB     1.45 sec
+SBY 18:00:26 [./build/replay_fifo_upgrade/bmc] engine_0: 22 + : Var =   14263. Cla =    44372. Conf =  87944. Learn =  29641.    0 MB  10 MB     1.64 sec
+SBY 18:00:26 [./build/replay_fifo_upgrade/bmc] engine_0: 23 + : Var =   14932. Cla =    46475. Conf =  96268. Learn =  30803.    0 MB  10 MB     1.87 sec
+SBY 18:00:26 [./build/replay_fifo_upgrade/bmc] engine_0: 24 + : Var =   15601. Cla =    48578. Conf = 104980. Learn =  31966.    0 MB  11 MB     2.10 sec
+SBY 18:00:27 [./build/replay_fifo_upgrade/bmc] engine_0: 25 + : Var =   16270. Cla =    50681. Conf = 113876. Learn =  32911.    0 MB  11 MB     2.33 sec
+SBY 18:00:27 [./build/replay_fifo_upgrade/bmc] engine_0: 26 + : Var =   16939. Cla =    52784. Conf = 122919. Learn =  41946.    0 MB  13 MB     2.57 sec
+SBY 18:00:27 [./build/replay_fifo_upgrade/bmc] engine_0: 27 + : Var =   17608. Cla =    54887. Conf = 132277. Learn =  43057.    0 MB  12 MB     2.81 sec
+SBY 18:00:27 [./build/replay_fifo_upgrade/bmc] engine_0: 28 + : Var =   18277. Cla =    56990. Conf = 141275. Learn =  44042.    0 MB  12 MB     3.06 sec
+SBY 18:00:28 [./build/replay_fifo_upgrade/bmc] engine_0: 29 + : Var =   18946. Cla =    59093. Conf = 150337. Learn =  40418.    0 MB  12 MB     3.31 sec
+SBY 18:00:28 [./build/replay_fifo_upgrade/bmc] engine_0: 30 + : Var =   19615. Cla =    61196. Conf = 158517. Learn =  39040.    0 MB  11 MB     3.55 sec
+SBY 18:00:28 [./build/replay_fifo_upgrade/bmc] engine_0: 31 + : Var =   20284. Cla =    63299. Conf = 167244. Learn =  47760.    0 MB  14 MB     3.76 sec
+SBY 18:00:28 [./build/replay_fifo_upgrade/bmc] engine_0: 32 + : Var =   20953. Cla =    65402. Conf = 175005. Learn =  45566.    0 MB  14 MB     3.97 sec
+SBY 18:00:28 [./build/replay_fifo_upgrade/bmc] engine_0: 33 + : Var =   21622. Cla =    67505. Conf = 182501. Learn =  43614.    0 MB  14 MB     4.15 sec
+SBY 18:00:29 [./build/replay_fifo_upgrade/bmc] engine_0: 34 + : Var =   22291. Cla =    69608. Conf = 190764. Learn =  51870.    0 MB  15 MB     4.36 sec
+SBY 18:00:29 [./build/replay_fifo_upgrade/bmc] engine_0: 35 + : Var =   22960. Cla =    71711. Conf = 199756. Learn =  47625.    0 MB  14 MB     4.61 sec
+SBY 18:00:29 [./build/replay_fifo_upgrade/bmc] engine_0: 36 + : Var =   23629. Cla =    73814. Conf = 208981. Learn =  45853.    0 MB  14 MB     4.89 sec
+SBY 18:00:29 [./build/replay_fifo_upgrade/bmc] engine_0: 37 + : Var =   24298. Cla =    75917. Conf = 217492. Learn =  54357.    0 MB  15 MB     5.11 sec
+SBY 18:00:30 [./build/replay_fifo_upgrade/bmc] engine_0: 38 + : Var =   24967. Cla =    78020. Conf = 226981. Learn =  54080.    0 MB  15 MB     5.40 sec
+SBY 18:00:30 [./build/replay_fifo_upgrade/bmc] engine_0: 39 + : Var =   25636. Cla =    80123. Conf = 236427. Learn =  53878.    0 MB  16 MB     5.66 sec
+SBY 18:00:30 [./build/replay_fifo_upgrade/bmc] engine_0: 40 + : Var =   26305. Cla =    82226. Conf = 244743. Learn =  48424.    0 MB  15 MB     5.89 sec
+SBY 18:00:30 [./build/replay_fifo_upgrade/bmc] engine_0: 41 + : Var =   26974. Cla =    84329. Conf = 253357. Learn =  57030.    0 MB  17 MB     6.16 sec
+SBY 18:00:31 [./build/replay_fifo_upgrade/bmc] engine_0: 42 + : Var =   27643. Cla =    86432. Conf = 262222. Learn =  54407.    0 MB  16 MB     6.41 sec
+SBY 18:00:31 [./build/replay_fifo_upgrade/bmc] engine_0: 43 + : Var =   28312. Cla =    88535. Conf = 271243. Learn =  63420.    0 MB  18 MB     6.64 sec
+SBY 18:00:31 [./build/replay_fifo_upgrade/bmc] engine_0: 44 + : Var =   28981. Cla =    90638. Conf = 280906. Learn =  58957.    0 MB  17 MB     6.94 sec
+SBY 18:00:31 [./build/replay_fifo_upgrade/bmc] engine_0: 45 + : Var =   29650. Cla =    92741. Conf = 291297. Learn =  56790.    0 MB  16 MB     7.27 sec
+SBY 18:00:32 [./build/replay_fifo_upgrade/bmc] engine_0: 46 + : Var =   30319. Cla =    94844. Conf = 301937. Learn =  67422.    0 MB  20 MB     7.64 sec
+SBY 18:00:32 [./build/replay_fifo_upgrade/bmc] engine_0: 47 + : Var =   30988. Cla =    96947. Conf = 312065. Learn =  65520.    0 MB  20 MB     7.97 sec
+SBY 18:00:33 [./build/replay_fifo_upgrade/bmc] engine_0: 48 + : Var =   31657. Cla =    99050. Conf = 322395. Learn =  61655.    0 MB  19 MB     8.30 sec
+SBY 18:00:33 [./build/replay_fifo_upgrade/bmc] engine_0: 49 + : Var =   32326. Cla =   101153. Conf = 332395. Learn =  71647.    0 MB  21 MB     8.59 sec
+SBY 18:00:33 [./build/replay_fifo_upgrade/bmc] engine_0: 50 + : Var =   32995. Cla =   103256. Conf = 342846. Learn =  68822.    0 MB  20 MB     8.93 sec
+SBY 18:00:34 [./build/replay_fifo_upgrade/bmc] engine_0: 51 + : Var =   33664. Cla =   105359. Conf = 353721. Learn =  65835.    0 MB  19 MB     9.32 sec
+SBY 18:00:34 [./build/replay_fifo_upgrade/bmc] engine_0: 52 + : Var =   34333. Cla =   107462. Conf = 364890. Learn =  76996.    0 MB  22 MB     9.69 sec
+SBY 18:00:34 [./build/replay_fifo_upgrade/bmc] engine_0: 53 + : Var =   35002. Cla =   109565. Conf = 375234. Learn =  72277.    0 MB  22 MB    10.02 sec
+SBY 18:00:35 [./build/replay_fifo_upgrade/bmc] engine_0: 54 + : Var =   35671. Cla =   111668. Conf = 384720. Learn =  68696.    0 MB  20 MB    10.32 sec
+SBY 18:00:35 [./build/replay_fifo_upgrade/bmc] engine_0: 55 + : Var =   36340. Cla =   113771. Conf = 394579. Learn =  78547.    0 MB  22 MB    10.62 sec
+SBY 18:00:35 [./build/replay_fifo_upgrade/bmc] engine_0: 56 + : Var =   37009. Cla =   115874. Conf = 404699. Learn =  73401.    0 MB  21 MB    10.95 sec
+SBY 18:00:35 [./build/replay_fifo_upgrade/bmc] engine_0: 57 + : Var =   37678. Cla =   117977. Conf = 414935. Learn =  83630.    0 MB  24 MB    11.27 sec
+SBY 18:00:36 [./build/replay_fifo_upgrade/bmc] engine_0: 58 + : Var =   38347. Cla =   120080. Conf = 424930. Learn =  78233.    0 MB  22 MB    11.61 sec
+SBY 18:00:36 [./build/replay_fifo_upgrade/bmc] engine_0: 59 + : Var =   39016. Cla =   122183. Conf = 434221. Learn =  72340.    0 MB  21 MB    11.87 sec
+SBY 18:00:36 [./build/replay_fifo_upgrade/bmc] engine_0: 60 + : Var =   39685. Cla =   124286. Conf = 443961. Learn =  82073.    0 MB  23 MB    12.17 sec
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: 61 + : Var =   40354. Cla =   126389. Conf = 453571. Learn =  77370.    0 MB  23 MB    12.46 sec
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: 62 + : Var =   41023. Cla =   128492. Conf = 462684. Learn =  86475.    0 MB  25 MB    12.75 sec
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: 63 + : Var =   41692. Cla =   130595. Conf = 472079. Learn =  80733.    0 MB  24 MB    13.07 sec
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: Runtime:  CNF = 0.0 sec (0.1 %)  UNSAT = 13.0 sec (99.8 %)  SAT = 0.0 sec (0.0 %)  UNDEC = 0.0 sec (0.0 %)
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: LStart(P) = 10000  LDelta(Q) = 2000  LRatio(R) = 80  ReduceDB = 41  Vars = 41692  Used = 41636 (99.87 %)
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: Buffs = 12989. Dups = 0.   Hash hits = 0.  Hash misses = 25411.  UniProps = 0.
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: No output asserted in 64 frames. Resource limit reached (conf limit 0). Time =    13.07 sec
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: Counter-example is not available.
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: finished (returncode=0)
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] engine_0: Status returned by engine: PASS
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:13 (13)
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:13 (13)
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] summary: engine_0 (abc bmc3) returned PASS
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] summary: engine_0 did not produce any traces
+SBY 18:00:37 [./build/replay_fifo_upgrade/bmc] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

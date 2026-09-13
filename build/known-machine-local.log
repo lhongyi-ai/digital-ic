@@ -1,0 +1,13 @@
+00 0 recall=0.6875 FPR=0.0312 AUC=0.9688 trainAUC=0.9939
+02 0 recall=1.0000 FPR=0.0000 AUC=1.0000 trainAUC=1.0000
+04 0 recall=1.0000 FPR=0.0625 AUC=0.9990 trainAUC=1.0000
+06 0 recall=1.0000 FPR=0.0000 AUC=1.0000 trainAUC=1.0000
+00 1 recall=0.8125 FPR=0.0938 AUC=0.9551 trainAUC=0.9844
+02 1 recall=1.0000 FPR=0.0312 AUC=1.0000 trainAUC=1.0000
+04 1 recall=1.0000 FPR=0.0000 AUC=1.0000 trainAUC=1.0000
+06 1 recall=1.0000 FPR=0.0312 AUC=1.0000 trainAUC=1.0000
+00 2 recall=0.7188 FPR=0.0312 AUC=0.9336 trainAUC=0.9980
+02 2 recall=1.0000 FPR=0.1250 AUC=0.9990 trainAUC=1.0000
+04 2 recall=0.9375 FPR=0.0312 AUC=0.9922 trainAUC=1.0000
+06 2 recall=1.0000 FPR=0.0625 AUC=1.0000 trainAUC=1.0000
+SUMMARY {"00": {"tp": 71, "fp": 5, "normal": 96, "abnormal": 96, "recall": 0.7395833333333334, "fpr": 0.052083333333333336, "auc": 0.9524739583333334, "passed": false}, "02": {"tp": 96, "fp": 5, "normal": 96, "abnormal": 96, "recall": 1.0, "fpr": 0.052083333333333336, "auc": 0.9996744791666666, "passed": false}, "04": {"tp": 94, "fp": 3, "normal": 96, "abnormal": 96, "recall": 0.9791666666666666, "fpr": 0.03125, "auc": 0.9970703125, "passed": true}, "06": {"tp": 96, "fp": 3, "normal": 96, "abnormal": 96, "recall": 1.0, "fpr": 0.03125, "auc": 1.0, "passed": true}, "pooled": {"tp": 357, "fp": 16, "normal": 384, "abnormal": 384, "recall": 0.9296875, "fpr": 0.041666666666666664, "auc": 0.9918619791666666, "passed": true}}

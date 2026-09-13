@@ -1,0 +1,18 @@
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1789020543
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_field_system.sensor_to_classification_log (1/1)
+38473770.00ns INFO     cocotb.regression                  test_field_system.sensor_to_classification_log passed
+38473770.00ns INFO     cocotb.regression                  ********************************************************************************************************
+                                                        ** TEST                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ********************************************************************************************************
+                                                        ** test_field_system.sensor_to_classification_log   PASS    38473770.00           9.21    4178927.16  **
+                                                        ********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             38473770.00           9.21    4178823.65  **
+                                                        ********************************************************************************************************
+- :0: Verilog $finish

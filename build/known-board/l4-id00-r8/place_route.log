@@ -1,0 +1,668 @@
+Info: constrained 'flash_cs_n' to bel 'X24/Y0/io1'
+Info: constrained 'flash_sclk' to bel 'X24/Y0/io0'
+Info: constrained 'flash_mosi' to bel 'X23/Y0/io0'
+Info: constrained 'flash_miso' to bel 'X23/Y0/io1'
+Info: constrained 'status_done' to bel 'X18/Y0/io1'
+Info: constrained 'status_error' to bel 'X18/Y0/io0'
+Info: constrained 'status_running' to bel 'X19/Y0/io0'
+Info: constraining clock net 'clk' to 13.20 MHz
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:     3058 LCs used as LUT4 only
+Info:     1134 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:      519 LCs used as DFF only
+Info: Packing carries..
+Info:      397 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:       25 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info:   constrained ICESTORM_HFOSC 'oscillator_OSC' to X0/Y31/hfosc_1
+Warning:     Overriding derived constraint of 12.0 MHz on net clk with user-specified constraint of 13.2 MHz.
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting startup_SB_CARRY_I0_CO_SB_LUT4_I3_O [reset] (fanout 884)
+Info: promoting system.core.operand_b[0]_SB_LUT4_O_10_I3_SB_LUT4_O_I3_SB_LUT4_O_I3[1] [reset] (fanout 212)
+Info: promoting system.core.purpose_SB_DFF_Q_D_SB_LUT4_O_I1_SB_LUT4_O_1_I3_SB_LUT4_I3_1_O_SB_LUT4_I2_O[2] [reset] (fanout 64)
+Info: promoting system.core.valid1_SB_LUT4_I0_1_O [cen] (fanout 192)
+Info: promoting system.core.valid1_SB_LUT4_I0_2_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_I3_O [cen] (fanout 64)
+Info: promoting system.core.valid1_SB_LUT4_I0_2_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_I1_SB_LUT4_I0_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O [cen] (fanout 64)
+Info: promoting system.core.wide_part_SB_DFFESR_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I3_O [cen] (fanout 64)
+Info: Constraining chains...
+Info:       90 LCs used to legalise carry chains.
+Info: Checksum: 0xaa8385ca
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:    5178/   5280    98%
+Info: 	        ICESTORM_RAM:      28/     30    93%
+Info: 	               SB_IO:       7/     39    17%
+Info: 	               SB_GB:       8/      8   100%
+Info: 	        ICESTORM_PLL:       0/      1     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+Info: 	        ICESTORM_DSP:       4/      8    50%
+Info: 	      ICESTORM_HFOSC:       1/      1   100%
+Info: 	      ICESTORM_LFOSC:       0/      1     0%
+Info: 	              SB_I2C:       0/      2     0%
+Info: 	              SB_SPI:       0/      2     0%
+Info: 	              IO_I3C:       0/      2     0%
+Info: 	         SB_LEDDA_IP:       0/      1     0%
+Info: 	         SB_RGBA_DRV:       0/      1     0%
+Info: 	      ICESTORM_SPRAM:       1/      4    25%
+
+Info: Placed 9 cells based on constraints.
+Info: Creating initial analytic placement for 3508 cells, random placement wirelen = 117520.
+Info:     at initial placer iter 0, wirelen = 3616
+Info:     at initial placer iter 1, wirelen = 3518
+Info:     at initial placer iter 2, wirelen = 3479
+Info:     at initial placer iter 3, wirelen = 3487
+Info: Running main analytical placer, max placement attempts per cell = 3415191.
+Info:     at iteration #1, type ALL: wirelen solved = 3479, spread = 52178, legal = 62020; time = 0.13s
+Info:     at iteration #2, type ALL: wirelen solved = 3218, spread = 48311, legal = 58446; time = 0.13s
+Info:     at iteration #3, type ALL: wirelen solved = 4332, spread = 40709, legal = 52454; time = 0.13s
+Info:     at iteration #4, type ALL: wirelen solved = 5862, spread = 38224, legal = 50519; time = 0.14s
+Info:     at iteration #5, type ALL: wirelen solved = 6541, spread = 37298, legal = 48335; time = 0.13s
+Info:     at iteration #6, type ALL: wirelen solved = 7351, spread = 36194, legal = 47810; time = 0.13s
+Info:     at iteration #7, type ALL: wirelen solved = 8136, spread = 34005, legal = 46476; time = 0.13s
+Info:     at iteration #8, type ALL: wirelen solved = 8574, spread = 32786, legal = 45198; time = 0.12s
+Info:     at iteration #9, type ALL: wirelen solved = 9239, spread = 31018, legal = 42975; time = 0.12s
+Info:     at iteration #10, type ALL: wirelen solved = 10008, spread = 29366, legal = 44208; time = 0.14s
+Info:     at iteration #11, type ALL: wirelen solved = 10681, spread = 29228, legal = 41457; time = 0.13s
+Info:     at iteration #12, type ALL: wirelen solved = 11018, spread = 29207, legal = 41640; time = 0.12s
+Info:     at iteration #13, type ALL: wirelen solved = 11495, spread = 29205, legal = 41757; time = 0.12s
+Info:     at iteration #14, type ALL: wirelen solved = 12460, spread = 28474, legal = 41175; time = 0.11s
+Info:     at iteration #15, type ALL: wirelen solved = 12992, spread = 28828, legal = 39197; time = 0.10s
+Info:     at iteration #16, type ALL: wirelen solved = 13415, spread = 27875, legal = 39198; time = 0.11s
+Info:     at iteration #17, type ALL: wirelen solved = 13406, spread = 27779, legal = 42900; time = 0.13s
+Info:     at iteration #18, type ALL: wirelen solved = 14661, spread = 28611, legal = 41931; time = 0.11s
+Info:     at iteration #19, type ALL: wirelen solved = 14703, spread = 29387, legal = 39196; time = 0.11s
+Info:     at iteration #20, type ALL: wirelen solved = 15449, spread = 28653, legal = 40900; time = 0.11s
+Info:     at iteration #21, type ALL: wirelen solved = 15882, spread = 28657, legal = 40565; time = 0.10s
+Info:     at iteration #22, type ALL: wirelen solved = 15925, spread = 29175, legal = 37517; time = 0.10s
+Info:     at iteration #23, type ALL: wirelen solved = 16373, spread = 28730, legal = 38734; time = 0.10s
+Info:     at iteration #24, type ALL: wirelen solved = 16392, spread = 28507, legal = 39745; time = 0.12s
+Info:     at iteration #25, type ALL: wirelen solved = 16746, spread = 29312, legal = 39119; time = 0.13s
+Info:     at iteration #26, type ALL: wirelen solved = 17175, spread = 29532, legal = 38735; time = 0.11s
+Info:     at iteration #27, type ALL: wirelen solved = 17766, spread = 30266, legal = 39688; time = 0.11s
+Info: HeAP Placer Time: 3.73s
+Info:   of which solving equations: 1.01s
+Info:   of which spreading cells: 0.11s
+Info:   of which strict legalisation: 2.21s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 868, wirelen = 37517
+Info:   at iteration #5: temp = 0.000000, timing cost = 974, wirelen = 29318
+Info:   at iteration #10: temp = 0.000000, timing cost = 936, wirelen = 27608
+Info:   at iteration #15: temp = 0.000000, timing cost = 906, wirelen = 27068
+Info:   at iteration #20: temp = 0.000000, timing cost = 891, wirelen = 26596
+Info:   at iteration #25: temp = 0.000000, timing cost = 888, wirelen = 26495
+Info:   at iteration #30: temp = 0.000000, timing cost = 887, wirelen = 26479
+Info:   at iteration #33: temp = 0.000000, timing cost = 887, wirelen = 26471 
+Info: SA placement time 3.21s
+
+Info: Max frequency for clock 'clk': 14.21 MHz (PASS at 13.20 MHz)
+
+Info: Clock '$PACKER_GND_NET' has no interior paths
+
+Info: Max delay <async>     -> posedge clk: 4.01 ns
+Info: Max delay posedge clk -> <async>    : 12.69 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 22 endpoint(s)
+Info:          + represents [1,22) endpoint(s)
+Info: [  5385,   8755) |+
+Info: [  8755,  12125) |+
+Info: [ 12125,  15495) |+
+Info: [ 15495,  18865) |+
+Info: [ 18865,  22235) |*+
+Info: [ 22235,  25605) |**+
+Info: [ 25605,  28975) |*+
+Info: [ 28975,  32345) |****+
+Info: [ 32345,  35715) |***+
+Info: [ 35715,  39085) |******+
+Info: [ 39085,  42455) |*********+
+Info: [ 42455,  45825) |***************+
+Info: [ 45825,  49195) |****************+
+Info: [ 49195,  52565) |****************************+
+Info: [ 52565,  55935) |******************************************************+
+Info: [ 55935,  59305) |*******************************************+
+Info: [ 59305,  62675) |***************************+
+Info: [ 62675,  66045) |*********************+
+Info: [ 66045,  69415) |**************************+
+Info: [ 69415,  72785) |************************************************************ 
+Info: Checksum: 0xe29810d1
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 17301 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       58        941 |   58   941 |     16385|       0.38       0.38|
+Info:       2000 |      122       1877 |   64   936 |     15463|       0.14       0.52|
+Info:       3000 |      199       2701 |   77   824 |     14596|       0.09       0.61|
+Info:       4000 |      442       3415 |  243   714 |     13978|       0.12       0.73|
+Info:       5000 |      638       4175 |  196   760 |     13316|       0.15       0.88|
+Info:       6000 |      823       4891 |  185   716 |     12562|       0.14       1.02|
+Info:       7000 |     1083       5614 |  260   723 |     11936|       0.12       1.15|
+Info:       8000 |     1335       6269 |  252   655 |     11327|       0.12       1.26|
+Info:       9000 |     1657       6947 |  322   678 |     10804|       0.12       1.39|
+Info:      10000 |     2054       7550 |  397   603 |     10419|       0.18       1.56|
+Info:      11000 |     2448       8155 |  394   605 |     10042|       0.17       1.73|
+Info:      12000 |     2891       8697 |  443   542 |      9738|       0.19       1.92|
+Info:      13000 |     3257       9300 |  366   603 |      9309|       0.15       2.07|
+Info:      14000 |     3679       9875 |  422   575 |      9057|       0.16       2.23|
+Info:      15000 |     4034      10403 |  355   528 |      8561|       0.14       2.36|
+Info:      16000 |     4516      10917 |  482   514 |      8239|       0.15       2.52|
+Info:      17000 |     5038      11380 |  522   463 |      7963|       0.15       2.67|
+Info:      18000 |     5398      11980 |  360   600 |      7528|       0.15       2.82|
+Info:      19000 |     5855      12464 |  457   484 |      7194|       0.15       2.97|
+Info:      20000 |     6321      12945 |  466   481 |      6877|       0.16       3.13|
+Info:      21000 |     6670      13521 |  349   576 |      6449|       0.13       3.26|
+Info:      22000 |     7111      14037 |  441   516 |      6276|       0.19       3.45|
+Info:      23000 |     7486      14522 |  375   485 |      5865|       0.12       3.57|
+Info:      24000 |     7862      15120 |  376   598 |      5477|       0.17       3.74|
+Info:      25000 |     8290      15626 |  428   506 |      5130|       0.15       3.89|
+Info:      26000 |     8754      16139 |  464   513 |      4932|       0.19       4.08|
+Info:      27000 |     9248      16636 |  494   497 |      4733|       0.19       4.28|
+Info:      28000 |     9634      17171 |  386   535 |      4308|       0.13       4.41|
+Info:      29000 |    10089      17659 |  455   488 |      4028|       0.17       4.58|
+Info:      30000 |    10585      18152 |  496   493 |      3810|       0.19       4.77|
+Info:      31000 |    11154      18583 |  569   431 |      3670|       0.18       4.96|
+Info:      32000 |    11680      19042 |  526   459 |      3488|       0.19       5.15|
+Info:      33000 |    12248      19459 |  568   417 |      3308|       0.18       5.33|
+Info:      34000 |    12795      19896 |  547   437 |      3177|       0.21       5.54|
+Info:      35000 |    13290      20328 |  495   432 |      2912|       0.18       5.72|
+Info:      36000 |    13799      20810 |  509   482 |      2663|       0.17       5.89|
+Info:      37000 |    14364      21240 |  565   430 |      2528|       0.19       6.08|
+Info:      38000 |    14957      21647 |  593   407 |      2482|       0.19       6.27|
+Info:      39000 |    15513      22091 |  556   444 |      2365|       0.17       6.43|
+Info:      40000 |    16102      22495 |  589   404 |      2261|       0.21       6.64|
+Info:      41000 |    16645      22952 |  543   457 |      2131|       0.17       6.81|
+Info:      42000 |    17084      23470 |  439   518 |      1846|       0.18       6.99|
+Info:      43000 |    17582      23957 |  498   487 |      1681|       0.32       7.31|
+Info:      44000 |    18006      24525 |  424   568 |      1364|       0.18       7.49|
+Info:      45000 |    18393      25137 |  387   612 |       905|       0.14       7.63|
+Info:      46000 |    18882      25643 |  489   506 |       668|       0.27       7.90|
+Info:      47000 |    19390      26131 |  508   488 |       484|       0.26       8.16|
+Info:      48000 |    19954      26565 |  564   434 |       310|       0.24       8.40|
+Info:      48756 |    20281      26989 |  327   424 |         0|       0.21       8.60|
+Info: Routing complete.
+Info: Router1 time 8.60s
+Info: Checksum: 0x1586ffad
+
+Info: Critical path report for clock 'clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source system.core.wide_part_SB_DFFESR_Q_1_D_SB_LUT4_O_LC.O
+Info:    routing  4.25  5.64 Net system.core.operand_a[0]_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_O_1_I3[1] (4,23) -> (7,11)
+Info:                          Sink system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I1_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:86.33-86.42
+Info:      logic  1.21  6.84 Source system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I1_SB_LUT4_O_LC.O
+Info:    routing  1.76  8.60 Net system.core.operand_b[0]_SB_LUT4_O_13_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_I1_O_SB_LUT4_O_1_I3_SB_LUT4_I3_O[1] (7,11) -> (7,10)
+Info:                          Sink system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  9.48 Source system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_LC.O
+Info:    routing  3.60  13.08 Net system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_I1[2] (7,10) -> (7,2)
+Info:                          Sink system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:94.29-94.47
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.61  13.69 Source system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.66  14.35 Net system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_CARRY_CO_CI (7,2) -> (7,2)
+Info:                          Sink system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.I3
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:94.29-94.47
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  15.22 Source system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.O
+Info:    routing  1.76  16.98 Net system.core.wide_acc_SB_DFFESR_Q_5_D_SB_LUT4_O_I3[1] (7,2) -> (8,1)
+Info:                          Sink system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  17.86 Source system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_LC.O
+Info:    routing  1.76  19.62 Net system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O[3] (8,1) -> (8,2)
+Info:                          Sink system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  20.49 Source system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_LC.O
+Info:    routing  1.76  22.25 Net system.core.wide_acc_SB_DFFESR_Q_63_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O[1] (8,2) -> (8,2)
+Info:                          Sink system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  23.13 Source system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  24.89 Net system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3[3] (8,2) -> (8,2)
+Info:                          Sink system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  25.76 Source system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  27.52 Net system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_I3[3] (8,2) -> (8,2)
+Info:                          Sink system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  28.40 Source system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I1_SB_LUT4_O_LC.O
+Info:    routing  2.95  31.35 Net system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I1[0] (8,2) -> (5,4)
+Info:                          Sink system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.I1
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.23  32.58 Source system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  34.34 Net system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_I3[3] (5,4) -> (5,4)
+Info:                          Sink system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  35.22 Source system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  36.98 Net system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_I3[3] (5,4) -> (5,5)
+Info:                          Sink system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  37.85 Source system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_O_LC.O
+Info:    routing  2.95  40.80 Net system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0[1] (5,5) -> (5,9)
+Info:                          Sink system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_I1_LC.I1
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.68  41.48 Source system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_I0_SB_LUT4_I1_LC.COUT
+Info:    routing  0.00  41.48 Net system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3 (5,9) -> (5,9)
+Info:                          Sink system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  41.76 Source system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  41.76 Net system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3 (5,9) -> (5,9)
+Info:                          Sink system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  42.03 Source system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  42.03 Net system.core.feature_SB_DFFE_Q_3_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3 (5,9) -> (5,9)
+Info:                          Sink system.core.feature_SB_DFFE_Q_3_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  42.31 Source system.core.feature_SB_DFFE_Q_3_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  42.31 Net system.core.feature_SB_DFFE_Q_4_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3 (5,9) -> (5,9)
+Info:                          Sink system.core.feature_SB_DFFE_Q_4_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  42.59 Source system.core.feature_SB_DFFE_Q_4_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  42.59 Net system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3 (5,9) -> (5,9)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  42.87 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  42.87 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3 (5,9) -> (5,9)
+Info:                          Sink system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.28  43.15 Source system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  43.15 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO (5,9) -> (5,9)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  43.42 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.56  43.98 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,9) -> (5,10)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  44.26 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  44.26 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,10) -> (5,10)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  44.54 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  44.54 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,10) -> (5,10)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  44.81 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  44.81 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,10) -> (5,10)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  45.09 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  45.09 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,10) -> (5,10)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  45.37 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  45.37 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,10) -> (5,10)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  45.65 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  45.65 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,10) -> (5,10)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  45.93 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  45.93 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,10) -> (5,10)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  46.20 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.56  46.76 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,10) -> (5,11)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  47.04 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  47.04 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,11) -> (5,11)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  47.32 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  47.32 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,11) -> (5,11)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  47.59 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  47.59 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,11) -> (5,11)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  47.87 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  47.87 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,11) -> (5,11)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  48.15 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  48.15 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,11) -> (5,11)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  48.43 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  48.43 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,11) -> (5,11)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  48.71 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  48.71 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,11) -> (5,11)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  48.98 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.56  49.54 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,11) -> (5,12)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  49.82 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  49.82 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,12) -> (5,12)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  50.10 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  50.10 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,12) -> (5,12)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  50.37 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  50.37 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,12) -> (5,12)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  50.65 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  50.65 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,12) -> (5,12)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  50.93 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  50.93 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,12) -> (5,12)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  51.21 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  51.21 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,12) -> (5,12)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  51.49 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  51.49 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,12) -> (5,12)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  51.76 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.56  52.32 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,12) -> (5,13)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  52.60 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  52.60 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,13) -> (5,13)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  52.88 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  52.88 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,13) -> (5,13)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  53.15 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  53.15 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,13) -> (5,13)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  53.43 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  53.43 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,13) -> (5,13)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  53.71 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  53.71 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,13) -> (5,13)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  53.99 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  53.99 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (5,13) -> (5,13)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  54.27 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_LC.COUT
+Info:    routing  0.66  54.93 Net $nextpnr_ICESTORM_LC_72$I3 (5,13) -> (5,13)
+Info:                          Sink $nextpnr_ICESTORM_LC_72.I3
+Info:      logic  0.87  55.80 Source $nextpnr_ICESTORM_LC_72.O
+Info:    routing  1.76  57.56 Net system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0_SB_LUT4_O_I3 (5,13) -> (4,14)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.I3
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:102.35-103.60
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.87  58.44 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.O
+Info:    routing  1.76  60.20 Net system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_I0 (4,14) -> (4,14)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.I1
+Info:      logic  0.68  60.87 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  1.22  62.09 Net $nextpnr_ICESTORM_LC_42$I3 (4,14) -> (4,15)
+Info:                          Sink $nextpnr_ICESTORM_LC_42.I3
+Info:      logic  0.87  62.97 Source $nextpnr_ICESTORM_LC_42.O
+Info:    routing  2.30  65.27 Net system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I2[1] (4,15) -> (5,15)
+Info:                          Sink system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  66.14 Source system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.O
+Info:    routing  1.76  67.90 Net system.core.feature_SB_DFFE_Q_1_D_SB_LUT4_O_I3[2] (5,15) -> (5,15)
+Info:                          Sink system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.I2
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.61  68.51 Source system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.COUT
+Info:    routing  0.00  68.51 Net system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_I2[3] (5,15) -> (5,15)
+Info:                          Sink system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:105.55-105.89
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  68.79 Source system.core.feature_SB_DFFE_Q_2_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  68.79 Net system.core.feature_SB_DFFE_Q_3_D_SB_LUT4_O_I2[3] (5,15) -> (5,15)
+Info:                          Sink system.core.feature_SB_DFFE_Q_3_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:105.55-105.89
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  69.07 Source system.core.feature_SB_DFFE_Q_3_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  69.07 Net system.core.feature_SB_DFFE_Q_4_D_SB_LUT4_O_I2[3] (5,15) -> (5,15)
+Info:                          Sink system.core.feature_SB_DFFE_Q_4_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:105.55-105.89
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  69.35 Source system.core.feature_SB_DFFE_Q_4_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  69.35 Net system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_I2[3] (5,15) -> (5,15)
+Info:                          Sink system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:105.55-105.89
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  69.62 Source system.core.feature_SB_DFFE_Q_5_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  69.62 Net system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_I2[3] (5,15) -> (5,15)
+Info:                          Sink system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/core/known_spectral_core.sv:105.55-105.89
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  69.90 Source system.core.feature_SB_DFFE_Q_6_D_SB_LUT4_O_LC.COUT
+Info:    routing  0.66  70.57 Net $nextpnr_ICESTORM_LC_46$I3 (5,15) -> (5,15)
+Info:                          Sink $nextpnr_ICESTORM_LC_46.I3
+Info:      logic  0.87  71.44 Source $nextpnr_ICESTORM_LC_46.O
+Info:    routing  2.85  74.29 Net system.core.feature_SB_DFFESR_Q_D_SB_LUT4_O_I3 (5,15) -> (9,15)
+Info:                          Sink system.core.feature_SB_DFFESR_Q_D_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      setup  0.82  75.11 Source system.core.feature_SB_DFFESR_Q_D_SB_LUT4_O_LC.I3
+Info: 31.41 ns logic, 43.70 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge clk':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source flash_miso$sb_io.D_IN_0
+Info:    routing  2.41  2.41 Net flash_miso$SB_IO_IN (23,0) -> (23,3)
+Info:                          Sink system.transport.spi.rx_shift_SB_DFFESR_Q_DFFLC.I0
+Info:                          Defined in:
+Info:                               rtl/io/spi_master.sv:18.16-18.20
+Info:      setup  1.23  3.64 Source system.transport.spi.rx_shift_SB_DFFESR_Q_DFFLC.I0
+Info: 1.23 ns logic, 2.41 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source system.controller.errors_SB_DFFESR_Q_6_DFFLC.O
+Info:    routing  3.39  4.78 Net system.controller.errors[4] (10,13) -> (21,13)
+Info:                          Sink status_error_SB_LUT4_O_I3_SB_LUT4_O_LC.I0
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.28  6.06 Source status_error_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  7.82 Net status_error_SB_LUT4_O_I3[1] (21,13) -> (21,13)
+Info:                          Sink status_error_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  8.70 Source status_error_SB_LUT4_O_LC.O
+Info:    routing  4.90  13.60 Net status_error$SB_IO_OUT (21,13) -> (18,0)
+Info:                          Sink status_error$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info: 3.55 ns logic, 10.05 ns routing
+
+Info: Max frequency for clock 'clk': 13.31 MHz (PASS at 13.20 MHz)
+
+Info: Clock '$PACKER_GND_NET' has no interior paths
+
+Info: Max delay <async>     -> posedge clk: 3.64 ns
+Info: Max delay posedge clk -> <async>    : 13.60 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 23 endpoint(s)
+Info:          + represents [1,23) endpoint(s)
+Info: [   647,   4240) |+
+Info: [  4240,   7833) |+
+Info: [  7833,  11426) |+
+Info: [ 11426,  15019) |+
+Info: [ 15019,  18612) |+
+Info: [ 18612,  22205) |+
+Info: [ 22205,  25798) |**+
+Info: [ 25798,  29391) |**+
+Info: [ 29391,  32984) |**+
+Info: [ 32984,  36577) |*****+
+Info: [ 36577,  40170) |******+
+Info: [ 40170,  43763) |********+
+Info: [ 43763,  47356) |**************+
+Info: [ 47356,  50949) |***********************+
+Info: [ 50949,  54542) |*************************+
+Info: [ 54542,  58135) |*****************************************+
+Info: [ 58135,  61728) |**************************+
+Info: [ 61728,  65321) |*******************************************************+
+Info: [ 65321,  68914) |************************+
+Info: [ 68914,  72507) |************************************************************ 
+1 warning, 0 errors
+
+Info: Program finished normally.

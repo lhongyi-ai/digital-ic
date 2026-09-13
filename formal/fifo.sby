@@ -1,0 +1,27 @@
+[tasks]
+bmc_d1 bmc d1
+bmc_d3 bmc d3
+bmc_d4 bmc d4
+cover_d1 cover d1
+cover_d3 cover d3
+cover_d4 cover d4
+
+[options]
+bmc: mode bmc
+cover: mode cover
+depth 64
+
+[engines]
+bmc: abc bmc3
+cover: smtbmc bitwuzla
+
+[script]
+read -formal -sv sync_fifo.sv fifo_harness.sv
+d1: chparam -set WIDTH 16 -set DEPTH 1 fifo_harness
+d3: chparam -set WIDTH 16 -set DEPTH 3 fifo_harness
+d4: chparam -set WIDTH 16 -set DEPTH 4 fifo_harness
+prep -top fifo_harness
+
+[files]
+../rtl/core/sync_fifo.sv
+fifo_harness.sv

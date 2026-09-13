@@ -1,0 +1,14 @@
+[options]
+mode bmc
+depth 64
+
+[engines]
+abc bmc3
+
+[script]
+read -formal -sv upduino_replay.sv replay_fifo_harness.sv
+prep -top replay_fifo_harness
+
+[files]
+../rtl/upduino_replay.sv
+replay_fifo_harness.sv

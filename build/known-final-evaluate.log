@@ -1,0 +1,10 @@
+integer DSP 80 /720
+integer DSP 160 /720
+integer DSP 240 /720
+integer DSP 320 /720
+integer DSP 400 /720
+integer DSP 480 /720
+integer DSP 560 /720
+integer DSP 640 /720
+integer DSP 720 /720
+FINAL RESULTS {"00": {"tp": 77, "fp": 3, "normal": 100, "abnormal": 80, "recall": 0.9625, "fpr": 0.03, "auc": 0.9924999999999999, "recall_ci95": [0.8942980149834914, 0.9921988127342833], "fpr_ci95": [0.006229971538306393, 0.08517605297428002], "passed": true}, "02": {"tp": 80, "fp": 1, "normal": 100, "abnormal": 80, "recall": 1.0, "fpr": 0.01, "auc": 1.0, "recall_ci95": [0.9549359649323077, 1.0], "fpr_ci95": [0.00025314603297742064, 0.054459385392080645], "passed": true}, "04": {"tp": 80, "fp": 1, "normal": 100, "abnormal": 80, "recall": 1.0, "fpr": 0.01, "auc": 1.0, "recall_ci95": [0.9549359649323077, 1.0], "fpr_ci95": [0.00025314603297742064, 0.054459385392080645], "passed": true}, "06": {"tp": 80, "fp": 3, "normal": 100, "abnormal": 80, "recall": 1.0, "fpr": 0.03, "auc": 0.99975, "recall_ci95": [0.9549359649323077, 1.0], "fpr_ci95": [0.006229971538306393, 0.08517605297428002], "passed": true}, "pooled": {"tp": 317, "fp": 8, "normal": 400, "abnormal": 320, "recall": 0.990625, "fpr": 0.02, "auc": 0.9984140625, "recall_ci95": [0.9728481944383381, 0.9980624610775889], "fpr_ci95": [0.00867317036911831, 0.03902627671162005], "passed": true}}

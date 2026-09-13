@@ -1,0 +1,44 @@
+{
+  "gate": {
+    "min_validation_detected_of_30": 27,
+    "max_validation_false_alarms_of_40": 2,
+    "min_auc": 0.9
+  },
+  "test_requirement": "freeze all processing/thresholds before single test evaluation; test recall >=90%, FPR <=5%, AUC >=0.90; no guarantee from validation",
+  "blocks": [
+    64,
+    128,
+    256
+  ],
+  "durations_seconds": [
+    0.512,
+    1.024,
+    2.048
+  ],
+  "envelope_rate_hz": 125,
+  "stride_seconds": 0.512,
+  "feature_sets": [
+    "static",
+    "modulation",
+    "impact",
+    "flux",
+    "combined"
+  ],
+  "models": [
+    "diagonal",
+    "covariance"
+  ],
+  "pooling": "mean segment scores, strict threshold",
+  "candidate_count": 30,
+  "normalization": "normal training only",
+  "test_opened": false,
+  "plan_sha256": "fbd5ddd101a6cefdf42f950216f303b7a07db1b54bebf6cac57c84ad324267df",
+  "source_sha256": {
+    "scripts/experiment_acoustic_temporal.py": "20280b756f47fdca16562d8b42d4888801a8c296e82f39497fae54e77905264f",
+    "src/vibfpga/acoustic_temporal.py": "6a6f77b600d7928079e8f6132e906b1d273948fdeaa3bb34326a896be249d844",
+    "scripts/experiment_acoustic_v2.py": "e21283eb970c3b82c0f9b69614dd7fcb48933232cbd0a18352459c6ab5a5b36b",
+    "scripts/diagnose_acoustic_v3.py": "7c5aa203af6d60fead03352cdc2c8b25204cd44938e2c25b16a8f2568dc4b76e",
+    "src/vibfpga/acoustic_experiment.py": "20dd072692ca9af0dbe852376b2030fa7fcc4f924e87d2f22bf69324a8615495",
+    "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d"
+  }
+}

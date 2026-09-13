@@ -1,0 +1,458 @@
+mkdir: /home/researcher/.config/yosyshq: Operation not permitted
+mkdir: /home/researcher/.local/share/yosyshq: Operation not permitted
+Info: constrained 'clk12' to bel 'X19/Y0/io1'
+Info: constrained 'flash_cs_n' to bel 'X24/Y0/io1'
+Info: constrained 'flash_sclk' to bel 'X24/Y0/io0'
+Info: constrained 'flash_mosi' to bel 'X23/Y0/io1'
+Info: constrained 'flash_miso' to bel 'X23/Y0/io0'
+Info: constrained 'sensor_cs_n' to bel 'X19/Y31/io0'
+Info: constrained 'sensor_sclk' to bel 'X19/Y31/io1'
+Info: constrained 'sensor_mosi' to bel 'X18/Y31/io0'
+Info: constrained 'sensor_miso' to bel 'X18/Y31/io1'
+Info: constrained 'sensor_drdy' to bel 'X16/Y31/io0'
+Info: constrained 'status_done' to bel 'X18/Y0/io1'
+Info: constrained 'status_error' to bel 'X18/Y0/io0'
+Info: constrained 'status_running' to bel 'X19/Y0/io0'
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:     2607 LCs used as LUT4 only
+Info:     1177 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:      557 LCs used as DFF only
+Info: Packing carries..
+Info:      524 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:       86 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting clk12$SB_IO_IN (fanout 1755)
+Info: promoting rst [reset] (fanout 1400)
+Info: promoting system.watchdog_SB_DFFSR_Q_9_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O[1] [reset] (fanout 85)
+Info: promoting system.calibration.busy_SB_LUT4_I2_O [cen] (fanout 150)
+Info: promoting system.calibration.out_valid_SB_LUT4_I2_O [cen] (fanout 128)
+Info: promoting system.capture.sample_valid_SB_LUT4_I0_1_O [cen] (fanout 48)
+Info: promoting system.with_spectrum.spectrum.dsp.quant_work_SB_DFFESR_Q_E [cen] (fanout 43)
+Info: promoting $PACKER_GND_NET (fanout 2)
+Info: Constraining chains...
+Info:       93 LCs used to legalise carry chains.
+Info: Checksum: 0x2cc5980a
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:    4875/   5280    92%
+Info: 	        ICESTORM_RAM:       9/     30    30%
+Info: 	               SB_IO:      13/     39    33%
+Info: 	               SB_GB:       8/      8   100%
+Info: 	        ICESTORM_PLL:       0/      1     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+Info: 	        ICESTORM_DSP:       1/      8    12%
+Info: 	      ICESTORM_HFOSC:       0/      1     0%
+Info: 	      ICESTORM_LFOSC:       0/      1     0%
+Info: 	              SB_I2C:       0/      2     0%
+Info: 	              SB_SPI:       0/      2     0%
+Info: 	              IO_I3C:       0/      2     0%
+Info: 	         SB_LEDDA_IP:       0/      1     0%
+Info: 	         SB_RGBA_DRV:       0/      1     0%
+Info: 	      ICESTORM_SPRAM:       4/      4   100%
+
+Info: Placed 13 cells based on constraints.
+Info: Creating initial analytic placement for 3231 cells, random placement wirelen = 107650.
+Info:     at initial placer iter 0, wirelen = 2342
+Info:     at initial placer iter 1, wirelen = 2588
+Info:     at initial placer iter 2, wirelen = 2349
+Info:     at initial placer iter 3, wirelen = 2540
+Info: Running main analytical placer, max placement attempts per cell = 3013512.
+Info:     at iteration #1, type ALL: wirelen solved = 2367, spread = 48845, legal = 56181; time = 0.30s
+Info:     at iteration #2, type ALL: wirelen solved = 2658, spread = 39739, legal = 44532; time = 0.05s
+Info:     at iteration #3, type ALL: wirelen solved = 3905, spread = 34346, legal = 41705; time = 0.07s
+Info:     at iteration #4, type ALL: wirelen solved = 5008, spread = 30368, legal = 39057; time = 0.09s
+Info:     at iteration #5, type ALL: wirelen solved = 5702, spread = 30716, legal = 36362; time = 0.04s
+Info:     at iteration #6, type ALL: wirelen solved = 6351, spread = 29765, legal = 36246; time = 0.04s
+Info:     at iteration #7, type ALL: wirelen solved = 6917, spread = 30365, legal = 36110; time = 0.04s
+Info:     at iteration #8, type ALL: wirelen solved = 7639, spread = 29986, legal = 37627; time = 0.06s
+Info:     at iteration #9, type ALL: wirelen solved = 7726, spread = 30500, legal = 36286; time = 0.04s
+Info:     at iteration #10, type ALL: wirelen solved = 8546, spread = 29577, legal = 38049; time = 0.11s
+Info:     at iteration #11, type ALL: wirelen solved = 8749, spread = 29857, legal = 37705; time = 0.08s
+Info:     at iteration #12, type ALL: wirelen solved = 9039, spread = 29514, legal = 35093; time = 0.04s
+Info:     at iteration #13, type ALL: wirelen solved = 9363, spread = 29015, legal = 35062; time = 0.04s
+Info:     at iteration #14, type ALL: wirelen solved = 9996, spread = 29009, legal = 37664; time = 0.10s
+Info:     at iteration #15, type ALL: wirelen solved = 10318, spread = 29110, legal = 35126; time = 0.04s
+Info:     at iteration #16, type ALL: wirelen solved = 10704, spread = 25273, legal = 34162; time = 0.09s
+Info:     at iteration #17, type ALL: wirelen solved = 11010, spread = 25129, legal = 33996; time = 0.10s
+Info:     at iteration #18, type ALL: wirelen solved = 11738, spread = 25174, legal = 31845; time = 0.04s
+Info:     at iteration #19, type ALL: wirelen solved = 11761, spread = 24430, legal = 30927; time = 0.04s
+Info:     at iteration #20, type ALL: wirelen solved = 12255, spread = 24217, legal = 33011; time = 0.09s
+Info:     at iteration #21, type ALL: wirelen solved = 12874, spread = 24408, legal = 33093; time = 0.10s
+Info:     at iteration #22, type ALL: wirelen solved = 13018, spread = 24372, legal = 30943; time = 0.04s
+Info:     at iteration #23, type ALL: wirelen solved = 12779, spread = 23729, legal = 30330; time = 0.03s
+Info:     at iteration #24, type ALL: wirelen solved = 13082, spread = 23254, legal = 32317; time = 0.23s
+Info:     at iteration #25, type ALL: wirelen solved = 13437, spread = 23790, legal = 31185; time = 0.04s
+Info:     at iteration #26, type ALL: wirelen solved = 13737, spread = 23846, legal = 32964; time = 0.09s
+Info:     at iteration #27, type ALL: wirelen solved = 14539, spread = 23821, legal = 30881; time = 0.04s
+Info:     at iteration #28, type ALL: wirelen solved = 14564, spread = 23566, legal = 33265; time = 0.10s
+Info: HeAP Placer Time: 2.57s
+Info:   of which solving equations: 0.86s
+Info:   of which spreading cells: 0.10s
+Info:   of which strict legalisation: 1.30s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 1472, wirelen = 30330
+Info:   at iteration #5: temp = 0.000000, timing cost = 2020, wirelen = 26431
+Info:   at iteration #10: temp = 0.000000, timing cost = 2173, wirelen = 25306
+Info:   at iteration #15: temp = 0.000000, timing cost = 1992, wirelen = 24622
+Info:   at iteration #20: temp = 0.000000, timing cost = 1971, wirelen = 24436
+Info:   at iteration #25: temp = 0.000000, timing cost = 1944, wirelen = 24384
+Info:   at iteration #27: temp = 0.000000, timing cost = 1941, wirelen = 24374 
+Info: SA placement time 2.17s
+
+Info: Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 18.00 MHz (PASS at 12.00 MHz)
+
+Info: Clock '$PACKER_GND_NET_$glb_clk' has no interior paths
+
+Info: Max delay <async>                         -> posedge clk12$SB_IO_IN_$glb_clk: 7.15 ns
+Info: Max delay posedge clk12$SB_IO_IN_$glb_clk -> <async>                        : 15.36 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 21 endpoint(s)
+Info:          + represents [1,21) endpoint(s)
+Info: [ 27789,  30381) |+
+Info: [ 30381,  32973) |*+
+Info: [ 32973,  35565) |*+
+Info: [ 35565,  38157) |***+
+Info: [ 38157,  40749) |*****+
+Info: [ 40749,  43341) |**+
+Info: [ 43341,  45933) |************+
+Info: [ 45933,  48525) |*****+
+Info: [ 48525,  51117) |*********+
+Info: [ 51117,  53709) |**********+
+Info: [ 53709,  56301) |********+
+Info: [ 56301,  58893) |*****************************************************+
+Info: [ 58893,  61485) |******************************************+
+Info: [ 61485,  64077) |**********************+
+Info: [ 64077,  66669) |**************+
+Info: [ 66669,  69261) |**********+
+Info: [ 69261,  71853) |****************+
+Info: [ 71853,  74445) |*******************+
+Info: [ 74445,  77037) |**************************+
+Info: [ 77037,  79629) |************************************************************ 
+Info: Checksum: 0x4b449a15
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 15740 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      117        882 |  117   882 |     14909|       0.33       0.33|
+Info:       2000 |      283       1716 |  166   834 |     14159|       0.14       0.47|
+Info:       3000 |      557       2442 |  274   726 |     13618|       0.16       0.63|
+Info:       4000 |      974       3025 |  417   583 |     13353|       0.16       0.78|
+Info:       5000 |     1445       3554 |  471   529 |     13171|       0.20       0.99|
+Info:       6000 |     1909       4090 |  464   536 |     12906|       0.17       1.15|
+Info:       7000 |     2329       4655 |  420   565 |     12639|       0.16       1.31|
+Info:       8000 |     2659       5325 |  330   670 |     12183|       0.15       1.47|
+Info:       9000 |     3171       5767 |  512   442 |     11912|       0.14       1.61|
+Info:      10000 |     3750       6187 |  579   420 |     11738|       0.16       1.77|
+Info:      11000 |     4382       6505 |  632   318 |     11509|       0.12       1.89|
+Info:      12000 |     4918       6928 |  536   423 |     11231|       0.12       2.01|
+Info:      13000 |     5535       7282 |  617   354 |     11086|       0.14       2.15|
+Info:      14000 |     5959       7798 |  424   516 |     10708|       0.14       2.29|
+Info:      15000 |     6476       8223 |  517   425 |     10393|       0.13       2.42|
+Info:      16000 |     7146       8536 |  670   313 |     10262|       0.15       2.57|
+Info:      17000 |     7657       8949 |  511   413 |      9899|       0.14       2.72|
+Info:      18000 |     8228       9371 |  571   422 |      9650|       0.16       2.88|
+Info:      19000 |     8834       9765 |  606   394 |      9415|       0.16       3.04|
+Info:      20000 |     9514      10085 |  680   320 |      9324|       0.16       3.20|
+Info:      21000 |    10098      10474 |  584   389 |      9085|       0.14       3.34|
+Info:      22000 |    10780      10780 |  682   306 |      8970|       0.17       3.51|
+Info:      23000 |    11141      11337 |  361   557 |      8421|       0.12       3.63|
+Info:      24000 |    11540      11884 |  399   547 |      8014|       0.11       3.74|
+Info:      25000 |    12001      12346 |  461   462 |      7599|       0.13       3.86|
+Info:      26000 |    12325      12966 |  324   620 |      7031|       0.13       3.99|
+Info:      27000 |    12733      13483 |  408   517 |      6575|       0.14       4.14|
+Info:      28000 |    13425      13790 |  692   307 |      6466|       0.16       4.30|
+Info:      29000 |    13835      14298 |  410   508 |      6040|       0.13       4.43|
+Info:      30000 |    14248      14870 |  413   572 |      5602|       0.13       4.56|
+Info:      31000 |    14683      15401 |  435   531 |      5233|       0.16       4.72|
+Info:      32000 |    15097      15971 |  414   570 |      4820|       0.16       4.88|
+Info:      33000 |    15563      16379 |  466   408 |      4411|       0.17       5.06|
+Info:      34000 |    15937      16811 |  374   432 |      3982|       0.13       5.19|
+Info:      35000 |    16423      17275 |  486   464 |      3697|       0.14       5.33|
+Info:      36000 |    16837      17819 |  414   544 |      3386|       0.15       5.47|
+Info:      37000 |    17362      18290 |  525   471 |      3104|       0.16       5.63|
+Info:      38000 |    17773      18853 |  411   563 |      2686|       0.18       5.81|
+Info:      39000 |    18211      19393 |  438   540 |      2273|       0.16       5.97|
+Info:      40000 |    18587      20009 |  376   616 |      1805|       0.10       6.08|
+Info:      41000 |    19181      20408 |  594   399 |      1664|       0.14       6.22|
+Info:      42000 |    19416      21155 |  235   747 |       966|       0.05       6.27|
+Info:      43000 |    19954      21614 |  538   459 |       721|       0.28       6.54|
+Info:      44000 |    20198      22364 |  244   750 |        48|       0.25       6.79|
+Info:      44350 |    20395      22517 |  197   153 |         0|       0.10       6.89|
+Info: Routing complete.
+Info: Router1 time 6.89s
+Info: Checksum: 0x6eda020b
+
+Info: Critical path report for clock 'clk12$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source startup_SB_DFFE_Q_17_D_SB_LUT4_O_LC.O
+Info:    routing  1.76  3.15 Net startup[6] (1,13) -> (2,13)
+Info:                          Sink $nextpnr_ICESTORM_LC_55.I1
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:18.46-18.58
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.68  3.83 Source $nextpnr_ICESTORM_LC_55.COUT
+Info:    routing  0.00  3.83 Net $nextpnr_ICESTORM_LC_55$O (2,13) -> (2,13)
+Info:                          Sink startup_SB_CARRY_I0_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.CIN
+Info:      logic  0.28  4.10 Source startup_SB_CARRY_I0_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.COUT
+Info:    routing  0.00  4.10 Net startup_SB_CARRY_I0_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (2,13) -> (2,13)
+Info:                          Sink startup_SB_CARRY_I0_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  4.38 Source startup_SB_CARRY_I0_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.COUT
+Info:    routing  0.00  4.38 Net startup_SB_CARRY_I0_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (2,13) -> (2,13)
+Info:                          Sink startup_SB_CARRY_I0_CI_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  4.66 Source startup_SB_CARRY_I0_CI_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.COUT
+Info:    routing  0.00  4.66 Net startup_SB_CARRY_I0_CI_SB_CARRY_CO_CI (2,13) -> (2,13)
+Info:                          Sink startup_SB_CARRY_I0_CI_SB_CARRY_CO$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  4.94 Source startup_SB_CARRY_I0_CI_SB_CARRY_CO$CARRY.COUT
+Info:    routing  0.00  4.94 Net startup_SB_CARRY_I0_CI (2,13) -> (2,13)
+Info:                          Sink startup_SB_CARRY_I0$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  5.22 Source startup_SB_CARRY_I0$CARRY.COUT
+Info:    routing  0.00  5.22 Net startup_SB_CARRY_I0_CO (2,13) -> (2,13)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  5.49 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  5.49 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO (2,13) -> (2,13)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  5.77 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.56  6.33 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,13) -> (2,14)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  6.61 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  6.61 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,14) -> (2,14)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  6.88 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  6.88 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,14) -> (2,14)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  7.16 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  7.16 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,14) -> (2,14)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  7.44 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  7.44 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,14) -> (2,14)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  7.72 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  7.72 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,14) -> (2,14)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  8.00 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  8.00 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,14) -> (2,14)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  8.27 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  8.27 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,14) -> (2,14)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  8.55 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.56  9.11 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,14) -> (2,15)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  9.39 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.00  9.39 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,15) -> (2,15)
+Info:                          Sink startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.CIN
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:17.14-17.36
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.28  9.66 Source startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI$CARRY.COUT
+Info:    routing  0.66  10.33 Net $nextpnr_ICESTORM_LC_56$I3 (2,15) -> (2,15)
+Info:                          Sink $nextpnr_ICESTORM_LC_56.I3
+Info:      logic  0.87  11.20 Source $nextpnr_ICESTORM_LC_56.O
+Info:    routing  4.04  15.24 Net startup_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (2,15) -> (13,14)
+Info:                          Sink system.capture.sample_valid_SB_LUT4_I1_O_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  16.11 Source system.capture.sample_valid_SB_LUT4_I1_O_SB_LUT4_O_1_LC.O
+Info:    routing  3.60  19.71 Net system.capture.sample_valid_SB_LUT4_I1_O[3] (13,14) -> (13,7)
+Info:                          Sink system.with_spectrum.spectrum.dsp.receiving_SB_LUT4_I0_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  20.59 Source system.with_spectrum.spectrum.dsp.receiving_SB_LUT4_I0_LC.O
+Info:    routing  4.35  24.94 Net system.min_delta_SB_DFFESS_Q_21_D_SB_CARRY_I0_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO[0] (13,7) -> (14,20)
+Info:                          Sink system.ram_address_SB_LUT4_O_I2_SB_LUT4_I2_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  25.81 Source system.ram_address_SB_LUT4_O_I2_SB_LUT4_I2_LC.O
+Info:    routing  1.76  27.57 Net system.ram_address_SB_LUT4_O_I2_SB_LUT4_I2_O[2] (14,20) -> (15,21)
+Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  28.45 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  30.21 Net system.transport.spi.tx_shift_SB_DFFESR_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3[1] (15,21) -> (15,21)
+Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  31.08 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_LC.O
+Info:    routing  1.76  32.84 Net system.transport.spi.tx_shift_SB_DFFESR_Q_3_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3[2] (15,21) -> (15,20)
+Info:                          Sink system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  33.72 Source system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  35.48 Net system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I3[3] (15,20) -> (16,20)
+Info:                          Sink system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  36.35 Source system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_LC.O
+Info:    routing  1.76  38.11 Net system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3[1] (16,20) -> (15,21)
+Info:                          Sink system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  39.32 Source system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  41.08 Net system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_I3[1] (15,21) -> (14,22)
+Info:                          Sink system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  42.28 Source system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O_SB_LUT4_O_LC.O
+Info:    routing  3.60  45.88 Net system.transport.spi.divider_SB_LUT4_I0_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[3] (14,22) -> (12,28)
+Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  46.76 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_LC.O
+Info:    routing  1.76  48.52 Net system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_I3_O[0] (12,28) -> (11,29)
+Info:                          Sink system.crc_SB_DFFESS_Q_10_D_SB_LUT4_O_I2_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  49.72 Source system.crc_SB_DFFESS_Q_10_D_SB_LUT4_O_I2_SB_LUT4_O_LC.O
+Info:    routing  1.76  51.49 Net system.crc_SB_DFFESS_Q_10_D_SB_LUT4_O_I2[0] (11,29) -> (12,30)
+Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_4_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  52.36 Source system.transport.spi.tx_shift_SB_DFFESR_Q_4_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_LC.O
+Info:    routing  1.76  54.12 Net system.transport.spi.tx_shift_SB_DFFESR_Q_4_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_I3_O[2] (12,30) -> (11,29)
+Info:                          Sink system.crc_SB_DFFESS_Q_2_D_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  54.99 Source system.crc_SB_DFFESS_Q_2_D_SB_LUT4_O_LC.O
+Info:    routing  1.76  56.76 Net system.crc_SB_DFFESS_Q_2_D[3] (11,29) -> (11,30)
+Info:                          Sink system.crc_SB_DFFESS_Q_2_DFFLC.I0
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      setup  1.23  57.99 Source system.crc_SB_DFFESS_Q_2_DFFLC.I0
+Info: 21.25 ns logic, 36.74 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge clk12$SB_IO_IN_$glb_clk':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source flash_miso$sb_io.D_IN_0
+Info:    routing  6.30  6.30 Net flash_miso$SB_IO_IN (23,0) -> (24,26)
+Info:                          Sink system.transport.spi.rx_shift_SB_DFFESR_Q_7_DFFLC.I0
+Info:                          Defined in:
+Info:                               rtl/io/spi_master.sv:18.16-18.20
+Info:      setup  1.23  7.53 Source system.transport.spi.rx_shift_SB_DFFESR_Q_7_DFFLC.I0
+Info: 1.23 ns logic, 6.30 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk12$SB_IO_IN_$glb_clk' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source system.error_flags_SB_DFFESR_Q_DFFLC.O
+Info:    routing  5.72  7.11 Net system.error_flags[6] (11,29) -> (12,16)
+Info:                          Sink status_error_SB_LUT4_O_I3_SB_LUT4_O_1_LC.I1
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.23  8.34 Source status_error_SB_LUT4_O_I3_SB_LUT4_O_1_LC.O
+Info:    routing  3.06  11.40 Net status_error_SB_LUT4_O_I3[1] (12,16) -> (12,9)
+Info:                          Sink status_error_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               ./.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  12.27 Source status_error_SB_LUT4_O_LC.O
+Info:    routing  4.90  17.17 Net status_error$SB_IO_OUT (12,9) -> (18,0)
+Info:                          Sink status_error$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               rtl/upduino_sensor.sv:48.28-48.40
+Info: 3.49 ns logic, 13.67 ns routing
+
+Info: Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 17.24 MHz (PASS at 12.00 MHz)
+
+Info: Clock '$PACKER_GND_NET_$glb_clk' has no interior paths
+
+Info: Max delay <async>                         -> posedge clk12$SB_IO_IN_$glb_clk: 7.53 ns
+Info: Max delay posedge clk12$SB_IO_IN_$glb_clk -> <async>                        : 17.17 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 34 endpoint(s)
+Info:          + represents [1,34) endpoint(s)
+Info: [ 25343,  28059) |+
+Info: [ 28059,  30775) |+
+Info: [ 30775,  33491) |*+
+Info: [ 33491,  36207) |**+
+Info: [ 36207,  38923) |*+
+Info: [ 38923,  41639) |**+
+Info: [ 41639,  44355) |*+
+Info: [ 44355,  47071) |*+
+Info: [ 47071,  49787) |********+
+Info: [ 49787,  52503) |********+
+Info: [ 52503,  55219) |********+
+Info: [ 55219,  57935) |********+
+Info: [ 57935,  60651) |*********+
+Info: [ 60651,  63367) |************************************************************ 
+Info: [ 63367,  66083) |********+
+Info: [ 66083,  68799) |********+
+Info: [ 68799,  71515) |**********+
+Info: [ 71515,  74231) |**********+
+Info: [ 74231,  76947) |*****************+
+Info: [ 76947,  79663) |********************************+
+
+Info: Program finished normally.

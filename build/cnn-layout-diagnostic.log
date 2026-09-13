@@ -1,0 +1,68 @@
+[
+  {
+    "representation": "relative",
+    "held": "00",
+    "fit_auc": 0.9905853271484375,
+    "saved_layout_max_error": 7.3909759521484375e-06,
+    "original_layout_max_error": 0.0,
+    "saved_layout_decision_changes": 0,
+    "original_layout_decision_changes": 0,
+    "fit_loss_first": 0.6938861757516861,
+    "fit_loss_last": 0.1906483145430684
+  },
+  {
+    "representation": "relative",
+    "held": "02",
+    "fit_auc": 0.9150848388671875,
+    "saved_layout_max_error": 2.9206275939941406e-06,
+    "original_layout_max_error": 0.0,
+    "saved_layout_decision_changes": 0,
+    "original_layout_decision_changes": 0,
+    "fit_loss_first": 0.6939057260751724,
+    "fit_loss_last": 0.429776381701231
+  },
+  {
+    "representation": "relative",
+    "held": "04",
+    "fit_auc": 0.9590606689453125,
+    "saved_layout_max_error": 1.704692840576172e-05,
+    "original_layout_max_error": 0.0,
+    "saved_layout_decision_changes": 0,
+    "original_layout_decision_changes": 0,
+    "fit_loss_first": 0.6938381120562553,
+    "fit_loss_last": 0.33896850049495697
+  },
+  {
+    "representation": "timecenter",
+    "held": "00",
+    "fit_auc": 0.5344085693359375,
+    "saved_layout_max_error": 5.587935447692871e-09,
+    "original_layout_max_error": 0.0,
+    "saved_layout_decision_changes": 0,
+    "original_layout_decision_changes": 0,
+    "fit_loss_first": 0.6939439997076988,
+    "fit_loss_last": 0.6932145208120346
+  },
+  {
+    "representation": "timecenter",
+    "held": "02",
+    "fit_auc": 0.522369384765625,
+    "saved_layout_max_error": 7.450580596923828e-09,
+    "original_layout_max_error": 0.0,
+    "saved_layout_decision_changes": 1,
+    "original_layout_decision_changes": 0,
+    "fit_loss_first": 0.6939407140016556,
+    "fit_loss_last": 0.6932144314050674
+  },
+  {
+    "representation": "timecenter",
+    "held": "04",
+    "fit_auc": 0.55072021484375,
+    "saved_layout_max_error": 9.313225746154785e-09,
+    "original_layout_max_error": 0.0,
+    "saved_layout_decision_changes": 0,
+    "original_layout_decision_changes": 0,
+    "fit_loss_first": 0.6939353197813034,
+    "fit_loss_last": 0.6932143643498421
+  }
+]

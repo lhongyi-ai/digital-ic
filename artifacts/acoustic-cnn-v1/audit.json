@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "test_opened": false,
+  "bindings_sha256": "8e9fffdc66c7dad2bbcf178350463d72a1ba4f4355450db4387835ff71e20858",
+  "checks": [
+    {
+      "representation": "relative",
+      "held": "00",
+      "fit_auc_diagnostic_only": 0.6343231201171875,
+      "validation": {
+        "tp": 118,
+        "fp": 96,
+        "auc": 0.6222265625
+      },
+      "reload_auc": 0.6222265625,
+      "max_score_reload_error": 1.341104507446289e-07
+    },
+    {
+      "representation": "relative",
+      "held": "02",
+      "fit_auc_diagnostic_only": 0.5953216552734375,
+      "validation": {
+        "tp": 3,
+        "fp": 0,
+        "auc": 0.5049609375
+      },
+      "reload_auc": 0.5049609375,
+      "max_score_reload_error": 4.470348358154297e-08
+    },
+    {
+      "representation": "relative",
+      "held": "04",
+      "fit_auc_diagnostic_only": 0.613494873046875,
+      "validation": {
+        "tp": 0,
+        "fp": 0,
+        "auc": 0.601640625
+      },
+      "reload_auc": 0.601640625,
+      "max_score_reload_error": 4.246830940246582e-07
+    },
+    {
+      "representation": "timecenter",
+      "held": "00",
+      "fit_auc_diagnostic_only": 0.5122909545898438,
+      "validation": {
+        "tp": 2,
+        "fp": 2,
+        "auc": 0.5033203125
+      },
+      "reload_auc": 0.5033203125,
+      "max_score_reload_error": 1.862645149230957e-08
+    },
+    {
+      "representation": "timecenter",
+      "held": "02",
+      "fit_auc_diagnostic_only": 0.5022430419921875,
+      "validation": {
+        "tp": 1,
+        "fp": 2,
+        "auc": 0.51044921875
+      },
+      "reload_auc": 0.51048828125,
+      "max_score_reload_error": 1.862645149230957e-08
+    },
+    {
+      "representation": "timecenter",
+      "held": "04",
+      "fit_auc_diagnostic_only": 0.5250091552734375,
+      "validation": {
+        "tp": 1,
+        "fp": 1,
+        "auc": 0.4628125
+      },
+      "reload_auc": 0.4627734375,
+      "max_score_reload_error": 1.862645149230957e-08
+    }
+  ]
+}

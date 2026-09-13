@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-09-07T18:18:43" hostname="MacBook-Pro-3.local" package="serial_tie_away" id="0" name="serial_bmc" tests="55" errors="0" failures="3" time="0" skipped="53">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="serial_bmc" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:106.43-106.61" time="0" type="ASSERT" location="quant_harness.sv:106.43-106.61" id="_witness_.check_assert_quant_harness_sv_106_20">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:108.17-108.33" time="0" type="ASSERT" location="quant_harness.sv:108.17-108.33" id="_witness_.check_assert_quant_harness_sv_108_23">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:113.17-113.39" time="0" type="ASSERT" location="quant_harness.sv:113.17-113.39" id="_witness_.check_assert_quant_harness_sv_113_25">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:114.37-114.54" time="0" type="ASSERT" location="quant_harness.sv:114.37-114.54" id="_witness_.check_assert_quant_harness_sv_114_28">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:118.17-118.32" time="0" type="ASSERT" location="quant_harness.sv:118.17-118.32" id="_witness_.check_assert_quant_harness_sv_118_31">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:119.17-119.39" time="0" type="ASSERT" location="quant_harness.sv:119.17-119.39" id="_witness_.check_assert_quant_harness_sv_119_32">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:120.17-120.46" time="0" type="ASSERT" location="quant_harness.sv:120.17-120.46" id="_witness_.check_assert_quant_harness_sv_120_34" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in quant_serial_harness at quant_harness.sv:120.17-120.46 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:121.17-121.49" time="0" type="ASSERT" location="quant_harness.sv:121.17-121.49" id="_witness_.check_assert_quant_harness_sv_121_36" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in quant_serial_harness at quant_harness.sv:121.17-121.49 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:122.17-122.63" time="0" type="ASSERT" location="quant_harness.sv:122.17-122.63" id="_witness_.check_assert_quant_harness_sv_122_38">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property ASSERT in quant_serial_harness at quant_harness.sv:123.17-123.41" time="0" type="ASSERT" location="quant_harness.sv:123.17-123.41" id="_witness_.check_assert_quant_harness_sv_123_42">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:126.13-126.64" time="0" type="COVER" location="quant_harness.sv:126.13-126.64" id="_witness_.check_cover_quant_harness_sv_126_44">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:127.13-127.81" time="0" type="COVER" location="quant_harness.sv:127.13-127.81" id="_witness_.check_cover_quant_harness_sv_127_49">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:128.13-128.81" time="0" type="COVER" location="quant_harness.sv:128.13-128.81" id="_witness_.check_cover_quant_harness_sv_128_56">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:129.13-129.85" time="0" type="COVER" location="quant_harness.sv:129.13-129.85" id="_witness_.check_cover_quant_harness_sv_129_63">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:130.13-130.95" time="0" type="COVER" location="quant_harness.sv:130.13-130.95" id="_witness_.check_cover_quant_harness_sv_130_70">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:131.13-131.94" time="0" type="COVER" location="quant_harness.sv:131.13-131.94" id="_witness_.check_cover_quant_harness_sv_131_77">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:132.13-132.94" time="0" type="COVER" location="quant_harness.sv:132.13-132.94" id="_witness_.check_cover_quant_harness_sv_132_84">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:133.13-133.83" time="0" type="COVER" location="quant_harness.sv:133.13-133.83" id="_witness_.check_cover_quant_harness_sv_133_91">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:134.13-134.47" time="0" type="COVER" location="quant_harness.sv:134.13-134.47" id="_witness_.check_cover_quant_harness_sv_134_98">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:135.13-135.46" time="0" type="COVER" location="quant_harness.sv:135.13-135.46" id="_witness_.check_cover_quant_harness_sv_135_101">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:136.13-136.42" time="0" type="COVER" location="quant_harness.sv:136.13-136.42" id="_witness_.check_cover_quant_harness_sv_136_104">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_139">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_145">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_151">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_157">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_163">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_169">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_175">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_181">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_187">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_193">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_199">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_205">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_211">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_217">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_223">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_229">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_235">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_241">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_247">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_253">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_259">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_265">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_271">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_277">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_283">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_289">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_295">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_301">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_307">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_313">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_319">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_325">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_331">
+<skipped />
+</testcase>
+<testcase classname="serial_bmc" name="Property COVER in quant_serial_harness at quant_harness.sv:142.13-142.46" time="0" type="COVER" location="quant_harness.sv:142.13-142.46" id="_witness_.check_cover_quant_harness_sv_142_337">
+<skipped />
+</testcase>
+<system-out>SBY 18:18:43 [./build/quantization_formal/serial_tie_away] Removing directory './build/quantization_formal/serial_tie_away'.
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] Copy './build/quantization_formal/generated/serial_tie_away.sv' to './build/quantization_formal/serial_tie_away/src/serial_tie_away.sv'.
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] Copy './formal/quant_harness.sv' to './build/quantization_formal/serial_tie_away/src/quant_harness.sv'.
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: smtbmc bitwuzla
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] base: starting process &quot;cd ./build/quantization_formal/serial_tie_away/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] base: finished (returncode=0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] prep: starting process &quot;cd ./build/quantization_formal/serial_tie_away/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] prep: finished (returncode=0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] smt2: starting process &quot;cd ./build/quantization_formal/serial_tie_away/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] smt2: finished (returncode=0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: starting process &quot;cd ./build/quantization_formal/serial_tie_away; yosys-smtbmc -s bitwuzla --presat --unroll --noprogress -t 64  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  BMC failed!
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Value for anyconst quant_serial_harness.in_power (quant_harness.sv:68.31-68.39): 125
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Value for anyconst quant_serial_harness.in_shift (quant_harness.sv:69.30-69.38): 1
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Value for anyconst quant_serial_harness.in_index (quant_harness.sv:70.30-70.38): 3
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Assert failed in quant_serial_harness: quant_harness.sv:120.17-120.46 (_witness_.check_assert_quant_harness_sv_120_34)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Assert failed in quant_serial_harness: quant_harness.sv:121.17-121.49 (_witness_.check_assert_quant_harness_sv_121_36)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Status: failed
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: finished (returncode=1)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: Status returned by engine: FAIL
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary: engine_0 (smtbmc bitwuzla) returned FAIL
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary: counterexample trace: ./build/quantization_formal/serial_tie_away/engine_0/trace.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary:   failed assertion quant_serial_harness._witness_.check_assert_quant_harness_sv_120_34 at quant_harness.sv:120.17-120.46 step 6
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary:   failed assertion quant_serial_harness._witness_.check_assert_quant_harness_sv_121_36 at quant_harness.sv:121.17-121.49 step 6
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

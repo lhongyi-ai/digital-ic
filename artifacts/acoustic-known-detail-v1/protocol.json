@@ -1,0 +1,13 @@
+{
+  "source_sha256": "fa96d78c694cf87c9ca499f37a1f90d17c2c12c2a7cc6d9589d11683e7e8ed1f",
+  "baseline_sha256": "4f407cdf2a8bbb85f0de59253b9add09540b81b02122a91702ac15f8445a62c3",
+  "power_sha256": "3d0cc44694b57f570984195918c2ca2a7d691541e801e82a950b8b2e7d7c4aab",
+  "plan_sha256": "cbce6ce6b5bf5c94a6264dbd37e75a6ba801f3d5b158a6a4a301faf8b80bf72b",
+  "scope": "Per-ID, original frozen development folds and calibration; no test audio",
+  "candidates": [
+    "single32 MLP32-16-ReLU-1 Adam .001 batch64 epochs100 seed71, per-bin train Fisher top32",
+    "full512 LogisticRegression C1 max_iter3000 random_state71; information diagnostic"
+  ],
+  "threshold": "second highest of32 separate normal calibration scores per ID; strict >",
+  "final_test_opened": false
+}

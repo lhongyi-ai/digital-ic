@@ -1,0 +1,357 @@
+{
+  "actual_clock_measured": false,
+  "attempt_mode": "program_and_replay",
+  "backup_bytes": 4194304,
+  "backup_path": "./measurements/2026-09-10-upduino31/original-flash-4MiB.bin",
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "board": "UPduino v3.1, USB descriptor and user confirmed 2026-09-10",
+  "clock_source": "hfosc12",
+  "clock_timing_basis": "nominal only; physical oscillator frequency unmeasured",
+  "commands": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "step": "jedec"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/2026-09-11-acoustic/l1-5/board.bin"
+      ],
+      "step": "configuration"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "262144",
+        "./measurements/2026-09-11-acoustic/l1-5/replay.bin"
+      ],
+      "step": "input"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/2026-09-11-acoustic/l1-5/erased-log.bin"
+      ],
+      "step": "clear_log_and_start"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-11-acoustic/l1-5/read-log-01.bin"
+      ],
+      "step": "read_log_1"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-11-acoustic/l1-5/read-log-02.bin"
+      ],
+      "step": "read_log_2"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-11-acoustic/l1-5/read-log-03.bin"
+      ],
+      "step": "read_log_3"
+    }
+  ],
+  "core_verification_error": null,
+  "counters": {
+    "accepted_samples": 5120,
+    "error_flags": 0,
+    "generated_samples": 5120,
+    "overflow_count": 0,
+    "period_cycles": 750,
+    "protocol_errors": 0,
+    "record_count": 5
+  },
+  "device": "i:0x0403:0x6014:0",
+  "driver_sha256": "969f3a2169df90be2b5864bb3b246c566bc152db02a093f7f1254d53a4d41e7b",
+  "driver_snapshot": "run_hardware_replay.py",
+  "elapsed_seconds": 28.988759999978356,
+  "execute_requested": true,
+  "expected_flash_id": "EF4016",
+  "finished_utc": "2026-09-11T05:07:00.288723+00:00",
+  "hardware_operations_started": true,
+  "input_sha256": {
+    "board.bin": "0fb4eca3d5dc13adc2b97c7fe9d443bd0ab4ecdcea16e4d6ba6f026097b767a0",
+    "build-report.json": "8960102c3c0e4a78e52f9ae6be4d8823b63a021664ce03ee95e101ed66d5eb16",
+    "erased-log.bin": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+    "model.json": "f27c00bae55fc68390008007e1ff0561991515fa2107fef41f53a5cf19c8f8e5",
+    "profile.json": "1f34f00566ae8fd4eb76a9acf5ee327df336a2f941ebf97d17c6af845217e63f",
+    "replay.bin": "c5ae92d684c62529eccbf3dfcd0fdac26744e5cff9764bebee9fda8332474844"
+  },
+  "measurement_scope": "Flash-fed digital replay; no sensor acquisition or calibrated timing",
+  "nominal_clock_hz": 12000000,
+  "observed_flash_id": "EF4016",
+  "original_paths": {
+    "bitstream_path": "./build/runs/acoustic-v1/acoustic_board_neighbor_l1_hfosc12/board.bin",
+    "image_path": "./build/acoustic-replay-5.bin",
+    "model_path": "./artifacts/acoustic/model/model.json",
+    "profile_path": "./configs/upduino31-connected.json"
+  },
+  "passed": true,
+  "physical_trial_id": "329e8c7b-ceb4-4816-9664-e6ab9eb89aef",
+  "read_transport_errors": [],
+  "read_transport_issue": false,
+  "readback_attempts": [
+    {
+      "bytes": 131072,
+      "file": "read-log-01.bin",
+      "format_valid": true,
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "sha256": "a5073e55ce793948d3f2f5e3ef5ffe924f360f14b9022dafaaba70009558eaa7",
+      "step": "read_log_1",
+      "transcript": "read_log_1.txt",
+      "transcript_sha256": "7de19e7a83f091218df2ed1d647773357fc4e5d772e3fd719a7246f11c139a08",
+      "transport_valid": true
+    },
+    {
+      "bytes": 131072,
+      "file": "read-log-02.bin",
+      "format_valid": true,
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "sha256": "a5073e55ce793948d3f2f5e3ef5ffe924f360f14b9022dafaaba70009558eaa7",
+      "step": "read_log_2",
+      "transcript": "read_log_2.txt",
+      "transcript_sha256": "7de19e7a83f091218df2ed1d647773357fc4e5d772e3fd719a7246f11c139a08",
+      "transport_valid": true
+    }
+  ],
+  "readback_consensus": {
+    "files": [
+      "read-log-01.bin",
+      "read-log-02.bin"
+    ],
+    "result_file": "result-log.bin",
+    "sha256": "a5073e55ce793948d3f2f5e3ef5ffe924f360f14b9022dafaaba70009558eaa7",
+    "unaltered": true
+  },
+  "readback_policy": "two consecutive identical unaltered valid reads; at most three attempts",
+  "readback_recovery_needed": false,
+  "replay_parameters": {
+    "model_sha256": "f27c00bae55fc68390008007e1ff0561991515fa2107fef41f53a5cf19c8f8e5",
+    "n": 1024,
+    "period_cycles": 750,
+    "run_frames": 5,
+    "source_frames": 6
+  },
+  "result_log_sha256": "a5073e55ce793948d3f2f5e3ef5ffe924f360f14b9022dafaaba70009558eaa7",
+  "schema_version": 2,
+  "source_provenance": "build-report.json input_sha256; all listed files verified before this attempt",
+  "stage_timing": {
+    "dft": {
+      "max_cycles": 295104,
+      "mean_cycles": 295104.0,
+      "mean_seconds_at_nominal_clock": 0.024592,
+      "min_cycles": 295104
+    },
+    "nn": {
+      "max_cycles": 848,
+      "mean_cycles": 848.0,
+      "mean_seconds_at_nominal_clock": 7.066666666666667e-05,
+      "min_cycles": 848
+    },
+    "power": {
+      "max_cycles": 358,
+      "mean_cycles": 358.0,
+      "mean_seconds_at_nominal_clock": 2.9833333333333335e-05,
+      "min_cycles": 358
+    },
+    "pre": {
+      "max_cycles": 3073,
+      "mean_cycles": 3073.0,
+      "mean_seconds_at_nominal_clock": 0.0002560833333333333,
+      "min_cycles": 3073
+    },
+    "total": {
+      "max_cycles": 299383,
+      "mean_cycles": 299383.0,
+      "mean_seconds_at_nominal_clock": 0.024948583333333333,
+      "min_cycles": 299383
+    }
+  },
+  "started_utc": "2026-09-11T05:06:31.300035+00:00",
+  "status": "passed",
+  "steps": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "elapsed_seconds": 0.6615308340115007,
+      "finished_utc": "2026-09-11T05:06:31.966836+00:00",
+      "name": "jedec",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T05:06:31.305125+00:00",
+      "transcript": "jedec.txt",
+      "transcript_sha256": "d35361e4e3604a85d981ef65c07d8f6d21d8ed1fc0b4cfbaa058d9ff88ba0d43"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/2026-09-11-acoustic/l1-5/board.bin"
+      ],
+      "elapsed_seconds": 7.314391041989438,
+      "finished_utc": "2026-09-11T05:06:39.284469+00:00",
+      "input_file": "./measurements/2026-09-11-acoustic/l1-5/board.bin",
+      "input_sha256": "0fb4eca3d5dc13adc2b97c7fe9d443bd0ab4ecdcea16e4d6ba6f026097b767a0",
+      "name": "configuration",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T05:06:31.969132+00:00",
+      "transcript": "configuration.txt",
+      "transcript_sha256": "8f1767f7c955b985cdc83c74714deaee365b1b84005e606c3b1a94d48410a3ab"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "262144",
+        "./measurements/2026-09-11-acoustic/l1-5/replay.bin"
+      ],
+      "elapsed_seconds": 1.693365791987162,
+      "finished_utc": "2026-09-11T05:06:40.981064+00:00",
+      "input_file": "./measurements/2026-09-11-acoustic/l1-5/replay.bin",
+      "input_sha256": "c5ae92d684c62529eccbf3dfcd0fdac26744e5cff9764bebee9fda8332474844",
+      "name": "input",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T05:06:39.287054+00:00",
+      "transcript": "input.txt",
+      "transcript_sha256": "a7e665fc7fa2f034563081330c689352923fe0a30983a616e06331f8c6a2fe2a"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/2026-09-11-acoustic/l1-5/erased-log.bin"
+      ],
+      "elapsed_seconds": 8.911807249998674,
+      "finished_utc": "2026-09-11T05:06:49.896293+00:00",
+      "input_file": "./measurements/2026-09-11-acoustic/l1-5/erased-log.bin",
+      "input_sha256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+      "name": "clear_log_and_start",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T05:06:40.983424+00:00",
+      "transcript": "clear_log_and_start.txt",
+      "transcript_sha256": "9ce8fea471b9eddb629359f97cb366ae91c9216b442cdd457cbc65d391607867"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-11-acoustic/l1-5/read-log-01.bin"
+      ],
+      "elapsed_seconds": 1.7066410830011591,
+      "finished_utc": "2026-09-11T05:06:58.607476+00:00",
+      "name": "read_log_1",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T05:06:56.900242+00:00",
+      "transcript": "read_log_1.txt",
+      "transcript_sha256": "7de19e7a83f091218df2ed1d647773357fc4e5d772e3fd719a7246f11c139a08"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-11-acoustic/l1-5/read-log-02.bin"
+      ],
+      "elapsed_seconds": 1.675716208992526,
+      "finished_utc": "2026-09-11T05:07:00.284592+00:00",
+      "name": "read_log_2",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T05:06:58.608681+00:00",
+      "transcript": "read_log_2.txt",
+      "transcript_sha256": "7de19e7a83f091218df2ed1d647773357fc4e5d772e3fd719a7246f11c139a08"
+    }
+  ],
+  "verification": {
+    "checked_frames": 5,
+    "input_image_sha256": "c5ae92d684c62529eccbf3dfcd0fdac26744e5cff9764bebee9fda8332474844",
+    "model_sha256": "f27c00bae55fc68390008007e1ff0561991515fa2107fef41f53a5cf19c8f8e5",
+    "passed": true,
+    "record_semantics": [
+      "squared_reconstruction_error",
+      "window_threshold",
+      "consecutive_window_count"
+    ],
+    "result_log_sha256": "a5073e55ce793948d3f2f5e3ef5ffe924f360f14b9022dafaaba70009558eaa7",
+    "scope": "Acoustic numeric/alarm verification of supplied files; physical provenance recorded separately."
+  },
+  "wait_seconds": 7
+}

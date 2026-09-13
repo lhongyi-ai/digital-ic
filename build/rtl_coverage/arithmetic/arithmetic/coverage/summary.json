@@ -1,0 +1,188 @@
+{
+  "status": "passed",
+  "coverage_types": {
+    "branch": {
+      "hit_points": 23,
+      "total_points": 142,
+      "percent": 16.197183098591548
+    },
+    "expr": {
+      "hit_points": 27,
+      "total_points": 170,
+      "percent": 15.882352941176471
+    },
+    "line": {
+      "hit_points": 26,
+      "total_points": 91,
+      "percent": 28.571428571428573
+    },
+    "toggle": {
+      "hit_points": 554,
+      "total_points": 7196,
+      "percent": 7.698721511951084
+    },
+    "fsm_state": {
+      "hit_points": 0,
+      "total_points": 0,
+      "percent": null,
+      "status": "not instrumented; no coverage claim"
+    },
+    "fsm_arc": {
+      "hit_points": 0,
+      "total_points": 0,
+      "percent": null,
+      "status": "not instrumented; no coverage claim"
+    },
+    "user": {
+      "hit_points": 0,
+      "total_points": 0,
+      "percent": null,
+      "status": "not instrumented; no coverage claim"
+    }
+  },
+  "per_file": {
+    "./rtl/core/vib_coeff_rom.sv": {
+      "branch": {
+        "hit_points": 15,
+        "total_points": 60,
+        "percent": 25.0
+      },
+      "expr": {
+        "hit_points": 10,
+        "total_points": 50,
+        "percent": 20.0
+      },
+      "line": {
+        "hit_points": 5,
+        "total_points": 10,
+        "percent": 50.0
+      },
+      "toggle": {
+        "hit_points": 0,
+        "total_points": 640,
+        "percent": 0.0
+      },
+      "fsm_state": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "fsm_arc": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "user": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      }
+    },
+    "./rtl/core/vibration_core.sv": {
+      "branch": {
+        "hit_points": 8,
+        "total_points": 82,
+        "percent": 9.75609756097561
+      },
+      "expr": {
+        "hit_points": 17,
+        "total_points": 120,
+        "percent": 14.166666666666666
+      },
+      "line": {
+        "hit_points": 21,
+        "total_points": 81,
+        "percent": 25.925925925925927
+      },
+      "toggle": {
+        "hit_points": 128,
+        "total_points": 6122,
+        "percent": 2.0908199934661873
+      },
+      "fsm_state": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "fsm_arc": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "user": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      }
+    },
+    "./sim/arithmetic_tb.sv": {
+      "toggle": {
+        "hit_points": 426,
+        "total_points": 434,
+        "percent": 98.15668202764977
+      },
+      "fsm_state": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "fsm_arc": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "user": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      }
+    }
+  },
+  "sources": [
+    {
+      "path": "build/rtl_coverage/arithmetic/arithmetic/coverage.dat",
+      "sha256": "d50744dde7ef9e0401b31dd605cb865b61f77d5541fc7cc9d02ed1adaef11f83"
+    }
+  ],
+  "reports": [
+    {
+      "report": "build/rtl_coverage/arithmetic/arithmetic/arithmetic.json",
+      "report_sha256": "47eb8038ebd4f9f19e7a1b186c4a9b83ce3134d4e38f47dadfb795c49fda0f4b",
+      "xml_sha256": "6415ca13cbf7feae3fa351c481bef39f2e1dcdafd85c4278d00c3edb667c7011",
+      "tests": {
+        "tests": 1,
+        "passed": 1,
+        "cases": [
+          "rounding_saturation_and_quantization"
+        ]
+      },
+      "result": {
+        "status": "passed",
+        "vectors": 6651,
+        "rne_shifts": [
+          0,
+          40
+        ],
+        "hidden_shift": 8,
+        "seed": 178
+      }
+    }
+  ],
+  "threshold": "one hit per tool-generated point (or point-specific threshold if present)",
+  "excluded_points": 0,
+  "coverage_source_filters": [],
+  "per_instance_requested_at_compile_and_runtime": true,
+  "startup_and_reset_activity_included": true,
+  "merged_data_sha256": "d50744dde7ef9e0401b31dd605cb865b61f77d5541fc7cc9d02ed1adaef11f83",
+  "lcov_sha256": "84b1eda13460ab50b049b3214cf06de8f3d04bf16023b8a1e3da997d590db6f9",
+  "uncovered_points_sha256": "39120d7676d2a83a9392cdeedc1253097fe4f72f89e000209a63cdb486715791"
+}

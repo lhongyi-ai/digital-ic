@@ -1,0 +1,5460 @@
+{
+  "schema_version": 1,
+  "collected_utc": "2026-09-06T03:25:07.223844+00:00",
+  "hardware_tested": false,
+  "checks": {
+    "build/calibration_0": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "99a426e86858e8d016328e05b2cb30fff0e78fa3c7b6a1832eada19804f88e94",
+      "results_xml": "build/calibration_0/results.xml"
+    },
+    "build/calibration_1": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "a9bc37ebe6aa3efa21391ac8f8ca3c72f4a3f74ffd9dc29e8feb8f823dca2448",
+      "results_xml": "build/calibration_1/results.xml"
+    },
+    "build/calibration_2": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "28a3d2295c8876252a3d9e4f74913b44d68d6f0d6cc4bea2d5973c352964a2a4",
+      "results_xml": "build/calibration_2/results.xml"
+    },
+    "build/calibration_3": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "9ad0f3aab92e5b1f6d545790f90e64febd84968594241ac2956f8eeed5fc5684",
+      "results_xml": "build/calibration_3/results.xml"
+    },
+    "build/core_dsp_l1_artifacts": {
+      "status": "passed",
+      "tests": 4,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "9c697a160694b723e8e2854c52c3cc6fa52d1f218ca978582894e9843a997f22",
+      "results_xml": "build/core_dsp_l1_artifacts/results.xml"
+    },
+    "build/core_dsp_l1_model_neighbor": {
+      "status": "passed",
+      "tests": 4,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "e71eaebe6b5478bceedc1fcd417e11a47b137b5cfcc383519bbd1cdcad3e1277",
+      "results_xml": "build/core_dsp_l1_model_neighbor/results.xml"
+    },
+    "build/core_dsp_l4_artifacts": {
+      "status": "passed",
+      "tests": 4,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "aee327e6b162a687af0a9b7751be07381e8fca2af1534102d3390b9daeea95d7",
+      "results_xml": "build/core_dsp_l4_artifacts/results.xml"
+    },
+    "build/core_dsp_l4_model_neighbor": {
+      "status": "passed",
+      "tests": 4,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "713e59077a3ef12761781ebf83f165a237c8a3c6bea9789bb719c90d161afd0a",
+      "results_xml": "build/core_dsp_l4_model_neighbor/results.xml"
+    },
+    "build/core_l1_artifacts": {
+      "status": "passed",
+      "tests": 4,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "09bf4a7f8e58e511b66ae178796ce4ac8ccc584c2efc45bd3d43838503404d86",
+      "results_xml": "build/core_l1_artifacts/results.xml"
+    },
+    "build/core_l1_model_neighbor": {
+      "status": "passed",
+      "tests": 4,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "ca5834492297d8a62d85662394268bb78440265f9d747ffc9f30b35fb28c5668",
+      "results_xml": "build/core_l1_model_neighbor/results.xml"
+    },
+    "build/core_l4_artifacts/arithmetic": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "ed90d1eaee2f5118c2dfa03a0713ae9fc39550fbeea8f9084ca7ca7f43186317",
+      "results_xml": "build/core_l4_artifacts/arithmetic/results.xml"
+    },
+    "build/core_l4_artifacts": {
+      "status": "passed",
+      "tests": 4,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "fc0906f738f31d589627cc97590bc2c7aed77e84cfdc348b5915a2d9b1044814",
+      "results_xml": "build/core_l4_artifacts/results.xml"
+    },
+    "build/core_l4_fixtures": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "fe15a27020e2cc894172c0e7ea8f5de8f49c1d57040e8fc896932390f4cae745",
+      "results_xml": "build/core_l4_fixtures/results.xml"
+    },
+    "build/core_l4_model_neighbor": {
+      "status": "passed",
+      "tests": 4,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "4965ea6bf478974e3e411e4246561788ff118428097a007321719abe49ab9b44",
+      "results_xml": "build/core_l4_model_neighbor/results.xml"
+    },
+    "build/core_l4_quant_boundary": {
+      "status": "passed",
+      "tests": 4,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "929979b1f9b3ac0072657c02417d010bec717cf58f18f4a8f21a85580f97f016",
+      "results_xml": "build/core_l4_quant_boundary/results.xml"
+    },
+    "build/fifo_d1": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "d03a080eb26eeac9c22104d532b1c61f6622bb2678ba1272268d24f5606b2117",
+      "results_xml": "build/fifo_d1/results.xml"
+    },
+    "build/fifo_d3": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "9c6019b0f96c3c2e37cf4174c499e66e5902b6294a5226739bdc06d1f73e062c",
+      "results_xml": "build/fifo_d3/results.xml"
+    },
+    "build/fifo_d4": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "06737683e159bc428eaf7270f8cf6d2b67e3856faec4ce90514559e538b732ba",
+      "results_xml": "build/fifo_d4/results.xml"
+    },
+    "build/flash_system": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "f17d3bc91084175f2bd9a91655b6f8303924dc2843d2971ce5d18780e13adb51",
+      "results_xml": "build/flash_system/results.xml"
+    },
+    "build/flash_system_neighbor": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "e102ff0a4e6c7735abc6547a46810499965e90f766f0774135b1fda501d80f22",
+      "results_xml": "build/flash_system_neighbor/results.xml"
+    },
+    "build/flash_system_neighbor_full_scan": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "b17bcfdc2da2138efee1f7cc32772072353038eca955fad9f5e8fcda7fc0e340",
+      "results_xml": "build/flash_system_neighbor_full_scan/results.xml"
+    },
+    "build/sensor_spectrum": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "9e8775da9e22e4558e748a17ca38f8d07bc27d1434f855241d00ee53b549657e",
+      "results_xml": "build/sensor_spectrum/results.xml"
+    },
+    "build/sensor_system_nominal": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "989b207da944e1cd105a11f5e3bdfbcf939839ffed9a32122c70552123f9d265",
+      "results_xml": "build/sensor_system_nominal/results.xml"
+    },
+    "build/sensor_system_overflow": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "1206c1c1fb6fb9cac42eb5da68d26d773f606d6d0d4bf4060e743ce1e096059d",
+      "results_xml": "build/sensor_system_overflow/results.xml"
+    },
+    "build/sensor_system_spectrum": {
+      "status": "passed",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "319a499d9a8b77148cf2bf05da08768bd3cbeb85b44f9453919ca6ac45a100ba",
+      "results_xml": "build/sensor_system_spectrum/results.xml"
+    },
+    "build/spi_master_m0_h1": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "c9dfa695be1da191d2502b39ca3c4c00a1a23555b2f6bce9e085adfea3c50c69",
+      "results_xml": "build/spi_master_m0_h1/results.xml"
+    },
+    "build/spi_master_m0_h6": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "366537f1eed556dc09e637dd2c7c5f46415229bd0b05fc4d415d27f6f3581e51",
+      "results_xml": "build/spi_master_m0_h6/results.xml"
+    },
+    "build/spi_master_m1_h6": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "94aba3558c9e27176c05e2d35cb6febb6c42a29d381382b2ebbba8e4627a2695",
+      "results_xml": "build/spi_master_m1_h6/results.xml"
+    },
+    "build/spi_master_m2_h6": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "3ef154b293637997dc300ae182d444fc4bf6fe8e6ff9d024fbaa7422a062c741",
+      "results_xml": "build/spi_master_m2_h6/results.xml"
+    },
+    "build/spi_master_m3_h1": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "af8691fdf6d4adfca1b733c9f39ac30fa6a0378cd5da10d12e1b0d624863ea32",
+      "results_xml": "build/spi_master_m3_h1/results.xml"
+    },
+    "build/spi_master_m3_h6": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "f28bb5b0e291de20bf9d9321eda98e449728da66779d76d80996cf92ad224577",
+      "results_xml": "build/spi_master_m3_h6/results.xml"
+    },
+    "build/spi_sensor_m3_h6": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "4d1af87329726101c606dbabe164e919919047b63ec1346aa6aac444223783e5",
+      "results_xml": "build/spi_sensor_m3_h6/results.xml"
+    },
+    "build/spi_sensor_m3_h6_r0a": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "79be196631a9ccbd12346c1b5c91b9cb7ef9d3bacd3ae306e2c51023899499fd",
+      "results_xml": "build/spi_sensor_m3_h6_r0a/results.xml"
+    },
+    "build/spi_sensor_m3_h6_r0c": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "d24528bdb6ebf92060185526823eb4e5d3e9e1f0e5bab17fd6c1f72421df077c",
+      "results_xml": "build/spi_sensor_m3_h6_r0c/results.xml"
+    },
+    "build/spi_sensor_m3_h6_r0d": {
+      "status": "passed",
+      "tests": 2,
+      "failed": 0,
+      "skipped": 1,
+      "sha256": "b07d23d3c3f9bfbe3af1886e0d2c9b5f61da1df7e4443c0e602e9d6be89511e9",
+      "results_xml": "build/spi_sensor_m3_h6_r0d/results.xml"
+    },
+    "python_unit": {
+      "status": "passed",
+      "tests": 57,
+      "failed": 0,
+      "skipped": 0,
+      "sha256": "23464552c86a4db14dbdf3d808fdf12c07dd98b6e584f5fdb0194ed0b67daea1",
+      "results_xml": "build/python-results.xml"
+    }
+  },
+  "regressions": {
+    "build/core_dsp_l1_artifacts/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 1,
+        "bands": 1,
+        "frames": 10,
+        "distinct_inputs": 10,
+        "debug_frames": 10,
+        "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 98368,
+          "cycles_power": 140,
+          "cycles_nn": 950,
+          "cycles_total": 102531
+        },
+        "suite": "additional_DSP_directed",
+        "cases": [
+          {
+            "name": "zero",
+            "input_clipped_samples": 0,
+            "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+          },
+          {
+            "name": "constant_negative_DC",
+            "input_clipped_samples": 0,
+            "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+          },
+          {
+            "name": "off_bin_phase_0.000000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.0
+          },
+          {
+            "name": "off_bin_phase_1.570796",
+            "input_clipped_samples": 0,
+            "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 1.5707963267948966
+          },
+          {
+            "name": "off_bin_phase_2.300000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 2.3
+          },
+          {
+            "name": "integer_bin_nonzero_phase",
+            "input_clipped_samples": 0,
+            "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+            "frequency_bins": [
+              207
+            ],
+            "phase_radians": 1.0471975511965976
+          },
+          {
+            "name": "positive_clipped_sine",
+            "input_clipped_samples": 298,
+            "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "negative_clipped_sine",
+            "input_clipped_samples": 295,
+            "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": -18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "both_polarities_clipped_sine",
+            "input_clipped_samples": 537,
+            "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 0,
+            "amplitude": 48000
+          },
+          {
+            "name": "off_bin_two_tone",
+            "input_clipped_samples": 0,
+            "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+            "frequency_bins": [
+              207.25,
+              327.625
+            ]
+          }
+        ],
+        "checked_intermediates": [
+          "mean",
+          "windowed",
+          "real",
+          "imag",
+          "powers",
+          "features",
+          "hidden",
+          "logits"
+        ],
+        "input_sha256": {
+          "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+          "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+          "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+          "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+          "artifacts/model/weights_l4_1.hex": "602669e2d96815c337c5d92dd94fb1660b8db078d694d1b8ac5c91da9a187288",
+          "artifacts/model/w1.hex": "26b17ac441ba57495f217960b1af28f0aba78685f4bee0601ea8f52039f3397d",
+          "artifacts/model/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+          "artifacts/model/weights_l4_0.hex": "96c16efec8cd66a8f5cd7e084267057ca4016db56377555708a54cc21571e79f",
+          "artifacts/model/b1.hex": "b13efe33d5cdb4f4c08875174a2f450db9626fd34ffe6094d4d6b2ed5391944f",
+          "artifacts/model/weights_l4_2.hex": "343ea649054b7baf7ba7f1038da412b3f392423fdfb6028118c132aa94eb41c8",
+          "artifacts/model/w2.hex": "776a3529d5d2b5915def0e2e58f33b3b9c1663686ef16e3c194eeff09a3bb366",
+          "artifacts/model/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+          "artifacts/model/weights_l4_3.hex": "d5372551d44a14c6f129759103152da00c73083ea6b714ced29433bbe8f692a9",
+          "artifacts/model/b2.hex": "b48d1ee7cd1665d75421e8d5b6cc1da4524334440649f1c4fdc03cc864f95870",
+          "artifacts/model/weights_l1_0.hex": "2c600fc9949d4c72db23f61043a7a70e01d2cd5d351ff44259e9347422423453",
+          "artifacts/model/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+          "artifacts/model/feature_shifts.hex": "61202c17ec0bfae973580147e1cc06618be8c6f711baff138bf94fb327806de4",
+          "artifacts/model/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+        }
+      },
+      "evidence": {
+        "path": "build/core_dsp_l1_artifacts/regression.json",
+        "sha256": "a592130c053eb5f4c34bfa2838287544362911061eed957a7b72d0a1bf7bedb1",
+        "bytes": 5014
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 4,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "9c697a160694b723e8e2854c52c3cc6fa52d1f218ca978582894e9843a997f22"
+      },
+      "current_input_hash_check": {
+        "status": "passed",
+        "verified_files": 18,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_dsp_l1_model_neighbor/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 1,
+        "bands": 3,
+        "frames": 10,
+        "distinct_inputs": 10,
+        "debug_frames": 10,
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 295104,
+          "cycles_power": 284,
+          "cycles_nn": 950,
+          "cycles_total": 299411
+        },
+        "suite": "additional_DSP_directed",
+        "cases": [
+          {
+            "name": "zero",
+            "input_clipped_samples": 0,
+            "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+          },
+          {
+            "name": "constant_negative_DC",
+            "input_clipped_samples": 0,
+            "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+          },
+          {
+            "name": "off_bin_phase_0.000000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.0
+          },
+          {
+            "name": "off_bin_phase_1.570796",
+            "input_clipped_samples": 0,
+            "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 1.5707963267948966
+          },
+          {
+            "name": "off_bin_phase_2.300000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 2.3
+          },
+          {
+            "name": "integer_bin_nonzero_phase",
+            "input_clipped_samples": 0,
+            "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+            "frequency_bins": [
+              207
+            ],
+            "phase_radians": 1.0471975511965976
+          },
+          {
+            "name": "positive_clipped_sine",
+            "input_clipped_samples": 298,
+            "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "negative_clipped_sine",
+            "input_clipped_samples": 295,
+            "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": -18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "both_polarities_clipped_sine",
+            "input_clipped_samples": 537,
+            "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 0,
+            "amplitude": 48000
+          },
+          {
+            "name": "off_bin_two_tone",
+            "input_clipped_samples": 0,
+            "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+            "frequency_bins": [
+              207.25,
+              327.625
+            ]
+          }
+        ],
+        "checked_intermediates": [
+          "mean",
+          "windowed",
+          "real",
+          "imag",
+          "powers",
+          "features",
+          "hidden",
+          "logits"
+        ],
+        "input_sha256": {
+          "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+          "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+          "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+          "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+          "artifacts/model_neighbor/weights_l4_1.hex": "ba40796c514997315b5889c7287c2588640f5b8517f5b24f51c47645a4cd071e",
+          "artifacts/model_neighbor/w1.hex": "71858a94d5b82c81f01173326ec20227962b8b16a045d546cb907c16fc23ab03",
+          "artifacts/model_neighbor/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+          "artifacts/model_neighbor/weights_l4_0.hex": "eed0ac4a944abd713924da891cfee6a884361f45d4cc4139ad1ccca1c8fca69a",
+          "artifacts/model_neighbor/b1.hex": "4d93253aed7aa37f66cd67d3ee56d20bcc1dbe2b91d4c0cfcaff1491cee76f23",
+          "artifacts/model_neighbor/weights_l4_2.hex": "7c088defcaf8a3f6a7f14097ff2c00b2573b4101759a5ebbfab819163a901d04",
+          "artifacts/model_neighbor/w2.hex": "509ecb0fd7c4bdb9a9a3407464f644e36dc8cdfcdbe6c7202fe0bf8800707dc7",
+          "artifacts/model_neighbor/dft_bins.hex": "3f20337fe1354478d247847bd3135a5f15f43b17066221aa080abcef9b17ede6",
+          "artifacts/model_neighbor/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+          "artifacts/model_neighbor/weights_l4_3.hex": "afb997dd9dde9a3f710692a9a8703bf55e59bb35f3b755cc855e6968ff94d6fd",
+          "artifacts/model_neighbor/b2.hex": "7d918946adbfc9618e62b897f728978cb26b48629de0aa209cf23cbd8f89b91d",
+          "artifacts/model_neighbor/weights_l1_0.hex": "4780256de37e7eb36a9534555d2c8b62cef4ce074a8c5b5415e9d3895a109b07",
+          "artifacts/model_neighbor/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+          "artifacts/model_neighbor/feature_shifts.hex": "f9c41895a2738ca4f077b23a12d42d8fc27ef292d3d8efc718682ebeaad4ed1a",
+          "artifacts/model_neighbor/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+        }
+      },
+      "evidence": {
+        "path": "build/core_dsp_l1_model_neighbor/regression.json",
+        "sha256": "8d4b27fed4e58574f29c98a071a3b80eed930c113155f651055ba9893143c98b",
+        "bytes": 5254
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 4,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "e71eaebe6b5478bceedc1fcd417e11a47b137b5cfcc383519bbd1cdcad3e1277"
+      },
+      "current_input_hash_check": {
+        "status": "passed",
+        "verified_files": 19,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_dsp_l4_artifacts/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 4,
+        "bands": 1,
+        "frames": 10,
+        "distinct_inputs": 10,
+        "debug_frames": 10,
+        "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 24616,
+          "cycles_power": 140,
+          "cycles_nn": 265,
+          "cycles_total": 28094
+        },
+        "suite": "additional_DSP_directed",
+        "cases": [
+          {
+            "name": "zero",
+            "input_clipped_samples": 0,
+            "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+          },
+          {
+            "name": "constant_negative_DC",
+            "input_clipped_samples": 0,
+            "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+          },
+          {
+            "name": "off_bin_phase_0.000000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.0
+          },
+          {
+            "name": "off_bin_phase_1.570796",
+            "input_clipped_samples": 0,
+            "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 1.5707963267948966
+          },
+          {
+            "name": "off_bin_phase_2.300000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 2.3
+          },
+          {
+            "name": "integer_bin_nonzero_phase",
+            "input_clipped_samples": 0,
+            "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+            "frequency_bins": [
+              207
+            ],
+            "phase_radians": 1.0471975511965976
+          },
+          {
+            "name": "positive_clipped_sine",
+            "input_clipped_samples": 298,
+            "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "negative_clipped_sine",
+            "input_clipped_samples": 295,
+            "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": -18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "both_polarities_clipped_sine",
+            "input_clipped_samples": 537,
+            "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 0,
+            "amplitude": 48000
+          },
+          {
+            "name": "off_bin_two_tone",
+            "input_clipped_samples": 0,
+            "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+            "frequency_bins": [
+              207.25,
+              327.625
+            ]
+          }
+        ],
+        "checked_intermediates": [
+          "mean",
+          "windowed",
+          "real",
+          "imag",
+          "powers",
+          "features",
+          "hidden",
+          "logits"
+        ],
+        "input_sha256": {
+          "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+          "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+          "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+          "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+          "artifacts/model/weights_l4_1.hex": "602669e2d96815c337c5d92dd94fb1660b8db078d694d1b8ac5c91da9a187288",
+          "artifacts/model/w1.hex": "26b17ac441ba57495f217960b1af28f0aba78685f4bee0601ea8f52039f3397d",
+          "artifacts/model/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+          "artifacts/model/weights_l4_0.hex": "96c16efec8cd66a8f5cd7e084267057ca4016db56377555708a54cc21571e79f",
+          "artifacts/model/b1.hex": "b13efe33d5cdb4f4c08875174a2f450db9626fd34ffe6094d4d6b2ed5391944f",
+          "artifacts/model/weights_l4_2.hex": "343ea649054b7baf7ba7f1038da412b3f392423fdfb6028118c132aa94eb41c8",
+          "artifacts/model/w2.hex": "776a3529d5d2b5915def0e2e58f33b3b9c1663686ef16e3c194eeff09a3bb366",
+          "artifacts/model/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+          "artifacts/model/weights_l4_3.hex": "d5372551d44a14c6f129759103152da00c73083ea6b714ced29433bbe8f692a9",
+          "artifacts/model/b2.hex": "b48d1ee7cd1665d75421e8d5b6cc1da4524334440649f1c4fdc03cc864f95870",
+          "artifacts/model/weights_l1_0.hex": "2c600fc9949d4c72db23f61043a7a70e01d2cd5d351ff44259e9347422423453",
+          "artifacts/model/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+          "artifacts/model/feature_shifts.hex": "61202c17ec0bfae973580147e1cc06618be8c6f711baff138bf94fb327806de4",
+          "artifacts/model/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+        }
+      },
+      "evidence": {
+        "path": "build/core_dsp_l4_artifacts/regression.json",
+        "sha256": "791f42ad6c16acbf478125c00ddad10b450e5577a5e560c357b4555084ce7731",
+        "bytes": 5013
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 4,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "aee327e6b162a687af0a9b7751be07381e8fca2af1534102d3390b9daeea95d7"
+      },
+      "current_input_hash_check": {
+        "status": "passed",
+        "verified_files": 18,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_dsp_l4_model_neighbor/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 4,
+        "bands": 3,
+        "frames": 10,
+        "distinct_inputs": 10,
+        "debug_frames": 10,
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 73848,
+          "cycles_power": 284,
+          "cycles_nn": 265,
+          "cycles_total": 77470
+        },
+        "suite": "additional_DSP_directed",
+        "cases": [
+          {
+            "name": "zero",
+            "input_clipped_samples": 0,
+            "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+          },
+          {
+            "name": "constant_negative_DC",
+            "input_clipped_samples": 0,
+            "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+          },
+          {
+            "name": "off_bin_phase_0.000000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.0
+          },
+          {
+            "name": "off_bin_phase_1.570796",
+            "input_clipped_samples": 0,
+            "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 1.5707963267948966
+          },
+          {
+            "name": "off_bin_phase_2.300000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 2.3
+          },
+          {
+            "name": "integer_bin_nonzero_phase",
+            "input_clipped_samples": 0,
+            "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+            "frequency_bins": [
+              207
+            ],
+            "phase_radians": 1.0471975511965976
+          },
+          {
+            "name": "positive_clipped_sine",
+            "input_clipped_samples": 298,
+            "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "negative_clipped_sine",
+            "input_clipped_samples": 295,
+            "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": -18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "both_polarities_clipped_sine",
+            "input_clipped_samples": 537,
+            "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 0,
+            "amplitude": 48000
+          },
+          {
+            "name": "off_bin_two_tone",
+            "input_clipped_samples": 0,
+            "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+            "frequency_bins": [
+              207.25,
+              327.625
+            ]
+          }
+        ],
+        "checked_intermediates": [
+          "mean",
+          "windowed",
+          "real",
+          "imag",
+          "powers",
+          "features",
+          "hidden",
+          "logits"
+        ],
+        "input_sha256": {
+          "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+          "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+          "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+          "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+          "artifacts/model_neighbor/weights_l4_1.hex": "ba40796c514997315b5889c7287c2588640f5b8517f5b24f51c47645a4cd071e",
+          "artifacts/model_neighbor/w1.hex": "71858a94d5b82c81f01173326ec20227962b8b16a045d546cb907c16fc23ab03",
+          "artifacts/model_neighbor/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+          "artifacts/model_neighbor/weights_l4_0.hex": "eed0ac4a944abd713924da891cfee6a884361f45d4cc4139ad1ccca1c8fca69a",
+          "artifacts/model_neighbor/b1.hex": "4d93253aed7aa37f66cd67d3ee56d20bcc1dbe2b91d4c0cfcaff1491cee76f23",
+          "artifacts/model_neighbor/weights_l4_2.hex": "7c088defcaf8a3f6a7f14097ff2c00b2573b4101759a5ebbfab819163a901d04",
+          "artifacts/model_neighbor/w2.hex": "509ecb0fd7c4bdb9a9a3407464f644e36dc8cdfcdbe6c7202fe0bf8800707dc7",
+          "artifacts/model_neighbor/dft_bins.hex": "3f20337fe1354478d247847bd3135a5f15f43b17066221aa080abcef9b17ede6",
+          "artifacts/model_neighbor/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+          "artifacts/model_neighbor/weights_l4_3.hex": "afb997dd9dde9a3f710692a9a8703bf55e59bb35f3b755cc855e6968ff94d6fd",
+          "artifacts/model_neighbor/b2.hex": "7d918946adbfc9618e62b897f728978cb26b48629de0aa209cf23cbd8f89b91d",
+          "artifacts/model_neighbor/weights_l1_0.hex": "4780256de37e7eb36a9534555d2c8b62cef4ce074a8c5b5415e9d3895a109b07",
+          "artifacts/model_neighbor/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+          "artifacts/model_neighbor/feature_shifts.hex": "f9c41895a2738ca4f077b23a12d42d8fc27ef292d3d8efc718682ebeaad4ed1a",
+          "artifacts/model_neighbor/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+        }
+      },
+      "evidence": {
+        "path": "build/core_dsp_l4_model_neighbor/regression.json",
+        "sha256": "abbd8c8b800027e8abafeaf02ee96ca8bf677eb3e8c29fe6c36103eb74302b75",
+        "bytes": 5252
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 4,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "713e59077a3ef12761781ebf83f165a237c8a3c6bea9789bb719c90d161afd0a"
+      },
+      "current_input_hash_check": {
+        "status": "passed",
+        "verified_files": 19,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_l1_artifacts/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 1,
+        "bands": 1,
+        "frames": 1000,
+        "distinct_inputs": 14,
+        "debug_frames": 14,
+        "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 98368,
+          "cycles_power": 140,
+          "cycles_nn": 950,
+          "cycles_total": 102531
+        }
+      },
+      "evidence": {
+        "path": "build/core_l1_artifacts/regression.json",
+        "sha256": "ec8a20aae9aec399c10b39072deec77503c7b12c3eebd7d9a95515d84516bd1d",
+        "bytes": 389
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 4,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "09bf4a7f8e58e511b66ae178796ce4ac8ccc584c2efc45bd3d43838503404d86"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_l1_model_neighbor/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 1,
+        "bands": 3,
+        "frames": 1000,
+        "distinct_inputs": 14,
+        "debug_frames": 14,
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 295104,
+          "cycles_power": 284,
+          "cycles_nn": 950,
+          "cycles_total": 299411
+        }
+      },
+      "evidence": {
+        "path": "build/core_l1_model_neighbor/regression.json",
+        "sha256": "3b90e7dd37648087f8229116471e171e992c3999825f658a6debfdf5b10ee315",
+        "bytes": 390
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 4,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "ca5834492297d8a62d85662394268bb78440265f9d747ffc9f30b35fb28c5668"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_l4_artifacts/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 4,
+        "bands": 1,
+        "frames": 1000,
+        "distinct_inputs": 14,
+        "debug_frames": 14,
+        "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 24616,
+          "cycles_power": 140,
+          "cycles_nn": 265,
+          "cycles_total": 28094
+        }
+      },
+      "evidence": {
+        "path": "build/core_l4_artifacts/regression.json",
+        "sha256": "78ca320ab425695f116461965bad0aaa1fe8229910577b58e69ad96741fbe484",
+        "bytes": 388
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 4,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "fc0906f738f31d589627cc97590bc2c7aed77e84cfdc348b5915a2d9b1044814"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_l4_fixtures/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 4,
+        "frames": 5,
+        "debug_frames": 5,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 24616,
+          "cycles_power": 80,
+          "cycles_nn": 265,
+          "cycles_total": 28034
+        }
+      },
+      "evidence": {
+        "path": "build/core_l4_fixtures/regression.json",
+        "sha256": "2ef9317986cb176de9cfbf4e21a3bb23f29bc263cdf7a5c3e1b47f81f54aad6e",
+        "bytes": 228
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "fe15a27020e2cc894172c0e7ea8f5de8f49c1d57040e8fc896932390f4cae745"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_l4_model_neighbor/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 4,
+        "bands": 3,
+        "frames": 1000,
+        "distinct_inputs": 14,
+        "debug_frames": 14,
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 73848,
+          "cycles_power": 284,
+          "cycles_nn": 265,
+          "cycles_total": 77470
+        }
+      },
+      "evidence": {
+        "path": "build/core_l4_model_neighbor/regression.json",
+        "sha256": "811d5f5152c9c385842ffe30057ba636697d255ffd7295b5a8deab245330c222",
+        "bytes": 388
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 4,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "4965ea6bf478974e3e411e4246561788ff118428097a007321719abe49ab9b44"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_l4_quant_boundary/regression.json": {
+      "report": {
+        "n": 1024,
+        "lanes": 4,
+        "frames": 5,
+        "distinct_inputs": 5,
+        "debug_frames": 5,
+        "model_sha256": "83dc8babc300ad6fe3c8a809cc05bc5b901c5a2095e67b128190fb5df8484132",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 24616,
+          "cycles_power": 298,
+          "cycles_nn": 265,
+          "cycles_total": 28252
+        }
+      },
+      "evidence": {
+        "path": "build/core_l4_quant_boundary/regression.json",
+        "sha256": "bc13f02919218e5116653fe868585644b0bb72b1b0575b944eb668399e114b4c",
+        "bytes": 369
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 4,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "929979b1f9b3ac0072657c02417d010bec717cf58f18f4a8f21a85580f97f016"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/core_l4_artifacts/arithmetic/arithmetic.json": {
+      "report": {
+        "status": "passed",
+        "vectors": 6651,
+        "rne_shifts": [
+          0,
+          40
+        ],
+        "hidden_shift": 8,
+        "seed": 178
+      },
+      "evidence": {
+        "path": "build/core_l4_artifacts/arithmetic/arithmetic.json",
+        "sha256": "47eb8038ebd4f9f19e7a1b186c4a9b83ce3134d4e38f47dadfb795c49fda0f4b",
+        "bytes": 117
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "ed90d1eaee2f5118c2dfa03a0713ae9fc39550fbeea8f9084ca7ca7f43186317"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/flash_system/regression.json": {
+      "report": {
+        "passed": true,
+        "physical_hardware_tested": false,
+        "scope": "Behavioral SPI NOR functional simulation; not electrical or vendor timing validation",
+        "scenarios": [
+          "write_partition_page_length_guards",
+          "full_page_program_WREN_WIP_and_readback",
+          "WIP_poll_timeout",
+          "two_real_source_frames_five_outputs_boot_CRC_compute_log_reference_match",
+          "source_ring_wrap_and_record_page_continuation",
+          "reset_preserves_existing_committed_log",
+          "wrong_model_hash_refuses_run_and_log_write",
+          "wrong_payload_CRC_refuses_run_and_log_write",
+          "existing_uncommitted_partial_header_preserved",
+          "four_chunk_log_scan_rejects_dirty_tail_with_erased_header"
+        ],
+        "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+        "source_frames": 2,
+        "run_frames": 5,
+        "log_scan_bytes": 1024,
+        "log_scan_chunk_bytes": 256,
+        "production_log_scan_bytes": 131072,
+        "log_scan_accelerated_for_E2E": true,
+        "log": {
+          "schema_version": 1,
+          "committed": true,
+          "record_count": 5,
+          "records": [
+            {
+              "frame_id": 0,
+              "logits": [
+                2445,
+                -590,
+                -4087
+              ],
+              "class_id": 0,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 24616,
+              "cycles_power": 140,
+              "cycles_nn": 265,
+              "cycles_total": 28094,
+              "max_fifo": 1,
+              "generated_samples": 1052,
+              "accepted_samples": 1052,
+              "protocol_errors": 0
+            },
+            {
+              "frame_id": 1,
+              "logits": [
+                -295,
+                -1291,
+                342
+              ],
+              "class_id": 2,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 24616,
+              "cycles_power": 140,
+              "cycles_nn": 265,
+              "cycles_total": 28094,
+              "max_fifo": 1,
+              "generated_samples": 2076,
+              "accepted_samples": 2076,
+              "protocol_errors": 0
+            },
+            {
+              "frame_id": 2,
+              "logits": [
+                2445,
+                -590,
+                -4087
+              ],
+              "class_id": 0,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 24616,
+              "cycles_power": 140,
+              "cycles_nn": 265,
+              "cycles_total": 28094,
+              "max_fifo": 1,
+              "generated_samples": 3100,
+              "accepted_samples": 3100,
+              "protocol_errors": 0
+            },
+            {
+              "frame_id": 3,
+              "logits": [
+                -295,
+                -1291,
+                342
+              ],
+              "class_id": 2,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 24616,
+              "cycles_power": 140,
+              "cycles_nn": 265,
+              "cycles_total": 28094,
+              "max_fifo": 1,
+              "generated_samples": 4124,
+              "accepted_samples": 4124,
+              "protocol_errors": 0
+            },
+            {
+              "frame_id": 4,
+              "logits": [
+                2445,
+                -590,
+                -4087
+              ],
+              "class_id": 0,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 24616,
+              "cycles_power": 140,
+              "cycles_nn": 265,
+              "cycles_total": 28094,
+              "max_fifo": 1,
+              "generated_samples": 5120,
+              "accepted_samples": 5120,
+              "protocol_errors": 0
+            }
+          ],
+          "error_flags": 0,
+          "generated_samples": 5120,
+          "accepted_samples": 5120,
+          "overflow_count": 0,
+          "protocol_errors": 0,
+          "max_fifo": 1,
+          "period_cycles": 1000,
+          "requested_frames": 5,
+          "complete_without_reported_errors": true
+        },
+        "header_stats": [
+          0,
+          5120,
+          5120,
+          0,
+          0,
+          1,
+          1000,
+          5
+        ],
+        "programs": [
+          {
+            "opcode": 2,
+            "address": 3145728,
+            "length": 64,
+            "data": "564c47310100000005000000ffffffff000000000014000000140000000000000000000001000000e803000005000000ffffffffffffffffffffffffffffffff"
+          },
+          {
+            "opcode": 2,
+            "address": 3149824,
+            "length": 256,
+            "data": "000000008d090000b2fdffff09f0ffff00000000010c0000286000008c00000009010000be6d0000010000001c0400001c04000000000000000000000000000001000000d9fefffff5faffff5601000002000000010c0000286000008c00000009010000be6d0000010000001c0800001c080000000000000000000000000000020000008d090000b2fdffff09f0ffff00000000010c0000286000008c00000009010000be6d0000010000001c0c00001c0c000000000000000000000000000003000000d9fefffff5faffff5601000002000000010c0000286000008c00000009010000be6d0000010000001c1000001c100000000000000000000000000000"
+          },
+          {
+            "opcode": 2,
+            "address": 3150080,
+            "length": 64,
+            "data": "040000008d090000b2fdffff09f0ffff00000000010c0000286000008c00000009010000be6d0000010000000014000000140000000000000000000000000000"
+          },
+          {
+            "opcode": 2,
+            "address": 3145740,
+            "length": 4,
+            "data": "544d4f43"
+          }
+        ]
+      },
+      "evidence": {
+        "path": "build/flash_system/regression.json",
+        "sha256": "3354347305c1196f9b7f356a6ba063be9805c7e0a5864d97e0ee835b739891e5",
+        "bytes": 4707
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "f17d3bc91084175f2bd9a91655b6f8303924dc2843d2971ce5d18780e13adb51"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/flash_system_neighbor/regression.json": {
+      "report": {
+        "passed": true,
+        "physical_hardware_tested": false,
+        "scope": "Behavioral SPI NOR functional simulation; not electrical or vendor timing validation",
+        "scenarios": [
+          "write_partition_page_length_guards",
+          "full_page_program_WREN_WIP_and_readback",
+          "WIP_poll_timeout",
+          "two_real_source_frames_five_outputs_boot_CRC_compute_log_reference_match",
+          "source_ring_wrap_and_record_page_continuation",
+          "reset_preserves_existing_committed_log",
+          "wrong_model_hash_refuses_run_and_log_write",
+          "wrong_payload_CRC_refuses_run_and_log_write",
+          "existing_uncommitted_partial_header_preserved",
+          "four_chunk_log_scan_rejects_dirty_tail_with_erased_header"
+        ],
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "source_frames": 2,
+        "run_frames": 5,
+        "log_scan_bytes": 1024,
+        "log_scan_chunk_bytes": 256,
+        "production_log_scan_bytes": 131072,
+        "log_scan_accelerated_for_E2E": true,
+        "log": {
+          "schema_version": 1,
+          "committed": true,
+          "record_count": 5,
+          "records": [
+            {
+              "frame_id": 0,
+              "logits": [
+                2142,
+                -882,
+                -4405
+              ],
+              "class_id": 0,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 73848,
+              "cycles_power": 284,
+              "cycles_nn": 265,
+              "cycles_total": 77470,
+              "max_fifo": 1,
+              "generated_samples": 1101,
+              "accepted_samples": 1101,
+              "protocol_errors": 0
+            },
+            {
+              "frame_id": 1,
+              "logits": [
+                -289,
+                -1306,
+                191
+              ],
+              "class_id": 2,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 73848,
+              "cycles_power": 284,
+              "cycles_nn": 265,
+              "cycles_total": 77470,
+              "max_fifo": 1,
+              "generated_samples": 2125,
+              "accepted_samples": 2125,
+              "protocol_errors": 0
+            },
+            {
+              "frame_id": 2,
+              "logits": [
+                2142,
+                -882,
+                -4405
+              ],
+              "class_id": 0,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 73848,
+              "cycles_power": 284,
+              "cycles_nn": 265,
+              "cycles_total": 77470,
+              "max_fifo": 1,
+              "generated_samples": 3149,
+              "accepted_samples": 3149,
+              "protocol_errors": 0
+            },
+            {
+              "frame_id": 3,
+              "logits": [
+                -289,
+                -1306,
+                191
+              ],
+              "class_id": 2,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 73848,
+              "cycles_power": 284,
+              "cycles_nn": 265,
+              "cycles_total": 77470,
+              "max_fifo": 1,
+              "generated_samples": 4173,
+              "accepted_samples": 4173,
+              "protocol_errors": 0
+            },
+            {
+              "frame_id": 4,
+              "logits": [
+                2142,
+                -882,
+                -4405
+              ],
+              "class_id": 0,
+              "error": 0,
+              "cycles_pre": 3073,
+              "cycles_dft": 73848,
+              "cycles_power": 284,
+              "cycles_nn": 265,
+              "cycles_total": 77470,
+              "max_fifo": 1,
+              "generated_samples": 5120,
+              "accepted_samples": 5120,
+              "protocol_errors": 0
+            }
+          ],
+          "error_flags": 0,
+          "generated_samples": 5120,
+          "accepted_samples": 5120,
+          "overflow_count": 0,
+          "protocol_errors": 0,
+          "max_fifo": 1,
+          "period_cycles": 1000,
+          "requested_frames": 5,
+          "complete_without_reported_errors": true
+        },
+        "header_stats": [
+          0,
+          5120,
+          5120,
+          0,
+          0,
+          1,
+          1000,
+          5
+        ],
+        "programs": [
+          {
+            "opcode": 2,
+            "address": 3145728,
+            "length": 64,
+            "data": "564c47310100000005000000ffffffff000000000014000000140000000000000000000001000000e803000005000000ffffffffffffffffffffffffffffffff"
+          },
+          {
+            "opcode": 2,
+            "address": 3149824,
+            "length": 256,
+            "data": "000000005e0800008efcffffcbeeffff00000000010c0000782001001c010000090100009e2e0100010000004d0400004d04000000000000000000000000000001000000dffeffffe6faffffbf00000002000000010c0000782001001c010000090100009e2e0100010000004d0800004d080000000000000000000000000000020000005e0800008efcffffcbeeffff00000000010c0000782001001c010000090100009e2e0100010000004d0c00004d0c000000000000000000000000000003000000dffeffffe6faffffbf00000002000000010c0000782001001c010000090100009e2e0100010000004d1000004d100000000000000000000000000000"
+          },
+          {
+            "opcode": 2,
+            "address": 3150080,
+            "length": 64,
+            "data": "040000005e0800008efcffffcbeeffff00000000010c0000782001001c010000090100009e2e0100010000000014000000140000000000000000000000000000"
+          },
+          {
+            "opcode": 2,
+            "address": 3145740,
+            "length": 4,
+            "data": "544d4f43"
+          }
+        ]
+      },
+      "evidence": {
+        "path": "build/flash_system_neighbor/regression.json",
+        "sha256": "1ed26cef12cca6c61314d8d40a6d85ef2d177eb76919dfbc7237900050569079",
+        "bytes": 4707
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "e102ff0a4e6c7735abc6547a46810499965e90f766f0774135b1fda501d80f22"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/flash_system_neighbor_full_scan/regression.json": {
+      "report": {
+        "passed": true,
+        "physical_hardware_tested": false,
+        "scope": "Full production log partition behavioral SPI scan; no electrical timing validation",
+        "scenarios": [
+          "full_131072_byte_log_scan_rejects_dirty_final_byte_without_any_write"
+        ],
+        "log_scan_bytes": 131072,
+        "log_scan_chunk_bytes": 32768,
+        "scan_to_rejection_simulation_ns": 26217515.0,
+        "scan_to_rejection_equivalent_at_12mhz_ms": 218.47929166666665,
+        "measurement_excludes_power_up_startup_counter": true,
+        "operations": [
+          {
+            "opcode": 3,
+            "address": 3145728,
+            "length": 32768
+          },
+          {
+            "opcode": 3,
+            "address": 3178496,
+            "length": 32768
+          },
+          {
+            "opcode": 3,
+            "address": 3211264,
+            "length": 32768
+          },
+          {
+            "opcode": 3,
+            "address": 3244032,
+            "length": 32768
+          }
+        ]
+      },
+      "evidence": {
+        "path": "build/flash_system_neighbor_full_scan/regression.json",
+        "sha256": "2c8a9d28ab220d4ecd374762bafe9957da754d24ec6c75a34933f45b49fc0faa",
+        "bytes": 827
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "b17bcfdc2da2138efee1f7cc32772072353038eca955fad9f5e8fcda7fc0e340"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/sensor_system_nominal/report.json": {
+      "report": {
+        "passed": true,
+        "case": "nominal",
+        "total_samples": 88,
+        "stored_samples": 80,
+        "cycles": 1582637,
+        "format": "SEN1 with 128-byte header",
+        "payload_crc32": 3255073380,
+        "spectral_powers": [],
+        "spectrum_golden_match": false,
+        "calibration_last_mg": -777,
+        "calibration_sum_mg": -4403,
+        "service_wrap_count": 1,
+        "service_counter_start": "0xfff00000 (simulation only)",
+        "interval_overflow_flag": false,
+        "commit_written_last": true,
+        "three_ram_banks_and_page_continuation": true,
+        "nonblank_and_partial_log_guards": true,
+        "simulation_log_scan_bytes": 8192,
+        "simulation_bank_address_bits": 6,
+        "hardware_measured": false,
+        "simulated_log_file": "sensor_log.bin"
+      },
+      "evidence": {
+        "path": "build/sensor_system_nominal/report.json",
+        "sha256": "2ffe9376466a2f1663eee59ba54fdd4c72682ece07203838cdf644895dac5250",
+        "bytes": 693
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "989b207da944e1cd105a11f5e3bdfbcf939839ffed9a32122c70552123f9d265"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/sensor_system_overflow/report.json": {
+      "report": {
+        "passed": true,
+        "case": "overflow",
+        "total_samples": 4,
+        "stored_samples": 4,
+        "cycles": 502606,
+        "format": "SEN1 with 128-byte header",
+        "payload_crc32": 1916243108,
+        "spectral_powers": [],
+        "spectrum_golden_match": false,
+        "calibration_last_mg": 1152,
+        "calibration_sum_mg": 3647,
+        "service_wrap_count": 0,
+        "service_counter_start": "0xfff00000 (simulation only)",
+        "interval_overflow_flag": true,
+        "commit_written_last": true,
+        "three_ram_banks_and_page_continuation": false,
+        "nonblank_and_partial_log_guards": false,
+        "simulation_log_scan_bytes": 8192,
+        "simulation_bank_address_bits": 6,
+        "hardware_measured": false,
+        "simulated_log_file": "sensor_log.bin"
+      },
+      "evidence": {
+        "path": "build/sensor_system_overflow/report.json",
+        "sha256": "57025a155b27f55e134f1e3ce32f7fce3cc5109efc7183eab76c46e1f7a88c30",
+        "bytes": 691
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "1206c1c1fb6fb9cac42eb5da68d26d773f606d6d0d4bf4060e743ce1e096059d"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/sensor_system_spectrum/report.json": {
+      "report": {
+        "passed": true,
+        "case": "spectrum",
+        "total_samples": 256,
+        "stored_samples": 256,
+        "cycles": 4045237,
+        "format": "SEN1 with 208-byte header",
+        "payload_crc32": 2104919313,
+        "spectral_powers": [
+          23938,
+          23801,
+          365,
+          19450,
+          4969,
+          95297,
+          22805,
+          27977,
+          10085,
+          17289,
+          29705,
+          92432,
+          85042,
+          49505,
+          23120,
+          30545
+        ],
+        "spectrum_golden_match": true,
+        "calibration_last_mg": 266,
+        "calibration_sum_mg": -29408,
+        "service_wrap_count": 1,
+        "service_counter_start": "0xfff00000 (simulation only)",
+        "interval_overflow_flag": false,
+        "commit_written_last": true,
+        "three_ram_banks_and_page_continuation": false,
+        "nonblank_and_partial_log_guards": false,
+        "simulation_log_scan_bytes": 8192,
+        "simulation_bank_address_bits": 8,
+        "hardware_measured": false,
+        "simulated_log_file": "sensor_log.bin"
+      },
+      "evidence": {
+        "path": "build/sensor_system_spectrum/report.json",
+        "sha256": "dfb155cdcc9193608ff51ee60f93008c7b9087b1987bcbaf9098a27c596422e7",
+        "bytes": 872
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "319a499d9a8b77148cf2bf05da08768bd3cbeb85b44f9453919ca6ac45a100ba"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/sensor_spectrum/report.json": {
+      "report": {
+        "passed": true,
+        "frames": 5,
+        "powers_compared": 80,
+        "clip_count": 247,
+        "n": 256,
+        "bins": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          12,
+          16,
+          24,
+          32,
+          40,
+          48,
+          64,
+          80,
+          96,
+          120
+        ],
+        "synthetic_stimuli": true,
+        "physical_hardware_tested": false,
+        "classification_performed": false,
+        "powers": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            640000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            313600,
+            0,
+            0,
+            1,
+            0,
+            57600,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            32525,
+            190088,
+            137717,
+            56692,
+            14170,
+            68225,
+            500314,
+            305810,
+            756733,
+            175450,
+            628885,
+            187405,
+            441380,
+            1165000,
+            201508,
+            155636
+          ]
+        ],
+        "reset_partial_frame": "passed"
+      },
+      "evidence": {
+        "path": "build/sensor_spectrum/report.json",
+        "sha256": "f121d327e740d1fc70b52d8bc11d2c7fb5e2cdadc1a8063aad4df2950776eb7c",
+        "bytes": 1260
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "9e8775da9e22e4558e748a17ca38f8d07bc27d1434f855241d00ee53b549657e"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_master_m0_h1/report.json": {
+      "report": {
+        "test": "generic_master",
+        "cpol": 0,
+        "cpha": 0,
+        "half_period": 1,
+        "packets": 24,
+        "bytes": 102,
+        "cycles": 2572,
+        "reset_midbyte": "PASS",
+        "reset_between_bytes": "PASS",
+        "cs_hold_and_clock_spacing": "PASS"
+      },
+      "evidence": {
+        "path": "build/spi_master_m0_h1/report.json",
+        "sha256": "b640de8750077be663af0e292275f9e5e65b5c35b3d0a6fedcfbf84e9a64d3d8",
+        "bytes": 227
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "c9dfa695be1da191d2502b39ca3c4c00a1a23555b2f6bce9e085adfea3c50c69"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_master_m0_h6/report.json": {
+      "report": {
+        "test": "generic_master",
+        "cpol": 0,
+        "cpha": 0,
+        "half_period": 6,
+        "packets": 24,
+        "bytes": 106,
+        "cycles": 11350,
+        "reset_midbyte": "PASS",
+        "reset_between_bytes": "PASS",
+        "cs_hold_and_clock_spacing": "PASS"
+      },
+      "evidence": {
+        "path": "build/spi_master_m0_h6/report.json",
+        "sha256": "8234c2d24631443e6d1e1ce7c545c710ada2b32f5730ee3cb50f308c2781658e",
+        "bytes": 228
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "366537f1eed556dc09e637dd2c7c5f46415229bd0b05fc4d415d27f6f3581e51"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_master_m1_h6/report.json": {
+      "report": {
+        "test": "generic_master",
+        "cpol": 0,
+        "cpha": 1,
+        "half_period": 6,
+        "packets": 24,
+        "bytes": 125,
+        "cycles": 13268,
+        "reset_midbyte": "PASS",
+        "reset_between_bytes": "PASS",
+        "cs_hold_and_clock_spacing": "PASS"
+      },
+      "evidence": {
+        "path": "build/spi_master_m1_h6/report.json",
+        "sha256": "efdf1d6639ec4153b7d6d6901da03e16fe650ce973b87fcc31a1fc02ac16ba26",
+        "bytes": 228
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "94aba3558c9e27176c05e2d35cb6febb6c42a29d381382b2ebbba8e4627a2695"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_master_m2_h6/report.json": {
+      "report": {
+        "test": "generic_master",
+        "cpol": 1,
+        "cpha": 0,
+        "half_period": 6,
+        "packets": 24,
+        "bytes": 100,
+        "cycles": 10737,
+        "reset_midbyte": "PASS",
+        "reset_between_bytes": "PASS",
+        "cs_hold_and_clock_spacing": "PASS"
+      },
+      "evidence": {
+        "path": "build/spi_master_m2_h6/report.json",
+        "sha256": "254252f49e98a93e340bdb01cf2954ff3c55ca597d9a6c530b23602968189bf2",
+        "bytes": 228
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "3ef154b293637997dc300ae182d444fc4bf6fe8e6ff9d024fbaa7422a062c741"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_master_m3_h1/report.json": {
+      "report": {
+        "test": "generic_master",
+        "cpol": 1,
+        "cpha": 1,
+        "half_period": 1,
+        "packets": 24,
+        "bytes": 94,
+        "cycles": 2392,
+        "reset_midbyte": "PASS",
+        "reset_between_bytes": "PASS",
+        "cs_hold_and_clock_spacing": "PASS"
+      },
+      "evidence": {
+        "path": "build/spi_master_m3_h1/report.json",
+        "sha256": "ad710e901265e509906b058c998730d5f4cdbb4ce8069a4fda7e4930fb854999",
+        "bytes": 226
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "af8691fdf6d4adfca1b733c9f39ac30fa6a0378cd5da10d12e1b0d624863ea32"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_master_m3_h6/report.json": {
+      "report": {
+        "test": "generic_master",
+        "cpol": 1,
+        "cpha": 1,
+        "half_period": 6,
+        "packets": 24,
+        "bytes": 116,
+        "cycles": 12469,
+        "reset_midbyte": "PASS",
+        "reset_between_bytes": "PASS",
+        "cs_hold_and_clock_spacing": "PASS"
+      },
+      "evidence": {
+        "path": "build/spi_master_m3_h6/report.json",
+        "sha256": "a32e0f6a9d114f9096b51c415b67b6617d8d665a3e104ccde099d0c51d662f80",
+        "bytes": 228
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "f28bb5b0e291de20bf9d9321eda98e449728da66779d76d80996cf92ad224577"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_sensor_m3_h6/report.json": {
+      "report": {
+        "test": "sensor_capture",
+        "half_period": 6,
+        "cycles": 36159,
+        "initialization": "PASS",
+        "signed_xyz_burst": "PASS",
+        "output_stall_and_drop_counter": "PASS",
+        "sensor_overrun_flag": "PASS",
+        "random_samples": 32,
+        "reset_mid_spi_and_reinitialize": "PASS",
+        "wrong_device_id_rejected": "PASS",
+        "hardware_measured": false
+      },
+      "evidence": {
+        "path": "build/spi_sensor_m3_h6/report.json",
+        "sha256": "1a02ad3de8e64d2cc7eb5ff7dde3e9601fc31788291af358f41b3e8c6446d480",
+        "bytes": 340
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "4d1af87329726101c606dbabe164e919919047b63ec1346aa6aac444223783e5"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_sensor_m3_h6_r0a/report.json": {
+      "report": {
+        "test": "sensor_capture",
+        "half_period": 6,
+        "rate_code": 10,
+        "cycles": 36159,
+        "initialization": "PASS",
+        "signed_xyz_burst": "PASS",
+        "output_stall_and_drop_counter": "PASS",
+        "sensor_overrun_flag": "PASS",
+        "random_samples": 32,
+        "reset_mid_spi_and_reinitialize": "PASS",
+        "wrong_device_id_rejected": "PASS",
+        "hardware_measured": false
+      },
+      "evidence": {
+        "path": "build/spi_sensor_m3_h6_r0a/report.json",
+        "sha256": "7a196386460b1fa0a758bc1021060d6afab83498e3a65a23c5584883bad51448",
+        "bytes": 359
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "79be196631a9ccbd12346c1b5c91b9cb7ef9d3bacd3ae306e2c51023899499fd"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_sensor_m3_h6_r0c/report.json": {
+      "report": {
+        "test": "sensor_capture",
+        "half_period": 6,
+        "rate_code": 12,
+        "cycles": 36159,
+        "initialization": "PASS",
+        "signed_xyz_burst": "PASS",
+        "output_stall_and_drop_counter": "PASS",
+        "sensor_overrun_flag": "PASS",
+        "random_samples": 32,
+        "reset_mid_spi_and_reinitialize": "PASS",
+        "wrong_device_id_rejected": "PASS",
+        "hardware_measured": false
+      },
+      "evidence": {
+        "path": "build/spi_sensor_m3_h6_r0c/report.json",
+        "sha256": "aa9c8c215f54bdf2a49acfd258156ffcfc4dcf9e05fdffb44d792f818a0404c4",
+        "bytes": 359
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "d24528bdb6ebf92060185526823eb4e5d3e9e1f0e5bab17fd6c1f72421df077c"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/spi_sensor_m3_h6_r0d/report.json": {
+      "report": {
+        "test": "sensor_capture",
+        "half_period": 6,
+        "rate_code": 13,
+        "cycles": 36159,
+        "initialization": "PASS",
+        "signed_xyz_burst": "PASS",
+        "output_stall_and_drop_counter": "PASS",
+        "sensor_overrun_flag": "PASS",
+        "random_samples": 32,
+        "reset_mid_spi_and_reinitialize": "PASS",
+        "wrong_device_id_rejected": "PASS",
+        "hardware_measured": false
+      },
+      "evidence": {
+        "path": "build/spi_sensor_m3_h6_r0d/report.json",
+        "sha256": "686ce13cb9ac05a3eaca2d9082953c85ce46eee774856c556af4297664ea9614",
+        "bytes": 359
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 2,
+        "failed": 0,
+        "skipped": 1,
+        "sha256": "b07d23d3c3f9bfbe3af1886e0d2c9b5f61da1df7e4443c0e602e9d6be89511e9"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/calibration_0/report.json": {
+      "report": {
+        "passed": true,
+        "samples": 200,
+        "offset_q8": 0,
+        "gain_q20": 4096000,
+        "stalled_output_stable": true,
+        "reset_cancels_inflight": true
+      },
+      "evidence": {
+        "path": "build/calibration_0/report.json",
+        "sha256": "9451b33aae8c7067a741491395db9364329f199b2f056d9f44e19230eb043b0f",
+        "bytes": 147
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "99a426e86858e8d016328e05b2cb30fff0e78fa3c7b6a1832eada19804f88e94"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/calibration_1/report.json": {
+      "report": {
+        "passed": true,
+        "samples": 200,
+        "offset_q8": 6656,
+        "gain_q20": 4194304,
+        "stalled_output_stable": true,
+        "reset_cancels_inflight": true
+      },
+      "evidence": {
+        "path": "build/calibration_1/report.json",
+        "sha256": "f5b5048e231fa5f5efec2c13cb3bd87118d7054a1d69c4739a8f593fda1bdb3f",
+        "bytes": 150
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "a9bc37ebe6aa3efa21391ac8f8ca3c72f4a3f74ffd9dc29e8feb8f823dca2448"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/calibration_2/report.json": {
+      "report": {
+        "passed": true,
+        "samples": 200,
+        "offset_q8": -127,
+        "gain_q20": 8192,
+        "stalled_output_stable": true,
+        "reset_cancels_inflight": true
+      },
+      "evidence": {
+        "path": "build/calibration_2/report.json",
+        "sha256": "e80d10ec8fa3519cfdf1ecb43e0b98e73f69ad20ab72c822e66f521391bec466",
+        "bytes": 147
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "28a3d2295c8876252a3d9e4f74913b44d68d6f0d6cc4bea2d5973c352964a2a4"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    },
+    "build/calibration_3/report.json": {
+      "report": {
+        "passed": true,
+        "samples": 200,
+        "offset_q8": -2147483648,
+        "gain_q20": 2147483647,
+        "stalled_output_stable": true,
+        "reset_cancels_inflight": true
+      },
+      "evidence": {
+        "path": "build/calibration_3/report.json",
+        "sha256": "8da05e670abe16315824084826cdfdfcd752a63ad792027dc08f2a6606fa38a3",
+        "bytes": 160
+      },
+      "xml_verification": {
+        "status": "passed",
+        "tests": 1,
+        "failed": 0,
+        "skipped": 0,
+        "sha256": "9ad0f3aab92e5b1f6d545790f90e64febd84968594241ac2956f8eeed5fc5684"
+      },
+      "current_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": []
+      }
+    }
+  },
+  "fixed_rate": {
+    "build/core_l1_artifacts/fixed_rate/fixed_rate.json": {
+      "status": "passed",
+      "report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1024399999,
+          "generated_samples": 1024000,
+          "accepted_samples": 1024000,
+          "dropped_samples": 0,
+          "output_frames": 1000,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 102531,
+          "wall_seconds": 59.6125
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8099,
+          "dropped_samples": 4189,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 102531,
+          "wall_seconds": 0.246255
+        }
+      },
+      "evidence": {
+        "path": "build/core_l1_artifacts/fixed_rate/fixed_rate.json",
+        "sha256": "b05e3037fc53447a7a4bfbf023ba43ac7151dc15079eca7e3bf8ae1f47f22331",
+        "bytes": 495
+      },
+      "newer_source_paths": [
+        "rtl/core/vibration_core.sv",
+        "sim/fixed_rate_tb.sv",
+        "sim/fixed_rate_main.cpp"
+      ],
+      "run_kind": "1000-frame steady-state/recovery run",
+      "scope": "Native fixed-rate core harness; not full Flash or physical hardware. Timing and steady-state files are different runs. Source timestamp check is conservative, not a build content-hash binding."
+    },
+    "build/core_l1_artifacts/fixed_rate/fixed_rate_32.json": {
+      "status": "passed",
+      "report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 33167999,
+          "generated_samples": 32768,
+          "accepted_samples": 32768,
+          "dropped_samples": 0,
+          "output_frames": 32,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 102531,
+          "wall_seconds": 1.95526
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8099,
+          "dropped_samples": 4189,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 102531,
+          "wall_seconds": 0.259956
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1125535,
+          "first_sample_to_result_max": 1125535,
+          "last_sample_to_result_min": 102535,
+          "last_sample_to_result_max": 102535,
+          "output_interval_min": 1024000,
+          "output_interval_max": 1024000
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 103558,
+          "first_sample_to_result_max": 1125535,
+          "last_sample_to_result_min": 102535,
+          "last_sample_to_result_max": 302483,
+          "output_interval_min": 102534,
+          "output_interval_max": 1850100
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      },
+      "evidence": {
+        "path": "build/core_l1_artifacts/fixed_rate/fixed_rate_32.json",
+        "sha256": "54cde20b6d8fd7d60e2397d46f63c0f12d0a3f87b781aa2e91480ff099c6e5a9",
+        "bytes": 1139
+      },
+      "newer_source_paths": [],
+      "run_kind": "32-frame timing measurement",
+      "scope": "Native fixed-rate core harness; not full Flash or physical hardware. Timing and steady-state files are different runs. Source timestamp check is conservative, not a build content-hash binding."
+    },
+    "build/core_l1_model_neighbor/fixed_rate/fixed_rate.json": {
+      "status": "passed",
+      "report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1024399999,
+          "generated_samples": 1024000,
+          "accepted_samples": 1024000,
+          "dropped_samples": 0,
+          "output_frames": 1000,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 299411,
+          "wall_seconds": 71.7015
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 7902,
+          "dropped_samples": 4386,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 299411,
+          "wall_seconds": 0.285851
+        }
+      },
+      "evidence": {
+        "path": "build/core_l1_model_neighbor/fixed_rate/fixed_rate.json",
+        "sha256": "4165ccc42680ff40b77a8dd2779bf8a5065a4082c4a05c388ca7a586a8c712e9",
+        "bytes": 495
+      },
+      "newer_source_paths": [
+        "sim/fixed_rate_main.cpp"
+      ],
+      "run_kind": "1000-frame steady-state/recovery run",
+      "scope": "Native fixed-rate core harness; not full Flash or physical hardware. Timing and steady-state files are different runs. Source timestamp check is conservative, not a build content-hash binding."
+    },
+    "build/core_l1_model_neighbor/fixed_rate/fixed_rate_32.json": {
+      "status": "passed",
+      "report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 33167999,
+          "generated_samples": 32768,
+          "accepted_samples": 32768,
+          "dropped_samples": 0,
+          "output_frames": 32,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 299411,
+          "wall_seconds": 2.04895
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 7902,
+          "dropped_samples": 4386,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 299411,
+          "wall_seconds": 0.283819
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1322415,
+          "first_sample_to_result_max": 1322415,
+          "last_sample_to_result_min": 299415,
+          "last_sample_to_result_max": 299415,
+          "output_interval_min": 1024000,
+          "output_interval_max": 1024000
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 300438,
+          "first_sample_to_result_max": 1322415,
+          "last_sample_to_result_min": 299415,
+          "last_sample_to_result_max": 893123,
+          "output_interval_min": 299414,
+          "output_interval_max": 1456340
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      },
+      "evidence": {
+        "path": "build/core_l1_model_neighbor/fixed_rate/fixed_rate_32.json",
+        "sha256": "dfefebe29ff7a5ff53afdc023657a4cabbc2073c8b1d94676acddf80cf34cf8d",
+        "bytes": 1139
+      },
+      "newer_source_paths": [],
+      "run_kind": "32-frame timing measurement",
+      "scope": "Native fixed-rate core harness; not full Flash or physical hardware. Timing and steady-state files are different runs. Source timestamp check is conservative, not a build content-hash binding."
+    },
+    "build/core_l4_artifacts/fixed_rate/fixed_rate.json": {
+      "status": "passed",
+      "report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1024399999,
+          "generated_samples": 1024000,
+          "accepted_samples": 1024000,
+          "dropped_samples": 0,
+          "output_frames": 1000,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 28094,
+          "wall_seconds": 58.7266
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8173,
+          "dropped_samples": 4115,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 28094,
+          "wall_seconds": 0.255282
+        }
+      },
+      "evidence": {
+        "path": "build/core_l4_artifacts/fixed_rate/fixed_rate.json",
+        "sha256": "a40afe9c90a5920977e9d6f98a192c1e1232da2181b424591ff016352ab0a232",
+        "bytes": 493
+      },
+      "newer_source_paths": [
+        "rtl/core/vibration_core.sv",
+        "sim/fixed_rate_tb.sv",
+        "sim/fixed_rate_main.cpp"
+      ],
+      "run_kind": "1000-frame steady-state/recovery run",
+      "scope": "Native fixed-rate core harness; not full Flash or physical hardware. Timing and steady-state files are different runs. Source timestamp check is conservative, not a build content-hash binding."
+    },
+    "build/core_l4_artifacts/fixed_rate/fixed_rate_32.json": {
+      "status": "passed",
+      "report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 33167999,
+          "generated_samples": 32768,
+          "accepted_samples": 32768,
+          "dropped_samples": 0,
+          "output_frames": 32,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 28094,
+          "wall_seconds": 1.99459
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8173,
+          "dropped_samples": 4115,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 28094,
+          "wall_seconds": 0.257417
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1051098,
+          "first_sample_to_result_max": 1051098,
+          "last_sample_to_result_min": 28098,
+          "last_sample_to_result_max": 28098,
+          "output_interval_min": 1024000,
+          "output_interval_max": 1024000
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 29121,
+          "first_sample_to_result_max": 1051098,
+          "last_sample_to_result_min": 28098,
+          "last_sample_to_result_max": 79172,
+          "output_interval_min": 28097,
+          "output_interval_max": 1998974
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      },
+      "evidence": {
+        "path": "build/core_l4_artifacts/fixed_rate/fixed_rate_32.json",
+        "sha256": "32c84ee1aa0ea56b8f7b41f8cbcc1164adfca7e2802adc9db63561111bdb29e4",
+        "bytes": 1131
+      },
+      "newer_source_paths": [],
+      "run_kind": "32-frame timing measurement",
+      "scope": "Native fixed-rate core harness; not full Flash or physical hardware. Timing and steady-state files are different runs. Source timestamp check is conservative, not a build content-hash binding."
+    },
+    "build/core_l4_model_neighbor/fixed_rate/fixed_rate.json": {
+      "status": "passed",
+      "report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1024399999,
+          "generated_samples": 1024000,
+          "accepted_samples": 1024000,
+          "dropped_samples": 0,
+          "output_frames": 1000,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 77470,
+          "wall_seconds": 71.2153
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8124,
+          "dropped_samples": 4164,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 77470,
+          "wall_seconds": 0.300912
+        }
+      },
+      "evidence": {
+        "path": "build/core_l4_model_neighbor/fixed_rate/fixed_rate.json",
+        "sha256": "0f7cb38ff136fc25ab4a3921d1e6bf1819e9a774fc5b9896c4cdae1d7ae75e2b",
+        "bytes": 493
+      },
+      "newer_source_paths": [
+        "sim/fixed_rate_main.cpp"
+      ],
+      "run_kind": "1000-frame steady-state/recovery run",
+      "scope": "Native fixed-rate core harness; not full Flash or physical hardware. Timing and steady-state files are different runs. Source timestamp check is conservative, not a build content-hash binding."
+    },
+    "build/core_l4_model_neighbor/fixed_rate/fixed_rate_32.json": {
+      "status": "passed",
+      "report": {
+        "normal": {
+          "status": "passed",
+          "cycles": 33167999,
+          "generated_samples": 32768,
+          "accepted_samples": 32768,
+          "dropped_samples": 0,
+          "output_frames": 32,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 77470,
+          "wall_seconds": 2.09812
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8124,
+          "dropped_samples": 4164,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 77470,
+          "wall_seconds": 0.281601
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1100474,
+          "first_sample_to_result_max": 1100474,
+          "last_sample_to_result_min": 77474,
+          "last_sample_to_result_max": 77474,
+          "output_interval_min": 1024000,
+          "output_interval_max": 1024000
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 78497,
+          "first_sample_to_result_max": 1100474,
+          "last_sample_to_result_min": 77474,
+          "last_sample_to_result_max": 227300,
+          "output_interval_min": 77473,
+          "output_interval_max": 1900222
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      },
+      "evidence": {
+        "path": "build/core_l4_model_neighbor/fixed_rate/fixed_rate_32.json",
+        "sha256": "cd91a9f9b0b657c4a8de38af64c82125bba7e2ba7bdf67fd77d728dd7c27a5f7",
+        "bytes": 1132
+      },
+      "newer_source_paths": [],
+      "run_kind": "32-frame timing measurement",
+      "scope": "Native fixed-rate core harness; not full Flash or physical hardware. Timing and steady-state files are different runs. Source timestamp check is conservative, not a build content-hash binding."
+    }
+  },
+  "formal": [
+    {
+      "path": "build/formal/fifo_bmc_d1/status",
+      "status": "passed",
+      "raw_status": "PASS 0 0",
+      "bound_clock_steps": 64,
+      "scope": "FIFO BMC/cover for configured depths, not unbounded or system-level proof"
+    },
+    {
+      "path": "build/formal/fifo_bmc_d3/status",
+      "status": "passed",
+      "raw_status": "PASS 0 19",
+      "bound_clock_steps": 64,
+      "scope": "FIFO BMC/cover for configured depths, not unbounded or system-level proof"
+    },
+    {
+      "path": "build/formal/fifo_bmc_d4/status",
+      "status": "passed",
+      "raw_status": "PASS 0 50",
+      "bound_clock_steps": 64,
+      "scope": "FIFO BMC/cover for configured depths, not unbounded or system-level proof"
+    },
+    {
+      "path": "build/formal/fifo_cover_d1/status",
+      "status": "passed",
+      "raw_status": "PASS 0 0",
+      "bound_clock_steps": 64,
+      "scope": "FIFO BMC/cover for configured depths, not unbounded or system-level proof"
+    },
+    {
+      "path": "build/formal/fifo_cover_d3/status",
+      "status": "passed",
+      "raw_status": "PASS 0 0",
+      "bound_clock_steps": 64,
+      "scope": "FIFO BMC/cover for configured depths, not unbounded or system-level proof"
+    },
+    {
+      "path": "build/formal/fifo_cover_d4/status",
+      "status": "passed",
+      "raw_status": "PASS 0 0",
+      "bound_clock_steps": 64,
+      "scope": "FIFO BMC/cover for configured depths, not unbounded or system-level proof"
+    }
+  ],
+  "sva_smoke": {
+    "status": "passed",
+    "report": {
+      "verilator": "Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)",
+      "subset": "clocked assert property, disable iff, |=>, $past",
+      "positive_pass": true,
+      "negative_control_detected": true,
+      "negative_returncode": 1
+    },
+    "scope": "Only the named SVA subset and deliberate negative control, not complete language support or design proof"
+  },
+  "board_builds": {
+    "build/board_l1": {
+      "status": "passed",
+      "report": {
+        "schema_version": 1,
+        "top": "upduino_replay",
+        "lanes": 1,
+        "bands": 1,
+        "built_utc": "2026-09-06T03:03:52.902551+00:00",
+        "input_sha256": {
+          "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+          "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+          "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+          "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+          "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+          "rtl/io/flash_stream.sv": "48174df1c5ff10003cc0a73591b2cce1697f2a18a22c470495398f0dc0f3eb7a",
+          "rtl/io/replay_source.sv": "1c2f13f84ec7776fe16501c38ff3c66988d1f5f7129fb2a2e402f9b6a1ca3746",
+          "rtl/upduino_replay.sv": "24e1f6857ff86f93d80dd6e4adcd5ba6b3bbf1d005195b59db8a3156d09756d0",
+          "configs/upduino-replay.pcf": "e68a98d52afccc0d5b33ea0e2dd90e02a9fccf1a25e088cadef55a48450faa21",
+          "artifacts/model/weights_l4_1.hex": "602669e2d96815c337c5d92dd94fb1660b8db078d694d1b8ac5c91da9a187288",
+          "artifacts/model/w1.hex": "26b17ac441ba57495f217960b1af28f0aba78685f4bee0601ea8f52039f3397d",
+          "artifacts/model/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+          "artifacts/model/weights_l4_0.hex": "96c16efec8cd66a8f5cd7e084267057ca4016db56377555708a54cc21571e79f",
+          "artifacts/model/b1.hex": "b13efe33d5cdb4f4c08875174a2f450db9626fd34ffe6094d4d6b2ed5391944f",
+          "artifacts/model/weights_l4_2.hex": "343ea649054b7baf7ba7f1038da412b3f392423fdfb6028118c132aa94eb41c8",
+          "artifacts/model/w2.hex": "776a3529d5d2b5915def0e2e58f33b3b9c1663686ef16e3c194eeff09a3bb366",
+          "artifacts/model/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+          "artifacts/model/weights_l4_3.hex": "d5372551d44a14c6f129759103152da00c73083ea6b714ced29433bbe8f692a9",
+          "artifacts/model/b2.hex": "b48d1ee7cd1665d75421e8d5b6cc1da4524334440649f1c4fdc03cc864f95870",
+          "artifacts/model/weights_l1_0.hex": "2c600fc9949d4c72db23f61043a7a70e01d2cd5d351ff44259e9347422423453",
+          "artifacts/model/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+          "artifacts/model/feature_shifts.hex": "61202c17ec0bfae973580147e1cc06618be8c6f711baff138bf94fb327806de4",
+          "artifacts/model/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+          "artifacts/model/model.json": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588"
+        },
+        "target_clock_mhz": 12,
+        "seed": 1,
+        "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+        "bitstream_sha256": "32f9fe7362a06acb8f4c19216ff37d5c864548927598e8dbc70f707a75e948b7",
+        "synthesis_cells": {
+          "SB_CARRY": 1173,
+          "SB_DFFE": 170,
+          "SB_LUT4": 2708,
+          "SB_DFF": 119,
+          "$scopeinfo": 11,
+          "SB_DFFESR": 1107,
+          "SB_DFFSR": 85,
+          "SB_DFFSS": 2,
+          "SB_RAM40_4K": 19,
+          "SB_MAC16": 1,
+          "SB_DFFESS": 34,
+          "SB_SPRAM256KA": 3
+        },
+        "post_route_fmax": {
+          "clk12$SB_IO_IN_$glb_clk": {
+            "achieved": 20.567245483398438,
+            "constraint": 12
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 1
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 4088
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 19
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 3
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 7
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 8
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        },
+        "max_frequency_messages": [
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 22.92 MHz (PASS at 12.00 MHz)",
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 20.57 MHz (PASS at 12.00 MHz)"
+        ],
+        "place_route_completed": true,
+        "physical_board_programmed": false,
+        "board_profile_verified": false,
+        "power_measured": false
+      },
+      "bitstream_hash_verified": true,
+      "timing_constraints_met": true,
+      "resource_limits_met": true,
+      "fmax": {
+        "clk12$SB_IO_IN_$glb_clk": {
+          "achieved": 20.567245483398438,
+          "constraint": 12
+        }
+      },
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 1
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 4088
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 19
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 3
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 7
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 8
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      },
+      "newer_source_paths": [],
+      "build_input_hash_check": {
+        "status": "passed",
+        "verified_files": 24,
+        "mismatches": [],
+        "missing_required": []
+      },
+      "source_binding": "original build input hashes verified",
+      "place_route_log": {
+        "path": "build/board_l1/place_route.log",
+        "sha256": "402af108fc1583db059f733420ea70c8f104db0d59cf2c2bca1fd66cccd26761",
+        "bytes": 86713
+      },
+      "errors_in_route_log": []
+    },
+    "build/board_l4": {
+      "status": "passed",
+      "report": {
+        "schema_version": 1,
+        "top": "upduino_replay",
+        "lanes": 4,
+        "bands": 1,
+        "built_utc": "2026-09-06T03:04:00.914669+00:00",
+        "input_sha256": {
+          "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+          "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+          "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+          "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+          "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+          "rtl/io/flash_stream.sv": "48174df1c5ff10003cc0a73591b2cce1697f2a18a22c470495398f0dc0f3eb7a",
+          "rtl/io/replay_source.sv": "1c2f13f84ec7776fe16501c38ff3c66988d1f5f7129fb2a2e402f9b6a1ca3746",
+          "rtl/upduino_replay.sv": "24e1f6857ff86f93d80dd6e4adcd5ba6b3bbf1d005195b59db8a3156d09756d0",
+          "configs/upduino-replay.pcf": "e68a98d52afccc0d5b33ea0e2dd90e02a9fccf1a25e088cadef55a48450faa21",
+          "artifacts/model/weights_l4_1.hex": "602669e2d96815c337c5d92dd94fb1660b8db078d694d1b8ac5c91da9a187288",
+          "artifacts/model/w1.hex": "26b17ac441ba57495f217960b1af28f0aba78685f4bee0601ea8f52039f3397d",
+          "artifacts/model/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+          "artifacts/model/weights_l4_0.hex": "96c16efec8cd66a8f5cd7e084267057ca4016db56377555708a54cc21571e79f",
+          "artifacts/model/b1.hex": "b13efe33d5cdb4f4c08875174a2f450db9626fd34ffe6094d4d6b2ed5391944f",
+          "artifacts/model/weights_l4_2.hex": "343ea649054b7baf7ba7f1038da412b3f392423fdfb6028118c132aa94eb41c8",
+          "artifacts/model/w2.hex": "776a3529d5d2b5915def0e2e58f33b3b9c1663686ef16e3c194eeff09a3bb366",
+          "artifacts/model/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+          "artifacts/model/weights_l4_3.hex": "d5372551d44a14c6f129759103152da00c73083ea6b714ced29433bbe8f692a9",
+          "artifacts/model/b2.hex": "b48d1ee7cd1665d75421e8d5b6cc1da4524334440649f1c4fdc03cc864f95870",
+          "artifacts/model/weights_l1_0.hex": "2c600fc9949d4c72db23f61043a7a70e01d2cd5d351ff44259e9347422423453",
+          "artifacts/model/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+          "artifacts/model/feature_shifts.hex": "61202c17ec0bfae973580147e1cc06618be8c6f711baff138bf94fb327806de4",
+          "artifacts/model/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+          "artifacts/model/model.json": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588"
+        },
+        "target_clock_mhz": 12,
+        "seed": 1,
+        "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+        "bitstream_sha256": "d15bf93d6224b8a8080d615b36f748d0e733191c7b266ccb54a958dd52fb6803",
+        "synthesis_cells": {
+          "SB_CARRY": 1376,
+          "SB_DFFE": 176,
+          "SB_LUT4": 3453,
+          "SB_DFF": 119,
+          "$scopeinfo": 14,
+          "SB_DFFESR": 1252,
+          "SB_DFFSR": 80,
+          "SB_DFFSS": 2,
+          "SB_RAM40_4K": 25,
+          "SB_MAC16": 4,
+          "SB_DFFESS": 34,
+          "SB_SPRAM256KA": 3
+        },
+        "post_route_fmax": {
+          "clk12$SB_IO_IN_$glb_clk": {
+            "achieved": 19.365583419799805,
+            "constraint": 12
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 4842
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 25
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 3
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 8
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        },
+        "max_frequency_messages": [
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 19.24 MHz (PASS at 12.00 MHz)",
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 19.37 MHz (PASS at 12.00 MHz)"
+        ],
+        "place_route_completed": true,
+        "physical_board_programmed": false,
+        "board_profile_verified": false,
+        "power_measured": false
+      },
+      "bitstream_hash_verified": true,
+      "timing_constraints_met": true,
+      "resource_limits_met": true,
+      "fmax": {
+        "clk12$SB_IO_IN_$glb_clk": {
+          "achieved": 19.365583419799805,
+          "constraint": 12
+        }
+      },
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 4
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 4842
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 25
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 3
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 8
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 8
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      },
+      "newer_source_paths": [],
+      "build_input_hash_check": {
+        "status": "passed",
+        "verified_files": 24,
+        "mismatches": [],
+        "missing_required": []
+      },
+      "source_binding": "original build input hashes verified",
+      "place_route_log": {
+        "path": "build/board_l4/place_route.log",
+        "sha256": "4c699f0edd2eedd9d38d66adcf97a12e9ce8e41e6b832ddaee483e6756625e2e",
+        "bytes": 73337
+      },
+      "errors_in_route_log": []
+    },
+    "build/board_neighbor_l1": {
+      "status": "passed",
+      "report": {
+        "schema_version": 1,
+        "top": "upduino_replay",
+        "lanes": 1,
+        "bands": 3,
+        "built_utc": "2026-09-06T03:03:53.085508+00:00",
+        "input_sha256": {
+          "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+          "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+          "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+          "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+          "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+          "rtl/io/flash_stream.sv": "48174df1c5ff10003cc0a73591b2cce1697f2a18a22c470495398f0dc0f3eb7a",
+          "rtl/io/replay_source.sv": "1c2f13f84ec7776fe16501c38ff3c66988d1f5f7129fb2a2e402f9b6a1ca3746",
+          "rtl/upduino_replay.sv": "24e1f6857ff86f93d80dd6e4adcd5ba6b3bbf1d005195b59db8a3156d09756d0",
+          "configs/upduino-replay.pcf": "e68a98d52afccc0d5b33ea0e2dd90e02a9fccf1a25e088cadef55a48450faa21",
+          "artifacts/model_neighbor/weights_l4_1.hex": "ba40796c514997315b5889c7287c2588640f5b8517f5b24f51c47645a4cd071e",
+          "artifacts/model_neighbor/w1.hex": "71858a94d5b82c81f01173326ec20227962b8b16a045d546cb907c16fc23ab03",
+          "artifacts/model_neighbor/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+          "artifacts/model_neighbor/weights_l4_0.hex": "eed0ac4a944abd713924da891cfee6a884361f45d4cc4139ad1ccca1c8fca69a",
+          "artifacts/model_neighbor/b1.hex": "4d93253aed7aa37f66cd67d3ee56d20bcc1dbe2b91d4c0cfcaff1491cee76f23",
+          "artifacts/model_neighbor/weights_l4_2.hex": "7c088defcaf8a3f6a7f14097ff2c00b2573b4101759a5ebbfab819163a901d04",
+          "artifacts/model_neighbor/w2.hex": "509ecb0fd7c4bdb9a9a3407464f644e36dc8cdfcdbe6c7202fe0bf8800707dc7",
+          "artifacts/model_neighbor/dft_bins.hex": "3f20337fe1354478d247847bd3135a5f15f43b17066221aa080abcef9b17ede6",
+          "artifacts/model_neighbor/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+          "artifacts/model_neighbor/weights_l4_3.hex": "afb997dd9dde9a3f710692a9a8703bf55e59bb35f3b755cc855e6968ff94d6fd",
+          "artifacts/model_neighbor/b2.hex": "7d918946adbfc9618e62b897f728978cb26b48629de0aa209cf23cbd8f89b91d",
+          "artifacts/model_neighbor/weights_l1_0.hex": "4780256de37e7eb36a9534555d2c8b62cef4ce074a8c5b5415e9d3895a109b07",
+          "artifacts/model_neighbor/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+          "artifacts/model_neighbor/feature_shifts.hex": "f9c41895a2738ca4f077b23a12d42d8fc27ef292d3d8efc718682ebeaad4ed1a",
+          "artifacts/model_neighbor/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+          "artifacts/model_neighbor/model.json": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117"
+        },
+        "target_clock_mhz": 12,
+        "seed": 1,
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "bitstream_sha256": "09187defa114a9d58fd1320f0f621a91c76c3755199d933a9244fdbced9bfd6a",
+        "synthesis_cells": {
+          "SB_CARRY": 1197,
+          "SB_DFFE": 170,
+          "SB_LUT4": 2915,
+          "SB_DFF": 120,
+          "$scopeinfo": 11,
+          "SB_DFFESR": 1150,
+          "SB_DFFSS": 2,
+          "SB_DFFSR": 87,
+          "SB_RAM40_4K": 19,
+          "SB_MAC16": 1,
+          "SB_DFFESS": 34,
+          "SB_SPRAM256KA": 3
+        },
+        "post_route_fmax": {
+          "clk12$SB_IO_IN_$glb_clk": {
+            "achieved": 21.913965225219727,
+            "constraint": 12
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 1
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 4306
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 19
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 3
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 7
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 8
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        },
+        "max_frequency_messages": [
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 21.77 MHz (PASS at 12.00 MHz)",
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 21.91 MHz (PASS at 12.00 MHz)"
+        ],
+        "place_route_completed": true,
+        "physical_board_programmed": false,
+        "board_profile_verified": false,
+        "power_measured": false
+      },
+      "bitstream_hash_verified": true,
+      "timing_constraints_met": true,
+      "resource_limits_met": true,
+      "fmax": {
+        "clk12$SB_IO_IN_$glb_clk": {
+          "achieved": 21.913965225219727,
+          "constraint": 12
+        }
+      },
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 1
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 4306
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 19
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 3
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 7
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 8
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      },
+      "newer_source_paths": [],
+      "build_input_hash_check": {
+        "status": "passed",
+        "verified_files": 25,
+        "mismatches": [],
+        "missing_required": []
+      },
+      "source_binding": "original build input hashes verified",
+      "place_route_log": {
+        "path": "build/board_neighbor_l1/place_route.log",
+        "sha256": "2d6449ae7376d3657d8f72a4034116936021b8c5261af36359c9718c55cf52fe",
+        "bytes": 26129
+      },
+      "errors_in_route_log": []
+    },
+    "build/board_neighbor_l4": {
+      "status": "passed",
+      "report": {
+        "schema_version": 1,
+        "top": "upduino_replay",
+        "lanes": 4,
+        "bands": 3,
+        "built_utc": "2026-09-06T03:03:59.347893+00:00",
+        "input_sha256": {
+          "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+          "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+          "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+          "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+          "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+          "rtl/io/flash_stream.sv": "48174df1c5ff10003cc0a73591b2cce1697f2a18a22c470495398f0dc0f3eb7a",
+          "rtl/io/replay_source.sv": "1c2f13f84ec7776fe16501c38ff3c66988d1f5f7129fb2a2e402f9b6a1ca3746",
+          "rtl/upduino_replay.sv": "24e1f6857ff86f93d80dd6e4adcd5ba6b3bbf1d005195b59db8a3156d09756d0",
+          "configs/upduino-replay.pcf": "e68a98d52afccc0d5b33ea0e2dd90e02a9fccf1a25e088cadef55a48450faa21",
+          "artifacts/model_neighbor/weights_l4_1.hex": "ba40796c514997315b5889c7287c2588640f5b8517f5b24f51c47645a4cd071e",
+          "artifacts/model_neighbor/w1.hex": "71858a94d5b82c81f01173326ec20227962b8b16a045d546cb907c16fc23ab03",
+          "artifacts/model_neighbor/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+          "artifacts/model_neighbor/weights_l4_0.hex": "eed0ac4a944abd713924da891cfee6a884361f45d4cc4139ad1ccca1c8fca69a",
+          "artifacts/model_neighbor/b1.hex": "4d93253aed7aa37f66cd67d3ee56d20bcc1dbe2b91d4c0cfcaff1491cee76f23",
+          "artifacts/model_neighbor/weights_l4_2.hex": "7c088defcaf8a3f6a7f14097ff2c00b2573b4101759a5ebbfab819163a901d04",
+          "artifacts/model_neighbor/w2.hex": "509ecb0fd7c4bdb9a9a3407464f644e36dc8cdfcdbe6c7202fe0bf8800707dc7",
+          "artifacts/model_neighbor/dft_bins.hex": "3f20337fe1354478d247847bd3135a5f15f43b17066221aa080abcef9b17ede6",
+          "artifacts/model_neighbor/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+          "artifacts/model_neighbor/weights_l4_3.hex": "afb997dd9dde9a3f710692a9a8703bf55e59bb35f3b755cc855e6968ff94d6fd",
+          "artifacts/model_neighbor/b2.hex": "7d918946adbfc9618e62b897f728978cb26b48629de0aa209cf23cbd8f89b91d",
+          "artifacts/model_neighbor/weights_l1_0.hex": "4780256de37e7eb36a9534555d2c8b62cef4ce074a8c5b5415e9d3895a109b07",
+          "artifacts/model_neighbor/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+          "artifacts/model_neighbor/feature_shifts.hex": "f9c41895a2738ca4f077b23a12d42d8fc27ef292d3d8efc718682ebeaad4ed1a",
+          "artifacts/model_neighbor/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+          "artifacts/model_neighbor/model.json": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117"
+        },
+        "target_clock_mhz": 12,
+        "seed": 1,
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "bitstream_sha256": "c83ac47b8f14aae583c90e5b00368119cfc65b6fdbc1a15b598281374169f3f0",
+        "synthesis_cells": {
+          "SB_CARRY": 1405,
+          "SB_DFFE": 176,
+          "SB_LUT4": 3733,
+          "SB_DFF": 120,
+          "$scopeinfo": 14,
+          "SB_DFFESR": 1295,
+          "SB_DFFSS": 2,
+          "SB_DFFSR": 82,
+          "SB_RAM40_4K": 25,
+          "SB_MAC16": 4,
+          "SB_DFFESS": 34,
+          "SB_SPRAM256KA": 3
+        },
+        "post_route_fmax": {
+          "clk12$SB_IO_IN_$glb_clk": {
+            "achieved": 18.57769203186035,
+            "constraint": 12
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5129
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 25
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 3
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 8
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        },
+        "max_frequency_messages": [
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 17.81 MHz (PASS at 12.00 MHz)",
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 18.58 MHz (PASS at 12.00 MHz)"
+        ],
+        "place_route_completed": true,
+        "physical_board_programmed": false,
+        "board_profile_verified": false,
+        "power_measured": false
+      },
+      "bitstream_hash_verified": true,
+      "timing_constraints_met": true,
+      "resource_limits_met": true,
+      "fmax": {
+        "clk12$SB_IO_IN_$glb_clk": {
+          "achieved": 18.57769203186035,
+          "constraint": 12
+        }
+      },
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 4
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 5129
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 25
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 3
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 8
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 8
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      },
+      "newer_source_paths": [],
+      "build_input_hash_check": {
+        "status": "passed",
+        "verified_files": 25,
+        "mismatches": [],
+        "missing_required": []
+      },
+      "source_binding": "original build input hashes verified",
+      "place_route_log": {
+        "path": "build/board_neighbor_l4/place_route.log",
+        "sha256": "f39b0b3f19170505713419711db10fe03b42350731ddb2cac719da41b3ee634c",
+        "bytes": 30841
+      },
+      "errors_in_route_log": []
+    },
+    "build/sensor_board_100hz_spectrum": {
+      "status": "passed",
+      "report": {
+        "top": "upduino_sensor",
+        "rate_hz": 100,
+        "total_samples": 60000,
+        "store_samples": 3000,
+        "axis": 0,
+        "cal_offset_q8": 0,
+        "cal_gain_q20": 4096000,
+        "target_clock_mhz": 12,
+        "seed": 1,
+        "synthesis_cells": {
+          "SB_CARRY": 1586,
+          "SB_DFFE": 82,
+          "SB_LUT4": 3768,
+          "SB_DFF": 124,
+          "$scopeinfo": 14,
+          "SB_DFFESR": 1357,
+          "SB_DFFSR": 86,
+          "SB_DFFESS": 84,
+          "SB_DFFSS": 1,
+          "SB_SPRAM256KA": 4,
+          "SB_RAM40_4K": 9,
+          "SB_MAC16": 1
+        },
+        "place_route_completed": true,
+        "max_frequency_messages": [
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 16.84 MHz (PASS at 12.00 MHz)",
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 17.01 MHz (PASS at 12.00 MHz)"
+        ],
+        "bitstream_sha256": "9576ebbcadaf8259d52dbffa88bfc582fa98ee0b16124ed27b19fb0a24a31c49",
+        "physical_board_programmed": false,
+        "board_profile_verified": false,
+        "power_measured": false,
+        "classifier_included": false,
+        "spectrum_included": true,
+        "log_format": "SEN1, 208-byte header, 4-byte raw records"
+      },
+      "bitstream_hash_verified": true,
+      "timing_constraints_met": true,
+      "resource_limits_met": true,
+      "fmax": {
+        "clk12$SB_IO_IN_$glb_clk": {
+          "achieved": 17.01114273071289,
+          "constraint": 12
+        }
+      },
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 1
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 4860
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 9
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 4
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 8
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 13
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      },
+      "newer_source_paths": [],
+      "build_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": [
+          "rtl/platform/spram16k.sv",
+          "rtl/io/spi_master.sv",
+          "rtl/io/flash_stream.sv",
+          "rtl/io/adxl345_capture.sv",
+          "rtl/io/static_calibration.sv",
+          "rtl/upduino_sensor.sv",
+          "rtl/io/sensor_spectrum.sv",
+          "rtl/core/vib_coeff_rom.sv",
+          "rtl/core/vibration_core.sv"
+        ]
+      },
+      "source_binding": "collection snapshot plus conservative source mtime check; no original build source hashes recorded",
+      "place_route_log": {
+        "path": "build/sensor_board_100hz_spectrum/place_route.log",
+        "sha256": "032885736be7b291f4871861c834f2d8eaffaea8f92928dfe1f81104f1d35aa6",
+        "bytes": 29047
+      },
+      "errors_in_route_log": []
+    },
+    "build/sensor_board_400hz_spectrum": {
+      "status": "passed",
+      "report": {
+        "top": "upduino_sensor",
+        "rate_hz": 400,
+        "total_samples": 240000,
+        "store_samples": 12000,
+        "axis": 0,
+        "cal_offset_q8": 0,
+        "cal_gain_q20": 4096000,
+        "target_clock_mhz": 12,
+        "seed": 1,
+        "synthesis_cells": {
+          "SB_CARRY": 1584,
+          "SB_DFFE": 82,
+          "SB_LUT4": 3784,
+          "SB_DFF": 124,
+          "$scopeinfo": 14,
+          "SB_DFFESR": 1357,
+          "SB_DFFSR": 86,
+          "SB_DFFESS": 84,
+          "SB_DFFSS": 1,
+          "SB_SPRAM256KA": 4,
+          "SB_RAM40_4K": 9,
+          "SB_MAC16": 1
+        },
+        "place_route_completed": true,
+        "max_frequency_messages": [
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 18.00 MHz (PASS at 12.00 MHz)",
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 17.24 MHz (PASS at 12.00 MHz)"
+        ],
+        "bitstream_sha256": "4c8569f65e846a9a6d599e83b21779986455f43acbef085a855e7fe2aa2f0d9d",
+        "physical_board_programmed": false,
+        "board_profile_verified": false,
+        "power_measured": false,
+        "classifier_included": false,
+        "spectrum_included": true,
+        "log_format": "SEN1, 208-byte header, 4-byte raw records"
+      },
+      "bitstream_hash_verified": true,
+      "timing_constraints_met": true,
+      "resource_limits_met": true,
+      "fmax": {
+        "clk12$SB_IO_IN_$glb_clk": {
+          "achieved": 17.244352340698242,
+          "constraint": 12
+        }
+      },
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 1
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 4875
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 9
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 4
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 8
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 13
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      },
+      "newer_source_paths": [],
+      "build_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": [
+          "rtl/platform/spram16k.sv",
+          "rtl/io/spi_master.sv",
+          "rtl/io/flash_stream.sv",
+          "rtl/io/adxl345_capture.sv",
+          "rtl/io/static_calibration.sv",
+          "rtl/upduino_sensor.sv",
+          "rtl/io/sensor_spectrum.sv",
+          "rtl/core/vib_coeff_rom.sv",
+          "rtl/core/vibration_core.sv"
+        ]
+      },
+      "source_binding": "collection snapshot plus conservative source mtime check; no original build source hashes recorded",
+      "place_route_log": {
+        "path": "build/sensor_board_400hz_spectrum/place_route.log",
+        "sha256": "e7c74c4da10673d0a1c13673300625de1e4a6b26cafd33c166043ed5115fdd9a",
+        "bytes": 41454
+      },
+      "errors_in_route_log": []
+    },
+    "build/sensor_board_800hz": {
+      "status": "passed",
+      "report": {
+        "top": "upduino_sensor",
+        "rate_hz": 800,
+        "total_samples": 480000,
+        "store_samples": 24000,
+        "axis": 0,
+        "cal_offset_q8": 0,
+        "cal_gain_q20": 4096000,
+        "target_clock_mhz": 12,
+        "seed": 1,
+        "synthesis_cells": {
+          "SB_CARRY": 973,
+          "SB_LUT4": 2425,
+          "SB_DFFE": 24,
+          "SB_DFF": 48,
+          "$scopeinfo": 9,
+          "SB_DFFESR": 948,
+          "SB_DFFSR": 76,
+          "SB_DFFESS": 84,
+          "SB_DFFSS": 1,
+          "SB_SPRAM256KA": 3
+        },
+        "place_route_completed": true,
+        "max_frequency_messages": [
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 18.38 MHz (PASS at 12.00 MHz)",
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 17.59 MHz (PASS at 12.00 MHz)"
+        ],
+        "bitstream_sha256": "c48036fb7593aaa83d54c1814dd5889af5a19187260782c32af41f9318aa2493",
+        "physical_board_programmed": false,
+        "board_profile_verified": false,
+        "power_measured": false,
+        "classifier_included": false,
+        "spectrum_included": false,
+        "log_format": "SEN1, 128-byte header, 4-byte raw records"
+      },
+      "bitstream_hash_verified": true,
+      "timing_constraints_met": true,
+      "resource_limits_met": true,
+      "fmax": {
+        "clk12$SB_IO_IN_$glb_clk": {
+          "achieved": 17.594482421875,
+          "constraint": 12
+        }
+      },
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 0
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 3073
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 0
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 3
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 6
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 13
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      },
+      "newer_source_paths": [],
+      "build_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": [
+          "rtl/platform/spram16k.sv",
+          "rtl/io/spi_master.sv",
+          "rtl/io/flash_stream.sv",
+          "rtl/io/adxl345_capture.sv",
+          "rtl/io/static_calibration.sv",
+          "rtl/upduino_sensor.sv"
+        ]
+      },
+      "source_binding": "collection snapshot plus conservative source mtime check; no original build source hashes recorded",
+      "place_route_log": {
+        "path": "build/sensor_board_800hz/place_route.log",
+        "sha256": "6cd564c367394a402e9c4caf4ff2a399cfdd6e3e76e2d1b1001335f73554b80f",
+        "bytes": 27104
+      },
+      "errors_in_route_log": []
+    },
+    "build/sensor_board_800hz_spectrum": {
+      "status": "passed",
+      "report": {
+        "top": "upduino_sensor",
+        "rate_hz": 800,
+        "total_samples": 480000,
+        "store_samples": 24000,
+        "axis": 0,
+        "cal_offset_q8": 0,
+        "cal_gain_q20": 4096000,
+        "target_clock_mhz": 12,
+        "seed": 1,
+        "synthesis_cells": {
+          "SB_CARRY": 1583,
+          "SB_DFFE": 82,
+          "SB_LUT4": 3781,
+          "SB_DFF": 124,
+          "$scopeinfo": 14,
+          "SB_DFFESR": 1357,
+          "SB_DFFSR": 86,
+          "SB_DFFESS": 84,
+          "SB_DFFSS": 1,
+          "SB_SPRAM256KA": 4,
+          "SB_RAM40_4K": 9,
+          "SB_MAC16": 1
+        },
+        "place_route_completed": true,
+        "max_frequency_messages": [
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 17.01 MHz (PASS at 12.00 MHz)",
+          "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 17.33 MHz (PASS at 12.00 MHz)"
+        ],
+        "bitstream_sha256": "035d79e2a98fbd0a09a4836e45d9b08bd13ebb455d81662adf3ec90ea4587472",
+        "physical_board_programmed": false,
+        "board_profile_verified": false,
+        "power_measured": false,
+        "classifier_included": false,
+        "spectrum_included": true,
+        "log_format": "SEN1, 208-byte header, 4-byte raw records"
+      },
+      "bitstream_hash_verified": true,
+      "timing_constraints_met": true,
+      "resource_limits_met": true,
+      "fmax": {
+        "clk12$SB_IO_IN_$glb_clk": {
+          "achieved": 17.334627151489258,
+          "constraint": 12
+        }
+      },
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 1
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 4874
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 9
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 4
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 8
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 13
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      },
+      "newer_source_paths": [],
+      "build_input_hash_check": {
+        "status": "unavailable",
+        "verified_files": 0,
+        "mismatches": [],
+        "missing_required": [
+          "rtl/platform/spram16k.sv",
+          "rtl/io/spi_master.sv",
+          "rtl/io/flash_stream.sv",
+          "rtl/io/adxl345_capture.sv",
+          "rtl/io/static_calibration.sv",
+          "rtl/upduino_sensor.sv",
+          "rtl/io/sensor_spectrum.sv",
+          "rtl/core/vib_coeff_rom.sv",
+          "rtl/core/vibration_core.sv"
+        ]
+      },
+      "source_binding": "collection snapshot plus conservative source mtime check; no original build source hashes recorded",
+      "place_route_log": {
+        "path": "build/sensor_board_800hz_spectrum/place_route.log",
+        "sha256": "bf2f634d0cb71e378191bcc310d0b3663f490e03346f73c4d56aa3b0f44f842f",
+        "bytes": 32503
+      },
+      "errors_in_route_log": []
+    }
+  },
+  "ml": {
+    "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+    "freeze_hash_matches": true,
+    "test_hash_matches": true,
+    "data_record_sha_checks": [
+      {
+        "record_id": 105,
+        "sha_verified": true
+      },
+      {
+        "record_id": 106,
+        "sha_verified": true
+      },
+      {
+        "record_id": 107,
+        "sha_verified": true
+      },
+      {
+        "record_id": 108,
+        "sha_verified": true
+      },
+      {
+        "record_id": 118,
+        "sha_verified": true
+      },
+      {
+        "record_id": 119,
+        "sha_verified": true
+      },
+      {
+        "record_id": 120,
+        "sha_verified": true
+      },
+      {
+        "record_id": 121,
+        "sha_verified": true
+      },
+      {
+        "record_id": 130,
+        "sha_verified": true
+      },
+      {
+        "record_id": 131,
+        "sha_verified": true
+      },
+      {
+        "record_id": 132,
+        "sha_verified": true
+      },
+      {
+        "record_id": 133,
+        "sha_verified": true
+      },
+      {
+        "record_id": 169,
+        "sha_verified": true
+      },
+      {
+        "record_id": 170,
+        "sha_verified": true
+      },
+      {
+        "record_id": 171,
+        "sha_verified": true
+      },
+      {
+        "record_id": 172,
+        "sha_verified": true
+      },
+      {
+        "record_id": 185,
+        "sha_verified": true
+      },
+      {
+        "record_id": 186,
+        "sha_verified": true
+      },
+      {
+        "record_id": 187,
+        "sha_verified": true
+      },
+      {
+        "record_id": 188,
+        "sha_verified": true
+      },
+      {
+        "record_id": 197,
+        "sha_verified": true
+      },
+      {
+        "record_id": 198,
+        "sha_verified": true
+      },
+      {
+        "record_id": 199,
+        "sha_verified": true
+      },
+      {
+        "record_id": 200,
+        "sha_verified": true
+      },
+      {
+        "record_id": 209,
+        "sha_verified": true
+      },
+      {
+        "record_id": 210,
+        "sha_verified": true
+      },
+      {
+        "record_id": 211,
+        "sha_verified": true
+      },
+      {
+        "record_id": 212,
+        "sha_verified": true
+      },
+      {
+        "record_id": 222,
+        "sha_verified": true
+      },
+      {
+        "record_id": 223,
+        "sha_verified": true
+      },
+      {
+        "record_id": 224,
+        "sha_verified": true
+      },
+      {
+        "record_id": 225,
+        "sha_verified": true
+      },
+      {
+        "record_id": 234,
+        "sha_verified": true
+      },
+      {
+        "record_id": 235,
+        "sha_verified": true
+      },
+      {
+        "record_id": 236,
+        "sha_verified": true
+      },
+      {
+        "record_id": 237,
+        "sha_verified": true
+      }
+    ],
+    "held_out_test": {
+      "evaluation_count": 1,
+      "evaluated_utc": "2026-09-06T02:30:47.160254+00:00",
+      "frozen_model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+      "test_used_for_model_selection": false,
+      "rms_three_leaf_threshold_baseline": {
+        "accuracy": 0.7710280373831776,
+        "balanced_accuracy": 0.7710529904845833,
+        "macro_f1": 0.7616693672496774,
+        "per_class_recall": [
+          0.9831932773109243,
+          0.5322128851540616,
+          0.797752808988764
+        ],
+        "confusion_matrix": [
+          [
+            351,
+            0,
+            6
+          ],
+          [
+            48,
+            190,
+            119
+          ],
+          [
+            72,
+            0,
+            284
+          ]
+        ],
+        "windows": 1070,
+        "class_names": [
+          "inner_race",
+          "outer_race",
+          "ball"
+        ]
+      },
+      "linear": {
+        "accuracy": 0.7691588785046729,
+        "balanced_accuracy": 0.7690885342901206,
+        "macro_f1": 0.7717848875097869,
+        "per_class_recall": [
+          0.9131652661064426,
+          0.7002801120448179,
+          0.6938202247191011
+        ],
+        "confusion_matrix": [
+          [
+            326,
+            5,
+            26
+          ],
+          [
+            71,
+            250,
+            36
+          ],
+          [
+            109,
+            0,
+            247
+          ]
+        ],
+        "windows": 1070,
+        "class_names": [
+          "inner_race",
+          "outer_race",
+          "ball"
+        ]
+      },
+      "floating_mlp": {
+        "accuracy": 0.7644859813084112,
+        "balanced_accuracy": 0.7643386942792098,
+        "macro_f1": 0.7680987737210012,
+        "per_class_recall": [
+          0.957983193277311,
+          0.7282913165266106,
+          0.6067415730337079
+        ],
+        "confusion_matrix": [
+          [
+            342,
+            6,
+            9
+          ],
+          [
+            87,
+            260,
+            10
+          ],
+          [
+            140,
+            0,
+            216
+          ]
+        ],
+        "windows": 1070,
+        "class_names": [
+          "inner_race",
+          "outer_race",
+          "ball"
+        ]
+      },
+      "floating_frontend_floating_mlp": {
+        "accuracy": 0.7644859813084112,
+        "balanced_accuracy": 0.7643439398231203,
+        "macro_f1": 0.7679116444635965,
+        "per_class_recall": [
+          0.9551820728291317,
+          0.7254901960784313,
+          0.6123595505617978
+        ],
+        "confusion_matrix": [
+          [
+            341,
+            5,
+            11
+          ],
+          [
+            85,
+            259,
+            13
+          ],
+          [
+            138,
+            0,
+            218
+          ]
+        ],
+        "windows": 1070,
+        "class_names": [
+          "inner_race",
+          "outer_race",
+          "ball"
+        ]
+      },
+      "deployed_integer": {
+        "accuracy": 0.7682242990654206,
+        "balanced_accuracy": 0.7680840126312697,
+        "macro_f1": 0.7712562992825814,
+        "per_class_recall": [
+          0.957983193277311,
+          0.7282913165266106,
+          0.6179775280898876
+        ],
+        "confusion_matrix": [
+          [
+            342,
+            4,
+            11
+          ],
+          [
+            81,
+            260,
+            16
+          ],
+          [
+            136,
+            0,
+            220
+          ]
+        ],
+        "windows": 1070,
+        "class_names": [
+          "inner_race",
+          "outer_race",
+          "ball"
+        ]
+      },
+      "quantization_accuracy_drop_percentage_points": -0.37383177570093906,
+      "per_record_integer": [
+        {
+          "record_id": 108,
+          "true_class": 0,
+          "windows": 120,
+          "accuracy": 0.9666666666666667,
+          "predicted_class_counts": [
+            116,
+            4,
+            0
+          ]
+        },
+        {
+          "record_id": 121,
+          "true_class": 2,
+          "windows": 118,
+          "accuracy": 0.847457627118644,
+          "predicted_class_counts": [
+            18,
+            0,
+            100
+          ]
+        },
+        {
+          "record_id": 133,
+          "true_class": 1,
+          "windows": 119,
+          "accuracy": 1.0,
+          "predicted_class_counts": [
+            0,
+            119,
+            0
+          ]
+        },
+        {
+          "record_id": 172,
+          "true_class": 0,
+          "windows": 118,
+          "accuracy": 0.9152542372881356,
+          "predicted_class_counts": [
+            108,
+            0,
+            10
+          ]
+        },
+        {
+          "record_id": 188,
+          "true_class": 2,
+          "windows": 119,
+          "accuracy": 0.6638655462184874,
+          "predicted_class_counts": [
+            40,
+            0,
+            79
+          ]
+        },
+        {
+          "record_id": 200,
+          "true_class": 1,
+          "windows": 119,
+          "accuracy": 0.2773109243697479,
+          "predicted_class_counts": [
+            70,
+            33,
+            16
+          ]
+        },
+        {
+          "record_id": 212,
+          "true_class": 0,
+          "windows": 119,
+          "accuracy": 0.9915966386554622,
+          "predicted_class_counts": [
+            118,
+            0,
+            1
+          ]
+        },
+        {
+          "record_id": 225,
+          "true_class": 2,
+          "windows": 119,
+          "accuracy": 0.3445378151260504,
+          "predicted_class_counts": [
+            78,
+            0,
+            41
+          ]
+        },
+        {
+          "record_id": 237,
+          "true_class": 1,
+          "windows": 119,
+          "accuracy": 0.907563025210084,
+          "predicted_class_counts": [
+            11,
+            108,
+            0
+          ]
+        }
+      ],
+      "limitation": "held-out operating load/records on the same public rig, not independently unseen bearing specimens or field validation",
+      "physical_board_tested": false
+    },
+    "normal_class_included": false,
+    "test_access_note": "Downloader parsed all files for integrity/provenance before training; test waveform statistics were not used for model/feature/scale selection",
+    "neighbor_train_validation_only_ablation": {
+      "schema_version": 1,
+      "experiment": "selected center +/-1 three-bin power sum",
+      "test_evaluated": false,
+      "original_frozen_model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+      "centers": [
+        80,
+        177,
+        188,
+        207,
+        300,
+        308,
+        315,
+        321,
+        328,
+        339,
+        346,
+        355,
+        439,
+        451,
+        457,
+        469
+      ],
+      "dft_bins": [
+        79,
+        80,
+        81,
+        176,
+        177,
+        178,
+        187,
+        188,
+        189,
+        206,
+        207,
+        208,
+        299,
+        300,
+        301,
+        307,
+        308,
+        309,
+        314,
+        315,
+        316,
+        320,
+        321,
+        322,
+        327,
+        328,
+        329,
+        338,
+        339,
+        340,
+        345,
+        346,
+        347,
+        354,
+        355,
+        356,
+        438,
+        439,
+        440,
+        450,
+        451,
+        452,
+        456,
+        457,
+        458,
+        468,
+        469,
+        470
+      ],
+      "feature_shifts": [
+        2,
+        0,
+        2,
+        5,
+        9,
+        8,
+        6,
+        6,
+        6,
+        3,
+        2,
+        2,
+        3,
+        4,
+        2,
+        0
+      ],
+      "energy_accumulator_bits": 34,
+      "train_windows": 2134,
+      "validation_windows": 1066,
+      "baseline_single_bin_float_validation": {
+        "accuracy": 0.8836772983114447,
+        "balanced_accuracy": 0.8836340138207522,
+        "macro_f1": 0.8813891853025244,
+        "per_class_recall": [
+          0.9887323943661972,
+          0.7323943661971831,
+          0.9297752808988764
+        ],
+        "confusion_matrix": [
+          [
+            351,
+            0,
+            4
+          ],
+          [
+            54,
+            260,
+            41
+          ],
+          [
+            25,
+            0,
+            331
+          ]
+        ],
+        "windows": 1066,
+        "class_names": [
+          "inner_race",
+          "outer_race",
+          "ball"
+        ]
+      },
+      "baseline_single_bin_integer_validation": {
+        "accuracy": 0.8714821763602252,
+        "balanced_accuracy": 0.8714274410507992,
+        "macro_f1": 0.8681619650899508,
+        "per_class_recall": [
+          0.9830985915492958,
+          0.7014084507042253,
+          0.9297752808988764
+        ],
+        "confusion_matrix": [
+          [
+            349,
+            0,
+            6
+          ],
+          [
+            53,
+            249,
+            53
+          ],
+          [
+            25,
+            0,
+            331
+          ]
+        ],
+        "windows": 1066,
+        "class_names": [
+          "inner_race",
+          "outer_race",
+          "ball"
+        ]
+      },
+      "neighbor_float_validation": {
+        "accuracy": 0.950281425891182,
+        "balanced_accuracy": 0.9502980429392837,
+        "macro_f1": 0.9504124080146233,
+        "per_class_recall": [
+          0.9943661971830986,
+          0.923943661971831,
+          0.9325842696629213
+        ],
+        "confusion_matrix": [
+          [
+            353,
+            0,
+            2
+          ],
+          [
+            12,
+            328,
+            15
+          ],
+          [
+            24,
+            0,
+            332
+          ]
+        ],
+        "windows": 1066,
+        "class_names": [
+          "inner_race",
+          "outer_race",
+          "ball"
+        ]
+      },
+      "neighbor_integer_validation": {
+        "accuracy": 0.9512195121951219,
+        "balanced_accuracy": 0.9512238223347577,
+        "macro_f1": 0.9511789025583924,
+        "per_class_recall": [
+          0.9971830985915493,
+          0.9098591549295775,
+          0.9466292134831461
+        ],
+        "confusion_matrix": [
+          [
+            354,
+            0,
+            1
+          ],
+          [
+            12,
+            323,
+            20
+          ],
+          [
+            19,
+            0,
+            337
+          ]
+        ],
+        "windows": 1066,
+        "class_names": [
+          "inner_race",
+          "outer_race",
+          "ball"
+        ]
+      },
+      "float_macro_f1_delta_percentage_points": 6.9023222712098935,
+      "integer_macro_f1_delta_percentage_points": 8.301693746844164,
+      "PTQ_accuracy_drop_percentage_points": -0.09380863039398779,
+      "gate": "float validation macro-F1 improvement >=2 percentage points AND PTQ validation accuracy loss <=2 percentage points",
+      "eligible_for_RTL_resource_timing_experiment": true,
+      "candidate_exported": true,
+      "training_history": {
+        "epochs_run": 450,
+        "selected_epoch": 240,
+        "seed": 7,
+        "selection": "validation macro F1, ties broken by lower training loss",
+        "learning_curve": [
+          {
+            "epoch": 10,
+            "train_loss": 0.8066530227661133,
+            "validation_macro_f1": 0.7373066073845264
+          },
+          {
+            "epoch": 20,
+            "train_loss": 0.4560181498527527,
+            "validation_macro_f1": 0.7740187233031622
+          },
+          {
+            "epoch": 30,
+            "train_loss": 0.25416427850723267,
+            "validation_macro_f1": 0.7762251508144611
+          },
+          {
+            "epoch": 40,
+            "train_loss": 0.1698135882616043,
+            "validation_macro_f1": 0.7781074009562562
+          },
+          {
+            "epoch": 50,
+            "train_loss": 0.12779393792152405,
+            "validation_macro_f1": 0.7837913686987262
+          },
+          {
+            "epoch": 60,
+            "train_loss": 0.10297572612762451,
+            "validation_macro_f1": 0.8013039170857041
+          },
+          {
+            "epoch": 70,
+            "train_loss": 0.08653321117162704,
+            "validation_macro_f1": 0.8193585852909221
+          },
+          {
+            "epoch": 80,
+            "train_loss": 0.07440698146820068,
+            "validation_macro_f1": 0.8344678524412728
+          },
+          {
+            "epoch": 90,
+            "train_loss": 0.06508921831846237,
+            "validation_macro_f1": 0.8481159469439996
+          },
+          {
+            "epoch": 100,
+            "train_loss": 0.05763327702879906,
+            "validation_macro_f1": 0.8657416374664296
+          },
+          {
+            "epoch": 110,
+            "train_loss": 0.051528166979551315,
+            "validation_macro_f1": 0.8798009224553055
+          },
+          {
+            "epoch": 120,
+            "train_loss": 0.046517662703990936,
+            "validation_macro_f1": 0.8970379924593833
+          },
+          {
+            "epoch": 130,
+            "train_loss": 0.04238078370690346,
+            "validation_macro_f1": 0.9061547775868135
+          },
+          {
+            "epoch": 140,
+            "train_loss": 0.03893059864640236,
+            "validation_macro_f1": 0.9153470103529614
+          },
+          {
+            "epoch": 150,
+            "train_loss": 0.03601967915892601,
+            "validation_macro_f1": 0.9229299566576185
+          },
+          {
+            "epoch": 160,
+            "train_loss": 0.033534713089466095,
+            "validation_macro_f1": 0.9304682815027948
+          },
+          {
+            "epoch": 170,
+            "train_loss": 0.03138566017150879,
+            "validation_macro_f1": 0.9333217559093102
+          },
+          {
+            "epoch": 180,
+            "train_loss": 0.029503166675567627,
+            "validation_macro_f1": 0.9418778565028861
+          },
+          {
+            "epoch": 190,
+            "train_loss": 0.027835533022880554,
+            "validation_macro_f1": 0.9447500829639098
+          },
+          {
+            "epoch": 200,
+            "train_loss": 0.026342563331127167,
+            "validation_macro_f1": 0.9447667859863825
+          },
+          {
+            "epoch": 210,
+            "train_loss": 0.024994488805532455,
+            "validation_macro_f1": 0.9466764512774545
+          },
+          {
+            "epoch": 220,
+            "train_loss": 0.023768683895468712,
+            "validation_macro_f1": 0.9494596425739622
+          },
+          {
+            "epoch": 230,
+            "train_loss": 0.022649845108389854,
+            "validation_macro_f1": 0.9494596425739622
+          },
+          {
+            "epoch": 240,
+            "train_loss": 0.021625367924571037,
+            "validation_macro_f1": 0.9504124080146233
+          },
+          {
+            "epoch": 250,
+            "train_loss": 0.020680291578173637,
+            "validation_macro_f1": 0.9485609295644415
+          },
+          {
+            "epoch": 260,
+            "train_loss": 0.0198063924908638,
+            "validation_macro_f1": 0.947608326191955
+          },
+          {
+            "epoch": 270,
+            "train_loss": 0.01899494230747223,
+            "validation_macro_f1": 0.9475340155022648
+          },
+          {
+            "epoch": 280,
+            "train_loss": 0.01824098825454712,
+            "validation_macro_f1": 0.949395636290257
+          },
+          {
+            "epoch": 290,
+            "train_loss": 0.017537683248519897,
+            "validation_macro_f1": 0.9466320917213533
+          },
+          {
+            "epoch": 300,
+            "train_loss": 0.016880948096513748,
+            "validation_macro_f1": 0.9456798398733883
+          },
+          {
+            "epoch": 310,
+            "train_loss": 0.016266129910945892,
+            "validation_macro_f1": 0.9456783482783395
+          },
+          {
+            "epoch": 320,
+            "train_loss": 0.015689339488744736,
+            "validation_macro_f1": 0.9447471361913212
+          },
+          {
+            "epoch": 330,
+            "train_loss": 0.015146811492741108,
+            "validation_macro_f1": 0.9438340318169732
+          },
+          {
+            "epoch": 340,
+            "train_loss": 0.01463514193892479,
+            "validation_macro_f1": 0.9419688595359562
+          },
+          {
+            "epoch": 350,
+            "train_loss": 0.014151391573250294,
+            "validation_macro_f1": 0.9391681151817123
+          },
+          {
+            "epoch": 360,
+            "train_loss": 0.013694669120013714,
+            "validation_macro_f1": 0.9363492325877881
+          },
+          {
+            "epoch": 370,
+            "train_loss": 0.013260461390018463,
+            "validation_macro_f1": 0.9335144700318349
+          },
+          {
+            "epoch": 380,
+            "train_loss": 0.01284855604171753,
+            "validation_macro_f1": 0.9316290866454993
+          },
+          {
+            "epoch": 390,
+            "train_loss": 0.012456838972866535,
+            "validation_macro_f1": 0.9316290866454993
+          },
+          {
+            "epoch": 400,
+            "train_loss": 0.012083671055734158,
+            "validation_macro_f1": 0.9316290866454993
+          },
+          {
+            "epoch": 410,
+            "train_loss": 0.011728452518582344,
+            "validation_macro_f1": 0.9288072053047393
+          },
+          {
+            "epoch": 420,
+            "train_loss": 0.011388661339879036,
+            "validation_macro_f1": 0.9241084194423661
+          },
+          {
+            "epoch": 430,
+            "train_loss": 0.011063843965530396,
+            "validation_macro_f1": 0.921291556032423
+          },
+          {
+            "epoch": 440,
+            "train_loss": 0.01075357012450695,
+            "validation_macro_f1": 0.9203515096354543
+          },
+          {
+            "epoch": 450,
+            "train_loss": 0.010455162264406681,
+            "validation_macro_f1": 0.9185104346705284
+          }
+        ]
+      },
+      "seconds": 0.8823699951171875,
+      "scope": "Predefined train/validation ablation; no new held-out test accuracy, FPGA fit or physical measurement claim",
+      "candidate_model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+      "frequency_selection_method": "predefined train_fisher_separated algorithm recomputed from train waveforms only",
+      "centers_equal_historical_v1": true,
+      "method_audit_note": "The original v1 selected the frequency strategy using validation; its history is unchanged. These same centers were independently recomputed by the predefined train-only Fisher algorithm; no model refit or test evaluation was performed for this provenance clarification."
+    },
+    "neighbor_frozen_test": {
+      "status": "passed",
+      "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+      "windows": 1070,
+      "record_count": 9,
+      "input_hashes_checked": 68,
+      "output_hashes_checked": 32,
+      "freeze_sha256": "3ee131dcde304a6f7fdd88e499342e4163eef7212fb5ad76c5026df0fe5b827e",
+      "completion_sha256": "49c6c39529d76e6ad6e7386ffd28a404b66cabbf54064e4a42379c3e388e44b1",
+      "saved_prediction_metrics_match": true,
+      "record_windows_and_csv_match": true,
+      "original_mat_read": false,
+      "inference_run": false,
+      "evaluation": {
+        "schema_version": 1,
+        "status": "passed",
+        "evaluation_kind": "subsequent_frozen_neighbor_test",
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "freeze_sha256": "3ee131dcde304a6f7fdd88e499342e4163eef7212fb5ad76c5026df0fe5b827e",
+        "frozen_utc": "2026-09-06T03:22:07.878604+00:00",
+        "test_load_started_utc": "2026-09-06T03:22:07.901365+00:00",
+        "completed_utc": "2026-09-06T03:22:08.676635+00:00",
+        "seconds": 2.0791353340027854,
+        "windows": 1070,
+        "record_count": 9,
+        "test_record_ids": [
+          108,
+          121,
+          133,
+          172,
+          188,
+          200,
+          212,
+          225,
+          237
+        ],
+        "float_metrics": {
+          "windows": 1070,
+          "correct": 994,
+          "accuracy": 0.9289719626168225,
+          "balanced_accuracy": 0.9289438621890703,
+          "macro_f1": 0.9296411178423871,
+          "weighted_f1": 0.9296530203411875,
+          "class_names": [
+            "inner_race",
+            "outer_race",
+            "ball"
+          ],
+          "confusion_matrix": [
+            [
+              339,
+              1,
+              17
+            ],
+            [
+              17,
+              335,
+              5
+            ],
+            [
+              36,
+              0,
+              320
+            ]
+          ],
+          "confusion_matrix_axes": "rows=true class, columns=predicted class",
+          "per_class": [
+            {
+              "class_id": 0,
+              "class_name": "inner_race",
+              "support": 357,
+              "predicted_count": 392,
+              "precision": 0.8647959183673469,
+              "recall": 0.9495798319327731,
+              "f1": 0.9052069425901202
+            },
+            {
+              "class_id": 1,
+              "class_name": "outer_race",
+              "support": 357,
+              "predicted_count": 336,
+              "precision": 0.9970238095238095,
+              "recall": 0.938375350140056,
+              "f1": 0.9668109668109668
+            },
+            {
+              "class_id": 2,
+              "class_name": "ball",
+              "support": 356,
+              "predicted_count": 342,
+              "precision": 0.935672514619883,
+              "recall": 0.898876404494382,
+              "f1": 0.9169054441260744
+            }
+          ],
+          "zero_division": 0
+        },
+        "integer_metrics": {
+          "windows": 1070,
+          "correct": 997,
+          "accuracy": 0.9317757009345794,
+          "balanced_accuracy": 0.9317502281811602,
+          "macro_f1": 0.9323608749858324,
+          "weighted_f1": 0.9323724272054454,
+          "class_names": [
+            "inner_race",
+            "outer_race",
+            "ball"
+          ],
+          "confusion_matrix": [
+            [
+              341,
+              1,
+              15
+            ],
+            [
+              16,
+              334,
+              7
+            ],
+            [
+              34,
+              0,
+              322
+            ]
+          ],
+          "confusion_matrix_axes": "rows=true class, columns=predicted class",
+          "per_class": [
+            {
+              "class_id": 0,
+              "class_name": "inner_race",
+              "support": 357,
+              "predicted_count": 391,
+              "precision": 0.8721227621483376,
+              "recall": 0.9551820728291317,
+              "f1": 0.911764705882353
+            },
+            {
+              "class_id": 1,
+              "class_name": "outer_race",
+              "support": 357,
+              "predicted_count": 335,
+              "precision": 0.9970149253731343,
+              "recall": 0.9355742296918768,
+              "f1": 0.9653179190751444
+            },
+            {
+              "class_id": 2,
+              "class_name": "ball",
+              "support": 356,
+              "predicted_count": 344,
+              "precision": 0.936046511627907,
+              "recall": 0.9044943820224719,
+              "f1": 0.9199999999999999
+            }
+          ],
+          "zero_division": 0
+        },
+        "quantization_difference": {
+          "prediction_disagreements": 13,
+          "prediction_agreement": 0.9878504672897196,
+          "float_correct_integer_wrong": 5,
+          "float_wrong_integer_correct": 8,
+          "both_wrong_different_prediction": 0,
+          "accuracy_drop_percentage_points": -0.2803738317756932,
+          "integer_minus_float_macro_f1_percentage_points": 0.27197571434453005,
+          "per_class_integer_minus_float_recall_percentage_points": [
+            0.5602240896358635,
+            -0.2801120448179262,
+            0.5617977528089901
+          ],
+          "integer_logit_scale": 0.00390625,
+          "dequantized_logit_absolute_error": {
+            "mean": 0.2081687337816506,
+            "maximum": 0.9434547424316406,
+            "p99": 0.6698620843887327,
+            "per_class_mean": [
+              0.21423072104624344,
+              0.19503956160673472,
+              0.21523591869197367
+            ],
+            "units": "floating network logit units; integer logit multiplied by frozen logit_scale"
+          },
+          "interpretation": "Differences include input feature rounding, weight/bias quantization, hidden RNE and saturation; not weight quantization alone."
+        },
+        "scalar_batch_equivalence": {
+          "status": "passed",
+          "test_windows_checked": 1070,
+          "fields": [
+            "dft_powers",
+            "powers",
+            "features",
+            "hidden",
+            "logits",
+            "class_id"
+          ],
+          "mismatches": 0,
+          "uses_same_loaded_test_array": true
+        },
+        "checkpoint_npz_identical": true,
+        "all_frozen_inputs_unchanged": true,
+        "raw_conversion_and_record_tails": [
+          {
+            "record_id": 108,
+            "samples": 122917,
+            "clipped_samples": 0,
+            "windows": 120,
+            "discarded_tail_samples": 37
+          },
+          {
+            "record_id": 121,
+            "samples": 121556,
+            "clipped_samples": 0,
+            "windows": 118,
+            "discarded_tail_samples": 724
+          },
+          {
+            "record_id": 133,
+            "samples": 122571,
+            "clipped_samples": 0,
+            "windows": 119,
+            "discarded_tail_samples": 715
+          },
+          {
+            "record_id": 172,
+            "samples": 121701,
+            "clipped_samples": 0,
+            "windows": 118,
+            "discarded_tail_samples": 869
+          },
+          {
+            "record_id": 188,
+            "samples": 122136,
+            "clipped_samples": 0,
+            "windows": 119,
+            "discarded_tail_samples": 280
+          },
+          {
+            "record_id": 200,
+            "samples": 121991,
+            "clipped_samples": 0,
+            "windows": 119,
+            "discarded_tail_samples": 135
+          },
+          {
+            "record_id": 212,
+            "samples": 121991,
+            "clipped_samples": 0,
+            "windows": 119,
+            "discarded_tail_samples": 135
+          },
+          {
+            "record_id": 225,
+            "samples": 122136,
+            "clipped_samples": 0,
+            "windows": 119,
+            "discarded_tail_samples": 280
+          },
+          {
+            "record_id": 237,
+            "samples": 121991,
+            "clipped_samples": 0,
+            "windows": 119,
+            "discarded_tail_samples": 135
+          }
+        ],
+        "prior_baseline_test_evaluated": true,
+        "scope": "Subsequent frozen-model evaluation on CWRU 12 kHz drive-end, 3 HP records. These same records were previously evaluated for the original single-bin model; they are not a fresh external or previously untouched test set. The split is cross-load on the same laboratory rig, with three seeded fault classes and no normal class. This run provides no physical-hardware or field accuracy evidence.",
+        "float_reference": "Saved FP32 MLP with unrounded scaled/clamped INTEGER DSP powers (same reference as validation); not a fully floating-point DSP pipeline.",
+        "window_protocol": "Records split before nonoverlapping N=1024 windows; stride 1024; discard each record tail; frozen train-derived PCM scale; no window filtering.",
+        "test_waveform_load_calls_in_this_evaluation": 1,
+        "model_training_or_tuning_in_this_run": false,
+        "model_files_updated": false,
+        "historical_model_json_test_evaluated_field": false,
+        "historical_status_note": "The existing model JSON and neighbor validation report retain their historical test_evaluated=false fields. This separate subsequent result is joined by model_sha256.",
+        "physical_hardware_tested": false
+      },
+      "evidence": {
+        "path": "artifacts/reports/neighbor_test/completion.json",
+        "sha256": "49c6c39529d76e6ad6e7386ffd28a404b66cabbf54064e4a42379c3e388e44b1",
+        "bytes": 4081
+      }
+    }
+  },
+  "sensor_spectrum_standalone_probe": {
+    "top": "sensor_spectrum_probe",
+    "probe_only_not_integrated_sensor": true,
+    "fmax": {
+      "clk$SB_IO_IN_$glb_clk": {
+        "achieved": 20.340085983276367,
+        "constraint": 12
+      }
+    },
+    "utilization": {
+      "ICESTORM_DSP": {
+        "available": 8,
+        "used": 1
+      },
+      "ICESTORM_HFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_LC": {
+        "available": 5280,
+        "used": 1646
+      },
+      "ICESTORM_LFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_PLL": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_RAM": {
+        "available": 30,
+        "used": 9
+      },
+      "ICESTORM_SPRAM": {
+        "available": 4,
+        "used": 0
+      },
+      "IO_I3C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_GB": {
+        "available": 8,
+        "used": 4
+      },
+      "SB_I2C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_IO": {
+        "available": 39,
+        "used": 8
+      },
+      "SB_LEDDA_IP": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_RGBA_DRV": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_SPI": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_WARMBOOT": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "physical_hardware_tested": false
+  },
+  "not_yet_evidenced": [
+    "physical board programming and Flash readback",
+    "actual ADXL345 captures, calibration or noise measurements",
+    "field-condition classifier accuracy",
+    "measured power",
+    "ASIC implementation/signoff or chip fabrication",
+    "JTAG use"
+  ],
+  "interpretation": "Passing XML requires at least one non-skipped test and no failure/error. Missing evidence is never treated as success. Historical reports can outlive source edits; use source-lock and newer_source_paths appropriately."
+}

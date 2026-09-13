@@ -1,0 +1,748 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: serial_tie_away.sv
+Parsing formal SystemVerilog input from `serial_tie_away.sv' to AST representation.
+Storing AST representation for module `$abstract\quant_functions_kernel'.
+Storing AST representation for module `$abstract\quant_serial_kernel'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: quant_harness.sv
+Parsing formal SystemVerilog input from `quant_harness.sv' to AST representation.
+Storing AST representation for module `$abstract\quant_functions_harness'.
+Storing AST representation for module `$abstract\quant_serial_harness'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\quant_serial_harness'.
+Generating RTLIL representation for module `\quant_serial_harness'.
+
+3.2.1. Analyzing design hierarchy..
+Top module:  \quant_serial_harness
+
+3.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\quant_serial_kernel'.
+Generating RTLIL representation for module `\quant_serial_kernel'.
+
+3.2.3. Analyzing design hierarchy..
+Top module:  \quant_serial_harness
+Used module:     \quant_serial_kernel
+
+3.2.4. Analyzing design hierarchy..
+Top module:  \quant_serial_harness
+Used module:     \quant_serial_kernel
+Removing unused module `$abstract\quant_serial_harness'.
+Removing unused module `$abstract\quant_functions_harness'.
+Removing unused module `$abstract\quant_serial_kernel'.
+Removing unused module `$abstract\quant_functions_kernel'.
+Removed 4 unused modules.
+Module quant_serial_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3.3. Executing PROC pass (convert processes to netlists).
+
+3.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 6 switch rules as full_case in process $proc$serial_tie_away.sv:98$355 in module quant_serial_kernel.
+Marked 1 switch rules as full_case in process $proc$quant_harness.sv:94$106 in module quant_serial_harness.
+Marked 1 switch rules as full_case in process $proc$quant_harness.sv:98$14 in module quant_serial_harness.
+Removed a total of 0 dead cases.
+
+3.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 21 assignments to connections.
+
+3.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\quant_serial_harness.$proc$quant_harness.sv:97$343'.
+  Set init value: \age = 7'0000000
+Found init rule in `\quant_serial_harness.$proc$quant_harness.sv:96$342'.
+  Set init value: \saw_abort = 1'0
+Found init rule in `\quant_serial_harness.$proc$quant_harness.sv:96$341'.
+  Set init value: \pending = 1'0
+Found init rule in `\quant_serial_harness.$proc$quant_harness.sv:96$340'.
+  Set init value: \past_valid = 1'0
+
+3.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~51 debug messages>
+
+3.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+     1/29: $3$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$376
+     2/29: $3$memwr$\feature_shifts$serial_tie_away.sv:109$344_DATA[7:0]$375
+     3/29: $3$memwr$\feature_shifts$serial_tie_away.sv:109$344_ADDR[3:0]$374
+     4/29: $2$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$370
+     5/29: $2$memwr$\feature_shifts$serial_tie_away.sv:109$344_DATA[7:0]$369
+     6/29: $2$memwr$\feature_shifts$serial_tie_away.sv:109$344_ADDR[3:0]$368
+     7/29: $2$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$373
+     8/29: $2$memwr$\features$serial_tie_away.sv:128$345_DATA[7:0]$372
+     9/29: $2$memwr$\features$serial_tie_away.sv:128$345_ADDR[3:0]$371
+    10/29: $0\dbg_valid[0:0]
+    11/29: $1$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$367
+    12/29: $1$memwr$\features$serial_tie_away.sv:128$345_DATA[7:0]$366
+    13/29: $1$memwr$\features$serial_tie_away.sv:128$345_ADDR[3:0]$365
+    14/29: $1$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$364
+    15/29: $1$memwr$\feature_shifts$serial_tie_away.sv:109$344_DATA[7:0]$363
+    16/29: $1$memwr$\feature_shifts$serial_tie_away.sv:109$344_ADDR[3:0]$362
+    17/29: $0\dbg_value[39:0]
+    18/29: $0\dbg_index[15:0]
+    19/29: $0\dbg_kind[3:0]
+    20/29: $0\nn_group[3:0]
+    21/29: $0\nn_layer[0:0]
+    22/29: $0\quant_sticky[0:0]
+    23/29: $0\quant_guard[0:0]
+    24/29: $0\quant_remaining[7:0]
+    25/29: $0\quant_work[32:0]
+    26/29: $0\power_sum[32:0]
+    27/29: $0\power_index[5:0]
+    28/29: $0\feature_index[3:0]
+    29/29: $0\state[4:0]
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:97$343'.
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:96$342'.
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:96$341'.
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:96$340'.
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$334'.
+     1/1: $cover$quant_harness.sv:142$337_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$328'.
+     1/1: $cover$quant_harness.sv:142$331_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$322'.
+     1/1: $cover$quant_harness.sv:142$325_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$316'.
+     1/1: $cover$quant_harness.sv:142$319_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$310'.
+     1/1: $cover$quant_harness.sv:142$313_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$304'.
+     1/1: $cover$quant_harness.sv:142$307_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$298'.
+     1/1: $cover$quant_harness.sv:142$301_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$292'.
+     1/1: $cover$quant_harness.sv:142$295_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$286'.
+     1/1: $cover$quant_harness.sv:142$289_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$280'.
+     1/1: $cover$quant_harness.sv:142$283_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$274'.
+     1/1: $cover$quant_harness.sv:142$277_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$268'.
+     1/1: $cover$quant_harness.sv:142$271_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$262'.
+     1/1: $cover$quant_harness.sv:142$265_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$256'.
+     1/1: $cover$quant_harness.sv:142$259_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$250'.
+     1/1: $cover$quant_harness.sv:142$253_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$244'.
+     1/1: $cover$quant_harness.sv:142$247_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$238'.
+     1/1: $cover$quant_harness.sv:142$241_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$232'.
+     1/1: $cover$quant_harness.sv:142$235_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$226'.
+     1/1: $cover$quant_harness.sv:142$229_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$220'.
+     1/1: $cover$quant_harness.sv:142$223_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$214'.
+     1/1: $cover$quant_harness.sv:142$217_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$208'.
+     1/1: $cover$quant_harness.sv:142$211_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$202'.
+     1/1: $cover$quant_harness.sv:142$205_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$196'.
+     1/1: $cover$quant_harness.sv:142$199_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$190'.
+     1/1: $cover$quant_harness.sv:142$193_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$184'.
+     1/1: $cover$quant_harness.sv:142$187_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$178'.
+     1/1: $cover$quant_harness.sv:142$181_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$172'.
+     1/1: $cover$quant_harness.sv:142$175_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$166'.
+     1/1: $cover$quant_harness.sv:142$169_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$160'.
+     1/1: $cover$quant_harness.sv:142$163_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$154'.
+     1/1: $cover$quant_harness.sv:142$157_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$148'.
+     1/1: $cover$quant_harness.sv:142$151_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$142'.
+     1/1: $cover$quant_harness.sv:142$145_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:141$136'.
+     1/1: $cover$quant_harness.sv:142$139_EN
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:94$106'.
+     1/6: $1\expected_quantized$func$quant_harness.sv:94$3.$result[7:0]$117
+     2/6: $1\expected_quantized$func$quant_harness.sv:94$3.nearest[33:0]$122
+     3/6: $1\expected_quantized$func$quant_harness.sv:94$3.unit_step[33:0]$121
+     4/6: $1\expected_quantized$func$quant_harness.sv:94$3.double_residue[33:0]$120
+     5/6: $1\expected_quantized$func$quant_harness.sv:94$3.residue[33:0]$119
+     6/6: $1\expected_quantized$func$quant_harness.sv:94$3.whole[33:0]$118
+Creating decoders for process `\quant_serial_harness.$proc$quant_harness.sv:98$14'.
+     1/25: $cover$quant_harness.sv:136$104_EN
+     2/25: $cover$quant_harness.sv:135$101_EN
+     3/25: $cover$quant_harness.sv:134$98_EN
+     4/25: $cover$quant_harness.sv:133$91_EN
+     5/25: $cover$quant_harness.sv:132$84_EN
+     6/25: $cover$quant_harness.sv:131$77_EN
+     7/25: $cover$quant_harness.sv:130$70_EN
+     8/25: $cover$quant_harness.sv:129$63_EN
+     9/25: $cover$quant_harness.sv:128$56_EN
+    10/25: $cover$quant_harness.sv:127$49_EN
+    11/25: $cover$quant_harness.sv:126$44_EN
+    12/25: $assert$quant_harness.sv:123$42_EN
+    13/25: $assert$quant_harness.sv:122$38_EN
+    14/25: $assert$quant_harness.sv:121$36_EN
+    15/25: $assert$quant_harness.sv:120$34_EN
+    16/25: $assert$quant_harness.sv:119$32_EN
+    17/25: $assert$quant_harness.sv:118$31_EN
+    18/25: $assert$quant_harness.sv:114$28_EN
+    19/25: $assert$quant_harness.sv:113$25_EN
+    20/25: $assert$quant_harness.sv:108$23_EN
+    21/25: $assert$quant_harness.sv:106$20_EN
+    22/25: $assume$quant_harness.sv:100$17_EN
+    23/25: $0\age[6:0]
+    24/25: $0\saw_abort[0:0]
+    25/25: $0\pending[0:0]
+
+3.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\quant_serial_harness.\expected_quantized$func$quant_harness.sv:94$1.$result' from process `\quant_serial_harness.$proc$quant_harness.sv:94$106'.
+
+3.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\quant_serial_kernel.\state' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$818' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\feature_index' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$819' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\power_index' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$820' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\power_sum' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$821' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\quant_work' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$822' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\quant_remaining' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$823' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\quant_guard' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$824' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\quant_sticky' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$825' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\nn_layer' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$826' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\nn_group' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$827' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\dbg_valid' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$828' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\dbg_kind' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$829' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\dbg_index' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$830' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.\dbg_value' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$831' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.$memwr$\feature_shifts$serial_tie_away.sv:109$344_ADDR' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$832' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.$memwr$\feature_shifts$serial_tie_away.sv:109$344_DATA' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$833' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$834' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.$memwr$\features$serial_tie_away.sv:128$345_ADDR' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$835' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.$memwr$\features$serial_tie_away.sv:128$345_DATA' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$836' with positive edge clock.
+Creating register for signal `\quant_serial_kernel.$memwr$\features$serial_tie_away.sv:128$345_EN' using process `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+  created $dff cell `$procdff$837' with positive edge clock.
+Creating register for signal `\quant_serial_harness.\past_valid' using process `\quant_serial_harness.$proc$quant_harness.sv:98$14'.
+  created $dff cell `$procdff$838' with positive edge clock.
+Creating register for signal `\quant_serial_harness.\pending' using process `\quant_serial_harness.$proc$quant_harness.sv:98$14'.
+  created $dff cell `$procdff$839' with positive edge clock.
+Creating register for signal `\quant_serial_harness.\saw_abort' using process `\quant_serial_harness.$proc$quant_harness.sv:98$14'.
+  created $dff cell `$procdff$840' with positive edge clock.
+Creating register for signal `\quant_serial_harness.\age' using process `\quant_serial_harness.$proc$quant_harness.sv:98$14'.
+  created $dff cell `$procdff$841' with positive edge clock.
+Creating register for signal `\quant_serial_harness.$past$quant_harness.sv:106$2$0' using process `\quant_serial_harness.$proc$quant_harness.sv:98$14'.
+  created $dff cell `$procdff$842' with positive edge clock.
+
+3.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 7 empty switches in `\quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+Removing empty process `quant_serial_kernel.$proc$serial_tie_away.sv:98$355'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:97$343'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:96$342'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:96$341'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:96$340'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$334'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$334'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$328'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$328'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$322'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$322'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$316'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$316'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$310'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$310'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$304'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$304'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$298'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$298'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$292'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$292'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$286'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$286'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$280'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$280'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$274'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$274'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$268'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$268'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$262'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$262'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$256'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$256'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$250'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$250'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$244'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$244'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$238'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$238'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$232'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$232'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$226'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$226'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$220'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$220'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$214'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$214'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$208'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$208'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$202'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$202'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$196'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$196'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$190'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$190'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$184'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$184'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$178'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$178'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$172'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$172'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$166'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$166'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$160'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$160'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$154'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$154'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$148'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$148'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$142'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$142'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:141$136'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:141$136'.
+Found and cleaned up 1 empty switch in `\quant_serial_harness.$proc$quant_harness.sv:94$106'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:94$106'.
+Found and cleaned up 9 empty switches in `\quant_serial_harness.$proc$quant_harness.sv:98$14'.
+Removing empty process `quant_serial_harness.$proc$quant_harness.sv:98$14'.
+Cleaned up 51 empty switches.
+
+3.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_kernel.
+<suppressed ~11 debug messages>
+Optimizing module quant_serial_harness.
+<suppressed ~8 debug messages>
+
+3.4. Executing FUTURE pass.
+
+3.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_kernel.
+Optimizing module quant_serial_harness.
+
+3.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \quant_serial_kernel..
+Finding unused cells or wires in module \quant_serial_harness..
+Removed 35 unused cells and 291 unused wires.
+<suppressed ~42 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module quant_serial_kernel...
+Checking module quant_serial_harness...
+Found and reported 0 problems.
+
+3.8. Executing OPT pass (performing simple optimizations).
+
+3.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_kernel.
+Optimizing module quant_serial_harness.
+
+3.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\quant_serial_kernel'.
+Computing hashes of 113 cells of `\quant_serial_kernel'.
+Finding duplicate cells in `\quant_serial_kernel'.
+Computing hashes of 87 cells of `\quant_serial_kernel'.
+Finding duplicate cells in `\quant_serial_kernel'.
+<suppressed ~78 debug messages>
+Finding identical cells in module `\quant_serial_harness'.
+Computing hashes of 364 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 319 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 280 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+<suppressed ~252 debug messages>
+Removed a total of 110 cells.
+
+3.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \quant_serial_kernel..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$467.
+    dead port 1/2 on $mux $procmux$461.
+    dead port 1/2 on $mux $procmux$455.
+    dead port 1/2 on $mux $procmux$449.
+    dead port 1/2 on $mux $procmux$440.
+    dead port 1/2 on $mux $procmux$431.
+    dead port 1/2 on $mux $procmux$422.
+    dead port 2/2 on $mux $procmux$419.
+    dead port 1/2 on $mux $procmux$410.
+    dead port 2/2 on $mux $procmux$407.
+    dead port 1/2 on $mux $procmux$398.
+    dead port 2/2 on $mux $procmux$395.
+Running muxtree optimizer on module \quant_serial_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 12 multiplexer ports.
+<suppressed ~222 debug messages>
+
+3.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \quant_serial_kernel.
+    Consolidated identical input bits for $mux cell $procmux$452:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$452_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$452_Y [0]
+      New connections: $procmux$452_Y [7:1] = { $procmux$452_Y [0] $procmux$452_Y [0] $procmux$452_Y [0] $procmux$452_Y [0] $procmux$452_Y [0] $procmux$452_Y [0] $procmux$452_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$393:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$393_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$393_Y [0]
+      New connections: $procmux$393_Y [7:1] = { $procmux$393_Y [0] $procmux$393_Y [0] $procmux$393_Y [0] $procmux$393_Y [0] $procmux$393_Y [0] $procmux$393_Y [0] $procmux$393_Y [0] }
+  Optimizing cells in module \quant_serial_kernel.
+    Consolidated identical input bits for $mux cell $procmux$476:
+      Old ports: A=$2$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$373, B=8'00000000, Y=$0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361
+      New ports: A=$procmux$452_Y [0], B=1'0, Y=$0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361 [0]
+      New connections: $0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361 [7:1] = { $0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361 [0] $0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361 [0] $0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361 [0] $0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361 [0] $0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361 [0] $0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361 [0] $0$memwr$\features$serial_tie_away.sv:128$345_EN[7:0]$361 [0] }
+    Consolidated identical input bits for $mux cell $procmux$428:
+      Old ports: A=8'00000000, B=$3$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$376, Y=$procmux$428_Y
+      New ports: A=1'0, B=$procmux$393_Y [0], Y=$procmux$428_Y [0]
+      New connections: $procmux$428_Y [7:1] = { $procmux$428_Y [0] $procmux$428_Y [0] $procmux$428_Y [0] $procmux$428_Y [0] $procmux$428_Y [0] $procmux$428_Y [0] $procmux$428_Y [0] }
+  Optimizing cells in module \quant_serial_kernel.
+    Consolidated identical input bits for $mux cell $procmux$485:
+      Old ports: A=$2$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$370, B=8'00000000, Y=$0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358
+      New ports: A=$procmux$428_Y [0], B=1'0, Y=$0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358 [0]
+      New connections: $0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358 [7:1] = { $0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358 [0] $0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358 [0] $0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358 [0] $0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358 [0] $0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358 [0] $0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358 [0] $0$memwr$\feature_shifts$serial_tie_away.sv:109$344_EN[7:0]$358 [0] }
+  Optimizing cells in module \quant_serial_kernel.
+  Optimizing cells in module \quant_serial_harness.
+Performed a total of 5 changes.
+
+3.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\quant_serial_kernel'.
+Computing hashes of 75 cells of `\quant_serial_kernel'.
+Finding duplicate cells in `\quant_serial_kernel'.
+Computing hashes of 74 cells of `\quant_serial_kernel'.
+Finding duplicate cells in `\quant_serial_kernel'.
+Computing hashes of 73 cells of `\quant_serial_kernel'.
+Finding duplicate cells in `\quant_serial_kernel'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\quant_serial_harness'.
+Computing hashes of 280 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 232 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 227 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+<suppressed ~159 debug messages>
+Removed a total of 55 cells.
+
+3.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \quant_serial_kernel..
+Finding unused cells or wires in module \quant_serial_harness..
+Removed 0 unused cells and 177 unused wires.
+<suppressed ~2 debug messages>
+
+3.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_kernel.
+Optimizing module quant_serial_harness.
+
+3.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \quant_serial_kernel..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \quant_serial_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~106 debug messages>
+
+3.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \quant_serial_kernel.
+  Optimizing cells in module \quant_serial_harness.
+Performed a total of 0 changes.
+
+3.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\quant_serial_kernel'.
+Computing hashes of 73 cells of `\quant_serial_kernel'.
+Finding duplicate cells in `\quant_serial_kernel'.
+Finding identical cells in module `\quant_serial_harness'.
+Computing hashes of 227 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Removed a total of 0 cells.
+
+3.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \quant_serial_kernel..
+Finding unused cells or wires in module \quant_serial_harness..
+
+3.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_kernel.
+Optimizing module quant_serial_harness.
+
+3.8.14. Finished fast OPT passes. (There is nothing left to do.)
+
+3.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 8) from port A of cell quant_serial_kernel.$add$serial_tie_away.sv:85$346 ($add).
+Removed top 7 bits (of 8) from port B of cell quant_serial_kernel.$add$serial_tie_away.sv:85$346 ($add).
+Removed top 26 bits (of 32) from port B of cell quant_serial_kernel.$gt$serial_tie_away.sv:117$381 ($gt).
+Removed top 31 bits (of 32) from port B of cell quant_serial_kernel.$sub$serial_tie_away.sv:124$383 ($sub).
+Removed top 24 bits (of 32) from port Y of cell quant_serial_kernel.$sub$serial_tie_away.sv:124$383 ($sub).
+Removed top 7 bits (of 8) from port B of cell quant_serial_kernel.$eq$serial_tie_away.sv:125$384 ($eq).
+Removed top 31 bits (of 32) from port B of cell quant_serial_kernel.$add$serial_tie_away.sv:131$386 ($add).
+Removed top 28 bits (of 32) from port Y of cell quant_serial_kernel.$add$serial_tie_away.sv:131$386 ($add).
+Removed top 1 bits (of 5) from port B of cell quant_serial_kernel.$procmux$563_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell quant_serial_kernel.$procmux$609_CMP0 ($eq).
+Removed top 28 bits (of 32) from wire quant_serial_kernel.$add$serial_tie_away.sv:131$386_Y.
+Removed top 24 bits (of 32) from wire quant_serial_kernel.$sub$serial_tie_away.sv:124$383_Y.
+Removed top 31 bits (of 32) from port B of cell quant_serial_harness.$gt$quant_harness.sv:95$9 ($gt).
+Removed top 26 bits (of 32) from port B of cell quant_serial_harness.$le$quant_harness.sv:95$10 ($le).
+Removed top 6 bits (of 8) from port B of cell quant_serial_harness.$add$quant_harness.sv:95$12 ($add).
+Removed top 31 bits (of 32) from port B of cell quant_serial_harness.$add$quant_harness.sv:115$30 ($add).
+Removed top 25 bits (of 32) from port Y of cell quant_serial_harness.$add$quant_harness.sv:115$30 ($add).
+Removed top 1 bits (of 4) from port B of cell quant_serial_harness.$eq$quant_harness.sv:122$40 ($eq).
+Removed top 25 bits (of 32) from port B of cell quant_serial_harness.$le$quant_harness.sv:123$43 ($le).
+Removed top 29 bits (of 32) from port B of cell quant_serial_harness.$eq$quant_harness.sv:127$52 ($eq).
+Removed top 30 bits (of 32) from port B of cell quant_serial_harness.$eq$quant_harness.sv:128$59 ($eq).
+Removed top 6 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:128$61 ($eq).
+Removed top 24 bits (of 32) from port B of cell quant_serial_harness.$eq$quant_harness.sv:129$66 ($eq).
+Removed top 1 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:130$75 ($eq).
+Removed top 7 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:132$89 ($eq).
+Removed top 25 bits (of 32) from port B of cell quant_serial_harness.$eq$quant_harness.sv:133$92 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:133$96 ($eq).
+Removed top 26 bits (of 32) from port B of cell quant_serial_harness.$gt$quant_harness.sv:82$116 ($gt).
+Removed top 1 bits (of 34) from port A of cell quant_serial_harness.$shr$quant_harness.sv:84$123 ($shr).
+Removed top 1 bits (of 34) from port A of cell quant_serial_harness.$sub$quant_harness.sv:85$125 ($sub).
+Removed top 1 bits (of 34) from port Y of cell quant_serial_harness.$sub$quant_harness.sv:85$125 ($sub).
+Removed top 1 bits (of 34) from port B of cell quant_serial_harness.$sub$quant_harness.sv:85$125 ($sub).
+Removed top 33 bits (of 34) from port A of cell quant_serial_harness.$shl$quant_harness.sv:87$127 ($shl).
+Removed top 33 bits (of 34) from mux cell quant_serial_harness.$ternary$quant_harness.sv:88$132 ($mux).
+Removed top 33 bits (of 34) from port B of cell quant_serial_harness.$add$quant_harness.sv:88$133 ($add).
+Removed top 25 bits (of 32) from port B of cell quant_serial_harness.$gt$quant_harness.sv:90$134 ($gt).
+Removed top 7 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$146 ($eq).
+Removed top 6 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$152 ($eq).
+Removed top 6 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$158 ($eq).
+Removed top 5 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$164 ($eq).
+Removed top 5 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$170 ($eq).
+Removed top 5 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$176 ($eq).
+Removed top 5 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$182 ($eq).
+Removed top 4 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$188 ($eq).
+Removed top 4 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$194 ($eq).
+Removed top 4 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$200 ($eq).
+Removed top 4 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$206 ($eq).
+Removed top 4 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$212 ($eq).
+Removed top 4 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$218 ($eq).
+Removed top 4 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$224 ($eq).
+Removed top 4 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$230 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$236 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$242 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$248 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$254 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$260 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$266 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$272 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$278 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$284 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$290 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$296 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$302 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$308 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$314 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$320 ($eq).
+Removed top 3 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$326 ($eq).
+Removed top 2 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$332 ($eq).
+Removed top 2 bits (of 8) from port B of cell quant_serial_harness.$eq$quant_harness.sv:142$338 ($eq).
+Removed top 1 bits (of 34) from port Y of cell quant_serial_harness.$shl$quant_harness.sv:85$124 ($shl).
+Removed top 33 bits (of 34) from wire quant_serial_harness.$ternary$quant_harness.sv:88$132_Y.
+Removed top 1 bits (of 34) from wire quant_serial_harness.$sub$quant_harness.sv:85$125_Y.
+Removed top 1 bits (of 34) from wire quant_serial_harness.$shl$quant_harness.sv:85$124_Y.
+Removed top 25 bits (of 32) from wire quant_serial_harness.$add$quant_harness.sv:115$30_Y.
+
+3.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \quant_serial_kernel..
+Finding unused cells or wires in module \quant_serial_harness..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~2 debug messages>
+
+3.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.12. Executing OPT pass (performing simple optimizations).
+
+3.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_kernel.
+Optimizing module quant_serial_harness.
+
+3.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\quant_serial_kernel'.
+Computing hashes of 71 cells of `\quant_serial_kernel'.
+Finding duplicate cells in `\quant_serial_kernel'.
+Finding identical cells in module `\quant_serial_harness'.
+Computing hashes of 227 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Removed a total of 0 cells.
+
+3.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \quant_serial_kernel..
+Finding unused cells or wires in module \quant_serial_harness..
+
+3.12.4. Finished fast OPT passes.
+
+3.13. Executing SORT pass.
+
+3.14. Printing statistics.
+
+=== quant_serial_harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      185 wires
+      713 wire bits
+       26 public wires
+      312 public wire bits
+        1 ports
+        1 port bits
+      226 cells
+        3   $add
+        3   $anyconst
+        2   $anyseq
+       56   $check
+        5   $dff
+       51   $eq
+        4   $gt
+        3   $le
+       61   $logic_and
+        6   $logic_not
+        1   $logic_or
+       27   $mux
+        2   $shl
+        1   $shr
+        1   $sub
+        1 submodules
+        1   quant_serial_kernel
+
+=== quant_serial_kernel ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       81 wires
+      810 wire bits
+       25 public wires
+      236 public wire bits
+       13 ports
+       75 port bits
+       71 cells
+        2   $add
+       10   $dff
+        5   $eq
+        1   $gt
+        1   $logic_and
+        3   $logic_not
+        1   $logic_or
+        2   $mem_v2
+       39   $mux
+        5   $pmux
+        1   $reduce_or
+        1   $sub
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      297 quant_serial_harness
+       71 quant_serial_kernel
+
+        +----------Count including submodules.
+        | 
+      266 wires
+     1523 wire bits
+       51 public wires
+      548 public wire bits
+       14 ports
+       76 port bits
+        - memories
+        - memory bits
+        - processes
+      297 cells
+        5   $add
+        3   $anyconst
+        2   $anyseq
+       56   $check
+       15   $dff
+       56   $eq
+        5   $gt
+        3   $le
+       62   $logic_and
+        9   $logic_not
+        2   $logic_or
+        2   $mem_v2
+       66   $mux
+        5   $pmux
+        1   $reduce_or
+        2   $shl
+        1   $shr
+        2   $sub
+        1 submodules
+        1   quant_serial_kernel
+
+3.15. Executing CHECK pass (checking for obvious problems).
+Checking module quant_serial_harness...
+Checking module quant_serial_kernel...
+Found and reported 0 problems.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `quant_serial_harness'. Setting top module to quant_serial_harness.
+
+4.1. Analyzing design hierarchy..
+Top module:  \quant_serial_harness
+Used module:     \quant_serial_kernel
+
+4.2. Analyzing design hierarchy..
+Top module:  \quant_serial_harness
+Used module:     \quant_serial_kernel
+Removed 0 unused modules.
+Module quant_serial_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+5. Executing jny backend.
+
+6. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 3cfe4f2574, time: 0.03s, user: 0.03s, system: 0.01s, MEM: 18.50 MB peak
+Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 17% 5x opt_clean (0 sec), 15% 2x hierarchy (0 sec), ...

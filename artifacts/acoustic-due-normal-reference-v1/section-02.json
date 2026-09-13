@@ -1,0 +1,3515 @@
+{
+  "auc": 0.573725,
+  "fpr": 0.0,
+  "recall": 0.005,
+  "threshold": 56.74485606713268,
+  "confusion_matrix": [
+    [
+      200,
+      0
+    ],
+    [
+      199,
+      1
+    ]
+  ],
+  "section": "02",
+  "domains": {
+    "source": {
+      "auc": 0.6199,
+      "fpr": 0.0,
+      "recall": 0.01,
+      "threshold": 56.74485606713268,
+      "confusion_matrix": [
+        [
+          100,
+          0
+        ],
+        [
+          99,
+          1
+        ]
+      ]
+    },
+    "target": {
+      "auc": 0.5771000000000001,
+      "fpr": 0.0,
+      "recall": 0.0,
+      "threshold": 56.74485606713268,
+      "confusion_matrix": [
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          0
+        ]
+      ]
+    }
+  },
+  "gate_passed": false,
+  "reference": [
+    "fan/train/section_02_source_train_normal_0167_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0174_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0173_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0087_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0186_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0021_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0027_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0123_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0195_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0184_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0005_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0002_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0159_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0163_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0106_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0152_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0050_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0082_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0188_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0181_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0129_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0014_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0169_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0077_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0022_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0171_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0137_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0080_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0062_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0074_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0081_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0120_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0147_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0116_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0130_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0134_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0067_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0170_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0003_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0009_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0079_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0107_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0089_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0056_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0076_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0153_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0011_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0182_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0145_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0192_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0165_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0124_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0066_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0042_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0187_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0041_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0004_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0115_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0071_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0138_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0113_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0098_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0132_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0154_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0052_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0024_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0000_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0023_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0049_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0093_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0034_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0015_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0020_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0156_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0109_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0104_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0111_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0070_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0075_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0179_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0054_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0040_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0125_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0135_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0084_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0131_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0001_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0028_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0008_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0128_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0191_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0051_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0045_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0119_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0096_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0018_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0097_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0044_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0194_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0155_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0164_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0166_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0033_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0032_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0048_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0140_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0122_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0161_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0127_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0090_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0158_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0039_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0026_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0017_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0197_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0037_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0010_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0083_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0046_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0144_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0092_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0031_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0196_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0177_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0016_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0110_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0178_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0059_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0047_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0112_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0105_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0168_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0030_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0012_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0198_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0185_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0117_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0160_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0094_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0057_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0183_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0190_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0086_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0189_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0136_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0121_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0043_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0139_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0142_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0199_strenght_1_ambient.wav",
+    "fan/train/section_02_target_train_normal_0000_strength_1_Fact_D_ambient.wav",
+    "fan/train/section_02_target_train_normal_0001_strength_1_Fact_D_ambient.wav",
+    "fan/train/section_02_target_train_normal_0002_strength_1_Fact_D_ambient.wav"
+  ],
+  "calibration": [
+    "fan/train/section_02_source_train_normal_0013_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0133_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0175_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0088_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0072_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0065_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0068_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0172_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0100_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0036_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0102_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0029_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0069_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0025_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0193_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0085_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0053_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0151_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0058_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0149_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0114_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0061_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0150_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0073_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0148_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0143_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0146_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0035_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0157_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0055_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0180_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0063_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0126_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0078_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0064_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0118_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0038_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0101_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0060_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0091_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0176_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0099_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0103_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0108_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0095_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0141_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0006_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0019_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0007_strenght_1_ambient.wav",
+    "fan/train/section_02_source_train_normal_0162_strenght_1_ambient.wav"
+  ],
+  "records": [
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0000.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0001.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0002.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0003.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0004.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0005.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0006.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0007.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0008.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0009.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0010.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0011.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0012.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0013.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0014.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0015.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0016.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0017.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0018.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0019.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0020.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0021.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0022.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0023.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0024.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0025.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0026.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0027.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0028.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0029.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0030.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0031.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0032.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0033.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0034.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0035.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0036.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0037.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0038.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0039.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0040.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0041.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0042.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0043.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0044.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0045.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0046.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0047.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0048.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0049.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0050.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0051.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0052.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0053.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0054.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0055.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0056.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0057.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0058.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0059.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0060.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0061.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0062.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0063.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0064.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0065.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0066.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0067.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0068.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0069.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0070.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0071.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0072.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0073.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0074.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0075.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0076.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0077.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0078.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0079.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0080.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0081.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0082.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0083.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0084.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0085.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0086.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0087.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0088.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0089.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0090.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0091.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0092.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0093.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0094.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0095.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0096.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0097.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0098.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_anomaly_0099.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0000.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0001.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0002.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0003.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0004.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0005.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0006.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0007.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0008.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0009.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0010.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0011.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0012.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0013.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0014.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0015.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0016.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0017.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0018.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0019.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0020.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0021.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0022.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0023.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0024.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0025.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0026.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0027.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0028.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0029.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0030.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0031.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0032.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0033.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0034.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0035.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0036.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0037.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0038.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0039.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0040.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0041.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0042.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0043.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0044.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0045.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0046.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0047.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0048.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0049.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0050.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0051.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0052.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0053.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0054.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0055.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0056.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0057.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0058.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0059.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0060.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0061.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0062.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0063.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0064.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0065.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0066.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0067.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0068.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0069.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0070.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0071.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0072.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0073.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0074.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0075.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0076.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0077.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0078.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0079.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0080.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0081.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0082.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0083.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0084.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0085.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0086.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0087.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0088.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0089.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0090.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0091.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0092.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0093.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0094.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0095.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0096.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0097.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0098.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/source_test/section_02_source_test_normal_0099.wav",
+      "section": "02",
+      "domain": "source",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0000.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0001.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0002.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0003.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0004.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0005.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0006.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0007.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0008.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0009.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0010.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0011.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0012.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0013.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0014.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0015.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0016.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0017.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0018.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0019.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0020.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0021.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0022.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0023.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0024.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0025.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0026.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0027.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0028.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0029.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0030.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0031.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0032.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0033.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0034.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0035.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0036.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0037.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0038.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0039.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0040.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0041.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0042.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0043.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0044.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0045.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0046.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0047.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0048.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0049.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0050.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0051.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0052.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0053.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0054.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0055.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0056.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0057.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0058.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0059.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0060.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0061.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0062.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0063.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0064.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0065.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0066.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0067.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0068.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0069.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0070.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0071.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0072.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0073.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0074.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0075.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0076.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0077.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0078.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0079.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0080.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0081.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0082.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0083.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0084.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0085.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0086.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0087.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0088.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0089.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0090.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0091.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0092.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0093.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0094.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0095.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0096.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0097.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0098.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_anomaly_0099.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 1
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0000.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0001.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0002.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0003.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0004.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0005.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0006.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0007.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0008.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0009.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0010.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0011.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0012.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0013.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0014.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0015.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0016.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0017.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0018.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0019.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0020.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0021.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0022.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0023.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0024.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0025.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0026.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0027.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0028.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0029.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0030.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0031.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0032.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0033.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0034.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0035.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0036.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0037.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0038.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0039.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0040.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0041.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0042.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0043.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0044.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0045.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0046.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0047.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0048.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0049.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0050.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0051.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0052.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0053.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0054.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0055.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0056.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0057.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0058.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0059.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0060.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0061.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0062.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0063.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0064.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0065.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0066.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0067.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0068.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0069.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0070.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0071.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0072.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0073.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0074.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0075.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0076.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0077.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0078.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0079.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0080.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0081.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0082.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0083.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0084.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0085.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0086.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0087.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0088.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0089.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "calibration",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0090.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0091.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0092.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0093.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0094.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0095.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0096.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0097.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0098.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    },
+    {
+      "name": "fan/target_test/section_02_target_test_normal_0099.wav",
+      "section": "02",
+      "domain": "target",
+      "role": "fit",
+      "label": 0
+    }
+  ],
+  "scores": [
+    16.903455251005706,
+    12.225196190880508,
+    10.515567325347307,
+    11.474961235178755,
+    17.28868986115079,
+    12.427227128946294,
+    14.93747944959771,
+    16.355202438916052,
+    10.137069305561475,
+    11.419997444591127,
+    12.98004263036615,
+    11.739601033133445,
+    12.265364033813364,
+    12.059532443691415,
+    9.864006177027926,
+    25.264980487851073,
+    13.985649964983908,
+    15.087013265169169,
+    23.266433190238825,
+    14.661051783479927,
+    13.233485916770272,
+    12.990902620295131,
+    22.70764525246096,
+    11.946596935003782,
+    10.176363472863109,
+    15.13244992981042,
+    16.156121690964792,
+    11.294237131071313,
+    20.48984295206821,
+    14.19526251220246,
+    16.83576965090669,
+    8.956779953544912,
+    12.045338992041232,
+    17.75717963193945,
+    9.945866842243975,
+    11.733433245803766,
+    12.305634375505129,
+    18.484633437161914,
+    10.821174708521143,
+    18.74475295611589,
+    11.30637197712781,
+    12.602927732160422,
+    12.772906568511326,
+    20.92435299924269,
+    12.755140720880627,
+    9.284004974527939,
+    14.460215200766703,
+    45.60088744130647,
+    12.838271971113047,
+    13.527312030906872,
+    12.08030734905224,
+    15.275925959704457,
+    14.041092221691612,
+    19.32016673830701,
+    8.549898487326525,
+    74.19877550027093,
+    14.643741718070038,
+    10.323719321840171,
+    10.190502998961565,
+    10.683839972846267,
+    10.499996620235315,
+    40.906540809470236,
+    15.921988369021074,
+    19.468720502739725,
+    17.475881902305336,
+    14.959037363065343,
+    9.816651182907279,
+    9.381790900542567,
+    11.317595803127467,
+    8.720448487555466,
+    11.692362916076737,
+    47.32634985450102,
+    11.050572001378313,
+    9.542608245246884,
+    12.75171252164609,
+    11.487751536600376,
+    11.60989738216278,
+    11.51575796796791,
+    9.384745440371308,
+    12.336297417721797,
+    12.575663633093283,
+    14.057738051465984,
+    11.366961064009368,
+    23.936961921266633,
+    11.81504259999894,
+    9.367745792220758,
+    9.592916916981176,
+    18.779647593391147,
+    12.651277804833875,
+    15.627782127849786,
+    12.316725644424599,
+    20.413705060410773,
+    11.32992353073754,
+    13.091905839209877,
+    19.428135233217912,
+    10.248225381488226,
+    14.999652478211928,
+    18.22020502025197,
+    10.246898207974334,
+    17.13996142357898,
+    12.053310281339506,
+    10.56467220826125,
+    12.438600624143447,
+    9.617376137955578,
+    11.31796317193322,
+    11.72821071250832,
+    12.450453174644915,
+    9.157099352675772,
+    10.613547434539905,
+    9.313783096081918,
+    9.097551083051037,
+    11.711481621170217,
+    8.8655524937595,
+    17.27470823290059,
+    15.550757705826294,
+    12.533720213469698,
+    9.320637062707092,
+    10.318274976779136,
+    9.770680362690124,
+    15.409828889421009,
+    15.240792145932938,
+    9.040528521763774,
+    13.097418032623997,
+    27.477661989082193,
+    13.856568372341789,
+    13.564612283588902,
+    10.426738934583817,
+    9.834345794697484,
+    24.1469381746155,
+    9.649472563278328,
+    16.515835000345295,
+    13.799597255440327,
+    10.609461245557087,
+    9.72003776798097,
+    10.312633534623954,
+    9.162984651976776,
+    12.538037032138378,
+    13.039114280493587,
+    11.562707703979333,
+    10.081213452635195,
+    16.35394935689536,
+    10.83731429021776,
+    14.14499481115311,
+    13.0151719976667,
+    10.57073540811979,
+    19.763540272242206,
+    11.330313231053267,
+    10.201611603687395,
+    11.207283944077874,
+    10.339621422810652,
+    11.866339060214687,
+    9.241612523968612,
+    9.455927583867087,
+    10.548526707254878,
+    10.379569828004826,
+    16.412653089499212,
+    8.612895272816873,
+    18.728062835616857,
+    9.338898583017054,
+    14.440997713206869,
+    11.58186597605492,
+    15.366674528529842,
+    11.736853427654966,
+    11.945730389264758,
+    37.86171276792322,
+    13.865164634124213,
+    21.39673032875636,
+    9.675097771302719,
+    16.141563676351765,
+    12.40839436670336,
+    10.018054565470349,
+    19.3449102526705,
+    20.406609186886687,
+    10.839505011381194,
+    12.574914876895727,
+    14.001179265430352,
+    11.283220422994168,
+    10.449088592513624,
+    9.21184225682002,
+    20.175755759993468,
+    11.65957303799045,
+    9.195427350973977,
+    12.711447580649782,
+    11.020346508879129,
+    10.152043125620255,
+    12.005305504115746,
+    15.039945932914454,
+    9.381727012765898,
+    16.645442753875766,
+    13.88024387586473,
+    8.235291401765743,
+    9.937568062563189,
+    25.36430285053302,
+    12.283379325365546,
+    13.366413378828403,
+    11.168133076166333,
+    10.807355963694485,
+    10.175095211113996,
+    9.757922382795996,
+    12.136522214577942,
+    21.176184082065948,
+    16.412384857571983,
+    21.286024989518353,
+    20.528351794189884,
+    17.729216592366583,
+    22.596641865594446,
+    25.29422755993004,
+    15.141486866394267,
+    19.053950869818067,
+    19.684062134102177,
+    21.601588109394573,
+    15.092194353495318,
+    20.297712346124033,
+    16.221575561065425,
+    21.72379627941359,
+    17.12600070237698,
+    18.077027091854895,
+    45.22897319747912,
+    16.480151092223775,
+    19.434399474043545,
+    19.534422915451465,
+    17.62448316387453,
+    15.379671126342245,
+    13.55050876820664,
+    17.526841341373242,
+    17.25694511350417,
+    17.446257259469174,
+    14.701948579809676,
+    48.18803495608423,
+    20.068263662048285,
+    37.24575083623694,
+    20.874072815641952,
+    19.935168372109636,
+    19.501192320681245,
+    18.13974839750317,
+    17.750007093930673,
+    20.66501524499959,
+    22.05833260108629,
+    19.148941750164692,
+    16.762250013109092,
+    16.109893531247945,
+    19.932032889637554,
+    15.964467938855819,
+    17.829095022915244,
+    13.82320176622506,
+    16.29338997837952,
+    15.153966275431472,
+    14.304646566798512,
+    14.637350051123482,
+    20.681280255468796,
+    16.260523674918144,
+    15.75856241863688,
+    19.53355575748374,
+    19.650766876282223,
+    19.005902562951608,
+    21.06673060124682,
+    18.975549187049438,
+    20.7717646592522,
+    16.4977013023736,
+    21.517403123425325,
+    18.280914448953975,
+    17.76127478915694,
+    16.131453456155636,
+    19.903961155584824,
+    25.234157419631405,
+    22.20186069019518,
+    36.62189765366882,
+    19.386580861551547,
+    20.429788025178084,
+    21.078078119056357,
+    15.584629009381217,
+    18.381464070528825,
+    17.493108514289684,
+    16.02295234019014,
+    15.629613224029242,
+    15.4595384964439,
+    17.528045561733435,
+    18.726380003120873,
+    17.22518909606937,
+    16.366567077595462,
+    16.79132934734398,
+    17.643001369623338,
+    22.71656214432663,
+    18.656410949864938,
+    18.941224934571597,
+    20.651846136827032,
+    19.666080230721132,
+    17.466760587395605,
+    17.68570473245557,
+    18.532484088475258,
+    25.26323314300753,
+    17.723416853049105,
+    15.80109091430272,
+    18.27824745276983,
+    16.94433205745995,
+    17.80603343059698,
+    17.81657126343781,
+    17.069564967247615,
+    20.760655532360214,
+    16.795602311964625,
+    19.71274227893394,
+    21.73792821326127,
+    19.086281507554123,
+    18.43577670770115,
+    18.359959276586,
+    16.02021364841062,
+    17.116714671981182,
+    18.14339419773596,
+    20.638236611089866,
+    20.26863307652558,
+    16.715591430916387,
+    15.752560700775613,
+    18.347461013953215,
+    18.425277295065147,
+    16.70567864022078,
+    18.085193937116475,
+    18.63859307273396,
+    21.23690955850778,
+    20.180552698305753,
+    20.166758569954446,
+    14.446269302288583,
+    16.0874483747156,
+    16.25779708936629,
+    20.420686743858838,
+    17.96959351618138,
+    36.86684649231023,
+    17.32503300963031,
+    18.932657736953185,
+    16.219588614329073,
+    20.990367472974718,
+    16.806587189793316,
+    20.55637276317297,
+    21.992208423981555,
+    17.029723276821638,
+    25.32842380413425,
+    18.180954075072876,
+    15.410727473116546,
+    15.642947028805807,
+    14.35105280009671,
+    16.811850720367943,
+    16.159847764030243,
+    19.97520372914096,
+    15.103054028694865,
+    16.516097860940707,
+    18.261253351584102,
+    18.59574855429869,
+    17.90631513095241,
+    14.330760214768368,
+    17.271980025539772,
+    18.370016318924694,
+    14.857032052080257,
+    20.956707826182765,
+    19.694513602868305,
+    33.546677360167735,
+    16.20320300444349,
+    19.137724517947202,
+    19.829385627133078,
+    13.884593089106628,
+    18.906157016497005,
+    16.464665446485615,
+    17.85449767627556,
+    15.763191274362832,
+    18.378850190080048,
+    19.546605699903935,
+    17.354784203361252,
+    19.34054930122595,
+    16.46415193631964,
+    19.38105069614466,
+    17.133954641702324,
+    14.445536215759041,
+    20.00471719128873,
+    16.841477779495776,
+    20.78648163794113,
+    17.130156101381832,
+    15.799858223949542,
+    16.576125323981163,
+    21.128603243836366,
+    16.963810066736972,
+    18.186039651262192,
+    26.32188053025973,
+    14.706564680559893,
+    17.825522125957516,
+    16.043492751404756,
+    13.787812530970655,
+    17.436885357320744,
+    15.973312928537476,
+    13.966945607656442,
+    16.837274441602194,
+    14.336455556613132,
+    17.04745594953148,
+    15.877993301511689,
+    17.4275044377571,
+    16.910757142799362,
+    19.080504622482955,
+    14.923152080563774,
+    20.780424496216117,
+    20.192688778407355,
+    15.04078615924188,
+    17.168364841429764,
+    17.76691259936079
+  ],
+  "calibration_scores": [
+    56.74485606713268,
+    10.831650066060604,
+    10.556489389440136,
+    12.172224876450459,
+    10.640084192033795,
+    9.630084080712829,
+    16.844796826113598,
+    9.398373081273407,
+    9.794955485200374,
+    13.384221035675589,
+    8.524240171568135,
+    11.32799780153943,
+    12.87743960889283,
+    11.340941559446302,
+    13.200088316736881,
+    9.577328131222366,
+    16.11480876894251,
+    8.877767355365568,
+    9.05771790223929,
+    33.43724888909569,
+    8.843826002944418,
+    11.376064530501052,
+    13.232023207428306,
+    29.382903212488433,
+    23.003327133924955,
+    12.814530237493452,
+    16.229796971971528,
+    12.90197639123904,
+    10.198316379080131,
+    9.400376698934341,
+    11.202357135251399,
+    8.739026676139835,
+    10.79248678844661,
+    13.202711414805414,
+    9.570286904619506,
+    14.913635975362808,
+    15.548381075576616,
+    9.696079732291494,
+    9.743472707376855,
+    12.897974710676962,
+    10.318042384065818,
+    9.406205754921835,
+    20.50816748092996,
+    10.515644319575719,
+    10.117212644169465,
+    14.58529666684917,
+    12.236323506911594,
+    9.24474322681504,
+    15.606527843751328,
+    11.53991534212119
+  ]
+}

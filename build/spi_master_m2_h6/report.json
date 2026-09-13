@@ -1,0 +1,12 @@
+{
+  "test": "generic_master",
+  "cpol": 1,
+  "cpha": 0,
+  "half_period": 6,
+  "packets": 24,
+  "bytes": 100,
+  "cycles": 10737,
+  "reset_midbyte": "PASS",
+  "reset_between_bytes": "PASS",
+  "cs_hold_and_clock_spacing": "PASS"
+}

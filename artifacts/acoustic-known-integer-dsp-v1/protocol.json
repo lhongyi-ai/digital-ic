@@ -1,0 +1,15 @@
+{
+  "source_sha256": "7ad463073f96d1be7c2ff2a71861755912604dc1e6db4120bd40a0c13200cbb8",
+  "script_sha256": "1755264f999c79c2562a217327342039365745169db29e688febee2830ab3ce4",
+  "manifests": {
+    "data/mimii-known-machines-v1/development.json": "7aeaf5b87a9168369f658c61ba9e90cafe3978d60b16a30e025d20c19a5f1fd0",
+    "data/mimii-known-calibration00-v1/development.json": "d04460f87d7f859ca9e2d5a92da659b31ac30a5a3bbfcf4f1ca0d81764d7aa2c"
+  },
+  "stage": "integer DSP development features; no final evaluation, no RTL claim",
+  "input_shift": 1,
+  "n": 1024,
+  "windows": 156,
+  "coefficients": "signed Q15 amplitude32767, quarter-wave table; Hann RNE((32767-cos)/2)",
+  "arithmetic": "48bit DFT accumulation, RNE >>8 complex32, square uint64 RNE >>8, sum156; log2 LUT10 bits output Q12",
+  "final_test_opened": false
+}

@@ -1,0 +1,18 @@
+{
+  "params": [
+    {
+      "extratreesclassifier__max_depth": 5
+    },
+    {
+      "extratreesclassifier__max_depth": null
+    }
+  ],
+  "mean_auc": [
+    0.8149305555555555,
+    0.8333333333333334
+  ],
+  "std_auc": [
+    0.0314921176204812,
+    0.025727268823392668
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "source_sha256": "a195495dd5a85a7e992104c02450f07fdd68058420a372e2a5448134c6007155",
+  "script_sha256": "9e329ca2c7e9d4e1130540ab9bc9368d9b7b7c1b082c7d859aaaa03e2937db9b",
+  "helper_sha256": "53f092f07358ba0d63852210e7c098903a26768e37d74b1b7903374353f64366",
+  "scope": "each section: 203 normal reference/calibration files against 400 development files",
+  "screen": "500 Hz antialias resampling, all lags with >=2 s overlap; abs correlation .8",
+  "confirmation": "16 kHz raw correlation, +/-32 samples refinement, .98 threshold; top20 or up to100 candidates per section",
+  "exact_chunks": "1 second at 0.5 second steps, all sections and nonconstant chunks",
+  "final_test_opened": false,
+  "no_training": true
+}

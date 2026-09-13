@@ -1,0 +1,134 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:32 (32)
+Elapsed process time [H:MM:SS (secs)]: 0:00:33 (33)
+engine_0 (smtbmc bitwuzla) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_130_70 at quant_harness.sv:130.13-130.95 step 5
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_135_101 at quant_harness.sv:135.13-135.46 step 5
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_139 at quant_harness.sv:142.13-142.46 step 5
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_126_44 at quant_harness.sv:126.13-126.64 step 5
+cover trace: engine_0/trace10.vcd
+cover trace: engine_0/trace10.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_136_104 at quant_harness.sv:136.13-136.42 step 9
+cover trace: engine_0/trace11.vcd
+cover trace: engine_0/trace11.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_163 at quant_harness.sv:142.13-142.46 step 9
+cover trace: engine_0/trace12.vcd
+cover trace: engine_0/trace12.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_169 at quant_harness.sv:142.13-142.46 step 10
+cover trace: engine_0/trace13.vcd
+cover trace: engine_0/trace13.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_175 at quant_harness.sv:142.13-142.46 step 11
+cover trace: engine_0/trace14.vcd
+cover trace: engine_0/trace14.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_181 at quant_harness.sv:142.13-142.46 step 12
+cover trace: engine_0/trace15.vcd
+cover trace: engine_0/trace15.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_187 at quant_harness.sv:142.13-142.46 step 13
+cover trace: engine_0/trace16.vcd
+cover trace: engine_0/trace16.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_193 at quant_harness.sv:142.13-142.46 step 14
+cover trace: engine_0/trace17.vcd
+cover trace: engine_0/trace17.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_199 at quant_harness.sv:142.13-142.46 step 15
+cover trace: engine_0/trace18.vcd
+cover trace: engine_0/trace18.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_205 at quant_harness.sv:142.13-142.46 step 16
+cover trace: engine_0/trace19.vcd
+cover trace: engine_0/trace19.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_211 at quant_harness.sv:142.13-142.46 step 17
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_134_98 at quant_harness.sv:134.13-134.47 step 5
+cover trace: engine_0/trace20.vcd
+cover trace: engine_0/trace20.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_217 at quant_harness.sv:142.13-142.46 step 18
+cover trace: engine_0/trace21.vcd
+cover trace: engine_0/trace21.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_223 at quant_harness.sv:142.13-142.46 step 19
+cover trace: engine_0/trace22.vcd
+cover trace: engine_0/trace22.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_229 at quant_harness.sv:142.13-142.46 step 20
+cover trace: engine_0/trace23.vcd
+cover trace: engine_0/trace23.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_235 at quant_harness.sv:142.13-142.46 step 21
+cover trace: engine_0/trace24.vcd
+cover trace: engine_0/trace24.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_241 at quant_harness.sv:142.13-142.46 step 22
+cover trace: engine_0/trace25.vcd
+cover trace: engine_0/trace25.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_247 at quant_harness.sv:142.13-142.46 step 23
+cover trace: engine_0/trace26.vcd
+cover trace: engine_0/trace26.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_253 at quant_harness.sv:142.13-142.46 step 24
+cover trace: engine_0/trace27.vcd
+cover trace: engine_0/trace27.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_259 at quant_harness.sv:142.13-142.46 step 25
+cover trace: engine_0/trace28.vcd
+cover trace: engine_0/trace28.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_265 at quant_harness.sv:142.13-142.46 step 26
+cover trace: engine_0/trace29.vcd
+cover trace: engine_0/trace29.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_271 at quant_harness.sv:142.13-142.46 step 27
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_145 at quant_harness.sv:142.13-142.46 step 6
+cover trace: engine_0/trace30.vcd
+cover trace: engine_0/trace30.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_277 at quant_harness.sv:142.13-142.46 step 28
+cover trace: engine_0/trace31.vcd
+cover trace: engine_0/trace31.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_283 at quant_harness.sv:142.13-142.46 step 29
+cover trace: engine_0/trace32.vcd
+cover trace: engine_0/trace32.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_289 at quant_harness.sv:142.13-142.46 step 30
+cover trace: engine_0/trace33.vcd
+cover trace: engine_0/trace33.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_295 at quant_harness.sv:142.13-142.46 step 31
+cover trace: engine_0/trace34.vcd
+cover trace: engine_0/trace34.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_301 at quant_harness.sv:142.13-142.46 step 32
+cover trace: engine_0/trace35.vcd
+cover trace: engine_0/trace35.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_307 at quant_harness.sv:142.13-142.46 step 33
+cover trace: engine_0/trace36.vcd
+cover trace: engine_0/trace36.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_313 at quant_harness.sv:142.13-142.46 step 34
+cover trace: engine_0/trace37.vcd
+cover trace: engine_0/trace37.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_319 at quant_harness.sv:142.13-142.46 step 35
+cover trace: engine_0/trace38.vcd
+cover trace: engine_0/trace38.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_325 at quant_harness.sv:142.13-142.46 step 36
+cover trace: engine_0/trace39.vcd
+cover trace: engine_0/trace39.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_331 at quant_harness.sv:142.13-142.46 step 37
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_129_63 at quant_harness.sv:129.13-129.85 step 6
+cover trace: engine_0/trace40.vcd
+cover trace: engine_0/trace40.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_337 at quant_harness.sv:142.13-142.46 step 38
+cover trace: engine_0/trace41.vcd
+cover trace: engine_0/trace41.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_132_84 at quant_harness.sv:132.13-132.94 step 38
+cover trace: engine_0/trace42.vcd
+cover trace: engine_0/trace42.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_131_77 at quant_harness.sv:131.13-131.94 step 38
+cover trace: engine_0/trace5.vcd
+cover trace: engine_0/trace5.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_128_56 at quant_harness.sv:128.13-128.81 step 6
+cover trace: engine_0/trace6.vcd
+cover trace: engine_0/trace6.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_127_49 at quant_harness.sv:127.13-127.81 step 6
+cover trace: engine_0/trace7.vcd
+cover trace: engine_0/trace7.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_151 at quant_harness.sv:142.13-142.46 step 7
+cover trace: engine_0/trace8.vcd
+cover trace: engine_0/trace8.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_133_91 at quant_harness.sv:133.13-133.83 step 7
+cover trace: engine_0/trace9.vcd
+cover trace: engine_0/trace9.yw
+  reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_157 at quant_harness.sv:142.13-142.46 step 8

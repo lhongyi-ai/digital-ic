@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "board": "UPduino v3.1, USB descriptor and user confirmed 2026-09-10",
+  "board_verified": true,
+  "device": "i:0x0403:0x6014:0",
+  "flash_bytes": 4194304,
+  "erase_bytes": 4096,
+  "config_end": 262144,
+  "input_offset": 262144,
+  "input_bytes": 65536,
+  "log_offset": 3145728,
+  "log_bytes": 131072,
+  "clock_hz": 12000000,
+  "note": "For this connected board only. Pinout checked against official UPduino 3.1 PCB; JEDEC EF4016 read successfully. Internal HFOSC /4 is nominal12MHz; physical frequency, external OSC jumper and electrical waveforms remain unmeasured. ADXL345 absent. Full original Flash backup retained. Timing builds constrain13.2MHz for +10% HFOSC corner.",
+  "expected_flash_id": "EF4016",
+  "clock_source": "hfosc12",
+  "nominal_clock_hz": 12000000,
+  "clock_frequency_measured": false,
+  "external_oscillator_connection_verified": false,
+  "backup_path": "measurements/2026-09-10-upduino31/original-flash-4MiB.bin",
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "pinout_source": "https://github.com/tinyvision-ai-inc/UPduino-v3.0/blob/master/Board/v3.01/UPduino_v3.01.kicad_pcb"
+}

@@ -1,0 +1,40 @@
+{
+  "n": 1024,
+  "bands": 1,
+  "lanes": 1,
+  "hidden_shift": 0,
+  "fixture_name": "tie_12_negative",
+  "fixture_dir": "./build/nn_edges/fixtures/tie_12_negative",
+  "model_sha256": "a57b6bb04470b4453bcf98889bfec044f49b8e5ec7f7ab67400b660465a575ad",
+  "fixture_sha256": {
+    "build/nn_edges/fixtures/tie_12_negative/b1.hex": "ce0933176c74a7f70051794bdb7ba975c92dde4183bc3cc40d092469df2c5c62",
+    "build/nn_edges/fixtures/tie_12_negative/b2.hex": "c6445d548633610eac623a04502620877faf41ffcb34422bc65c9b1e89896bf9",
+    "build/nn_edges/fixtures/tie_12_negative/bins.hex": "08d995fea3645bc34e36325fd0a2e346f270a0c82e678d977d0837e962eb907c",
+    "build/nn_edges/fixtures/tie_12_negative/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+    "build/nn_edges/fixtures/tie_12_negative/feature_shifts.hex": "2910ccd420eb690fcfae5cfd583a5d7f25256aabdf31718f3a7ee89f5d225de5",
+    "build/nn_edges/fixtures/tie_12_negative/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+    "build/nn_edges/fixtures/tie_12_negative/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+    "build/nn_edges/fixtures/tie_12_negative/model.json": "a57b6bb04470b4453bcf98889bfec044f49b8e5ec7f7ab67400b660465a575ad",
+    "build/nn_edges/fixtures/tie_12_negative/model_config.svh": "ad6ddb5473ff698f07a5e766bff157bfce04a8c1d5ceeda49761b5a3e0ea3a96",
+    "build/nn_edges/fixtures/tie_12_negative/vectors.json": "2e1ddf056c0e4edd83b8e6476f34f637c2a1bb104a5862c02e44c0869a351ae2",
+    "build/nn_edges/fixtures/tie_12_negative/w1.hex": "0db0033c02e919c3509122686ecbcc8679d8118efb478d2b45b0d055fff773b9",
+    "build/nn_edges/fixtures/tie_12_negative/w2.hex": "b3371a319dbcda59f045883ece3d118d1ee067d4ce1d12991d955537928f8b57",
+    "build/nn_edges/fixtures/tie_12_negative/weights_l1_0.hex": "0d0a6acba09ab387f81fd076952b526344c6c5b9df1ac0ec04cbe23f5ccbe040",
+    "build/nn_edges/fixtures/tie_12_negative/weights_l4_0.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "build/nn_edges/fixtures/tie_12_negative/weights_l4_1.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "build/nn_edges/fixtures/tie_12_negative/weights_l4_2.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "build/nn_edges/fixtures/tie_12_negative/weights_l4_3.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822"
+  },
+  "source_sha256": {
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+    "scripts/test_nn_edges.py": "acaf689caa7b8157dbc2b9bed2c0ea4c7e4cae037774854a8db0ed175f44701b",
+    "sim/nn_edges_tb.sv": "527584b480ac7f8f44a156ad74226560e7033abed67001d6a17b8ae060e84ff6",
+    "sim/test_nn_edges.py": "de304ac1d60313b11352bf55844ca75f2825475156a669e0e7ac4dc3c2d3f48e",
+    "src/vibfpga/export.py": "0aed8af848c9c0e05ab42a9d777edc0e5d390f44a822d2dd10ba670c35070309",
+    "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d"
+  },
+  "assertions_enabled": true,
+  "physical_board_tested": false,
+  "simulator": "Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)"
+}

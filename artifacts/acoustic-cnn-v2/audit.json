@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "reason": "one of 320 decisions differs after cross-process floating-point reload near threshold; not bitwise or decision stable",
+  "test_opened": false,
+  "log": "build/cnn-audit-final.log",
+  "bindings_sha256": "2cc2eab7bca3bda6e80866c204f458c180c6390eff01fceea302f83667b65ba4"
+}

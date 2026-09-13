@@ -1,0 +1,14 @@
+[options]
+depth 64
+mode bmc
+
+[engines]
+abc bmc3
+
+[script]
+read -formal -sv quant_extract.sv quant_harness.sv
+prep -top quant_serial_harness
+
+[files]
+../build/quantization_formal/generated/quant_extract.sv
+quant_harness.sv

@@ -1,0 +1,248 @@
+{
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "bitstream_sha256": "79725eef7fda46afa1f03b0b325c6d573ac3177d31f93072d3cf9cecc41a3e17",
+  "build_report_sha256": "6dc01fae5334205123f5fb8d8676421d27930117121ae509db52d438c42f1430",
+  "commands": [
+    [
+      "jedec",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ]
+    ],
+    [
+      "configuration",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/known-replay/id00-l1-overload-r1/board.bin"
+      ]
+    ],
+    [
+      "input",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "1048576",
+        "./measurements/known-replay/id00-l1-overload-r1/input.bin"
+      ]
+    ],
+    [
+      "clear_log_and_start",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/known-replay/id00-l1-overload-r1/erased-log.bin"
+      ]
+    ]
+  ],
+  "deployment_sha256": "ad92f8722613c4f65a85d1ab4a9790988489d7d05bcec075944f2b194afe717d",
+  "error": "AssertionError: No two consecutive valid unmodified readbacks; retain this attempt for read-only recovery",
+  "expected_score": -6361,
+  "final_audit_sha256": "d0738c03729e145d040aa11355061d37ff82a396f08d74bc8e4ccd9518d938d0",
+  "finished_utc": "2026-09-11T22:50:28.180766+00:00",
+  "hardware_operations_started": true,
+  "input_sha256": "165262f969e4a4a6a789cd8ceedfa54e7092eff06063953a4dbabf2f3e011226",
+  "lanes": 1,
+  "machine": "00",
+  "model_sha256": "23e303fd55a484fe0704089e61e83df2cf4ddfa3a4077e0fa16c4dfa843e39e1",
+  "period": 750,
+  "physical_hardware": true,
+  "profile_sha256": "3e0cbd8dafa9ffc122d6bc2305925cefa0bec273566a4d28af1e79bbf6f7b4e5",
+  "reads": [
+    {
+      "error": "Explicit replay error flags 0x10",
+      "file": "read-1.bin",
+      "valid": false
+    },
+    {
+      "error": "Explicit replay error flags 0x10",
+      "file": "read-2.bin",
+      "valid": false
+    },
+    {
+      "error": "Explicit replay error flags 0x10",
+      "file": "read-3.bin",
+      "valid": false
+    }
+  ],
+  "record": {
+    "compressed": 1782348,
+    "crc": 3279980453,
+    "fold": 0,
+    "label": 0,
+    "local": "data/mimii/pcm/normal_00000304.npy",
+    "machine": "00",
+    "method": 8,
+    "name": "fan/id_00/normal/00000304.wav",
+    "npy_sha256": "991aa41b728cb988a43b82ed8f0e3ead69b7b8fc3034b552ea8e6b9e6ba3757e",
+    "offset": 1300214316,
+    "role": "cv",
+    "size": 2560080
+  },
+  "source_sha256": "b67f3527353538f0c6ac7c8acf0d0237e97864a48a11b27ef8f06482fe5a4b10",
+  "started_utc": "2026-09-11T22:49:41.944985+00:00",
+  "status": "failed",
+  "steps": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "elapsed_seconds": 0.7034543750050943,
+      "finished_utc": "2026-09-11T22:49:42.695436+00:00",
+      "name": "jedec",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:49:41.991377+00:00",
+      "transcript": "jedec.txt",
+      "transcript_sha256": "d35361e4e3604a85d981ef65c07d8f6d21d8ed1fc0b4cfbaa058d9ff88ba0d43"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/known-replay/id00-l1-overload-r1/board.bin"
+      ],
+      "elapsed_seconds": 7.373565791989677,
+      "finished_utc": "2026-09-11T22:49:50.071876+00:00",
+      "input_file": "./measurements/known-replay/id00-l1-overload-r1/board.bin",
+      "input_sha256": "79725eef7fda46afa1f03b0b325c6d573ac3177d31f93072d3cf9cecc41a3e17",
+      "name": "configuration",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:49:42.697338+00:00",
+      "transcript": "configuration.txt",
+      "transcript_sha256": "8f1767f7c955b985cdc83c74714deaee365b1b84005e606c3b1a94d48410a3ab"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "1048576",
+        "./measurements/known-replay/id00-l1-overload-r1/input.bin"
+      ],
+      "elapsed_seconds": 20.966334916010965,
+      "finished_utc": "2026-09-11T22:50:11.041766+00:00",
+      "input_file": "./measurements/known-replay/id00-l1-overload-r1/input.bin",
+      "input_sha256": "165262f969e4a4a6a789cd8ceedfa54e7092eff06063953a4dbabf2f3e011226",
+      "name": "input",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:49:50.074410+00:00",
+      "transcript": "input.txt",
+      "transcript_sha256": "86c617ceb560eb1cc67059b0cca25883a244435bb60ba613d16d366457d1f307"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/known-replay/id00-l1-overload-r1/erased-log.bin"
+      ],
+      "elapsed_seconds": 0.9508819580078125,
+      "finished_utc": "2026-09-11T22:50:11.998298+00:00",
+      "input_file": "./measurements/known-replay/id00-l1-overload-r1/erased-log.bin",
+      "input_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+      "name": "clear_log_and_start",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:50:11.046470+00:00",
+      "transcript": "clear_log_and_start.txt",
+      "transcript_sha256": "392c96df6a3083be75acf13e4e0c095c09b67971d0c5b3349bca64a0ee0b519f"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "4096",
+        "./measurements/known-replay/id00-l1-overload-r1/read-1.bin"
+      ],
+      "elapsed_seconds": 0.7133833749976475,
+      "finished_utc": "2026-09-11T22:50:26.720008+00:00",
+      "name": "read-1",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:50:26.004481+00:00",
+      "transcript": "read-1.txt",
+      "transcript_sha256": "53a1167b6d583cfa24ca92feda8c4401efb2f983cb891c916545b58644aeac27"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "4096",
+        "./measurements/known-replay/id00-l1-overload-r1/read-2.bin"
+      ],
+      "elapsed_seconds": 0.732784084015293,
+      "finished_utc": "2026-09-11T22:50:27.455602+00:00",
+      "name": "read-2",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:50:26.722065+00:00",
+      "transcript": "read-2.txt",
+      "transcript_sha256": "53a1167b6d583cfa24ca92feda8c4401efb2f983cb891c916545b58644aeac27"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "4096",
+        "./measurements/known-replay/id00-l1-overload-r1/read-3.bin"
+      ],
+      "elapsed_seconds": 0.7197130419954192,
+      "finished_utc": "2026-09-11T22:50:28.178456+00:00",
+      "name": "read-3",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:50:27.458084+00:00",
+      "transcript": "read-3.txt",
+      "transcript_sha256": "53a1167b6d583cfa24ca92feda8c4401efb2f983cb891c916545b58644aeac27"
+    }
+  ],
+  "usb_product": "UPduino v3.1",
+  "wait_seconds": 14
+}

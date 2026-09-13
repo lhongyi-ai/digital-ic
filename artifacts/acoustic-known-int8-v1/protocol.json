@@ -1,0 +1,10 @@
+{
+  "source_sha256": "5307d21324b0b723332cdb4d83c67bf08a7921c049f54991668dd9d3e7ed035e",
+  "selected_audit_sha256": "ea770d96c0269ef5528ac9c97528eb99e031f249aa31dfcbefe1470708632c2e",
+  "selected_results_sha256": "bb369336451f7ee2075212df49e9253104d8747275cf2b46021e5d8ad2f35a64",
+  "baseline_sha256": "857f6f2e8b71d55349f1ab74ee4e3398cf81fdb79d19408be8f54d7c2278a593",
+  "quantization": "sx=max(abs(training standardized features))/127; sw=max(abs(weights))/127; ties-even round, clip[-127,127]; bias INT32; INT32 dot",
+  "threshold": "alpha=.04 same calibration records; ascending ceil((n+1)*.96); integer score > integer threshold",
+  "scope": "Classifier PTQ only, frontend log2 and standardization still floating; no RTL/FPGA equivalence claim",
+  "final_test_opened": false
+}

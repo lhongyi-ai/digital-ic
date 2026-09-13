@@ -1,0 +1,25 @@
+n1024-logpower-diagonal 0.5642 0.0667
+n1024-logpower-nearest5 0.655 0.2
+n1024-logpower-pca_residual16 0.75 0.1667
+n1024-logpower-ridge_covariance 0.67 0.1333
+n1024-logshape-diagonal 0.4908 0.0333
+n1024-logshape-nearest5 0.5658 0.0333
+n1024-logshape-pca_residual16 0.6058 0.1333
+n1024-logshape-ridge_covariance 0.5825 0.1
+n4096-logpower-diagonal 0.5425 0.0667
+n4096-logpower-nearest5 0.6367 0.1333
+n4096-logpower-pca_residual16 0.7233 0.1667
+n4096-logpower-ridge_covariance 0.6858 0.1333
+n4096-logshape-diagonal 0.4875 0.0333
+n4096-logshape-nearest5 0.5633 0.0333
+n4096-logshape-pca_residual16 0.5933 0.0
+n4096-logshape-ridge_covariance 0.56 0.0
+n16384-logpower-diagonal 0.5442 0.0667
+n16384-logpower-nearest5 0.6375 0.1667
+n16384-logpower-pca_residual16 0.7083 0.1333
+n16384-logpower-ridge_covariance 0.6975 0.1333
+n16384-logshape-diagonal 0.4933 0.0333
+n16384-logshape-nearest5 0.5792 0.0333
+n16384-logshape-pca_residual16 0.6017 0.0667
+n16384-logshape-ridge_covariance 0.5917 0.0667
+BEST n1024-logpower-nearest5 0.2 0.655

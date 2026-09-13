@@ -1,0 +1,11 @@
+COMMAND ["./.tools/oss-cad-suite/bin/verilator_coverage", "--annotate", "./build/rtl_coverage/l1_b3/coverage/annotated", "--annotate-all", "--annotate-min", "1", "--annotate-points", "./build/rtl_coverage/l1_b3/coverage/merged.dat"]
+Coverage Summary:
+  line      : 87.4% (  76/  87)
+  toggle    : 68.8% (2753/4002)
+  branch    : 86.4% ( 102/ 118)
+  expr      : 82.9% ( 136/ 164)
+  fsm_state : 0.0% (   0/   0)
+  fsm_arc   : 0.0% (   0/   0)
+Annotation Summary:
+  lines with all attached points covered : 78.00%  (255/325)
+See lines with '%00' in ./build/rtl_coverage/l1_b3/coverage/annotated

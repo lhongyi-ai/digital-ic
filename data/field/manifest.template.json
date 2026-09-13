@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "source_kind": "physical_adxl345",
+  "odr_hz": 800,
+  "clock_hz": 12000000,
+  "axis": "z",
+  "class_names": [
+    "stopped",
+    "rigid_support_running",
+    "flexible_support_running"
+  ],
+  "apparatus": "REPLACE: apparatus, mounting, repeatable state definitions; no physical data collected yet",
+  "records": [
+    {
+      "record_id": "train_stopped_01",
+      "path": "captures/train_stopped_01.csv",
+      "label": 0,
+      "split": "train",
+      "session_id": "train_stopped_01",
+      "installation_id": "REPLACE_train_mount_01",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_stopped_02",
+      "path": "captures/train_stopped_02.csv",
+      "label": 0,
+      "split": "train",
+      "session_id": "train_stopped_02",
+      "installation_id": "REPLACE_train_mount_02",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_stopped_03",
+      "path": "captures/train_stopped_03.csv",
+      "label": 0,
+      "split": "train",
+      "session_id": "train_stopped_03",
+      "installation_id": "REPLACE_train_mount_03",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_stopped_04",
+      "path": "captures/train_stopped_04.csv",
+      "label": 0,
+      "split": "train",
+      "session_id": "train_stopped_04",
+      "installation_id": "REPLACE_train_mount_04",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_stopped_05",
+      "path": "captures/train_stopped_05.csv",
+      "label": 0,
+      "split": "train",
+      "session_id": "train_stopped_05",
+      "installation_id": "REPLACE_train_mount_05",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_stopped_06",
+      "path": "captures/train_stopped_06.csv",
+      "label": 0,
+      "split": "train",
+      "session_id": "train_stopped_06",
+      "installation_id": "REPLACE_train_mount_06",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_rigid_support_running_01",
+      "path": "captures/train_rigid_support_running_01.csv",
+      "label": 1,
+      "split": "train",
+      "session_id": "train_rigid_support_running_01",
+      "installation_id": "REPLACE_train_mount_01",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_rigid_support_running_02",
+      "path": "captures/train_rigid_support_running_02.csv",
+      "label": 1,
+      "split": "train",
+      "session_id": "train_rigid_support_running_02",
+      "installation_id": "REPLACE_train_mount_02",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_rigid_support_running_03",
+      "path": "captures/train_rigid_support_running_03.csv",
+      "label": 1,
+      "split": "train",
+      "session_id": "train_rigid_support_running_03",
+      "installation_id": "REPLACE_train_mount_03",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_rigid_support_running_04",
+      "path": "captures/train_rigid_support_running_04.csv",
+      "label": 1,
+      "split": "train",
+      "session_id": "train_rigid_support_running_04",
+      "installation_id": "REPLACE_train_mount_04",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_rigid_support_running_05",
+      "path": "captures/train_rigid_support_running_05.csv",
+      "label": 1,
+      "split": "train",
+      "session_id": "train_rigid_support_running_05",
+      "installation_id": "REPLACE_train_mount_05",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_rigid_support_running_06",
+      "path": "captures/train_rigid_support_running_06.csv",
+      "label": 1,
+      "split": "train",
+      "session_id": "train_rigid_support_running_06",
+      "installation_id": "REPLACE_train_mount_06",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_flexible_support_running_01",
+      "path": "captures/train_flexible_support_running_01.csv",
+      "label": 2,
+      "split": "train",
+      "session_id": "train_flexible_support_running_01",
+      "installation_id": "REPLACE_train_mount_01",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_flexible_support_running_02",
+      "path": "captures/train_flexible_support_running_02.csv",
+      "label": 2,
+      "split": "train",
+      "session_id": "train_flexible_support_running_02",
+      "installation_id": "REPLACE_train_mount_02",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_flexible_support_running_03",
+      "path": "captures/train_flexible_support_running_03.csv",
+      "label": 2,
+      "split": "train",
+      "session_id": "train_flexible_support_running_03",
+      "installation_id": "REPLACE_train_mount_03",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_flexible_support_running_04",
+      "path": "captures/train_flexible_support_running_04.csv",
+      "label": 2,
+      "split": "train",
+      "session_id": "train_flexible_support_running_04",
+      "installation_id": "REPLACE_train_mount_04",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_flexible_support_running_05",
+      "path": "captures/train_flexible_support_running_05.csv",
+      "label": 2,
+      "split": "train",
+      "session_id": "train_flexible_support_running_05",
+      "installation_id": "REPLACE_train_mount_05",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "train_flexible_support_running_06",
+      "path": "captures/train_flexible_support_running_06.csv",
+      "label": 2,
+      "split": "train",
+      "session_id": "train_flexible_support_running_06",
+      "installation_id": "REPLACE_train_mount_06",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "validation_stopped_01",
+      "path": "captures/validation_stopped_01.csv",
+      "label": 0,
+      "split": "validation",
+      "session_id": "validation_stopped_01",
+      "installation_id": "REPLACE_validation_mount_01",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "validation_stopped_02",
+      "path": "captures/validation_stopped_02.csv",
+      "label": 0,
+      "split": "validation",
+      "session_id": "validation_stopped_02",
+      "installation_id": "REPLACE_validation_mount_02",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "validation_rigid_support_running_01",
+      "path": "captures/validation_rigid_support_running_01.csv",
+      "label": 1,
+      "split": "validation",
+      "session_id": "validation_rigid_support_running_01",
+      "installation_id": "REPLACE_validation_mount_01",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "validation_rigid_support_running_02",
+      "path": "captures/validation_rigid_support_running_02.csv",
+      "label": 1,
+      "split": "validation",
+      "session_id": "validation_rigid_support_running_02",
+      "installation_id": "REPLACE_validation_mount_02",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "validation_flexible_support_running_01",
+      "path": "captures/validation_flexible_support_running_01.csv",
+      "label": 2,
+      "split": "validation",
+      "session_id": "validation_flexible_support_running_01",
+      "installation_id": "REPLACE_validation_mount_01",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "validation_flexible_support_running_02",
+      "path": "captures/validation_flexible_support_running_02.csv",
+      "label": 2,
+      "split": "validation",
+      "session_id": "validation_flexible_support_running_02",
+      "installation_id": "REPLACE_validation_mount_02",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "test_stopped_01",
+      "path": "captures/test_stopped_01.csv",
+      "label": 0,
+      "split": "test",
+      "session_id": "test_stopped_01",
+      "installation_id": "REPLACE_test_mount_01",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "test_stopped_02",
+      "path": "captures/test_stopped_02.csv",
+      "label": 0,
+      "split": "test",
+      "session_id": "test_stopped_02",
+      "installation_id": "REPLACE_test_mount_02",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "test_rigid_support_running_01",
+      "path": "captures/test_rigid_support_running_01.csv",
+      "label": 1,
+      "split": "test",
+      "session_id": "test_rigid_support_running_01",
+      "installation_id": "REPLACE_test_mount_01",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "test_rigid_support_running_02",
+      "path": "captures/test_rigid_support_running_02.csv",
+      "label": 1,
+      "split": "test",
+      "session_id": "test_rigid_support_running_02",
+      "installation_id": "REPLACE_test_mount_02",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "test_flexible_support_running_01",
+      "path": "captures/test_flexible_support_running_01.csv",
+      "label": 2,
+      "split": "test",
+      "session_id": "test_flexible_support_running_01",
+      "installation_id": "REPLACE_test_mount_01",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "record_id": "test_flexible_support_running_02",
+      "path": "captures/test_flexible_support_running_02.csv",
+      "label": 2,
+      "split": "test",
+      "session_id": "test_flexible_support_running_02",
+      "installation_id": "REPLACE_test_mount_02",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sidecar_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}

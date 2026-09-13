@@ -1,0 +1,34 @@
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1789103056
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_acoustic.arithmetic_stream_and_reset (1/1)
+533775.00ns WARNING  cocotb.regression                  test_acoustic.arithmetic_stream_and_reset failed
+                                                        Traceback (most recent call last):
+                                                          File "./sim/test_acoustic.py", line 53, in arithmetic_stream_and_reset
+                                                            for i,x in enumerate(cases):await receive(x,i)
+                                                                                        ^^^^^^^^^^^^^^^^^^
+                                                          File "./sim/test_acoustic.py", line 36, in receive
+                                                            ref=classify(x,m)
+                                                                ^^^^^^^^^^^^^
+                                                          File "./src/vibfpga/acoustic.py", line 36, in classify
+                                                            result=frontend(samples,model)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "./src/vibfpga/fixed.py", line 106, in frontend
+                                                            result = frontend(samples,{**config,"feature_mode":"single_bin","bins":expanded,
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "./src/vibfpga/fixed.py", line 120, in frontend
+                                                            raise ValueError(f"samples must be a 1D integer array of length {n}")
+                                                        ValueError: samples must be a 1D integer array of length 32
+533775.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_acoustic.arithmetic_stream_and_reset   FAIL      533775.00           0.05    9889132.59  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                          533775.00           0.05    9708773.18  **
+                                                        ***************************************************************************************************
+- :0: Verilog $finish

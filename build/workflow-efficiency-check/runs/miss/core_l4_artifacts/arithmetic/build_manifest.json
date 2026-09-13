@@ -1,0 +1,81 @@
+{
+  "compiler_cache_hit": false,
+  "compiler_cache_key": "797612ef0c1b5c7488a7ef035d3c968181a6f7a1fe06f0f1e8ca56997a43ae47",
+  "compiler_directory": "./build/workflow-efficiency-check/.compiler-cache/verilator/797612ef0c1b5c7488a7ef035d3c968181a6f7a1fe06f0f1e8ca56997a43ae47",
+  "compiler_seconds": 2.2782227080024313,
+  "manifest": {
+    "build_args": [
+      "-Wno-fatal",
+      "-Wno-WIDTHEXPAND",
+      "-Wno-WIDTHTRUNC",
+      "-CFLAGS",
+      "-std=c++17"
+    ],
+    "includes": [],
+    "input_sha256": {
+      "./artifacts/model/b1.hex": "b13efe33d5cdb4f4c08875174a2f450db9626fd34ffe6094d4d6b2ed5391944f",
+      "./artifacts/model/b2.hex": "b48d1ee7cd1665d75421e8d5b6cc1da4524334440649f1c4fdc03cc864f95870",
+      "./artifacts/model/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+      "./artifacts/model/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+      "./artifacts/model/feature_shifts.hex": "61202c17ec0bfae973580147e1cc06618be8c6f711baff138bf94fb327806de4",
+      "./artifacts/model/float_model.pt": "6c7151f70ecb008552a0a391df1b640415c9821dbb8bcb9d5b3d3085fd17ede1",
+      "./artifacts/model/float_parameters.npz": "ee0465637b9b50bf6516f4f54ebc1d59dfe46352eef247b52ef889c8188d93ed",
+      "./artifacts/model/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+      "./artifacts/model/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+      "./artifacts/model/model.json": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+      "./artifacts/model/model_config.svh": "e69342cca1d7557760f5a25d8c0dfd80086264d04736c21a65ff965698e37407",
+      "./artifacts/model/w1.hex": "26b17ac441ba57495f217960b1af28f0aba78685f4bee0601ea8f52039f3397d",
+      "./artifacts/model/w2.hex": "776a3529d5d2b5915def0e2e58f33b3b9c1663686ef16e3c194eeff09a3bb366",
+      "./artifacts/model/weights_l1_0.hex": "2c600fc9949d4c72db23f61043a7a70e01d2cd5d351ff44259e9347422423453",
+      "./artifacts/model/weights_l4_0.hex": "96c16efec8cd66a8f5cd7e084267057ca4016db56377555708a54cc21571e79f",
+      "./artifacts/model/weights_l4_1.hex": "602669e2d96815c337c5d92dd94fb1660b8db078d694d1b8ac5c91da9a187288",
+      "./artifacts/model/weights_l4_2.hex": "343ea649054b7baf7ba7f1038da412b3f392423fdfb6028118c132aa94eb41c8",
+      "./artifacts/model/weights_l4_3.hex": "d5372551d44a14c6f129759103152da00c73083ea6b714ced29433bbe8f692a9",
+      "./rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+      "./rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+      "./sim/arithmetic_tb.sv": "a15f1d7387845110c7ff1fe35d27e4530a72701d74e9b97a0c1194dccc9d96a1"
+    },
+    "options": {
+      "hdl_toplevel": "arithmetic_tb"
+    },
+    "parameters": {
+      "HIDDEN_SHIFT": 8,
+      "MODEL_DIR": "\"./artifacts/model\""
+    },
+    "schema_version": 1,
+    "sources": [
+      "./rtl/core/vib_coeff_rom.sv",
+      "./rtl/core/vibration_core.sv",
+      "./sim/arithmetic_tb.sv"
+    ],
+    "toolchain": {
+      "cache_helper_sha256": "2951bceb656f2e452207ebac84f2998f0d043180e271c366319d811e27a280d3",
+      "cocotb": "2.1.0",
+      "cxx": {
+        "path": "/usr/bin/c++",
+        "sha256": "179301dcb41ea78accc3fa0048a7e6f6710d891945a751a34addd622020c1818",
+        "version": "Apple clang version 15.0.0 (clang-1500.1.0.2.5)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin"
+      },
+      "environment": {
+        "CC": null,
+        "CFLAGS": null,
+        "CPPFLAGS": null,
+        "CXX": null,
+        "CXXFLAGS": null,
+        "LDFLAGS": null,
+        "MAKEFLAGS": null,
+        "VERILATOR_BIN": "/tmp/local-session",
+        "VERILATOR_ROOT": "/tmp/local-session"
+      },
+      "harness_sha256": "95d2661a31cec21f37e82135bbd4f9c809be1e823e36b094064ad271d4850a88",
+      "runner_sha256": "241484c6c8b2a94de24fb2ff025c831e547ad5a47979b929ca5512ea2f6c5e04",
+      "verilator": {
+        "path": "./.tools/oss-cad-suite/bin/verilator",
+        "sha256": "098b09b11ba7d3e904ae13d924a9e8dac8ced5c9d7c9beff3b9d36119a417581",
+        "version": "Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)"
+      },
+      "vpi_sha256": "9c8c3a9513fde891b2770687799b4d332b8def445bd6db4b326ba96606755e21"
+    }
+  },
+  "test_results_reused": false
+}

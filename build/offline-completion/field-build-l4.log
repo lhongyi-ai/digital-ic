@@ -1,0 +1,72 @@
+mkdir: /home/researcher/.config/yosyshq: Operation not permitted
+mkdir: /home/researcher/.local/share/yosyshq: Operation not permitted
+Info: constrained 'clk12' to bel 'X19/Y0/io1'
+Info: constrained 'flash_cs_n' to bel 'X24/Y0/io1'
+Info: constrained 'flash_sclk' to bel 'X24/Y0/io0'
+Info: constrained 'flash_mosi' to bel 'X23/Y0/io1'
+Info: constrained 'flash_miso' to bel 'X23/Y0/io0'
+Info: constrained 'sensor_cs_n' to bel 'X19/Y31/io0'
+Info: constrained 'sensor_sclk' to bel 'X19/Y31/io1'
+Info: constrained 'sensor_mosi' to bel 'X18/Y31/io0'
+Info: constrained 'sensor_miso' to bel 'X18/Y31/io1'
+Info: constrained 'sensor_drdy' to bel 'X16/Y31/io0'
+Info: constrained 'status_done' to bel 'X18/Y0/io1'
+Info: constrained 'status_error' to bel 'X18/Y0/io0'
+Info: constrained 'status_running' to bel 'X19/Y0/io0'
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:     3119 LCs used as LUT4 only
+Info:     1199 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:     1078 LCs used as DFF only
+Info: Packing carries..
+Info:      439 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:       85 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting clk12$SB_IO_IN (fanout 2308)
+Info: promoting rst [reset] (fanout 961)
+Info: promoting system.classifier.core.dft_group_SB_DFFESR_Q_D_SB_LUT4_I2_O[2] [reset] (fanout 749)
+Info: promoting system.classifier.core.g_lane[0].coeff_rom.en_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_1_O [cen] (fanout 186)
+Info: promoting system.classifier.core.windowed.0.0_WCLKE_SB_LUT4_O_I3_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_I3_O [cen] (fanout 160)
+Info: promoting system.g_log[1].ram.write_enable_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I3_O [cen] (fanout 128)
+Info: promoting system.capture.sample_valid_SB_LUT4_I2_O_SB_LUT4_I2_O[0] [cen] (fanout 65)
+Info: promoting $PACKER_GND_NET (fanout 9)
+Info: Constraining chains...
+Info:       97 LCs used to legalise carry chains.
+Info: Checksum: 0x2c2d0c54
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:    5852/   5280   110%
+Info: 	        ICESTORM_RAM:      16/     30    53%
+Info: 	               SB_IO:      13/     39    33%
+Info: 	               SB_GB:       8/      8   100%
+Info: 	        ICESTORM_PLL:       0/      1     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+Info: 	        ICESTORM_DSP:       4/      8    50%
+Info: 	      ICESTORM_HFOSC:       0/      1     0%
+Info: 	      ICESTORM_LFOSC:       0/      1     0%
+Info: 	              SB_I2C:       0/      2     0%
+Info: 	              SB_SPI:       0/      2     0%
+Info: 	              IO_I3C:       0/      2     0%
+Info: 	         SB_LEDDA_IP:       0/      1     0%
+Info: 	         SB_RGBA_DRV:       0/      1     0%
+Info: 	      ICESTORM_SPRAM:       4/      4   100%
+
+Info: Placed 13 cells based on constraints.
+Info: Creating initial analytic placement for 4320 cells, random placement wirelen = 135126.
+Info:     at initial placer iter 0, wirelen = 1746
+Info:     at initial placer iter 1, wirelen = 2200
+Info:     at initial placer iter 2, wirelen = 1865
+Info:     at initial placer iter 3, wirelen = 2171
+Info: Running main analytical placer, max placement attempts per cell = 4346826.
+ERROR: Failed to expand region (0, 0) |_> (25, 31) of 5852 ICESTORM_LCs
+0 warnings, 1 error
+
+Command failed; see ./build/field_board_l4/place_route.log

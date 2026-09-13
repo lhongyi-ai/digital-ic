@@ -1,0 +1,17 @@
+{
+  "n": 1024,
+  "lanes": 4,
+  "frames": 5,
+  "distinct_inputs": 5,
+  "debug_frames": 5,
+  "model_sha256": "83dc8babc300ad6fe3c8a809cc05bc5b901c5a2095e67b128190fb5df8484132",
+  "assertions_enabled": true,
+  "status": "passed",
+  "cycles": {
+    "cycles_pre": 3073,
+    "cycles_dft": 24616,
+    "cycles_power": 298,
+    "cycles_nn": 265,
+    "cycles_total": 28252
+  }
+}

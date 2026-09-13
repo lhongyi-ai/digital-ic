@@ -1,0 +1,22 @@
+{
+  "original_wav_sha256": "b6f16d512477f83b1bba481561beeaeb74172ea0cfee89855ffa3b3915696b62",
+  "archive_member_crc32": "383e7409",
+  "range_bytes": 1880456,
+  "frames": 160000,
+  "channel": 0,
+  "original_channels": 8,
+  "sample_rate_hz": 16000,
+  "name": "fan/id_04/normal/00000529.wav",
+  "offset": 6871418289,
+  "compressed": 1880397,
+  "size": 2560080,
+  "crc": 943617033,
+  "method": 8,
+  "machine": "04",
+  "label": 0,
+  "role": "final_test",
+  "fold": null,
+  "local": "data/mimii-known-final-v1/pcm/04_0_00000529.npy",
+  "npy_sha256": "48e5bab7fe04ecdad4a843b2e152d95e7f9d0a69a4a729a62d872d749604871e",
+  "deployment_sha256": "ad92f8722613c4f65a85d1ab4a9790988489d7d05bcec075944f2b194afe717d"
+}

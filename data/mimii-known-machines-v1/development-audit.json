@@ -1,0 +1,1324 @@
+{
+  "passed": false,
+  "development_sha256": "7aeaf5b87a9168369f658c61ba9e90cafe3978d60b16a30e025d20c19a5f1fd0",
+  "script_sha256": "e9059afb4279856a9a24a3900b44f444cdd53cdd05cc1f1972f6b950d0f3a277",
+  "helper_sha256": "53f092f07358ba0d63852210e7c098903a26768e37d74b1b7903374353f64366",
+  "reports": [
+    {
+      "machine": "00",
+      "screened": 24576,
+      "candidates": 183,
+      "raw_review": [
+        {
+          "a": "fan/id_00/abnormal/00000121.wav",
+          "b": "fan/id_00/abnormal/00000135.wav",
+          "correlation": 0.6860044969794719,
+          "lag": -90111,
+          "overlap": 69889,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000135.wav",
+          "correlation": 0.7821098372107781,
+          "lag": -127522,
+          "overlap": 32478,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000081.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.6828675271736063,
+          "lag": -122369,
+          "overlap": 37631,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000135.wav",
+          "correlation": 0.7754119153920335,
+          "lag": -117346,
+          "overlap": 42654,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000088.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.6674745428885633,
+          "lag": -127586,
+          "overlap": 32414,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000121.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.6623115046306309,
+          "lag": -66746,
+          "overlap": 93254,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000121.wav",
+          "b": "fan/id_00/abnormal/00000130.wav",
+          "correlation": 0.7023065074734762,
+          "lag": 78656,
+          "overlap": 81344,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000081.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.6595720254901605,
+          "lag": -126053,
+          "overlap": 33947,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000150.wav",
+          "correlation": 0.7700590796232031,
+          "lag": -127038,
+          "overlap": 32962,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000081.wav",
+          "b": "fan/id_00/abnormal/00000130.wav",
+          "correlation": 0.6903041006010908,
+          "lag": -123871,
+          "overlap": 36129,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000150.wav",
+          "correlation": -0.7618486635219496,
+          "lag": -122878,
+          "overlap": 37122,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000150.wav",
+          "b": "fan/id_00/abnormal/00000121.wav",
+          "correlation": 0.6764407607310234,
+          "lag": 90243,
+          "overlap": 69757,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000130.wav",
+          "correlation": 0.7570819329052685,
+          "lag": 121468,
+          "overlap": 38532,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000130.wav",
+          "correlation": 0.777973596529123,
+          "lag": 126535,
+          "overlap": 33465,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000148.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.7301542544240871,
+          "lag": 127363,
+          "overlap": 32637,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000098.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.6746199639828668,
+          "lag": -127360,
+          "overlap": 32640,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000130.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.676627721477504,
+          "lag": 127619,
+          "overlap": 32381,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.7305721472225017,
+          "lag": -127779,
+          "overlap": 32221,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000135.wav",
+          "b": "fan/id_00/abnormal/00000091.wav",
+          "correlation": 0.7533817479910674,
+          "lag": 93856,
+          "overlap": 66144,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.7189673931946639,
+          "lag": 126845,
+          "overlap": 33155,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000098.wav",
+          "b": "fan/id_00/abnormal/00000135.wav",
+          "correlation": 0.7069580250670457,
+          "lag": -113253,
+          "overlap": 46747,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000130.wav",
+          "b": "fan/id_00/abnormal/00000104.wav",
+          "correlation": 0.7030002233186484,
+          "lag": -80004,
+          "overlap": 79996,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000121.wav",
+          "correlation": 0.6854788645787515,
+          "lag": 103711,
+          "overlap": 56289,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000121.wav",
+          "b": "fan/id_00/abnormal/00000118.wav",
+          "correlation": 0.6330567897436237,
+          "lag": 113759,
+          "overlap": 46241,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000118.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.6089060045763527,
+          "lag": -96734,
+          "overlap": 63266,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000121.wav",
+          "correlation": 0.7672785169589387,
+          "lag": -127812,
+          "overlap": 32188,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000078.wav",
+          "b": "fan/id_00/abnormal/00000135.wav",
+          "correlation": 0.7802518317464598,
+          "lag": -125127,
+          "overlap": 34873,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000148.wav",
+          "b": "fan/id_00/abnormal/00000130.wav",
+          "correlation": 0.7567864078498375,
+          "lag": 125664,
+          "overlap": 34336,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000148.wav",
+          "b": "fan/id_00/abnormal/00000135.wav",
+          "correlation": -0.7278852244065089,
+          "lag": 103583,
+          "overlap": 56417,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000099.wav",
+          "b": "fan/id_00/abnormal/00000135.wav",
+          "correlation": 0.7302706535379424,
+          "lag": -94333,
+          "overlap": 65667,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000091.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.6568900159143317,
+          "lag": 113373,
+          "overlap": 46627,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000130.wav",
+          "b": "fan/id_00/abnormal/00000091.wav",
+          "correlation": 0.6850959254781869,
+          "lag": -111679,
+          "overlap": 48321,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000097.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.6631471163924045,
+          "lag": -117663,
+          "overlap": 42337,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000104.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.6708429727428493,
+          "lag": -91840,
+          "overlap": 68160,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000099.wav",
+          "b": "fan/id_00/abnormal/00000150.wav",
+          "correlation": 0.7267312703086114,
+          "lag": -126080,
+          "overlap": 33920,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000150.wav",
+          "b": "fan/id_00/abnormal/00000091.wav",
+          "correlation": 0.7451403944188015,
+          "lag": 96195,
+          "overlap": 63805,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000078.wav",
+          "b": "fan/id_00/abnormal/00000150.wav",
+          "correlation": -0.7517140956244267,
+          "lag": -124895,
+          "overlap": 35105,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000118.wav",
+          "b": "fan/id_00/abnormal/00000146.wav",
+          "correlation": 0.7852467788096209,
+          "lag": 125793,
+          "overlap": 34207,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000148.wav",
+          "b": "fan/id_00/abnormal/00000118.wav",
+          "correlation": -0.7727105474053678,
+          "lag": -123323,
+          "overlap": 36677,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000098.wav",
+          "b": "fan/id_00/abnormal/00000121.wav",
+          "correlation": 0.6967337627406505,
+          "lag": -117953,
+          "overlap": 42047,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000150.wav",
+          "b": "fan/id_00/abnormal/00000104.wav",
+          "correlation": 0.6910503680773384,
+          "lag": 119740,
+          "overlap": 40260,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000106.wav",
+          "b": "fan/id_00/abnormal/00000135.wav",
+          "correlation": 0.7454221739029953,
+          "lag": -126622,
+          "overlap": 33378,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000135.wav",
+          "b": "fan/id_00/abnormal/00000104.wav",
+          "correlation": 0.6786327866296763,
+          "lag": -84030,
+          "overlap": 75970,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000098.wav",
+          "b": "fan/id_00/abnormal/00000150.wav",
+          "correlation": 0.6915951781665926,
+          "lag": -124414,
+          "overlap": 35586,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000099.wav",
+          "correlation": -0.7443873162726717,
+          "lag": 123006,
+          "overlap": 36994,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000040.wav",
+          "b": "fan/id_00/abnormal/00000066.wav",
+          "correlation": 0.6277886765736894,
+          "lag": -109155,
+          "overlap": 50845,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000089.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.6571346457233819,
+          "lag": -127455,
+          "overlap": 32545,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000052.wav",
+          "b": "fan/id_00/abnormal/00000085.wav",
+          "correlation": 0.7011226595061401,
+          "lag": -124159,
+          "overlap": 35841,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000029.wav",
+          "b": "fan/id_00/abnormal/00000022.wav",
+          "correlation": 0.6879069440643402,
+          "lag": -124576,
+          "overlap": 35424,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000148.wav",
+          "correlation": 0.7641644178527548,
+          "lag": -125673,
+          "overlap": 34327,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000078.wav",
+          "b": "fan/id_00/abnormal/00000121.wav",
+          "correlation": 0.7709333725368026,
+          "lag": -127622,
+          "overlap": 32378,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000078.wav",
+          "correlation": 0.7674693243920248,
+          "lag": 124766,
+          "overlap": 35234,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000098.wav",
+          "b": "fan/id_00/abnormal/00000130.wav",
+          "correlation": 0.6794326803601994,
+          "lag": -125915,
+          "overlap": 34085,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000081.wav",
+          "b": "fan/id_00/abnormal/00000070.wav",
+          "correlation": 0.6557218545780414,
+          "lag": -120320,
+          "overlap": 39680,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000091.wav",
+          "correlation": 0.6914047856364367,
+          "lag": -126277,
+          "overlap": 33723,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000097.wav",
+          "b": "fan/id_00/abnormal/00000118.wav",
+          "correlation": 0.6138878233600825,
+          "lag": 104669,
+          "overlap": 55331,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000148.wav",
+          "correlation": -0.7538529579086288,
+          "lag": -124452,
+          "overlap": 35548,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000077.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.6297003329208571,
+          "lag": 93473,
+          "overlap": 66527,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000098.wav",
+          "b": "fan/id_00/abnormal/00000118.wav",
+          "correlation": 0.5905903968203863,
+          "lag": 109692,
+          "overlap": 50308,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000118.wav",
+          "correlation": 0.5893254714044841,
+          "lag": 126335,
+          "overlap": 33665,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000148.wav",
+          "b": "fan/id_00/abnormal/00000150.wav",
+          "correlation": -0.7395362178333255,
+          "lag": -52515,
+          "overlap": 107485,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000052.wav",
+          "b": "fan/id_00/abnormal/00000073.wav",
+          "correlation": 0.6684470044973931,
+          "lag": -127521,
+          "overlap": 32479,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000078.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": -0.7136939015586076,
+          "lag": -127107,
+          "overlap": 32893,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000097.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.6333197112866027,
+          "lag": 126723,
+          "overlap": 33277,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000040.wav",
+          "b": "fan/id_00/abnormal/00000022.wav",
+          "correlation": 0.624802138192416,
+          "lag": -127300,
+          "overlap": 32700,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000098.wav",
+          "b": "fan/id_00/abnormal/00000148.wav",
+          "correlation": 0.6956636100637761,
+          "lag": -127458,
+          "overlap": 32542,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000098.wav",
+          "b": "fan/id_00/abnormal/00000089.wav",
+          "correlation": 0.6470582539618881,
+          "lag": 127943,
+          "overlap": 32057,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000068.wav",
+          "b": "fan/id_00/abnormal/00000085.wav",
+          "correlation": 0.6732627239330015,
+          "lag": -122428,
+          "overlap": 37572,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000091.wav",
+          "correlation": 0.6890860535336106,
+          "lag": -113154,
+          "overlap": 46846,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000118.wav",
+          "b": "fan/id_00/abnormal/00000104.wav",
+          "correlation": 0.5884735494619179,
+          "lag": -112898,
+          "overlap": 47102,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000081.wav",
+          "b": "fan/id_00/abnormal/00000066.wav",
+          "correlation": 0.6214198146183149,
+          "lag": 125954,
+          "overlap": 34046,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000098.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.6339633456059883,
+          "lag": 127334,
+          "overlap": 32666,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000104.wav",
+          "correlation": 0.6979901034899524,
+          "lag": 124389,
+          "overlap": 35611,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000118.wav",
+          "correlation": -0.7331302050970292,
+          "lag": -104669,
+          "overlap": 55331,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000052.wav",
+          "b": "fan/id_00/abnormal/00000044.wav",
+          "correlation": 0.7072168759616205,
+          "lag": -119268,
+          "overlap": 40732,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000104.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.6203874717881727,
+          "lag": -97732,
+          "overlap": 62268,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000148.wav",
+          "b": "fan/id_00/abnormal/00000078.wav",
+          "correlation": -0.7564363657884567,
+          "lag": 127939,
+          "overlap": 32061,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000029.wav",
+          "b": "fan/id_00/abnormal/00000033.wav",
+          "correlation": 0.6849311026217576,
+          "lag": 121984,
+          "overlap": 38016,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000052.wav",
+          "b": "fan/id_00/abnormal/00000077.wav",
+          "correlation": 0.6816074672685805,
+          "lag": -120320,
+          "overlap": 39680,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000024.wav",
+          "b": "fan/id_00/abnormal/00000022.wav",
+          "correlation": 0.6885912194884478,
+          "lag": -127582,
+          "overlap": 32418,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000130.wav",
+          "b": "fan/id_00/abnormal/00000097.wav",
+          "correlation": 0.6608341110056152,
+          "lag": 117697,
+          "overlap": 42303,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000148.wav",
+          "b": "fan/id_00/abnormal/00000147.wav",
+          "correlation": 0.7432581362996517,
+          "lag": -112959,
+          "overlap": 47041,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000106.wav",
+          "b": "fan/id_00/abnormal/00000150.wav",
+          "correlation": 0.7225524445942159,
+          "lag": -126022,
+          "overlap": 33978,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000081.wav",
+          "b": "fan/id_00/abnormal/00000089.wav",
+          "correlation": 0.6361205806221838,
+          "lag": 97501,
+          "overlap": 62499,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000104.wav",
+          "correlation": -0.6793490292234523,
+          "lag": -122910,
+          "overlap": 37090,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000099.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.6397739376145549,
+          "lag": 126436,
+          "overlap": 33564,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000099.wav",
+          "b": "fan/id_00/abnormal/00000139.wav",
+          "correlation": 0.6733195435980983,
+          "lag": -89343,
+          "overlap": 70657,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000007.wav",
+          "b": "fan/id_00/abnormal/00000011.wav",
+          "correlation": 0.7539035911046125,
+          "lag": -126619,
+          "overlap": 33381,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000106.wav",
+          "b": "fan/id_00/abnormal/00000121.wav",
+          "correlation": 0.6994708254704227,
+          "lag": -101915,
+          "overlap": 58085,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000029.wav",
+          "b": "fan/id_00/abnormal/00000068.wav",
+          "correlation": 0.68620048954074,
+          "lag": -126429,
+          "overlap": 33571,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000081.wav",
+          "b": "fan/id_00/abnormal/00000071.wav",
+          "correlation": 0.653085585315644,
+          "lag": -107170,
+          "overlap": 52830,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000138.wav",
+          "b": "fan/id_00/abnormal/00000099.wav",
+          "correlation": 0.7198796338104912,
+          "lag": 127133,
+          "overlap": 32867,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000148.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.6636260389045624,
+          "lag": 127682,
+          "overlap": 32318,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000040.wav",
+          "b": "fan/id_00/abnormal/00000068.wav",
+          "correlation": 0.6212878523399863,
+          "lag": -122591,
+          "overlap": 37409,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000135.wav",
+          "b": "fan/id_00/abnormal/00000146.wav",
+          "correlation": 0.7122610762583695,
+          "lag": -118886,
+          "overlap": 41114,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000070.wav",
+          "b": "fan/id_00/abnormal/00000118.wav",
+          "correlation": 0.6101412732500181,
+          "lag": 91743,
+          "overlap": 68257,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000081.wav",
+          "b": "fan/id_00/abnormal/00000097.wav",
+          "correlation": 0.6384731260586569,
+          "lag": -122972,
+          "overlap": 37028,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000134.wav",
+          "b": "fan/id_00/abnormal/00000071.wav",
+          "correlation": 0.7151952540578208,
+          "lag": -125794,
+          "overlap": 34206,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000121.wav",
+          "b": "fan/id_00/abnormal/00000088.wav",
+          "correlation": 0.6574459089243174,
+          "lag": 124060,
+          "overlap": 35940,
+          "flag": false
+        },
+        {
+          "a": "fan/id_00/abnormal/00000078.wav",
+          "b": "fan/id_00/abnormal/00000091.wav",
+          "correlation": 0.6902595013473576,
+          "lag": -127558,
+          "overlap": 32442,
+          "flag": false
+        }
+      ],
+      "unreviewed": 83
+    },
+    {
+      "machine": "02",
+      "screened": 24576,
+      "candidates": 0,
+      "raw_review": [
+        {
+          "a": "fan/id_02/normal/00000455.wav",
+          "b": "fan/id_02/abnormal/00000236.wav",
+          "correlation": 0.4724677276272489,
+          "lag": 0,
+          "overlap": 160000,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000128.wav",
+          "b": "fan/id_02/abnormal/00000203.wav",
+          "correlation": 0.25515973376708856,
+          "lag": -119776,
+          "overlap": 40224,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000431.wav",
+          "b": "fan/id_02/abnormal/00000109.wav",
+          "correlation": 0.2110405282344734,
+          "lag": -118431,
+          "overlap": 41569,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000431.wav",
+          "b": "fan/id_02/abnormal/00000023.wav",
+          "correlation": 0.23106814123104483,
+          "lag": -123488,
+          "overlap": 36512,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000732.wav",
+          "b": "fan/id_02/abnormal/00000023.wav",
+          "correlation": 0.2568109357630018,
+          "lag": 111773,
+          "overlap": 48227,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000388.wav",
+          "b": "fan/id_02/normal/00000706.wav",
+          "correlation": 0.1576380156361088,
+          "lag": -126106,
+          "overlap": 33894,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000431.wav",
+          "b": "fan/id_02/abnormal/00000130.wav",
+          "correlation": -0.22683032648129678,
+          "lag": -125404,
+          "overlap": 34596,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000128.wav",
+          "b": "fan/id_02/abnormal/00000205.wav",
+          "correlation": 0.21185764319905487,
+          "lag": -127712,
+          "overlap": 32288,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000732.wav",
+          "b": "fan/id_02/abnormal/00000130.wav",
+          "correlation": 0.2353461822240575,
+          "lag": -97885,
+          "overlap": 62115,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000732.wav",
+          "b": "fan/id_02/abnormal/00000109.wav",
+          "correlation": 0.22064007161660526,
+          "lag": -125245,
+          "overlap": 34755,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/abnormal/00000301.wav",
+          "b": "fan/id_02/abnormal/00000005.wav",
+          "correlation": 0.2435783247826997,
+          "lag": 92480,
+          "overlap": 67520,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000583.wav",
+          "b": "fan/id_02/normal/00000706.wav",
+          "correlation": 0.15019881956411282,
+          "lag": 96905,
+          "overlap": 63095,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000815.wav",
+          "b": "fan/id_02/normal/00000128.wav",
+          "correlation": -0.20127812637257958,
+          "lag": -114753,
+          "overlap": 45247,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/abnormal/00000301.wav",
+          "b": "fan/id_02/abnormal/00000109.wav",
+          "correlation": 0.23754806356394187,
+          "lag": 111550,
+          "overlap": 48450,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000372.wav",
+          "b": "fan/id_02/abnormal/00000272.wav",
+          "correlation": 0.1733689972014343,
+          "lag": -75645,
+          "overlap": 84355,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/abnormal/00000253.wav",
+          "b": "fan/id_02/abnormal/00000272.wav",
+          "correlation": 0.16309063090192563,
+          "lag": 120095,
+          "overlap": 39905,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000388.wav",
+          "b": "fan/id_02/abnormal/00000197.wav",
+          "correlation": 0.11655435027649126,
+          "lag": -126643,
+          "overlap": 33357,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000388.wav",
+          "b": "fan/id_02/abnormal/00000253.wav",
+          "correlation": 0.1350594712712406,
+          "lag": -118695,
+          "overlap": 41305,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000128.wav",
+          "b": "fan/id_02/abnormal/00000263.wav",
+          "correlation": 0.2103512188271433,
+          "lag": -120367,
+          "overlap": 39633,
+          "flag": false
+        },
+        {
+          "a": "fan/id_02/normal/00000583.wav",
+          "b": "fan/id_02/abnormal/00000326.wav",
+          "correlation": 0.1268077731206901,
+          "lag": 127028,
+          "overlap": 32972,
+          "flag": false
+        }
+      ],
+      "unreviewed": 0
+    },
+    {
+      "machine": "04",
+      "screened": 24576,
+      "candidates": 0,
+      "raw_review": [
+        {
+          "a": "fan/id_04/normal/00000081.wav",
+          "b": "fan/id_04/abnormal/00000271.wav",
+          "correlation": 0.45016911654509706,
+          "lag": 0,
+          "overlap": 160000,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/normal/00000177.wav",
+          "b": "fan/id_04/normal/00000086.wav",
+          "correlation": 0.28498400484539993,
+          "lag": -95062,
+          "overlap": 64938,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/normal/00000573.wav",
+          "b": "fan/id_04/abnormal/00000263.wav",
+          "correlation": -0.1877605877297247,
+          "lag": 111491,
+          "overlap": 48509,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/normal/00000084.wav",
+          "b": "fan/id_04/normal/00000909.wav",
+          "correlation": 0.22135175171551516,
+          "lag": -110690,
+          "overlap": 49310,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/normal/00000391.wav",
+          "b": "fan/id_04/normal/00000267.wav",
+          "correlation": 0.21272664425933385,
+          "lag": -82585,
+          "overlap": 77415,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000330.wav",
+          "b": "fan/id_04/abnormal/00000334.wav",
+          "correlation": 0.21494705982008236,
+          "lag": 126303,
+          "overlap": 33697,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000305.wav",
+          "b": "fan/id_04/abnormal/00000316.wav",
+          "correlation": 0.16311497334097097,
+          "lag": 114791,
+          "overlap": 45209,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000241.wav",
+          "b": "fan/id_04/abnormal/00000222.wav",
+          "correlation": 0.2101528781027363,
+          "lag": 113757,
+          "overlap": 46243,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000312.wav",
+          "b": "fan/id_04/abnormal/00000302.wav",
+          "correlation": -0.22359509530414423,
+          "lag": -119807,
+          "overlap": 40193,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000341.wav",
+          "b": "fan/id_04/abnormal/00000346.wav",
+          "correlation": 0.22385304635045,
+          "lag": 64579,
+          "overlap": 95421,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/normal/00000015.wav",
+          "b": "fan/id_04/normal/00000037.wav",
+          "correlation": 0.1753622507365311,
+          "lag": -127680,
+          "overlap": 32320,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000217.wav",
+          "b": "fan/id_04/abnormal/00000140.wav",
+          "correlation": 0.22471735776933927,
+          "lag": -122149,
+          "overlap": 37851,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/normal/00000015.wav",
+          "b": "fan/id_04/abnormal/00000147.wav",
+          "correlation": 0.1747550623995588,
+          "lag": -125890,
+          "overlap": 34110,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000274.wav",
+          "b": "fan/id_04/abnormal/00000262.wav",
+          "correlation": -0.1800483248828357,
+          "lag": -125059,
+          "overlap": 34941,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000293.wav",
+          "b": "fan/id_04/abnormal/00000292.wav",
+          "correlation": -0.19916945689897855,
+          "lag": 125122,
+          "overlap": 34878,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000312.wav",
+          "b": "fan/id_04/abnormal/00000315.wav",
+          "correlation": 0.2162748920002476,
+          "lag": -127199,
+          "overlap": 32801,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/normal/00000086.wav",
+          "b": "fan/id_04/abnormal/00000023.wav",
+          "correlation": -0.14695969813968351,
+          "lag": -51262,
+          "overlap": 108738,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000312.wav",
+          "b": "fan/id_04/abnormal/00000308.wav",
+          "correlation": 0.20640646327932616,
+          "lag": -122847,
+          "overlap": 37153,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000290.wav",
+          "b": "fan/id_04/abnormal/00000302.wav",
+          "correlation": -0.2280847536457334,
+          "lag": -119746,
+          "overlap": 40254,
+          "flag": false
+        },
+        {
+          "a": "fan/id_04/abnormal/00000305.wav",
+          "b": "fan/id_04/abnormal/00000302.wav",
+          "correlation": 0.2359721879530002,
+          "lag": -119999,
+          "overlap": 40001,
+          "flag": false
+        }
+      ],
+      "unreviewed": 0
+    },
+    {
+      "machine": "06",
+      "screened": 24576,
+      "candidates": 0,
+      "raw_review": [
+        {
+          "a": "fan/id_06/abnormal/00000216.wav",
+          "b": "fan/id_06/abnormal/00000032.wav",
+          "correlation": -0.2685144715945681,
+          "lag": 127999,
+          "overlap": 32001,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/abnormal/00000094.wav",
+          "b": "fan/id_06/abnormal/00000102.wav",
+          "correlation": 0.583271831312988,
+          "lag": -116421,
+          "overlap": 43579,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000195.wav",
+          "b": "fan/id_06/normal/00000058.wav",
+          "correlation": 0.17983047841923078,
+          "lag": 127379,
+          "overlap": 32621,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000195.wav",
+          "b": "fan/id_06/normal/00000325.wav",
+          "correlation": -0.2279217528061554,
+          "lag": 124358,
+          "overlap": 35642,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000314.wav",
+          "b": "fan/id_06/abnormal/00000102.wav",
+          "correlation": -0.36122448871806306,
+          "lag": -126182,
+          "overlap": 33818,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000832.wav",
+          "b": "fan/id_06/abnormal/00000094.wav",
+          "correlation": 0.32964873969155295,
+          "lag": 126216,
+          "overlap": 33784,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000832.wav",
+          "b": "fan/id_06/abnormal/00000102.wav",
+          "correlation": 0.29185860420716897,
+          "lag": 124258,
+          "overlap": 35742,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000500.wav",
+          "b": "fan/id_06/abnormal/00000276.wav",
+          "correlation": 0.28947072818934416,
+          "lag": -92761,
+          "overlap": 67239,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000314.wav",
+          "b": "fan/id_06/normal/00000832.wav",
+          "correlation": -0.21370979135966162,
+          "lag": -122684,
+          "overlap": 37316,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000314.wav",
+          "b": "fan/id_06/normal/00000500.wav",
+          "correlation": 0.23271216878551018,
+          "lag": 127723,
+          "overlap": 32277,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/abnormal/00000094.wav",
+          "b": "fan/id_06/abnormal/00000109.wav",
+          "correlation": 0.35298519996752803,
+          "lag": -125278,
+          "overlap": 34722,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000627.wav",
+          "b": "fan/id_06/normal/00000331.wav",
+          "correlation": 0.27262098212216807,
+          "lag": -123942,
+          "overlap": 36058,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/abnormal/00000276.wav",
+          "b": "fan/id_06/abnormal/00000102.wav",
+          "correlation": 0.3626856137198951,
+          "lag": 127385,
+          "overlap": 32615,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000542.wav",
+          "b": "fan/id_06/normal/00000587.wav",
+          "correlation": 0.17545382045522037,
+          "lag": -124452,
+          "overlap": 35548,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/abnormal/00000094.wav",
+          "b": "fan/id_06/abnormal/00000322.wav",
+          "correlation": 0.3360660864404263,
+          "lag": -102241,
+          "overlap": 57759,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000331.wav",
+          "b": "fan/id_06/normal/00000494.wav",
+          "correlation": -0.25036115173229495,
+          "lag": 127615,
+          "overlap": 32385,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000832.wav",
+          "b": "fan/id_06/normal/00000500.wav",
+          "correlation": -0.21674212741420404,
+          "lag": 120863,
+          "overlap": 39137,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000734.wav",
+          "b": "fan/id_06/abnormal/00000102.wav",
+          "correlation": -0.2661041754037446,
+          "lag": 125504,
+          "overlap": 34496,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/normal/00000587.wav",
+          "b": "fan/id_06/abnormal/00000124.wav",
+          "correlation": 0.18901942519694975,
+          "lag": 125477,
+          "overlap": 34523,
+          "flag": false
+        },
+        {
+          "a": "fan/id_06/abnormal/00000109.wav",
+          "b": "fan/id_06/abnormal/00000102.wav",
+          "correlation": 0.30640517515168,
+          "lag": 126346,
+          "overlap": 33654,
+          "flag": false
+        }
+      ],
+      "unreviewed": 0
+    }
+  ],
+  "exact_duplicates": [],
+  "exact_cross_group_chunks": [],
+  "final_audio_read": false,
+  "limitations": "500 Hz screen within machine, >=2s overlap; high-frequency-only and shorter similarities may be missed. No batch-independence claim."
+}

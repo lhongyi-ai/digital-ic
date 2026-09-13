@@ -1,0 +1,812 @@
+//      // verilator_coverage annotation
+        // One synchronous quarter-wave cosine ROM per multiplier lane.
+        // Coefficients are Q2.14; exact quadrant endpoints are handled explicitly.
+        module vib_coeff_rom #(
+            parameter integer N = 1024,
+            parameter bit HANN = 0,
+            parameter MODEL_DIR = "artifacts/model"
+        ) (
+%000000     input wire clk,
+-000000  point: type=toggle comment=clk:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=clk:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=clk:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=clk:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=clk:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=clk:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=clk:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=clk:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=clk:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=clk:1->0 hier=arithmetic_tb.core.hann_rom
+%000000     input wire en,
+-000000  point: type=toggle comment=en:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=en:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=en:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=en:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=en:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=en:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=en:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=en:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=en:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=en:1->0 hier=arithmetic_tb.core.hann_rom
+%000000     input wire [$clog2(N)-1:0] phase,
+-000000  point: type=toggle comment=phase[0]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[0]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[0]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[0]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[0]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[0]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[0]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[0]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[1]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[1]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[1]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[1]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[1]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[1]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[1]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[1]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[2]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[2]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[2]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[2]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[2]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[2]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[2]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[2]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[3]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[3]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[3]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[3]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[3]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[3]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[3]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[3]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[4]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[4]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[4]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[4]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[4]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[4]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[4]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[4]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[5]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[5]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[5]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[5]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[5]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[5]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[5]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[5]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[6]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[6]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[6]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[6]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[6]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[6]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[6]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[6]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[7]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[7]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[7]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[7]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[7]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[7]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[7]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[7]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[8]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[8]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[8]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[8]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[8]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[8]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[8]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[8]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[9]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[9]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[9]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[9]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[9]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=phase[9]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=phase[9]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=phase[9]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=phase[0]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[0]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[1]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[1]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[2]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[2]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[3]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[3]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[4]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[4]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[5]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[5]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[6]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[6]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[7]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[7]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[8]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[8]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[9]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=phase[9]:1->0 hier=arithmetic_tb.core.hann_rom
+%000000     output wire signed [15:0] coefficient
+-000000  point: type=toggle comment=coefficient[0]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[0]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[0]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[0]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[0]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[0]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[0]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[0]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[10]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[10]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[10]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[10]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[10]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[10]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[10]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[10]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[11]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[11]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[11]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[11]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[11]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[11]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[11]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[11]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[12]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[12]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[12]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[12]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[12]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[12]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[12]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[12]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[13]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[13]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[13]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[13]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[13]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[13]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[13]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[13]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[14]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[14]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[14]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[14]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[14]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[14]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[14]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[14]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[15]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[15]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[15]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[15]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[15]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[15]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[15]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[15]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[1]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[1]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[1]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[1]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[1]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[1]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[1]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[1]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[2]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[2]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[2]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[2]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[2]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[2]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[2]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[2]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[3]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[3]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[3]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[3]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[3]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[3]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[3]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[3]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[4]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[4]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[4]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[4]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[4]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[4]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[4]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[4]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[5]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[5]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[5]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[5]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[5]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[5]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[5]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[5]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[6]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[6]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[6]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[6]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[6]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[6]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[6]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[6]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[7]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[7]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[7]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[7]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[7]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[7]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[7]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[7]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[8]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[8]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[8]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[8]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[8]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[8]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[8]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[8]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[9]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[9]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[9]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[9]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[9]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=coefficient[9]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=coefficient[9]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=coefficient[9]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=coefficient[0]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[0]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[10]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[10]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[11]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[11]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[12]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[12]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[13]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[13]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[14]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[14]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[15]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[15]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[1]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[1]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[2]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[2]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[3]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[3]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[4]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[4]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[5]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[5]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[6]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[6]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[7]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[7]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[8]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[8]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[9]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=coefficient[9]:1->0 hier=arithmetic_tb.core.hann_rom
+        );
+            localparam integer P = $clog2(N);
+            localparam integer Q = P-2;
+            (* ram_style = "block" *) reg signed [15:0] quarter [0:N/4-1];
+%000000     reg signed [15:0] magnitude;
+-000000  point: type=toggle comment=magnitude[0]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[0]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[0]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[0]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[0]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[0]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[0]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[0]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[10]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[10]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[10]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[10]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[10]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[10]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[10]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[10]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[11]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[11]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[11]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[11]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[11]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[11]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[11]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[11]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[12]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[12]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[12]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[12]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[12]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[12]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[12]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[12]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[13]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[13]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[13]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[13]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[13]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[13]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[13]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[13]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[14]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[14]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[14]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[14]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[14]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[14]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[14]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[14]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[15]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[15]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[15]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[15]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[15]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[15]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[15]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[15]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[1]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[1]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[1]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[1]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[1]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[1]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[1]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[1]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[2]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[2]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[2]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[2]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[2]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[2]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[2]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[2]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[3]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[3]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[3]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[3]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[3]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[3]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[3]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[3]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[4]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[4]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[4]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[4]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[4]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[4]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[4]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[4]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[5]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[5]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[5]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[5]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[5]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[5]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[5]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[5]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[6]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[6]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[6]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[6]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[6]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[6]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[6]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[6]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[7]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[7]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[7]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[7]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[7]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[7]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[7]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[7]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[8]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[8]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[8]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[8]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[8]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[8]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[8]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[8]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[9]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[9]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[9]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[9]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[9]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=magnitude[9]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=magnitude[9]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=magnitude[9]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=magnitude[0]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[0]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[10]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[10]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[11]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[11]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[12]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[12]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[13]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[13]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[14]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[14]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[15]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[15]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[1]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[1]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[2]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[2]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[3]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[3]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[4]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[4]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[5]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[5]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[6]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[6]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[7]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[7]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[8]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[8]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[9]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=magnitude[9]:1->0 hier=arithmetic_tb.core.hann_rom
+%000000     reg negative, is_zero;
+-000000  point: type=toggle comment=is_zero:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=is_zero:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=is_zero:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=is_zero:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=is_zero:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=is_zero:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=is_zero:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=is_zero:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=is_zero:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=is_zero:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=negative:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=negative:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=negative:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=negative:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=negative:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=negative:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=negative:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=negative:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=negative:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=negative:1->0 hier=arithmetic_tb.core.hann_rom
+%000000     wire [Q-1:0] offset = phase[Q-1:0];
+-000000  point: type=toggle comment=offset[0]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[0]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[0]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[0]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[0]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[0]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[0]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[0]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[1]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[1]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[1]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[1]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[1]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[1]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[1]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[1]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[2]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[2]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[2]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[2]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[2]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[2]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[2]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[2]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[3]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[3]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[3]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[3]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[3]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[3]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[3]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[3]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[4]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[4]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[4]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[4]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[4]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[4]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[4]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[4]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[5]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[5]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[5]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[5]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[5]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[5]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[5]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[5]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[6]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[6]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[6]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[6]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[6]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[6]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[6]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[6]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[7]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[7]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[7]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[7]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[7]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=offset[7]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=offset[7]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=offset[7]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=offset[0]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[0]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[1]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[1]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[2]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[2]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[3]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[3]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[4]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[4]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[5]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[5]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[6]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[6]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[7]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=offset[7]:1->0 hier=arithmetic_tb.core.hann_rom
+%000000     wire [1:0] quadrant = phase[P-1:P-2];
+-000000  point: type=toggle comment=quadrant[0]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=quadrant[0]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=quadrant[0]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=quadrant[0]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=quadrant[0]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=quadrant[0]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=quadrant[0]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=quadrant[0]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=quadrant[1]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=quadrant[1]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=quadrant[1]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=quadrant[1]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=quadrant[1]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=quadrant[1]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=quadrant[1]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=quadrant[1]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=quadrant[0]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=quadrant[0]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=quadrant[1]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=quadrant[1]:1->0 hier=arithmetic_tb.core.hann_rom
+~013303     wire [Q-1:0] address = quadrant[0] ? -offset : offset;
+-000000  point: type=toggle comment=address[0]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[0]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[0]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[0]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[0]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[0]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[0]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[0]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[1]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[1]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[1]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[1]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[1]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[1]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[1]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[1]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[2]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[2]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[2]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[2]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[2]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[2]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[2]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[2]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[3]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[3]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[3]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[3]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[3]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[3]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[3]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[3]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[4]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[4]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[4]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[4]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[4]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[4]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[4]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[4]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[5]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[5]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[5]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[5]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[5]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[5]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[5]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[5]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[6]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[6]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[6]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[6]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[6]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[6]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[6]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[6]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[7]:0->1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[7]:0->1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[7]:0->1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[7]:0->1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[7]:1->0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=toggle comment=address[7]:1->0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=toggle comment=address[7]:1->0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=toggle comment=address[7]:1->0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=toggle comment=address[0]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[0]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[1]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[1]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[2]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[2]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[3]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[3]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[4]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[4]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[5]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[5]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[6]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[6]:1->0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[7]:0->1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=toggle comment=address[7]:1->0 hier=arithmetic_tb.core.hann_rom
++013303  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
++013303  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
++013303  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
++013303  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==1) => 1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==1) => 1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==1) => 1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==1) => 1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
++013303  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=expr comment=(quadrant[0]==1) => 1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.hann_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[0].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[1].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[2].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[3].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.hann_rom
+            generate if (HANN) begin: g_hann_init
+ 000001         initial $readmemh({MODEL_DIR, "/hann_quarter.hex"}, quarter);
++000001  point: type=line comment=block hier=arithmetic_tb.core.hann_rom
+            end else begin: g_cos_init
+ 000001         initial $readmemh({MODEL_DIR, "/cos_quarter.hex"}, quarter);
++000001  point: type=line comment=block hier=arithmetic_tb.core.g_lane[0].coeff_rom
++000001  point: type=line comment=block hier=arithmetic_tb.core.g_lane[1].coeff_rom
++000001  point: type=line comment=block hier=arithmetic_tb.core.g_lane[2].coeff_rom
++000001  point: type=line comment=block hier=arithmetic_tb.core.g_lane[3].coeff_rom
+            end endgenerate
+%000000     always @(posedge clk) begin
+-000000  point: type=line comment=block hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=line comment=block hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=line comment=block hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=line comment=block hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=line comment=block hier=arithmetic_tb.core.hann_rom
+%000000         if (en) begin
+-000000  point: type=branch comment=else hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=else hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=else hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=else hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=else hier=arithmetic_tb.core.hann_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.hann_rom
+%000000             magnitude <= quarter[address];
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.hann_rom
+%000000             negative <= (quadrant == 1 || quadrant == 2);
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.hann_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==0 && (quadrant == 32'sh2)==0) => 0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==0 && (quadrant == 32'sh2)==0) => 0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==0 && (quadrant == 32'sh2)==0) => 0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==0 && (quadrant == 32'sh2)==0) => 0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==1) => 1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==1) => 1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==1) => 1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==1) => 1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh2)==1) => 1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh2)==1) => 1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh2)==1) => 1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh2)==1) => 1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==0 && (quadrant == 32'sh2)==0) => 0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=expr comment=((quadrant == 32'sh1)==1) => 1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=expr comment=((quadrant == 32'sh2)==1) => 1 hier=arithmetic_tb.core.hann_rom
+%000000             is_zero <= quadrant[0] && offset == 0;
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=if hier=arithmetic_tb.core.hann_rom
+-000000  point: type=expr comment=((offset == 32'sh0)==0) => 0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=expr comment=((offset == 32'sh0)==0) => 0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=expr comment=((offset == 32'sh0)==0) => 0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=expr comment=((offset == 32'sh0)==0) => 0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==1 && (offset == 32'sh0)==1) => 1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==1 && (offset == 32'sh0)==1) => 1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==1 && (offset == 32'sh0)==1) => 1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=expr comment=(quadrant[0]==1 && (offset == 32'sh0)==1) => 1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=expr comment=((offset == 32'sh0)==0) => 0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=expr comment=(quadrant[0]==0) => 0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=expr comment=(quadrant[0]==1 && (offset == 32'sh0)==1) => 1 hier=arithmetic_tb.core.hann_rom
+                end
+            end
+~013303     assign coefficient = is_zero ? (HANN ? 16'sd8192 : 16'sd0) :
++013303  point: type=expr comment=(is_zero==0) => 0 hier=arithmetic_tb.core.g_lane[0].coeff_rom
++013303  point: type=expr comment=(is_zero==0) => 0 hier=arithmetic_tb.core.g_lane[1].coeff_rom
++013303  point: type=expr comment=(is_zero==0) => 0 hier=arithmetic_tb.core.g_lane[2].coeff_rom
++013303  point: type=expr comment=(is_zero==0) => 0 hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=expr comment=(is_zero==1) => 1 hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=expr comment=(is_zero==1) => 1 hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=expr comment=(is_zero==1) => 1 hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=expr comment=(is_zero==1) => 1 hier=arithmetic_tb.core.g_lane[3].coeff_rom
++013303  point: type=expr comment=(is_zero==0) => 0 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=expr comment=(is_zero==1) => 1 hier=arithmetic_tb.core.hann_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.hann_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[0].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[1].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[2].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[3].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.hann_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.hann_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.hann_rom
+~013303                          negative ? (HANN ? 16'sd16384-magnitude : -magnitude) : magnitude;
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.hann_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[0].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[1].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[2].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[3].coeff_rom
++013303  point: type=branch comment=cond_else hier=arithmetic_tb.core.hann_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=cond_then hier=arithmetic_tb.core.hann_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[0].coeff_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[1].coeff_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[2].coeff_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.g_lane[3].coeff_rom
+-000000  point: type=branch comment=cond_else hier=arithmetic_tb.core.hann_rom
+        endmodule
+        

@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "top": "upduino_replay",
+  "lanes": 4,
+  "bands": 3,
+  "built_utc": "2026-09-10T05:56:47.165408+00:00",
+  "input_sha256": {
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+    "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+    "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+    "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+    "rtl/io/flash_stream.sv": "48174df1c5ff10003cc0a73591b2cce1697f2a18a22c470495398f0dc0f3eb7a",
+    "rtl/io/replay_source.sv": "1c2f13f84ec7776fe16501c38ff3c66988d1f5f7129fb2a2e402f9b6a1ca3746",
+    "rtl/upduino_replay.sv": "c60aa1ea856404f3b7a00e69828c10e4dc0ccdb8f17771b57c3bbfdacce9dc01",
+    "configs/upduino-replay.pcf": "f6053ef3c603fae11244361d4ffedc1330848853a4e434631cd651af10c35112",
+    "scripts/build_board.py": "31e0ff0f6b7a5b82c7dbf9f34ff57c5eb9d1caa0624e30b8f6c7235f5edf65ee",
+    "artifacts/model_neighbor/weights_l4_1.hex": "ba40796c514997315b5889c7287c2588640f5b8517f5b24f51c47645a4cd071e",
+    "artifacts/model_neighbor/w1.hex": "71858a94d5b82c81f01173326ec20227962b8b16a045d546cb907c16fc23ab03",
+    "artifacts/model_neighbor/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+    "artifacts/model_neighbor/weights_l4_0.hex": "eed0ac4a944abd713924da891cfee6a884361f45d4cc4139ad1ccca1c8fca69a",
+    "artifacts/model_neighbor/b1.hex": "4d93253aed7aa37f66cd67d3ee56d20bcc1dbe2b91d4c0cfcaff1491cee76f23",
+    "artifacts/model_neighbor/weights_l4_2.hex": "7c088defcaf8a3f6a7f14097ff2c00b2573b4101759a5ebbfab819163a901d04",
+    "artifacts/model_neighbor/w2.hex": "509ecb0fd7c4bdb9a9a3407464f644e36dc8cdfcdbe6c7202fe0bf8800707dc7",
+    "artifacts/model_neighbor/dft_bins.hex": "3f20337fe1354478d247847bd3135a5f15f43b17066221aa080abcef9b17ede6",
+    "artifacts/model_neighbor/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+    "artifacts/model_neighbor/weights_l4_3.hex": "afb997dd9dde9a3f710692a9a8703bf55e59bb35f3b755cc855e6968ff94d6fd",
+    "artifacts/model_neighbor/b2.hex": "7d918946adbfc9618e62b897f728978cb26b48629de0aa209cf23cbd8f89b91d",
+    "artifacts/model_neighbor/weights_l1_0.hex": "4780256de37e7eb36a9534555d2c8b62cef4ce074a8c5b5415e9d3895a109b07",
+    "artifacts/model_neighbor/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+    "artifacts/model_neighbor/feature_shifts.hex": "f9c41895a2738ca4f077b23a12d42d8fc27ef292d3d8efc718682ebeaad4ed1a",
+    "artifacts/model_neighbor/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+    "artifacts/model_neighbor/model.json": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117"
+  },
+  "target_clock_mhz": 13.2,
+  "clock_source": "hfosc12",
+  "nominal_clock_hz": 12000000,
+  "clock_frequency_measured": false,
+  "external_clock_input_used": false,
+  "seed": 1,
+  "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+  "bitstream_sha256": "2516d753f9d298478c094f58c797064403bdfeca6cba9da1d68e7bd92ff0fcf1",
+  "synthesis_cells": {
+    "SB_HFOSC": 1,
+    "SB_CARRY": 1362,
+    "SB_DFFE": 176,
+    "SB_LUT4": 3713,
+    "SB_DFF": 120,
+    "$scopeinfo": 14,
+    "SB_DFFESR": 1295,
+    "SB_DFFSS": 2,
+    "SB_DFFSR": 82,
+    "SB_RAM40_4K": 25,
+    "SB_MAC16": 4,
+    "SB_DFFESS": 34,
+    "SB_SPRAM256KA": 3
+  },
+  "post_route_fmax": {
+    "system_clk": {
+      "achieved": 18.631689071655273,
+      "constraint": 12.00004768371582
+    }
+  },
+  "utilization": {
+    "ICESTORM_DSP": {
+      "available": 8,
+      "used": 4
+    },
+    "ICESTORM_HFOSC": {
+      "available": 1,
+      "used": 1
+    },
+    "ICESTORM_LC": {
+      "available": 5280,
+      "used": 5070
+    },
+    "ICESTORM_LFOSC": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_PLL": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_RAM": {
+      "available": 30,
+      "used": 25
+    },
+    "ICESTORM_SPRAM": {
+      "available": 4,
+      "used": 3
+    },
+    "IO_I3C": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_GB": {
+      "available": 8,
+      "used": 8
+    },
+    "SB_I2C": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_IO": {
+      "available": 39,
+      "used": 8
+    },
+    "SB_LEDDA_IP": {
+      "available": 1,
+      "used": 0
+    },
+    "SB_RGBA_DRV": {
+      "available": 1,
+      "used": 0
+    },
+    "SB_SPI": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_WARMBOOT": {
+      "available": 1,
+      "used": 0
+    }
+  },
+  "max_frequency_messages": [
+    "Max frequency for clock 'system_clk': 19.30 MHz (PASS at 12.00 MHz)",
+    "Max frequency for clock 'system_clk': 18.63 MHz (PASS at 12.00 MHz)"
+  ],
+  "place_route_completed": true,
+  "physical_board_programmed": false,
+  "board_profile_verified": false,
+  "power_measured": false
+}

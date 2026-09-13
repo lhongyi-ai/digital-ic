@@ -1,0 +1,8 @@
+# running in ./build/replay_fifo_upgrade/cover/src/
+read -formal -sv upduino_replay.sv replay_fifo_harness.sv
+prep -top replay_fifo_harness
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

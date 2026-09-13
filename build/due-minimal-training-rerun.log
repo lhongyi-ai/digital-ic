@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "./scripts/train_due_minimal.py", line 110, in <module>
+    main()
+  File "./scripts/train_due_minimal.py", line 55, in main
+    digest = sha(path.read_bytes())
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "./scripts/experiment_acoustic_v2.py", line 17, in sha
+    def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+                                      ^^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'read_bytes'

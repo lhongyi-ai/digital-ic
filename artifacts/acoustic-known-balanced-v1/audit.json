@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": 23,
+  "results_sha256": "730d7342c85436da8ab24b315c5b334f2d86e0beaf01cd82fc12adec3cef77bd",
+  "protocol_sha256": "6462cb00a51e99995cd034d41ce7d74321364d9a02e374bfe8ed98d4e47bf7d5",
+  "source_sha256": "97d758e8ac94d364a420f1050c33cf5d15d1fce0b47bf2ed98699c3cf437bb3c",
+  "model_sha256": {
+    "mlp-fold0.pt": "1108cfdeafeb79df3bf6c643c3a28ec3993b8e7992830487d23242feef4ff9f1",
+    "mlp-fold1.pt": "a8bc00aacef66bb0f8d7e156d5506d9b40eb6dc46a7186ae091cbfe10c6d3fb7",
+    "mlp-fold2.pt": "26a656479f3e0525cd0f40227ea00fad92c3b9160c51aa56cd5a50edba697c78"
+  },
+  "final_test_audio_read": false
+}

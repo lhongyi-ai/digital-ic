@@ -1,0 +1,41 @@
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1789161035
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_known_core.stages_and_backpressure (1/2)
+  8661.00ns WARNING  cocotb.regression                  test_known_core.stages_and_backpressure failed
+                                                        Traceback (most recent call last):
+                                                          File "./sim/test_known_core.py", line 72, in stages_and_backpressure
+                                                            for k,r in enumerate(refs):await receive(d,r['score'],k*WINDOWS)
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "./sim/test_known_core.py", line 40, in receive
+                                                            assert int(d.out_error.value)==0
+                                                        AssertionError: assert 2 == 0
+                                                         +  where 2 = int(LogicArray('00000010', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000010', Range(7, 'downto', 0)) = PackedObject(known_spectral_core.out_error).value
+                                                         +      where PackedObject(known_spectral_core.out_error) = HierarchyObject(known_spectral_core with definition known_spectral_core).out_error
+  8661.00ns INFO     cocotb.regression                  running test_known_core.reset_cancels_transactions (2/2)
+ 19412.00ns WARNING  cocotb.regression                  test_known_core.reset_cancels_transactions failed
+                                                        Traceback (most recent call last):
+                                                          File "./sim/test_known_core.py", line 89, in reset_cancels_transactions
+                                                            t=cocotb.start_soon(send(d,x,200,False));await receive(d,ref['score'],200);await t
+                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "./sim/test_known_core.py", line 40, in receive
+                                                            assert int(d.out_error.value)==0
+                                                        AssertionError: assert 2 == 0
+                                                         +  where 2 = int(LogicArray('00000010', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000010', Range(7, 'downto', 0)) = PackedObject(known_spectral_core.out_error).value
+                                                         +      where PackedObject(known_spectral_core.out_error) = HierarchyObject(known_spectral_core with definition known_spectral_core).out_error
+ 19412.00ns INFO     cocotb.regression                  ****************************************************************************************************
+                                                        ** TEST                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************
+                                                        ** test_known_core.stages_and_backpressure      FAIL        8661.00           0.04     208605.59  **
+                                                        ** test_known_core.reset_cancels_transactions   FAIL       10751.00           0.00    5909308.51  **
+                                                        ****************************************************************************************************
+                                                        ** TESTS=2 PASS=0 FAIL=2 SKIP=0                            19412.00           0.04     434142.24  **
+                                                        ****************************************************************************************************
+- :0: Verilog $finish

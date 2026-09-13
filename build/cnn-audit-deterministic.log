@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "./scripts/audit_multimachine_cnn.py", line 30, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./scripts/audit_multimachine_cnn.py", line 24, in main
+    model=mod.Net();model.load_state_dict(torch.load(out/(c['name']+'-'+held+'.pt'),weights_only=True));cs=mod.predict(model,x[cal]);vs=mod.predict(model,x[val]);np.testing.assert_array_equal(vs,saved['validation_scores']);np.testing.assert_array_equal(cs,saved['calibration_scores']);assert manual_threshold(cs,y[cal],m[cal])==saved['threshold']
+                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1128, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+Mismatched elements: 188 / 320 (58.8%)
+First 5 mismatches are at indices:
+ [0]: 0.1721811443567276 (ACTUAL), 0.17218109965324402 (DESIRED)
+ [1]: 0.17083850502967834 (ACTUAL), 0.17083851993083954 (DESIRED)
+ [2]: 0.24264687299728394 (ACTUAL), 0.24264690279960632 (DESIRED)
+ [4]: 0.12874503433704376 (ACTUAL), 0.12874498963356018 (DESIRED)
+ [5]: 0.1411651223897934 (ACTUAL), 0.14116516709327698 (DESIRED)
+Max absolute difference among violations: 1.34110451e-07
+Max relative difference among violations: 1.73672648e-05
+ ACTUAL: array([ 0.172181,  0.170839,  0.242647,  0.15292 ,  0.128745,  0.141165,
+        0.155856,  0.251866,  0.23157 ,  0.119823,  0.241764, -0.153524,
+        0.335032,  0.03394 ,  0.093053,  0.081047,  0.270459,  0.245969,...
+ DESIRED: array([ 0.172181,  0.170839,  0.242647,  0.15292 ,  0.128745,  0.141165,
+        0.155856,  0.251866,  0.23157 ,  0.119823,  0.241764, -0.153524,
+        0.335032,  0.03394 ,  0.093053,  0.081047,  0.270459,  0.245969,...

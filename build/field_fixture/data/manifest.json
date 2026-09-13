@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "source_kind": "synthetic_pipeline_fixture",
+  "odr_hz": 800,
+  "clock_hz": 12000000,
+  "axis": "z",
+  "class_names": [
+    "stopped",
+    "rigid_support_running",
+    "flexible_support_running"
+  ],
+  "apparatus": "mathematical sine/noise fixture; no physical apparatus or fault evidence",
+  "records": [
+    {
+      "path": "train_0_0.csv",
+      "record_id": "train_0_0",
+      "label": 0,
+      "split": "train",
+      "session_id": "train_0_0",
+      "installation_id": "synthetic_train",
+      "sha256": "57aa2246246a35e99c17ec897dfe19c588807f16012c51d50a233272878d8bac"
+    },
+    {
+      "path": "train_0_1.csv",
+      "record_id": "train_0_1",
+      "label": 0,
+      "split": "train",
+      "session_id": "train_0_1",
+      "installation_id": "synthetic_train",
+      "sha256": "6c9a2fb983e77b52ad3eed2eb2a1d4839173a0511d3f37cae75c402c4873825a"
+    },
+    {
+      "path": "train_1_0.csv",
+      "record_id": "train_1_0",
+      "label": 1,
+      "split": "train",
+      "session_id": "train_1_0",
+      "installation_id": "synthetic_train",
+      "sha256": "4cd0d9942d6c5d16014c449fb6413271f0252bc68bf0db28ceb5722bfdb34b47"
+    },
+    {
+      "path": "train_1_1.csv",
+      "record_id": "train_1_1",
+      "label": 1,
+      "split": "train",
+      "session_id": "train_1_1",
+      "installation_id": "synthetic_train",
+      "sha256": "ad88029d1b07ffe375de840322dfaa08266c8d359c9c76b4f5fb8c6569964e36"
+    },
+    {
+      "path": "train_2_0.csv",
+      "record_id": "train_2_0",
+      "label": 2,
+      "split": "train",
+      "session_id": "train_2_0",
+      "installation_id": "synthetic_train",
+      "sha256": "bb38b715423fa0f82f486954650499c5d4343c2d3513f5a5066718da6210959f"
+    },
+    {
+      "path": "train_2_1.csv",
+      "record_id": "train_2_1",
+      "label": 2,
+      "split": "train",
+      "session_id": "train_2_1",
+      "installation_id": "synthetic_train",
+      "sha256": "0ad94f551bb9709454ee644495bdb7b534b5190d0709e3caecc03a5920718f35"
+    },
+    {
+      "path": "validation_0_0.csv",
+      "record_id": "validation_0_0",
+      "label": 0,
+      "split": "validation",
+      "session_id": "validation_0_0",
+      "installation_id": "synthetic_validation",
+      "sha256": "c5106d289e79dc84219d332a8ce16dc39a9eadc59a5b3c798bb3a8fcc26e7665"
+    },
+    {
+      "path": "validation_1_0.csv",
+      "record_id": "validation_1_0",
+      "label": 1,
+      "split": "validation",
+      "session_id": "validation_1_0",
+      "installation_id": "synthetic_validation",
+      "sha256": "6c8217c6f50b946f5f02b9c68313f5491c46bde46a8a911a968f5bc14a52615f"
+    },
+    {
+      "path": "validation_2_0.csv",
+      "record_id": "validation_2_0",
+      "label": 2,
+      "split": "validation",
+      "session_id": "validation_2_0",
+      "installation_id": "synthetic_validation",
+      "sha256": "0c27a471864f975b977f1fffb4dbfa19aba344c18e5aec223b4df6f211aac15a"
+    },
+    {
+      "path": "test_0_0.csv",
+      "record_id": "test_0_0",
+      "label": 0,
+      "split": "test",
+      "session_id": "test_0_0",
+      "installation_id": "synthetic_test",
+      "sha256": "8ae0c4e10bfe44fa71c02afac1a613ee93f92787ec9d7592e9a5fd3fbc112244"
+    },
+    {
+      "path": "test_1_0.csv",
+      "record_id": "test_1_0",
+      "label": 1,
+      "split": "test",
+      "session_id": "test_1_0",
+      "installation_id": "synthetic_test",
+      "sha256": "684a66778775af3dcae3330c7ccf01e557b830e01769b3e7fc0a5849c4cffb5c"
+    },
+    {
+      "path": "test_2_0.csv",
+      "record_id": "test_2_0",
+      "label": 2,
+      "split": "test",
+      "session_id": "test_2_0",
+      "installation_id": "synthetic_test",
+      "sha256": "1872fbf5472011016bd118dde805bae01b3e244082be8c28750af19b48f8c9a8"
+    }
+  ]
+}

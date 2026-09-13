@@ -1,0 +1,12 @@
+{
+  "source_sha256": "4afb75fbe0f6b6ce85f1bd4c31fe84fd5e5c2631adc488010885cd33f8203d10",
+  "baseline_sha256": "857f6f2e8b71d55349f1ab74ee4e3398cf81fdb79d19408be8f54d7c2278a593",
+  "expanded_sha256": "54e4d60a46155a34462b072711396b436732ddaa5a04ad96f2668b9cbcd521fd",
+  "calibration_manifest_sha256": "d04460f87d7f859ca9e2d5a92da659b31ac30a5a3bbfcf4f1ca0d81764d7aa2c",
+  "calibration_audit_sha256": "205a4dbbaa93340414d85390d0244ef28e0d33088efdf957b44214d6eedd1c90",
+  "selection": "compare original saved full512 linear and added-fit saved full512 linear; no refitting",
+  "threshold": "ID00:original32+new128 normal calibration, alpha=.04 fixed, ceil161*.96=155; other IDs:32, rank32; strict >",
+  "overall_auc": "mean fold AUC of calibrated score minus per-ID threshold; also raw logit AUC reported",
+  "scope": "development only, all four installed IDs evaluated; no quantization or final audio",
+  "final_test_opened": false
+}

@@ -1,0 +1,241 @@
+{
+  "selected_frequency_candidate": "train_fisher_separated",
+  "selection_basis": "maximum validation macro-F1 among deployable 16-bin MLP models; offline band baseline excluded",
+  "floating_mlp": {
+    "accuracy": 0.8836772983114447,
+    "balanced_accuracy": 0.8836340138207522,
+    "macro_f1": 0.8813891853025244,
+    "per_class_recall": [
+      0.9887323943661972,
+      0.7323943661971831,
+      0.9297752808988764
+    ],
+    "confusion_matrix": [
+      [
+        351,
+        0,
+        4
+      ],
+      [
+        54,
+        260,
+        41
+      ],
+      [
+        25,
+        0,
+        331
+      ]
+    ],
+    "windows": 1066,
+    "class_names": [
+      "inner_race",
+      "outer_race",
+      "ball"
+    ]
+  },
+  "floating_mlp_quantized_feature_input": {
+    "accuracy": 0.8808630393996247,
+    "balanced_accuracy": 0.8807933744790842,
+    "macro_f1": 0.8769176133472962,
+    "per_class_recall": [
+      0.9859154929577465,
+      0.7014084507042253,
+      0.9550561797752809
+    ],
+    "confusion_matrix": [
+      [
+        350,
+        0,
+        5
+      ],
+      [
+        53,
+        249,
+        53
+      ],
+      [
+        16,
+        0,
+        340
+      ]
+    ],
+    "windows": 1066,
+    "class_names": [
+      "inner_race",
+      "outer_race",
+      "ball"
+    ]
+  },
+  "floating_frontend_floating_mlp": {
+    "accuracy": 0.8921200750469043,
+    "balanced_accuracy": 0.8920504299203461,
+    "macro_f1": 0.888670185278731,
+    "per_class_recall": [
+      0.9859154929577465,
+      0.723943661971831,
+      0.9662921348314607
+    ],
+    "confusion_matrix": [
+      [
+        350,
+        2,
+        3
+      ],
+      [
+        53,
+        257,
+        45
+      ],
+      [
+        12,
+        0,
+        344
+      ]
+    ],
+    "windows": 1066,
+    "class_names": [
+      "inner_race",
+      "outer_race",
+      "ball"
+    ]
+  },
+  "ptq": {
+    "accuracy": 0.8714821763602252,
+    "balanced_accuracy": 0.8714274410507992,
+    "macro_f1": 0.8681619650899508,
+    "per_class_recall": [
+      0.9830985915492958,
+      0.7014084507042253,
+      0.9297752808988764
+    ],
+    "confusion_matrix": [
+      [
+        349,
+        0,
+        6
+      ],
+      [
+        53,
+        249,
+        53
+      ],
+      [
+        25,
+        0,
+        331
+      ]
+    ],
+    "windows": 1066,
+    "class_names": [
+      "inner_race",
+      "outer_race",
+      "ball"
+    ]
+  },
+  "ptq_accuracy_drop_percentage_points": 1.2195121951219523,
+  "deployed_integer": {
+    "accuracy": 0.8714821763602252,
+    "balanced_accuracy": 0.8714274410507992,
+    "macro_f1": 0.8681619650899508,
+    "per_class_recall": [
+      0.9830985915492958,
+      0.7014084507042253,
+      0.9297752808988764
+    ],
+    "confusion_matrix": [
+      [
+        349,
+        0,
+        6
+      ],
+      [
+        53,
+        249,
+        53
+      ],
+      [
+        25,
+        0,
+        331
+      ]
+    ],
+    "windows": 1066,
+    "class_names": [
+      "inner_race",
+      "outer_race",
+      "ball"
+    ]
+  },
+  "deployed_accuracy_drop_percentage_points": 1.2195121951219523,
+  "quantization_target_met_on_validation": true,
+  "qat": null,
+  "rms_three_leaf_threshold_baseline": {
+    "accuracy": 0.7551594746716698,
+    "balanced_accuracy": 0.755056179775281,
+    "macro_f1": 0.7505751372107999,
+    "per_class_recall": [
+      0.8394366197183099,
+      0.5605633802816902,
+      0.8651685393258427
+    ],
+    "confusion_matrix": [
+      [
+        298,
+        21,
+        36
+      ],
+      [
+        38,
+        199,
+        118
+      ],
+      [
+        48,
+        0,
+        308
+      ]
+    ],
+    "windows": 1066,
+    "class_names": [
+      "inner_race",
+      "outer_race",
+      "ball"
+    ]
+  },
+  "linear": {
+    "accuracy": 0.8048780487804879,
+    "balanced_accuracy": 0.8048530885688665,
+    "macro_f1": 0.8001767289531072,
+    "per_class_recall": [
+      0.9408450704225352,
+      0.6422535211267606,
+      0.8314606741573034
+    ],
+    "confusion_matrix": [
+      [
+        334,
+        2,
+        19
+      ],
+      [
+        57,
+        228,
+        70
+      ],
+      [
+        14,
+        46,
+        296
+      ]
+    ],
+    "windows": 1066,
+    "class_names": [
+      "inner_race",
+      "outer_race",
+      "ball"
+    ]
+  },
+  "integer_vs_float_feature_mean_abs_error": 0.0014054225041316105,
+  "feature_saturation_fraction_validation": 0.0004104127579737336
+}

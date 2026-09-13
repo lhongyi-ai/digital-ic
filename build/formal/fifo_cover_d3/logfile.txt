@@ -1,0 +1,64 @@
+SBY 19:35:28 [./build/formal/fifo_cover_d3] Removing directory './build/formal/fifo_cover_d3'.
+SBY 19:35:28 [./build/formal/fifo_cover_d3] Copy './formal/../rtl/core/sync_fifo.sv' to './build/formal/fifo_cover_d3/src/sync_fifo.sv'.
+SBY 19:35:28 [./build/formal/fifo_cover_d3] Copy './formal/fifo_harness.sv' to './build/formal/fifo_cover_d3/src/fifo_harness.sv'.
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: smtbmc bitwuzla
+SBY 19:35:28 [./build/formal/fifo_cover_d3] base: starting process "cd ./build/formal/fifo_cover_d3/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 19:35:28 [./build/formal/fifo_cover_d3] base: finished (returncode=0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] prep: starting process "cd ./build/formal/fifo_cover_d3/model; yosys -ql design_prep.log design_prep.ys"
+SBY 19:35:28 [./build/formal/fifo_cover_d3] prep: finished (returncode=0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] smt2: starting process "cd ./build/formal/fifo_cover_d3/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 19:35:28 [./build/formal/fifo_cover_d3] smt2: finished (returncode=0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: starting process "cd ./build/formal/fifo_cover_d3; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 64  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 4 at fifo_harness: fifo_harness.sv:90.9-90.71 (_witness_.check_cover_fifo_harness_sv_90_218)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 5 at fifo_harness: fifo_harness.sv:86.9-86.56 (_witness_.check_cover_fifo_harness_sv_86_194)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 5 at fifo_harness: fifo_harness.sv:87.9-87.71 (_witness_.check_cover_fifo_harness_sv_87_199)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 7 at fifo_harness: fifo_harness.sv:88.9-88.65 (_witness_.check_cover_fifo_harness_sv_88_206)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 11 at fifo_harness: fifo_harness.sv:89.9-89.74 (_witness_.check_cover_fifo_harness_sv_89_212)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Status: passed
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: finished (returncode=0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: Status returned by engine: pass
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: cover trace: ./build/formal/fifo_cover_d3/engine_0/trace0.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_90_218 at fifo_harness.sv:90.9-90.71 step 4
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: cover trace: ./build/formal/fifo_cover_d3/engine_0/trace1.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_86_194 at fifo_harness.sv:86.9-86.56 step 5
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_87_199 at fifo_harness.sv:87.9-87.71 step 5
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: cover trace: ./build/formal/fifo_cover_d3/engine_0/trace2.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_88_206 at fifo_harness.sv:88.9-88.65 step 7
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: cover trace: ./build/formal/fifo_cover_d3/engine_0/trace3.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_89_212 at fifo_harness.sv:89.9-89.74 step 11
+SBY 19:35:28 [./build/formal/fifo_cover_d3] DONE (PASS, rc=0)

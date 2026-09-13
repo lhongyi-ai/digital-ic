@@ -1,0 +1,16 @@
+{
+  "scope": "400 existing training/validation/test recordings, read for duplicate audit only",
+  "no_training": true,
+  "screen_rate_hz": 500,
+  "minimum_overlap_seconds": 2,
+  "all_integer_lags": true,
+  "candidate_abs_correlation": 0.8,
+  "raw_confirmation_abs_correlation": 0.98,
+  "raw_refinement_samples": 32,
+  "max_raw_pairs": 100,
+  "exact_chunks": "1 second every 0.5 second at original 16kHz",
+  "source_sha256": {
+    "scripts/audit_acoustic_recordings.py": "ff73459f8dc09edfb306a9ff0705043ddc2dd63f1c669e431466c067b598a36a",
+    "src/vibfpga/recording_audit.py": "53f092f07358ba0d63852210e7c098903a26768e37d74b1b7903374353f64366"
+  }
+}

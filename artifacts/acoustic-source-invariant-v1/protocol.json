@@ -1,0 +1,18 @@
+{
+  "source_sha256": "2c0c7abdf47b2a84e6bbd902623b0917710381e5cebdd7b4f6c57790a3515ec3",
+  "base_binding": "85e2b957866e10a25b1f9b8ee43a293b6df278ff7fef171da42a0f3930032a85",
+  "kinds": [
+    "centroid",
+    "pc4",
+    "pc16"
+  ],
+  "models": [
+    "linear_01",
+    "linear_1",
+    "rbf_10"
+  ],
+  "nuisance_fit": "source fit-role normal recordings ONLY; held machine never used",
+  "threshold": "source normal calibration only, max across sources",
+  "gate": "each held machine recall > .9, fpr < .05, auc >= .9",
+  "test_opened": false
+}

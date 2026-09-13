@@ -1,0 +1,32 @@
+##   0:00:00  Solver: bitwuzla
+##   0:00:00  Checking cover reachability in step 0..
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Checking cover reachability in step 2..
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Reached cover statement in step 3 at fifo_harness: fifo_harness.sv:86.9-86.56 (_witness_.check_cover_fifo_harness_sv_86_194)
+##   0:00:00  Reached cover statement in step 3 at fifo_harness: fifo_harness.sv:87.9-87.71 (_witness_.check_cover_fifo_harness_sv_87_199)
+##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Checking cover reachability in step 4..
+##   0:00:00  Reached cover statement in step 4 at fifo_harness: fifo_harness.sv:90.9-90.71 (_witness_.check_cover_fifo_harness_sv_90_218)
+##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+##   0:00:00  Checking cover reachability in step 4..
+##   0:00:00  Reached cover statement in step 4 at fifo_harness: fifo_harness.sv:88.9-88.65 (_witness_.check_cover_fifo_harness_sv_88_206)
+##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+##   0:00:00  Checking cover reachability in step 4..
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Reached cover statement in step 5 at fifo_harness: fifo_harness.sv:89.9-89.74 (_witness_.check_cover_fifo_harness_sv_89_212)
+##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+##   0:00:00  Status: passed

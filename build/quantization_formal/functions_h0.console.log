@@ -1,0 +1,33 @@
+SBY 18:17:54 [./build/quantization_formal/functions_h0] Removing directory './build/quantization_formal/functions_h0'.
+SBY 18:17:54 [./build/quantization_formal/functions_h0] Copy './formal/../build/quantization_formal/generated/quant_extract.sv' to './build/quantization_formal/functions_h0/src/quant_extract.sv'.
+SBY 18:17:54 [./build/quantization_formal/functions_h0] Copy './formal/quant_harness.sv' to './build/quantization_formal/functions_h0/src/quant_harness.sv'.
+SBY 18:17:54 [./build/quantization_formal/functions_h0] engine_0: smtbmc bitwuzla
+SBY 18:17:54 [./build/quantization_formal/functions_h0] base: starting process "cd ./build/quantization_formal/functions_h0/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 18:17:54 [./build/quantization_formal/functions_h0] base: finished (returncode=0)
+SBY 18:17:54 [./build/quantization_formal/functions_h0] prep: starting process "cd ./build/quantization_formal/functions_h0/model; yosys -ql design_prep.log design_prep.ys"
+SBY 18:17:54 [./build/quantization_formal/functions_h0] prep: finished (returncode=0)
+SBY 18:17:54 [./build/quantization_formal/functions_h0] smt2: starting process "cd ./build/quantization_formal/functions_h0/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 18:17:54 [./build/quantization_formal/functions_h0] smt2: finished (returncode=0)
+SBY 18:17:54 [./build/quantization_formal/functions_h0] engine_0.basecase: starting process "cd ./build/quantization_formal/functions_h0; yosys-smtbmc -s bitwuzla --presat --unroll --noprogress -t 2  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 18:17:54 [./build/quantization_formal/functions_h0] engine_0.induction: starting process "cd ./build/quantization_formal/functions_h0; yosys-smtbmc -s bitwuzla --presat --unroll -i --noprogress -t 2  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2"
+SBY 18:17:54 [./build/quantization_formal/functions_h0] engine_0.basecase: ##   0:00:00  Solver: bitwuzla
+SBY 18:17:54 [./build/quantization_formal/functions_h0] engine_0.induction: ##   0:00:00  Solver: bitwuzla
+SBY 18:17:54 [./build/quantization_formal/functions_h0] engine_0.induction: ##   0:00:00  Trying induction in step 2..
+SBY 18:17:54 [./build/quantization_formal/functions_h0] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:17:54 [./build/quantization_formal/functions_h0] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 18:17:55 [./build/quantization_formal/functions_h0] engine_0.induction: ##   0:00:00  Temporal induction successful.
+SBY 18:17:55 [./build/quantization_formal/functions_h0] engine_0.induction: ##   0:00:00  Status: passed
+SBY 18:17:55 [./build/quantization_formal/functions_h0] engine_0.induction: finished (returncode=0)
+SBY 18:17:55 [./build/quantization_formal/functions_h0] engine_0.induction: Status returned by engine for induction: pass
+SBY 18:17:55 [./build/quantization_formal/functions_h0] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:17:55 [./build/quantization_formal/functions_h0] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 18:17:55 [./build/quantization_formal/functions_h0] engine_0.basecase: ##   0:00:01  Status: passed
+SBY 18:17:55 [./build/quantization_formal/functions_h0] engine_0.basecase: finished (returncode=0)
+SBY 18:17:55 [./build/quantization_formal/functions_h0] engine_0.basecase: Status returned by engine for basecase: pass
+SBY 18:17:55 [./build/quantization_formal/functions_h0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 18:17:55 [./build/quantization_formal/functions_h0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 18:17:55 [./build/quantization_formal/functions_h0] summary: engine_0 (smtbmc bitwuzla) returned pass for basecase
+SBY 18:17:55 [./build/quantization_formal/functions_h0] summary: engine_0 (smtbmc bitwuzla) returned pass for induction
+SBY 18:17:55 [./build/quantization_formal/functions_h0] summary: engine_0 did not produce any traces
+SBY 18:17:55 [./build/quantization_formal/functions_h0] summary: successful proof by k-induction.
+SBY 18:17:55 [./build/quantization_formal/functions_h0] DONE (PASS, rc=0)

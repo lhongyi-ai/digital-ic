@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "./scripts/audit_multimachine_cnn.py", line 30, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./scripts/audit_multimachine_cnn.py", line 25, in main
+    k=manual_metrics(y[val],vs,saved['threshold']);assert abs(k['auc']-saved['auc'])<1e-12 and k['tp']==saved['confusion_matrix'][1][1] and k['fp']==saved['confusion_matrix'][0][1]
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,30 @@
+[tasks]
+functions_h8 functions h8 verify
+functions_h0 functions h0 verify
+functions_cover functions h8 cover
+serial_bmc serial verify
+serial_cover serial cover
+
+[options]
+functions: depth 2
+serial: depth 64
+functions_h8: mode prove
+functions_h0: mode prove
+serial_bmc: mode bmc
+cover: mode cover
+
+[engines]
+functions: smtbmc bitwuzla
+serial_bmc: abc bmc3
+serial_cover: smtbmc bitwuzla
+
+[script]
+read -formal -sv quant_extract.sv quant_harness.sv
+h8: chparam -set HIDDEN_SHIFT 8 quant_functions_harness
+h0: chparam -set HIDDEN_SHIFT 0 quant_functions_harness
+functions: prep -top quant_functions_harness
+serial: prep -top quant_serial_harness
+
+[files]
+../build/quantization_formal/generated/quant_extract.sv
+quant_harness.sv

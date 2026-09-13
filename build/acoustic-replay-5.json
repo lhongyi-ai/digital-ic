@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "mode": "replay",
+  "n": 1024,
+  "source_frames": 6,
+  "run_frames": 5,
+  "period_cycles": 750,
+  "payload_crc32": "02ae6824",
+  "model_sha256": "f27c00bae55fc68390008007e1ff0561991515fa2107fef41f53a5cf19c8f8e5",
+  "image_sha256": "c5ae92d684c62529eccbf3dfcd0fdac26744e5cff9764bebee9fda8332474844",
+  "repeated_frames_are_independent_experiments": false,
+  "source_files": [
+    "./artifacts/acoustic/vectors/replay_000.hex",
+    "./artifacts/acoustic/vectors/replay_001.hex",
+    "./artifacts/acoustic/vectors/replay_002.hex",
+    "./artifacts/acoustic/vectors/replay_003.hex",
+    "./artifacts/acoustic/vectors/replay_004.hex",
+    "./artifacts/acoustic/vectors/replay_005.hex"
+  ]
+}

@@ -1,0 +1,27 @@
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+     -.--ns INFO     pygpi                              ..ib/pygpi/embed.cpp:115  in initialize                      Using Python 3.12.10 interpreter at ./.venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1788830799
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_sensor_classifier.continuous_numeric_and_timestamp_wrap (1/4)
+888665.00ns INFO     cocotb.regression                  test_sensor_classifier.continuous_numeric_and_timestamp_wrap passed
+888665.00ns INFO     cocotb.regression                  running test_sensor_classifier.long_stall_overrun_cancels_and_recovers (2/4)
+1565090.00ns INFO     cocotb.regression                  test_sensor_classifier.long_stall_overrun_cancels_and_recovers passed
+1565090.00ns INFO     cocotb.regression                  running test_sensor_classifier.explicit_gap_cancels_complete_partial_and_stalled_output (3/4)
+1793995.00ns INFO     cocotb.regression                  test_sensor_classifier.explicit_gap_cancels_complete_partial_and_stalled_output passed
+1793995.00ns INFO     cocotb.regression                  running test_sensor_classifier.partial_reset_clears_counters_and_restarts_ids (4/4)
+1870670.00ns INFO     cocotb.regression                  test_sensor_classifier.partial_reset_clears_counters_and_restarts_ids passed
+1870670.00ns INFO     cocotb.regression                  *****************************************************************************************************************************************
+                                                        ** TEST                                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************************************
+                                                        ** test_sensor_classifier.continuous_numeric_and_timestamp_wrap                      PASS      888665.00           0.11    8225472.76  **
+                                                        ** test_sensor_classifier.long_stall_overrun_cancels_and_recovers                    PASS      676425.00           0.10    6846545.48  **
+                                                        ** test_sensor_classifier.explicit_gap_cancels_complete_partial_and_stalled_output   PASS      228905.00           0.03    8930191.85  **
+                                                        ** test_sensor_classifier.partial_reset_clears_counters_and_restarts_ids             PASS       76675.00           0.01    8653574.86  **
+                                                        *****************************************************************************************************************************************
+                                                        ** TESTS=4 PASS=4 FAIL=0 SKIP=0                                                               1870670.00           0.24    7730469.90  **
+                                                        *****************************************************************************************************************************************
+- :0: Verilog $finish

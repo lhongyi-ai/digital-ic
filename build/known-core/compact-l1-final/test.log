@@ -1,0 +1,21 @@
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1789163870
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_known_core.stages_and_backpressure (1/2)
+ 42631.00ns INFO     cocotb.regression                  test_known_core.stages_and_backpressure passed
+ 42631.00ns INFO     cocotb.regression                  running test_known_core.reset_cancels_transactions (2/2)
+103856.00ns INFO     cocotb.regression                  test_known_core.reset_cancels_transactions passed
+103856.00ns INFO     cocotb.regression                  ****************************************************************************************************
+                                                        ** TEST                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************
+                                                        ** test_known_core.stages_and_backpressure      PASS       42631.00           0.03    1272554.48  **
+                                                        ** test_known_core.reset_cancels_transactions   PASS       61225.00           0.01    9809733.63  **
+                                                        ****************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                           103856.00           0.04    2581839.55  **
+                                                        ****************************************************************************************************
+- :0: Verilog $finish

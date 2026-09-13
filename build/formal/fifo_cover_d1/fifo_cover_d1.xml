@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-09-05T19:35:08" hostname="MacBook-Pro-3.local" package="fifo" id="0" name="cover_d1" tests="18" errors="0" failures="0" time="0" skipped="13">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="cover_d1" name="build execution" time="0">
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:32.13-32.39" time="0" type="ASSERT" location="fifo_harness.sv:32.13-32.39" id="_witness_.check_assert_fifo_harness_sv_32_133">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:33.13-33.39" time="0" type="ASSERT" location="fifo_harness.sv:33.13-33.39" id="_witness_.check_assert_fifo_harness_sv_33_135">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:34.13-34.54" time="0" type="ASSERT" location="fifo_harness.sv:34.13-34.54" id="_witness_.check_assert_fifo_harness_sv_34_137">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:35.13-35.71" time="0" type="ASSERT" location="fifo_harness.sv:35.13-35.71" id="_witness_.check_assert_fifo_harness_sv_35_142">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:37.17-37.38" time="0" type="ASSERT" location="fifo_harness.sv:37.17-37.38" id="_witness_.check_assert_fifo_harness_sv_37_150">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:39.21-39.38" time="0" type="ASSERT" location="fifo_harness.sv:39.21-39.38" id="_witness_.check_assert_fifo_harness_sv_39_153">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:40.21-40.49" time="0" type="ASSERT" location="fifo_harness.sv:40.21-40.49" id="_witness_.check_assert_fifo_harness_sv_40_154">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:44.17-44.34" time="0" type="ASSERT" location="fifo_harness.sv:44.17-44.34" id="_witness_.check_assert_fifo_harness_sv_44_158">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:45.17-45.52" time="0" type="ASSERT" location="fifo_harness.sv:45.17-45.52" id="_witness_.check_assert_fifo_harness_sv_45_159">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:48.17-48.39" time="0" type="ASSERT" location="fifo_harness.sv:48.17-48.39" id="_witness_.check_assert_fifo_harness_sv_48_161">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:49.17-49.35" time="0" type="ASSERT" location="fifo_harness.sv:49.17-49.35" id="_witness_.check_assert_fifo_harness_sv_49_163">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:52.17-52.35" time="0" type="ASSERT" location="fifo_harness.sv:52.17-52.35" id="_witness_.check_assert_fifo_harness_sv_52_165">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property ASSERT in fifo_harness at fifo_harness.sv:53.17-53.34" time="0" type="ASSERT" location="fifo_harness.sv:53.17-53.34" id="_witness_.check_assert_fifo_harness_sv_53_167">
+<skipped />
+</testcase>
+<testcase classname="cover_d1" name="Property COVER in fifo_harness at fifo_harness.sv:86.9-86.56" time="0" type="COVER" location="fifo_harness.sv:86.9-86.56" id="_witness_.check_cover_fifo_harness_sv_86_194" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="cover_d1" name="Property COVER in fifo_harness at fifo_harness.sv:87.9-87.71" time="0" type="COVER" location="fifo_harness.sv:87.9-87.71" id="_witness_.check_cover_fifo_harness_sv_87_199" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="cover_d1" name="Property COVER in fifo_harness at fifo_harness.sv:88.9-88.65" time="0" type="COVER" location="fifo_harness.sv:88.9-88.65" id="_witness_.check_cover_fifo_harness_sv_88_206" tracefile="engine_0/trace2.vcd">
+</testcase>
+<testcase classname="cover_d1" name="Property COVER in fifo_harness at fifo_harness.sv:89.9-89.74" time="0" type="COVER" location="fifo_harness.sv:89.9-89.74" id="_witness_.check_cover_fifo_harness_sv_89_212" tracefile="engine_0/trace3.vcd">
+</testcase>
+<testcase classname="cover_d1" name="Property COVER in fifo_harness at fifo_harness.sv:90.9-90.71" time="0" type="COVER" location="fifo_harness.sv:90.9-90.71" id="_witness_.check_cover_fifo_harness_sv_90_218" tracefile="engine_0/trace1.vcd">
+</testcase>
+<system-out>SBY 19:35:08 [./build/formal/fifo_cover_d1] Removing directory './build/formal/fifo_cover_d1'.
+SBY 19:35:08 [./build/formal/fifo_cover_d1] Copy './formal/../rtl/core/sync_fifo.sv' to './build/formal/fifo_cover_d1/src/sync_fifo.sv'.
+SBY 19:35:08 [./build/formal/fifo_cover_d1] Copy './formal/fifo_harness.sv' to './build/formal/fifo_cover_d1/src/fifo_harness.sv'.
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: smtbmc bitwuzla
+SBY 19:35:08 [./build/formal/fifo_cover_d1] base: starting process &quot;cd ./build/formal/fifo_cover_d1/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 19:35:08 [./build/formal/fifo_cover_d1] base: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] prep: starting process &quot;cd ./build/formal/fifo_cover_d1/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 19:35:08 [./build/formal/fifo_cover_d1] prep: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] smt2: starting process &quot;cd ./build/formal/fifo_cover_d1/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 19:35:08 [./build/formal/fifo_cover_d1] smt2: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: starting process &quot;cd ./build/formal/fifo_cover_d1; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 64  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 3 at fifo_harness: fifo_harness.sv:86.9-86.56 (_witness_.check_cover_fifo_harness_sv_86_194)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 3 at fifo_harness: fifo_harness.sv:87.9-87.71 (_witness_.check_cover_fifo_harness_sv_87_199)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 4 at fifo_harness: fifo_harness.sv:90.9-90.71 (_witness_.check_cover_fifo_harness_sv_90_218)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 4 at fifo_harness: fifo_harness.sv:88.9-88.65 (_witness_.check_cover_fifo_harness_sv_88_206)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 5 at fifo_harness: fifo_harness.sv:89.9-89.74 (_witness_.check_cover_fifo_harness_sv_89_212)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Status: passed
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: Status returned by engine: pass
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: cover trace: ./build/formal/fifo_cover_d1/engine_0/trace0.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_86_194 at fifo_harness.sv:86.9-86.56 step 3
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_87_199 at fifo_harness.sv:87.9-87.71 step 3
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: cover trace: ./build/formal/fifo_cover_d1/engine_0/trace1.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_90_218 at fifo_harness.sv:90.9-90.71 step 4
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: cover trace: ./build/formal/fifo_cover_d1/engine_0/trace2.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_88_206 at fifo_harness.sv:88.9-88.65 step 4
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: cover trace: ./build/formal/fifo_cover_d1/engine_0/trace3.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_89_212 at fifo_harness.sv:89.9-89.74 step 5
+SBY 19:35:08 [./build/formal/fifo_cover_d1] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

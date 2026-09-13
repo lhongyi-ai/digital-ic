@@ -1,0 +1,121 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$1093] false)
+assume (= [$auto$async2sync.cc:107:execute$919] false)
+assume (= [$auto$async2sync.cc:116:execute$1001] true)
+assume (= [$auto$async2sync.cc:116:execute$1007] true)
+assume (= [$auto$async2sync.cc:116:execute$1013] true)
+assume (= [$auto$async2sync.cc:116:execute$1019] true)
+assume (= [$auto$async2sync.cc:116:execute$1025] true)
+assume (= [$auto$async2sync.cc:116:execute$1031] true)
+assume (= [$auto$async2sync.cc:116:execute$1037] true)
+assume (= [$auto$async2sync.cc:116:execute$1043] true)
+assume (= [$auto$async2sync.cc:116:execute$1049] true)
+assume (= [$auto$async2sync.cc:116:execute$1055] true)
+assume (= [$auto$async2sync.cc:116:execute$1061] true)
+assume (= [$auto$async2sync.cc:116:execute$1067] true)
+assume (= [$auto$async2sync.cc:116:execute$1073] true)
+assume (= [$auto$async2sync.cc:116:execute$1079] true)
+assume (= [$auto$async2sync.cc:116:execute$1085] true)
+assume (= [$auto$async2sync.cc:116:execute$1091] true)
+assume (= [$auto$async2sync.cc:116:execute$1097] true)
+assume (= [$auto$async2sync.cc:116:execute$1103] true)
+assume (= [$auto$async2sync.cc:116:execute$1109] true)
+assume (= [$auto$async2sync.cc:116:execute$1115] true)
+assume (= [$auto$async2sync.cc:116:execute$1121] true)
+assume (= [$auto$async2sync.cc:116:execute$1127] true)
+assume (= [$auto$async2sync.cc:116:execute$1133] true)
+assume (= [$auto$async2sync.cc:116:execute$1139] true)
+assume (= [$auto$async2sync.cc:116:execute$1145] true)
+assume (= [$auto$async2sync.cc:116:execute$1151] true)
+assume (= [$auto$async2sync.cc:116:execute$1157] true)
+assume (= [$auto$async2sync.cc:116:execute$1163] true)
+assume (= [$auto$async2sync.cc:116:execute$1169] true)
+assume (= [$auto$async2sync.cc:116:execute$1175] true)
+assume (= [$auto$async2sync.cc:116:execute$1181] true)
+assume (= [$auto$async2sync.cc:116:execute$1187] true)
+assume (= [$auto$async2sync.cc:116:execute$923] true)
+assume (= [$auto$async2sync.cc:116:execute$929] true)
+assume (= [$auto$async2sync.cc:116:execute$935] true)
+assume (= [$auto$async2sync.cc:116:execute$941] true)
+assume (= [$auto$async2sync.cc:116:execute$947] true)
+assume (= [$auto$async2sync.cc:116:execute$953] true)
+assume (= [$auto$async2sync.cc:116:execute$959] true)
+assume (= [$auto$async2sync.cc:116:execute$965] true)
+assume (= [$auto$async2sync.cc:116:execute$971] true)
+assume (= [$auto$async2sync.cc:116:execute$977] true)
+assume (= [$auto$async2sync.cc:116:execute$983] true)
+assume (= [$auto$async2sync.cc:116:execute$989] true)
+assume (= [$auto$async2sync.cc:116:execute$995] true)
+assume (= [dut.dbg_index] #b0000000000000000)
+assume (= [dut.dbg_kind] #b0000)
+assume (= [dut.dbg_valid] false)
+assume (= [dut.dbg_value] #b0000000000000000000000000000000000000000)
+assume (= [dut.feature_index] #b0000)
+assume (= [dut.power_sum] #b000000000000000000000000000000000)
+assume (= [dut.quant_guard] false)
+assume (= [dut.quant_remaining] #b00000000)
+assume (= [dut.quant_sticky] false)
+assume (= [dut.quant_work] #b000000000000000000000000000000000)
+assume (= [dut.state] #b00000)
+assume (= [past_valid] false)
+assume (= [pending] false)
+assume (= [saw_abort] false)
+assume (= (select [dut.feature_shifts] #b0000) #b00000000)
+assume (= (select [dut.feature_shifts] #b1101) #b00001100)
+assume (= (select [dut.feature_shifts] #b1110) #b00000000)
+assume (= (select [dut.features] #b0000) #b00000000)
+assume (= (select [dut.features] #b1101) #b00000000)
+
+state 0
+assume (= [clk] false)
+
+state 1
+assume (= [clk] false)
+
+state 2
+assume (= [clk] false)
+
+state 3
+assume (= [clk] false)
+
+state 4
+assume (= [clk] false)
+
+state 5
+assume (= [clk] false)
+
+state 6
+assume (= [clk] false)
+
+state 7
+assume (= [clk] false)
+
+state 8
+assume (= [clk] false)
+
+state 9
+assume (= [clk] false)
+
+state 10
+assume (= [clk] false)
+
+state 11
+assume (= [clk] false)
+
+state 12
+assume (= [clk] false)
+
+state 13
+assume (= [clk] false)
+
+state 14
+assume (= [clk] false)
+
+state 15
+assume (= [clk] false)
+
+state 16
+assume (= [clk] false)
+
+state 17
+assume (= [clk] false)

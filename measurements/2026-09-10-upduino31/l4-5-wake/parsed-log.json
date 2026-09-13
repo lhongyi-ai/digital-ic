@@ -1,0 +1,111 @@
+{
+  "accepted_samples": 5120,
+  "committed": true,
+  "complete_without_reported_errors": true,
+  "error_flags": 0,
+  "generated_samples": 5120,
+  "max_fifo": 1,
+  "overflow_count": 0,
+  "period_cycles": 1000,
+  "protocol_errors": 0,
+  "record_count": 5,
+  "records": [
+    {
+      "accepted_samples": 1101,
+      "class_id": 0,
+      "cycles_dft": 73848,
+      "cycles_nn": 265,
+      "cycles_power": 284,
+      "cycles_pre": 3073,
+      "cycles_total": 77470,
+      "error": 0,
+      "frame_id": 0,
+      "generated_samples": 1101,
+      "logits": [
+        2142,
+        -882,
+        -4405
+      ],
+      "max_fifo": 1,
+      "protocol_errors": 0
+    },
+    {
+      "accepted_samples": 2125,
+      "class_id": 2,
+      "cycles_dft": 73848,
+      "cycles_nn": 265,
+      "cycles_power": 284,
+      "cycles_pre": 3073,
+      "cycles_total": 77470,
+      "error": 0,
+      "frame_id": 1,
+      "generated_samples": 2125,
+      "logits": [
+        -289,
+        -1306,
+        191
+      ],
+      "max_fifo": 1,
+      "protocol_errors": 0
+    },
+    {
+      "accepted_samples": 3149,
+      "class_id": 1,
+      "cycles_dft": 73848,
+      "cycles_nn": 265,
+      "cycles_power": 284,
+      "cycles_pre": 3073,
+      "cycles_total": 77470,
+      "error": 0,
+      "frame_id": 2,
+      "generated_samples": 3149,
+      "logits": [
+        -5094,
+        7045,
+        -12432
+      ],
+      "max_fifo": 1,
+      "protocol_errors": 0
+    },
+    {
+      "accepted_samples": 4173,
+      "class_id": 0,
+      "cycles_dft": 73848,
+      "cycles_nn": 265,
+      "cycles_power": 284,
+      "cycles_pre": 3073,
+      "cycles_total": 77470,
+      "error": 0,
+      "frame_id": 3,
+      "generated_samples": 4173,
+      "logits": [
+        -266,
+        -841,
+        -557
+      ],
+      "max_fifo": 1,
+      "protocol_errors": 0
+    },
+    {
+      "accepted_samples": 5120,
+      "class_id": 2,
+      "cycles_dft": 73848,
+      "cycles_nn": 265,
+      "cycles_power": 284,
+      "cycles_pre": 3073,
+      "cycles_total": 77470,
+      "error": 0,
+      "frame_id": 4,
+      "generated_samples": 5120,
+      "logits": [
+        -265,
+        -1221,
+        -171
+      ],
+      "max_fifo": 1,
+      "protocol_errors": 0
+    }
+  ],
+  "requested_frames": 5,
+  "schema_version": 1
+}

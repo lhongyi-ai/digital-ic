@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Sound Becomes an FPGA Decision · UPduino</title>
+<style>
+:root{color-scheme:light;--ink:#17313b;--muted:#536975;--teal:#147d92;--orange:#b64c28;--line:#dce5e9;--paper:#f5f8fa}
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 system-ui,-apple-system,"PingFang SC",sans-serif;color:var(--ink);background:var(--paper)}
+main{max-width:1080px;margin:auto;padding:38px 24px 60px}h1{font-size:clamp(28px,4vw,42px);line-height:1.25;letter-spacing:-1px;margin:14px 0}h2{font-size:24px;margin:0 0 12px}h3{margin:0 0 10px;font-size:19px}p{margin:8px 0 16px}.eyebrow{color:var(--teal);font-size:13px;font-weight:750;letter-spacing:2px}.muted,small{color:var(--muted)}
+.notice{background:#e6f1f4;border-left:4px solid var(--teal);padding:14px 18px;margin:22px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card,section{background:white;border:1px solid var(--line);border-radius:14px;padding:24px}.card{border-top:4px solid var(--teal)}.card.fault{border-top-color:var(--orange)}section{margin-top:24px}.score{font-size:33px;font-weight:750;line-height:1.3}.label{font-size:13px;color:var(--muted)}audio{width:100%;margin:12px 0}code{background:#edf2f5;border-radius:4px;padding:2px 5px;overflow-wrap:anywhere}a{color:#09677a;text-underline-offset:3px}img{display:block;width:100%;height:auto;margin-top:14px;border-radius:8px}.flow{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.flow span{border:1px solid var(--line);background:#f4f8fa;padding:8px 12px;border-radius:8px}.flow b{align-self:center;color:var(--teal)}
+.control{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:16px 0}input[type=range]{flex:1;min-width:180px;accent-color:var(--teal)}input[type=number]{width:80px;padding:8px;border:1px solid #96a9b1;border-radius:5px;font:inherit}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}td,th{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:500}td:last-child{text-align:right}.tablewrap{overflow-x:auto}.pill{display:inline-block;background:#e7f3f0;color:#126353;border-radius:20px;padding:3px 10px;font-size:12px}details{margin:16px 0}summary{cursor:pointer;font-weight:650}footer{margin-top:24px;color:var(--muted);font-size:14px}.sr-only{position:absolute;left:-10000px}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #ed9b60;outline-offset:3px}@media(max-width:640px){main{padding:22px 14px}.grid{grid-template-columns:1fr}section,.card{padding:18px}.score{font-size:28px}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">UPDUINO 3.1 · Acoustic Signal Processing and Fixed-Point Classification</div>
+<h1>Listen to a Recording and Follow the FPGA Decision</h1>
+<p class="muted">Machine 00 · Public MIMII recordings · Mono 16 kHz · 9.984 seconds each</p>
+<div class="notice"><strong>This is an interactive explanation of saved physical-board results.</strong>Playback runs on your computer and does not trigger the FPGA again. Scores below come from saved, verified raw UPduino readbacks; they are not field microphone measurements.</div>
+<div class="grid" id="audio-cards"></div>
+<p class="muted"><small>WAV files retain the original PCM values sent to the FPGA, without denoising or individual volume boosts. Lower your computer volume before playback. Listening impressions do not replace independent test metrics.</small></p>
+
+<section><div class="eyebrow">01 / START WITH SAMPLES</div><h2>Start with the First 64 ms Window</h2>
+<p>Each recording contains 156 windows of 1,024 samples. The fault recording is examined below in detail; the FPGA outputs one recording-level decision only at the end.</p>
+<div class="flow"><span>PCM16 samples</span><b>→</b><span>Scaling and DC removal</span><b>→</b><span>Hann windowing</span><b>→</b><span>Complete DFT</span><b>→</b><span>Power sums over 156 windows</span></div>
+<img src="01-waveform.png" alt="Full fault-recording envelope, first-window raw waveform, and waveforms before and after windowing" width="1600" height="1280">
+<details><summary>Check Rounding with a Real Sample</summary><p>Sample 256 (zero-based) is −267. Dividing by 2 gives −133.5; ties-to-even yields −134. The window mean is −16, so the centered value is −118. The Hann coefficient is 16384 (Q15). Right-shifting the product −1933312 by 15 bits with rounding gives −59.</p><p>RTL signed shifts, rounding, and saturation rules must therefore match Python.</p></details></section>
+
+<section><div class="eyebrow">02 / FROM WAVEFORM TO FEATURES</div><h2>The Spectrum Shows Energy at Each Frequency</h2>
+<p>Compute real, imaginary, and power values for 512 bins in each window. Average power over 156 windows first, then take log2 and normalize to −127…127 using training parameters. The vertical line in the plot is only an explanatory example; the model still uses all 512 bins.</p>
+<img src="02-spectrum-features.png" alt="Log spectra for the first window and complete recording, and 512 INT8 features" width="1600" height="960">
+<div class="control"><label for="bin">Inspect frequency bin k</label><input id="bin" type="range" min="1" max="512" value="5"><label class="sr-only" for="bin-number">Frequency-bin number</label><input id="bin-number" type="number" min="1" max="512" value="5"></div>
+<p id="frequency" aria-live="polite"></p>
+<div class="tablewrap"><table><tbody id="feature-detail"></tbody></table></div>
+<p class="muted"><small>Changing bins displays already computed explanation data; it does not modify the model, retrain it, or change the classification.</small></p></section>
+
+<section><div class="eyebrow">03 / MULTIPLY-ACCUMULATE TO A SCORE</div><h2>512 Multiply-Accumulates Plus a Bias</h2>
+<p>The classifier is logistic regression: <code>score = 441 + Σ(feature × weight)</code> The integer products sum to 9,181. The final score is <strong>9,622</strong> and exceeds the threshold <strong>−1,029</strong>, producing a fault decision. This integer score is not a fault probability.</p>
+<img src="03-mac-score.png" alt="Score contributions from 512 bins and the cumulative score by frequency bin" width="1600" height="960">
+<p>Bin 5: 78.125 Hz, quantized feature 32, weight 91, contribution <code>32 × 91 = 2912</code>. One bin’s contribution alone is not evidence of a fault mechanism.</p></section>
+
+<section><div class="eyebrow">04 / RTL AND PHYSICAL-BOARD CORRESPONDENCE</div><h2>How Software Values Map to Circuit States</h2>
+<div class="tablewrap"><table><thead><tr><th>Computation step</th><th>RTL state or module</th></tr></thead><tbody>
+<tr><td>Complete-window capture, input scaling, and sum</td><td><code>known_capture</code></td></tr>
+<tr><td>Sample read, DC removal, and windowing</td><td><code>PRE_READ → PRE_MULT → PRE_STORE</code></td></tr>
+<tr><td>Frequency-component multiply-accumulate</td><td><code>DFT_INIT → DFT_RUN → DFT_SAVE</code></td></tr>
+<tr><td>Real/imaginary squares and power sums across windows</td><td><code>REAL_INIT / WM_* / P_*</code></td></tr>
+<tr><td>Logarithm, fixed-point normalization, linear classification</td><td><code>LOG_* / NORM_INIT / NN_MULT / NN_ACC</code></td></tr>
+<tr><td>Hold final score and commit Flash log</td><td><code>FRAME_DONE → HOLD</code> + replay controller</td></tr>
+</tbody></table></div>
+<p>The nine groups of fields recomputed for this walkthrough match existing RTL regression vectors; the final score matches two identical raw physical-board logs. Intermediates were recomputed in Python and correspond to existing simulation evidence; they were not all captured with physical-board probes.</p>
+<p><a href="trace.json">Complete trace and hashes</a> · <a href="window-000.csv">First-window per-sample CSV</a> · <a href="features-and-mac.csv">All features and multiply-accumulates CSV</a> · <a href="selected-bin-across-windows.csv">Bin 5 cross-window accumulation CSV</a></p></section>
+<footer>This page explains computation using development recordings. Generalization metrics come from a separate evaluation of 720 reserved recordings after freezing; the two examples here do not estimate accuracy. No network or sensor is required; audio, plots, and data are in the same directory.</footer>
+</main>
+<script>
+const data=__TRACE_DATA__;
+const cards=document.getElementById('audio-cards');
+for(const [i,r] of data.audio.entries()){
+ const card=document.createElement('article');card.className='card'+(i?' fault':'');
+ const title=document.createElement('h3');title.textContent=r.title;card.append(title);
+ const source=document.createElement('div');source.className='label';source.textContent=r.source;card.append(source);
+ const audio=document.createElement('audio');audio.controls=true;audio.preload='metadata';audio.src=r.file;audio.setAttribute('aria-label','Play '+r.title);card.append(audio);
+ const label=document.createElement('div');label.className='label';label.textContent='Saved physical-board score / threshold −1,029';card.append(label);
+ const score=document.createElement('div');score.className='score';score.textContent=r.score.toLocaleString('en-US');card.append(score);
+ const note=document.createElement('p');note.className='muted';note.textContent='Decision: '+(r.classification?'Fault':'Normal')+' · '+r.duration_seconds+' seconds';card.append(note);
+ const status=document.createElement('span');status.className='pill';status.textContent='Raw readback verified';card.append(status);cards.append(card);
+}
+const slider=document.getElementById('bin'),number=document.getElementById('bin-number');
+function show(value){
+ const k=Math.max(1,Math.min(512,Math.round(Number(value)||1)));slider.value=number.value=k;
+ const f=data.features[k-1];document.getElementById('frequency').textContent=`k = ${k} → ${f.frequency} Hz (15.625 Hz per bin)`;
+ const rows=[['Integer power sum over 156 windows',f.power_sum],['log2 power: Q12 integer / approximate real value',`${f.log_q12} / ${(f.log_q12/4096).toFixed(4)}`],['Training mean Q12 / normalization gain Q24',`${f.mean_q12} / ${f.gain_q24}`],['INT8 feature × INT8 weight',`${f.feature} × ${f.weight}`],['This bin’s score contribution',f.product],['Cumulative score through this bin',f.cumulative]];
+ const body=document.getElementById('feature-detail');body.replaceChildren();for(const [key,value] of rows){const tr=document.createElement('tr'),th=document.createElement('th'),td=document.createElement('td');th.scope='row';th.textContent=key;td.textContent=value;tr.append(th,td);body.append(tr);}
+}
+slider.addEventListener('input',()=>show(slider.value));number.addEventListener('input',()=>{if(number.value!=='')show(number.value)});number.addEventListener('change',()=>show(number.value));show(data.selected_bin);
+</script></body></html>

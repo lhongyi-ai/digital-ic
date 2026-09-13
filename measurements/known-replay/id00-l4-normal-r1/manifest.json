@@ -1,0 +1,274 @@
+{
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "bitstream_sha256": "62be498aae34c7c9e37cddfaa25fbfac1a6034dad90c88a1ffce02a12efa0b32",
+  "build_report_sha256": "27bf4918e9ec43a696f694d8698e3232b0aa13d17a5febca1e479caa9cdca22c",
+  "commands": [
+    [
+      "jedec",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ]
+    ],
+    [
+      "configuration",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/known-replay/id00-l4-normal-r1/board.bin"
+      ]
+    ],
+    [
+      "input",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "1048576",
+        "./measurements/known-replay/id00-l4-normal-r1/input.bin"
+      ]
+    ],
+    [
+      "clear_log_and_start",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/known-replay/id00-l4-normal-r1/erased-log.bin"
+      ]
+    ]
+  ],
+  "deployment_sha256": "ad92f8722613c4f65a85d1ab4a9790988489d7d05bcec075944f2b194afe717d",
+  "expected_score": -6361,
+  "final_audit_sha256": "d0738c03729e145d040aa11355061d37ff82a396f08d74bc8e4ccd9518d938d0",
+  "finished_utc": "2026-09-11T22:30:27.454194+00:00",
+  "hardware_operations_started": true,
+  "input_sha256": "165262f969e4a4a6a789cd8ceedfa54e7092eff06063953a4dbabf2f3e011226",
+  "lanes": 4,
+  "machine": "00",
+  "model_sha256": "23e303fd55a484fe0704089e61e83df2cf4ddfa3a4077e0fa16c4dfa843e39e1",
+  "period": 750,
+  "physical_hardware": true,
+  "profile_sha256": "3e0cbd8dafa9ffc122d6bc2305925cefa0bec273566a4d28af1e79bbf6f7b4e5",
+  "read_consensus": [
+    "read-2.bin",
+    "read-3.bin"
+  ],
+  "reads": [
+    {
+      "error": "JEDEC mismatch: observed ['FFEF40'], expected EF4016",
+      "file": "read-1.bin",
+      "valid": false
+    },
+    {
+      "file": "read-2.bin",
+      "sha256": "cca26978254cfd1114a3a7a8b950d814395afec3df64abf8de32c2636520ecf3",
+      "valid": true
+    },
+    {
+      "file": "read-3.bin",
+      "sha256": "cca26978254cfd1114a3a7a8b950d814395afec3df64abf8de32c2636520ecf3",
+      "valid": true
+    }
+  ],
+  "record": {
+    "compressed": 1782348,
+    "crc": 3279980453,
+    "fold": 0,
+    "label": 0,
+    "local": "data/mimii/pcm/normal_00000304.npy",
+    "machine": "00",
+    "method": 8,
+    "name": "fan/id_00/normal/00000304.wav",
+    "npy_sha256": "991aa41b728cb988a43b82ed8f0e3ead69b7b8fc3034b552ea8e6b9e6ba3757e",
+    "offset": 1300214316,
+    "role": "cv",
+    "size": 2560080
+  },
+  "result": {
+    "accepted": 159744,
+    "actual_crc": 3493500942,
+    "classification": 0,
+    "core_error": 0,
+    "cycles_dft": 41174016,
+    "cycles_nn": 18147,
+    "cycles_power": 2551452,
+    "cycles_pre": 479232,
+    "cycles_total": 44222847,
+    "errors": 0,
+    "expected_crc": 3493500942,
+    "first_sample_tick": 84992,
+    "frame_id": 0,
+    "generated": 159744,
+    "last_sample_tick": 119892242,
+    "max_queue": 256,
+    "output_tick": 120193784,
+    "protocol_errors": 0,
+    "score": -6361,
+    "threshold": -1029
+  },
+  "result_sha256": "cca26978254cfd1114a3a7a8b950d814395afec3df64abf8de32c2636520ecf3",
+  "source_sha256": "b67f3527353538f0c6ac7c8acf0d0237e97864a48a11b27ef8f06482fe5a4b10",
+  "started_utc": "2026-09-11T22:29:41.584659+00:00",
+  "status": "passed",
+  "steps": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "elapsed_seconds": 0.7180137079849374,
+      "finished_utc": "2026-09-11T22:29:42.368275+00:00",
+      "name": "jedec",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:29:41.649638+00:00",
+      "transcript": "jedec.txt",
+      "transcript_sha256": "d35361e4e3604a85d981ef65c07d8f6d21d8ed1fc0b4cfbaa058d9ff88ba0d43"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/known-replay/id00-l4-normal-r1/board.bin"
+      ],
+      "elapsed_seconds": 7.294576999993296,
+      "finished_utc": "2026-09-11T22:29:49.666868+00:00",
+      "input_file": "./measurements/known-replay/id00-l4-normal-r1/board.bin",
+      "input_sha256": "62be498aae34c7c9e37cddfaa25fbfac1a6034dad90c88a1ffce02a12efa0b32",
+      "name": "configuration",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:29:42.371170+00:00",
+      "transcript": "configuration.txt",
+      "transcript_sha256": "8f1767f7c955b985cdc83c74714deaee365b1b84005e606c3b1a94d48410a3ab"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "1048576",
+        "./measurements/known-replay/id00-l4-normal-r1/input.bin"
+      ],
+      "elapsed_seconds": 20.633427584019955,
+      "finished_utc": "2026-09-11T22:30:10.304501+00:00",
+      "input_file": "./measurements/known-replay/id00-l4-normal-r1/input.bin",
+      "input_sha256": "165262f969e4a4a6a789cd8ceedfa54e7092eff06063953a4dbabf2f3e011226",
+      "name": "input",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:29:49.669536+00:00",
+      "transcript": "input.txt",
+      "transcript_sha256": "86c617ceb560eb1cc67059b0cca25883a244435bb60ba613d16d366457d1f307"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/known-replay/id00-l4-normal-r1/erased-log.bin"
+      ],
+      "elapsed_seconds": 0.9520667920005508,
+      "finished_utc": "2026-09-11T22:30:11.261619+00:00",
+      "input_file": "./measurements/known-replay/id00-l4-normal-r1/erased-log.bin",
+      "input_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+      "name": "clear_log_and_start",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:30:10.308762+00:00",
+      "transcript": "clear_log_and_start.txt",
+      "transcript_sha256": "392c96df6a3083be75acf13e4e0c095c09b67971d0c5b3349bca64a0ee0b519f"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "4096",
+        "./measurements/known-replay/id00-l4-normal-r1/read-1.bin"
+      ],
+      "elapsed_seconds": 0.7163384580053389,
+      "finished_utc": "2026-09-11T22:30:25.987798+00:00",
+      "name": "read-1",
+      "observed_flash_id": "FFEF40",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:30:25.269452+00:00",
+      "transcript": "read-1.txt",
+      "transcript_sha256": "49e9249f492091b9101c0cee487b7d6499e994920dbd80955d118956989b61b5"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "4096",
+        "./measurements/known-replay/id00-l4-normal-r1/read-2.bin"
+      ],
+      "elapsed_seconds": 0.7301710000028834,
+      "finished_utc": "2026-09-11T22:30:26.720934+00:00",
+      "name": "read-2",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:30:25.989928+00:00",
+      "transcript": "read-2.txt",
+      "transcript_sha256": "53a1167b6d583cfa24ca92feda8c4401efb2f983cb891c916545b58644aeac27"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "4096",
+        "./measurements/known-replay/id00-l4-normal-r1/read-3.bin"
+      ],
+      "elapsed_seconds": 0.727039582998259,
+      "finished_utc": "2026-09-11T22:30:27.450999+00:00",
+      "name": "read-3",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-11T22:30:26.723275+00:00",
+      "transcript": "read-3.txt",
+      "transcript_sha256": "53a1167b6d583cfa24ca92feda8c4401efb2f983cb891c916545b58644aeac27"
+    }
+  ],
+  "usb_product": "UPduino v3.1",
+  "wait_seconds": 14
+}

@@ -1,0 +1,24 @@
+.venv/
+.venv-*/
+.tools/
+build/
+data/raw/
+data/cwru/*.mat
+__pycache__/
+.pytest_cache/
+*.vcd
+*.fst
+*.egg-info/
+.DS_Store
+data/field/captures/
+.env
+.env.*
+!.env.example
+
+# Downloaded data and device-specific recovery material stay local.
+data/**/*.npy
+data/**/*.mat
+external/EfficientAT/resources/*.pt
+third_party/panns/*.pth
+measurements/**/original-flash-*.bin
+publication/verification-latest.json

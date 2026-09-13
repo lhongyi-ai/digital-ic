@@ -1,0 +1,20 @@
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+     -.--ns INFO     pygpi                              ..ib/pygpi/embed.cpp:115  in initialize                      Using Python 3.12.10 interpreter at ./.venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1788662283
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  skipping test_spi_sensor.generic_master (1/2)
+     0.00ns INFO     cocotb.regression                  running test_spi_sensor.sensor_capture (2/2)
+361590.00ns INFO     cocotb.regression                  test_spi_sensor.sensor_capture passed
+361590.00ns INFO     cocotb.regression                  ****************************************************************************************
+                                                        ** TEST                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************
+                                                        ** test_spi_sensor.generic_master   SKIP           0.00           0.00          -.--  **
+                                                        ** test_spi_sensor.sensor_capture   PASS      361590.00           0.27    1334274.29  **
+                                                        ****************************************************************************************
+                                                        ** TESTS=2 PASS=1 FAIL=0 SKIP=1               361590.00           0.27    1332324.16  **
+                                                        ****************************************************************************************
+- :0: Verilog $finish

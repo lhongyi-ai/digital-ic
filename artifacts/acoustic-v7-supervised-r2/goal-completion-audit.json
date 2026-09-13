@@ -1,0 +1,28 @@
+{
+  "objective": "validation TP>=27/30, FP<=2/40, AUC>=0.90",
+  "achieved": true,
+  "task": "supervised known-fault recognition, user authorized extension",
+  "validation": {
+    "tp": 30,
+    "fp": 2,
+    "fn": 0,
+    "tn": 38,
+    "auc_pairwise": 1.0
+  },
+  "independent_test": {
+    "tp": 50,
+    "fp": 1,
+    "normal_records": 40,
+    "abnormal_records": 50,
+    "auc": 1.0
+  },
+  "fpga_deployed": false,
+  "sha256": {
+    "artifacts/acoustic-v7-supervised-r2/frozen.json": "19704438dd56edaa2f250f66344d16dd88daaf0b9d7cdb2fd880e65708dd28a2",
+    "artifacts/acoustic-v7-supervised-r2/goal-audit.json": "aa441d81fad816eef30242d94934c5ed6099c731ee53c0c3b693a3871173e5fd",
+    "artifacts/acoustic-v7-supervised-r2/test.json": "0c325695fd9e1fe5ff4e95c38f62de68f681dd780b8de468d8236ad624b69248",
+    "scripts/audit_acoustic_supervised.py": "6cde98fa3bd136235ce182579174521c6cc212e14acf9739b6cbd05a02315ec6",
+    "scripts/evaluate_acoustic_supervised_test.py": "0bf88d0c008365076331b37680855f110038df7507998606d7cf44de4daccdc0",
+    "docs/acoustic-supervised-results.md": "b96c899cfd909c8aa70561f74523ac9697ae405b6669115e2c9369fda17ec4f1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "case": "dirty_log",
+  "nonblank_log_preserved": true,
+  "full_128k_partition_scan": true,
+  "physical_hardware_tested": false,
+  "source_kind": "synthetic_pin_level_stimuli",
+  "configuration_flash_preserved": true,
+  "nor_page_boundary_checks": true,
+  "cycles": 2621753
+}

@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 64
+
+[engines]
+abc bmc3
+
+[script]
+read -formal -sv sync_fifo.sv fifo_harness.sv
+chparam -set WIDTH 16 -set DEPTH 3 fifo_harness
+prep -top fifo_harness
+
+[files]
+../rtl/core/sync_fifo.sv
+fifo_harness.sv

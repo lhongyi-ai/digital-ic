@@ -1,0 +1,135 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `replay_fifo_harness'. Setting top module to replay_fifo_harness.
+
+2.1. Analyzing design hierarchy..
+Top module:  \replay_fifo_harness
+Used module:     \replay_fifo
+
+2.2. Analyzing design hierarchy..
+Top module:  \replay_fifo_harness
+Used module:     \replay_fifo
+Removed 0 unused modules.
+Module replay_fifo_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== replay_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       38 wires
+      523 wire bits
+       15 public wires
+      208 public wire bits
+        9 ports
+      106 port bits
+       34 cells
+        1   $add
+        5   $anyinit
+        1   $assume
+        2   $eq
+        4   $logic_and
+        3   $logic_not
+        1   $logic_or
+       12   $mux
+        1   $ne
+        1   $not
+        1   $pmux
+        1   $reduce_bool
+        1   $sub
+
+=== replay_fifo_harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       48 wires
+      157 wire bits
+       16 public wires
+      116 public wire bits
+        1 ports
+        1 port bits
+       50 cells
+        1   $add
+        1   $anyinit
+        4   $anyseq
+        2   $assume
+        5   $cover
+        1   $eq
+        9   $ff
+        1   $ge
+       15   $logic_and
+        2   $logic_not
+        6   $mux
+        1   $ne
+        1   $not
+        1   $reduce_bool
+        1 submodules
+        1   replay_fifo
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       84 replay_fifo_harness
+       34 replay_fifo
+
+        +----------Count including submodules.
+        | 
+       86 wires
+      680 wire bits
+       31 public wires
+      324 public wire bits
+       10 ports
+      107 port bits
+        - memories
+        - memory bits
+        - processes
+       84 cells
+        2   $add
+        6   $anyinit
+        4   $anyseq
+        3   $assume
+        5   $cover
+        3   $eq
+        9   $ff
+        1   $ge
+       19   $logic_and
+        5   $logic_not
+        1   $logic_or
+       18   $mux
+        2   $ne
+        2   $not
+        1   $pmux
+        2   $reduce_bool
+        1   $sub
+        1 submodules
+        1   replay_fifo
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module replay_fifo.
+Creating SMT-LIBv2 representation of module replay_fifo_harness.
+
+End of script. Logfile hash: 27fc85fe7f, time: 0.00s, user: 0.00s, system: 0.00s, MEM: 12.39 MB peak
+Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 70% 2x write_smt2 (0 sec), 12% 2x read_rtlil (0 sec), ...

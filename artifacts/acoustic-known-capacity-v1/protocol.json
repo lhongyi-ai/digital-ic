@@ -1,0 +1,15 @@
+{
+  "source_sha256": "e57150bcf2b03dd563db3119079d207c0520f1f97db9b9d33690b05aca7a31b3",
+  "baseline_sha256": "4f407cdf2a8bbb85f0de59253b9add09540b81b02122a91702ac15f8445a62c3",
+  "power_sha256": "3d0cc44694b57f570984195918c2ca2a7d691541e801e82a950b8b2e7d7c4aab",
+  "plan_sha256": "cbce6ce6b5bf5c94a6264dbd37e75a6ba801f3d5b158a6a4a301faf8b80bf72b",
+  "candidates": [
+    "full512 MLP512-16-ReLU-1, Adam .001 batch64 epochs100 seed71",
+    "sparse64 Logistic C1 max_iter3000; top64 absolute standardized training-only full512 Logistic coefficients, refit64"
+  ],
+  "threshold": "k=ceil((32+1)*(1-.05))=32; maximum separate normal calibration score, strict >",
+  "threshold_source": "https://arxiv.org/abs/2107.07511",
+  "statistical_limit": "Exchangeability and fixed model required for marginal guarantee; adaptive development and batch uncertainty prevent claiming a population FPR certificate",
+  "scope": "Per-ID development, fixed original folds, 24fits excluding12 feature selectors; no final audio",
+  "final_test_opened": false
+}

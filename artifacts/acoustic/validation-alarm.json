@@ -1,0 +1,440 @@
+{
+  "scope": "Validation only: any K-consecutive-window alarm within each complete recording; reset at recording boundary. This is separate from mean-score clip ROC.",
+  "frozen_sha256": "23487487d8f1074890f1204b784a7d478acedbce754d9bca5615e7ecd7e9a741",
+  "window_threshold": 8722,
+  "consecutive_windows": 3,
+  "confusion_matrix": [
+    [
+      37,
+      3
+    ],
+    [
+      26,
+      4
+    ]
+  ],
+  "fpr": 0.075,
+  "recall": 0.13333333333333333,
+  "records": [
+    {
+      "record": "fan/id_00/normal/00000719.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000205.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000337.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000454.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000809.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000831.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000628.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000881.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000157.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000509.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000970.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000857.wav",
+      "label": 0,
+      "alarm": true,
+      "first_alarm_window": 2
+    },
+    {
+      "record": "fan/id_00/normal/00000260.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000558.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000723.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00001004.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000393.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000171.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000537.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000699.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000081.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000089.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000889.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000440.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000229.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000992.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000176.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000659.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000632.wav",
+      "label": 0,
+      "alarm": true,
+      "first_alarm_window": 114
+    },
+    {
+      "record": "fan/id_00/normal/00000021.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000965.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000405.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000416.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000595.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000013.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000959.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000608.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000783.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000778.wav",
+      "label": 0,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/normal/00000275.wav",
+      "label": 0,
+      "alarm": true,
+      "first_alarm_window": 133
+    },
+    {
+      "record": "fan/id_00/abnormal/00000157.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000002.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000387.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000068.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000170.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000165.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000181.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000249.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000184.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000147.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000207.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000248.wav",
+      "label": 1,
+      "alarm": true,
+      "first_alarm_window": 15
+    },
+    {
+      "record": "fan/id_00/abnormal/00000264.wav",
+      "label": 1,
+      "alarm": true,
+      "first_alarm_window": 5
+    },
+    {
+      "record": "fan/id_00/abnormal/00000098.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000154.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000053.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000236.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000255.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000187.wav",
+      "label": 1,
+      "alarm": true,
+      "first_alarm_window": 66
+    },
+    {
+      "record": "fan/id_00/abnormal/00000110.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000253.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000348.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000322.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000056.wav",
+      "label": 1,
+      "alarm": true,
+      "first_alarm_window": 111
+    },
+    {
+      "record": "fan/id_00/abnormal/00000280.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000178.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000240.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000129.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000024.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    },
+    {
+      "record": "fan/id_00/abnormal/00000391.wav",
+      "label": 1,
+      "alarm": false,
+      "first_alarm_window": null
+    }
+  ]
+}

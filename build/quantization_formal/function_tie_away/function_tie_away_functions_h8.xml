@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-09-07T18:18:44" hostname="MacBook-Pro-3.local" package="function_tie_away" id="0" name="functions_h8" tests="25" errors="0" failures="2" time="0" skipped="24">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="functions_h8" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:36.9-36.64" time="0" type="ASSERT" location="quant_harness.sv:36.9-36.64" id="_witness_.check_assert_quant_harness_sv_36_167" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in quant_functions_harness at quant_harness.sv:36.9-36.64 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:37.27-37.52" time="0" type="ASSERT" location="quant_harness.sv:37.27-37.52" id="_witness_.check_assert_quant_harness_sv_37_170">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:38.33-38.59" time="0" type="ASSERT" location="quant_harness.sv:38.33-38.59" id="_witness_.check_assert_quant_harness_sv_38_173">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:39.14-39.49" time="0" type="ASSERT" location="quant_harness.sv:39.14-39.49" id="_witness_.check_assert_quant_harness_sv_39_175">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:40.9-40.56" time="0" type="ASSERT" location="quant_harness.sv:40.9-40.56" id="_witness_.check_assert_quant_harness_sv_40_177">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:41.28-41.54" time="0" type="ASSERT" location="quant_harness.sv:41.28-41.54" id="_witness_.check_assert_quant_harness_sv_41_182">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:42.34-42.61" time="0" type="ASSERT" location="quant_harness.sv:42.34-42.61" id="_witness_.check_assert_quant_harness_sv_42_185">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:43.14-43.49" time="0" type="ASSERT" location="quant_harness.sv:43.14-43.49" id="_witness_.check_assert_quant_harness_sv_43_187">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:44.34-44.63" time="0" type="ASSERT" location="quant_harness.sv:44.34-44.63" id="_witness_.check_assert_quant_harness_sv_44_190">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:45.41-45.72" time="0" type="ASSERT" location="quant_harness.sv:45.41-45.72" id="_witness_.check_assert_quant_harness_sv_45_193">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:46.14-46.56" time="0" type="ASSERT" location="quant_harness.sv:46.14-46.56" id="_witness_.check_assert_quant_harness_sv_46_195">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property ASSERT in quant_functions_harness at quant_harness.sv:47.9-47.40" time="0" type="ASSERT" location="quant_harness.sv:47.9-47.40" id="_witness_.check_assert_quant_harness_sv_47_197">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:49.9-49.57" time="0" type="COVER" location="quant_harness.sv:49.9-49.57" id="_witness_.check_cover_quant_harness_sv_49_199">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:50.9-50.56" time="0" type="COVER" location="quant_harness.sv:50.9-50.56" id="_witness_.check_cover_quant_harness_sv_50_205">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:51.9-51.59" time="0" type="COVER" location="quant_harness.sv:51.9-51.59" id="_witness_.check_cover_quant_harness_sv_51_211">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:52.9-52.58" time="0" type="COVER" location="quant_harness.sv:52.9-52.58" id="_witness_.check_cover_quant_harness_sv_52_217">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:53.9-53.75" time="0" type="COVER" location="quant_harness.sv:53.9-53.75" id="_witness_.check_cover_quant_harness_sv_53_223">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:54.9-54.71" time="0" type="COVER" location="quant_harness.sv:54.9-54.71" id="_witness_.check_cover_quant_harness_sv_54_229">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:55.9-55.50" time="0" type="COVER" location="quant_harness.sv:55.9-55.50" id="_witness_.check_cover_quant_harness_sv_55_235">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:56.9-56.52" time="0" type="COVER" location="quant_harness.sv:56.9-56.52" id="_witness_.check_cover_quant_harness_sv_56_239">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:57.9-57.52" time="0" type="COVER" location="quant_harness.sv:57.9-57.52" id="_witness_.check_cover_quant_harness_sv_57_243">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:58.9-58.54" time="0" type="COVER" location="quant_harness.sv:58.9-58.54" id="_witness_.check_cover_quant_harness_sv_58_247">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:59.9-59.51" time="0" type="COVER" location="quant_harness.sv:59.9-59.51" id="_witness_.check_cover_quant_harness_sv_59_251">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:60.9-60.74" time="0" type="COVER" location="quant_harness.sv:60.9-60.74" id="_witness_.check_cover_quant_harness_sv_60_255">
+<skipped />
+</testcase>
+<testcase classname="functions_h8" name="Property COVER in quant_functions_harness at quant_harness.sv:61.9-61.78" time="0" type="COVER" location="quant_harness.sv:61.9-61.78" id="_witness_.check_cover_quant_harness_sv_61_259">
+<skipped />
+</testcase>
+<system-out>SBY 18:18:44 [./build/quantization_formal/function_tie_away] Removing directory './build/quantization_formal/function_tie_away'.
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] Copy './build/quantization_formal/generated/function_tie_away.sv' to './build/quantization_formal/function_tie_away/src/function_tie_away.sv'.
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] Copy './formal/quant_harness.sv' to './build/quantization_formal/function_tie_away/src/quant_harness.sv'.
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0: smtbmc bitwuzla
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] base: starting process &quot;cd ./build/quantization_formal/function_tie_away/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] base: finished (returncode=0)
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] prep: starting process &quot;cd ./build/quantization_formal/function_tie_away/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] prep: finished (returncode=0)
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] smt2: starting process &quot;cd ./build/quantization_formal/function_tie_away/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] smt2: finished (returncode=0)
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: starting process &quot;cd ./build/quantization_formal/function_tie_away; yosys-smtbmc -s bitwuzla --presat --unroll --noprogress -t 2  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.induction: starting process &quot;cd ./build/quantization_formal/function_tie_away; yosys-smtbmc -s bitwuzla --presat --unroll -i --noprogress -t 2  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2&quot;
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  Solver: bitwuzla
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.induction: ##   0:00:00  Solver: bitwuzla
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.induction: ##   0:00:00  Trying induction in step 2..
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  BMC failed!
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  Assert failed in quant_functions_harness: quant_harness.sv:36.9-36.64 (_witness_.check_assert_quant_harness_sv_36_167)
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: ##   0:00:00  Status: failed
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.induction: ##   0:00:00  Trying induction in step 1..
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: finished (returncode=1)
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.basecase: Status returned by engine for basecase: FAIL
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] engine_0.induction: terminating process
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] summary: engine_0 (smtbmc bitwuzla) returned FAIL for basecase
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] summary: counterexample trace [basecase]: ./build/quantization_formal/function_tie_away/engine_0/trace.vcd
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] summary:   failed assertion quant_functions_harness._witness_.check_assert_quant_harness_sv_36_167 at quant_harness.sv:36.9-36.64
+SBY 18:18:44 [./build/quantization_formal/function_tie_away] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "board": "UPduino v3.x reference; NOT physically verified",
+  "board_verified": false,
+  "device": "i:0x0403:0x6014",
+  "flash_bytes": 4194304,
+  "erase_bytes": 4096,
+  "config_end": 262144,
+  "input_offset": 262144,
+  "input_bytes": 65536,
+  "log_offset": 3145728,
+  "log_bytes": 131072,
+  "clock_hz": 12000000,
+  "note": "Confirm board revision, oscillator connection, JEDEC capacity, pinout and a configuration backup before enabling writes."
+}

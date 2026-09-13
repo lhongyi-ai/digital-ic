@@ -1,0 +1,18 @@
+{
+  "commit": "d2f4b8c18eab44737fcc0de1248ae21eb43f6aa4",
+  "checkpoint": {
+    "id": "a121e4f7-cf7e-4fc4-ba1f-e0a46ee607aa",
+    "key": "Cnn6_mAP=0.343.pth",
+    "size": 23698321,
+    "checksum": "md5:e25e26b84585b14c7754c91e48efc9be",
+    "links": {
+      "self": "https://zenodo.org/api/records/3987831/files/Cnn6_mAP=0.343.pth/content"
+    }
+  },
+  "sha256": {
+    "LICENSE.MIT": "7e540655d851d9737fafaa9f0cbd064c3a29bdfe5e937ee07a09360f85161975",
+    "pytorch_utils.py": "1464fcfbfc0fe4c55f690f6b39e1c80eeed5de1e7fd1b7fd30334d304de7dbe9",
+    "models.py": "7f9af440395ace5160bbb51d654a0dc35fb887fbf5edecb12da61ff6efb306d9",
+    "Cnn6_mAP=0.343.pth": "8a17541944f2623a2a0164e072ac2f915dcedca99968083cc44bfbc7eb682275"
+  }
+}

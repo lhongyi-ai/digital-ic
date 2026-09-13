@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "measurements": [
+    {
+      "variant": "single_bin",
+      "lanes": 1,
+      "target_mhz": 12,
+      "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+      "lut4": 2708,
+      "registers": 1517,
+      "packed_logic_cells": 4088,
+      "dsp": 1,
+      "ebr": 19,
+      "spram": 3,
+      "post_route_fmax_mhz": 20.567245483398438,
+      "cycle_report": {
+        "cycles_pre": 3073,
+        "cycles_dft": 98368,
+        "cycles_power": 140,
+        "cycles_nn": 950,
+        "cycles_total": 102531
+      },
+      "raw_regression_path": "build/core_l1_artifacts/regression.json",
+      "normal_window_ms": 85.33333333333333,
+      "physical_measurement": false,
+      "power": "not measured",
+      "fixed_rate": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1024399999,
+          "generated_samples": 1024000,
+          "accepted_samples": 1024000,
+          "dropped_samples": 0,
+          "output_frames": 1000,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 102531,
+          "wall_seconds": 59.6125
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8099,
+          "dropped_samples": 4189,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 102531,
+          "wall_seconds": 0.246255
+        }
+      },
+      "fixed_rate_32": {
+        "normal": {
+          "status": "passed",
+          "cycles": 33167999,
+          "generated_samples": 32768,
+          "accepted_samples": 32768,
+          "dropped_samples": 0,
+          "output_frames": 32,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 102531,
+          "wall_seconds": 1.95526
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8099,
+          "dropped_samples": 4189,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 102531,
+          "wall_seconds": 0.259956
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1125535,
+          "first_sample_to_result_max": 1125535,
+          "last_sample_to_result_min": 102535,
+          "last_sample_to_result_max": 102535,
+          "output_interval_min": 1024000,
+          "output_interval_max": 1024000
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 103558,
+          "first_sample_to_result_max": 1125535,
+          "last_sample_to_result_min": 102535,
+          "last_sample_to_result_max": 302483,
+          "output_interval_min": 102534,
+          "output_interval_max": 1850100
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      }
+    },
+    {
+      "variant": "single_bin",
+      "lanes": 4,
+      "target_mhz": 12,
+      "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+      "lut4": 3453,
+      "registers": 1663,
+      "packed_logic_cells": 4842,
+      "dsp": 4,
+      "ebr": 25,
+      "spram": 3,
+      "post_route_fmax_mhz": 19.365583419799805,
+      "cycle_report": {
+        "cycles_pre": 3073,
+        "cycles_dft": 24616,
+        "cycles_power": 140,
+        "cycles_nn": 265,
+        "cycles_total": 28094
+      },
+      "raw_regression_path": "build/core_l4_artifacts/regression.json",
+      "normal_window_ms": 85.33333333333333,
+      "physical_measurement": false,
+      "power": "not measured",
+      "fixed_rate": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1024399999,
+          "generated_samples": 1024000,
+          "accepted_samples": 1024000,
+          "dropped_samples": 0,
+          "output_frames": 1000,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 28094,
+          "wall_seconds": 58.7266
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8173,
+          "dropped_samples": 4115,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 28094,
+          "wall_seconds": 0.255282
+        }
+      },
+      "fixed_rate_32": {
+        "normal": {
+          "status": "passed",
+          "cycles": 33167999,
+          "generated_samples": 32768,
+          "accepted_samples": 32768,
+          "dropped_samples": 0,
+          "output_frames": 32,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 28094,
+          "wall_seconds": 1.99459
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8173,
+          "dropped_samples": 4115,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 28094,
+          "wall_seconds": 0.257417
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1051098,
+          "first_sample_to_result_max": 1051098,
+          "last_sample_to_result_min": 28098,
+          "last_sample_to_result_max": 28098,
+          "output_interval_min": 1024000,
+          "output_interval_max": 1024000
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 29121,
+          "first_sample_to_result_max": 1051098,
+          "last_sample_to_result_min": 28098,
+          "last_sample_to_result_max": 79172,
+          "output_interval_min": 28097,
+          "output_interval_max": 1998974
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      }
+    },
+    {
+      "variant": "neighbor3",
+      "lanes": 1,
+      "target_mhz": 12,
+      "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+      "lut4": 2915,
+      "registers": 1563,
+      "packed_logic_cells": 4306,
+      "dsp": 1,
+      "ebr": 19,
+      "spram": 3,
+      "post_route_fmax_mhz": 21.913965225219727,
+      "cycle_report": {
+        "cycles_pre": 3073,
+        "cycles_dft": 295104,
+        "cycles_power": 284,
+        "cycles_nn": 950,
+        "cycles_total": 299411
+      },
+      "raw_regression_path": "build/core_l1_model_neighbor/regression.json",
+      "normal_window_ms": 85.33333333333333,
+      "physical_measurement": false,
+      "power": "not measured",
+      "fixed_rate": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1024399999,
+          "generated_samples": 1024000,
+          "accepted_samples": 1024000,
+          "dropped_samples": 0,
+          "output_frames": 1000,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 299411,
+          "wall_seconds": 71.7015
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 7902,
+          "dropped_samples": 4386,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 299411,
+          "wall_seconds": 0.285851
+        }
+      },
+      "fixed_rate_32": {
+        "normal": {
+          "status": "passed",
+          "cycles": 33167999,
+          "generated_samples": 32768,
+          "accepted_samples": 32768,
+          "dropped_samples": 0,
+          "output_frames": 32,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 299411,
+          "wall_seconds": 2.04895
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 7902,
+          "dropped_samples": 4386,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 299411,
+          "wall_seconds": 0.283819
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1322415,
+          "first_sample_to_result_max": 1322415,
+          "last_sample_to_result_min": 299415,
+          "last_sample_to_result_max": 299415,
+          "output_interval_min": 1024000,
+          "output_interval_max": 1024000
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 300438,
+          "first_sample_to_result_max": 1322415,
+          "last_sample_to_result_min": 299415,
+          "last_sample_to_result_max": 893123,
+          "output_interval_min": 299414,
+          "output_interval_max": 1456340
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      }
+    },
+    {
+      "variant": "neighbor3",
+      "lanes": 4,
+      "target_mhz": 12,
+      "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+      "lut4": 3733,
+      "registers": 1709,
+      "packed_logic_cells": 5129,
+      "dsp": 4,
+      "ebr": 25,
+      "spram": 3,
+      "post_route_fmax_mhz": 18.57769203186035,
+      "cycle_report": {
+        "cycles_pre": 3073,
+        "cycles_dft": 73848,
+        "cycles_power": 284,
+        "cycles_nn": 265,
+        "cycles_total": 77470
+      },
+      "raw_regression_path": "build/core_l4_model_neighbor/regression.json",
+      "normal_window_ms": 85.33333333333333,
+      "physical_measurement": false,
+      "power": "not measured",
+      "fixed_rate": {
+        "normal": {
+          "status": "passed",
+          "cycles": 1024399999,
+          "generated_samples": 1024000,
+          "accepted_samples": 1024000,
+          "dropped_samples": 0,
+          "output_frames": 1000,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 77470,
+          "wall_seconds": 71.2153
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8124,
+          "dropped_samples": 4164,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 77470,
+          "wall_seconds": 0.300912
+        }
+      },
+      "fixed_rate_32": {
+        "normal": {
+          "status": "passed",
+          "cycles": 33167999,
+          "generated_samples": 32768,
+          "accepted_samples": 32768,
+          "dropped_samples": 0,
+          "output_frames": 32,
+          "protocol_errors": 0,
+          "max_fifo_occupancy": 1,
+          "processing_cycles": 77470,
+          "wall_seconds": 2.09812
+        },
+        "overload_and_recovery": {
+          "status": "passed",
+          "cycles": 4504191,
+          "generated_samples": 12288,
+          "accepted_samples": 8124,
+          "dropped_samples": 4164,
+          "output_frames": 6,
+          "protocol_errors": 4,
+          "max_fifo_occupancy": 4,
+          "processing_cycles": 77470,
+          "wall_seconds": 0.281601
+        },
+        "normal_timing_cycles": {
+          "first_sample_to_result_min": 1100474,
+          "first_sample_to_result_max": 1100474,
+          "last_sample_to_result_min": 77474,
+          "last_sample_to_result_max": 77474,
+          "output_interval_min": 1024000,
+          "output_interval_max": 1024000
+        },
+        "overload_timing_cycles": {
+          "first_sample_to_result_min": 78497,
+          "first_sample_to_result_max": 1100474,
+          "last_sample_to_result_min": 77474,
+          "last_sample_to_result_max": 227300,
+          "output_interval_min": 77473,
+          "output_interval_max": 1900222
+        },
+        "timing_basis": "source sample-offer edge to output handshake; includes input FIFO transit",
+        "input_fifo_depth": 4,
+        "normal_sample_period_cycles": 1000,
+        "target_clock_hz": 12000000
+      }
+    }
+  ],
+  "cycle_scope": "Core activity cycles exclude source acquisition, IDLE/FINISH handoff, output stalls and Flash/USB transfer. Fixed-rate timestamp tests separately measure end-to-end core latency.",
+  "clock_scope": "nextpnr internal synchronous timing at 12 MHz; external electrical/SPI timing still requires board measurements.",
+  "not_measured": [
+    "power",
+    "actual board latency",
+    "USB host Flash read/write time"
+  ]
+}

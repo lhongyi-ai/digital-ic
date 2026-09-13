@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "./scripts/audit_multimachine_cnn.py", line 30, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./scripts/audit_multimachine_cnn.py", line 24, in main
+    model=mod.Net();model.load_state_dict(torch.load(out/(c['name']+'-'+held+'.pt'),weights_only=True));cs=mod.predict(model,x[cal]);vs=mod.predict(model,x[val]);np.testing.assert_allclose(vs,saved['validation_scores'],atol=1e-5,rtol=1e-5);np.testing.assert_allclose(cs,saved['calibration_scores'],atol=1e-5,rtol=1e-5);assert manual_threshold(np.array(saved['calibration_scores']),y[cal],m[cal])==saved['threshold'];np.testing.assert_array_equal(vs>saved['threshold'],np.array(saved['validation_scores'])>saved['threshold'])
+                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1128, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+Mismatched elements: 1 / 320 (0.312%)
+Mismatch at index:
+ [61]: False (ACTUAL), True (DESIRED)
+ ACTUAL: array([False, False, False, False, False, False, False, False, False,
+        True, False, False, False, False, False, False, False, False,
+       False, False, False,  True,  True, False, False, False, False,...
+ DESIRED: array([False, False, False, False, False, False, False, False, False,
+        True, False, False, False, False, False, False, False, False,
+       False, False, False,  True,  True, False, False, False, False,...

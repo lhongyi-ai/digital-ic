@@ -1,0 +1,14 @@
+[options]
+depth 64
+mode bmc
+
+[engines]
+smtbmc bitwuzla
+
+[script]
+read -formal -sv serial_tie_away.sv quant_harness.sv
+prep -top quant_serial_harness
+
+[files]
+./build/quantization_formal/generated/serial_tie_away.sv
+./formal/quant_harness.sv

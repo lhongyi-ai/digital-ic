@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "physical_hardware_tested": false,
+  "scope": "Behavioral SPI NOR functional simulation; not electrical or vendor timing validation",
+  "scenarios": [
+    "write_partition_page_length_guards",
+    "full_page_program_WREN_WIP_and_readback",
+    "WIP_poll_timeout",
+    "two_real_source_frames_five_outputs_boot_CRC_compute_log_reference_match",
+    "source_ring_wrap_and_record_page_continuation",
+    "reset_preserves_existing_committed_log",
+    "wrong_model_hash_refuses_run_and_log_write",
+    "wrong_payload_CRC_refuses_run_and_log_write",
+    "existing_uncommitted_partial_header_preserved",
+    "four_chunk_log_scan_rejects_dirty_tail_with_erased_header"
+  ],
+  "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+  "source_frames": 2,
+  "run_frames": 5,
+  "log_scan_bytes": 1024,
+  "log_scan_chunk_bytes": 256,
+  "production_log_scan_bytes": 131072,
+  "log_scan_accelerated_for_E2E": true,
+  "log": {
+    "schema_version": 1,
+    "committed": true,
+    "record_count": 5,
+    "records": [
+      {
+        "frame_id": 0,
+        "logits": [
+          2445,
+          -590,
+          -4087
+        ],
+        "class_id": 0,
+        "error": 0,
+        "cycles_pre": 3073,
+        "cycles_dft": 24616,
+        "cycles_power": 140,
+        "cycles_nn": 265,
+        "cycles_total": 28094,
+        "max_fifo": 1,
+        "generated_samples": 1052,
+        "accepted_samples": 1052,
+        "protocol_errors": 0
+      },
+      {
+        "frame_id": 1,
+        "logits": [
+          -295,
+          -1291,
+          342
+        ],
+        "class_id": 2,
+        "error": 0,
+        "cycles_pre": 3073,
+        "cycles_dft": 24616,
+        "cycles_power": 140,
+        "cycles_nn": 265,
+        "cycles_total": 28094,
+        "max_fifo": 1,
+        "generated_samples": 2076,
+        "accepted_samples": 2076,
+        "protocol_errors": 0
+      },
+      {
+        "frame_id": 2,
+        "logits": [
+          2445,
+          -590,
+          -4087
+        ],
+        "class_id": 0,
+        "error": 0,
+        "cycles_pre": 3073,
+        "cycles_dft": 24616,
+        "cycles_power": 140,
+        "cycles_nn": 265,
+        "cycles_total": 28094,
+        "max_fifo": 1,
+        "generated_samples": 3100,
+        "accepted_samples": 3100,
+        "protocol_errors": 0
+      },
+      {
+        "frame_id": 3,
+        "logits": [
+          -295,
+          -1291,
+          342
+        ],
+        "class_id": 2,
+        "error": 0,
+        "cycles_pre": 3073,
+        "cycles_dft": 24616,
+        "cycles_power": 140,
+        "cycles_nn": 265,
+        "cycles_total": 28094,
+        "max_fifo": 1,
+        "generated_samples": 4124,
+        "accepted_samples": 4124,
+        "protocol_errors": 0
+      },
+      {
+        "frame_id": 4,
+        "logits": [
+          2445,
+          -590,
+          -4087
+        ],
+        "class_id": 0,
+        "error": 0,
+        "cycles_pre": 3073,
+        "cycles_dft": 24616,
+        "cycles_power": 140,
+        "cycles_nn": 265,
+        "cycles_total": 28094,
+        "max_fifo": 1,
+        "generated_samples": 5120,
+        "accepted_samples": 5120,
+        "protocol_errors": 0
+      }
+    ],
+    "error_flags": 0,
+    "generated_samples": 5120,
+    "accepted_samples": 5120,
+    "overflow_count": 0,
+    "protocol_errors": 0,
+    "max_fifo": 1,
+    "period_cycles": 1000,
+    "requested_frames": 5,
+    "complete_without_reported_errors": true
+  },
+  "header_stats": [
+    0,
+    5120,
+    5120,
+    0,
+    0,
+    1,
+    1000,
+    5
+  ],
+  "programs": [
+    {
+      "opcode": 2,
+      "address": 3145728,
+      "length": 64,
+      "data": "564c47310100000005000000ffffffff000000000014000000140000000000000000000001000000e803000005000000ffffffffffffffffffffffffffffffff"
+    },
+    {
+      "opcode": 2,
+      "address": 3149824,
+      "length": 256,
+      "data": "000000008d090000b2fdffff09f0ffff00000000010c0000286000008c00000009010000be6d0000010000001c0400001c04000000000000000000000000000001000000d9fefffff5faffff5601000002000000010c0000286000008c00000009010000be6d0000010000001c0800001c080000000000000000000000000000020000008d090000b2fdffff09f0ffff00000000010c0000286000008c00000009010000be6d0000010000001c0c00001c0c000000000000000000000000000003000000d9fefffff5faffff5601000002000000010c0000286000008c00000009010000be6d0000010000001c1000001c100000000000000000000000000000"
+    },
+    {
+      "opcode": 2,
+      "address": 3150080,
+      "length": 64,
+      "data": "040000008d090000b2fdffff09f0ffff00000000010c0000286000008c00000009010000be6d0000010000000014000000140000000000000000000000000000"
+    },
+    {
+      "opcode": 2,
+      "address": 3145740,
+      "length": 4,
+      "data": "544d4f43"
+    }
+  ]
+}

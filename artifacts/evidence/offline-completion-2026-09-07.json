@@ -1,0 +1,242 @@
+{
+  "generated_utc": "2026-09-08T01:43:26.665790+00:00",
+  "scope": "new offline work against pasted plan; physical work and actual field training data unavailable",
+  "python_tests_passed": 126,
+  "nn_checked_outputs": 72,
+  "quantization_formal": {
+    "positive_suite": "passed",
+    "negative_controls": 2,
+    "serial_depth": 64
+  },
+  "coverage_status": "passed; see original denominators and uncovered points, not a 100% claim",
+  "protocol_edges": "passed",
+  "sensor_classifier": [
+    {
+      "lanes": 1,
+      "tests": 4,
+      "checked_outputs": 21
+    },
+    {
+      "lanes": 4,
+      "tests": 4,
+      "checked_outputs": 21
+    }
+  ],
+  "field_pin_level_system": [
+    {
+      "lanes": 1,
+      "tests": 6,
+      "passed": true
+    },
+    {
+      "lanes": 4,
+      "tests": 6,
+      "passed": true
+    }
+  ],
+  "field_fixture_pipeline": "passed; synthetic diagnostics only",
+  "field_static_builds": [
+    {
+      "lanes": 1,
+      "status": "static_build_passed_with_synthetic_model",
+      "utilization": {
+        "ICESTORM_DSP": {
+          "available": 8,
+          "used": 1
+        },
+        "ICESTORM_HFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_LC": {
+          "available": 5280,
+          "used": 5125
+        },
+        "ICESTORM_LFOSC": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_PLL": {
+          "available": 1,
+          "used": 0
+        },
+        "ICESTORM_RAM": {
+          "available": 30,
+          "used": 10
+        },
+        "ICESTORM_SPRAM": {
+          "available": 4,
+          "used": 4
+        },
+        "IO_I3C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_GB": {
+          "available": 8,
+          "used": 8
+        },
+        "SB_I2C": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_IO": {
+          "available": 39,
+          "used": 13
+        },
+        "SB_LEDDA_IP": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_RGBA_DRV": {
+          "available": 1,
+          "used": 0
+        },
+        "SB_SPI": {
+          "available": 2,
+          "used": 0
+        },
+        "SB_WARMBOOT": {
+          "available": 1,
+          "used": 0
+        }
+      },
+      "fmax": {
+        "clk12$SB_IO_IN_$glb_clk": {
+          "achieved": 19.12228775024414,
+          "constraint": 12
+        }
+      },
+      "model_sha256": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe"
+    },
+    {
+      "lanes": 4,
+      "status": "does_not_fit_current_UP5K",
+      "reason": "ERROR: Failed to expand region (0, 0) |_> (25, 31) of 5852 ICESTORM_LCs"
+    }
+  ],
+  "field_area_experiments": {
+    "attempts": 3,
+    "best_l4_logic_cells": 5619,
+    "capacity": 5280,
+    "production_choice": "retain validated LANES1"
+  },
+  "saved_logs": [
+    {
+      "path": "build/field_system_l1/nominal/report.bin",
+      "sha256": "d94bf65f1a0edb8ca5644216841c6c0e4bab393697c49fe6b3dc46edc67bd5f6",
+      "records": 3,
+      "current_parser_recheck": "passed"
+    },
+    {
+      "path": "build/field_system_l1/gap/report.bin",
+      "sha256": "b2cb1ce44e0a7b3167b18efadea1daa30d5cccd334c7e5bacc88e7e5b5f03d88",
+      "records": 2,
+      "current_parser_recheck": "passed"
+    },
+    {
+      "path": "build/field_system_l4/nominal/report.bin",
+      "sha256": "f584de8359ac3e83b4e08dcce3978da942a7d1864fea11e4710947df9ddc5046",
+      "records": 3,
+      "current_parser_recheck": "passed"
+    },
+    {
+      "path": "build/field_system_l4/gap/report.bin",
+      "sha256": "dec3d2d94ab77e94d095382e1fb55f9970a566341213c9f7d03f9c3b9f810d4c",
+      "records": 2,
+      "current_parser_recheck": "passed"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "build/offline-completion/python-results.xml",
+      "sha256": "cbd7b9ea0ef1527c1cef31acd52c97e41f080fa813e1a4e248964364422b3e92"
+    },
+    {
+      "path": "build/nn_edges/summary.json",
+      "sha256": "d18a2061f696059b5005ca90e08175d7506286e4fdab905e250d2c583be2a2da"
+    },
+    {
+      "path": "build/quantization_formal/report.json",
+      "sha256": "65c8af4bd10116136197180b01070fbb46b76bed0c3dc57f211f5bfcb96ae1da"
+    },
+    {
+      "path": "build/rtl_coverage/coverage_report.json",
+      "sha256": "bb306a58b515a3181225640297ae6c15fa06244ccdd1db9daf56135985c25501"
+    },
+    {
+      "path": "build/protocol_edges/report.json",
+      "sha256": "cf999cc850622f593c87999c55a382107f9e3ef7402eae8485820a2c1b93044e"
+    },
+    {
+      "path": "build/protocol_edges/baseline_l1/report.json",
+      "sha256": "24371ba1dec2a770af41e885c48e97536bf466d4469121c0ce9ac414f4329df5"
+    },
+    {
+      "path": "build/protocol_edges/baseline_l4/report.json",
+      "sha256": "b0067291dd71d6e7743290b27c12e2c5259fa08ce35ba3541de2627f829e91af"
+    },
+    {
+      "path": "build/protocol_edges/neighbor_l1/report.json",
+      "sha256": "49eb2632d43c0363fb51c62bd3a2213124156fcf726f19ee755fdaf081baed95"
+    },
+    {
+      "path": "build/protocol_edges/neighbor_l4/report.json",
+      "sha256": "85e61a3ce27cfdee8042ad8a43a37093c5b3fbd5774e3241c45407c59b510b3f"
+    },
+    {
+      "path": "build/sensor_classifier_l1/regression.json",
+      "sha256": "68d57416555c3dfb12a914e8a97fb51897216078a250a435f88f9a98f5fcc072"
+    },
+    {
+      "path": "build/field_system_l1/summary.json",
+      "sha256": "baf1640d4eb7b15341a5f2cd14fd2f34fafe6765fac3d4de6d40ae2ce472e638"
+    },
+    {
+      "path": "build/sensor_classifier_l4/regression.json",
+      "sha256": "55f7d41bee9a6ce5caf470101c76fda6fcf500db1874a3b1528fdb34393a648e"
+    },
+    {
+      "path": "build/field_system_l4/summary.json",
+      "sha256": "4c72beb40311b00a233dd0aee23a82484fa20256fee2eacd409c914d684d1f7b"
+    },
+    {
+      "path": "build/field_fixture/trained/frozen.json",
+      "sha256": "8ad4b7c93a6183f9d1acb391459689c276a5079564d610e1018401c51a75f3f5"
+    },
+    {
+      "path": "build/field_fixture/trained/training.json",
+      "sha256": "0b5104f8d52fe8d8e60ce155108c4d0f8141e4666229a6f3f16ca15da7f4de9d"
+    },
+    {
+      "path": "build/field_fixture/trained/test.json",
+      "sha256": "905ed18398ff87c3fa7b1613c1c7a5fa4491d0ec6f05b0519313cbfe8c478bc3"
+    },
+    {
+      "path": "build/field_board_l1/report.json",
+      "sha256": "54de8fac3b6784e84e98c5f734669a84d56b0c45c7cc2798707682b40255054c"
+    },
+    {
+      "path": "build/field_board_l4/place_route.log",
+      "sha256": "82b3a471f5c6818842a2bf450ddd45b03171dd55ccb7a055a7ac24d852c70515"
+    },
+    {
+      "path": "build/field_area_experiments/report.json",
+      "sha256": "dbbaf387b87f44ea4ce82bc1ee5b7b85d0638f1d8fbb6f75bc62181177c71884"
+    }
+  ],
+  "physical_board_programmed": false,
+  "pending_hardware_or_real_data": [
+    "board revision/clock/Flash identification and programming",
+    "physical replay result readback",
+    "ADXL345 acquisition/calibration/noise/SPI measurements/repeatability",
+    "real field-state records, training/evaluation and rebuild with their model",
+    "physical continuous operation, resource/power measurements"
+  ],
+  "outside_current_acceptance": [
+    "full-core unbounded formal equivalence",
+    "ASIC standard-cell PNR/STA extension",
+    "JTAG",
+    "envelope-spectrum upgrade without data evidence"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "records": [
+    {
+      "name": "fan/id_00/normal/00000000.wav",
+      "zero_six_correlation": 0.51203234176827,
+      "zero_rms": 206.96252319260606,
+      "six_rms": 150.5161728436516
+    },
+    {
+      "name": "fan/id_00/abnormal/00000002.wav",
+      "zero_six_correlation": 0.8706419019097102,
+      "zero_rms": 370.46444842926564,
+      "six_rms": 340.5984411022018
+    },
+    {
+      "name": "fan/id_02/normal/00000008.wav",
+      "zero_six_correlation": 0.6610753936307519,
+      "zero_rms": 239.2608690582311,
+      "six_rms": 193.42625894640054
+    },
+    {
+      "name": "fan/id_02/abnormal/00000002.wav",
+      "zero_six_correlation": 0.4769725874905838,
+      "zero_rms": 201.1328803614665,
+      "six_rms": 145.05772292866726
+    },
+    {
+      "name": "fan/id_04/normal/00000004.wav",
+      "zero_six_correlation": 0.601318903371823,
+      "zero_rms": 229.061808675628,
+      "six_rms": 180.20793604195129
+    },
+    {
+      "name": "fan/id_04/abnormal/00000000.wav",
+      "zero_six_correlation": 0.7418748456464332,
+      "zero_rms": 272.44498212942005,
+      "six_rms": 232.86725703713694
+    }
+  ],
+  "caution": "Correlation does not by itself prove clean/noise decomposition or physical independence; these variants must stay in the same split."
+}

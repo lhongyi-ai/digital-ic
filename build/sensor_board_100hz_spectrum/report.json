@@ -1,0 +1,37 @@
+{
+  "top": "upduino_sensor",
+  "rate_hz": 100,
+  "total_samples": 60000,
+  "store_samples": 3000,
+  "axis": 0,
+  "cal_offset_q8": 0,
+  "cal_gain_q20": 4096000,
+  "target_clock_mhz": 12,
+  "seed": 1,
+  "synthesis_cells": {
+    "SB_CARRY": 1586,
+    "SB_DFFE": 82,
+    "SB_LUT4": 3768,
+    "SB_DFF": 124,
+    "$scopeinfo": 14,
+    "SB_DFFESR": 1357,
+    "SB_DFFSR": 86,
+    "SB_DFFESS": 84,
+    "SB_DFFSS": 1,
+    "SB_SPRAM256KA": 4,
+    "SB_RAM40_4K": 9,
+    "SB_MAC16": 1
+  },
+  "place_route_completed": true,
+  "max_frequency_messages": [
+    "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 16.84 MHz (PASS at 12.00 MHz)",
+    "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 17.01 MHz (PASS at 12.00 MHz)"
+  ],
+  "bitstream_sha256": "9576ebbcadaf8259d52dbffa88bfc582fa98ee0b16124ed27b19fb0a24a31c49",
+  "physical_board_programmed": false,
+  "board_profile_verified": false,
+  "power_measured": false,
+  "classifier_included": false,
+  "spectrum_included": true,
+  "log_format": "SEN1, 208-byte header, 4-byte raw records"
+}

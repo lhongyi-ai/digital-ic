@@ -1,0 +1,25 @@
+{
+  "stage": "started",
+  "bindings": {
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+    "rtl/core/known_capture.sv": "4fef3ba24b5ec1c0ad21ffeba551c0c1f903b17ff9e5231f5dad35c804540206",
+    "rtl/core/known_spectral_core.sv": "afb90d08ebf0a92ac7cb45849506f8bdb151dee5fd2aedaf77c95ae92d4280cc",
+    "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+    "rtl/io/flash_stream.sv": "77fefc32bd58387227e0ef517261f55d0067588c2bd08c1e460f82c153f3c18b",
+    "rtl/io/known_replay_controller.sv": "ceacafcf11d51f2b4ef9349796e584acb4cde7c2426de69d186e5f04c70a47e1",
+    "rtl/upduino_known.sv": "9f56ba2f10f98fb145b7b7568efc51f614d80a73cc189fa06178dbd00c99dfa9",
+    "scripts/test_known_flash.py": "0d58d44cf2f935f28b9e1cc76f6cc286af7b0f3291082b1b65a6e8b7590ccbe0",
+    "sim/test_known_flash.py": "3db2fe1fc7b0e93a6ae719d6b8b562b6752fe1463f8df9b6e78d8cf72d4b7521",
+    "sim/test_flash_system.py": "537f391b9a1d74bc5cc51e610f881a1ab07bb49c4c1848f472d533291490006c",
+    "src/vibfpga/known_board.py": "5c3508fcf4cda1deb29c7ecc5ff16ae5bebd01a671a5a36774621465a79a58ee",
+    "src/vibfpga/known_fixed.py": "ca842868a4b79f1687f8e88bf5daa82f415681aca592aec7c053d62b0cc4beb4",
+    "build/known-flash/small-r4/model/gain_q24.hex": "db5bbc1a83394379fdcd8487eecee892e031b1e6651c36566fce58e21662b77a",
+    "build/known-flash/small-r4/model/model.json": "288e0e3242572133de21828fe75a7e063b17f480e584720ac16d4e923b2ed7ff",
+    "build/known-flash/small-r4/model/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "build/known-flash/small-r4/model/weights.hex": "4c566393e31c1c604cd393e2d0c62e24d2ad9734b76c19742af3daf2d5956e42",
+    "build/known-flash/small-r4/model/mean_q12.hex": "f0d818da9560a45c84ad98dbec4cc293799a34f261a5dff48a8396e3549826b6",
+    "build/known-flash/small-r4/model/cos_quarter.hex": "09a6cd1e68d071df09bc45e0f4c06e358ae72d724a44823401578264da1b2427"
+  },
+  "fixture": true
+}

@@ -1,0 +1,31 @@
+band_mean_std-linear cv 0.7479 val 0.6208 0.3667
+band_mean_std-rbf cv 0.784 val 0.6367 0.4333
+Traceback (most recent call last):
+  File "./scripts/train_acoustic_supervised.py", line 74, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./scripts/train_acoustic_supervised.py", line 60, in main
+    restored=loaded.predict_proba(v)[:,1] if model=='trees' else loaded.decision_function(v);np.testing.assert_array_equal(s,restored)
+                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1128, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+Mismatched elements: 10 / 70 (14.3%)
+First 5 mismatches are at indices:
+ [10]: 0.37166666666666665 (ACTUAL), 0.3716666666666667 (DESIRED)
+ [11]: 0.28111111111111103 (ACTUAL), 0.2811111111111111 (DESIRED)
+ [19]: 0.10388888888888888 (ACTUAL), 0.10388888888888889 (DESIRED)
+ [22]: 0.2399999999999999 (ACTUAL), 0.23999999999999996 (DESIRED)
+ [30]: 0.5343333333333333 (ACTUAL), 0.5343333333333332 (DESIRED)
+Max absolute difference among violations: 2.22044605e-16
+Max relative difference among violations: 2.4886693e-16
+ ACTUAL: array([0.167222, 0.363889, 0.170556, 0.256667, 0.171667, 0.421667,
+       0.288889, 0.529167, 0.366111, 0.057778, 0.371667, 0.281111,
+       0.274167, 0.344444, 0.502778, 0.270556, 0.142778, 0.410556,...
+ DESIRED: array([0.167222, 0.363889, 0.170556, 0.256667, 0.171667, 0.421667,
+       0.288889, 0.529167, 0.366111, 0.057778, 0.371667, 0.281111,
+       0.274167, 0.344444, 0.502778, 0.270556, 0.142778, 0.410556,...

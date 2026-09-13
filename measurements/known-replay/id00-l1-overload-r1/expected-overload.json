@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "result": {
+    "errors": 16,
+    "generated": 5121,
+    "accepted": 5120,
+    "protocol_errors": 0,
+    "score": 0,
+    "threshold": -1029,
+    "classification": 0,
+    "core_error": 0,
+    "frame_id": 0,
+    "cycles_pre": 0,
+    "cycles_dft": 0,
+    "cycles_power": 0,
+    "cycles_nn": 0,
+    "cycles_total": 0,
+    "first_sample_tick": 84992,
+    "last_sample_tick": 0,
+    "output_tick": 0,
+    "expected_crc": 3493500942,
+    "actual_crc": 2663543723,
+    "max_queue": 256
+  },
+  "files": [
+    "measurements/known-replay/id00-l1-overload-r1/read-2.bin",
+    "measurements/known-replay/id00-l1-overload-r1/read-3.bin"
+  ],
+  "sha256": [
+    "8ce608043759426023558d274bbd0e9f95cf595f10e6ac2cd5cfced7e8d56375",
+    "8ce608043759426023558d274bbd0e9f95cf595f10e6ac2cd5cfced7e8d56375"
+  ]
+}

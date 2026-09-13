@@ -1,0 +1,6 @@
+{
+  "stage": "serialized tree prediction consistency",
+  "reason": "parallel floating-point reduction not bit-identical after reload",
+  "remedy": "single-worker deterministic inference; preserve exact equality check",
+  "log": "build/acoustic-v7-supervised.log"
+}

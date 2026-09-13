@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "n": 256,
+  "count": 6,
+  "physical_board_tested": false,
+  "model_training_status": "synthetic_fixture_not_for_deployment",
+  "vectors": [
+    {
+      "frame_id": 0,
+      "samples_hex": "field_000.hex",
+      "provenance": {
+        "record_id": "train_0_0",
+        "label": 0,
+        "split": "train",
+        "sha256": "57aa2246246a35e99c17ec897dfe19c588807f16012c51d50a233272878d8bac",
+        "installation_id": "synthetic_train",
+        "window_index": 0
+      }
+    },
+    {
+      "frame_id": 1,
+      "samples_hex": "field_001.hex",
+      "provenance": {
+        "record_id": "train_0_0",
+        "label": 0,
+        "split": "train",
+        "sha256": "57aa2246246a35e99c17ec897dfe19c588807f16012c51d50a233272878d8bac",
+        "installation_id": "synthetic_train",
+        "window_index": 1
+      }
+    },
+    {
+      "frame_id": 2,
+      "samples_hex": "field_002.hex",
+      "provenance": {
+        "record_id": "train_0_0",
+        "label": 0,
+        "split": "train",
+        "sha256": "57aa2246246a35e99c17ec897dfe19c588807f16012c51d50a233272878d8bac",
+        "installation_id": "synthetic_train",
+        "window_index": 2
+      }
+    },
+    {
+      "frame_id": 3,
+      "samples_hex": "field_003.hex",
+      "provenance": {
+        "record_id": "train_0_0",
+        "label": 0,
+        "split": "train",
+        "sha256": "57aa2246246a35e99c17ec897dfe19c588807f16012c51d50a233272878d8bac",
+        "installation_id": "synthetic_train",
+        "window_index": 3
+      }
+    },
+    {
+      "frame_id": 4,
+      "samples_hex": "field_004.hex",
+      "provenance": {
+        "record_id": "train_0_1",
+        "label": 0,
+        "split": "train",
+        "sha256": "6c9a2fb983e77b52ad3eed2eb2a1d4839173a0511d3f37cae75c402c4873825a",
+        "installation_id": "synthetic_train",
+        "window_index": 0
+      }
+    },
+    {
+      "frame_id": 5,
+      "samples_hex": "field_005.hex",
+      "provenance": {
+        "record_id": "train_0_1",
+        "label": 0,
+        "split": "train",
+        "sha256": "6c9a2fb983e77b52ad3eed2eb2a1d4839173a0511d3f37cae75c402c4873825a",
+        "installation_id": "synthetic_train",
+        "window_index": 1
+      }
+    }
+  ]
+}

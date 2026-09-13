@@ -1,0 +1,10 @@
+# Preserve the exact bytes bound by the immutable evaluation hashes.
+artifacts/reports/neighbor_test/** -text
+# Python's CSV writer uses CRLF record endings; these are intentional.
+artifacts/reports/neighbor_test/predictions.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Keep archived data, models, build outputs and measurements byte-for-byte.
+artifacts/** -text
+data/** -text
+build/** -text
+measurements/** -text

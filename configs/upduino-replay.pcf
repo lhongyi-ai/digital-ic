@@ -1,0 +1,14 @@
+# UPduino v3.x mapping verified against official PCB nets (FPGA pad numbers).
+# Official PCB: tinyvision-ai-inc/UPduino-v3.0, Board/v3.01/UPduino_v3.01.kicad_pcb
+# U2.14 -> R12 -> U5.5 (MOSI); U2.17 <- R13 <- U5.2 (MISO).
+# The readthedocs ASCII chart reverses MOSI/MISO; use the PCB connections.
+# The 12 MHz oscillator must be routed to gpio_20 by the OSC jumper.
+set_io clk12 20
+set_io flash_cs_n 16
+set_io flash_sclk 15
+set_io flash_mosi 14
+set_io flash_miso 17
+# These are exposed GPIO status outputs, not onboard RGB LED pins.
+set_io status_done 21
+set_io status_error 12
+set_io status_running 13

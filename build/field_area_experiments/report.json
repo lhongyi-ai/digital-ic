@@ -1,0 +1,212 @@
+{
+  "suite": "bounded_field_L4_area_experiments",
+  "status": "completed_no_fit",
+  "experiments": [
+    {
+      "name": "timestamp_ebr",
+      "change": "Replace 2x64 FF FIFO by synchronous EBR; hold a single equivalent frame-ID register",
+      "logic_cells": 5828,
+      "capacity": 5280,
+      "SB_LUT4": 4304,
+      "EBR": 20,
+      "DSP": 4,
+      "SPRAM": 4,
+      "place_route_passed": false,
+      "failure": "capacity exceeded during placement",
+      "functional_scope": "4 classifier tests / 21 outputs passed",
+      "modified_copy_files": [
+        "rtl/io/sensor_classifier.sv"
+      ],
+      "copied_source_sha256": {
+        "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+        "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+        "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+        "rtl/io/flash_stream.sv": "48174df1c5ff10003cc0a73591b2cce1697f2a18a22c470495398f0dc0f3eb7a",
+        "rtl/io/adxl345_capture.sv": "fb2bdbb4ab71e16fd918576095df94dfb245442a5613a617db5c0777cc2123b6",
+        "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+        "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+        "rtl/io/sensor_classifier.sv": "601a878efd710260270bc24c47dbcc25f26e884187ee491d2857ba5407d4fa9c",
+        "rtl/upduino_field.sv": "51ac8b0ceadc5ac0eeab4b9b4bb4f3a218ae77670da503f145f8d09028cdd393"
+      },
+      "artifact_sha256": {
+        "build/field_area_experiments/timestamp_ebr/synth.ys": "96494131bdc12ad2452d80cccc182ea8b5f0d01805ea43597b7233364aa4561a",
+        "build/field_area_experiments/timestamp_ebr/synthesis.log": "99c9a306abc0a9180c6dd3f2f54b09a1c37991e8593be1657abf145e4e7582f1",
+        "build/field_area_experiments/timestamp_ebr/netlist.json": "400a3c9be04c38d5ddd2fa6b21cf4cc205aaa2079a5649376bd1c4ed6a8876b0",
+        "build/field_area_experiments/timestamp_ebr/reference.pcf": "ac0ca28589dd5153bc6e4e02d01378b8cd4f20e11f029f83f383c700d0a84a59",
+        "build/field_area_experiments/timestamp_ebr/place_route.log": "53cf4dcc547baab7e21e4994ac8a35ff89e3044a1703908d9868f4b564debdc4",
+        "build/field_area_experiments/timestamp_ebr/classifier_test/summary.json": "dfa038f4dd70d3ff1a0df6a171723b106631e9482b37be07ee9b6eb0a626cf09",
+        "build/field_area_experiments/timestamp_ebr/classifier_test/results.xml": "94a59ae393c0e1b3532b70cafdc9c898c6c34334c2ba8300555e189505354c7c"
+      }
+    },
+    {
+      "name": "timestamp_no_collision",
+      "change": "Same EBR, no_rw_check: read/write collisions occur only before timestamp output can be consumed",
+      "logic_cells": 5619,
+      "capacity": 5280,
+      "SB_LUT4": 4228,
+      "EBR": 20,
+      "DSP": 4,
+      "SPRAM": 4,
+      "place_route_passed": false,
+      "failure": "capacity exceeded during placement",
+      "functional_scope": "not rerun; no new complete-system equivalence claim",
+      "modified_copy_files": [
+        "rtl/io/sensor_classifier.sv"
+      ],
+      "copied_source_sha256": {
+        "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+        "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+        "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+        "rtl/io/flash_stream.sv": "48174df1c5ff10003cc0a73591b2cce1697f2a18a22c470495398f0dc0f3eb7a",
+        "rtl/io/adxl345_capture.sv": "fb2bdbb4ab71e16fd918576095df94dfb245442a5613a617db5c0777cc2123b6",
+        "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+        "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+        "rtl/io/sensor_classifier.sv": "5deb0195f40cf553a06430aaeb6a4aa6ad79513316e7ed2ed9c897d9ca55e7cf",
+        "rtl/upduino_field.sv": "51ac8b0ceadc5ac0eeab4b9b4bb4f3a218ae77670da503f145f8d09028cdd393"
+      },
+      "artifact_sha256": {
+        "build/field_area_experiments/timestamp_no_collision/synth.ys": "8556d7db5223776cfa9d756f3107a2effe34ce5fc58d1e3cdb72feacc72d2814",
+        "build/field_area_experiments/timestamp_no_collision/synthesis.log": "f1386fb1f01e30d1ce0995ae4fea291677b909695a0d2c77b3a49cdefc7cfc2c",
+        "build/field_area_experiments/timestamp_no_collision/netlist.json": "bba1771ae74526c105ae192c2b9bce13ab0cbbc35f803607bb7dba0ef795303a",
+        "build/field_area_experiments/timestamp_no_collision/reference.pcf": "ac0ca28589dd5153bc6e4e02d01378b8cd4f20e11f029f83f383c700d0a84a59",
+        "build/field_area_experiments/timestamp_no_collision/place_route.log": "b7a2e7f485cd7820bbb0061980765858e145a8bee9cc198092265cfaf9de257c"
+      }
+    },
+    {
+      "name": "byte_logger",
+      "change": "Prior candidate plus byte-select record/header mux and one CRC byte per cycle; record storage takes64 rather than32 cycles",
+      "logic_cells": 5664,
+      "capacity": 5280,
+      "SB_LUT4": 4282,
+      "EBR": 20,
+      "DSP": 4,
+      "SPRAM": 4,
+      "place_route_passed": false,
+      "failure": "capacity exceeded during placement",
+      "functional_scope": "not run; area screen failed before full functional regression",
+      "modified_copy_files": [
+        "rtl/io/sensor_classifier.sv",
+        "rtl/upduino_field.sv"
+      ],
+      "copied_source_sha256": {
+        "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+        "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+        "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+        "rtl/io/flash_stream.sv": "48174df1c5ff10003cc0a73591b2cce1697f2a18a22c470495398f0dc0f3eb7a",
+        "rtl/io/adxl345_capture.sv": "fb2bdbb4ab71e16fd918576095df94dfb245442a5613a617db5c0777cc2123b6",
+        "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+        "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+        "rtl/io/sensor_classifier.sv": "5deb0195f40cf553a06430aaeb6a4aa6ad79513316e7ed2ed9c897d9ca55e7cf",
+        "rtl/upduino_field.sv": "45add56008558af20e0e9da7242383f9ee439c3783d5ffde9bc458d9fa0c114f"
+      },
+      "artifact_sha256": {
+        "build/field_area_experiments/byte_logger/synth.ys": "e84e48ab3455fed1ce1004748098461838cafd8d61a7d21ecd7c82ce03417696",
+        "build/field_area_experiments/byte_logger/synthesis.log": "836a2d47a88fdbd218da38edbac3ccfd2c8df027a01fe8397c70f6037abb32a4",
+        "build/field_area_experiments/byte_logger/netlist.json": "c5f60bbeeaa835f12ba65a1ded0ea4b1cc9e9440073817baa00fabd18723adea",
+        "build/field_area_experiments/byte_logger/reference.pcf": "ac0ca28589dd5153bc6e4e02d01378b8cd4f20e11f029f83f383c700d0a84a59",
+        "build/field_area_experiments/byte_logger/place_route.log": "be5f25f5d252485687da2f3f1bae73dc0b6a53aff5a97664477d82213db6e361"
+      }
+    }
+  ],
+  "baseline_l4": {
+    "logic_cells": 5852,
+    "SB_LUT4": 4318,
+    "EBR": 16,
+    "DSP": 4,
+    "SPRAM": 4,
+    "place_route_passed": false
+  },
+  "best_logic_cells": 5619,
+  "best_excess_logic_cells": 339,
+  "production_source_files_unchanged": true,
+  "production_source_sha256": {
+    "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+    "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+    "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+    "rtl/io/flash_stream.sv": "48174df1c5ff10003cc0a73591b2cce1697f2a18a22c470495398f0dc0f3eb7a",
+    "rtl/io/adxl345_capture.sv": "fb2bdbb4ab71e16fd918576095df94dfb245442a5613a617db5c0777cc2123b6",
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+    "rtl/io/sensor_classifier.sv": "36f5ae97676910d1f2ad14ca947ae61beee95cffbda8529ac4345d4fb224d254",
+    "rtl/upduino_field.sv": "51ac8b0ceadc5ac0eeab4b9b4bb4f3a218ae77670da503f145f8d09028cdd393"
+  },
+  "frozen_model_sha256": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe",
+  "formal_choice": "retain already routed, tested production LANES1 field firmware",
+  "production_l1_reference": {
+    "report": "build/field_board_l1/report.json",
+    "sha256": "54de8fac3b6784e84e98c5f734669a84d56b0c45c7cc2798707682b40255054c",
+    "utilization": {
+      "ICESTORM_DSP": {
+        "available": 8,
+        "used": 1
+      },
+      "ICESTORM_HFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_LC": {
+        "available": 5280,
+        "used": 5125
+      },
+      "ICESTORM_LFOSC": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_PLL": {
+        "available": 1,
+        "used": 0
+      },
+      "ICESTORM_RAM": {
+        "available": 30,
+        "used": 10
+      },
+      "ICESTORM_SPRAM": {
+        "available": 4,
+        "used": 4
+      },
+      "IO_I3C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_GB": {
+        "available": 8,
+        "used": 8
+      },
+      "SB_I2C": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_IO": {
+        "available": 39,
+        "used": 13
+      },
+      "SB_LEDDA_IP": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_RGBA_DRV": {
+        "available": 1,
+        "used": 0
+      },
+      "SB_SPI": {
+        "available": 2,
+        "used": 0
+      },
+      "SB_WARMBOOT": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "fmax": {
+      "clk12$SB_IO_IN_$glb_clk": {
+        "achieved": 19.12228775024414,
+        "constraint": 12
+      }
+    },
+    "place_route_completed": true
+  },
+  "stopping_reason": "All three bounded storage/control experiments exceed UP5K capacity; no production patch meets the integration gate. Existing LANES1 core compute26489cycles at12MHz is2.207ms versus320ms/window.",
+  "physical_board_tested": false,
+  "production_patch_recommended": false,
+  "scope": "Area feasibility only; candidate1 has classifier regression, candidates2/3 lack complete system verification; none is a deployable replacement."
+}

@@ -1,0 +1,8 @@
+COMMAND ["./.tools/oss-cad-suite/bin/verilator_coverage", "--report", "summary", "--include-reset-arcs", "./build/rtl_coverage/arithmetic/arithmetic/coverage/merged.dat"]
+Coverage Summary:
+  line      : 28.6% (  26/  91)
+  toggle    : 7.7% ( 554/7196)
+  branch    : 16.2% (  23/ 142)
+  expr      : 15.9% (  27/ 170)
+  fsm_state : 0.0% (   0/   0)
+  fsm_arc   : 0.0% (   0/   0)

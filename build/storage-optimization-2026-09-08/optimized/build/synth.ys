@@ -1,0 +1,4 @@
+read_verilog -defer -sv -DICE40 rtl/platform/spram16k.sv rtl/io/spi_master.sv rtl/io/flash_stream.sv rtl/io/adxl345_capture.sv rtl/io/static_calibration.sv rtl/core/vib_coeff_rom.sv rtl/core/vibration_core.sv rtl/io/sensor_spectrum.sv rtl/upduino_sensor.sv;
+chparam -set TOTAL_SAMPLES 480000 -set STORE_SAMPLES 24000 -set RATE_CODE 8'h0d -set AXIS 0 -set ENABLE_SPECTRUM 1 -set SPECTRUM_MODEL_DIR "./artifacts/sensor_spectrum/model" -set CAL_OFFSET_Q8 32'h00000000 -set CAL_GAIN_Q20 4096000 upduino_sensor;
+synth_ice40 -dsp -top upduino_sensor -json ./build/storage-optimization-2026-09-08/optimized/build/netlist.json;
+stat

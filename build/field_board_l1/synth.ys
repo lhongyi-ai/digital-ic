@@ -1,0 +1,4 @@
+read_verilog -defer -sv -DICE40 rtl/platform/spram16k.sv rtl/core/sync_fifo.sv rtl/io/spi_master.sv rtl/io/flash_stream.sv rtl/io/adxl345_capture.sv rtl/core/vib_coeff_rom.sv rtl/core/vibration_core.sv rtl/io/sensor_classifier.sv rtl/upduino_field.sv;
+chparam -set LANES 1 -set MODEL_DIR "./build/field_fixture/trained/model" -set HIDDEN_SHIFT 8 -set MODEL_HASH 256'hfe612ac15ecc2fbf0d6530180134c262468f621a7780e2c2cb7580cc21d68178 -set SYNTHETIC_MODEL 1 -set TOTAL_SAMPLES 480000 -set AXIS 2 upduino_field;
+synth_ice40 -dsp -top upduino_field -json ./build/field_board_l1/netlist.json;
+stat

@@ -1,0 +1,53 @@
+{
+  "scope": "bounded safety and reachable covers, not unbounded proof",
+  "results": [
+    {
+      "task": "bmc_d4",
+      "bound": 64,
+      "width": 16,
+      "depth": 4,
+      "status": "PASS 0 50",
+      "returncode": 0
+    },
+    {
+      "task": "cover_d4",
+      "bound": 64,
+      "width": 16,
+      "depth": 4,
+      "status": "PASS 0 0",
+      "returncode": 0
+    },
+    {
+      "task": "bmc_d1",
+      "bound": 64,
+      "width": 16,
+      "depth": 1,
+      "status": "PASS 0 0",
+      "returncode": 0
+    },
+    {
+      "task": "cover_d1",
+      "bound": 64,
+      "width": 16,
+      "depth": 1,
+      "status": "PASS 0 0",
+      "returncode": 0
+    },
+    {
+      "task": "bmc_d3",
+      "bound": 64,
+      "width": 16,
+      "depth": 3,
+      "status": "PASS 0 19",
+      "returncode": 0
+    },
+    {
+      "task": "cover_d3",
+      "bound": 64,
+      "width": 16,
+      "depth": 3,
+      "status": "PASS 0 0",
+      "returncode": 0
+    }
+  ]
+}

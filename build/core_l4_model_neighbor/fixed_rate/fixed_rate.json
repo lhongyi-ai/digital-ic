@@ -1,0 +1,4 @@
+{
+  "normal": {"status":"passed","cycles":1024399999,"generated_samples":1024000,"accepted_samples":1024000,"dropped_samples":0,"output_frames":1000,"protocol_errors":0,"max_fifo_occupancy":1,"processing_cycles":77470,"wall_seconds":71.2153},
+  "overload_and_recovery": {"status":"passed","cycles":4504191,"generated_samples":12288,"accepted_samples":8124,"dropped_samples":4164,"output_frames":6,"protocol_errors":4,"max_fifo_occupancy":4,"processing_cycles":77470,"wall_seconds":0.300912}
+}

@@ -1,0 +1,18 @@
+{
+  "stage": "started",
+  "input_sha256": {
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+    "rtl/core/known_capture.sv": "4fef3ba24b5ec1c0ad21ffeba551c0c1f903b17ff9e5231f5dad35c804540206",
+    "rtl/core/known_spectral_core.sv": "2b01aaf9c89ca07d40a3ccdd38b8114af7e7c41a49eee0f8aa8fc34eac3b6c6d",
+    "sim/known_pnr_probe.sv": "de34b5309364333a14bc7c7b53775525553c86c543048893d6d40fe149c46c8b",
+    "artifacts/acoustic-known-release-v1/id00/gain_q24.hex": "273476a7ecdb6ca94c04dafb4c87cefcd6cd1849530f66ffb11c10be40d1678e",
+    "artifacts/acoustic-known-release-v1/id00/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "artifacts/acoustic-known-release-v1/id00/weights.hex": "a36cc3167d147a4c890e99dd57c6831c361185c8ad9e9644af0fa9ec69efe3f2",
+    "artifacts/acoustic-known-release-v1/id00/mean_q12.hex": "a6a8099eb0dc6ea43fef1e8c90c228be8a75595bae751ad66f28c594f555808f",
+    "artifacts/acoustic-known-release-v1/id00/cos_quarter.hex": "0de47092858c84fcd5384d0e10092250c533958ca93a59b2c6f2f039365294d9",
+    "artifacts/acoustic-known-release-v1/id00/model.json": "23e303fd55a484fe0704089e61e83df2cf4ddfa3a4077e0fa16c4dfa843e39e1",
+    "scripts/build_known_probe.py": "e3bb4586c7bf7715745363361cb5485486497096546500a585a34cbe057fd4a8"
+  },
+  "scope": "core implementation probe only"
+}

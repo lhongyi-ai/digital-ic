@@ -1,0 +1,9 @@
+# running in ./build/formal/fifo_bmc_d4/src/
+read -formal -sv sync_fifo.sv fifo_harness.sv
+chparam -set WIDTH 16 -set DEPTH 4 fifo_harness
+prep -top fifo_harness
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

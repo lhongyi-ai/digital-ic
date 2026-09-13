@@ -1,0 +1,33 @@
+{
+  "task": "supervised known-fault recognition; user authorized separate fault training",
+  "normal_train": 120,
+  "abnormal_train": 120,
+  "validation": "original 40 normal and 30 abnormal; no training on validation",
+  "features": [
+    "band_mean_std",
+    "spectrum1024",
+    "spectrum4096"
+  ],
+  "models": [
+    "linear",
+    "rbf",
+    "trees"
+  ],
+  "hyperparameters": "5-fold stratified CV on training only, select by AUC",
+  "validation_selection": "recall at 5% empirical normal FPR then AUC",
+  "gate": {
+    "tp": 27,
+    "max_fp": 2,
+    "auc": 0.9
+  },
+  "test_opened": false,
+  "plan_sha256": "fbd5ddd101a6cefdf42f950216f303b7a07db1b54bebf6cac57c84ad324267df",
+  "extension_sha256": "becab49eb68ee62a21b510321d895d2e8b6b4a84825fce2f33972fb8cc9969cc",
+  "source_sha256": {
+    "scripts/train_acoustic_supervised.py": "cd3c4762bac7118e4518603d8c5e010bd58de515cd1c16a5ca4d42753efe8088",
+    "scripts/experiment_acoustic_v2.py": "e21283eb970c3b82c0f9b69614dd7fcb48933232cbd0a18352459c6ab5a5b36b",
+    "scripts/experiment_acoustic_finespectrum.py": "2f642a231767f93ec1a412aa232815fc58c6fd3b674b48a8f73ea0606b2bda02",
+    "scripts/diagnose_acoustic_v3.py": "7c5aa203af6d60fead03352cdc2c8b25204cd44938e2c25b16a8f2568dc4b76e",
+    "src/vibfpga/acoustic_experiment.py": "20dd072692ca9af0dbe852376b2030fa7fcc4f924e87d2f22bf69324a8615495"
+  }
+}

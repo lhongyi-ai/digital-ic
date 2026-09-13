@@ -1,0 +1,58 @@
+test "build" = build -a -z "" || { printf '%s\n' 'This formal/evidence module only supports canonical build/ output; omit BUILD_ROOT and RUN_ID'; exit 2; }
+python scripts/check_release_prerequisites.py
+test "build" = build -a -z "" || { printf '%s\n' 'release uses canonical build/ evidence; use named run IDs with individual modules'; exit 2; }
+/Library/Developer/CommandLineTools/usr/bin/make test core dsp-cases paced formal flash board neighbor sensor neighbor-report
+python -c 'from pathlib import Path; import sys; Path(sys.argv[1]).parent.mkdir(parents=True, exist_ok=True)' "build/python-results.xml"
+python -m pytest tests --junitxml="build/python-results.xml" -q
+python sim/run_fifo.py --build-root "build" 
+python sim/run_spi_sensor.py --build-root "build" 
+python sim/run_spi_sensor.py --sensor-only --rate-code 0x0a --build-root "build" 
+python sim/run_spi_sensor.py --sensor-only --rate-code 0x0c --build-root "build" 
+python scripts/test_calibration.py --build-root "build" 
+python scripts/build_core.py --model "artifacts/model/model.json" --lanes 4 --arithmetic --build-root "build" 
+python scripts/build_core.py --model "artifacts/model/model.json" --lanes 4 --quant-boundary --build-root "build" 
+python scripts/build_core.py --model "artifacts/model/model.json" --lanes 1 --frames 1000 --build-root "build" 
+python scripts/build_core.py --model "artifacts/model/model.json" --lanes 4 --frames 1000 --build-root "build" 
+python scripts/build_core.py --model "artifacts/model/model.json" --lanes 1 --dsp-cases --frames 10 --build-root "build" 
+python scripts/build_core.py --model "artifacts/model/model.json" --lanes 4 --dsp-cases --frames 10 --build-root "build" 
+python scripts/build_core.py --model artifacts/model_neighbor/model.json --lanes 1 --dsp-cases --frames 10 --build-root "build" 
+python scripts/build_core.py --model artifacts/model_neighbor/model.json --lanes 4 --dsp-cases --frames 10 --build-root "build" 
+python scripts/build_core.py --model "artifacts/model/model.json" --lanes 1 --frames 1000 --fixed-rate --build-root "build" 
+python scripts/build_core.py --model "artifacts/model/model.json" --lanes 4 --frames 1000 --fixed-rate --build-root "build" 
+test "build" = build -a -z "" || { printf '%s\n' 'This formal/evidence module only supports canonical build/ output; omit BUILD_ROOT and RUN_ID'; exit 2; }
+python formal/run_sva_smoke.py
+python formal/run_fifo_formal.py
+python sim/run_flash_system.py --build-root "build" 
+python sim/run_flash_system.py --model artifacts/model_neighbor/model.json --full-log-scan --build-root "build" 
+python scripts/build_board.py --lanes 1 --build-root "build" 
+python scripts/build_board.py --lanes 4 --build-root "build" 
+python scripts/build_core.py --model artifacts/model_neighbor/model.json --lanes 1 --frames 1000 --build-root "build" 
+python scripts/build_core.py --model artifacts/model_neighbor/model.json --lanes 4 --frames 1000 --build-root "build" 
+python scripts/build_core.py --model artifacts/model_neighbor/model.json --lanes 1 --frames 1000 --fixed-rate --build-root "build" 
+python scripts/build_core.py --model artifacts/model_neighbor/model.json --lanes 4 --frames 1000 --fixed-rate --build-root "build" 
+python sim/run_flash_system.py --model artifacts/model_neighbor/model.json --build-root "build" 
+python scripts/build_board.py --model artifacts/model_neighbor/model.json --lanes 1 --build-root "build" 
+python scripts/build_board.py --model artifacts/model_neighbor/model.json --lanes 4 --build-root "build" 
+python sim/run_sensor_spectrum.py --build-root "build" 
+python sim/run_sensor_system.py --build-root "build" 
+python scripts/build_sensor.py --rate 800 --build-root "build" 
+python scripts/evaluate_neighbor.py --verify
+/Library/Developer/CommandLineTools/usr/bin/make nn-edges protocol-edges quant-formal replay-fifo-formal coverage field-sim field-board field-verify
+python scripts/test_nn_edges.py --build-root "build" 
+python scripts/test_protocol_edges.py --build-root "build" 
+test "build" = build -a -z "" || { printf '%s\n' 'This formal/evidence module only supports canonical build/ output; omit BUILD_ROOT and RUN_ID'; exit 2; }
+python formal/run_quant_formal.py --negative-controls
+python formal/run_replay_fifo_formal.py
+python scripts/run_core_coverage.py --build-root "build/rtl_coverage" 
+python sim/run_sensor_classifier.py --build-root "build" 
+python sim/run_field_system.py --lanes 1 --build-root "build" 
+python sim/run_field_system.py --lanes 4 --build-root "build" 
+python scripts/build_field.py --model build/field_fixture/trained/model/model.json --lanes 1 --allow-fixture --build-root "build" 
+python scripts/field_status.py verify
+mkdir -p build/offline-completion
+cp build/python-results.xml build/offline-completion/python-results.xml
+/Library/Developer/CommandLineTools/usr/bin/make evidence release-evidence
+test "build" = build -a -z "" || { printf '%s\n' 'This formal/evidence module only supports canonical build/ output; omit BUILD_ROOT and RUN_ID'; exit 2; }
+python scripts/report_architecture.py
+python scripts/collect_evidence.py
+python scripts/collect_offline_completion.py --scope current-release

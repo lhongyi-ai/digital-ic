@@ -1,0 +1,4 @@
+read_verilog -defer -sv -DICE40 rtl/core/vib_coeff_rom.sv rtl/core/acoustic_core.sv rtl/core/sync_fifo.sv rtl/platform/spram16k.sv rtl/io/spi_master.sv rtl/io/flash_stream.sv rtl/io/replay_source.sv rtl/upduino_acoustic.sv;
+chparam -set LANES 1 -set BANDS 3 -set MODEL_DIR "./artifacts/acoustic/model" -set OUTPUT_SHIFT 4 -set INPUT_SHIFT 0 -set LOG_FEATURES 0 -set THRESHOLD 8722 -set ALARM_WINDOWS 3 -set HIDDEN_SHIFT 9 -set INTERNAL_OSC 1 -set MODEL_HASH 256'he5f8c819cfa5531ff4fe0721fa1515996105ffe10780009083c65fe5ba007cf2 upduino_acoustic;
+synth_ice40 -dsp -top upduino_acoustic -json "./build/runs/acoustic-v1/acoustic_board_neighbor_l1_hfosc12/netlist.json";
+stat

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-09-06T02:30:47.118265+00:00",
+  "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+  "selected_candidate": "train_fisher_separated",
+  "epochs": 450,
+  "seed": 7,
+  "test_waveform_loaded_by_training_before_freeze": false,
+  "data_audit_note": "Downloader parsed all files for integrity/provenance before training; test waveform statistics were not used for model/feature/scale selection"
+}

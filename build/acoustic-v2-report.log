@@ -1,0 +1,44 @@
+{
+  "engineering_candidate": {
+    "name": "uniform16-log-c1-centroid",
+    "features": 16,
+    "context": 1,
+    "dimension": 16,
+    "model": "centroid",
+    "auc": 0.6883333333333332,
+    "fpr": 0.05,
+    "recall": 0.43333333333333335,
+    "alarm_fpr": 0.075,
+    "alarm_recall": 0.26666666666666666,
+    "context_ms": 64,
+    "earliest_3window_alarm_ms": 192,
+    "weights_or_parameters": 16,
+    "compression": "log1p",
+    "score_multiplications": 16,
+    "context_storage_bytes_if_int8": 16,
+    "parameter_bytes_if_float32": 64
+  },
+  "tie_rule": "AUC/recall rounded to 1e-12 for ties, then lower feature dimension and multiplication count",
+  "quality_gate_passed": false,
+  "total_candidates": 90,
+  "test_opened": false,
+  "quantization_started": false,
+  "rtl_changed": false,
+  "hardware_estimate": {
+    "scope": "operation estimates only; no new RTL/synthesis/board result",
+    "old_selected_dft_bins": 48,
+    "full_non_dc_bins": 512,
+    "existing_l1_dft_cycles_48_bins": 295104,
+    "naive_full_l1_dft_cycles_estimate": 3147776.0,
+    "naive_full_l1_dft_ms_at_nominal_12MHz": 262.31466666666665,
+    "ideal_quarter_of_that_ms_not_implemented": 65.57866666666666,
+    "window_ms": 64,
+    "radix2_complex_1024_fft_butterflies": 5120,
+    "generic_four_real_mults_per_butterfly_upper_count": 20480,
+    "caveats": "FFT count omits memory/control overhead and scaling; real-input/pruned FFT can differ. Neither cycle count nor fit established. Existing sparse DFT expanded directly is unattractive."
+  },
+  "studies": {
+    "./artifacts/acoustic-v2-study/receipt.json": "e1ea376c50d6754343cdf886fa7163a4778c7f1927615b44e1d77782d849bb60",
+    "./artifacts/acoustic-v2-logpower/receipt.json": "ca40e2eae67305cdba3c61235e31dd2dbcb22ab84d3d00184081851ebaca56b2"
+  }
+}

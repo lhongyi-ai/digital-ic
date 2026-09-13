@@ -1,0 +1,15 @@
+{
+  "output": "./artifacts/evidence",
+  "xml_reports": 32,
+  "hardware_tested": false,
+  "board_builds": {
+    "build/board_l1": "passed",
+    "build/board_l4": "passed",
+    "build/board_neighbor_l1": "passed",
+    "build/board_neighbor_l4": "passed",
+    "build/sensor_board_100hz_spectrum": "passed",
+    "build/sensor_board_400hz_spectrum": "passed",
+    "build/sensor_board_800hz": "passed",
+    "build/sensor_board_800hz_spectrum": "passed"
+  }
+}

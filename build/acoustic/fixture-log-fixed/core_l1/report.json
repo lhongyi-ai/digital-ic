@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "frames": 9,
+  "scenarios": [
+    "zero",
+    "extremes",
+    "random",
+    "sinusoid",
+    "validation_waveforms",
+    "input_stalls",
+    "output_stalls",
+    "concurrent_frames",
+    "reset_input",
+    "reset_processing",
+    "reset_blocked_output"
+  ],
+  "physical_hardware": false,
+  "input_sha256": {
+    "./rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "./rtl/core/acoustic_core.sv": "725e145db772d10652ed0a9f4e2c9e58a89ac21ed029c7000284f0eb7a22a0a3",
+    "./build/acoustic-fixture/log4/model.json": "a5caa93f062fa2ad500b94cfe7c3e7abf11994e3193883e562d216c9c6f76124",
+    "./build/acoustic-fixture/log4/weights_l4_1.hex": "34c3d8ac1a2528403bf1727d3efccdd3f0230e9e0289d5b401dffce8d7c653f9",
+    "./build/acoustic-fixture/log4/w1.hex": "afcf475e2d9ff9b40764a003050d594d3eb6ef2a6d74782d80bbad1cc71aab16",
+    "./build/acoustic-fixture/log4/hann_quarter.hex": "889f39516ba8857b7cc65e5f459065ed00bb52bece794964838183bf78fa5745",
+    "./build/acoustic-fixture/log4/weights_l4_0.hex": "62829160c1382001271d2f0da7b6d33308316882821707057d8b745d0a2e01c6",
+    "./build/acoustic-fixture/log4/b1.hex": "ce0933176c74a7f70051794bdb7ba975c92dde4183bc3cc40d092469df2c5c62",
+    "./build/acoustic-fixture/log4/weights_l4_2.hex": "fceb735f4fc1072ee100ca16bf58beaaa4acb04f340526c015b64e9e5bb1ef53",
+    "./build/acoustic-fixture/log4/w2.hex": "4a11e32d345c65a47a5da3bdd4d1c7f3327be55896f38814fc73e9cf8af3ce39",
+    "./build/acoustic-fixture/log4/dft_bins.hex": "92e67b81ea1673be029538c186cfd779e85a3d92ca8ff62521bc039b3d3cf162",
+    "./build/acoustic-fixture/log4/bins.hex": "7f9f764a0d0d93662bc2e0a355bd9e699577d66d72874f6a552dec6d5c39f431",
+    "./build/acoustic-fixture/log4/weights_l4_3.hex": "3401ff9f915591748d69f0c595ed371756627a5dc2eeca1551abe0b098041c09",
+    "./build/acoustic-fixture/log4/b2.hex": "5a498d1df26ac6377a8d0e4bb4dc064b64d473bbcf402bf0bea8e324c44e6d92",
+    "./build/acoustic-fixture/log4/weights_l1_0.hex": "86e263847c9e3f4ade1cb760f368d5999192c42837efb2aad1e7888d87873ef6",
+    "./build/acoustic-fixture/log4/cos_quarter.hex": "ba35bf27c570751cbe73d97fd9eed9655d3695eb83273fc2f2268fa4109428bb",
+    "./build/acoustic-fixture/log4/feature_shifts.hex": "3f457371f4ff9a99c404119c737a47b7b970c1753d2a6d0b8224aecfd56e31e6",
+    "./build/acoustic-fixture/log4/hann.hex": "e279e5f0c6ed6f52d1f08b8a1346d777574dadb864b6bada560f20f7b83d451e",
+    "./scripts/test_acoustic_rtl.py": "45dfdf7c504afb28d1d124c54595946cfabf28d5bd23a775346f72958de80e16",
+    "./sim/test_acoustic.py": "cfc6497985fb23680dc692f8b62d75f54c4e13a9bd7ec5740393ac1aea7f6431",
+    "./src/vibfpga/acoustic.py": "7d6f1d37b575a0932023d014574baaee682f0608fd5def902e7808d86e50859f",
+    "./src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d"
+  },
+  "lanes": 1
+}

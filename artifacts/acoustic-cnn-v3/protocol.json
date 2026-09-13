@@ -1,0 +1,19 @@
+{
+  "source_sha256": "ab783841124967b29ac49bf5494ec1b6f49e403e2bcd451c5960426122ab8848",
+  "plan_sha256": "d5fee974de89de25fb4296c80648a959ae87f6e6c8c0506ec778118a0108fdfa",
+  "torch": "2.14.0",
+  "seed": 43,
+  "epochs": 60,
+  "batch": 64,
+  "learning_rate": 0.002,
+  "representations": [
+    "source_augmented"
+  ],
+  "selection": "last epoch fixed; held machine never used for stopping",
+  "score": "mean four patch logits per recording",
+  "input": "four separate 32-column patches at 64 ms stride; each spans 2.096 s of raw waveform, adjacent supports overlap 48 ms; total support 8.24 s; 128 uniform bands; frequency position retained",
+  "threshold": "max source-machine normal calibration threshold",
+  "test_opened": false,
+  "augmentation": "uniform [-1,1] times difference of source fit-normal mean frequency profiles; independent of class",
+  "normalizer_sha256": "04d2d8d36dde646170c398d3cf0c5a3d9b5bd1acdb722cf32c2ff8f39c2bf53b"
+}

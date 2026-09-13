@@ -1,0 +1,12 @@
+{
+  "source_sha256": "a8e297ddd18f7a8d6babf551735e16cf5aad5807e1dd8553cfdd6a5e053d9ea5",
+  "baseline_results_sha256": "4f407cdf2a8bbb85f0de59253b9add09540b81b02122a91702ac15f8445a62c3",
+  "baseline_protocol_sha256": "f96d69877918ac6905f47732b86ceb1e44dd26e2e15551a2db8fdb180f8e6634",
+  "cached_power_sha256": "3d0cc44694b57f570984195918c2ca2a7d691541e801e82a950b8b2e7d7c4aab",
+  "plan_sha256": "cbce6ce6b5bf5c94a6264dbd37e75a6ba801f3d5b158a6a4a301faf8b80bf72b",
+  "selection": "Each machine training Fisher vector divided by its sum (floor1e-12), then summed; unchanged greedy32 spacing3",
+  "training": "MLP32-16-ReLU-1 Adam .001 batch64 epochs100 seed71; fixed last epoch; exactly3fits",
+  "threshold": "Second highest of32 calibration normals per ID; common=max of4, per_machine=configured ID",
+  "scope": "Development ablation only; no final audio, quantization, RTL or flashing",
+  "final_test_opened": false
+}

@@ -1,0 +1,16 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc bitwuzla) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_90_218 at fifo_harness.sv:90.9-90.71 step 4
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_86_194 at fifo_harness.sv:86.9-86.56 step 6
+  reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_87_199 at fifo_harness.sv:87.9-87.71 step 6
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_88_206 at fifo_harness.sv:88.9-88.65 step 8
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_89_212 at fifo_harness.sv:89.9-89.74 step 14

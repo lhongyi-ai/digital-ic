@@ -1,0 +1,7 @@
+{
+  "ready": true,
+  "preexisting_dependencies": [
+    "./build/field_fixture/trained/frozen.json"
+  ],
+  "scope": "field fixture is verified; current release reruns offline checks and L1 build; historical L4/area experiments are excluded"
+}

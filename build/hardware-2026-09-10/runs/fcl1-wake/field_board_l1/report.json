@@ -1,0 +1,118 @@
+{
+  "top": "upduino_field",
+  "lanes": 1,
+  "n": 256,
+  "rate_hz": 800,
+  "target_samples": 480000,
+  "source_kind": "synthetic_pipeline_fixture",
+  "synthetic_model_not_for_deployment": true,
+  "model_sha256": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe",
+  "source_sha256": {
+    "./rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+    "./rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+    "./rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+    "./rtl/io/flash_stream.sv": "77fefc32bd58387227e0ef517261f55d0067588c2bd08c1e460f82c153f3c18b",
+    "./rtl/io/adxl345_capture.sv": "fb2bdbb4ab71e16fd918576095df94dfb245442a5613a617db5c0777cc2123b6",
+    "./rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "./rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+    "./rtl/io/sensor_classifier.sv": "36f5ae97676910d1f2ad14ca947ae61beee95cffbda8529ac4345d4fb224d254",
+    "./rtl/upduino_field.sv": "51ac8b0ceadc5ac0eeab4b9b4bb4f3a218ae77670da503f145f8d09028cdd393",
+    "./build/field_fixture/trained/model/model.json": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe",
+    "./build/field_fixture/trained/model/model_config.svh": "7204342564215c2f9b96a78dbdd0847c53ad41eaae8bedd8286530ac9321b0b6",
+    "./build/field_fixture/trained/model/weights_l4_1.hex": "698e37a2327b821a662cbf91cc21977a9c912a6d03dc097744a6e3c89644aebd",
+    "./build/field_fixture/trained/model/w1.hex": "e30673ca23262fd71052e45388cdd7648dad0ca1358d71ca6634eb602bfcd9f5",
+    "./build/field_fixture/trained/model/hann_quarter.hex": "13779e60e6c1919d761054f4f6695f8ee81946a2db7f57b3ccb6863782f8641b",
+    "./build/field_fixture/trained/model/weights_l4_0.hex": "e424973514375661eed87bb16eda650d43d51ea19aef3c58b45904f875be8c50",
+    "./build/field_fixture/trained/model/b1.hex": "28d03b805a251e93ea241913ca7d3debc7e39f3f6d375c45bcabc83c2f8907ce",
+    "./build/field_fixture/trained/model/weights_l4_2.hex": "1f512f7ba26380e82e1408d01f1af1686e660801c09d2d0109d531f1aa1dd49c",
+    "./build/field_fixture/trained/model/w2.hex": "aad7a19f53ffb9a9694700031de0a8c84acca14a7922c634eb6caf154fb29bb7",
+    "./build/field_fixture/trained/model/bins.hex": "211a8baa75f27fba32c15a6f847ed51a9db9e47911183e7a8e725f581fc2fa10",
+    "./build/field_fixture/trained/model/weights_l4_3.hex": "218796c6866b8aaf232780455c78ea9d9a68efea31d85cd43ca344fd62a614a8",
+    "./build/field_fixture/trained/model/b2.hex": "314270e4b326afbf4271424f1424e1563dc10c847fa391fe26eb460e8045ca39",
+    "./build/field_fixture/trained/model/weights_l1_0.hex": "fb99516e2f040c59406138cc5c8186259fb734180fc96c9bcf227e2a8aac66a3",
+    "./build/field_fixture/trained/model/cos_quarter.hex": "3d5fa26f632eba8bdbf45ffd459e3930f96f48b6afa6e20d02eef66b33777894",
+    "./build/field_fixture/trained/model/feature_shifts.hex": "c3e203ee07e2d260bfa36d84766bc658d1b84b29295d563eac555290c0bd7b11",
+    "./build/field_fixture/trained/model/hann.hex": "10644e0a2547c4af9d65345e8a8f426a5591c61ec85a046753c5aa7c8da31892",
+    "./build/hardware-2026-09-10/runs/fcl1-wake/field_board_l1/reference.pcf": "a1db8073e0a7cdfdb2092e9d5fc8818243693511dd3ae4a2d855572e0929d9f6"
+  },
+  "target_clock_mhz": 12,
+  "seed": 1,
+  "utilization": {
+    "ICESTORM_DSP": {
+      "available": 8,
+      "used": 1
+    },
+    "ICESTORM_HFOSC": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_LC": {
+      "available": 5280,
+      "used": 5178
+    },
+    "ICESTORM_LFOSC": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_PLL": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_RAM": {
+      "available": 30,
+      "used": 10
+    },
+    "ICESTORM_SPRAM": {
+      "available": 4,
+      "used": 4
+    },
+    "IO_I3C": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_GB": {
+      "available": 8,
+      "used": 8
+    },
+    "SB_I2C": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_IO": {
+      "available": 39,
+      "used": 13
+    },
+    "SB_LEDDA_IP": {
+      "available": 1,
+      "used": 0
+    },
+    "SB_RGBA_DRV": {
+      "available": 1,
+      "used": 0
+    },
+    "SB_SPI": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_WARMBOOT": {
+      "available": 1,
+      "used": 0
+    }
+  },
+  "fmax": {
+    "clk12$SB_IO_IN_$glb_clk": {
+      "achieved": 19.572919845581055,
+      "constraint": 12
+    }
+  },
+  "place_route_completed": true,
+  "tool_versions": {
+    "yosys": "Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)",
+    "nextpnr-ice40": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version nextpnr-0.11.1-19-g8dbcee5c)"
+  },
+  "bitstream_sha256": "518e7b55dbf35dd62586e641409db130cb51ae347654cd57006b3657b92d06f0",
+  "physical_board_programmed": false,
+  "board_profile_verified": false,
+  "power_measured": false,
+  "log_format": "FCL1"
+}

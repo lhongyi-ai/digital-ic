@@ -1,0 +1,47 @@
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] Removing directory './build/quantization_formal/serial_tie_away'.
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] Copy './build/quantization_formal/generated/serial_tie_away.sv' to './build/quantization_formal/serial_tie_away/src/serial_tie_away.sv'.
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] Copy './formal/quant_harness.sv' to './build/quantization_formal/serial_tie_away/src/quant_harness.sv'.
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: smtbmc bitwuzla
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] base: starting process "cd ./build/quantization_formal/serial_tie_away/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] base: finished (returncode=0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] prep: starting process "cd ./build/quantization_formal/serial_tie_away/model; yosys -ql design_prep.log design_prep.ys"
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] prep: finished (returncode=0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] smt2: starting process "cd ./build/quantization_formal/serial_tie_away/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] smt2: finished (returncode=0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: starting process "cd ./build/quantization_formal/serial_tie_away; yosys-smtbmc -s bitwuzla --presat --unroll --noprogress -t 64  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  BMC failed!
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Value for anyconst quant_serial_harness.in_power (quant_harness.sv:68.31-68.39): 125
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Value for anyconst quant_serial_harness.in_shift (quant_harness.sv:69.30-69.38): 1
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Value for anyconst quant_serial_harness.in_index (quant_harness.sv:70.30-70.38): 3
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Assert failed in quant_serial_harness: quant_harness.sv:120.17-120.46 (_witness_.check_assert_quant_harness_sv_120_34)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Assert failed in quant_serial_harness: quant_harness.sv:121.17-121.49 (_witness_.check_assert_quant_harness_sv_121_36)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: ##   0:00:00  Status: failed
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: finished (returncode=1)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] engine_0: Status returned by engine: FAIL
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary: engine_0 (smtbmc bitwuzla) returned FAIL
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary: counterexample trace: ./build/quantization_formal/serial_tie_away/engine_0/trace.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary:   failed assertion quant_serial_harness._witness_.check_assert_quant_harness_sv_120_34 at quant_harness.sv:120.17-120.46 step 6
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] summary:   failed assertion quant_serial_harness._witness_.check_assert_quant_harness_sv_121_36 at quant_harness.sv:121.17-121.49 step 6
+SBY 18:18:43 [./build/quantization_formal/serial_tie_away] DONE (FAIL, rc=2)
+SBY 18:18:43 The following tasks failed: ['serial_bmc']

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "mode": "replay",
+  "n": 1024,
+  "source_frames": 9,
+  "run_frames": 1000,
+  "period_cycles": 1000,
+  "payload_crc32": "7af54b9a",
+  "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+  "image_sha256": "478db489910a64cfd17d91ccd0114678d6e1b58bc31e8c89a564943f62001ade",
+  "repeated_frames_are_independent_experiments": false,
+  "source_files": [
+    "./artifacts/vectors/replay_000.hex",
+    "./artifacts/vectors/replay_001.hex",
+    "./artifacts/vectors/replay_002.hex",
+    "./artifacts/vectors/replay_003.hex",
+    "./artifacts/vectors/replay_004.hex",
+    "./artifacts/vectors/replay_005.hex",
+    "./artifacts/vectors/replay_006.hex",
+    "./artifacts/vectors/replay_007.hex",
+    "./artifacts/vectors/replay_008.hex"
+  ]
+}

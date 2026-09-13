@@ -1,0 +1,31 @@
+{
+  "teacher": "official CNN6 AudioSet pretrained, frozen evaluation; no MIMII fine-tuning",
+  "models": [
+    "diagonal",
+    "nearest5",
+    "covariance"
+  ],
+  "representation": [
+    "embedding",
+    "unit_embedding"
+  ],
+  "candidate_count": 6,
+  "gate": {
+    "tp": 27,
+    "max_fp": 2,
+    "auc": 0.9
+  },
+  "test_opened": false,
+  "resampling": "scipy resample_poly 16k to 32k",
+  "input": "signed int16 /32768, original amplitude",
+  "checkpoint_sha256": "8a17541944f2623a2a0164e072ac2f915dcedca99968083cc44bfbc7eb682275",
+  "plan_sha256": "fbd5ddd101a6cefdf42f950216f303b7a07db1b54bebf6cac57c84ad324267df",
+  "source_sha256": {
+    "scripts/experiment_acoustic_panns.py": "501abee4e92312f448c9b3aac1d4966c3cdfa80792dc0a70e8f9ab85841cda27",
+    "scripts/experiment_acoustic_v2.py": "e21283eb970c3b82c0f9b69614dd7fcb48933232cbd0a18352459c6ab5a5b36b",
+    "scripts/diagnose_acoustic_v3.py": "7c5aa203af6d60fead03352cdc2c8b25204cd44938e2c25b16a8f2568dc4b76e",
+    "src/vibfpga/acoustic_experiment.py": "20dd072692ca9af0dbe852376b2030fa7fcc4f924e87d2f22bf69324a8615495",
+    "third_party/panns/source.json": "2fe314a639191bfb68ba29b17f9ea1a0615893e1880cd264718b47c55abde55d"
+  },
+  "torch_version": "2.14.0"
+}

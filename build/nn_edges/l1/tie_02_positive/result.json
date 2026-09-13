@@ -1,0 +1,445 @@
+{
+  "n": 1024,
+  "bands": 1,
+  "lanes": 1,
+  "hidden_shift": 0,
+  "fixture_name": "tie_02_positive",
+  "fixture_dir": "./build/nn_edges/fixtures/tie_02_positive",
+  "model_sha256": "429058e5ff69a24bd3394444674da9c5a04c94a89e0d1d694b677f3f4c5f4904",
+  "fixture_sha256": {
+    "build/nn_edges/fixtures/tie_02_positive/b1.hex": "ce0933176c74a7f70051794bdb7ba975c92dde4183bc3cc40d092469df2c5c62",
+    "build/nn_edges/fixtures/tie_02_positive/b2.hex": "459bd2aacb839163f0194738a8c690a6183e77e0e5c11d9cd7f54496f5176254",
+    "build/nn_edges/fixtures/tie_02_positive/bins.hex": "08d995fea3645bc34e36325fd0a2e346f270a0c82e678d977d0837e962eb907c",
+    "build/nn_edges/fixtures/tie_02_positive/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+    "build/nn_edges/fixtures/tie_02_positive/feature_shifts.hex": "2910ccd420eb690fcfae5cfd583a5d7f25256aabdf31718f3a7ee89f5d225de5",
+    "build/nn_edges/fixtures/tie_02_positive/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e",
+    "build/nn_edges/fixtures/tie_02_positive/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+    "build/nn_edges/fixtures/tie_02_positive/model.json": "429058e5ff69a24bd3394444674da9c5a04c94a89e0d1d694b677f3f4c5f4904",
+    "build/nn_edges/fixtures/tie_02_positive/model_config.svh": "ad6ddb5473ff698f07a5e766bff157bfce04a8c1d5ceeda49761b5a3e0ea3a96",
+    "build/nn_edges/fixtures/tie_02_positive/vectors.json": "14098ae70c896aea6251a8195fa31f2ee8d5b2070438b6bea4b7c956a1096971",
+    "build/nn_edges/fixtures/tie_02_positive/w1.hex": "0db0033c02e919c3509122686ecbcc8679d8118efb478d2b45b0d055fff773b9",
+    "build/nn_edges/fixtures/tie_02_positive/w2.hex": "b3371a319dbcda59f045883ece3d118d1ee067d4ce1d12991d955537928f8b57",
+    "build/nn_edges/fixtures/tie_02_positive/weights_l1_0.hex": "0d0a6acba09ab387f81fd076952b526344c6c5b9df1ac0ec04cbe23f5ccbe040",
+    "build/nn_edges/fixtures/tie_02_positive/weights_l4_0.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "build/nn_edges/fixtures/tie_02_positive/weights_l4_1.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "build/nn_edges/fixtures/tie_02_positive/weights_l4_2.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "build/nn_edges/fixtures/tie_02_positive/weights_l4_3.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822"
+  },
+  "source_sha256": {
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+    "scripts/test_nn_edges.py": "acaf689caa7b8157dbc2b9bed2c0ea4c7e4cae037774854a8db0ed175f44701b",
+    "sim/nn_edges_tb.sv": "527584b480ac7f8f44a156ad74226560e7033abed67001d6a17b8ae060e84ff6",
+    "sim/test_nn_edges.py": "de304ac1d60313b11352bf55844ca75f2825475156a669e0e7ac4dc3c2d3f48e",
+    "src/vibfpga/export.py": "0aed8af848c9c0e05ab42a9d777edc0e5d390f44a822d2dd10ba670c35070309",
+    "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d"
+  },
+  "assertions_enabled": true,
+  "physical_board_tested": false,
+  "simulator": "Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)",
+  "suite": "NN_directed_INT32_edges_and_ties",
+  "status": "passed",
+  "checked_outputs": [
+    {
+      "frame_id": 1,
+      "purpose": "lowest_index_tie",
+      "input": "below",
+      "raw_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+      "output": {
+        "out_frame_id": 1,
+        "out_logits": 202914184810805067787,
+        "out_class": 0,
+        "out_error": 0,
+        "cycles_pre": 3073,
+        "cycles_dft": 98368,
+        "cycles_power": 256,
+        "cycles_nn": 950,
+        "cycles_total": 102647
+      },
+      "logits": [
+        11,
+        0,
+        11
+      ],
+      "expected": {
+        "features": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hidden_acc": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hidden": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "output_acc": [
+          11,
+          0,
+          11
+        ],
+        "logits": [
+          11,
+          0,
+          11
+        ],
+        "class_id": 0,
+        "error": 0,
+        "overflow": [],
+        "standard_reference": "matched"
+      },
+      "nn_stores": [
+        {
+          "layer": 0,
+          "index": 0,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 1,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 2,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 3,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 4,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 5,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 6,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 7,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 8,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 9,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 10,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 11,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 12,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 13,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 14,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 15,
+          "accumulator": 0
+        },
+        {
+          "layer": 1,
+          "index": 0,
+          "accumulator": 11
+        },
+        {
+          "layer": 1,
+          "index": 1,
+          "accumulator": 0
+        },
+        {
+          "layer": 1,
+          "index": 2,
+          "accumulator": 11
+        }
+      ],
+      "stall_cycles_checked": 11,
+      "accepted": true,
+      "classification_usable": true
+    },
+    {
+      "frame_id": 2,
+      "purpose": "lowest_index_tie",
+      "input": "overflow",
+      "raw_sha256": "30171d9ccd23eb28329c87e2f458ccb9b8500cf5ad90d59fd81c79149fe2f47c",
+      "output": {
+        "out_frame_id": 2,
+        "out_logits": 202914184810805067787,
+        "out_class": 0,
+        "out_error": 0,
+        "cycles_pre": 3073,
+        "cycles_dft": 98368,
+        "cycles_power": 256,
+        "cycles_nn": 950,
+        "cycles_total": 102647
+      },
+      "logits": [
+        11,
+        0,
+        11
+      ],
+      "expected": {
+        "features": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hidden_acc": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hidden": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "output_acc": [
+          11,
+          0,
+          11
+        ],
+        "logits": [
+          11,
+          0,
+          11
+        ],
+        "class_id": 0,
+        "error": 0,
+        "overflow": [],
+        "standard_reference": "matched"
+      },
+      "nn_stores": [
+        {
+          "layer": 0,
+          "index": 0,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 1,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 2,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 3,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 4,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 5,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 6,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 7,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 8,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 9,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 10,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 11,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 12,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 13,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 14,
+          "accumulator": 0
+        },
+        {
+          "layer": 0,
+          "index": 15,
+          "accumulator": 0
+        },
+        {
+          "layer": 1,
+          "index": 0,
+          "accumulator": 11
+        },
+        {
+          "layer": 1,
+          "index": 1,
+          "accumulator": 0
+        },
+        {
+          "layer": 1,
+          "index": 2,
+          "accumulator": 11
+        }
+      ],
+      "stall_cycles_checked": 11,
+      "accepted": true,
+      "classification_usable": true
+    }
+  ],
+  "accepted_outputs": 2,
+  "reset_cancellations": [],
+  "checks": [
+    "complete_raw_frames",
+    "features_exact",
+    "19_NN_final_dot_results_exact",
+    "hidden_activation_exact",
+    "packed_INT32_logits_exact",
+    "argmax_exact",
+    "error_mask_exact",
+    "output_stall_stability",
+    "no_duplicate_output",
+    "stage_cycle_sum",
+    "zero_protocol_errors"
+  ],
+  "overflow_output_policy": "low_32_bits_and_error_bit0; classification_is_invalid",
+  "scope": "finite directed simulation; no trained-model evaluation, formal proof, or hardware execution"
+}

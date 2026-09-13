@@ -1,0 +1,142 @@
+{
+  "archive_bytes": 1072486301,
+  "central_bytes_read": 619563,
+  "tail_bytes_read": 65557,
+  "audio_opened": false,
+  "groups": [
+    {
+      "section": "section_00",
+      "domain": "source",
+      "split": "source_test",
+      "state": "abnormal",
+      "count": 100
+    },
+    {
+      "section": "section_00",
+      "domain": "source",
+      "split": "source_test",
+      "state": "normal",
+      "count": 100
+    },
+    {
+      "section": "section_00",
+      "domain": "source",
+      "split": "train",
+      "state": "normal",
+      "count": 1000
+    },
+    {
+      "section": "section_00",
+      "domain": "target",
+      "split": "target_test",
+      "state": "abnormal",
+      "count": 100
+    },
+    {
+      "section": "section_00",
+      "domain": "target",
+      "split": "target_test",
+      "state": "normal",
+      "count": 100
+    },
+    {
+      "section": "section_00",
+      "domain": "target",
+      "split": "train",
+      "state": "normal",
+      "count": 3
+    },
+    {
+      "section": "section_01",
+      "domain": "source",
+      "split": "source_test",
+      "state": "abnormal",
+      "count": 100
+    },
+    {
+      "section": "section_01",
+      "domain": "source",
+      "split": "source_test",
+      "state": "normal",
+      "count": 100
+    },
+    {
+      "section": "section_01",
+      "domain": "source",
+      "split": "train",
+      "state": "normal",
+      "count": 1000
+    },
+    {
+      "section": "section_01",
+      "domain": "target",
+      "split": "target_test",
+      "state": "abnormal",
+      "count": 100
+    },
+    {
+      "section": "section_01",
+      "domain": "target",
+      "split": "target_test",
+      "state": "normal",
+      "count": 100
+    },
+    {
+      "section": "section_01",
+      "domain": "target",
+      "split": "train",
+      "state": "normal",
+      "count": 3
+    },
+    {
+      "section": "section_02",
+      "domain": "source",
+      "split": "source_test",
+      "state": "abnormal",
+      "count": 100
+    },
+    {
+      "section": "section_02",
+      "domain": "source",
+      "split": "source_test",
+      "state": "normal",
+      "count": 100
+    },
+    {
+      "section": "section_02",
+      "domain": "source",
+      "split": "train",
+      "state": "normal",
+      "count": 1000
+    },
+    {
+      "section": "section_02",
+      "domain": "target",
+      "split": "target_test",
+      "state": "abnormal",
+      "count": 100
+    },
+    {
+      "section": "section_02",
+      "domain": "target",
+      "split": "target_test",
+      "state": "normal",
+      "count": 100
+    },
+    {
+      "section": "section_02",
+      "domain": "target",
+      "split": "train",
+      "state": "normal",
+      "count": 3
+    }
+  ],
+  "non_audio": [],
+  "examples": [
+    "fan/source_test/section_00_source_test_anomaly_0000.wav",
+    "fan/source_test/section_00_source_test_anomaly_0001.wav",
+    "fan/source_test/section_00_source_test_anomaly_0002.wav",
+    "fan/source_test/section_00_source_test_anomaly_0003.wav",
+    "fan/source_test/section_00_source_test_anomaly_0004.wav"
+  ]
+}

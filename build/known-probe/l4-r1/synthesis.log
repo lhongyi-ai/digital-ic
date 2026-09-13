@@ -1,0 +1,28 @@
+
+-- Executing script file `./build/known-probe/l4-r1/synth.ys' --
+
+1. Executing Verilog-2005 frontend: rtl/core/vib_coeff_rom.sv
+Parsing SystemVerilog input from `rtl/core/vib_coeff_rom.sv' to AST representation.
+Storing AST representation for module `$abstract\vib_coeff_rom'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: rtl/platform/spram16k.sv
+Parsing SystemVerilog input from `rtl/platform/spram16k.sv' to AST representation.
+Storing AST representation for module `$abstract\spram16k'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: rtl/core/known_capture.sv
+Parsing SystemVerilog input from `rtl/core/known_capture.sv' to AST representation.
+Storing AST representation for module `$abstract\known_capture'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: rtl/core/known_spectral_core.sv
+Parsing SystemVerilog input from `rtl/core/known_spectral_core.sv' to AST representation.
+Storing AST representation for module `$abstract\known_spectral_core'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: sim/known_pnr_probe.sv
+ERROR: Can't decode value '-1029'!
+Parsing SystemVerilog input from `sim/known_pnr_probe.sv' to AST representation.
+Storing AST representation for module `$abstract\known_pnr_probe'.
+Successfully finished Verilog frontend.

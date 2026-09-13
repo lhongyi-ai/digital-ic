@@ -1,0 +1,450 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: upduino_replay.sv
+Parsing formal SystemVerilog input from `upduino_replay.sv' to AST representation.
+Storing AST representation for module `$abstract\upduino_replay'.
+Storing AST representation for module `$abstract\replay_system'.
+Storing AST representation for module `$abstract\replay_fifo'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: replay_fifo_harness.sv
+Parsing formal SystemVerilog input from `replay_fifo_harness.sv' to AST representation.
+Storing AST representation for module `$abstract\replay_fifo_harness'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\replay_fifo_harness'.
+Generating RTLIL representation for module `\replay_fifo_harness'.
+
+3.2.1. Analyzing design hierarchy..
+Top module:  \replay_fifo_harness
+
+3.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\replay_fifo'.
+Generating RTLIL representation for module `\replay_fifo'.
+
+3.2.3. Analyzing design hierarchy..
+Top module:  \replay_fifo_harness
+Used module:     \replay_fifo
+
+3.2.4. Analyzing design hierarchy..
+Top module:  \replay_fifo_harness
+Used module:     \replay_fifo
+Removing unused module `$abstract\replay_fifo_harness'.
+Removing unused module `$abstract\replay_fifo'.
+Removing unused module `$abstract\replay_system'.
+Removing unused module `$abstract\upduino_replay'.
+Removed 4 unused modules.
+Module replay_fifo_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3.3. Executing PROC pass (convert processes to netlists).
+
+3.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$upduino_replay.sv:336$122 in module replay_fifo.
+Marked 3 switch rules as full_case in process $proc$replay_fifo_harness.sv:20$12 in module replay_fifo_harness.
+Removed a total of 0 dead cases.
+
+3.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 5 redundant assignments.
+Promoted 13 assignments to connections.
+
+3.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\replay_fifo_harness.$proc$replay_fifo_harness.sv:15$111'.
+  Set init value: \seen_reset_busy = 1'0
+Found init rule in `\replay_fifo_harness.$proc$replay_fifo_harness.sv:15$110'.
+  Set init value: \seen_exchange = 1'0
+Found init rule in `\replay_fifo_harness.$proc$replay_fifo_harness.sv:15$109'.
+  Set init value: \seen_full = 1'0
+Found init rule in `\replay_fifo_harness.$proc$replay_fifo_harness.sv:11$108'.
+  Set init value: \past_valid = 1'0
+
+3.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~20 debug messages>
+
+3.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\replay_fifo.$proc$upduino_replay.sv:336$122'.
+     1/5: $0\wp[0:0]
+     2/5: $0\rp[0:0]
+     3/5: $0\slot1[48:0]
+     4/5: $0\slot0[48:0]
+     5/5: $0\occupancy[1:0]
+Creating decoders for process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:15$111'.
+Creating decoders for process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:15$110'.
+Creating decoders for process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:15$109'.
+Creating decoders for process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:11$108'.
+Creating decoders for process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+     1/19: $assert$replay_fifo_harness.sv:41$46_EN
+     2/19: $assert$replay_fifo_harness.sv:39$44_EN
+     3/19: $assert$replay_fifo_harness.sv:38$43_EN
+     4/19: $assert$replay_fifo_harness.sv:34$39_EN
+     5/19: $assert$replay_fifo_harness.sv:33$38_EN
+     6/19: $assert$replay_fifo_harness.sv:31$35_EN
+     7/19: $assert$replay_fifo_harness.sv:27$27_EN
+     8/19: $assert$replay_fifo_harness.sv:26$22_EN
+     9/19: $assert$replay_fifo_harness.sv:25$20_EN
+    10/19: $assert$replay_fifo_harness.sv:24$18_EN
+    11/19: $assume$replay_fifo_harness.sv:22$17_EN
+    12/19: $0\accepted[3:0]
+    13/19: $0\seen_reset_busy[0:0]
+    14/19: $0\seen_exchange[0:0]
+    15/19: $0\seen_full[0:0]
+    16/19: $0\expected[48:0]
+    17/19: $0\tracking[0:0]
+    18/19: $0\ahead[1:0]
+    19/19: $0\count[1:0]
+
+3.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\replay_fifo.\occupancy' using process `\replay_fifo.$proc$upduino_replay.sv:336$122'.
+  created $dff cell `$procdff$242' with positive edge clock.
+Creating register for signal `\replay_fifo.\slot0' using process `\replay_fifo.$proc$upduino_replay.sv:336$122'.
+  created $dff cell `$procdff$243' with positive edge clock.
+Creating register for signal `\replay_fifo.\slot1' using process `\replay_fifo.$proc$upduino_replay.sv:336$122'.
+  created $dff cell `$procdff$244' with positive edge clock.
+Creating register for signal `\replay_fifo.\rp' using process `\replay_fifo.$proc$upduino_replay.sv:336$122'.
+  created $dff cell `$procdff$245' with positive edge clock.
+Creating register for signal `\replay_fifo.\wp' using process `\replay_fifo.$proc$upduino_replay.sv:336$122'.
+  created $dff cell `$procdff$246' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.\past_valid' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$247' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.\count' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$248' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.\ahead' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$249' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.\tracking' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$250' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.\expected' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$251' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.\seen_full' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$252' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.\seen_exchange' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$253' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.\seen_reset_busy' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$254' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.\accepted' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$255' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.$past$replay_fifo_harness.sv:37$2$0' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$256' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.$past$replay_fifo_harness.sv:39$3$0' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$257' with positive edge clock.
+Creating register for signal `\replay_fifo_harness.$past$replay_fifo_harness.sv:41$4$0' using process `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+  created $dff cell `$procdff$258' with positive edge clock.
+
+3.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 5 empty switches in `\replay_fifo.$proc$upduino_replay.sv:336$122'.
+Removing empty process `replay_fifo.$proc$upduino_replay.sv:336$122'.
+Removing empty process `replay_fifo_harness.$proc$replay_fifo_harness.sv:15$111'.
+Removing empty process `replay_fifo_harness.$proc$replay_fifo_harness.sv:15$110'.
+Removing empty process `replay_fifo_harness.$proc$replay_fifo_harness.sv:15$109'.
+Removing empty process `replay_fifo_harness.$proc$replay_fifo_harness.sv:11$108'.
+Found and cleaned up 15 empty switches in `\replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+Removing empty process `replay_fifo_harness.$proc$replay_fifo_harness.sv:20$12'.
+Cleaned up 20 empty switches.
+
+3.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module replay_fifo.
+<suppressed ~1 debug messages>
+Optimizing module replay_fifo_harness.
+<suppressed ~8 debug messages>
+
+3.4. Executing FUTURE pass.
+
+3.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module replay_fifo.
+Optimizing module replay_fifo_harness.
+
+3.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \replay_fifo..
+Finding unused cells or wires in module \replay_fifo_harness..
+Removed 1 unused cells and 96 unused wires.
+<suppressed ~3 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module replay_fifo...
+Checking module replay_fifo_harness...
+Found and reported 0 problems.
+
+3.8. Executing OPT pass (performing simple optimizations).
+
+3.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module replay_fifo.
+Optimizing module replay_fifo_harness.
+
+3.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\replay_fifo'.
+Computing hashes of 33 cells of `\replay_fifo'.
+Finding duplicate cells in `\replay_fifo'.
+Computing hashes of 32 cells of `\replay_fifo'.
+Finding duplicate cells in `\replay_fifo'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\replay_fifo_harness'.
+Computing hashes of 149 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Computing hashes of 131 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Computing hashes of 125 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Computing hashes of 122 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Computing hashes of 121 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Computing hashes of 120 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+<suppressed ~87 debug messages>
+Removed a total of 30 cells.
+
+3.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \replay_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \replay_fifo_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~75 debug messages>
+
+3.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \replay_fifo.
+  Optimizing cells in module \replay_fifo_harness.
+Performed a total of 0 changes.
+
+3.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\replay_fifo'.
+Computing hashes of 32 cells of `\replay_fifo'.
+Finding duplicate cells in `\replay_fifo'.
+Finding identical cells in module `\replay_fifo_harness'.
+Computing hashes of 120 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Computing hashes of 115 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Computing hashes of 113 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Computing hashes of 112 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+<suppressed ~24 debug messages>
+Removed a total of 8 cells.
+
+3.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \replay_fifo..
+Finding unused cells or wires in module \replay_fifo_harness..
+Removed 0 unused cells and 38 unused wires.
+<suppressed ~2 debug messages>
+
+3.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module replay_fifo.
+Optimizing module replay_fifo_harness.
+
+3.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \replay_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \replay_fifo_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~62 debug messages>
+
+3.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \replay_fifo.
+  Optimizing cells in module \replay_fifo_harness.
+Performed a total of 0 changes.
+
+3.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\replay_fifo'.
+Computing hashes of 32 cells of `\replay_fifo'.
+Finding duplicate cells in `\replay_fifo'.
+Finding identical cells in module `\replay_fifo_harness'.
+Computing hashes of 112 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Removed a total of 0 cells.
+
+3.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \replay_fifo..
+Finding unused cells or wires in module \replay_fifo_harness..
+
+3.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module replay_fifo.
+Optimizing module replay_fifo_harness.
+
+3.8.14. Finished fast OPT passes. (There is nothing left to do.)
+
+3.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell replay_fifo.$procmux$154_CMP0 ($eq).
+Removed top 30 bits (of 32) from port B of cell replay_fifo_harness.$le$replay_fifo_harness.sv:24$19 ($le).
+Removed top 30 bits (of 32) from port B of cell replay_fifo_harness.$lt$replay_fifo_harness.sv:27$29 ($lt).
+Removed top 29 bits (of 32) from port B of cell replay_fifo_harness.$ge$replay_fifo_harness.sv:72$95 ($ge).
+Removed top 1 bits (of 2) from port B of cell replay_fifo_harness.$procmux$237_CMP0 ($eq).
+
+3.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \replay_fifo..
+Finding unused cells or wires in module \replay_fifo_harness..
+
+3.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.12. Executing OPT pass (performing simple optimizations).
+
+3.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module replay_fifo.
+Optimizing module replay_fifo_harness.
+
+3.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\replay_fifo'.
+Computing hashes of 32 cells of `\replay_fifo'.
+Finding duplicate cells in `\replay_fifo'.
+Finding identical cells in module `\replay_fifo_harness'.
+Computing hashes of 112 cells of `\replay_fifo_harness'.
+Finding duplicate cells in `\replay_fifo_harness'.
+Removed a total of 0 cells.
+
+3.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \replay_fifo..
+Finding unused cells or wires in module \replay_fifo_harness..
+
+3.12.4. Finished fast OPT passes.
+
+3.13. Executing SORT pass.
+
+3.14. Printing statistics.
+
+=== replay_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       37 wires
+      522 wire bits
+       15 public wires
+      208 public wire bits
+        9 ports
+      106 port bits
+       32 cells
+        1   $add
+        5   $dff
+        2   $eq
+        4   $logic_and
+        3   $logic_not
+        1   $logic_or
+       12   $mux
+        1   $ne
+        1   $pmux
+        1   $reduce_bool
+        1   $sub
+
+=== replay_fifo_harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      100 wires
+      413 wire bits
+       21 public wires
+      171 public wire bits
+        1 ports
+        1 port bits
+      111 cells
+        2   $add
+        5   $anyseq
+       16   $check
+       12   $dff
+        8   $eq
+        1   $ge
+        1   $le
+       24   $logic_and
+        5   $logic_not
+        1   $logic_or
+        2   $lt
+       28   $mux
+        1   $ne
+        1   $pmux
+        2   $reduce_bool
+        2   $sub
+        1 submodules
+        1   replay_fifo
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      143 replay_fifo_harness
+       32 replay_fifo
+
+        +----------Count including submodules.
+        | 
+      137 wires
+      935 wire bits
+       36 public wires
+      379 public wire bits
+       10 ports
+      107 port bits
+        - memories
+        - memory bits
+        - processes
+      143 cells
+        3   $add
+        5   $anyseq
+       16   $check
+       17   $dff
+       10   $eq
+        1   $ge
+        1   $le
+       28   $logic_and
+        8   $logic_not
+        2   $logic_or
+        2   $lt
+       40   $mux
+        2   $ne
+        2   $pmux
+        3   $reduce_bool
+        3   $sub
+        1 submodules
+        1   replay_fifo
+
+3.15. Executing CHECK pass (checking for obvious problems).
+Checking module replay_fifo...
+Checking module replay_fifo_harness...
+Found and reported 0 problems.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `replay_fifo_harness'. Setting top module to replay_fifo_harness.
+
+4.1. Analyzing design hierarchy..
+Top module:  \replay_fifo_harness
+Used module:     \replay_fifo
+
+4.2. Analyzing design hierarchy..
+Top module:  \replay_fifo_harness
+Used module:     \replay_fifo
+Removed 0 unused modules.
+Module replay_fifo_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+5. Executing jny backend.
+
+6. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 3a546bdfa7, time: 0.01s, user: 0.01s, system: 0.00s, MEM: 17.19 MB peak
+Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 18% 3x read_verilog (0 sec), 16% 5x opt_clean (0 sec), ...

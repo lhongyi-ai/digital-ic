@@ -1,0 +1,42 @@
+{
+  "plan_sha256": "fbd5ddd101a6cefdf42f950216f303b7a07db1b54bebf6cac57c84ad324267df",
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "test_opened": false,
+  "seed": 7,
+  "features": [
+    "sparse16-log",
+    "uniform16-log",
+    "uniform32-log",
+    "mel16-log",
+    "mel32-log"
+  ],
+  "context": [
+    1,
+    4,
+    8
+  ],
+  "models": [
+    "centroid",
+    "diagonal_mahalanobis",
+    "ae"
+  ],
+  "ae_epochs": 150,
+  "ae_hidden": "min(16, max(8, dimension//4))",
+  "selection": "recall at empirical validation normal clip FPR <= 5%, then AUC, then smaller dimension",
+  "gate": "validation recall >= 0.5 and AUC >= 0.8; no deployment/test on failure",
+  "pooling": "mean context score per recording",
+  "alarm": "3 consecutive scores above normal validation 99th percentile; separately evaluated, not tuned",
+  "normalization": "log1p band energy; means/std train normal only; centroid unstandardized, diagonal standardized, AE standardized",
+  "context_stride_windows": 1,
+  "window": 1024,
+  "hop": 1024,
+  "rate": 16000,
+  "source_sha256": {
+    "scripts/experiment_acoustic_v2.py": "e21283eb970c3b82c0f9b69614dd7fcb48933232cbd0a18352459c6ab5a5b36b",
+    "src/vibfpga/acoustic_experiment.py": "20dd072692ca9af0dbe852376b2030fa7fcc4f924e87d2f22bf69324a8615495",
+    "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d"
+  }
+}

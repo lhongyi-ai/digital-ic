@@ -1,0 +1,29 @@
+local PASS 16
+Traceback (most recent call last):
+  File "./scripts/audit_known_followups.py", line 69, in <module>
+    torch.set_num_threads(2);main()
+                             ^^^^^^
+  File "./scripts/audit_known_followups.py", line 42, in main
+    np.testing.assert_allclose(s[ids],f['validation_scores'],rtol=0,atol=1e-6)
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0, atol=1e-06
+
+Mismatched elements: 30 / 64 (46.9%)
+First 5 mismatches are at indices:
+ [1]: -6.422735691070557 (ACTUAL), -6.422732830047607 (DESIRED)
+ [5]: -4.73612642288208 (ACTUAL), -4.7361249923706055 (DESIRED)
+ [6]: -3.403167486190796 (ACTUAL), -3.403170347213745 (DESIRED)
+ [7]: -4.667083740234375 (ACTUAL), -4.667079448699951 (DESIRED)
+ [8]: -6.4428935050964355 (ACTUAL), -6.44289493560791 (DESIRED)
+Max absolute difference among violations: 9.53674316e-06
+Max relative difference among violations: 2.05622608e-06
+ ACTUAL: array([-0.628206, -6.422736, -1.779551, -3.588588, -4.679001, -4.736126,
+       -3.403167, -4.667084, -6.442894, -4.257602, -4.504222, -3.014683,
+       -5.471556, -9.985583, -3.112996, -2.735158,  1.043281, -0.416859,...
+ DESIRED: array([-0.628205, -6.422733, -1.779552, -3.588589, -4.679   , -4.736125,
+       -3.40317 , -4.667079, -6.442895, -4.257603, -4.504215, -3.014689,
+       -5.471556, -9.985574, -3.112997, -2.735158,  1.043281, -0.416859,...

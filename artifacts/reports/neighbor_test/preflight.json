@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "synthetic_windows": 6,
+  "frozen_validation_windows": 9,
+  "scalar_batch_equal": true,
+  "frozen_validation_expected_equal": true,
+  "checkpoint_npz_identical": true,
+  "integer_parameters_match_frozen_float_scales": true,
+  "test_waveforms_loaded": false,
+  "random_seed": 7521
+}

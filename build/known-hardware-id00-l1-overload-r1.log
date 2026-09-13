@@ -1,0 +1,58 @@
+Starting jedec...
+cdone: high
+reset..
+cdone: low
+flash ID: 0xEF 0x40 0x16 0x00
+cdone: high
+Bye.
+Starting configuration...
+                      
+addr 0x019600  99%
+                      
+VERIFY OK
+cdone: high
+Bye.
+Starting input...
+                      
+addr 0x14E000  99%
+                      
+VERIFY OK
+cdone: high
+Bye.
+Starting clear_log_and_start...
+                      
+addr 0x300F00  93%
+                      
+VERIFY OK
+cdone: high
+Bye.
+Waiting 14 seconds for recorded replay
+Starting read-1...
+                      
+addr 0x300F00  93%
+                      
+done.
+cdone: high
+Bye.
+Starting read-2...
+                      
+addr 0x300F00  93%
+                      
+done.
+cdone: high
+Bye.
+Starting read-3...
+                      
+addr 0x300F00  93%
+                      
+done.
+cdone: high
+Bye.
+Traceback (most recent call last):
+  File "./scripts/run_known_hardware.py", line 121, in <module>
+    with threadpool_limits(limits=2):main()
+                                     ^^^^^^
+  File "./scripts/run_known_hardware.py", line 114, in main
+    assert manifest['status']=='passed','No two consecutive valid unmodified readbacks; retain this attempt for read-only recovery'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: No two consecutive valid unmodified readbacks; retain this attempt for read-only recovery

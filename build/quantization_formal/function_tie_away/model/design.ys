@@ -1,0 +1,9 @@
+# running in ./build/quantization_formal/function_tie_away/src/
+read -formal -sv function_tie_away.sv quant_harness.sv
+chparam -set HIDDEN_SHIFT 8 quant_functions_harness
+prep -top quant_functions_harness
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

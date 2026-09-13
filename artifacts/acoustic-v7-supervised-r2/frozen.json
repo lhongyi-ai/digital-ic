@@ -1,0 +1,55 @@
+{
+  "models": [
+    "spectrum1024-trees",
+    "spectrum1024-linear"
+  ],
+  "primary": "spectrum1024-trees",
+  "companion": "spectrum1024-linear",
+  "thresholds": {
+    "spectrum1024-trees": 0.28277777777777774,
+    "spectrum1024-linear": -1.0506428514724648
+  },
+  "sha256": {
+    "artifacts/acoustic-v7-supervised-r2/spectrum1024-linear-linear.json": "259c73ab8b86aee1789684c2b825e0e474fb33955f5690d115d2e3f28591ac40",
+    "artifacts/acoustic-v7-supervised-r2/spectrum1024-features.npz": "b6afa46d8a9648b209fb1d02d56d7102d4411e84ac50e2b3341a8023d9812247",
+    "artifacts/acoustic-v7-supervised-r2/spectrum1024-trees.joblib": "8770d9e6a07195206704acd7385f7b2838a7196570ba39ebe99158bd68f4b3e4",
+    "artifacts/acoustic-v7-supervised-r2/spectrum1024-rbf-cv.json": "5e0f549413328dcc19057a06696703996cf934250c2915a385ab0ddb4f22da7f",
+    "artifacts/acoustic-v7-supervised-r2/band_mean_std-linear-linear.json": "3b87fc1106f8bfc3d60896d94ef8bd617d872027acffc679f4c2f84878a24d79",
+    "artifacts/acoustic-v7-supervised-r2/spectrum1024-trees-cv.json": "ace58b058d367ebac87cd0e5ba845c172aade2c4babcac494949df282a929acc",
+    "artifacts/acoustic-v7-supervised-r2/band_mean_std-linear.joblib": "84c8ce6721c3ab27606393ff59fcab23fcc129ba6a3ab59a2796c99eebf7645e",
+    "artifacts/acoustic-v7-supervised-r2/spectrum4096-linear-linear.json": "7b2862fac391799da156d781a3f768861f5f4207e623bf688ab6d119a407c488",
+    "artifacts/acoustic-v7-supervised-r2/spectrum1024-linear.joblib": "c63a6b96d8ade6bd0b37124932ef222d092baf76831e5e748fecd44cd9ba8292",
+    "artifacts/acoustic-v7-supervised-r2/spectrum4096-linear-cv.json": "1e94a9b530af20c48a8cd8151deb254a3fc31ef3fbe10472332f5f0fe2667fd8",
+    "artifacts/acoustic-v7-supervised-r2/band_mean_std-trees-cv.json": "a9b3963bd56193497e9a2eb2c3693649b65a0c63469c82d8bc9aabb5238ffa42",
+    "artifacts/acoustic-v7-supervised-r2/band_mean_std-rbf.joblib": "f3bfcf96ecc8e7f9fda791cebab95b3cde3900d9d668770f73d8f1f07675426b",
+    "artifacts/acoustic-v7-supervised-r2/spectrum1024-linear-cv.json": "6ef92a2b87ed9187b7d10392fac3f15f2c0092360bae6a41fe3096d540fdfe87",
+    "artifacts/acoustic-v7-supervised-r2/band_mean_std-rbf-cv.json": "47a33d9c736e8b26aa02cd01be2a4169de216fdf1f6c178f9c3703539c50e59a",
+    "artifacts/acoustic-v7-supervised-r2/spectrum4096-features.npz": "303efc7434fd9c17d60df3b183b4f09b431dddb78f7b0108c0bbdb829ee5d90f",
+    "artifacts/acoustic-v7-supervised-r2/band_mean_std-trees.joblib": "97835bf3bcde709e6e0a4d619cbb42f559658709f10204df2bd2c5f3b99b5583",
+    "artifacts/acoustic-v7-supervised-r2/spectrum4096-linear.joblib": "863b5b8695eacce4287d3cd7de2639671b44e40cac6432fe653858b4eb908909",
+    "artifacts/acoustic-v7-supervised-r2/spectrum4096-trees-cv.json": "9581aad680a3b868ab65bdb93606af1edaa93cc722ff0c37e5759caa4a8721d6",
+    "artifacts/acoustic-v7-supervised-r2/band_mean_std-linear-cv.json": "c3b52530c529c33e1cba56a67fbe72438a59ae0db27b3cd6ad573c7d2a8e9472",
+    "artifacts/acoustic-v7-supervised-r2/validation.json": "e6dc5572b34941b391018427baeab4a18fb4d999d51bfa29a655eb24d0cb69ce",
+    "artifacts/acoustic-v7-supervised-r2/spectrum4096-trees.joblib": "42bfbfe4b24bccf3c521822d7201d0f9b9012d464c973c178cf0fe0dff9195df",
+    "artifacts/acoustic-v7-supervised-r2/band_mean_std-features.npz": "acaf0a2171eff9791c280a0dce0e9d4214a1b0776e55ad03c586abfa9d630e94",
+    "artifacts/acoustic-v7-supervised-r2/protocol.json": "2f0f869e3df5be86b5b89c88f3815aea47afcdb1dc5925b9afaee769aeed2983",
+    "artifacts/acoustic-v7-supervised-r2/spectrum4096-rbf.joblib": "1043e53bd5d306afa5653d4001a5aca67e014224a01f2d3a87a54bb027c02df7",
+    "artifacts/acoustic-v7-supervised-r2/spectrum1024-rbf.joblib": "91ae9edd8a5208d1936e3e368f7556ce65206623bd5d1cffc4bbfca43fe5e2fa",
+    "artifacts/acoustic-v7-supervised-r2/spectrum4096-rbf-cv.json": "12063ae7d0bfcf6d13b5a3354a144aae74d49a77807c1729d426ec3223849f05",
+    "scripts/train_acoustic_supervised.py": "cd3c4762bac7118e4518603d8c5e010bd58de515cd1c16a5ca4d42753efe8088",
+    "scripts/experiment_acoustic_v2.py": "e21283eb970c3b82c0f9b69614dd7fcb48933232cbd0a18352459c6ab5a5b36b",
+    "scripts/experiment_acoustic_finespectrum.py": "2f642a231767f93ec1a412aa232815fc58c6fd3b674b48a8f73ea0606b2bda02",
+    "scripts/diagnose_acoustic_v3.py": "7c5aa203af6d60fead03352cdc2c8b25204cd44938e2c25b16a8f2568dc4b76e",
+    "src/vibfpga/acoustic_experiment.py": "20dd072692ca9af0dbe852376b2030fa7fcc4f924e87d2f22bf69324a8615495",
+    "artifacts/acoustic-v7-supervised-r2/receipt.json": "33eb99e34dd3f38550bbfbdd0d281d20109f4c885a0dd5476e9d246b81e2f2b7",
+    "artifacts/acoustic-v7-supervised-r2/goal-audit.json": "aa441d81fad816eef30242d94934c5ed6099c731ee53c0c3b693a3871173e5fd",
+    "data/mimii/plan.json": "fbd5ddd101a6cefdf42f950216f303b7a07db1b54bebf6cac57c84ad324267df",
+    "data/mimii-supervised/plan.json": "becab49eb68ee62a21b510321d895d2e8b6b4a84825fce2f33972fb8cc9969cc",
+    "scripts/evaluate_acoustic_supervised_test.py": "0bf88d0c008365076331b37680855f110038df7507998606d7cf44de4daccdc0"
+  },
+  "test_requirement": {
+    "recall": 0.9,
+    "max_fpr": 0.05,
+    "auc": 0.9
+  }
+}

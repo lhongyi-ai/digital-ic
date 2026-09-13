@@ -1,0 +1,11 @@
+{
+  "source_sha256": "b2a1aa90927ab90c39e2714c5aa3ed37cef1735f82836f03c44eb6f543188176",
+  "baseline_sha256": "4f407cdf2a8bbb85f0de59253b9add09540b81b02122a91702ac15f8445a62c3",
+  "plan_sha256": "cbce6ce6b5bf5c94a6264dbd37e75a6ba801f3d5b158a6a4a301faf8b80bf72b",
+  "power_sha256": "3d0cc44694b57f570984195918c2ca2a7d691541e801e82a950b8b2e7d7c4aab",
+  "feature": "Per-ID training Fisher selected32 spacing3 centers2..511; same mean power/log2 frontend",
+  "model": "32-16-ReLU-1 Adam .001 batch64 epochs100 seed71; 12fits",
+  "calibration": "Same independent32 normals per ID, second highest; strict >",
+  "scope": "Known installed machine ID selects weights/frequencies; same hardware; development only",
+  "final_test_opened": false
+}

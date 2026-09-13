@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "./scripts/train_pretrained_acoustic.py", line 9, in <module>
+    import models.mn.model as official
+  File "./external/EfficientAT/models/mn/model.py", line 12, in <module>
+    from helpers.utils import NAME_TO_WIDTH
+  File "./external/EfficientAT/helpers/utils.py", line 38, in <module>
+    with open('metadata/class_labels_indices.csv', 'r') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'metadata/class_labels_indices.csv'

@@ -1,0 +1,235 @@
+{
+  "passed": true,
+  "created_utc": "2026-09-10T06:10:46.651100+00:00",
+  "physical_hardware_tested": false,
+  "scope": "Changed shared flash wake-up transport and initially-sleeping NOR model across replay, SEN1 sensor and FCL1 field consumers",
+  "completed_runs": 20,
+  "fresh_hdl_testcases": 22,
+  "groups": {
+    "flash": {
+      "manifest": "flash-invocation.json",
+      "wall_seconds": 58.474480750010116,
+      "inputs_unchanged": true
+    },
+    "sensor": {
+      "manifest": "sensor-invocation.json",
+      "wall_seconds": 133.6572705419967,
+      "inputs_unchanged": true
+    },
+    "field": {
+      "manifest": "field-invocation.json",
+      "wall_seconds": 207.4699395839998,
+      "inputs_unchanged": true
+    }
+  },
+  "results": [
+    {
+      "directory": "field_system_l1/dirty_log",
+      "case": "dirty_log",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l1/dirty_log/report.json",
+      "report_sha256": "1ac54fd41a1467dde8e51065c765e326ddc2b6cd0897b97dde06d247cb2b184e"
+    },
+    {
+      "directory": "field_system_l1/gap",
+      "case": "gap",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l1/gap/report.json",
+      "report_sha256": "80403342fa27d30218b68b22a746d1a68bbae8c246e2460d527b32fc8ff7a9e6"
+    },
+    {
+      "directory": "field_system_l1/interrupted",
+      "case": "interrupted",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l1/interrupted/report.json",
+      "report_sha256": "4551646579dc08f6f1e1a2643233e3041ad370e44b37d715050793803b8eeb2a"
+    },
+    {
+      "directory": "field_system_l1/nominal",
+      "case": "nominal",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l1/nominal/report.json",
+      "report_sha256": "c4af87e77742a66ac866f358223b6a288d907ea475a27f55c0589bc3ee3fcf60"
+    },
+    {
+      "directory": "field_system_l1/watchdog",
+      "case": "watchdog",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l1/watchdog/report.json",
+      "report_sha256": "3d5751e08f71d9c7a24f6ba56d2fb1c677999ca970a3156d3b5a8be43e6f70a9"
+    },
+    {
+      "directory": "field_system_l1/wrong_id",
+      "case": "wrong_id",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l1/wrong_id/report.json",
+      "report_sha256": "3baaa664fd9b42f55d1fed4958c297d23486d335eff796301b3612df09def2fb"
+    },
+    {
+      "directory": "field_system_l4/dirty_log",
+      "case": "dirty_log",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l4/dirty_log/report.json",
+      "report_sha256": "1ac54fd41a1467dde8e51065c765e326ddc2b6cd0897b97dde06d247cb2b184e"
+    },
+    {
+      "directory": "field_system_l4/gap",
+      "case": "gap",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l4/gap/report.json",
+      "report_sha256": "6fcd9e6460b39bfda18c1d8c57669aee7f49a7a6b09b09f5ffec8b6ea038a213"
+    },
+    {
+      "directory": "field_system_l4/interrupted",
+      "case": "interrupted",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l4/interrupted/report.json",
+      "report_sha256": "4db1f1a853ec0de1fe4f12cff40138847509972662b9bc48170dcc343d03ca38"
+    },
+    {
+      "directory": "field_system_l4/nominal",
+      "case": "nominal",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l4/nominal/report.json",
+      "report_sha256": "299dbbf84f789d5f14bcebe48355f51c91a1f59b9b4d65f7033f0af0f96b919b"
+    },
+    {
+      "directory": "field_system_l4/watchdog",
+      "case": "watchdog",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l4/watchdog/report.json",
+      "report_sha256": "3d5751e08f71d9c7a24f6ba56d2fb1c677999ca970a3156d3b5a8be43e6f70a9"
+    },
+    {
+      "directory": "field_system_l4/wrong_id",
+      "case": "wrong_id",
+      "passed": true,
+      "xml_testcases": [
+        "sensor_to_classification_log"
+      ],
+      "report": "field_system_l4/wrong_id/report.json",
+      "report_sha256": "3baaa664fd9b42f55d1fed4958c297d23486d335eff796301b3612df09def2fb"
+    },
+    {
+      "directory": "flash_system_neighbor",
+      "case": null,
+      "passed": true,
+      "xml_testcases": [
+        "flash_wakes_before_direct_read",
+        "flash_roundtrip_and_guards"
+      ],
+      "report": "flash_system_neighbor/regression.json",
+      "report_sha256": "519183d0bfc1be2a0b44bd15109c335a79959b5e8e1da104b038d46837e5a0e4"
+    },
+    {
+      "directory": "flash_system_neighbor_full_scan",
+      "case": null,
+      "passed": true,
+      "xml_testcases": [
+        "flash_wakes_before_direct_read",
+        "flash_roundtrip_and_guards"
+      ],
+      "report": "flash_system_neighbor_full_scan/regression.json",
+      "report_sha256": "f12b983eed84c162b0adefc44c363c1f1ec9adfb80f4c21149ef7b4ef310c5a9"
+    },
+    {
+      "directory": "sensor_system_nominal",
+      "case": "nominal",
+      "passed": true,
+      "xml_testcases": [
+        "capture_to_committed_flash"
+      ],
+      "report": "sensor_system_nominal/report.json",
+      "report_sha256": "bdb402a5700352003db19164f9a15ccb71472bdb86afa4521e0d886617786498"
+    },
+    {
+      "directory": "sensor_system_overflow",
+      "case": "overflow",
+      "passed": true,
+      "xml_testcases": [
+        "capture_to_committed_flash"
+      ],
+      "report": "sensor_system_overflow/report.json",
+      "report_sha256": "b1bc07fdc1b81ab898c28306bf5caee14020a07c41a96a9cac9103df7927876a"
+    },
+    {
+      "directory": "sensor_system_spectrum",
+      "case": "spectrum",
+      "passed": true,
+      "xml_testcases": [
+        "capture_to_committed_flash"
+      ],
+      "report": "sensor_system_spectrum/report.json",
+      "report_sha256": "dd1966c0e50a9c3023f6ee2328023f67431d59bcb7d94943fb7c9f46c66ddd02"
+    },
+    {
+      "directory": "sensor_system_spectrum_overlap",
+      "case": "spectrum_overlap",
+      "passed": true,
+      "xml_testcases": [
+        "capture_to_committed_flash"
+      ],
+      "report": "sensor_system_spectrum_overlap/report.json",
+      "report_sha256": "e64d45de04c67b3cffb7fd7bbf6e3a54bb6183386feb053bf620eb8eee55ea3b"
+    },
+    {
+      "directory": "sensor_system_spectrum_short",
+      "case": "spectrum_short",
+      "passed": true,
+      "xml_testcases": [
+        "capture_to_committed_flash"
+      ],
+      "report": "sensor_system_spectrum_short/report.json",
+      "report_sha256": "1052ee1d2ff27bf28a7f34fe2492dafa0f95fd99c2383d20d724fed9f0ff2617"
+    },
+    {
+      "directory": "sensor_system_spectrum_storage",
+      "case": "spectrum_storage",
+      "passed": true,
+      "xml_testcases": [
+        "capture_to_committed_flash"
+      ],
+      "report": "sensor_system_spectrum_storage/report.json",
+      "report_sha256": "e15acd1a0d3a48df98edfda3abb48fec60ad0d55bcbe8bcc259b0b733c2e936a"
+    }
+  ],
+  "remaining_limitations": [
+    "Behavioral pin-level SPI model; no analog/electrical timing qualification",
+    "Sensor and field cases use synthetic sensor stimuli; no physical ADXL345 was connected",
+    "HFOSC frequency remains unmeasured; wake delay validated in FPGA cycles against 13.2 MHz maximum assumption",
+    "The separate physical readback anomaly is not accepted or repaired by these simulation results"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "source_kind": "synthetic_pipeline_fixture",
+  "claim": "synthetic pipeline diagnostics only",
+  "physical_board_tested": false,
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.025,
+    "weight_decay": 1e-05,
+    "batch": "full training set"
+  },
+  "train_records": [
+    {
+      "record_id": "train_0_0",
+      "windows": 4,
+      "discarded_tail_samples": 0,
+      "clipped_samples": 0
+    },
+    {
+      "record_id": "train_0_1",
+      "windows": 4,
+      "discarded_tail_samples": 0,
+      "clipped_samples": 0
+    },
+    {
+      "record_id": "train_1_0",
+      "windows": 4,
+      "discarded_tail_samples": 0,
+      "clipped_samples": 0
+    },
+    {
+      "record_id": "train_1_1",
+      "windows": 4,
+      "discarded_tail_samples": 0,
+      "clipped_samples": 0
+    },
+    {
+      "record_id": "train_2_0",
+      "windows": 4,
+      "discarded_tail_samples": 0,
+      "clipped_samples": 0
+    },
+    {
+      "record_id": "train_2_1",
+      "windows": 4,
+      "discarded_tail_samples": 0,
+      "clipped_samples": 0
+    }
+  ],
+  "validation_records": [
+    {
+      "record_id": "validation_0_0",
+      "windows": 4,
+      "discarded_tail_samples": 0,
+      "clipped_samples": 0
+    },
+    {
+      "record_id": "validation_1_0",
+      "windows": 4,
+      "discarded_tail_samples": 0,
+      "clipped_samples": 0
+    },
+    {
+      "record_id": "validation_2_0",
+      "windows": 4,
+      "discarded_tail_samples": 0,
+      "clipped_samples": 0
+    }
+  ],
+  "test_captures_opened": false,
+  "validation": {
+    "rms_threshold": {
+      "accuracy": 0.6666666666666666,
+      "balanced_accuracy": 0.6666666666666666,
+      "macro_f1": 0.5555555555555555,
+      "per_class_recall": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "windows": 12,
+      "class_names": [
+        "stopped",
+        "rigid_support_running",
+        "flexible_support_running"
+      ]
+    },
+    "linear_spectrum": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "windows": 12,
+      "class_names": [
+        "stopped",
+        "rigid_support_running",
+        "flexible_support_running"
+      ]
+    },
+    "float_dsp_float_nn": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "windows": 12,
+      "class_names": [
+        "stopped",
+        "rigid_support_running",
+        "flexible_support_running"
+      ]
+    },
+    "integer_dsp_float_nn": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "windows": 12,
+      "class_names": [
+        "stopped",
+        "rigid_support_running",
+        "flexible_support_running"
+      ]
+    },
+    "integer_dsp_int8_nn": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "windows": 12,
+      "class_names": [
+        "stopped",
+        "rigid_support_running",
+        "flexible_support_running"
+      ]
+    }
+  },
+  "quantization": "symmetric per-layer power-of-two PTQ; RNE; INT32 bounds checked",
+  "qat_required_by_validation": false
+}

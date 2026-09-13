@@ -1,0 +1,333 @@
+{
+  "status": "passed",
+  "coverage_types": {
+    "branch": {
+      "hit_points": 102,
+      "total_points": 118,
+      "percent": 86.44067796610169
+    },
+    "expr": {
+      "hit_points": 136,
+      "total_points": 164,
+      "percent": 82.92682926829268
+    },
+    "line": {
+      "hit_points": 76,
+      "total_points": 87,
+      "percent": 87.35632183908046
+    },
+    "toggle": {
+      "hit_points": 2753,
+      "total_points": 4002,
+      "percent": 68.79060469765118
+    },
+    "fsm_state": {
+      "hit_points": 0,
+      "total_points": 0,
+      "percent": null,
+      "status": "not instrumented; no coverage claim"
+    },
+    "fsm_arc": {
+      "hit_points": 0,
+      "total_points": 0,
+      "percent": null,
+      "status": "not instrumented; no coverage claim"
+    },
+    "user": {
+      "hit_points": 0,
+      "total_points": 0,
+      "percent": null,
+      "status": "not instrumented; no coverage claim"
+    }
+  },
+  "per_file": {
+    "./rtl/core/vib_coeff_rom.sv": {
+      "branch": {
+        "hit_points": 20,
+        "total_points": 24,
+        "percent": 83.33333333333333
+      },
+      "expr": {
+        "hit_points": 20,
+        "total_points": 20,
+        "percent": 100.0
+      },
+      "line": {
+        "hit_points": 4,
+        "total_points": 4,
+        "percent": 100.0
+      },
+      "toggle": {
+        "hit_points": 246,
+        "total_points": 256,
+        "percent": 96.09375
+      },
+      "fsm_state": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "fsm_arc": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "user": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      }
+    },
+    "./rtl/core/vibration_core.sv": {
+      "branch": {
+        "hit_points": 82,
+        "total_points": 94,
+        "percent": 87.23404255319149
+      },
+      "expr": {
+        "hit_points": 116,
+        "total_points": 144,
+        "percent": 80.55555555555556
+      },
+      "line": {
+        "hit_points": 72,
+        "total_points": 83,
+        "percent": 86.74698795180723
+      },
+      "toggle": {
+        "hit_points": 2507,
+        "total_points": 3746,
+        "percent": 66.92471970101441
+      },
+      "fsm_state": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "fsm_arc": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "user": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      }
+    }
+  },
+  "sources": [
+    {
+      "path": "build/rtl_coverage/l1_b3/normal/coverage.dat",
+      "sha256": "184613fe62a43638dc103dc6d557dba545bd06a4d2599ad2baa9bafed1e375ae"
+    },
+    {
+      "path": "build/rtl_coverage/l1_b3/dsp/coverage.dat",
+      "sha256": "9ba6d91fa8ae51f607e36eec9f4a9af539344c03f2969cf36d934cb9cdc2ec21"
+    }
+  ],
+  "reports": [
+    {
+      "report": "build/rtl_coverage/l1_b3/normal/regression.json",
+      "report_sha256": "b90cf06820fee9a0911582526766feb287bbb4ec66ad11b6301e9a75cf8622ad",
+      "xml_sha256": "69aaf8e6422e68d824156cba016b6b9db2269d31463eebbec4f8b1fd16394025",
+      "tests": {
+        "tests": 4,
+        "passed": 4,
+        "cases": [
+          "bit_exact_continuous_frames",
+          "malformed_frames_and_reset",
+          "full_buffers_during_output_stall",
+          "reset_cancels_each_processing_stage"
+        ]
+      },
+      "result": {
+        "n": 1024,
+        "lanes": 1,
+        "bands": 3,
+        "frames": 14,
+        "distinct_inputs": 14,
+        "debug_frames": 14,
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 295104,
+          "cycles_power": 284,
+          "cycles_nn": 950,
+          "cycles_total": 299411
+        }
+      }
+    },
+    {
+      "report": "build/rtl_coverage/l1_b3/dsp/regression.json",
+      "report_sha256": "8d4b27fed4e58574f29c98a071a3b80eed930c113155f651055ba9893143c98b",
+      "xml_sha256": "196486d1df4304c4d88c21661fa91556d3d9bf62a1830706bdbfbe2b276e17f1",
+      "tests": {
+        "tests": 4,
+        "passed": 4,
+        "cases": [
+          "bit_exact_continuous_frames",
+          "malformed_frames_and_reset",
+          "full_buffers_during_output_stall",
+          "reset_cancels_each_processing_stage"
+        ]
+      },
+      "result": {
+        "n": 1024,
+        "lanes": 1,
+        "bands": 3,
+        "frames": 10,
+        "distinct_inputs": 10,
+        "debug_frames": 10,
+        "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+        "assertions_enabled": true,
+        "status": "passed",
+        "cycles": {
+          "cycles_pre": 3073,
+          "cycles_dft": 295104,
+          "cycles_power": 284,
+          "cycles_nn": 950,
+          "cycles_total": 299411
+        },
+        "suite": "additional_DSP_directed",
+        "cases": [
+          {
+            "name": "zero",
+            "input_clipped_samples": 0,
+            "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+          },
+          {
+            "name": "constant_negative_DC",
+            "input_clipped_samples": 0,
+            "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+          },
+          {
+            "name": "off_bin_phase_0.000000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.0
+          },
+          {
+            "name": "off_bin_phase_1.570796",
+            "input_clipped_samples": 0,
+            "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 1.5707963267948966
+          },
+          {
+            "name": "off_bin_phase_2.300000",
+            "input_clipped_samples": 0,
+            "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 2.3
+          },
+          {
+            "name": "integer_bin_nonzero_phase",
+            "input_clipped_samples": 0,
+            "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+            "frequency_bins": [
+              207
+            ],
+            "phase_radians": 1.0471975511965976
+          },
+          {
+            "name": "positive_clipped_sine",
+            "input_clipped_samples": 298,
+            "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "negative_clipped_sine",
+            "input_clipped_samples": 295,
+            "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": -18000,
+            "amplitude": 24000
+          },
+          {
+            "name": "both_polarities_clipped_sine",
+            "input_clipped_samples": 537,
+            "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+            "frequency_bins": [
+              207.375
+            ],
+            "phase_radians": 0.7,
+            "offset": 0,
+            "amplitude": 48000
+          },
+          {
+            "name": "off_bin_two_tone",
+            "input_clipped_samples": 0,
+            "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+            "frequency_bins": [
+              207.25,
+              327.625
+            ]
+          }
+        ],
+        "checked_intermediates": [
+          "mean",
+          "windowed",
+          "real",
+          "imag",
+          "powers",
+          "features",
+          "hidden",
+          "logits"
+        ],
+        "input_sha256": {
+          "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+          "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+          "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+          "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+          "artifacts/model_neighbor/weights_l4_1.hex": "ba40796c514997315b5889c7287c2588640f5b8517f5b24f51c47645a4cd071e",
+          "artifacts/model_neighbor/w1.hex": "71858a94d5b82c81f01173326ec20227962b8b16a045d546cb907c16fc23ab03",
+          "artifacts/model_neighbor/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+          "artifacts/model_neighbor/weights_l4_0.hex": "eed0ac4a944abd713924da891cfee6a884361f45d4cc4139ad1ccca1c8fca69a",
+          "artifacts/model_neighbor/b1.hex": "4d93253aed7aa37f66cd67d3ee56d20bcc1dbe2b91d4c0cfcaff1491cee76f23",
+          "artifacts/model_neighbor/weights_l4_2.hex": "7c088defcaf8a3f6a7f14097ff2c00b2573b4101759a5ebbfab819163a901d04",
+          "artifacts/model_neighbor/w2.hex": "509ecb0fd7c4bdb9a9a3407464f644e36dc8cdfcdbe6c7202fe0bf8800707dc7",
+          "artifacts/model_neighbor/dft_bins.hex": "3f20337fe1354478d247847bd3135a5f15f43b17066221aa080abcef9b17ede6",
+          "artifacts/model_neighbor/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+          "artifacts/model_neighbor/weights_l4_3.hex": "afb997dd9dde9a3f710692a9a8703bf55e59bb35f3b755cc855e6968ff94d6fd",
+          "artifacts/model_neighbor/b2.hex": "7d918946adbfc9618e62b897f728978cb26b48629de0aa209cf23cbd8f89b91d",
+          "artifacts/model_neighbor/weights_l1_0.hex": "4780256de37e7eb36a9534555d2c8b62cef4ce074a8c5b5415e9d3895a109b07",
+          "artifacts/model_neighbor/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+          "artifacts/model_neighbor/feature_shifts.hex": "f9c41895a2738ca4f077b23a12d42d8fc27ef292d3d8efc718682ebeaad4ed1a",
+          "artifacts/model_neighbor/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+        }
+      }
+    }
+  ],
+  "threshold": "one hit per tool-generated point (or point-specific threshold if present)",
+  "excluded_points": 0,
+  "coverage_source_filters": [],
+  "per_instance_requested_at_compile_and_runtime": true,
+  "startup_and_reset_activity_included": true,
+  "merged_data_sha256": "87e593e11e343630a3488f191cb80e5c398e4b5d966eb7ef188570e77f4713c0",
+  "lcov_sha256": "81e2e3f6fc0ded9720213f110621f7e34e61bf4488c35622f5154f34b9911ad9",
+  "uncovered_points_sha256": "f3763a972270b385a938e1792546d03f674371b2b26094b157f63ed862911574"
+}

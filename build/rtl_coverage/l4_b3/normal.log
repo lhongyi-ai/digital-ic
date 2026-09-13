@@ -1,0 +1,32 @@
+COMMAND ["./.venv/bin/python", "./scripts/build_core.py", "--coverage", "--build-dir", "./build/rtl_coverage/l4_b3/normal", "--lanes", "4", "--model", "./artifacts/model_neighbor/model.json", "--frames", "14"]
+- V e r i l a t i o n   R e p o r t: Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.003 s (elab=0.000, cvt=0.000, bld=0.000); cpu 0.001 s on 1 threads; allocated 3.344 MB
+make: Nothing to be done for `default'.
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+     -.--ns INFO     pygpi                              ..ib/pygpi/embed.cpp:115  in initialize                      Using Python 3.12.10 interpreter at ./.venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1788830241
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_core.bit_exact_continuous_frames (1/4)
+10857360.00ns INFO     cocotb.regression                  test_core.bit_exact_continuous_frames passed
+10857360.00ns INFO     cocotb.regression                  running test_core.malformed_frames_and_reset (2/4)
+14834331.00ns INFO     cocotb.regression                  test_core.malformed_frames_and_reset passed
+14834331.00ns INFO     cocotb.regression                  running test_core.full_buffers_during_output_stall (3/4)
+18749151.00ns INFO     cocotb.regression                  test_core.full_buffers_during_output_stall passed
+18749151.00ns INFO     cocotb.regression                  running test_core.reset_cancels_each_processing_stage (4/4)
+25867742.00ns INFO     cocotb.regression                  test_core.reset_cancels_each_processing_stage passed
+25867742.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_core.bit_exact_continuous_frames           PASS    10857360.00           3.55    3056198.00  **
+                                                        ** test_core.malformed_frames_and_reset            PASS     3976971.00           0.49    8094080.89  **
+                                                        ** test_core.full_buffers_during_output_stall      PASS     3914820.00           0.48    8167339.05  **
+                                                        ** test_core.reset_cancels_each_processing_stage   PASS     7118591.00           1.43    4962951.16  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=4 PASS=4 FAIL=0 SKIP=0                            25867742.00           5.96    4341301.63  **
+                                                        *******************************************************************************************************
+- :0: Verilog $finish

@@ -1,0 +1,27 @@
+{
+  "scope": "Predeclared digital overload expectations from current RTL, not measurements",
+  "lanes": 1,
+  "run_frames": 4,
+  "period_cycles": 4,
+  "expected_counters": {
+    "generated_samples": 4096,
+    "accepted_samples": 3074,
+    "overflow_count": 1022,
+    "max_fifo": 2,
+    "record_count": 3,
+    "protocol_errors": 0,
+    "error_flags": 40
+  },
+  "expected_frame_ids": [
+    0,
+    1,
+    2
+  ],
+  "required_evidence": [
+    "two consecutive identical unaltered valid reads",
+    "correct bit-exact scores for completed frames",
+    "normal driver rejects incomplete/error result",
+    "subsequent normal run with same firmware succeeds"
+  ],
+  "clock_frequency_measured": false
+}

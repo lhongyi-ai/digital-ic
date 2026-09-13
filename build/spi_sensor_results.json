@@ -1,0 +1,90 @@
+{
+  "hardware_measured": false,
+  "results": [
+    {
+      "test": "generic_master",
+      "cpol": 0,
+      "cpha": 0,
+      "half_period": 6,
+      "packets": 24,
+      "bytes": 106,
+      "cycles": 11350,
+      "reset_midbyte": "PASS",
+      "reset_between_bytes": "PASS",
+      "cs_hold_and_clock_spacing": "PASS"
+    },
+    {
+      "test": "generic_master",
+      "cpol": 1,
+      "cpha": 1,
+      "half_period": 6,
+      "packets": 24,
+      "bytes": 116,
+      "cycles": 12469,
+      "reset_midbyte": "PASS",
+      "reset_between_bytes": "PASS",
+      "cs_hold_and_clock_spacing": "PASS"
+    },
+    {
+      "test": "generic_master",
+      "cpol": 0,
+      "cpha": 1,
+      "half_period": 6,
+      "packets": 24,
+      "bytes": 125,
+      "cycles": 13268,
+      "reset_midbyte": "PASS",
+      "reset_between_bytes": "PASS",
+      "cs_hold_and_clock_spacing": "PASS"
+    },
+    {
+      "test": "generic_master",
+      "cpol": 1,
+      "cpha": 0,
+      "half_period": 6,
+      "packets": 24,
+      "bytes": 100,
+      "cycles": 10737,
+      "reset_midbyte": "PASS",
+      "reset_between_bytes": "PASS",
+      "cs_hold_and_clock_spacing": "PASS"
+    },
+    {
+      "test": "generic_master",
+      "cpol": 0,
+      "cpha": 0,
+      "half_period": 1,
+      "packets": 24,
+      "bytes": 102,
+      "cycles": 2572,
+      "reset_midbyte": "PASS",
+      "reset_between_bytes": "PASS",
+      "cs_hold_and_clock_spacing": "PASS"
+    },
+    {
+      "test": "generic_master",
+      "cpol": 1,
+      "cpha": 1,
+      "half_period": 1,
+      "packets": 24,
+      "bytes": 94,
+      "cycles": 2392,
+      "reset_midbyte": "PASS",
+      "reset_between_bytes": "PASS",
+      "cs_hold_and_clock_spacing": "PASS"
+    },
+    {
+      "test": "sensor_capture",
+      "half_period": 6,
+      "cycles": 36159,
+      "initialization": "PASS",
+      "signed_xyz_burst": "PASS",
+      "output_stall_and_drop_counter": "PASS",
+      "sensor_overrun_flag": "PASS",
+      "random_samples": 32,
+      "reset_mid_spi_and_reinitialize": "PASS",
+      "wrong_device_id_rejected": "PASS",
+      "hardware_measured": false
+    }
+  ]
+}

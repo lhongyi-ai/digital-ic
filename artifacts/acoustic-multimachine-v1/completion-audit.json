@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "freeze_bindings_valid": true,
+  "test_threshold_unchanged": true,
+  "test_pcm_hashes_valid": true,
+  "independent_confusion_counts": [
+    [
+      20,
+      60
+    ],
+    [
+      16,
+      64
+    ]
+  ],
+  "sha256": {
+    "artifacts/acoustic-multimachine-v1/frozen.json": "85e2b957866e10a25b1f9b8ee43a293b6df278ff7fef171da42a0f3930032a85",
+    "artifacts/acoustic-multimachine-v1/development-audit.json": "b30502e74489742d7731d63beea7403c402bc10bf7cebc8f773e9b5dd75aa6fb",
+    "artifacts/acoustic-multimachine-v1/test-attempt.json": "c188cd184e0298caa20bddb1adb8e3dd9fd983bd2c25f8fcc095824800b331ef",
+    "artifacts/acoustic-multimachine-v1/test.json": "d7d8479dbbb1bb91f98c01bbd456a54df761755fe72c127ada2f2f06c207b75d",
+    "docs/multimachine-results.md": "5f7ff60dc38afc20d16fe5c46955bf1e3cf0bd87117c3caf805e2ff3c5516898"
+  }
+}

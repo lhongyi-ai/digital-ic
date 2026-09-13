@@ -1,0 +1,22 @@
+{
+  "original_wav_sha256": "803a1fe721b9d8fcce00f0915df49f033f25fe472dceb3bd9b4c81ffb4c86245",
+  "archive_member_crc32": "8caa6dbc",
+  "range_bytes": 1897562,
+  "frames": 160000,
+  "channel": 0,
+  "original_channels": 8,
+  "sample_rate_hz": 16000,
+  "name": "fan/id_04/abnormal/00000145.wav",
+  "offset": 5487802285,
+  "compressed": 1897501,
+  "size": 2560080,
+  "crc": 2359979452,
+  "method": 8,
+  "machine": "04",
+  "label": 1,
+  "role": "final_test",
+  "fold": null,
+  "local": "data/mimii-known-final-v1/pcm/04_1_00000145.npy",
+  "npy_sha256": "cf2aca01cdafbafd545388e02d294087fa69c4e4cb63dc8ae2afe55d30c8b974",
+  "deployment_sha256": "ad92f8722613c4f65a85d1ab4a9790988489d7d05bcec075944f2b194afe717d"
+}

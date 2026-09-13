@@ -1,0 +1,10 @@
+{
+  "plan_sha256": "d569ade55eaa8100260666c6372644b8d60cc22465444091ae9e19e1253b9b3a",
+  "script_sha256": "fedd1e578499fb8c3b53ccb8a19047b222e02a83ca8a4d37ba53534ddb82e28c",
+  "hypothesis": "source-paired ridge mapping may remove nuisance noise better than sample augmentation",
+  "denoiser": "StandardScaler then Ridge(alpha=10) on 128 source-only 0/+6 dB pairs per fold",
+  "classifier": "shape spectrum, fixed linear_1 and trees; fit original source records after denoising",
+  "calibration": "original 0 dB source normal records, unchanged rule",
+  "validation": "original 0 dB held machine, no paired held data in fitting",
+  "final_test_opened": false
+}

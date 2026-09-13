@@ -1,0 +1,43 @@
+initial
+assume (= [$auto$async2sync.cc:116:execute$329] true)
+assume (= [$auto$async2sync.cc:116:execute$335] true)
+assume (= [$auto$async2sync.cc:116:execute$341] true)
+assume (= [$auto$async2sync.cc:116:execute$347] true)
+assume (= [$auto$async2sync.cc:116:execute$353] true)
+assume (= [accepted] #b0000)
+assume (= [dut.occupancy] #b00)
+assume (= [dut.rp] false)
+assume (= [dut.slot0] #b0000000000000000000000000000000000000000000000000)
+assume (= [dut.slot1] #b0000000000000000000000000000000000000000000000000)
+assume (= [dut.wp] false)
+assume (= [past_valid] false)
+assume (= [seen_exchange] false)
+assume (= [seen_full] false)
+assume (= [seen_reset_busy] false)
+
+state 0
+assume (= [clk] false)
+
+state 1
+assume (= [clk] false)
+
+state 2
+assume (= [clk] false)
+
+state 3
+assume (= [clk] false)
+
+state 4
+assume (= [clk] false)
+
+state 5
+assume (= [clk] false)
+
+state 6
+assume (= [clk] false)
+
+state 7
+assume (= [clk] false)
+
+state 8
+assume (= [clk] false)

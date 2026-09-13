@@ -1,0 +1,331 @@
+SBY 18:18:10 [./build/quantization_formal/serial_cover] Removing directory './build/quantization_formal/serial_cover'.
+SBY 18:18:10 [./build/quantization_formal/serial_cover] Copy './formal/../build/quantization_formal/generated/quant_extract.sv' to './build/quantization_formal/serial_cover/src/quant_extract.sv'.
+SBY 18:18:10 [./build/quantization_formal/serial_cover] Copy './formal/quant_harness.sv' to './build/quantization_formal/serial_cover/src/quant_harness.sv'.
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: smtbmc bitwuzla
+SBY 18:18:10 [./build/quantization_formal/serial_cover] base: starting process "cd ./build/quantization_formal/serial_cover/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 18:18:10 [./build/quantization_formal/serial_cover] base: finished (returncode=0)
+SBY 18:18:10 [./build/quantization_formal/serial_cover] prep: starting process "cd ./build/quantization_formal/serial_cover/model; yosys -ql design_prep.log design_prep.ys"
+SBY 18:18:10 [./build/quantization_formal/serial_cover] prep: finished (returncode=0)
+SBY 18:18:10 [./build/quantization_formal/serial_cover] smt2: starting process "cd ./build/quantization_formal/serial_cover/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 18:18:10 [./build/quantization_formal/serial_cover] smt2: finished (returncode=0)
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: starting process "cd ./build/quantization_formal/serial_cover; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 64  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at quant_serial_harness: quant_harness.sv:130.13-130.95 (_witness_.check_cover_quant_harness_sv_130_70)
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at quant_serial_harness: quant_harness.sv:135.13-135.46 (_witness_.check_cover_quant_harness_sv_135_101)
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_139)
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at quant_serial_harness: quant_harness.sv:126.13-126.64 (_witness_.check_cover_quant_harness_sv_126_44)
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at quant_serial_harness: quant_harness.sv:134.13-134.47 (_witness_.check_cover_quant_harness_sv_134_98)
+SBY 18:18:10 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 6 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_145)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 6 at quant_serial_harness: quant_harness.sv:129.13-129.85 (_witness_.check_cover_quant_harness_sv_129_63)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 6 at quant_serial_harness: quant_harness.sv:128.13-128.81 (_witness_.check_cover_quant_harness_sv_128_56)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace5.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace5.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace5.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 6 at quant_serial_harness: quant_harness.sv:127.13-127.81 (_witness_.check_cover_quant_harness_sv_127_49)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace6.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace6_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace6.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace6.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 7 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_151)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace7.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace7_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace7.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace7.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 7 at quant_serial_harness: quant_harness.sv:133.13-133.83 (_witness_.check_cover_quant_harness_sv_133_91)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace8.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace8_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace8.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace8.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 8 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_157)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace9.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace9_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace9.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace9.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 9 at quant_serial_harness: quant_harness.sv:136.13-136.42 (_witness_.check_cover_quant_harness_sv_136_104)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace10.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace10_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace10.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace10.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 9 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_163)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace11.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace11_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace11.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace11.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 10 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_169)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace12.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace12_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace12.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace12.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 11 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_175)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace13.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace13_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace13.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace13.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 12 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_181)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace14.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace14_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace14.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace14.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Reached cover statement in step 13 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_187)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace15.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace15_tb.v
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace15.smtc
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace15.yw
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:00  Checking cover reachability in step 14..
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Reached cover statement in step 14 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_193)
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace16.vcd
+SBY 18:18:11 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace16_tb.v
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to constraints file: engine_0/trace16.smtc
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace16.yw
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Checking cover reachability in step 14..
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Checking cover reachability in step 15..
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Reached cover statement in step 15 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_199)
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace17.vcd
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace17_tb.v
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to constraints file: engine_0/trace17.smtc
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace17.yw
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Checking cover reachability in step 15..
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Checking cover reachability in step 16..
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Reached cover statement in step 16 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_205)
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace18.vcd
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace18_tb.v
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to constraints file: engine_0/trace18.smtc
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace18.yw
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Checking cover reachability in step 16..
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Checking cover reachability in step 17..
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Reached cover statement in step 17 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_211)
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace19.vcd
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to Verilog testbench: engine_0/trace19_tb.v
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to constraints file: engine_0/trace19.smtc
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to Yosys witness file: engine_0/trace19.yw
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Checking cover reachability in step 17..
+SBY 18:18:12 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Checking cover reachability in step 18..
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Reached cover statement in step 18 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_217)
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to VCD file: engine_0/trace20.vcd
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to Verilog testbench: engine_0/trace20_tb.v
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to constraints file: engine_0/trace20.smtc
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to Yosys witness file: engine_0/trace20.yw
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Checking cover reachability in step 18..
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Checking cover reachability in step 19..
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Reached cover statement in step 19 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_223)
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to VCD file: engine_0/trace21.vcd
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to Verilog testbench: engine_0/trace21_tb.v
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to constraints file: engine_0/trace21.smtc
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to Yosys witness file: engine_0/trace21.yw
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Checking cover reachability in step 19..
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Checking cover reachability in step 20..
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Reached cover statement in step 20 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_229)
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:02  Writing trace to VCD file: engine_0/trace22.vcd
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Writing trace to Verilog testbench: engine_0/trace22_tb.v
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Writing trace to constraints file: engine_0/trace22.smtc
+SBY 18:18:13 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Writing trace to Yosys witness file: engine_0/trace22.yw
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Checking cover reachability in step 20..
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Checking cover reachability in step 21..
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Reached cover statement in step 21 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_235)
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Writing trace to VCD file: engine_0/trace23.vcd
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Writing trace to Verilog testbench: engine_0/trace23_tb.v
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Writing trace to constraints file: engine_0/trace23.smtc
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Writing trace to Yosys witness file: engine_0/trace23.yw
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Checking cover reachability in step 21..
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Checking cover reachability in step 22..
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Reached cover statement in step 22 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_241)
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:03  Writing trace to VCD file: engine_0/trace24.vcd
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:04  Writing trace to Verilog testbench: engine_0/trace24_tb.v
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:04  Writing trace to constraints file: engine_0/trace24.smtc
+SBY 18:18:14 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:04  Writing trace to Yosys witness file: engine_0/trace24.yw
+SBY 18:18:15 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:04  Checking cover reachability in step 22..
+SBY 18:18:15 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:04  Checking cover reachability in step 23..
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:05  Reached cover statement in step 23 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_247)
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:05  Writing trace to VCD file: engine_0/trace25.vcd
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:05  Writing trace to Verilog testbench: engine_0/trace25_tb.v
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:05  Writing trace to constraints file: engine_0/trace25.smtc
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:05  Writing trace to Yosys witness file: engine_0/trace25.yw
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:05  Checking cover reachability in step 23..
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:05  Checking cover reachability in step 24..
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:05  Reached cover statement in step 24 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_253)
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:05  Writing trace to VCD file: engine_0/trace26.vcd
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Writing trace to Verilog testbench: engine_0/trace26_tb.v
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Writing trace to constraints file: engine_0/trace26.smtc
+SBY 18:18:16 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Writing trace to Yosys witness file: engine_0/trace26.yw
+SBY 18:18:17 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Checking cover reachability in step 24..
+SBY 18:18:17 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Checking cover reachability in step 25..
+SBY 18:18:17 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Reached cover statement in step 25 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_259)
+SBY 18:18:17 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Writing trace to VCD file: engine_0/trace27.vcd
+SBY 18:18:17 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Writing trace to Verilog testbench: engine_0/trace27_tb.v
+SBY 18:18:17 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Writing trace to constraints file: engine_0/trace27.smtc
+SBY 18:18:17 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Writing trace to Yosys witness file: engine_0/trace27.yw
+SBY 18:18:17 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Checking cover reachability in step 25..
+SBY 18:18:17 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:06  Checking cover reachability in step 26..
+SBY 18:18:18 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:07  Reached cover statement in step 26 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_265)
+SBY 18:18:18 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:07  Writing trace to VCD file: engine_0/trace28.vcd
+SBY 18:18:18 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:07  Writing trace to Verilog testbench: engine_0/trace28_tb.v
+SBY 18:18:18 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:07  Writing trace to constraints file: engine_0/trace28.smtc
+SBY 18:18:18 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:07  Writing trace to Yosys witness file: engine_0/trace28.yw
+SBY 18:18:18 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:07  Checking cover reachability in step 26..
+SBY 18:18:18 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:07  Checking cover reachability in step 27..
+SBY 18:18:19 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:08  Reached cover statement in step 27 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_271)
+SBY 18:18:19 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:08  Writing trace to VCD file: engine_0/trace29.vcd
+SBY 18:18:19 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:08  Writing trace to Verilog testbench: engine_0/trace29_tb.v
+SBY 18:18:19 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:08  Writing trace to constraints file: engine_0/trace29.smtc
+SBY 18:18:19 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:08  Writing trace to Yosys witness file: engine_0/trace29.yw
+SBY 18:18:19 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:08  Checking cover reachability in step 27..
+SBY 18:18:19 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:08  Checking cover reachability in step 28..
+SBY 18:18:20 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:09  Reached cover statement in step 28 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_277)
+SBY 18:18:20 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:09  Writing trace to VCD file: engine_0/trace30.vcd
+SBY 18:18:20 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:09  Writing trace to Verilog testbench: engine_0/trace30_tb.v
+SBY 18:18:20 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:09  Writing trace to constraints file: engine_0/trace30.smtc
+SBY 18:18:20 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:09  Writing trace to Yosys witness file: engine_0/trace30.yw
+SBY 18:18:20 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:09  Checking cover reachability in step 28..
+SBY 18:18:20 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:09  Checking cover reachability in step 29..
+SBY 18:18:21 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:10  Reached cover statement in step 29 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_283)
+SBY 18:18:21 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:10  Writing trace to VCD file: engine_0/trace31.vcd
+SBY 18:18:21 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:10  Writing trace to Verilog testbench: engine_0/trace31_tb.v
+SBY 18:18:21 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:10  Writing trace to constraints file: engine_0/trace31.smtc
+SBY 18:18:21 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:10  Writing trace to Yosys witness file: engine_0/trace31.yw
+SBY 18:18:21 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:10  Checking cover reachability in step 29..
+SBY 18:18:21 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:10  Checking cover reachability in step 30..
+SBY 18:18:22 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:11  Reached cover statement in step 30 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_289)
+SBY 18:18:22 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:11  Writing trace to VCD file: engine_0/trace32.vcd
+SBY 18:18:23 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:12  Writing trace to Verilog testbench: engine_0/trace32_tb.v
+SBY 18:18:23 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:12  Writing trace to constraints file: engine_0/trace32.smtc
+SBY 18:18:23 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:12  Writing trace to Yosys witness file: engine_0/trace32.yw
+SBY 18:18:23 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:12  Checking cover reachability in step 30..
+SBY 18:18:23 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:12  Checking cover reachability in step 31..
+SBY 18:18:25 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:14  Reached cover statement in step 31 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_295)
+SBY 18:18:25 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:14  Writing trace to VCD file: engine_0/trace33.vcd
+SBY 18:18:25 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:15  Writing trace to Verilog testbench: engine_0/trace33_tb.v
+SBY 18:18:26 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:15  Writing trace to constraints file: engine_0/trace33.smtc
+SBY 18:18:26 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:15  Writing trace to Yosys witness file: engine_0/trace33.yw
+SBY 18:18:26 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:15  Checking cover reachability in step 31..
+SBY 18:18:26 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:15  Checking cover reachability in step 32..
+SBY 18:18:26 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:15  Reached cover statement in step 32 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_301)
+SBY 18:18:26 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:15  Writing trace to VCD file: engine_0/trace34.vcd
+SBY 18:18:27 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:16  Writing trace to Verilog testbench: engine_0/trace34_tb.v
+SBY 18:18:27 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:16  Writing trace to constraints file: engine_0/trace34.smtc
+SBY 18:18:27 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:16  Writing trace to Yosys witness file: engine_0/trace34.yw
+SBY 18:18:27 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:16  Checking cover reachability in step 32..
+SBY 18:18:27 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:16  Checking cover reachability in step 33..
+SBY 18:18:28 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:17  Reached cover statement in step 33 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_307)
+SBY 18:18:28 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:17  Writing trace to VCD file: engine_0/trace35.vcd
+SBY 18:18:28 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:17  Writing trace to Verilog testbench: engine_0/trace35_tb.v
+SBY 18:18:28 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:17  Writing trace to constraints file: engine_0/trace35.smtc
+SBY 18:18:28 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:18  Writing trace to Yosys witness file: engine_0/trace35.yw
+SBY 18:18:29 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:18  Checking cover reachability in step 33..
+SBY 18:18:29 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:18  Checking cover reachability in step 34..
+SBY 18:18:29 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:19  Reached cover statement in step 34 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_313)
+SBY 18:18:29 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:19  Writing trace to VCD file: engine_0/trace36.vcd
+SBY 18:18:30 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:19  Writing trace to Verilog testbench: engine_0/trace36_tb.v
+SBY 18:18:30 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:19  Writing trace to constraints file: engine_0/trace36.smtc
+SBY 18:18:30 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:19  Writing trace to Yosys witness file: engine_0/trace36.yw
+SBY 18:18:30 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:19  Checking cover reachability in step 34..
+SBY 18:18:30 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:19  Checking cover reachability in step 35..
+SBY 18:18:32 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:21  Reached cover statement in step 35 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_319)
+SBY 18:18:32 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:21  Writing trace to VCD file: engine_0/trace37.vcd
+SBY 18:18:32 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:21  Writing trace to Verilog testbench: engine_0/trace37_tb.v
+SBY 18:18:32 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:21  Writing trace to constraints file: engine_0/trace37.smtc
+SBY 18:18:32 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:21  Writing trace to Yosys witness file: engine_0/trace37.yw
+SBY 18:18:32 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:21  Checking cover reachability in step 35..
+SBY 18:18:32 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:21  Checking cover reachability in step 36..
+SBY 18:18:34 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:23  Reached cover statement in step 36 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_325)
+SBY 18:18:34 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:23  Writing trace to VCD file: engine_0/trace38.vcd
+SBY 18:18:34 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:23  Writing trace to Verilog testbench: engine_0/trace38_tb.v
+SBY 18:18:34 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:23  Writing trace to constraints file: engine_0/trace38.smtc
+SBY 18:18:34 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:23  Writing trace to Yosys witness file: engine_0/trace38.yw
+SBY 18:18:34 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:23  Checking cover reachability in step 36..
+SBY 18:18:34 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:23  Checking cover reachability in step 37..
+SBY 18:18:37 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:26  Reached cover statement in step 37 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_331)
+SBY 18:18:37 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:26  Writing trace to VCD file: engine_0/trace39.vcd
+SBY 18:18:37 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:26  Writing trace to Verilog testbench: engine_0/trace39_tb.v
+SBY 18:18:37 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:26  Writing trace to constraints file: engine_0/trace39.smtc
+SBY 18:18:37 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:26  Writing trace to Yosys witness file: engine_0/trace39.yw
+SBY 18:18:37 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:26  Checking cover reachability in step 37..
+SBY 18:18:37 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:27  Checking cover reachability in step 38..
+SBY 18:18:41 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:30  Reached cover statement in step 38 at quant_serial_harness: quant_harness.sv:142.13-142.46 (_witness_.check_cover_quant_harness_sv_142_337)
+SBY 18:18:41 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:30  Writing trace to VCD file: engine_0/trace40.vcd
+SBY 18:18:41 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:30  Writing trace to Verilog testbench: engine_0/trace40_tb.v
+SBY 18:18:41 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:30  Writing trace to constraints file: engine_0/trace40.smtc
+SBY 18:18:41 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:30  Writing trace to Yosys witness file: engine_0/trace40.yw
+SBY 18:18:41 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:31  Checking cover reachability in step 38..
+SBY 18:18:42 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:31  Reached cover statement in step 38 at quant_serial_harness: quant_harness.sv:132.13-132.94 (_witness_.check_cover_quant_harness_sv_132_84)
+SBY 18:18:42 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:31  Writing trace to VCD file: engine_0/trace41.vcd
+SBY 18:18:42 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:31  Writing trace to Verilog testbench: engine_0/trace41_tb.v
+SBY 18:18:42 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:31  Writing trace to constraints file: engine_0/trace41.smtc
+SBY 18:18:42 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:31  Writing trace to Yosys witness file: engine_0/trace41.yw
+SBY 18:18:42 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:31  Checking cover reachability in step 38..
+SBY 18:18:42 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:31  Reached cover statement in step 38 at quant_serial_harness: quant_harness.sv:131.13-131.94 (_witness_.check_cover_quant_harness_sv_131_77)
+SBY 18:18:42 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:31  Writing trace to VCD file: engine_0/trace42.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:32  Writing trace to Verilog testbench: engine_0/trace42_tb.v
+SBY 18:18:43 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:32  Writing trace to constraints file: engine_0/trace42.smtc
+SBY 18:18:43 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:32  Writing trace to Yosys witness file: engine_0/trace42.yw
+SBY 18:18:43 [./build/quantization_formal/serial_cover] engine_0: ##   0:00:32  Status: passed
+SBY 18:18:43 [./build/quantization_formal/serial_cover] engine_0: finished (returncode=0)
+SBY 18:18:43 [./build/quantization_formal/serial_cover] engine_0: Status returned by engine: pass
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:32 (32)
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:33 (33)
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: cover trace: ./build/quantization_formal/serial_cover/engine_0/trace0.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary:   reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_130_70 at quant_harness.sv:130.13-130.95 step 5
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary:   reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_135_101 at quant_harness.sv:135.13-135.46 step 5
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary:   reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_139 at quant_harness.sv:142.13-142.46 step 5
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: cover trace: ./build/quantization_formal/serial_cover/engine_0/trace1.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary:   reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_126_44 at quant_harness.sv:126.13-126.64 step 5
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: cover trace: ./build/quantization_formal/serial_cover/engine_0/trace10.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary:   reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_136_104 at quant_harness.sv:136.13-136.42 step 9
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: cover trace: ./build/quantization_formal/serial_cover/engine_0/trace11.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary:   reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_163 at quant_harness.sv:142.13-142.46 step 9
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: cover trace: ./build/quantization_formal/serial_cover/engine_0/trace12.vcd
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary:   reached cover statement quant_serial_harness._witness_.check_cover_quant_harness_sv_142_169 at quant_harness.sv:142.13-142.46 step 10
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: and 38 further traces
+SBY 18:18:43 [./build/quantization_formal/serial_cover] summary: see ./build/quantization_formal/serial_cover/PASS for a complete summary
+SBY 18:18:43 [./build/quantization_formal/serial_cover] DONE (PASS, rc=0)

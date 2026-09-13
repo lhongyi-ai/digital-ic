@@ -1,0 +1,18 @@
+{
+  "plan_sha256": "d5fee974de89de25fb4296c80648a959ae87f6e6c8c0506ec778118a0108fdfa",
+  "upstream_commit": "a425fdce92572e602a1d5634799bd9f1f2efa806",
+  "upstream": "https://github.com/fschmid56/EfficientAT",
+  "pretraining": "AudioSet according to upstream; not fine-tuned on MIMII",
+  "checkpoint": "mn10_as",
+  "downstream": [
+    "linear_01",
+    "linear_1",
+    "rbf_10"
+  ],
+  "threshold": "source normal calibration max; held machine excluded",
+  "test_opened": false,
+  "sample_rate": "16 kHz resampled to official 32 kHz; does not recover lost high frequencies",
+  "source_sha256": "9a106bdb1701f0554e79945a460cd576d57246acb26a72efe5a91fde10ae2049",
+  "torch": "2.8.0",
+  "torchaudio": "2.8.0"
+}

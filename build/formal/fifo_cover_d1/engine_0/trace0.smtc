@@ -1,0 +1,25 @@
+initial
+assume (= [$auto$async2sync.cc:116:execute$513] true)
+assume (= [$auto$async2sync.cc:116:execute$519] true)
+assume (= [$auto$async2sync.cc:116:execute$525] true)
+assume (= [$auto$async2sync.cc:116:execute$531] true)
+assume (= [$auto$async2sync.cc:116:execute$537] true)
+assume (= [accepted] #b00000000)
+assume (= [dut.occupancy] false)
+assume (= [past_valid] false)
+assume (= [seen_exchange] false)
+assume (= [seen_full] false)
+assume (= [seen_reset_busy] false)
+assume (= (select [dut.mem] #b0) #b0000000000000000)
+
+state 0
+assume (= [clk] false)
+
+state 1
+assume (= [clk] false)
+
+state 2
+assume (= [clk] false)
+
+state 3
+assume (= [clk] false)

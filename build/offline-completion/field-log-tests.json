@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "generated_at_utc": "2026-09-08T01:36:41.448523+00:00",
+  "command": ".venv/bin/python -m pytest tests/test_field_log.py -q --junitxml=build/offline-completion/field-log-tests.xml",
+  "pytest_counts": {
+    "tests": 54,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pytest_duration_seconds": 1.214,
+  "fixture_kind": "hand-authored synthetic binary parser fixtures",
+  "physical_hardware_executed": false,
+  "scope": [
+    "Signed INT32 logits and modulo-2^32 timestamp latency",
+    "Zero-result committed diagnostic logs",
+    "Payload CRC32 and exact final commit marker",
+    "Optional expected model SHA-256 binding and byte order",
+    "Strictly increasing frame IDs with duplicate/out-of-order rejection",
+    "Sampling, result-count, fixed geometry, truncation and final sample-accounting guards",
+    "Class/error/reserved record fields and full-partition padding"
+  ],
+  "limitations": [
+    "Parser tests do not establish physical acquisition or classification performance.",
+    "Expected model binding requires the caller to supply expected_model_sha256.",
+    "Payload CRC32 does not authenticate the header."
+  ],
+  "files": {
+    "src/vibfpga/field_log.py": {
+      "sha256": "5aab91680a174d51638d2f9d7da53cc980a822d375414e24d7c136596ca99546"
+    },
+    "tests/test_field_log.py": {
+      "sha256": "6992bd8e1375a74472b6b0cc26bc3805d7733beac1884cbc9cbc63aea26d25c2"
+    },
+    "build/offline-completion/field-log-tests.xml": {
+      "sha256": "ac6858cf76eb3ecb722b4d4cdc66f013d539e9d4ecb565f50e020ea90b4807e7"
+    }
+  },
+  "tests": [
+    "test_signed_logits_timestamp_wrap_and_schema",
+    "test_full_partition_padding_is_not_decoded_as_results",
+    "test_zero_result_error_log_is_valid_diagnostic[2-66]",
+    "test_zero_result_error_log_is_valid_diagnostic[4-229]",
+    "test_record_error_flag_marks_prediction_unusable",
+    "test_model_hash_order_binding_and_optional_mode",
+    "test_partial_or_missing_commit_rejected[4294967295]",
+    "test_partial_or_missing_commit_rejected[4294967124]",
+    "test_partial_or_missing_commit_rejected[4294921556]",
+    "test_partial_or_missing_commit_rejected[4283387220]",
+    "test_partial_or_missing_commit_rejected[0]",
+    "test_other_format_or_version_rejected[0-827213139]",
+    "test_other_format_or_version_rejected[1-2]",
+    "test_bad_payload_crc_rejected",
+    "test_bad_crc_for_empty_payload_rejected",
+    "test_header_or_payload_truncation_rejected[0]",
+    "test_header_or_payload_truncation_rejected[255]",
+    "test_header_or_payload_truncation_rejected[256]",
+    "test_header_or_payload_truncation_rejected[4095]",
+    "test_header_or_payload_truncation_rejected[4096]",
+    "test_header_or_payload_truncation_rejected[4160]",
+    "test_header_or_payload_truncation_rejected[4223]",
+    "test_duplicate_or_out_of_order_frame_with_valid_crc_rejected[1-0]",
+    "test_duplicate_or_out_of_order_frame_with_valid_crc_rejected[0-2]",
+    "test_invalid_class_or_reserved_record_bits_with_valid_crc_rejected[3]",
+    "test_invalid_class_or_reserved_record_bits_with_valid_crc_rejected[255]",
+    "test_invalid_class_or_reserved_record_bits_with_valid_crc_rejected[65536]",
+    "test_invalid_class_or_reserved_record_bits_with_valid_crc_rejected[2147483648]",
+    "test_count_and_fixed_geometry_rejected[changes0]",
+    "test_count_and_fixed_geometry_rejected[changes1]",
+    "test_count_and_fixed_geometry_rejected[changes2]",
+    "test_count_and_fixed_geometry_rejected[changes3]",
+    "test_count_and_fixed_geometry_rejected[changes4]",
+    "test_count_and_fixed_geometry_rejected[changes5]",
+    "test_count_and_fixed_geometry_rejected[changes6]",
+    "test_count_and_fixed_geometry_rejected[changes7]",
+    "test_count_and_fixed_geometry_rejected[changes8]",
+    "test_count_and_fixed_geometry_rejected[changes9]",
+    "test_count_and_fixed_geometry_rejected[changes10]",
+    "test_count_and_fixed_geometry_rejected[changes11]",
+    "test_count_and_fixed_geometry_rejected[changes12]",
+    "test_count_and_fixed_geometry_rejected[changes13]",
+    "test_counter_geometry_consistency_rejected[changes0]",
+    "test_counter_geometry_consistency_rejected[changes1]",
+    "test_counter_geometry_consistency_rejected[changes2]",
+    "test_counter_geometry_consistency_rejected[changes3]",
+    "test_counter_geometry_consistency_rejected[changes4]",
+    "test_counter_geometry_consistency_rejected[changes5]",
+    "test_counter_geometry_consistency_rejected[changes6]",
+    "test_partial_samples_and_canceled_history_need_not_equal_output_count",
+    "test_legal_axes_and_lanes_are_decoded[0-1]",
+    "test_legal_axes_and_lanes_are_decoded[1-4]",
+    "test_legal_axes_and_lanes_are_decoded[2-4]",
+    "test_physical_model_tag_still_does_not_claim_hardware_execution"
+  ]
+}

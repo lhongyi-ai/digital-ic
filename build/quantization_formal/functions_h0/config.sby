@@ -1,0 +1,15 @@
+[options]
+depth 2
+mode prove
+
+[engines]
+smtbmc bitwuzla
+
+[script]
+read -formal -sv quant_extract.sv quant_harness.sv
+chparam -set HIDDEN_SHIFT 0 quant_functions_harness
+prep -top quant_functions_harness
+
+[files]
+../build/quantization_formal/generated/quant_extract.sv
+quant_harness.sv

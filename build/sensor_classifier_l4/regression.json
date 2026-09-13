@@ -1,0 +1,52 @@
+{
+  "n": 256,
+  "lanes": 4,
+  "bands": 1,
+  "hidden_shift": 8,
+  "model": "./build/field_fixture/trained/model/model.json",
+  "model_sha256": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe",
+  "model_file_sha256": {
+    "b1.hex": "28d03b805a251e93ea241913ca7d3debc7e39f3f6d375c45bcabc83c2f8907ce",
+    "b2.hex": "314270e4b326afbf4271424f1424e1563dc10c847fa391fe26eb460e8045ca39",
+    "bins.hex": "211a8baa75f27fba32c15a6f847ed51a9db9e47911183e7a8e725f581fc2fa10",
+    "cos_quarter.hex": "3d5fa26f632eba8bdbf45ffd459e3930f96f48b6afa6e20d02eef66b33777894",
+    "feature_shifts.hex": "c3e203ee07e2d260bfa36d84766bc658d1b84b29295d563eac555290c0bd7b11",
+    "hann.hex": "10644e0a2547c4af9d65345e8a8f426a5591c61ec85a046753c5aa7c8da31892",
+    "hann_quarter.hex": "13779e60e6c1919d761054f4f6695f8ee81946a2db7f57b3ccb6863782f8641b",
+    "model.json": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe",
+    "model_config.svh": "7204342564215c2f9b96a78dbdd0847c53ad41eaae8bedd8286530ac9321b0b6",
+    "w1.hex": "e30673ca23262fd71052e45388cdd7648dad0ca1358d71ca6634eb602bfcd9f5",
+    "w2.hex": "aad7a19f53ffb9a9694700031de0a8c84acca14a7922c634eb6caf154fb29bb7",
+    "weights_l1_0.hex": "fb99516e2f040c59406138cc5c8186259fb734180fc96c9bcf227e2a8aac66a3",
+    "weights_l4_0.hex": "e424973514375661eed87bb16eda650d43d51ea19aef3c58b45904f875be8c50",
+    "weights_l4_1.hex": "698e37a2327b821a662cbf91cc21977a9c912a6d03dc097744a6e3c89644aebd",
+    "weights_l4_2.hex": "1f512f7ba26380e82e1408d01f1af1686e660801c09d2d0109d531f1aa1dd49c",
+    "weights_l4_3.hex": "218796c6866b8aaf232780455c78ea9d9a68efea31d85cd43ca344fd62a614a8"
+  },
+  "source_sha256": {
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+    "rtl/core/sync_fifo.sv": "47bf9c194cd5bd0a9f85ace4f57d3c02dd01c2c5da154cbe74335d3c3ab449b0",
+    "rtl/io/sensor_classifier.sv": "36f5ae97676910d1f2ad14ca947ae61beee95cffbda8529ac4345d4fb224d254",
+    "sim/run_sensor_classifier.py": "5eed4a091f0dabce12aaa0cd7f2ed657a0605186d8354ca2ee956ad0713a5586",
+    "sim/test_sensor_classifier.py": "b58be9ee749650aae78944578c294878328251bdf61a9a40ae85d3e055f9494c",
+    "src/vibfpga/field.py": "9a633e4fb46042a5e7ba1010bbc57472fdb42148dbc2f3e2cb2b9508f412c296",
+    "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d"
+  },
+  "model_training_status": "synthetic_fixture_not_for_deployment",
+  "model_source_kind": "synthetic_pipeline_fixture",
+  "assertions_enabled": true,
+  "physical_board_tested": false,
+  "simulator": "Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)",
+  "status": "passed",
+  "tests": 4,
+  "checked_outputs": 21,
+  "case_reports": {
+    "case_continuous.json": "85f8592dd47c07ca071f2740b5536b02f001995010460eb4784c36f383ad4f8b",
+    "case_gap.json": "de6abcef9b33389871a28bc21e94611ebf2561738eebf50c9ee56748bfddddf8",
+    "case_overrun.json": "6a2905cd7d0fa3a092375c2ac9b4899b50433dc1cc92b88ebefece510956c1f3",
+    "case_reset.json": "e27ccf6157fe72859a1803800820403e3262a58b753526536f47b4306b76db97"
+  },
+  "xml_sha256": "da3ba31a2f67547a2f936a38f997c996a3c8f9ab98d414fe6ae221f0ed227c9d",
+  "evidence_boundary": "synthetic raw-count vectors; no sensor/SPI/physical board execution"
+}

@@ -1,0 +1,3 @@
+This formal/evidence module only supports canonical build/ output; omit BUILD_ROOT and RUN_ID
+make[1]: *** [canonical-output] Error 2
+make: *** [module] Error 2

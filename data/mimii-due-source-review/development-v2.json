@@ -1,0 +1,15 @@
+{
+  "decision": "Move DUE section 02 labeled source/target test clips into development before opening them",
+  "reason": "DCASE 2021 evaluation sections 03, 04, and 05 are now identified as the untouched final confirmation set",
+  "development_sections": ["00", "01", "02"],
+  "final_sections": ["03", "04", "05"],
+  "section02_selected_from_scores": false,
+  "section02_audio_opened_before_decision": false,
+  "final_audio_opened": false,
+  "source": "https://github.com/y-kawagu/dcase2021_task2_evaluator",
+  "gate": {
+    "recall_strictly_above": 0.9,
+    "fpr_strictly_below": 0.05,
+    "auc_at_least": 0.9
+  }
+}

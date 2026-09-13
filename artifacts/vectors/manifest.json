@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "n": 1024,
+  "count": 9,
+  "physical_board_tested": false,
+  "model_training_status": "trained_on_official_cwru",
+  "vectors": [
+    {
+      "frame_id": 0,
+      "samples_hex": "replay_000.hex",
+      "provenance": {
+        "record_id": 107,
+        "split": "validation",
+        "window_index": 2,
+        "sample_start": 2048,
+        "sample_stop": 3072,
+        "class_id": 0,
+        "load_hp": 2,
+        "fault_inches": "0.007"
+      }
+    },
+    {
+      "frame_id": 1,
+      "samples_hex": "replay_001.hex",
+      "provenance": {
+        "record_id": 120,
+        "split": "validation",
+        "window_index": 2,
+        "sample_start": 2048,
+        "sample_stop": 3072,
+        "class_id": 2,
+        "load_hp": 2,
+        "fault_inches": "0.007"
+      }
+    },
+    {
+      "frame_id": 2,
+      "samples_hex": "replay_002.hex",
+      "provenance": {
+        "record_id": 132,
+        "split": "validation",
+        "window_index": 2,
+        "sample_start": 2048,
+        "sample_stop": 3072,
+        "class_id": 1,
+        "load_hp": 2,
+        "fault_inches": "0.007"
+      }
+    },
+    {
+      "frame_id": 3,
+      "samples_hex": "replay_003.hex",
+      "provenance": {
+        "record_id": 171,
+        "split": "validation",
+        "window_index": 2,
+        "sample_start": 2048,
+        "sample_stop": 3072,
+        "class_id": 0,
+        "load_hp": 2,
+        "fault_inches": "0.014"
+      }
+    },
+    {
+      "frame_id": 4,
+      "samples_hex": "replay_004.hex",
+      "provenance": {
+        "record_id": 187,
+        "split": "validation",
+        "window_index": 2,
+        "sample_start": 2048,
+        "sample_stop": 3072,
+        "class_id": 2,
+        "load_hp": 2,
+        "fault_inches": "0.014"
+      }
+    },
+    {
+      "frame_id": 5,
+      "samples_hex": "replay_005.hex",
+      "provenance": {
+        "record_id": 199,
+        "split": "validation",
+        "window_index": 2,
+        "sample_start": 2048,
+        "sample_stop": 3072,
+        "class_id": 1,
+        "load_hp": 2,
+        "fault_inches": "0.014"
+      }
+    },
+    {
+      "frame_id": 6,
+      "samples_hex": "replay_006.hex",
+      "provenance": {
+        "record_id": 211,
+        "split": "validation",
+        "window_index": 2,
+        "sample_start": 2048,
+        "sample_stop": 3072,
+        "class_id": 0,
+        "load_hp": 2,
+        "fault_inches": "0.021"
+      }
+    },
+    {
+      "frame_id": 7,
+      "samples_hex": "replay_007.hex",
+      "provenance": {
+        "record_id": 224,
+        "split": "validation",
+        "window_index": 2,
+        "sample_start": 2048,
+        "sample_stop": 3072,
+        "class_id": 2,
+        "load_hp": 2,
+        "fault_inches": "0.021"
+      }
+    },
+    {
+      "frame_id": 8,
+      "samples_hex": "replay_008.hex",
+      "provenance": {
+        "record_id": 236,
+        "split": "validation",
+        "window_index": 2,
+        "sample_start": 2048,
+        "sample_stop": 3072,
+        "class_id": 1,
+        "load_hp": 2,
+        "fault_inches": "0.021"
+      }
+    }
+  ]
+}

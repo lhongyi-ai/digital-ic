@@ -1,0 +1,38 @@
+[
+  {
+    "auc": 1.0,
+    "fpr": 0.025,
+    "recall": 1.0,
+    "threshold": 0.28277777777777774,
+    "confusion_matrix": [
+      [
+        39,
+        1
+      ],
+      [
+        0,
+        50
+      ]
+    ],
+    "name": "spectrum1024-trees",
+    "high_standard_passed": true
+  },
+  {
+    "auc": 0.999,
+    "fpr": 0.125,
+    "recall": 1.0,
+    "threshold": -1.0506428514724648,
+    "confusion_matrix": [
+      [
+        35,
+        5
+      ],
+      [
+        0,
+        50
+      ]
+    ],
+    "name": "spectrum1024-linear",
+    "high_standard_passed": false
+  }
+]

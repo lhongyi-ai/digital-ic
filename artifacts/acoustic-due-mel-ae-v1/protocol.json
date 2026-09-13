@@ -1,0 +1,16 @@
+{
+  "reference": "https://dcase.community/challenge2021/task-unsupervised-detection-of-anomalous-sounds",
+  "task": "normal-reference commissioning diagnostic, not zero-shot or exact official reproduction",
+  "differences": "153 normal fit recordings per section, separate 50 normal calibration records; per-section model; PyTorch; fixed seed; threshold maximum calibration normal",
+  "features": "128 log-Mel bands, nfft1024 hop512, 5 frames, librosa constant center padding",
+  "network": "640-128-128-128-128-8-128-128-128-128-640; BatchNorm/ReLU hidden",
+  "training": "Adam lr .001, 100 epochs, batch512, shuffle, MSE; fixed last epoch",
+  "score": "mean reconstruction MSE over every context of a recording",
+  "source_results_sha256": "a195495dd5a85a7e992104c02450f07fdd68058420a372e2a5448134c6007155",
+  "script_sha256": "f9afae86958d1681428fb879e3914c9f12212d121ceedcf3a7d72521ba02439b",
+  "versions": {
+    "torch": "2.14.0",
+    "librosa": "0.11.0"
+  },
+  "final_test_opened": false
+}

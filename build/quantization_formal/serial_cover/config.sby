@@ -1,0 +1,14 @@
+[options]
+depth 64
+mode cover
+
+[engines]
+smtbmc bitwuzla
+
+[script]
+read -formal -sv quant_extract.sv quant_harness.sv
+prep -top quant_serial_harness
+
+[files]
+../build/quantization_formal/generated/quant_extract.sv
+quant_harness.sv

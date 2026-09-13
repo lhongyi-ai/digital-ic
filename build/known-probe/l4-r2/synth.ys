@@ -1,0 +1,4 @@
+read_verilog -defer -sv -DICE40 rtl/core/vib_coeff_rom.sv rtl/platform/spram16k.sv rtl/core/known_capture.sv rtl/core/known_spectral_core.sv sim/known_pnr_probe.sv;
+chparam -set LANES 4 -set MODEL_DIR "./artifacts/acoustic-known-release-v1/id00" -set BIAS 32'h000001b9 -set THRESHOLD 32'hfffffbfb -set LOG_CONSTANT 128145 known_pnr_probe;
+synth_ice40 -dsp -top known_pnr_probe -json "./build/known-probe/l4-r2/netlist.json";
+stat

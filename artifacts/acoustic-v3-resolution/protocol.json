@@ -1,0 +1,23 @@
+{
+  "bands": [
+    32,
+    64,
+    128
+  ],
+  "models": [
+    "centroid",
+    "covariance"
+  ],
+  "pooling": "mean",
+  "compression": "log1p",
+  "test_opened": false,
+  "selection": "empirical validation normal FPR 5%, then recall, AUC",
+  "plan_sha256": "fbd5ddd101a6cefdf42f950216f303b7a07db1b54bebf6cac57c84ad324267df",
+  "source_sha256": {
+    "scripts/diagnose_acoustic_resolution.py": "c71041942684d72985c4f1fdffc5851b01ddbb49f3085801a26567a376908d2d",
+    "scripts/experiment_acoustic_v2.py": "e21283eb970c3b82c0f9b69614dd7fcb48933232cbd0a18352459c6ab5a5b36b",
+    "scripts/diagnose_acoustic_v3.py": "7c5aa203af6d60fead03352cdc2c8b25204cd44938e2c25b16a8f2568dc4b76e",
+    "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+    "src/vibfpga/acoustic_experiment.py": "20dd072692ca9af0dbe852376b2030fa7fcc4f924e87d2f22bf69324a8615495"
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "evaluation_kind": "subsequent_frozen_neighbor_test",
+  "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+  "freeze_sha256": "3ee131dcde304a6f7fdd88e499342e4163eef7212fb5ad76c5026df0fe5b827e",
+  "frozen_utc": "2026-09-06T03:22:07.878604+00:00",
+  "test_load_started_utc": "2026-09-06T03:22:07.901365+00:00",
+  "completed_utc": "2026-09-06T03:22:08.676635+00:00",
+  "seconds": 2.0791353340027854,
+  "windows": 1070,
+  "record_count": 9,
+  "test_record_ids": [
+    108,
+    121,
+    133,
+    172,
+    188,
+    200,
+    212,
+    225,
+    237
+  ],
+  "float_metrics": {
+    "windows": 1070,
+    "correct": 994,
+    "accuracy": 0.9289719626168225,
+    "balanced_accuracy": 0.9289438621890703,
+    "macro_f1": 0.9296411178423871,
+    "weighted_f1": 0.9296530203411875,
+    "class_names": [
+      "inner_race",
+      "outer_race",
+      "ball"
+    ],
+    "confusion_matrix": [
+      [
+        339,
+        1,
+        17
+      ],
+      [
+        17,
+        335,
+        5
+      ],
+      [
+        36,
+        0,
+        320
+      ]
+    ],
+    "confusion_matrix_axes": "rows=true class, columns=predicted class",
+    "per_class": [
+      {
+        "class_id": 0,
+        "class_name": "inner_race",
+        "support": 357,
+        "predicted_count": 392,
+        "precision": 0.8647959183673469,
+        "recall": 0.9495798319327731,
+        "f1": 0.9052069425901202
+      },
+      {
+        "class_id": 1,
+        "class_name": "outer_race",
+        "support": 357,
+        "predicted_count": 336,
+        "precision": 0.9970238095238095,
+        "recall": 0.938375350140056,
+        "f1": 0.9668109668109668
+      },
+      {
+        "class_id": 2,
+        "class_name": "ball",
+        "support": 356,
+        "predicted_count": 342,
+        "precision": 0.935672514619883,
+        "recall": 0.898876404494382,
+        "f1": 0.9169054441260744
+      }
+    ],
+    "zero_division": 0
+  },
+  "integer_metrics": {
+    "windows": 1070,
+    "correct": 997,
+    "accuracy": 0.9317757009345794,
+    "balanced_accuracy": 0.9317502281811602,
+    "macro_f1": 0.9323608749858324,
+    "weighted_f1": 0.9323724272054454,
+    "class_names": [
+      "inner_race",
+      "outer_race",
+      "ball"
+    ],
+    "confusion_matrix": [
+      [
+        341,
+        1,
+        15
+      ],
+      [
+        16,
+        334,
+        7
+      ],
+      [
+        34,
+        0,
+        322
+      ]
+    ],
+    "confusion_matrix_axes": "rows=true class, columns=predicted class",
+    "per_class": [
+      {
+        "class_id": 0,
+        "class_name": "inner_race",
+        "support": 357,
+        "predicted_count": 391,
+        "precision": 0.8721227621483376,
+        "recall": 0.9551820728291317,
+        "f1": 0.911764705882353
+      },
+      {
+        "class_id": 1,
+        "class_name": "outer_race",
+        "support": 357,
+        "predicted_count": 335,
+        "precision": 0.9970149253731343,
+        "recall": 0.9355742296918768,
+        "f1": 0.9653179190751444
+      },
+      {
+        "class_id": 2,
+        "class_name": "ball",
+        "support": 356,
+        "predicted_count": 344,
+        "precision": 0.936046511627907,
+        "recall": 0.9044943820224719,
+        "f1": 0.9199999999999999
+      }
+    ],
+    "zero_division": 0
+  },
+  "quantization_difference": {
+    "prediction_disagreements": 13,
+    "prediction_agreement": 0.9878504672897196,
+    "float_correct_integer_wrong": 5,
+    "float_wrong_integer_correct": 8,
+    "both_wrong_different_prediction": 0,
+    "accuracy_drop_percentage_points": -0.2803738317756932,
+    "integer_minus_float_macro_f1_percentage_points": 0.27197571434453005,
+    "per_class_integer_minus_float_recall_percentage_points": [
+      0.5602240896358635,
+      -0.2801120448179262,
+      0.5617977528089901
+    ],
+    "integer_logit_scale": 0.00390625,
+    "dequantized_logit_absolute_error": {
+      "mean": 0.2081687337816506,
+      "maximum": 0.9434547424316406,
+      "p99": 0.6698620843887327,
+      "per_class_mean": [
+        0.21423072104624344,
+        0.19503956160673472,
+        0.21523591869197367
+      ],
+      "units": "floating network logit units; integer logit multiplied by frozen logit_scale"
+    },
+    "interpretation": "Differences include input feature rounding, weight/bias quantization, hidden RNE and saturation; not weight quantization alone."
+  },
+  "scalar_batch_equivalence": {
+    "status": "passed",
+    "test_windows_checked": 1070,
+    "fields": [
+      "dft_powers",
+      "powers",
+      "features",
+      "hidden",
+      "logits",
+      "class_id"
+    ],
+    "mismatches": 0,
+    "uses_same_loaded_test_array": true
+  },
+  "checkpoint_npz_identical": true,
+  "all_frozen_inputs_unchanged": true,
+  "raw_conversion_and_record_tails": [
+    {
+      "record_id": 108,
+      "samples": 122917,
+      "clipped_samples": 0,
+      "windows": 120,
+      "discarded_tail_samples": 37
+    },
+    {
+      "record_id": 121,
+      "samples": 121556,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 724
+    },
+    {
+      "record_id": 133,
+      "samples": 122571,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 715
+    },
+    {
+      "record_id": 172,
+      "samples": 121701,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 869
+    },
+    {
+      "record_id": 188,
+      "samples": 122136,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 280
+    },
+    {
+      "record_id": 200,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    },
+    {
+      "record_id": 212,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    },
+    {
+      "record_id": 225,
+      "samples": 122136,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 280
+    },
+    {
+      "record_id": 237,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    }
+  ],
+  "prior_baseline_test_evaluated": true,
+  "scope": "Subsequent frozen-model evaluation on CWRU 12 kHz drive-end, 3 HP records. These same records were previously evaluated for the original single-bin model; they are not a fresh external or previously untouched test set. The split is cross-load on the same laboratory rig, with three seeded fault classes and no normal class. This run provides no physical-hardware or field accuracy evidence.",
+  "float_reference": "Saved FP32 MLP with unrounded scaled/clamped INTEGER DSP powers (same reference as validation); not a fully floating-point DSP pipeline.",
+  "window_protocol": "Records split before nonoverlapping N=1024 windows; stride 1024; discard each record tail; frozen train-derived PCM scale; no window filtering.",
+  "test_waveform_load_calls_in_this_evaluation": 1,
+  "model_training_or_tuning_in_this_run": false,
+  "model_files_updated": false,
+  "historical_model_json_test_evaluated_field": false,
+  "historical_status_note": "The existing model JSON and neighbor validation report retain their historical test_evaluated=false fields. This separate subsequent result is joined by model_sha256.",
+  "physical_hardware_tested": false
+}

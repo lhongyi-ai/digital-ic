@@ -1,0 +1,139 @@
+{
+  "n": 1024,
+  "lanes": 1,
+  "bands": 1,
+  "frames": 10,
+  "distinct_inputs": 10,
+  "debug_frames": 10,
+  "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+  "assertions_enabled": true,
+  "status": "passed",
+  "cycles": {
+    "cycles_pre": 3073,
+    "cycles_dft": 98368,
+    "cycles_power": 140,
+    "cycles_nn": 950,
+    "cycles_total": 102531
+  },
+  "suite": "additional_DSP_directed",
+  "cases": [
+    {
+      "name": "zero",
+      "input_clipped_samples": 0,
+      "samples_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    },
+    {
+      "name": "constant_negative_DC",
+      "input_clipped_samples": 0,
+      "samples_sha256": "842075c6199eed589b52f5fce7092a1ae6567ae25e98ddde592e81f58a8642ab"
+    },
+    {
+      "name": "off_bin_phase_0.000000",
+      "input_clipped_samples": 0,
+      "samples_sha256": "400cd7d2135cf5c6f5dfa7bab9e4f7b7afbd25f6032bee179b04412e2babb00f",
+      "frequency_bins": [
+        207.375
+      ],
+      "phase_radians": 0.0
+    },
+    {
+      "name": "off_bin_phase_1.570796",
+      "input_clipped_samples": 0,
+      "samples_sha256": "98a9f43619ea4597983bbb104a8ace679a1b07e8913aac21e850ccb29596fd3c",
+      "frequency_bins": [
+        207.375
+      ],
+      "phase_radians": 1.5707963267948966
+    },
+    {
+      "name": "off_bin_phase_2.300000",
+      "input_clipped_samples": 0,
+      "samples_sha256": "77fcf6e74a7dae033469cd1615b8772354d278dd721ce01d98ac593c65ef9290",
+      "frequency_bins": [
+        207.375
+      ],
+      "phase_radians": 2.3
+    },
+    {
+      "name": "integer_bin_nonzero_phase",
+      "input_clipped_samples": 0,
+      "samples_sha256": "47a325b45b3f5c8e1054462250d2e6881fed1adbe0145bd792507542f633805e",
+      "frequency_bins": [
+        207
+      ],
+      "phase_radians": 1.0471975511965976
+    },
+    {
+      "name": "positive_clipped_sine",
+      "input_clipped_samples": 298,
+      "samples_sha256": "28d79721dc2ff2e55c2200a6b2a25ac6a7f764bac62f106c430e3d904811c80e",
+      "frequency_bins": [
+        207.375
+      ],
+      "phase_radians": 0.7,
+      "offset": 18000,
+      "amplitude": 24000
+    },
+    {
+      "name": "negative_clipped_sine",
+      "input_clipped_samples": 295,
+      "samples_sha256": "fbc50bb0644b0263b045fad76b8cfb5a8127b54d79fb3a35e967e65cd90caee5",
+      "frequency_bins": [
+        207.375
+      ],
+      "phase_radians": 0.7,
+      "offset": -18000,
+      "amplitude": 24000
+    },
+    {
+      "name": "both_polarities_clipped_sine",
+      "input_clipped_samples": 537,
+      "samples_sha256": "1ee4d9ecd8ea1b886300441d357ef7e2508f6a8f9959122d01f17273177118c4",
+      "frequency_bins": [
+        207.375
+      ],
+      "phase_radians": 0.7,
+      "offset": 0,
+      "amplitude": 48000
+    },
+    {
+      "name": "off_bin_two_tone",
+      "input_clipped_samples": 0,
+      "samples_sha256": "1368ce18842f587a5f6a5e34556651e780aef1a9fc5c0f9a0e5aa2360795d6f8",
+      "frequency_bins": [
+        207.25,
+        327.625
+      ]
+    }
+  ],
+  "checked_intermediates": [
+    "mean",
+    "windowed",
+    "real",
+    "imag",
+    "powers",
+    "features",
+    "hidden",
+    "logits"
+  ],
+  "input_sha256": {
+    "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "sim/test_core.py": "5501212287a0d0581411ef5bd8e7d81a144d1746cc712b61ef316e8a103a04c5",
+    "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+    "artifacts/model/weights_l4_1.hex": "602669e2d96815c337c5d92dd94fb1660b8db078d694d1b8ac5c91da9a187288",
+    "artifacts/model/w1.hex": "26b17ac441ba57495f217960b1af28f0aba78685f4bee0601ea8f52039f3397d",
+    "artifacts/model/hann_quarter.hex": "5214fcf16ced3d84ffab27f7ab0d90fc882aac40bebf1e4db4b00db35dd7501d",
+    "artifacts/model/weights_l4_0.hex": "96c16efec8cd66a8f5cd7e084267057ca4016db56377555708a54cc21571e79f",
+    "artifacts/model/b1.hex": "b13efe33d5cdb4f4c08875174a2f450db9626fd34ffe6094d4d6b2ed5391944f",
+    "artifacts/model/weights_l4_2.hex": "343ea649054b7baf7ba7f1038da412b3f392423fdfb6028118c132aa94eb41c8",
+    "artifacts/model/w2.hex": "776a3529d5d2b5915def0e2e58f33b3b9c1663686ef16e3c194eeff09a3bb366",
+    "artifacts/model/bins.hex": "09e6a024e9eca21e5b7938c7bc0c5bd5caa9b3478a95e98bf9762f1b041ad8d1",
+    "artifacts/model/weights_l4_3.hex": "d5372551d44a14c6f129759103152da00c73083ea6b714ced29433bbe8f692a9",
+    "artifacts/model/b2.hex": "b48d1ee7cd1665d75421e8d5b6cc1da4524334440649f1c4fdc03cc864f95870",
+    "artifacts/model/weights_l1_0.hex": "2c600fc9949d4c72db23f61043a7a70e01d2cd5d351ff44259e9347422423453",
+    "artifacts/model/cos_quarter.hex": "4c2f4f4d2e203efa17378536805b6a826e3d4368a20dc250046cd53f0a945c69",
+    "artifacts/model/feature_shifts.hex": "61202c17ec0bfae973580147e1cc06618be8c6f711baff138bf94fb327806de4",
+    "artifacts/model/hann.hex": "813e3da729ad8e1b92624d94e818aff9c47b8ba723853881bb3ff2fb2712871e"
+  }
+}

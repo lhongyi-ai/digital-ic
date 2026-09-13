@@ -1,0 +1,9 @@
+# running in ./build/quantization_formal/functions_h0/src/
+read -formal -sv quant_extract.sv quant_harness.sv
+chparam -set HIDDEN_SHIFT 0 quant_functions_harness
+prep -top quant_functions_harness
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

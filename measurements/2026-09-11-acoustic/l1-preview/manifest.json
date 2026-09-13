@@ -1,0 +1,143 @@
+{
+  "actual_clock_measured": false,
+  "attempt_mode": "program_and_replay",
+  "backup_bytes": 4194304,
+  "backup_path": "./measurements/2026-09-10-upduino31/original-flash-4MiB.bin",
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "board": "UPduino v3.1, USB descriptor and user confirmed 2026-09-10",
+  "clock_source": "hfosc12",
+  "clock_timing_basis": "nominal only; physical oscillator frequency unmeasured",
+  "commands": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "step": "jedec"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/2026-09-11-acoustic/l1-preview/board.bin"
+      ],
+      "step": "configuration"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "262144",
+        "./measurements/2026-09-11-acoustic/l1-preview/replay.bin"
+      ],
+      "step": "input"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/2026-09-11-acoustic/l1-preview/erased-log.bin"
+      ],
+      "step": "clear_log_and_start"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-11-acoustic/l1-preview/read-log-01.bin"
+      ],
+      "step": "read_log_1"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-11-acoustic/l1-preview/read-log-02.bin"
+      ],
+      "step": "read_log_2"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-11-acoustic/l1-preview/read-log-03.bin"
+      ],
+      "step": "read_log_3"
+    }
+  ],
+  "core_verification_error": null,
+  "device": "i:0x0403:0x6014:0",
+  "driver_sha256": "969f3a2169df90be2b5864bb3b246c566bc152db02a093f7f1254d53a4d41e7b",
+  "driver_snapshot": "run_hardware_replay.py",
+  "elapsed_seconds": 0.005279374978272244,
+  "execute_requested": false,
+  "expected_flash_id": "EF4016",
+  "finished_utc": "2026-09-11T05:06:00.970789+00:00",
+  "hardware_operations_started": false,
+  "input_sha256": {
+    "board.bin": "0fb4eca3d5dc13adc2b97c7fe9d443bd0ab4ecdcea16e4d6ba6f026097b767a0",
+    "build-report.json": "8960102c3c0e4a78e52f9ae6be4d8823b63a021664ce03ee95e101ed66d5eb16",
+    "erased-log.bin": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+    "model.json": "f27c00bae55fc68390008007e1ff0561991515fa2107fef41f53a5cf19c8f8e5",
+    "profile.json": "1f34f00566ae8fd4eb76a9acf5ee327df336a2f941ebf97d17c6af845217e63f",
+    "replay.bin": "c5ae92d684c62529eccbf3dfcd0fdac26744e5cff9764bebee9fda8332474844"
+  },
+  "measurement_scope": "Flash-fed digital replay; no sensor acquisition or calibrated timing",
+  "nominal_clock_hz": 12000000,
+  "original_paths": {
+    "bitstream_path": "./build/runs/acoustic-v1/acoustic_board_neighbor_l1_hfosc12/board.bin",
+    "image_path": "./build/acoustic-replay-5.bin",
+    "model_path": "./artifacts/acoustic/model/model.json",
+    "profile_path": "./configs/upduino31-connected.json"
+  },
+  "passed": false,
+  "physical_trial_id": "7a11d1e1-9ab3-4040-8c59-b8beb6531895",
+  "read_transport_errors": [],
+  "read_transport_issue": false,
+  "readback_policy": "two consecutive identical unaltered valid reads; at most three attempts",
+  "readback_recovery_needed": false,
+  "replay_parameters": {
+    "model_sha256": "f27c00bae55fc68390008007e1ff0561991515fa2107fef41f53a5cf19c8f8e5",
+    "n": 1024,
+    "period_cycles": 750,
+    "run_frames": 5,
+    "source_frames": 6
+  },
+  "schema_version": 2,
+  "source_provenance": "build-report.json input_sha256; all listed files verified before this attempt",
+  "started_utc": "2026-09-11T05:06:00.965516+00:00",
+  "status": "dry_run",
+  "steps": [],
+  "wait_seconds": 7
+}

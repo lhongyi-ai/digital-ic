@@ -1,0 +1,6 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc bitwuzla) returned FAIL for basecase
+counterexample trace [basecase]: engine_0/trace.vcd
+counterexample trace [basecase]: engine_0/trace.yw
+  failed assertion quant_functions_harness._witness_.check_assert_quant_harness_sv_36_167 at quant_harness.sv:36.9-36.64

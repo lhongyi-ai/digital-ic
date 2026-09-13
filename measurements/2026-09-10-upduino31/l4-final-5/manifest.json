@@ -1,0 +1,352 @@
+{
+  "actual_clock_measured": false,
+  "attempt_mode": "program_and_replay",
+  "backup_bytes": 4194304,
+  "backup_path": "./measurements/2026-09-10-upduino31/original-flash-4MiB.bin",
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "board": "UPduino v3.1, USB descriptor and user confirmed 2026-09-10",
+  "clock_source": "hfosc12",
+  "clock_timing_basis": "nominal only; physical oscillator frequency unmeasured",
+  "commands": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "step": "jedec"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/2026-09-10-upduino31/l4-final-5/board.bin"
+      ],
+      "step": "configuration"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "262144",
+        "./measurements/2026-09-10-upduino31/l4-final-5/replay.bin"
+      ],
+      "step": "input"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/2026-09-10-upduino31/l4-final-5/erased-log.bin"
+      ],
+      "step": "clear_log_and_start"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-10-upduino31/l4-final-5/read-log-01.bin"
+      ],
+      "step": "read_log_1"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-10-upduino31/l4-final-5/read-log-02.bin"
+      ],
+      "step": "read_log_2"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-10-upduino31/l4-final-5/read-log-03.bin"
+      ],
+      "step": "read_log_3"
+    }
+  ],
+  "core_verification_error": null,
+  "counters": {
+    "accepted_samples": 5120,
+    "error_flags": 0,
+    "generated_samples": 5120,
+    "overflow_count": 0,
+    "period_cycles": 1000,
+    "protocol_errors": 0,
+    "record_count": 5
+  },
+  "device": "i:0x0403:0x6014:0",
+  "driver_sha256": "4b649d5741020dd1f11ab573f32801765eacffddbaaf5973519fd9f39443319a",
+  "driver_snapshot": "run_hardware_replay.py",
+  "elapsed_seconds": 29.29877820800175,
+  "execute_requested": true,
+  "expected_flash_id": "EF4016",
+  "finished_utc": "2026-09-10T06:20:51.258199+00:00",
+  "hardware_operations_started": true,
+  "input_sha256": {
+    "board.bin": "40192aa30c9318f9c38f57addb8b75552a6a5cde84adb519e9961a4b4931565e",
+    "build-report.json": "14e7825743d0a4610b8182062e9b421645f0645b7bd97b035657822464fae441",
+    "erased-log.bin": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+    "model.json": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+    "profile.json": "1f34f00566ae8fd4eb76a9acf5ee327df336a2f941ebf97d17c6af845217e63f",
+    "replay.bin": "3ae8a3d7dd30e718649c7845298b6136e92dfdc2b61f9c88bc881a05cb99995e"
+  },
+  "measurement_scope": "Flash-fed digital replay; no sensor acquisition or calibrated timing",
+  "nominal_clock_hz": 12000000,
+  "observed_flash_id": "EF4016",
+  "original_paths": {
+    "bitstream_path": "./build/hardware-2026-09-10/runs/l4-wake/board_neighbor_l4_hfosc12/board.bin",
+    "image_path": "./measurements/2026-09-10-upduino31/replay-5.bin",
+    "model_path": "./artifacts/model_neighbor/model.json",
+    "profile_path": "./configs/upduino31-connected.json"
+  },
+  "passed": true,
+  "physical_trial_id": "f260ccc9-ed05-4614-a71b-d539ddb8491e",
+  "read_transport_errors": [],
+  "read_transport_issue": false,
+  "readback_attempts": [
+    {
+      "bytes": 131072,
+      "file": "read-log-01.bin",
+      "format_valid": true,
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "sha256": "baec86449e2e117925e9be0ad9c7ca75f6dfac97d26354e6fdaac6ea1abd3895",
+      "step": "read_log_1",
+      "transcript": "read_log_1.txt",
+      "transcript_sha256": "7de19e7a83f091218df2ed1d647773357fc4e5d772e3fd719a7246f11c139a08",
+      "transport_valid": true
+    },
+    {
+      "bytes": 131072,
+      "file": "read-log-02.bin",
+      "format_valid": true,
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "sha256": "baec86449e2e117925e9be0ad9c7ca75f6dfac97d26354e6fdaac6ea1abd3895",
+      "step": "read_log_2",
+      "transcript": "read_log_2.txt",
+      "transcript_sha256": "7de19e7a83f091218df2ed1d647773357fc4e5d772e3fd719a7246f11c139a08",
+      "transport_valid": true
+    }
+  ],
+  "readback_consensus": {
+    "files": [
+      "read-log-01.bin",
+      "read-log-02.bin"
+    ],
+    "result_file": "result-log.bin",
+    "sha256": "baec86449e2e117925e9be0ad9c7ca75f6dfac97d26354e6fdaac6ea1abd3895",
+    "unaltered": true
+  },
+  "readback_policy": "two consecutive identical unaltered valid reads; at most three attempts",
+  "readback_recovery_needed": false,
+  "replay_parameters": {
+    "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+    "n": 1024,
+    "period_cycles": 1000,
+    "run_frames": 5,
+    "source_frames": 9
+  },
+  "result_log_sha256": "baec86449e2e117925e9be0ad9c7ca75f6dfac97d26354e6fdaac6ea1abd3895",
+  "schema_version": 2,
+  "source_provenance": "build-report.json input_sha256; all listed files verified before this attempt",
+  "stage_timing": {
+    "dft": {
+      "max_cycles": 73848,
+      "mean_cycles": 73848.0,
+      "mean_seconds_at_nominal_clock": 0.006154,
+      "min_cycles": 73848
+    },
+    "nn": {
+      "max_cycles": 265,
+      "mean_cycles": 265.0,
+      "mean_seconds_at_nominal_clock": 2.2083333333333333e-05,
+      "min_cycles": 265
+    },
+    "power": {
+      "max_cycles": 284,
+      "mean_cycles": 284.0,
+      "mean_seconds_at_nominal_clock": 2.3666666666666668e-05,
+      "min_cycles": 284
+    },
+    "pre": {
+      "max_cycles": 3073,
+      "mean_cycles": 3073.0,
+      "mean_seconds_at_nominal_clock": 0.0002560833333333333,
+      "min_cycles": 3073
+    },
+    "total": {
+      "max_cycles": 77470,
+      "mean_cycles": 77470.0,
+      "mean_seconds_at_nominal_clock": 0.006455833333333333,
+      "min_cycles": 77470
+    }
+  },
+  "started_utc": "2026-09-10T06:20:21.959572+00:00",
+  "status": "passed",
+  "steps": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "elapsed_seconds": 0.6776391659805086,
+      "finished_utc": "2026-09-10T06:20:22.645439+00:00",
+      "name": "jedec",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:20:21.967575+00:00",
+      "transcript": "jedec.txt",
+      "transcript_sha256": "d35361e4e3604a85d981ef65c07d8f6d21d8ed1fc0b4cfbaa058d9ff88ba0d43"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "./measurements/2026-09-10-upduino31/l4-final-5/board.bin"
+      ],
+      "elapsed_seconds": 7.272362874995451,
+      "finished_utc": "2026-09-10T06:20:29.920103+00:00",
+      "input_file": "./measurements/2026-09-10-upduino31/l4-final-5/board.bin",
+      "input_sha256": "40192aa30c9318f9c38f57addb8b75552a6a5cde84adb519e9961a4b4931565e",
+      "name": "configuration",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:20:22.647124+00:00",
+      "transcript": "configuration.txt",
+      "transcript_sha256": "8f1767f7c955b985cdc83c74714deaee365b1b84005e606c3b1a94d48410a3ab"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "262144",
+        "./measurements/2026-09-10-upduino31/l4-final-5/replay.bin"
+      ],
+      "elapsed_seconds": 2.13297983299708,
+      "finished_utc": "2026-09-10T06:20:32.056318+00:00",
+      "input_file": "./measurements/2026-09-10-upduino31/l4-final-5/replay.bin",
+      "input_sha256": "3ae8a3d7dd30e718649c7845298b6136e92dfdc2b61f9c88bc881a05cb99995e",
+      "name": "input",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:20:29.922441+00:00",
+      "transcript": "input.txt",
+      "transcript_sha256": "5837f2bd6b00878fb0cf47251d1a51c538011e3eda8d8e6af585f8c292830305"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "./measurements/2026-09-10-upduino31/l4-final-5/erased-log.bin"
+      ],
+      "elapsed_seconds": 8.78876916700392,
+      "finished_utc": "2026-09-10T06:20:40.847632+00:00",
+      "input_file": "./measurements/2026-09-10-upduino31/l4-final-5/erased-log.bin",
+      "input_sha256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+      "name": "clear_log_and_start",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:20:32.057511+00:00",
+      "transcript": "clear_log_and_start.txt",
+      "transcript_sha256": "9ce8fea471b9eddb629359f97cb366ae91c9216b442cdd457cbc65d391607867"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-10-upduino31/l4-final-5/read-log-01.bin"
+      ],
+      "elapsed_seconds": 1.7138456670218147,
+      "finished_utc": "2026-09-10T06:20:49.567623+00:00",
+      "name": "read_log_1",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:20:47.853304+00:00",
+      "transcript": "read_log_1.txt",
+      "transcript_sha256": "7de19e7a83f091218df2ed1d647773357fc4e5d772e3fd719a7246f11c139a08"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "131072",
+        "./measurements/2026-09-10-upduino31/l4-final-5/read-log-02.bin"
+      ],
+      "elapsed_seconds": 1.676955375005491,
+      "finished_utc": "2026-09-10T06:20:51.246369+00:00",
+      "name": "read_log_2",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-09-10T06:20:49.569121+00:00",
+      "transcript": "read_log_2.txt",
+      "transcript_sha256": "7de19e7a83f091218df2ed1d647773357fc4e5d772e3fd719a7246f11c139a08"
+    }
+  ],
+  "verification": {
+    "checked_frames": 5,
+    "input_image_sha256": "3ae8a3d7dd30e718649c7845298b6136e92dfdc2b61f9c88bc881a05cb99995e",
+    "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+    "passed": true,
+    "result_log_sha256": "baec86449e2e117925e9be0ad9c7ca75f6dfac97d26354e6fdaac6ea1abd3895",
+    "scope": "Numerical comparison of supplied files. Physical acquisition provenance is recorded separately."
+  },
+  "wait_seconds": 7
+}

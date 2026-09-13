@@ -1,0 +1,502 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: quant_extract.sv
+Parsing formal SystemVerilog input from `quant_extract.sv' to AST representation.
+Storing AST representation for module `$abstract\quant_functions_kernel'.
+Storing AST representation for module `$abstract\quant_serial_kernel'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: quant_harness.sv
+Parsing formal SystemVerilog input from `quant_harness.sv' to AST representation.
+Storing AST representation for module `$abstract\quant_functions_harness'.
+Storing AST representation for module `$abstract\quant_serial_harness'.
+Successfully finished Verilog frontend.
+Parameter \HIDDEN_SHIFT = 8
+
+3. Executing AST frontend in derive mode using pre-parsed AST for module `\quant_functions_harness'.
+Parameter \HIDDEN_SHIFT = 8
+Generating RTLIL representation for module `$paramod\quant_functions_harness\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.2. Executing AST frontend in derive mode using pre-parsed AST for module `\quant_functions_harness'.
+Generating RTLIL representation for module `\quant_functions_harness'.
+
+4.2.1. Analyzing design hierarchy..
+Top module:  \quant_functions_harness
+Parameter \HIDDEN_SHIFT = 8
+
+4.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\quant_functions_kernel'.
+Parameter \HIDDEN_SHIFT = 8
+Generating RTLIL representation for module `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+
+4.2.3. Analyzing design hierarchy..
+Top module:  \quant_functions_harness
+Used module:     $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000
+
+4.2.4. Analyzing design hierarchy..
+Top module:  \quant_functions_harness
+Used module:     $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000
+Removing unused module `$abstract\quant_serial_harness'.
+Removing unused module `$abstract\quant_functions_harness'.
+Removing unused module `$abstract\quant_serial_kernel'.
+Removing unused module `$abstract\quant_functions_kernel'.
+Removed 4 unused modules.
+Module quant_functions_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4.3. Executing PROC pass (convert processes to netlists).
+
+4.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:53$365'.
+Cleaned up 1 empty switch.
+
+4.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$quant_extract.sv:53$365 in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+Marked 2 switch rules as full_case in process $proc$quant_extract.sv:52$357 in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+Marked 2 switch rules as full_case in process $proc$quant_extract.sv:51$349 in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+Marked 1 switch rules as full_case in process $proc$quant_extract.sv:50$324 in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+Marked 6 switch rules as full_case in process $proc$quant_harness.sv:34$164 in module quant_functions_harness.
+Removed a total of 0 dead cases.
+
+4.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 17 redundant assignments.
+Promoted 64 assignments to connections.
+
+4.3.4. Executing PROC_INIT pass (extract init attributes).
+
+4.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~13 debug messages>
+
+4.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:53$365'.
+     1/2: $2\relu_quant$func$quant_extract.sv:53$322.$result[7:0]$390
+     2/2: $1\relu_quant$func$quant_extract.sv:53$322.$result[7:0]$388
+Creating decoders for process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:52$357'.
+     1/2: $2\sat16$func$quant_extract.sv:52$321.$result[15:0]$364
+     2/2: $1\sat16$func$quant_extract.sv:52$321.$result[15:0]$362
+Creating decoders for process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:51$349'.
+     1/2: $2\sat12$func$quant_extract.sv:51$320.$result[15:0]$356
+     2/2: $1\sat12$func$quant_extract.sv:51$320.$result[15:0]$354
+Creating decoders for process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:50$324'.
+     1/4: $1\rne$func$quant_extract.sv:50$319.$result[39:0]$333
+     2/4: $1\rne$func$quant_extract.sv:50$319.halfway[39:0]$336
+     3/4: $1\rne$func$quant_extract.sv:50$319.remainder[39:0]$335
+     4/4: $1\rne$func$quant_extract.sv:50$319.quotient[39:0]$334
+Creating decoders for process `\quant_functions_harness.$proc$quant_harness.sv:33$290'.
+Creating decoders for process `\quant_functions_harness.$proc$quant_harness.sv:32$263'.
+Creating decoders for process `\quant_functions_harness.$proc$quant_harness.sv:34$164'.
+     1/9: $assert$quant_harness.sv:46$195_EN
+     2/9: $assert$quant_harness.sv:45$193_EN
+     3/9: $assert$quant_harness.sv:44$190_EN
+     4/9: $assert$quant_harness.sv:43$187_EN
+     5/9: $assert$quant_harness.sv:42$185_EN
+     6/9: $assert$quant_harness.sv:41$182_EN
+     7/9: $assert$quant_harness.sv:39$175_EN
+     8/9: $assert$quant_harness.sv:38$173_EN
+     9/9: $assert$quant_harness.sv:37$170_EN
+
+4.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.\relu_quant$func$quant_extract.sv:53$318.$result' from process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:53$365'.
+No latch inferred for signal `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.\sat16$func$quant_extract.sv:52$317.$result' from process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:52$357'.
+No latch inferred for signal `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.\sat12$func$quant_extract.sv:51$316.$result' from process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:51$349'.
+No latch inferred for signal `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.\rne$func$quant_extract.sv:50$315.$result' from process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:50$324'.
+No latch inferred for signal `\quant_functions_harness.\nearest$func$quant_harness.sv:33$159.$result' from process `\quant_functions_harness.$proc$quant_harness.sv:33$290'.
+No latch inferred for signal `\quant_functions_harness.\nearest$func$quant_harness.sv:32$158.$result' from process `\quant_functions_harness.$proc$quant_harness.sv:32$263'.
+
+4.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:53$365'.
+Removing empty process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:53$365'.
+Found and cleaned up 2 empty switches in `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:52$357'.
+Removing empty process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:52$357'.
+Found and cleaned up 2 empty switches in `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:51$349'.
+Removing empty process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:51$349'.
+Found and cleaned up 1 empty switch in `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:50$324'.
+Removing empty process `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$proc$quant_extract.sv:50$324'.
+Removing empty process `quant_functions_harness.$proc$quant_harness.sv:33$290'.
+Removing empty process `quant_functions_harness.$proc$quant_harness.sv:32$263'.
+Found and cleaned up 6 empty switches in `\quant_functions_harness.$proc$quant_harness.sv:34$164'.
+Removing empty process `quant_functions_harness.$proc$quant_harness.sv:34$164'.
+Cleaned up 13 empty switches.
+
+4.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+<suppressed ~3 debug messages>
+Optimizing module quant_functions_harness.
+<suppressed ~8 debug messages>
+
+4.4. Executing FUTURE pass.
+
+4.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+Optimizing module quant_functions_harness.
+
+4.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \quant_functions_harness..
+Removed 3 unused cells and 141 unused wires.
+<suppressed ~5 debug messages>
+
+4.7. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000...
+Checking module quant_functions_harness...
+Found and reported 0 problems.
+
+4.8. Executing OPT pass (performing simple optimizations).
+
+4.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+Optimizing module quant_functions_harness.
+
+4.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Computing hashes of 35 cells of `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Finding identical cells in module `\quant_functions_harness'.
+Computing hashes of 141 cells of `\quant_functions_harness'.
+Finding duplicate cells in `\quant_functions_harness'.
+Computing hashes of 129 cells of `\quant_functions_harness'.
+Finding duplicate cells in `\quant_functions_harness'.
+<suppressed ~36 debug messages>
+Removed a total of 12 cells.
+
+4.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$413.
+    dead port 1/2 on $mux $procmux$404.
+    dead port 1/2 on $mux $procmux$395.
+Running muxtree optimizer on module \quant_functions_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $ternary$quant_harness.sv:21$302: { \value [39] \value } -> { 2'00 \value [38:0] }
+      Replacing known input bits on port A of cell $ternary$quant_harness.sv:21$276: { \value [39] \value } -> { 2'00 \value [38:0] }
+  Analyzing evaluation results.
+Removed 3 multiplexer ports.
+<suppressed ~54 debug messages>
+
+4.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+  Optimizing cells in module \quant_functions_harness.
+Performed a total of 0 changes.
+
+4.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Computing hashes of 32 cells of `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Finding identical cells in module `\quant_functions_harness'.
+Computing hashes of 129 cells of `\quant_functions_harness'.
+Finding duplicate cells in `\quant_functions_harness'.
+Computing hashes of 128 cells of `\quant_functions_harness'.
+Finding duplicate cells in `\quant_functions_harness'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+4.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \quant_functions_harness..
+Removed 0 unused cells and 16 unused wires.
+<suppressed ~2 debug messages>
+
+4.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+Optimizing module quant_functions_harness.
+
+4.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \quant_functions_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~49 debug messages>
+
+4.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+  Optimizing cells in module \quant_functions_harness.
+Performed a total of 0 changes.
+
+4.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Computing hashes of 32 cells of `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Finding identical cells in module `\quant_functions_harness'.
+Computing hashes of 128 cells of `\quant_functions_harness'.
+Finding duplicate cells in `\quant_functions_harness'.
+Removed a total of 0 cells.
+
+4.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \quant_functions_harness..
+
+4.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+Optimizing module quant_functions_harness.
+
+4.8.14. Finished fast OPT passes. (There is nothing left to do.)
+
+4.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 26 bits (of 32) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$sshr$quant_extract.sv:17$337 ($sshr).
+Removed top 39 bits (of 40) from port A of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$shl$quant_extract.sv:18$338 ($shl).
+Removed top 26 bits (of 32) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$shl$quant_extract.sv:18$338 ($shl).
+Removed top 31 bits (of 32) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$sub$quant_extract.sv:18$339 ($sub).
+Removed top 25 bits (of 32) from port A of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$sub$quant_extract.sv:19$341 ($sub).
+Removed top 30 bits (of 32) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$sub$quant_extract.sv:19$341 ($sub).
+Converting cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$sub$quant_extract.sv:19$341 ($sub) from signed to unsigned.
+Removed top 24 bits (of 32) from port Y of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$sub$quant_extract.sv:19$341 ($sub).
+Removed top 1 bits (of 7) from port A of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$sub$quant_extract.sv:19$341 ($sub).
+Removed top 1 bits (of 2) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$sub$quant_extract.sv:19$341 ($sub).
+Removed top 1 bits (of 8) from port Y of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$sub$quant_extract.sv:19$341 ($sub).
+Removed top 39 bits (of 40) from port A of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$shl$quant_extract.sv:19$342 ($shl).
+Removed top 39 bits (of 40) from mux cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$ternary$quant_extract.sv:20$347 ($mux).
+Removed top 38 bits (of 40) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$add$quant_extract.sv:20$348 ($add).
+Removed top 20 bits (of 32) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$gt$quant_extract.sv:27$353 ($gt).
+Removed top 28 bits (of 40) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$lt$quant_extract.sv:28$355 ($lt).
+Removed top 16 bits (of 32) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$gt$quant_extract.sv:35$361 ($gt).
+Removed top 24 bits (of 40) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$lt$quant_extract.sv:36$363 ($lt).
+Removed top 32 bits (of 40) from port A of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$gt$quant_extract.sv:20$381 ($gt).
+Removed top 32 bits (of 40) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$gt$quant_extract.sv:20$381 ($gt).
+Removed top 39 bits (of 40) from mux cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$ternary$quant_extract.sv:20$385 ($mux).
+Converting cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$add$quant_extract.sv:20$386 ($add) from unsigned to signed.
+Removed top 8 bits (of 40) from port A of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$add$quant_extract.sv:20$386 ($add).
+Removed top 38 bits (of 40) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$add$quant_extract.sv:20$386 ($add).
+Removed top 7 bits (of 40) from port Y of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$add$quant_extract.sv:20$386 ($add).
+Removed top 7 bits (of 40) from port A of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$le$quant_extract.sv:45$387 ($le).
+Removed top 31 bits (of 32) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$le$quant_extract.sv:45$387 ($le).
+Removed top 7 bits (of 40) from port A of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$gt$quant_extract.sv:46$389 ($gt).
+Removed top 24 bits (of 32) from port B of cell $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$gt$quant_extract.sv:46$389 ($gt).
+Removed top 39 bits (of 40) from wire $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$ternary$quant_extract.sv:20$385_Y.
+Removed top 39 bits (of 40) from wire $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.$ternary$quant_extract.sv:20$347_Y.
+Removed top 26 bits (of 32) from port B of cell quant_functions_harness.$le$quant_harness.sv:35$166 ($le).
+Removed top 2 bits (of 42) from port A of cell quant_functions_harness.$eq$quant_harness.sv:36$168 ($eq).
+Removed top 20 bits (of 32) from port B of cell quant_functions_harness.$gt$quant_harness.sv:37$169 ($gt).
+Removed top 28 bits (of 40) from port B of cell quant_functions_harness.$lt$quant_harness.sv:38$172 ($lt).
+Removed top 24 bits (of 40) from port A of cell quant_functions_harness.$eq$quant_harness.sv:39$176 ($eq).
+Removed top 20 bits (of 32) from port B of cell quant_functions_harness.$ge$quant_harness.sv:40$178 ($ge).
+Removed top 20 bits (of 32) from port B of cell quant_functions_harness.$le$quant_harness.sv:40$179 ($le).
+Removed top 16 bits (of 32) from port B of cell quant_functions_harness.$gt$quant_harness.sv:41$181 ($gt).
+Removed top 24 bits (of 40) from port B of cell quant_functions_harness.$lt$quant_harness.sv:42$184 ($lt).
+Removed top 24 bits (of 40) from port A of cell quant_functions_harness.$eq$quant_harness.sv:43$188 ($eq).
+Removed top 31 bits (of 32) from port B of cell quant_functions_harness.$le$quant_harness.sv:44$189 ($le).
+Removed top 24 bits (of 32) from port B of cell quant_functions_harness.$ge$quant_harness.sv:45$192 ($ge).
+Removed top 25 bits (of 32) from port B of cell quant_functions_harness.$le$quant_harness.sv:47$198 ($le).
+Removed top 27 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:49$200 ($eq).
+Removed top 28 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:50$206 ($eq).
+Removed top 29 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:50$209 ($eq).
+Removed top 35 bits (of 40) from port B of cell quant_functions_harness.$eq$quant_harness.sv:51$212 ($eq).
+Removed top 36 bits (of 40) from port B of cell quant_functions_harness.$eq$quant_harness.sv:52$218 ($eq).
+Removed top 4 bits (of 6) from port B of cell quant_functions_harness.$eq$quant_harness.sv:52$219 ($eq).
+Removed top 38 bits (of 40) from port B of cell quant_functions_harness.$eq$quant_harness.sv:52$221 ($eq).
+Removed top 30 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:54$233 ($eq).
+Removed top 19 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:55$236 ($eq).
+Removed top 20 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:55$237 ($eq).
+Removed top 27 bits (of 40) from port B of cell quant_functions_harness.$eq$quant_harness.sv:56$240 ($eq).
+Removed top 20 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:56$241 ($eq).
+Removed top 15 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:57$244 ($eq).
+Removed top 16 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:57$245 ($eq).
+Removed top 23 bits (of 40) from port B of cell quant_functions_harness.$eq$quant_harness.sv:58$248 ($eq).
+Removed top 16 bits (of 32) from port B of cell quant_functions_harness.$eq$quant_harness.sv:58$249 ($eq).
+Removed top 29 bits (of 40) from port B of cell quant_functions_harness.$eq$quant_harness.sv:60$256 ($eq).
+Removed top 6 bits (of 8) from port B of cell quant_functions_harness.$eq$quant_harness.sv:60$257 ($eq).
+Removed top 23 bits (of 40) from port B of cell quant_functions_harness.$eq$quant_harness.sv:61$260 ($eq).
+Removed top 1 bits (of 8) from port B of cell quant_functions_harness.$eq$quant_harness.sv:61$261 ($eq).
+Removed top 41 bits (of 42) from port A of cell quant_functions_harness.$shl$quant_harness.sv:25$281 ($shl).
+Removed top 41 bits (of 42) from mux cell quant_functions_harness.$ternary$quant_harness.sv:27$286 ($mux).
+Removed top 1 bits (of 42) from port A of cell quant_functions_harness.$add$quant_harness.sv:26$287 ($add).
+Removed top 41 bits (of 42) from port B of cell quant_functions_harness.$add$quant_harness.sv:26$287 ($add).
+Removed top 1 bits (of 41) from port A of cell quant_functions_harness.$neg$quant_harness.sv:21$301 ($neg).
+Removed top 33 bits (of 42) from port B of cell quant_functions_harness.$gt$quant_harness.sv:27$307 ($gt).
+Removed top 33 bits (of 41) from port B of cell quant_functions_harness.$eq$quant_harness.sv:28$308 ($eq).
+Removed top 41 bits (of 42) from mux cell quant_functions_harness.$ternary$quant_harness.sv:27$311 ($mux).
+Removed top 9 bits (of 42) from port A of cell quant_functions_harness.$add$quant_harness.sv:26$312 ($add).
+Removed top 41 bits (of 42) from port B of cell quant_functions_harness.$add$quant_harness.sv:26$312 ($add).
+Removed top 8 bits (of 42) from port Y of cell quant_functions_harness.$add$quant_harness.sv:26$312 ($add).
+Removed top 7 bits (of 42) from port A of cell quant_functions_harness.$neg$quant_harness.sv:29$313 ($neg).
+Converting cell quant_functions_harness.$neg$quant_harness.sv:29$313 ($neg) from signed to unsigned.
+Removed top 1 bits (of 35) from port A of cell quant_functions_harness.$neg$quant_harness.sv:29$313 ($neg).
+Removed top 41 bits (of 42) from wire quant_functions_harness.$ternary$quant_harness.sv:27$286_Y.
+Removed top 41 bits (of 42) from wire quant_functions_harness.$ternary$quant_harness.sv:27$311_Y.
+Removed top 8 bits (of 42) from wire quant_functions_harness.$0\nearest$func$quant_harness.sv:33$161.rounded_magnitude[41:0]$300.
+
+4.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \quant_functions_harness..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~2 debug messages>
+
+4.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.12. Executing OPT pass (performing simple optimizations).
+
+4.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000.
+Optimizing module quant_functions_harness.
+
+4.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Computing hashes of 32 cells of `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000'.
+Finding identical cells in module `\quant_functions_harness'.
+Computing hashes of 128 cells of `\quant_functions_harness'.
+Finding duplicate cells in `\quant_functions_harness'.
+Computing hashes of 127 cells of `\quant_functions_harness'.
+Finding duplicate cells in `\quant_functions_harness'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+4.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \quant_functions_harness..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+4.12.4. Finished fast OPT passes.
+
+4.13. Executing SORT pass.
+
+4.14. Printing statistics.
+
+=== $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       47 wires
+     1085 wire bits
+       19 public wires
+      638 public wire bits
+        6 ports
+      126 port bits
+       32 cells
+        2   $add
+        1   $and
+        2   $eq
+        5   $gt
+        1   $le
+        2   $logic_and
+        1   $logic_not
+        2   $logic_or
+        2   $lt
+        9   $mux
+        2   $shl
+        1   $sshr
+        2   $sub
+
+=== quant_functions_harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      122 wires
+     1492 wire bits
+       26 public wires
+      877 public wire bits
+        1 ports
+        1 port bits
+      126 cells
+        2   $add
+        2   $anyseq
+       26   $check
+       29   $eq
+        2   $ge
+        4   $gt
+        4   $le
+       22   $logic_and
+        3   $logic_not
+        2   $logic_or
+        2   $lt
+       20   $mux
+        3   $neg
+        2   $shl
+        1   $shr
+        2   $sub
+        1 submodules
+        1   $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      158 quant_functions_harness
+       32 $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000
+
+        +----------Count including submodules.
+        | 
+      169 wires
+     2577 wire bits
+       45 public wires
+     1515 public wire bits
+        7 ports
+      127 port bits
+        - memories
+        - memory bits
+        - processes
+      158 cells
+        4   $add
+        1   $and
+        2   $anyseq
+       26   $check
+       31   $eq
+        2   $ge
+        9   $gt
+        5   $le
+       24   $logic_and
+        4   $logic_not
+        4   $logic_or
+        4   $lt
+       29   $mux
+        3   $neg
+        4   $shl
+        1   $shr
+        1   $sshr
+        4   $sub
+        1 submodules
+        1   $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000
+
+4.15. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000...
+Checking module quant_functions_harness...
+Found and reported 0 problems.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `quant_functions_harness'. Setting top module to quant_functions_harness.
+
+5.1. Analyzing design hierarchy..
+Top module:  \quant_functions_harness
+Used module:     $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000
+
+5.2. Analyzing design hierarchy..
+Top module:  \quant_functions_harness
+Used module:     $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000
+Removed 0 unused modules.
+Module quant_functions_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+6. Executing jny backend.
+
+7. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: bf7bdc8cbc, time: 0.02s, user: 0.02s, system: 0.00s, MEM: 18.17 MB peak
+Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 19% 5x opt_clean (0 sec), 14% 2x check (0 sec), ...

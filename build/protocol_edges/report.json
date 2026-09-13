@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "suite": "independent_protocol_edges",
+  "generated_utc": "2026-09-08T01:39:28.580428+00:00",
+  "results": [
+    {
+      "model": "baseline",
+      "lanes": 1,
+      "status": "passed",
+      "report": "build/protocol_edges/baseline_l1/report.json",
+      "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+      "input_accepted_beats": 10260,
+      "valid_output_frames": 9,
+      "protocol_errors": 2,
+      "seconds_including_build": 16.40143183300097
+    },
+    {
+      "model": "baseline",
+      "lanes": 4,
+      "status": "passed",
+      "report": "build/protocol_edges/baseline_l4/report.json",
+      "model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+      "input_accepted_beats": 10260,
+      "valid_output_frames": 9,
+      "protocol_errors": 2,
+      "seconds_including_build": 4.807136499999615
+    },
+    {
+      "model": "neighbor",
+      "lanes": 1,
+      "status": "passed",
+      "report": "build/protocol_edges/neighbor_l1/report.json",
+      "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+      "input_accepted_beats": 10260,
+      "valid_output_frames": 9,
+      "protocol_errors": 2,
+      "seconds_including_build": 47.43323133300146
+    },
+    {
+      "model": "neighbor",
+      "lanes": 4,
+      "status": "passed",
+      "report": "build/protocol_edges/neighbor_l4/report.json",
+      "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+      "input_accepted_beats": 10260,
+      "valid_output_frames": 9,
+      "protocol_errors": 2,
+      "seconds_including_build": 14.766555166999751
+    }
+  ],
+  "complete_four_configuration_suite": true,
+  "tools": {
+    "verilator": "Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)",
+    "cocotb": "2.1.0",
+    "python": "3.12.14"
+  },
+  "original_coverage_database_modified": false,
+  "coverage_percentage_recomputed": false,
+  "physical_hardware_tested": false
+}

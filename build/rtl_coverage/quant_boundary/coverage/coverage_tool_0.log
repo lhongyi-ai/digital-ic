@@ -1,0 +1,1 @@
+COMMAND ["./.tools/oss-cad-suite/bin/verilator_coverage", "--write", "./build/rtl_coverage/quant_boundary/coverage/merged.dat", "./build/rtl_coverage/quant_boundary/coverage.dat"]

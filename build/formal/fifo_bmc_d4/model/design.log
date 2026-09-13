@@ -1,0 +1,489 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: sync_fifo.sv
+Parsing formal SystemVerilog input from `sync_fifo.sv' to AST representation.
+Storing AST representation for module `$abstract\sync_fifo'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: fifo_harness.sv
+Parsing formal SystemVerilog input from `fifo_harness.sv' to AST representation.
+Storing AST representation for module `$abstract\fifo_harness'.
+Successfully finished Verilog frontend.
+Parameter \WIDTH = 16
+Parameter \DEPTH = 4
+
+3. Executing AST frontend in derive mode using pre-parsed AST for module `\fifo_harness'.
+Parameter \WIDTH = 16
+Parameter \DEPTH = 4
+Generating RTLIL representation for module `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\fifo_harness'.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.2. Executing AST frontend in derive mode using pre-parsed AST for module `\fifo_harness'.
+Generating RTLIL representation for module `\fifo_harness'.
+
+4.2.1. Analyzing design hierarchy..
+Top module:  \fifo_harness
+Parameter \WIDTH = 16
+Parameter \DEPTH = 4
+
+4.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\sync_fifo'.
+Parameter \WIDTH = 16
+Parameter \DEPTH = 4
+Generating RTLIL representation for module `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+
+4.2.3. Analyzing design hierarchy..
+Top module:  \fifo_harness
+Used module:     $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo
+
+4.2.4. Analyzing design hierarchy..
+Top module:  \fifo_harness
+Used module:     $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo
+Removing unused module `$abstract\fifo_harness'.
+Removing unused module `$abstract\sync_fifo'.
+Removed 2 unused modules.
+Module fifo_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4.3. Executing PROC pass (convert processes to netlists).
+
+4.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$sync_fifo.sv:29$244 in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+Marked 4 switch rules as full_case in process $proc$fifo_harness.sv:27$127 in module fifo_harness.
+Removed a total of 0 dead cases.
+
+4.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 7 redundant assignments.
+Promoted 17 assignments to connections.
+
+4.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\fifo_harness.$proc$fifo_harness.sv:23$232'.
+  Set init value: \accepted = 8'00000000
+Found init rule in `\fifo_harness.$proc$fifo_harness.sv:22$231'.
+  Set init value: \seen_reset_busy = 1'0
+Found init rule in `\fifo_harness.$proc$fifo_harness.sv:22$230'.
+  Set init value: \seen_exchange = 1'0
+Found init rule in `\fifo_harness.$proc$fifo_harness.sv:22$229'.
+  Set init value: \seen_full = 1'0
+Found init rule in `\fifo_harness.$proc$fifo_harness.sv:21$228'.
+  Set init value: \past_valid = 1'0
+
+4.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~21 debug messages>
+
+4.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$proc$sync_fifo.sv:29$244'.
+     1/9: $2$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$253
+     2/9: $2$memwr$\mem$sync_fifo.sv:36$233_DATA[15:0]$252
+     3/9: $2$memwr$\mem$sync_fifo.sv:36$233_ADDR[1:0]$251
+     4/9: $0\occupancy[2:0]
+     5/9: $1$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$250
+     6/9: $1$memwr$\mem$sync_fifo.sv:36$233_DATA[15:0]$249
+     7/9: $1$memwr$\mem$sync_fifo.sv:36$233_ADDR[1:0]$248
+     8/9: $0\wr_ptr[1:0]
+     9/9: $0\rd_ptr[1:0]
+Creating decoders for process `\fifo_harness.$proc$fifo_harness.sv:23$232'.
+Creating decoders for process `\fifo_harness.$proc$fifo_harness.sv:22$231'.
+Creating decoders for process `\fifo_harness.$proc$fifo_harness.sv:22$230'.
+Creating decoders for process `\fifo_harness.$proc$fifo_harness.sv:22$229'.
+Creating decoders for process `\fifo_harness.$proc$fifo_harness.sv:21$228'.
+Creating decoders for process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+     1/22: $0\count[2:0]
+     2/22: $assert$fifo_harness.sv:53$167_EN
+     3/22: $assert$fifo_harness.sv:52$165_EN
+     4/22: $assert$fifo_harness.sv:49$163_EN
+     5/22: $assert$fifo_harness.sv:48$161_EN
+     6/22: $assert$fifo_harness.sv:45$159_EN
+     7/22: $assert$fifo_harness.sv:44$158_EN
+     8/22: $assert$fifo_harness.sv:40$154_EN
+     9/22: $assert$fifo_harness.sv:39$153_EN
+    10/22: $assert$fifo_harness.sv:37$150_EN
+    11/22: $assert$fifo_harness.sv:35$142_EN
+    12/22: $assert$fifo_harness.sv:34$137_EN
+    13/22: $assert$fifo_harness.sv:33$135_EN
+    14/22: $assert$fifo_harness.sv:32$133_EN
+    15/22: $assume$fifo_harness.sv:29$132_EN
+    16/22: $0\accepted[7:0]
+    17/22: $0\seen_reset_busy[0:0]
+    18/22: $0\seen_exchange[0:0]
+    19/22: $0\seen_full[0:0]
+    20/22: $0\expected[15:0]
+    21/22: $0\ahead[2:0]
+    22/22: $0\tracking[0:0]
+
+4.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.\occupancy' using process `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$proc$sync_fifo.sv:29$244'.
+  created $dff cell `$procdff$405' with positive edge clock.
+Creating register for signal `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.\rd_ptr' using process `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$proc$sync_fifo.sv:29$244'.
+  created $dff cell `$procdff$406' with positive edge clock.
+Creating register for signal `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.\wr_ptr' using process `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$proc$sync_fifo.sv:29$244'.
+  created $dff cell `$procdff$407' with positive edge clock.
+Creating register for signal `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$memwr$\mem$sync_fifo.sv:36$233_ADDR' using process `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$proc$sync_fifo.sv:29$244'.
+  created $dff cell `$procdff$408' with positive edge clock.
+Creating register for signal `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$memwr$\mem$sync_fifo.sv:36$233_DATA' using process `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$proc$sync_fifo.sv:29$244'.
+  created $dff cell `$procdff$409' with positive edge clock.
+Creating register for signal `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$memwr$\mem$sync_fifo.sv:36$233_EN' using process `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$proc$sync_fifo.sv:29$244'.
+  created $dff cell `$procdff$410' with positive edge clock.
+Creating register for signal `\fifo_harness.\tracking' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$411' with positive edge clock.
+Creating register for signal `\fifo_harness.\ahead' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$412' with positive edge clock.
+Creating register for signal `\fifo_harness.\expected' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$413' with positive edge clock.
+Creating register for signal `\fifo_harness.\count' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$414' with positive edge clock.
+Creating register for signal `\fifo_harness.\past_valid' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$415' with positive edge clock.
+Creating register for signal `\fifo_harness.\seen_full' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$416' with positive edge clock.
+Creating register for signal `\fifo_harness.\seen_exchange' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$417' with positive edge clock.
+Creating register for signal `\fifo_harness.\seen_reset_busy' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$418' with positive edge clock.
+Creating register for signal `\fifo_harness.\accepted' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$419' with positive edge clock.
+Creating register for signal `\fifo_harness.$past$fifo_harness.sv:43$117$0' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$420' with positive edge clock.
+Creating register for signal `\fifo_harness.$past$fifo_harness.sv:45$118$0' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$421' with positive edge clock.
+Creating register for signal `\fifo_harness.$past$fifo_harness.sv:47$119$0' using process `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+  created $dff cell `$procdff$422' with positive edge clock.
+
+4.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 4 empty switches in `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$proc$sync_fifo.sv:29$244'.
+Removing empty process `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$proc$sync_fifo.sv:29$244'.
+Removing empty process `fifo_harness.$proc$fifo_harness.sv:23$232'.
+Removing empty process `fifo_harness.$proc$fifo_harness.sv:22$231'.
+Removing empty process `fifo_harness.$proc$fifo_harness.sv:22$230'.
+Removing empty process `fifo_harness.$proc$fifo_harness.sv:22$229'.
+Removing empty process `fifo_harness.$proc$fifo_harness.sv:21$228'.
+Found and cleaned up 17 empty switches in `\fifo_harness.$proc$fifo_harness.sv:27$127'.
+Removing empty process `fifo_harness.$proc$fifo_harness.sv:27$127'.
+Cleaned up 21 empty switches.
+
+4.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+<suppressed ~1 debug messages>
+Optimizing module fifo_harness.
+<suppressed ~8 debug messages>
+
+4.4. Executing FUTURE pass.
+
+4.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+Optimizing module fifo_harness.
+
+4.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo..
+Finding unused cells or wires in module \fifo_harness..
+Removed 4 unused cells and 120 unused wires.
+<suppressed ~6 debug messages>
+
+4.7. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo...
+Checking module fifo_harness...
+Found and reported 0 problems.
+
+4.8. Executing OPT pass (performing simple optimizations).
+
+4.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+Optimizing module fifo_harness.
+
+4.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Computing hashes of 39 cells of `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Finding duplicate cells in `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Computing hashes of 38 cells of `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Finding duplicate cells in `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\fifo_harness'.
+Computing hashes of 161 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Computing hashes of 142 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Computing hashes of 136 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Computing hashes of 133 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Computing hashes of 132 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Computing hashes of 131 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+<suppressed ~90 debug messages>
+Removed a total of 31 cells.
+
+4.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$278.
+    dead port 1/2 on $mux $procmux$272.
+    dead port 1/2 on $mux $procmux$266.
+Running muxtree optimizer on module \fifo_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 3 multiplexer ports.
+<suppressed ~89 debug messages>
+
+4.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+    Consolidated identical input bits for $mux cell $procmux$263:
+      Old ports: A=16'0000000000000000, B=16'1111111111111111, Y=$procmux$263_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$263_Y [0]
+      New connections: $procmux$263_Y [15:1] = { $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] $procmux$263_Y [0] }
+  Optimizing cells in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+    Consolidated identical input bits for $mux cell $procmux$288:
+      Old ports: A=$2$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$253, B=16'0000000000000000, Y=$0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247
+      New ports: A=$procmux$263_Y [0], B=1'0, Y=$0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0]
+      New connections: $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [15:1] = { $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] $0$memwr$\mem$sync_fifo.sv:36$233_EN[15:0]$247 [0] }
+  Optimizing cells in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+  Optimizing cells in module \fifo_harness.
+Performed a total of 2 changes.
+
+4.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Computing hashes of 35 cells of `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Finding duplicate cells in `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Finding identical cells in module `\fifo_harness'.
+Computing hashes of 131 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Computing hashes of 124 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Computing hashes of 120 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Computing hashes of 119 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+<suppressed ~36 debug messages>
+Removed a total of 12 cells.
+
+4.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo..
+Finding unused cells or wires in module \fifo_harness..
+Removed 0 unused cells and 46 unused wires.
+<suppressed ~2 debug messages>
+
+4.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+Optimizing module fifo_harness.
+
+4.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \fifo_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~67 debug messages>
+
+4.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+  Optimizing cells in module \fifo_harness.
+Performed a total of 0 changes.
+
+4.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Computing hashes of 35 cells of `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Finding duplicate cells in `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Finding identical cells in module `\fifo_harness'.
+Computing hashes of 119 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Removed a total of 0 cells.
+
+4.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo..
+Finding unused cells or wires in module \fifo_harness..
+
+4.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+Optimizing module fifo_harness.
+
+4.8.14. Finished fast OPT passes. (There is nothing left to do.)
+
+4.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.$procmux$282_CMP0 ($eq).
+Removed top 29 bits (of 32) from port B of cell fifo_harness.$le$fifo_harness.sv:32$134 ($le).
+Removed top 29 bits (of 32) from port B of cell fifo_harness.$lt$fifo_harness.sv:35$144 ($lt).
+Removed top 24 bits (of 32) from port B of cell fifo_harness.$lt$fifo_harness.sv:73$177 ($lt).
+Removed top 31 bits (of 32) from port B of cell fifo_harness.$add$fifo_harness.sv:73$178 ($add).
+Removed top 24 bits (of 32) from port Y of cell fifo_harness.$add$fifo_harness.sv:73$178 ($add).
+Removed top 28 bits (of 32) from port B of cell fifo_harness.$ge$fifo_harness.sv:89$215 ($ge).
+Removed top 1 bits (of 2) from port B of cell fifo_harness.$procmux$309_CMP0 ($eq).
+Removed top 24 bits (of 32) from wire fifo_harness.$add$fifo_harness.sv:73$178_Y.
+
+4.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo..
+Finding unused cells or wires in module \fifo_harness..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+4.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.12. Executing OPT pass (performing simple optimizations).
+
+4.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo.
+Optimizing module fifo_harness.
+
+4.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Computing hashes of 34 cells of `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Finding duplicate cells in `$paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo'.
+Finding identical cells in module `\fifo_harness'.
+Computing hashes of 119 cells of `\fifo_harness'.
+Finding duplicate cells in `\fifo_harness'.
+Removed a total of 0 cells.
+
+4.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo..
+Finding unused cells or wires in module \fifo_harness..
+
+4.12.4. Finished fast OPT passes.
+
+4.13. Executing SORT pass.
+
+4.14. Printing statistics.
+
+=== $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       39 wires
+      151 wire bits
+       13 public wires
+       47 public wire bits
+        9 ports
+       41 port bits
+       34 cells
+        3   $add
+        3   $dff
+        4   $eq
+        4   $logic_and
+        1   $logic_not
+        1   $logic_or
+        1   $lt
+        1   $mem_v2
+       13   $mux
+        1   $pmux
+        1   $reduce_bool
+        1   $sub
+
+=== fifo_harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      104 wires
+      255 wire bits
+       21 public wires
+       79 public wire bits
+        1 ports
+        1 port bits
+      118 cells
+        2   $add
+        5   $anyseq
+       19   $check
+       12   $dff
+        8   $eq
+        1   $ge
+        1   $le
+       23   $logic_and
+        7   $logic_not
+        1   $logic_or
+        3   $lt
+       31   $mux
+        1   $pmux
+        2   $reduce_bool
+        2   $sub
+        1 submodules
+        1   $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      152 fifo_harness
+       34 $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo
+
+        +----------Count including submodules.
+        | 
+      143 wires
+      406 wire bits
+       34 public wires
+      126 public wire bits
+       10 ports
+       42 port bits
+        - memories
+        - memory bits
+        - processes
+      152 cells
+        5   $add
+        5   $anyseq
+       19   $check
+       15   $dff
+       12   $eq
+        1   $ge
+        1   $le
+       27   $logic_and
+        8   $logic_not
+        2   $logic_or
+        4   $lt
+        1   $mem_v2
+       44   $mux
+        2   $pmux
+        3   $reduce_bool
+        3   $sub
+        1 submodules
+        1   $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo
+
+4.15. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo...
+Checking module fifo_harness...
+Found and reported 0 problems.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `fifo_harness'. Setting top module to fifo_harness.
+
+5.1. Analyzing design hierarchy..
+Top module:  \fifo_harness
+Used module:     $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo
+
+5.2. Analyzing design hierarchy..
+Top module:  \fifo_harness
+Used module:     $paramod$1749c0d87be28a43a7f5b8a32197c1ea2423170e\sync_fifo
+Removed 0 unused modules.
+Module fifo_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+6. Executing jny backend.
+
+7. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: dba3985374, time: 0.01s, user: 0.01s, system: 0.00s, MEM: 16.09 MB peak
+Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 14% 5x opt_clean (0 sec), 14% 2x hierarchy (0 sec), ...

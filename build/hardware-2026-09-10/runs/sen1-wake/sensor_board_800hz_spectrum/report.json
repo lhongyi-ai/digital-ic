@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "input_sha256": {
+    "artifacts/sensor_spectrum/model/b1.hex": "ce0933176c74a7f70051794bdb7ba975c92dde4183bc3cc40d092469df2c5c62",
+    "artifacts/sensor_spectrum/model/b2.hex": "a4474f96ed424e90adcfe9ca797a5dff7cf68eda4b1666c238dce94bcd1bfcda",
+    "artifacts/sensor_spectrum/model/bins.hex": "03e5ffc5deed3ea84c67f24fcc53cfb72b5bad28f6b42c3c03531ef4693e7fc7",
+    "artifacts/sensor_spectrum/model/cos_quarter.hex": "3d5fa26f632eba8bdbf45ffd459e3930f96f48b6afa6e20d02eef66b33777894",
+    "artifacts/sensor_spectrum/model/feature_shifts.hex": "3a50146c4f620299f1c17ad3d040f240ce3622b2e827a1bc817fe94688eff68f",
+    "artifacts/sensor_spectrum/model/hann.hex": "10644e0a2547c4af9d65345e8a8f426a5591c61ec85a046753c5aa7c8da31892",
+    "artifacts/sensor_spectrum/model/hann_quarter.hex": "13779e60e6c1919d761054f4f6695f8ee81946a2db7f57b3ccb6863782f8641b",
+    "artifacts/sensor_spectrum/model/model.json": "e4b47d14ec2eec60c102e147d58d9514269323b52e67326dd0756c7944a96459",
+    "artifacts/sensor_spectrum/model/model_config.svh": "b2df6ad4d7fb343e1c16f2912dd3cff70985f670a365575d9640bf77b6e8a533",
+    "artifacts/sensor_spectrum/model/w1.hex": "0db0033c02e919c3509122686ecbcc8679d8118efb478d2b45b0d055fff773b9",
+    "artifacts/sensor_spectrum/model/w2.hex": "b3371a319dbcda59f045883ece3d118d1ee067d4ce1d12991d955537928f8b57",
+    "artifacts/sensor_spectrum/model/weights_l1_0.hex": "0d0a6acba09ab387f81fd076952b526344c6c5b9df1ac0ec04cbe23f5ccbe040",
+    "artifacts/sensor_spectrum/model/weights_l4_0.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "artifacts/sensor_spectrum/model/weights_l4_1.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "artifacts/sensor_spectrum/model/weights_l4_2.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "artifacts/sensor_spectrum/model/weights_l4_3.hex": "3d38420b0cfeb69b6b7621bd34342726fce03f6e47ec02fdc60a4625822d4822",
+    "build/hardware-2026-09-10/runs/sen1-wake/sensor_board_800hz_spectrum/reference.pcf": "c4e9be26eb6ce5624424d312c8a27050ce4449eff46395392671da0133087de2",
+    "build/hardware-2026-09-10/runs/sen1-wake/sensor_board_800hz_spectrum/synth.ys": "a4e50a6c11b4b91473e89397c22b0538604cdf3619d5dca667bc2dd7858f2d56",
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/core/vibration_core.sv": "1f9546be166957707f92a635e1e07834505db9b9d885d6fb3672cce6ac46872f",
+    "rtl/io/adxl345_capture.sv": "fb2bdbb4ab71e16fd918576095df94dfb245442a5613a617db5c0777cc2123b6",
+    "rtl/io/flash_stream.sv": "77fefc32bd58387227e0ef517261f55d0067588c2bd08c1e460f82c153f3c18b",
+    "rtl/io/sensor_spectrum.sv": "561a6494149861e4f4b093753ea3bb3a1cf198c5e523b7f6fca913c85c1b876d",
+    "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+    "rtl/io/static_calibration.sv": "7d10e13595f99d54105e7cf0860a65eb93e28621201d51cb4f460f0cf6215017",
+    "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+    "rtl/upduino_sensor.sv": "0e64af7f963e80e37efa438c6fb2ff0ece0f65cc9d6ba8d5d8314112aac28d46",
+    "scripts/build_sensor.py": "3b46fed8f14d4aed8f450d8c36b3b28b344fd1c8950ff68ecc9b6f8aacf17eef"
+  },
+  "tool_versions": {
+    "yosys": {
+      "path": "./.tools/oss-cad-suite/bin/yosys",
+      "sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "version": "Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)"
+    },
+    "nextpnr-ice40": {
+      "path": "./.tools/oss-cad-suite/bin/nextpnr-ice40",
+      "sha256": "15ec669b1657e6fae2a453053108265905e083903486dc5c519b7a610e882767",
+      "version": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version nextpnr-0.11.1-19-g8dbcee5c)"
+    }
+  },
+  "top": "upduino_sensor",
+  "rate_hz": 800,
+  "total_samples": 480000,
+  "store_samples": 24000,
+  "axis": 0,
+  "cal_offset_q8": 0,
+  "cal_gain_q20": 4096000,
+  "target_clock_mhz": 12,
+  "seed": 1,
+  "synthesis_cells": {
+    "SB_CARRY": 1589,
+    "SB_DFFE": 82,
+    "SB_LUT4": 3806,
+    "SB_DFF": 127,
+    "$scopeinfo": 13,
+    "SB_DFFESR": 1365,
+    "SB_DFFSR": 86,
+    "SB_DFFESS": 84,
+    "SB_DFFSS": 1,
+    "SB_SPRAM256KA": 3,
+    "SB_RAM40_4K": 9,
+    "SB_MAC16": 1
+  },
+  "place_route_completed": true,
+  "post_route_fmax": {
+    "clk12$SB_IO_IN_$glb_clk": {
+      "achieved": 16.856868743896484,
+      "constraint": 12
+    }
+  },
+  "utilization": {
+    "ICESTORM_DSP": {
+      "available": 8,
+      "used": 1
+    },
+    "ICESTORM_HFOSC": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_LC": {
+      "available": 5280,
+      "used": 4926
+    },
+    "ICESTORM_LFOSC": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_PLL": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_RAM": {
+      "available": 30,
+      "used": 9
+    },
+    "ICESTORM_SPRAM": {
+      "available": 4,
+      "used": 3
+    },
+    "IO_I3C": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_GB": {
+      "available": 8,
+      "used": 8
+    },
+    "SB_I2C": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_IO": {
+      "available": 39,
+      "used": 13
+    },
+    "SB_LEDDA_IP": {
+      "available": 1,
+      "used": 0
+    },
+    "SB_RGBA_DRV": {
+      "available": 1,
+      "used": 0
+    },
+    "SB_SPI": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_WARMBOOT": {
+      "available": 1,
+      "used": 0
+    }
+  },
+  "max_frequency_messages": [
+    "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 16.89 MHz (PASS at 12.00 MHz)",
+    "Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 16.86 MHz (PASS at 12.00 MHz)"
+  ],
+  "bitstream_sha256": "5c315901350ac5f83a8dedc6c5b3ded25bfa0b590802454aa7fef930c3d13da6",
+  "physical_board_programmed": false,
+  "board_profile_verified": false,
+  "power_measured": false,
+  "classifier_included": false,
+  "spectrum_included": true,
+  "log_format": "SEN1, 208-byte header, 4-byte raw records"
+}

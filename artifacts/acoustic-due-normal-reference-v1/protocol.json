@@ -1,0 +1,20 @@
+{
+  "task": "normal-reference commissioning diagnostic, NOT zero-shot",
+  "feature": "existing 320-dimensional 64-band summaries",
+  "fit": "150 source normals and 3 target normals per section",
+  "calibration": "remaining 50 source normals; maximum score threshold",
+  "split": "SHA256 due-reference-v1:name, before looking at audio scores",
+  "models": "mean distance to 3 nearest normal references, standardized by source-fit std",
+  "limitations": "first 200 source files may not cover all operating conditions; only 3 target references; threshold has no target-domain FPR guarantee",
+  "evaluation": "all 400 previously used development recordings per section, domain results separate",
+  "gate": "recall > .90, fpr < .05, auc >= .90 for each section; no final test claim",
+  "final_sections_03_04_05_opened": false,
+  "inputs": {
+    "./data/mimii-due-source-review/normal-reference-plan.json": "86c445d9d3badfccf7e34956d740792826fd1c01f4eaf07bd77fa1b17c98f448",
+    "./artifacts/acoustic-due-three-sections-v1/results.json": "ce9ef27473bfe7e04da8254413f7964d580cd85f043dbf0a4c10756031622fad"
+  },
+  "source_sha256": {
+    "./scripts/evaluate_due_normal_reference.py": "f2dc88195c095f98157b4b378c2996f7d300685fbc9ea10f5c75faa9de3db743",
+    "./scripts/train_due_three_sections.py": "f65beef9c32f93f23d01f38ccc03a3095a53ebf81a5aa5cf8711541e7e16a760"
+  }
+}

@@ -1,0 +1,133 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `fifo_harness'. Setting top module to fifo_harness.
+
+2.1. Analyzing design hierarchy..
+Top module:  \fifo_harness
+Used module:     $paramod$4ae5b8b575b68ca0ace81787b3f2bbd8ede82952\sync_fifo
+
+2.2. Analyzing design hierarchy..
+Top module:  \fifo_harness
+Used module:     $paramod$4ae5b8b575b68ca0ace81787b3f2bbd8ede82952\sync_fifo
+Removed 0 unused modules.
+Module fifo_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== $paramod$4ae5b8b575b68ca0ace81787b3f2bbd8ede82952\sync_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       27 wires
+      147 wire bits
+       13 public wires
+       73 public wire bits
+        9 ports
+       39 port bits
+       23 cells
+        1   $add
+        1   $anyinit
+        2   $anyseq
+        1   $assume
+        2   $eq
+        4   $logic_and
+        1   $logic_not
+        1   $logic_or
+        1   $lt
+        1   $mem_v2
+        5   $mux
+        1   $not
+        1   $pmux
+        1   $sub
+
+=== fifo_harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       46 wires
+      111 wire bits
+       16 public wires
+       53 public wire bits
+        1 ports
+        1 port bits
+       48 cells
+        1   $add
+        4   $anyseq
+        2   $assume
+        5   $cover
+       10   $ff
+        1   $ge
+       14   $logic_and
+        1   $logic_not
+        1   $lt
+        7   $mux
+        2   $not
+        1 submodules
+        1   $paramod$4ae5b8b575b68ca0ace81787b3f2bbd8ede82952\sync_fifo
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       71 fifo_harness
+       23 $paramod$4ae5b8b575b68ca0ace81787b3f2bbd8ede82952\sync_fifo
+
+        +----------Count including submodules.
+        | 
+       73 wires
+      258 wire bits
+       29 public wires
+      126 public wire bits
+       10 ports
+       40 port bits
+        - memories
+        - memory bits
+        - processes
+       71 cells
+        2   $add
+        1   $anyinit
+        6   $anyseq
+        3   $assume
+        5   $cover
+        2   $eq
+       10   $ff
+        1   $ge
+       18   $logic_and
+        2   $logic_not
+        1   $logic_or
+        2   $lt
+        1   $mem_v2
+       12   $mux
+        3   $not
+        1   $pmux
+        1   $sub
+        1 submodules
+        1   $paramod$4ae5b8b575b68ca0ace81787b3f2bbd8ede82952\sync_fifo
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module $paramod$4ae5b8b575b68ca0ace81787b3f2bbd8ede82952\sync_fifo.
+Creating SMT-LIBv2 representation of module fifo_harness.
+
+End of script. Logfile hash: ff25765156, time: 0.00s, user: 0.00s, system: 0.00s, MEM: 12.41 MB peak
+Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 56% 2x write_smt2 (0 sec), 18% 2x read_rtlil (0 sec), ...

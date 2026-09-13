@@ -1,0 +1,4 @@
+read_verilog -defer -sv -DICE40 rtl/core/vib_coeff_rom.sv rtl/platform/spram16k.sv rtl/core/known_capture.sv rtl/core/known_spectral_core.sv rtl/io/spi_master.sv rtl/io/flash_stream.sv rtl/io/known_replay_controller.sv rtl/upduino_known.sv;
+chparam -set LANES 4 -set MODEL_DIR "./artifacts/acoustic-known-release-v1/id02" -set BIAS 32'h000005d2 -set THRESHOLD 32'hffffd651 -set LOG_CONSTANT 32'h0001f491 -set LOG_FLOOR 32'hfffd8231 -set MODEL_HASH 256'hd242731881d6a23c64a09654effb0f329f5de1e423212d96a01bae505b51be6e upduino_known;
+synth_ice40 -dsp -dff -top upduino_known -json "./build/known-board/l4-id02-dff-r1/netlist.json";
+stat

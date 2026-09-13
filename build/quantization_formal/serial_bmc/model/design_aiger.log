@@ -1,0 +1,495 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `quant_serial_harness'. Setting top module to quant_serial_harness.
+
+2.1. Analyzing design hierarchy..
+Top module:  \quant_serial_harness
+Used module:     \quant_serial_kernel
+
+2.2. Analyzing design hierarchy..
+Top module:  \quant_serial_harness
+Used module:     \quant_serial_kernel
+Removed 0 unused modules.
+Module quant_serial_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing FLATTEN pass (flatten design).
+Deleting now unused module quant_serial_kernel.
+<suppressed ~1 debug messages>
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_harness.
+<suppressed ~13 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\quant_serial_harness'.
+Computing hashes of 196 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 195 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 194 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+<suppressed ~5 debug messages>
+Removed a total of 2 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \quant_serial_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~88 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \quant_serial_harness.
+    Consolidated identical input bits for $mux cell $flatten\dut.$procmux$613:
+      Old ports: A=5'01111, B=5'10000, Y=$flatten\dut.$procmux$613_Y
+      New ports: A=2'01, B=2'10, Y={ $flatten\dut.$procmux$613_Y [4] $flatten\dut.$procmux$613_Y [0] }
+      New connections: $flatten\dut.$procmux$613_Y [3:1] = { $flatten\dut.$procmux$613_Y [0] $flatten\dut.$procmux$613_Y [0] $flatten\dut.$procmux$613_Y [0] }
+    Consolidated identical input bits for $mux cell $flatten\dut.$procmux$605:
+      Old ports: A=5'01010, B=5'10001, Y=$flatten\dut.$procmux$605_Y
+      New ports: A=2'10, B=2'01, Y=$flatten\dut.$procmux$605_Y [1:0]
+      New connections: $flatten\dut.$procmux$605_Y [4:2] = { $flatten\dut.$procmux$605_Y [0] $flatten\dut.$procmux$605_Y [1] 1'0 }
+  Optimizing cells in module \quant_serial_harness.
+    Consolidated identical input bits for $mux cell $flatten\dut.$procmux$616:
+      Old ports: A=$flatten\dut.$procmux$613_Y, B=5'10000, Y=$flatten\dut.$procmux$616_Y
+      New ports: A={ $flatten\dut.$procmux$613_Y [4] $flatten\dut.$procmux$613_Y [0] }, B=2'10, Y={ $flatten\dut.$procmux$616_Y [4] $flatten\dut.$procmux$616_Y [0] }
+      New connections: $flatten\dut.$procmux$616_Y [3:1] = { $flatten\dut.$procmux$616_Y [0] $flatten\dut.$procmux$616_Y [0] $flatten\dut.$procmux$616_Y [0] }
+  Optimizing cells in module \quant_serial_harness.
+Performed a total of 3 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\quant_serial_harness'.
+Computing hashes of 194 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_SHARE pass.
+
+6.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \quant_serial_harness..
+Removed 26 unused cells and 35 unused wires.
+<suppressed ~27 debug messages>
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_harness.
+
+6.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \quant_serial_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~88 debug messages>
+
+6.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \quant_serial_harness.
+Performed a total of 0 changes.
+
+6.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\quant_serial_harness'.
+Computing hashes of 168 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Removed a total of 0 cells.
+
+6.14. Executing OPT_SHARE pass.
+
+6.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \quant_serial_harness..
+
+6.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_harness.
+
+6.18. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: ./.tools/oss-cad-suite/libexec/../share/yosys/techmap.v
+Parsing Verilog input from `./.tools/oss-cad-suite/libexec/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Running "alumacc" on wrapper $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=34:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=34:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=34:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=34:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=34:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=34:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=7:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=7:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=7:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=7:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=7:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=7:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $ff.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=6:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=6:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=6:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $eq.
+Running "alumacc" on wrapper $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=34:B_SIGNED=0:B_WIDTH=34:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=34:B_SIGNED=0:B_WIDTH=34:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=34:B_SIGNED=0:B_WIDTH=34:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $logic_or.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=7:B_SIGNED=0:B_WIDTH=8:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=7:B_SIGNED=0:B_WIDTH=8:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=7:B_SIGNED=0:B_WIDTH=8:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=34:B_SIGNED=0:B_WIDTH=7:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=34:B_SIGNED=0:B_WIDTH=7:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=34:B_SIGNED=0:B_WIDTH=7:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=6:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=6:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=6:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $logic_and.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=7:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=7:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=7:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $mux.
+Running "alumacc" on wrapper $extern:wrap:$sub:A_SIGNED=0:A_WIDTH=33:B_SIGNED=0:B_WIDTH=33:Y_WIDTH=33:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$sub:A_SIGNED=0:A_WIDTH=33:B_SIGNED=0:B_WIDTH=33:Y_WIDTH=33:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$sub:A_SIGNED=0:A_WIDTH=33:B_SIGNED=0:B_WIDTH=33:Y_WIDTH=33:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $paramod$constmap:e5f2d9f32093fac3b2a3647ac06eca543fae626e$paramod$f5c3280134fe97ec25ef2806e6cf659fc19fb46c\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
+Using template $paramod$constmap:deb2e7b02416f40271ce9461f251756d6c227a30$paramod$7f055b14fac0fde9af7c67518ca199790547729d\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using template $paramod$constmap:5a099f4c827838ec4d642be85a6386913231eba1$paramod$a60a95477e67586fde30b9dd1d96525d7ae89c4f\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $and.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=7:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=8:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=7:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=8:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=7:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=8:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=4:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=4:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=4:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $pmux.
+Using extmapper simplemap for cells of type $reduce_or.
+Running "alumacc" on wrapper $extern:wrap:$sub:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=8:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$sub:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=8:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$sub:A_SIGNED=0:A_WIDTH=8:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=8:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $paramod$403a3c2fa431a154c52a6a5429d7a6260b5d144f\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$1eea76d7a4c6ac9eb7ee572e075cc080fc50bca4\_90_alu for cells of type $alu.
+Using template $paramod$103b4016182df467cceab67bcf3e18e6361ec0fd\_90_alu for cells of type $alu.
+Using template $paramod$2ab0ff81670440372478bad90d3da37d43208ad1\_90_alu for cells of type $alu.
+Using template $paramod$cc6a978c1b57cdb49efcec348c88d8e28bf1a01f\_90_alu for cells of type $alu.
+Using template $paramod$dbef6e48cd28208af1b77a9bd7dfc80580f16131\_90_alu for cells of type $alu.
+Using template $paramod$dfca81329cbbac01700318224209a5f2318c7128\_90_alu for cells of type $alu.
+Using template $paramod$92b215cb704a04a8f0311f58127ba379454face8\_90_alu for cells of type $alu.
+Using template $paramod$befd47b1c77b68561d11d0cb61a0fae29b79f34c\_90_alu for cells of type $alu.
+Using template $paramod$0a77e3c00010cb33e399decd813a7380c6e25cba\_90_alu for cells of type $alu.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100010 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100010 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000111 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000111 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100001 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100001 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000100 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~3701 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module quant_serial_harness.
+<suppressed ~1730 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\quant_serial_harness'.
+Computing hashes of 3016 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2914 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2879 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2863 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2856 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2854 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2849 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2846 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2842 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2840 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+Computing hashes of 2839 cells of `\quant_serial_harness'.
+Finding duplicate cells in `\quant_serial_harness'.
+<suppressed ~531 debug messages>
+Removed a total of 177 cells.
+
+8.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \quant_serial_harness..
+Removed 305 unused cells and 1153 unused wires.
+<suppressed ~306 debug messages>
+
+8.5. Finished fast OPT passes.
+
+9. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory \dut.feature_shifts in module \quant_serial_harness:
+  created 16 $dff cells and 0 static cells of width 8.
+  read interface: 0 $dff and 15 $mux cells.
+  write interface: 16 write mux blocks.
+Mapping memory \dut.features in module \quant_serial_harness:
+  created 16 $dff cells and 0 static cells of width 8.
+  read interface: 0 $dff and 15 $mux cells.
+  write interface: 16 write mux blocks.
+
+10. Executing FORMALFF pass.
+
+11. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8750 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[14][0][0]$8748 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[14][0][0]$8746 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8744 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[13][0][0]$8742 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[13][0][0]$8740 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8738 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[12][0][0]$8736 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[12][0][0]$8734 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8732 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8730 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[11][0][0]$8728 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[11][0][0]$8726 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8724 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[10][0][0]$8722 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[10][0][0]$8720 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8718 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[9][0][0]$8716 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[9][0][0]$8714 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8712 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[8][0][0]$8710 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[8][0][0]$8708 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8706 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8704 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8702 ($eq).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[7][0][0]$8700 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[7][0][0]$8698 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8696 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[6][0][0]$8694 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[6][0][0]$8692 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8690 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[5][0][0]$8688 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[5][0][0]$8686 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8684 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[4][0][0]$8682 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[4][0][0]$8680 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8678 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8676 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8674 ($eq).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[3][0][0]$8672 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[3][0][0]$8670 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8668 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8666 ($and).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[2][0][0]$8664 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[2][0][0]$8662 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8660 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8658 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8656 ($eq).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[1][0][0]$8654 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[1][0][0]$8652 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8650 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8648 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8646 ($eq).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[0][0][0]$8644 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[0][0][0]$8642 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8640 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8638 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8636 ($eq).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8634 ($eq).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8632 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8630 ($eq).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8628 ($eq).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][3][7]$8625 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][3][6]$8622 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][3][5]$8619 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][3][4]$8616 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][3][3]$8613 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][3][2]$8610 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][3][1]$8607 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][3][0]$8604 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][2][3]$8601 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][2][2]$8598 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][2][1]$8595 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][2][0]$8592 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][1][1]$8589 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][1][0]$8586 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$rdmux[0][0][0]$8583 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wren[15][0][0]$8752 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[15][0][0]$8547 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8545 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[14][0][0]$8543 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[14][0][0]$8541 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8539 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[13][0][0]$8537 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[13][0][0]$8535 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8533 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[12][0][0]$8531 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[12][0][0]$8529 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8527 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8525 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[11][0][0]$8523 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[11][0][0]$8521 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8519 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[10][0][0]$8517 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[10][0][0]$8515 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8513 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[9][0][0]$8511 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[9][0][0]$8509 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8507 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[8][0][0]$8505 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[8][0][0]$8503 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8501 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8499 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8497 ($eq).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[7][0][0]$8495 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[7][0][0]$8493 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8491 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[6][0][0]$8489 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[6][0][0]$8487 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8485 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[5][0][0]$8483 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[5][0][0]$8481 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8479 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[4][0][0]$8477 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[4][0][0]$8475 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8473 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8471 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8469 ($eq).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[3][0][0]$8467 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[3][0][0]$8465 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8463 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8461 ($and).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[2][0][0]$8459 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[2][0][0]$8457 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8455 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8453 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8451 ($eq).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[1][0][0]$8449 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[1][0][0]$8447 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8445 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8443 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8441 ($eq).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[0][0][0]$8439 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wren[0][0][0]$8437 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8435 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8433 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8431 ($eq).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8429 ($eq).
+Mapping quant_serial_harness.$auto$memory_map.cc:97:addr_decode$8427 ($and).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8425 ($eq).
+Mapping quant_serial_harness.$auto$memory_map.cc:92:addr_decode$8423 ($eq).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][3][7]$8420 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][3][6]$8417 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][3][5]$8414 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][3][4]$8411 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][3][3]$8408 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][3][2]$8405 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][3][1]$8402 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][3][0]$8399 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][2][3]$8396 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][2][2]$8393 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][2][1]$8390 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][2][0]$8387 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][1][1]$8384 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][1][0]$8381 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$rdmux[0][0][0]$8378 ($mux).
+Mapping quant_serial_harness.$memory\dut.feature_shifts$wrmux[15][0][0]$8549 ($mux).
+Mapping quant_serial_harness.$memory\dut.features$wrmux[15][0][0]$8754 ($mux).
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing AIGMAP pass (map logic to AIG).
+Module quant_serial_harness: replaced 2274 cells with 14901 new cells, skipped 898 cells.
+  replaced 3 cell types:
+    1692 $_MUX_
+     339 $_OR_
+     243 $_XOR_
+  not replaced 9 cell types:
+     622 $_AND_
+      24 $_FF_
+     180 $_NOT_
+       3 $anyconst
+      44 $anyinit
+      12 $anyseq
+      10 $assert
+       2 $assume
+       1 $scopeinfo
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \quant_serial_harness..
+Removed 0 unused cells and 812 unused wires.
+<suppressed ~1 debug messages>
+
+15. Printing statistics.
+
+=== quant_serial_harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+    15149 wires
+    16538 wire bits
+       87 public wires
+      654 public wire bits
+        1 ports
+        1 port bits
+    15799 cells
+     6766   $_AND_
+       24   $_FF_
+     8937   $_NOT_
+        3   $anyconst
+       44   $anyinit
+       12   $anyseq
+       10   $assert
+        2   $assume
+        1   $scopeinfo
+
+16. Executing AIGER backend.
+Warning: Treating undriven bit quant_serial_harness.\clk like $anyseq.
+Warning: Treating a total of 1 undriven bits in quant_serial_harness like $anyseq.
+
+Warnings: 2 unique messages, 2 total
+End of script. Logfile hash: 00c59fa5cd, time: 0.13s, user: 0.15s, system: 0.02s, MEM: 51.81 MB peak
+Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 25% 1x techmap (0 sec), 24% 9x opt_clean (0 sec), ...

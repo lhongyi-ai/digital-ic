@@ -1,0 +1,9 @@
+init..
+cdone: low
+reset..
+cdone: high
+flash ID: 0xFF 0xEF 0x40 0x16 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+reading..
+                      addr 0x300000   0%                      addr 0x300100   6%                      addr 0x300200  12%                      addr 0x300300  18%                      addr 0x300400  25%                      addr 0x300500  31%                      addr 0x300600  37%                      addr 0x300700  43%                      addr 0x300800  50%                      addr 0x300900  56%                      addr 0x300A00  62%                      addr 0x300B00  68%                      addr 0x300C00  75%                      addr 0x300D00  81%                      addr 0x300E00  87%                      addr 0x300F00  93%                      done.
+cdone: high
+Bye.

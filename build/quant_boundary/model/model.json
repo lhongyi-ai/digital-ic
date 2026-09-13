@@ -1,0 +1,1010 @@
+{
+  "schema_version": 1,
+  "training_status": "trained_on_official_cwru",
+  "n": 1024,
+  "bins": [
+    80,
+    177,
+    188,
+    207,
+    300,
+    308,
+    315,
+    321,
+    328,
+    339,
+    346,
+    355,
+    439,
+    451,
+    457,
+    469
+  ],
+  "input_shift": 5,
+  "dft_shift": 20,
+  "feature_shifts": [
+    0,
+    1,
+    2,
+    3,
+    7,
+    8,
+    15,
+    16,
+    24,
+    30,
+    31,
+    32,
+    33,
+    34,
+    40,
+    63
+  ],
+  "class_names": [
+    "inner_race",
+    "outer_race",
+    "ball"
+  ],
+  "sample_rate_hz": 12000,
+  "raw_scale": {
+    "gain": 4915.122577220299,
+    "method": "32700 / maximum absolute TRAIN sample",
+    "train_max_absolute": 6.652936826347305,
+    "training_record_ids": [
+      105,
+      106,
+      118,
+      119,
+      130,
+      131,
+      169,
+      170,
+      185,
+      186,
+      197,
+      198,
+      209,
+      210,
+      222,
+      223,
+      234,
+      235
+    ],
+    "rounding": "nearest_ties_even",
+    "saturation": [
+      -32768,
+      32767
+    ]
+  },
+  "w1": [
+    [
+      -40,
+      40,
+      -24,
+      -41,
+      34,
+      18,
+      62,
+      1,
+      49,
+      39,
+      31,
+      21,
+      18,
+      37,
+      26,
+      -2
+    ],
+    [
+      26,
+      26,
+      29,
+      8,
+      -53,
+      13,
+      44,
+      20,
+      52,
+      32,
+      30,
+      23,
+      -31,
+      8,
+      16,
+      -112
+    ],
+    [
+      -2,
+      -2,
+      -1,
+      1,
+      -4,
+      -5,
+      -4,
+      -5,
+      -1,
+      -5,
+      -5,
+      0,
+      5,
+      -3,
+      -4,
+      -4
+    ],
+    [
+      -25,
+      -24,
+      -39,
+      -8,
+      48,
+      15,
+      11,
+      1,
+      13,
+      26,
+      18,
+      10,
+      28,
+      36,
+      26,
+      62
+    ],
+    [
+      -4,
+      -2,
+      -5,
+      -4,
+      -1,
+      0,
+      -2,
+      -4,
+      0,
+      -5,
+      -4,
+      1,
+      -2,
+      -2,
+      -1,
+      -4
+    ],
+    [
+      -25,
+      -12,
+      -31,
+      -20,
+      35,
+      14,
+      40,
+      3,
+      28,
+      30,
+      14,
+      9,
+      25,
+      34,
+      21,
+      33
+    ],
+    [
+      22,
+      31,
+      26,
+      13,
+      -60,
+      -7,
+      44,
+      16,
+      73,
+      37,
+      31,
+      19,
+      -68,
+      -22,
+      -29,
+      -112
+    ],
+    [
+      1,
+      0,
+      1,
+      -3,
+      -2,
+      -2,
+      -2,
+      1,
+      1,
+      -2,
+      3,
+      -2,
+      1,
+      -1,
+      -3,
+      -3
+    ],
+    [
+      25,
+      31,
+      21,
+      10,
+      -32,
+      19,
+      43,
+      17,
+      47,
+      35,
+      31,
+      20,
+      -8,
+      31,
+      22,
+      -89
+    ],
+    [
+      -36,
+      -19,
+      -38,
+      -12,
+      50,
+      16,
+      23,
+      -4,
+      17,
+      31,
+      23,
+      11,
+      25,
+      39,
+      29,
+      63
+    ],
+    [
+      -25,
+      -40,
+      -34,
+      -21,
+      -31,
+      -58,
+      -66,
+      -21,
+      -46,
+      -59,
+      -36,
+      -33,
+      1,
+      -33,
+      -16,
+      83
+    ],
+    [
+      -28,
+      -21,
+      -28,
+      -13,
+      49,
+      18,
+      -8,
+      1,
+      1,
+      18,
+      6,
+      -1,
+      34,
+      36,
+      29,
+      76
+    ],
+    [
+      4,
+      -4,
+      1,
+      0,
+      1,
+      -1,
+      1,
+      -4,
+      2,
+      4,
+      -1,
+      -3,
+      -3,
+      -1,
+      0,
+      0
+    ],
+    [
+      -26,
+      -42,
+      -32,
+      -13,
+      -19,
+      -26,
+      -62,
+      -13,
+      -52,
+      -65,
+      -44,
+      -30,
+      8,
+      -32,
+      -13,
+      94
+    ],
+    [
+      -1,
+      -5,
+      -2,
+      -4,
+      -6,
+      -5,
+      -5,
+      -1,
+      0,
+      1,
+      2,
+      -1,
+      0,
+      -3,
+      1,
+      -4
+    ],
+    [
+      -22,
+      -14,
+      -32,
+      -17,
+      29,
+      17,
+      16,
+      0,
+      15,
+      23,
+      12,
+      6,
+      20,
+      32,
+      18,
+      39
+    ]
+  ],
+  "b1": [
+    145,
+    689,
+    -682,
+    130,
+    -543,
+    61,
+    1380,
+    -488,
+    306,
+    110,
+    2571,
+    328,
+    -480,
+    3175,
+    -687,
+    125
+  ],
+  "hidden_shift": 8,
+  "w2": [
+    [
+      36,
+      70,
+      -1,
+      -126,
+      -9,
+      -55,
+      76,
+      5,
+      65,
+      -108,
+      -84,
+      -92,
+      -6,
+      -78,
+      -12,
+      -74
+    ],
+    [
+      73,
+      -45,
+      -6,
+      64,
+      -1,
+      72,
+      -53,
+      6,
+      -13,
+      80,
+      -22,
+      60,
+      7,
+      -29,
+      2,
+      66
+    ],
+    [
+      -83,
+      -75,
+      -8,
+      -51,
+      -6,
+      -79,
+      -108,
+      -8,
+      -74,
+      -50,
+      76,
+      -8,
+      -6,
+      80,
+      0,
+      -59
+    ]
+  ],
+  "b2": [
+    80,
+    -190,
+    287
+  ],
+  "scales": {
+    "input_scale": 0.0078125,
+    "input_exponent": -7,
+    "w1_scale": 0.0625,
+    "w1_exponent": -4,
+    "w2_scale": 0.03125,
+    "w2_exponent": -5,
+    "hidden_scale": 0.125,
+    "hidden_exponent": -3,
+    "logit_scale": 0.00390625,
+    "weight_granularity": "per_layer_power_of_two",
+    "zero_points": 0,
+    "rounding": "nearest_ties_even",
+    "hidden_saturation": [
+      0,
+      127
+    ],
+    "weights_range": [
+      -127,
+      127
+    ],
+    "output_tie_break": "lowest_class_index"
+  },
+  "data_provenance": {
+    "dataset": "CWRU official 12k DE, 36 records; no normal class",
+    "source_page": "https://engineering.case.edu/bearingdatacenter/12k-drive-end-bearing-fault-data",
+    "source_manifest_sha256": "cb638c4a0dbb7dd9e217eef5168d3fcd68275ff0a76335e7425a88ab79434588",
+    "records": [
+      {
+        "record_id": 105,
+        "split": "train",
+        "mat_key": "X105_DE_time",
+        "sha256": "f80b0ea04fd06b372a0eaec7c056543ea37e4bb4727a5b173d2a5bacd2aa9cab",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 106,
+        "split": "train",
+        "mat_key": "X106_DE_time",
+        "sha256": "e5cec7cdd138e6cd1deb9ed8634e5aaa9bc1bd7094ddc075bff606580eb6e883",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 107,
+        "split": "validation",
+        "mat_key": "X107_DE_time",
+        "sha256": "111ba8996a115684661a13c913bd74d8029a59294492f88aec7b03e175fdd388",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 108,
+        "split": "test",
+        "mat_key": "X108_DE_time",
+        "sha256": "d415f0e65128bfa0b118c2051c988fb0dc6ce3e4c8aa45fdc5ad1d0967462e7d",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 118,
+        "split": "train",
+        "mat_key": "X118_DE_time",
+        "sha256": "b00628f8dd8d1d930af77fa465d1e5cdb385fe259489053f91f3680bda7f640e",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 119,
+        "split": "train",
+        "mat_key": "X119_DE_time",
+        "sha256": "bc72d9df7668219e004a0f711232b23ec0aed393eb9bd8f9f5483426f6b51330",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 120,
+        "split": "validation",
+        "mat_key": "X120_DE_time",
+        "sha256": "e0b7a584c49af52335ff0904a97d4afcf02d045625c582de63a7c85ce10b489c",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 121,
+        "split": "test",
+        "mat_key": "X121_DE_time",
+        "sha256": "52f686e984ba8e9b04a047a57416271cdb322cee57ee105dce58926a24b966cb",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 130,
+        "split": "train",
+        "mat_key": "X130_DE_time",
+        "sha256": "35a095307d0971477049b343a1b5981dde465a58fb7f233ad89b035068c1717d",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 131,
+        "split": "train",
+        "mat_key": "X131_DE_time",
+        "sha256": "7883f7b83beadc54b2f301767f9145ce07055707182fb0278fdf0a6bb53ce3cb",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 132,
+        "split": "validation",
+        "mat_key": "X132_DE_time",
+        "sha256": "17a69ed5d2270b42532e678e35bbe2fa04a2cc413cf2bf9e88c7692de8662d18",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 133,
+        "split": "test",
+        "mat_key": "X133_DE_time",
+        "sha256": "53f076cb0d905cf46bffaee7736abce8224ffed777deed03c0c863d762a90c71",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 169,
+        "split": "train",
+        "mat_key": "X169_DE_time",
+        "sha256": "f5448673725c4ea2735fe7d3fe4b16ad82b217eac6b62c4bf351c4549b0a5229",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 170,
+        "split": "train",
+        "mat_key": "X170_DE_time",
+        "sha256": "bcb73a5208b67265468232a2e342f53719850901671d0ee28494f3af97621f46",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 171,
+        "split": "validation",
+        "mat_key": "X171_DE_time",
+        "sha256": "63d0fdc1a68e64610ddfaf56a9c224d6137ab7b5c0d318eea1d542b9e5ffc029",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 172,
+        "split": "test",
+        "mat_key": "X172_DE_time",
+        "sha256": "f75170ceef70d5da475671de0d2e52a0acd9b3883ad422b6deaf2907d888ba24",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 185,
+        "split": "train",
+        "mat_key": "X185_DE_time",
+        "sha256": "5bea2c60f177215ba3ec4ae287faf745d7e14aed1a12efe9e37b27c27044bafc",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 186,
+        "split": "train",
+        "mat_key": "X186_DE_time",
+        "sha256": "1b3b6f3ad38e891feaa8026fe957b34f62f9082785089cc74f6878acdfe88ec5",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 187,
+        "split": "validation",
+        "mat_key": "X187_DE_time",
+        "sha256": "0f1338cce89beb5c8d8e5e154579bc576354e7c7d1617ebd1759662c6f3100b2",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 188,
+        "split": "test",
+        "mat_key": "X188_DE_time",
+        "sha256": "1981614324d653c2522bea68fd4fd87e337495b117d12596db67abd1e10e7443",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 197,
+        "split": "train",
+        "mat_key": "X197_DE_time",
+        "sha256": "fa571b47cd942f9514a920b403fb7c053cd442bb2963a360a96d0f61432f03e9",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 198,
+        "split": "train",
+        "mat_key": "X198_DE_time",
+        "sha256": "dbd58e4585ca8f8332c708b15936987ec0990ca701359fd2483dae2719df5b49",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 199,
+        "split": "validation",
+        "mat_key": "X199_DE_time",
+        "sha256": "ca4e6407fdb68845a6973da6028477911a62d018580063749fe956441be95cf2",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 200,
+        "split": "test",
+        "mat_key": "X200_DE_time",
+        "sha256": "2526483d2701220a700df8e6c9db0c527641b0887225907f4096610dd7120f4b",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 209,
+        "split": "train",
+        "mat_key": "X209_DE_time",
+        "sha256": "9f723d6d9d2eba714c6dc50f99321dffa73d8b1e4d3605675b2c2251511eff80",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 210,
+        "split": "train",
+        "mat_key": "X210_DE_time",
+        "sha256": "596692397e77e129a00f7b7a61c4c3ffd6c7a59979b89039e7f70a7431cce1c7",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 211,
+        "split": "validation",
+        "mat_key": "X211_DE_time",
+        "sha256": "8296a02ee489c2d16cbd9fc278ca2e29b22475cec70ebe840558c78b6b743dc1",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 212,
+        "split": "test",
+        "mat_key": "X212_DE_time",
+        "sha256": "bfe13761f545a26b217db897a12d27e16fec74306aa86ade8dbdc8ebe587c253",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 222,
+        "split": "train",
+        "mat_key": "X222_DE_time",
+        "sha256": "fcc0ee740fa123b1f4683f555458891719efb2857afd9fdee63e8fde0ed14469",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 223,
+        "split": "train",
+        "mat_key": "X223_DE_time",
+        "sha256": "7287410fd2217e3b332c5ab4732a68963be046d7d17bd40efa41cabe6a0514e5",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 224,
+        "split": "validation",
+        "mat_key": "X224_DE_time",
+        "sha256": "8a16894c2ff4d6bcdb9f4c345c0d5f13737b3bd6d15015d6b566c86e7a3ee7b7",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 225,
+        "split": "test",
+        "mat_key": "X225_DE_time",
+        "sha256": "ece92fa141af03473fdfca80d00d9112472a20340224514e79979c6ddc97a6cf",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 234,
+        "split": "train",
+        "mat_key": "X234_DE_time",
+        "sha256": "ebcbdb96612e8085bbdbf81f0e5e8e8a8d1a693d1ec559c4894f7792771aa9b2",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 235,
+        "split": "train",
+        "mat_key": "X235_DE_time",
+        "sha256": "667e4bf1f213f92d10dca71d494ad002d8fd22bfd8004b31a4c71ccf0d764b66",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 236,
+        "split": "validation",
+        "mat_key": "X236_DE_time",
+        "sha256": "c411d6d9826cba8073430555dc833e05fcbe4c38535f3eb7f03c525ea6797589",
+        "sample_rate_hz": 12000
+      },
+      {
+        "record_id": 237,
+        "split": "test",
+        "mat_key": "X237_DE_time",
+        "sha256": "233d1edb2daa963658369119e389e30f02aca551dd7bb028ab33e7ba63edfd20",
+        "sample_rate_hz": 12000
+      }
+    ],
+    "window_length": 1024,
+    "window_stride": 1024,
+    "split_before_windowing": true,
+    "train_loads_hp": [
+      0,
+      1
+    ],
+    "validation_loads_hp": [
+      2
+    ],
+    "test_loads_hp": [
+      3
+    ],
+    "feature_selection_records": [
+      105,
+      106,
+      118,
+      119,
+      130,
+      131,
+      169,
+      170,
+      185,
+      186,
+      197,
+      198,
+      209,
+      210,
+      222,
+      223,
+      234,
+      235
+    ],
+    "feature_scale_method": "power-of-two shift from training 99.5th percentile / 120, lower-bounded at zero",
+    "selected_frequency_candidate": "train_fisher_separated",
+    "training_seed": 7,
+    "quantization_method": "PTQ"
+  },
+  "validation_metrics": {
+    "selected_frequency_candidate": "train_fisher_separated",
+    "selection_basis": "maximum validation macro-F1 among deployable 16-bin MLP models; offline band baseline excluded",
+    "floating_mlp": {
+      "accuracy": 0.8836772983114447,
+      "balanced_accuracy": 0.8836340138207522,
+      "macro_f1": 0.8813891853025244,
+      "per_class_recall": [
+        0.9887323943661972,
+        0.7323943661971831,
+        0.9297752808988764
+      ],
+      "confusion_matrix": [
+        [
+          351,
+          0,
+          4
+        ],
+        [
+          54,
+          260,
+          41
+        ],
+        [
+          25,
+          0,
+          331
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "floating_mlp_quantized_feature_input": {
+      "accuracy": 0.8808630393996247,
+      "balanced_accuracy": 0.8807933744790842,
+      "macro_f1": 0.8769176133472962,
+      "per_class_recall": [
+        0.9859154929577465,
+        0.7014084507042253,
+        0.9550561797752809
+      ],
+      "confusion_matrix": [
+        [
+          350,
+          0,
+          5
+        ],
+        [
+          53,
+          249,
+          53
+        ],
+        [
+          16,
+          0,
+          340
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "floating_frontend_floating_mlp": {
+      "accuracy": 0.8921200750469043,
+      "balanced_accuracy": 0.8920504299203461,
+      "macro_f1": 0.888670185278731,
+      "per_class_recall": [
+        0.9859154929577465,
+        0.723943661971831,
+        0.9662921348314607
+      ],
+      "confusion_matrix": [
+        [
+          350,
+          2,
+          3
+        ],
+        [
+          53,
+          257,
+          45
+        ],
+        [
+          12,
+          0,
+          344
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "ptq": {
+      "accuracy": 0.8714821763602252,
+      "balanced_accuracy": 0.8714274410507992,
+      "macro_f1": 0.8681619650899508,
+      "per_class_recall": [
+        0.9830985915492958,
+        0.7014084507042253,
+        0.9297752808988764
+      ],
+      "confusion_matrix": [
+        [
+          349,
+          0,
+          6
+        ],
+        [
+          53,
+          249,
+          53
+        ],
+        [
+          25,
+          0,
+          331
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "ptq_accuracy_drop_percentage_points": 1.2195121951219523,
+    "deployed_integer": {
+      "accuracy": 0.8714821763602252,
+      "balanced_accuracy": 0.8714274410507992,
+      "macro_f1": 0.8681619650899508,
+      "per_class_recall": [
+        0.9830985915492958,
+        0.7014084507042253,
+        0.9297752808988764
+      ],
+      "confusion_matrix": [
+        [
+          349,
+          0,
+          6
+        ],
+        [
+          53,
+          249,
+          53
+        ],
+        [
+          25,
+          0,
+          331
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "deployed_accuracy_drop_percentage_points": 1.2195121951219523,
+    "quantization_target_met_on_validation": true,
+    "qat": null,
+    "rms_three_leaf_threshold_baseline": {
+      "accuracy": 0.7551594746716698,
+      "balanced_accuracy": 0.755056179775281,
+      "macro_f1": 0.7505751372107999,
+      "per_class_recall": [
+        0.8394366197183099,
+        0.5605633802816902,
+        0.8651685393258427
+      ],
+      "confusion_matrix": [
+        [
+          298,
+          21,
+          36
+        ],
+        [
+          38,
+          199,
+          118
+        ],
+        [
+          48,
+          0,
+          308
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "linear": {
+      "accuracy": 0.8048780487804879,
+      "balanced_accuracy": 0.8048530885688665,
+      "macro_f1": 0.8001767289531072,
+      "per_class_recall": [
+        0.9408450704225352,
+        0.6422535211267606,
+        0.8314606741573034
+      ],
+      "confusion_matrix": [
+        [
+          334,
+          2,
+          19
+        ],
+        [
+          57,
+          228,
+          70
+        ],
+        [
+          14,
+          46,
+          296
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "integer_vs_float_feature_mean_abs_error": 0.0014054225041316105,
+    "feature_saturation_fraction_validation": 0.0004104127579737336
+  },
+  "verification_only": "deliberate quantizer boundary profile, not a trained evaluation model"
+}

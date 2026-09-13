@@ -1,0 +1,200 @@
+{
+  "source_coverage_report_sha256": "bb306a58b515a3181225640297ae6c15fa06244ccdd1db9daf56135985c25501",
+  "user_excluded_points": 0,
+  "direct_function_range_only": {
+    "file": "rtl/core/vibration_core.sv",
+    "inclusive_lines": [
+      138,
+      195
+    ],
+    "coverage": {
+      "branch": {
+        "hit_points": 6,
+        "total_points": 6,
+        "percent": 100.0
+      },
+      "expr": {
+        "hit_points": 10,
+        "total_points": 10,
+        "percent": 100.0
+      },
+      "line": {
+        "hit_points": 15,
+        "total_points": 15,
+        "percent": 100.0
+      },
+      "fsm_state": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "fsm_arc": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      },
+      "user": {
+        "hit_points": 0,
+        "total_points": 0,
+        "percent": null,
+        "status": "not instrumented; no coverage claim"
+      }
+    },
+    "scope": "6651 direct function vectors; never merged into full-core coverage"
+  },
+  "NN_accumulator_bound": {
+    "formula": "sum(abs(weights[row]))*127 + abs(bias[row]); legal activation range 0..127",
+    "models": {
+      "model": {
+        "layer1_worst_abs_accumulator_bound": 79152,
+        "layer2_worst_abs_accumulator_bound": 113999
+      },
+      "model_neighbor": {
+        "layer1_worst_abs_accumulator_bound": 70515,
+        "layer2_worst_abs_accumulator_bound": 88778
+      }
+    },
+    "INT32_MAX": 2147483647
+  },
+  "toggle_point_counts_for_selected_arrays": {
+    "l1_b1": {
+      "frequency_bins": 512,
+      "real_part": 512,
+      "imag_part": 512,
+      "raw0": 0,
+      "raw1": 0,
+      "windowed": 0
+    },
+    "l4_b1": {
+      "frequency_bins": 512,
+      "real_part": 512,
+      "imag_part": 512,
+      "raw0": 0,
+      "raw1": 0,
+      "windowed": 0
+    },
+    "l1_b3": {
+      "frequency_bins": 0,
+      "real_part": 0,
+      "imag_part": 0,
+      "raw0": 0,
+      "raw1": 0,
+      "windowed": 0
+    },
+    "l4_b3": {
+      "frequency_bins": 0,
+      "real_part": 0,
+      "imag_part": 0,
+      "raw0": 0,
+      "raw1": 0,
+      "windowed": 0
+    }
+  },
+  "gaps": [
+    {
+      "file": "rtl/core/vibration_core.sv",
+      "lines": [
+        279
+      ],
+      "classification": "missing directed protocol scenario",
+      "detail": "in_last on the first accepted sample is not exercised"
+    },
+    {
+      "file": "rtl/core/vibration_core.sv",
+      "lines": [
+        282,
+        283
+      ],
+      "classification": "missing directed protocol scenario",
+      "detail": "Missing last is exercised followed by a different frame ID; continuing to drain the SAME frame ID until a late last is not exercised"
+    },
+    {
+      "file": "rtl/core/vibration_core.sv",
+      "lines": [
+        88,
+        94
+      ],
+      "classification": "limited tag stimulus",
+      "detail": "Current frame IDs are small; upper ID bits and modulo-2^32 ID wrap are not covered"
+    },
+    {
+      "file": "rtl/core/vibration_core.sv",
+      "lines": [
+        144,
+        156,
+        157,
+        164,
+        165,
+        175,
+        179,
+        186,
+        187,
+        193
+      ],
+      "classification": "function guards or unused direct helper",
+      "detail": "Direct function harness exercises these arithmetic decisions; this does not demonstrate that a valid full DSP frame can reach every guard. power_quant is not the serial quantizer datapath"
+    },
+    {
+      "file": "rtl/core/vibration_core.sv",
+      "lines": [
+        368
+      ],
+      "classification": "frozen parameter range",
+      "detail": "Trained feature shifts are <=33; deliberate verification profile hits the >33 branch 69 times, reported separately"
+    },
+    {
+      "file": "rtl/core/vib_coeff_rom.sv",
+      "lines": [
+        33,
+        34
+      ],
+      "classification": "static parameter branch",
+      "detail": "HANN is constant per instance. The counter for the opposite constant alternative is retained, not waived"
+    },
+    {
+      "file": "rtl/core/vibration_core.sv",
+      "lines": [
+        345,
+        354,
+        388,
+        406,
+        410
+      ],
+      "classification": "static lane/band specialization",
+      "detail": "Some alternatives require LANES4 or BANDS3 and cannot fire in LANES1/BANDS1; variants are not merged to inflate a denominator"
+    },
+    {
+      "file": "rtl/core/vibration_core.sv",
+      "lines": [
+        401
+      ],
+      "classification": "outside frozen model legal accumulator bound",
+      "detail": "Both frozen NN layers have worst-case legal activation bounds far below INT32_MAX; this suite does not inject corrupted weights/biases"
+    },
+    {
+      "file": "rtl/core/vibration_core.sv",
+      "lines": [
+        424
+      ],
+      "classification": "illegal state recovery not fault-injected",
+      "detail": "Default case for state outside 0..23 is not reached. Reset tests do not prove illegal-state recovery or all FSM arcs"
+    },
+    {
+      "file": "rtl/core/vibration_core.sv",
+      "lines": [
+        430,
+        431,
+        432,
+        435,
+        437,
+        439,
+        441
+      ],
+      "classification": "configuration/invariant failure outcomes",
+      "detail": "Error outcomes are not normal positive functional coverage targets; assertions are enabled but no complete formal FSM proof is claimed"
+    }
+  ],
+  "functional_coverage_status": "No cover property/covergroup counters exist in the instrumented RTL; auto-FSM detector emitted zero points. Testcase pass counts are not HDL functional coverage percentages."
+}

@@ -1,0 +1,40 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc bitwuzla) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_60_255 at quant_harness.sv:60.9-60.74
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_58_247 at quant_harness.sv:58.9-58.54
+cover trace: engine_0/trace10.vcd
+cover trace: engine_0/trace10.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_51_211 at quant_harness.sv:51.9-51.59
+cover trace: engine_0/trace11.vcd
+cover trace: engine_0/trace11.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_49_199 at quant_harness.sv:49.9-49.57
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_59_251 at quant_harness.sv:59.9-59.51
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_57_243 at quant_harness.sv:57.9-57.52
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_61_259 at quant_harness.sv:61.9-61.78
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_50_205 at quant_harness.sv:50.9-50.56
+cover trace: engine_0/trace5.vcd
+cover trace: engine_0/trace5.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_56_239 at quant_harness.sv:56.9-56.52
+cover trace: engine_0/trace6.vcd
+cover trace: engine_0/trace6.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_55_235 at quant_harness.sv:55.9-55.50
+cover trace: engine_0/trace7.vcd
+cover trace: engine_0/trace7.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_52_217 at quant_harness.sv:52.9-52.58
+cover trace: engine_0/trace8.vcd
+cover trace: engine_0/trace8.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_54_229 at quant_harness.sv:54.9-54.71
+cover trace: engine_0/trace9.vcd
+cover trace: engine_0/trace9.yw
+  reached cover statement quant_functions_harness._witness_.check_cover_quant_harness_sv_53_223 at quant_harness.sv:53.9-53.75

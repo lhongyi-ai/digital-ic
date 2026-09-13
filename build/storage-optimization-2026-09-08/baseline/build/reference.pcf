@@ -1,0 +1,16 @@
+# UPduino v3.x reference only; not physically verified.
+# https://upduino.readthedocs.io/en/latest/features/specs.html
+# Requires the OSC jumper connecting the external 12 MHz oscillator to gpio_20.
+set_io clk12 20
+set_io flash_cs_n 16
+set_io flash_sclk 15
+set_io flash_mosi 17
+set_io flash_miso 14
+set_io sensor_cs_n 23
+set_io sensor_sclk 25
+set_io sensor_mosi 26
+set_io sensor_miso 27
+set_io sensor_drdy 32
+set_io status_done 21
+set_io status_error 12
+set_io status_running 13

@@ -1,0 +1,38 @@
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1789161083
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_known_core.stages_and_backpressure (1/2)
+  8911.00ns WARNING  cocotb.regression                  test_known_core.stages_and_backpressure failed
+                                                        Traceback (most recent call last):
+                                                          File "./sim/test_known_core.py", line 67, in trace
+                                                            assert actual==expected[key],(key,actual,expected[key]);seen.add(key)
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                        AssertionError: ((2, 0, 1), 250, -451)
+                                                        assert 250 == -451
+  8911.00ns INFO     cocotb.regression                  running test_known_core.reset_cancels_transactions (2/2)
+ 52336.00ns WARNING  cocotb.regression                  test_known_core.reset_cancels_transactions failed
+                                                        Traceback (most recent call last):
+                                                          File "./sim/test_known_core.py", line 90, in reset_cancels_transactions
+                                                            p=Path(os.environ['KNOWN_REPORT']);r=json.loads(p.read_text());r['reset_phases']=['input','processing','blocked_output'];p.write_text(json.dumps(r,indent=2))
+                                                                                                            ^^^^^^^^^^^^^
+                                                          File "/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1027, in read_text
+                                                            with self.open(mode='r', encoding=encoding, errors=errors) as f:
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+                                                            return io.open(self, mode, buffering, encoding, errors, newline)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                        FileNotFoundError: [Errno 2] No such file or directory: './build/known-core/small-l4-r2/report.json'
+ 52336.00ns INFO     cocotb.regression                  ****************************************************************************************************
+                                                        ** TEST                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************
+                                                        ** test_known_core.stages_and_backpressure      FAIL        8911.00           0.02     505858.93  **
+                                                        ** test_known_core.reset_cancels_transactions   FAIL       43425.00           0.01    7333755.53  **
+                                                        ****************************************************************************************************
+                                                        ** TESTS=2 PASS=0 FAIL=2 SKIP=0                            52336.00           0.03    1903557.03  **
+                                                        ****************************************************************************************************
+- :0: Verilog $finish

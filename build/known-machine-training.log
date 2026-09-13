@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "./scripts/train_known_machine_models.py", line 126, in <module>
+    with threadpool_limits(limits=2):main()
+                                     ^^^^^^
+  File "./scripts/train_known_machine_models.py", line 42, in main
+    assert audit['passed'] and audit['development_sha256']==sha(base/'development.json')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

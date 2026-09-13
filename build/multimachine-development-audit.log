@@ -1,0 +1,26 @@
+[
+  {
+    "held": "00",
+    "tp": 153,
+    "fp": 153,
+    "auc": 0.597890625,
+    "threshold": -3.9057754666135347,
+    "held_machine_used_for_calibration": false
+  },
+  {
+    "held": "02",
+    "tp": 149,
+    "fp": 152,
+    "auc": 0.541015625,
+    "threshold": 0.1100316280340744,
+    "held_machine_used_for_calibration": false
+  },
+  {
+    "held": "04",
+    "tp": 65,
+    "fp": 2,
+    "auc": 0.8336328125,
+    "threshold": 0.9330745516318055,
+    "held_machine_used_for_calibration": false
+  }
+]

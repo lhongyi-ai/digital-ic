@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibfpga"
+version = "0.1.0"
+description = "Bit-exact vibration DSP and INT8 inference on iCE40UP5K"
+requires-python = ">=3.12"
+dependencies = ["numpy", "scipy", "torch", "scikit-learn", "matplotlib"]
+
+[project.optional-dependencies]
+test = ["pytest", "cocotb"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

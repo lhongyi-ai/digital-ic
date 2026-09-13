@@ -1,0 +1,485 @@
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] Removing directory './build/formal/fifo_bmc_d4'.
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] Copy './formal/../rtl/core/sync_fifo.sv' to './build/formal/fifo_bmc_d4/src/sync_fifo.sv'.
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] Copy './formal/fifo_harness.sv' to './build/formal/fifo_bmc_d4/src/fifo_harness.sv'.
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: abc bmc3
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] base: starting process "cd ./build/formal/fifo_bmc_d4/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] base: finished (returncode=0)
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] prep: starting process "cd ./build/formal/fifo_bmc_d4/model; yosys -ql design_prep.log design_prep.ys"
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] prep: finished (returncode=0)
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] aig: starting process "cd ./build/formal/fifo_bmc_d4/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] aig: Warning: Treating undriven bit fifo_harness.\clk like $anyseq.
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] aig: Warning: Treating a total of 1 undriven bits in fifo_harness like $anyseq.
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] aig: finished (returncode=0)
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: starting process "cd ./build/formal/fifo_bmc_d4; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw'"
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: ======== ABC command line "read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw"
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: Running "bmc3". PI/PO/Reg = 168/13/132. And =   1204. Lev =    16. ObjNums =   821.
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: Params: FramesMax = 64. Start = 0. ConfLimit = 0. TimeOut = 0. SolveAll = 0.
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 0 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 1 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 2 + : Var =     581. Cla =     1363. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 3 + : Var =    1011. Cla =     2523. Conf =     38. Learn =     35.    0 MB   4 MB     0.01 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 4 + : Var =    1441. Cla =     3683. Conf =    216. Learn =    205.    0 MB   4 MB     0.01 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 5 + : Var =    1871. Cla =     4843. Conf =    577. Learn =    558.    0 MB   4 MB     0.01 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 6 + : Var =    2301. Cla =     6003. Conf =   1168. Learn =   1141.    0 MB   4 MB     0.01 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 7 + : Var =    2731. Cla =     7163. Conf =   2145. Learn =   2110.    0 MB   4 MB     0.02 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 8 + : Var =    3161. Cla =     8323. Conf =   3472. Learn =   3429.    0 MB   4 MB     0.03 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 9 + : Var =    3591. Cla =     9483. Conf =   5494. Learn =   5443.    0 MB   4 MB     0.05 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 10 + : Var =    4021. Cla =    10643. Conf =   9145. Learn =   9086.    0 MB   6 MB     0.09 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 11 + : Var =    4451. Cla =    11803. Conf =  12949. Learn =  10892.    0 MB   6 MB     0.14 sec
+SBY 19:34:16 [./build/formal/fifo_bmc_d4] engine_0: 12 + : Var =    4881. Cla =    12963. Conf =  18879. Learn =  11643.    0 MB   6 MB     0.22 sec
+SBY 19:34:17 [./build/formal/fifo_bmc_d4] engine_0: 13 + : Var =    5311. Cla =    14123. Conf =  29325. Learn =  15304.    0 MB   7 MB     0.39 sec
+SBY 19:34:17 [./build/formal/fifo_bmc_d4] engine_0: 14 + : Var =    5741. Cla =    15283. Conf =  37523. Learn =  19414.    0 MB   7 MB     0.52 sec
+SBY 19:34:17 [./build/formal/fifo_bmc_d4] engine_0: 15 + : Var =    6171. Cla =    16443. Conf =  43853. Learn =  21384.    0 MB   8 MB     0.63 sec
+SBY 19:34:17 [./build/formal/fifo_bmc_d4] engine_0: 16 + : Var =    6601. Cla =    17603. Conf =  51602. Learn =  24319.    0 MB   8 MB     0.77 sec
+SBY 19:34:17 [./build/formal/fifo_bmc_d4] engine_0: 17 + : Var =    7031. Cla =    18763. Conf =  60325. Learn =  27600.    0 MB  10 MB     0.94 sec
+SBY 19:34:17 [./build/formal/fifo_bmc_d4] engine_0: 18 + : Var =    7461. Cla =    19923. Conf =  70755. Learn =  26459.    0 MB   9 MB     1.14 sec
+SBY 19:34:18 [./build/formal/fifo_bmc_d4] engine_0: 19 + : Var =    7891. Cla =    21083. Conf =  81465. Learn =  30751.    0 MB  10 MB     1.35 sec
+SBY 19:34:18 [./build/formal/fifo_bmc_d4] engine_0: 20 + : Var =    8321. Cla =    22243. Conf =  92658. Learn =  34740.    0 MB  11 MB     1.58 sec
+SBY 19:34:18 [./build/formal/fifo_bmc_d4] engine_0: 21 + : Var =    8751. Cla =    23403. Conf = 104228. Learn =  37490.    0 MB  12 MB     1.82 sec
+SBY 19:34:18 [./build/formal/fifo_bmc_d4] engine_0: 22 + : Var =    9181. Cla =    24563. Conf = 115854. Learn =  31640.    0 MB  11 MB     2.07 sec
+SBY 19:34:19 [./build/formal/fifo_bmc_d4] engine_0: 23 + : Var =    9611. Cla =    25723. Conf = 127825. Learn =  34416.    0 MB  12 MB     2.36 sec
+SBY 19:34:19 [./build/formal/fifo_bmc_d4] engine_0: 24 + : Var =   10041. Cla =    26883. Conf = 140621. Learn =  37921.    0 MB  12 MB     2.65 sec
+SBY 19:34:19 [./build/formal/fifo_bmc_d4] engine_0: 25 + : Var =   10471. Cla =    28043. Conf = 154024. Learn =  41751.    0 MB  13 MB     2.98 sec
+SBY 19:34:20 [./build/formal/fifo_bmc_d4] engine_0: 26 + : Var =   10901. Cla =    29203. Conf = 169158. Learn =  47269.    0 MB  15 MB     3.36 sec
+SBY 19:34:20 [./build/formal/fifo_bmc_d4] engine_0: 27 + : Var =   11331. Cla =    30363. Conf = 184432. Learn =  36940.    0 MB  12 MB     3.75 sec
+SBY 19:34:20 [./build/formal/fifo_bmc_d4] engine_0: 28 + : Var =   11761. Cla =    31523. Conf = 199068. Learn =  51568.    0 MB  17 MB     4.11 sec
+SBY 19:34:21 [./build/formal/fifo_bmc_d4] engine_0: 29 + : Var =   12191. Cla =    32683. Conf = 214469. Learn =  39639.    0 MB  13 MB     4.52 sec
+SBY 19:34:21 [./build/formal/fifo_bmc_d4] engine_0: 30 + : Var =   12621. Cla =    33843. Conf = 232478. Learn =  57640.    0 MB  18 MB     4.97 sec
+SBY 19:34:22 [./build/formal/fifo_bmc_d4] engine_0: 31 + : Var =   13051. Cla =    35003. Conf = 248255. Learn =  45737.    0 MB  15 MB     5.42 sec
+SBY 19:34:22 [./build/formal/fifo_bmc_d4] engine_0: 32 + : Var =   13481. Cla =    36163. Conf = 264914. Learn =  49975.    0 MB  18 MB     5.90 sec
+SBY 19:34:23 [./build/formal/fifo_bmc_d4] engine_0: 33 + : Var =   13911. Cla =    37323. Conf = 281187. Learn =  51572.    0 MB  18 MB     6.37 sec
+SBY 19:34:23 [./build/formal/fifo_bmc_d4] engine_0: 34 + : Var =   14341. Cla =    38483. Conf = 305580. Learn =  57886.    0 MB  20 MB     7.06 sec
+SBY 19:34:24 [./build/formal/fifo_bmc_d4] engine_0: 35 + : Var =   14771. Cla =    39643. Conf = 326974. Learn =  60788.    0 MB  20 MB     7.66 sec
+SBY 19:34:25 [./build/formal/fifo_bmc_d4] engine_0: 36 + : Var =   15201. Cla =    40803. Conf = 346434. Learn =  61369.    0 MB  21 MB     8.26 sec
+SBY 19:34:25 [./build/formal/fifo_bmc_d4] engine_0: 37 + : Var =   15631. Cla =    41963. Conf = 369335. Learn =  64958.    0 MB  22 MB     9.00 sec
+SBY 19:34:26 [./build/formal/fifo_bmc_d4] engine_0: 38 + : Var =   16061. Cla =    43123. Conf = 390221. Learn =  66988.    0 MB  23 MB     9.68 sec
+SBY 19:34:27 [./build/formal/fifo_bmc_d4] engine_0: 39 + : Var =   16491. Cla =    44283. Conf = 413079. Learn =  71099.    0 MB  24 MB    10.56 sec
+SBY 19:34:28 [./build/formal/fifo_bmc_d4] engine_0: 40 + : Var =   16921. Cla =    45443. Conf = 437386. Learn =  76818.    0 MB  27 MB    11.42 sec
+SBY 19:34:29 [./build/formal/fifo_bmc_d4] engine_0: 41 + : Var =   17351. Cla =    46603. Conf = 462241. Learn =  62928.    0 MB  22 MB    12.33 sec
+SBY 19:34:30 [./build/formal/fifo_bmc_d4] engine_0: 42 + : Var =   17781. Cla =    47763. Conf = 487244. Learn =  68927.    0 MB  24 MB    13.26 sec
+SBY 19:34:31 [./build/formal/fifo_bmc_d4] engine_0: 43 + : Var =   18211. Cla =    48923. Conf = 513038. Learn =  75346.    0 MB  26 MB    14.24 sec
+SBY 19:34:31 [./build/formal/fifo_bmc_d4] engine_0: 44 + : Var =   18641. Cla =    50083. Conf = 536353. Learn =  79710.    0 MB  28 MB    15.14 sec
+SBY 19:34:32 [./build/formal/fifo_bmc_d4] engine_0: 45 + : Var =   19071. Cla =    51243. Conf = 562022. Learn =  86652.    0 MB  30 MB    16.10 sec
+SBY 19:34:34 [./build/formal/fifo_bmc_d4] engine_0: 46 + : Var =   19501. Cla =    52403. Conf = 593797. Learn =  80477.    0 MB  28 MB    17.33 sec
+SBY 19:34:35 [./build/formal/fifo_bmc_d4] engine_0: 47 + : Var =   19931. Cla =    53563. Conf = 624410. Learn =  91112.    0 MB  33 MB    18.50 sec
+SBY 19:34:36 [./build/formal/fifo_bmc_d4] engine_0: 48 + : Var =   20361. Cla =    54723. Conf = 657302. Learn =  76532.    0 MB  25 MB    19.82 sec
+SBY 19:34:38 [./build/formal/fifo_bmc_d4] engine_0: 49 + : Var =   20791. Cla =    55883. Conf = 695245. Learn =  85281.    0 MB  30 MB    21.30 sec
+SBY 19:34:39 [./build/formal/fifo_bmc_d4] engine_0: 50 + : Var =   21221. Cla =    57043. Conf = 727238. Learn =  87721.    0 MB  31 MB    22.62 sec
+SBY 19:34:41 [./build/formal/fifo_bmc_d4] engine_0: 51 + : Var =   21651. Cla =    58203. Conf = 769598. Learn = 100766.    0 MB  38 MB    24.35 sec
+SBY 19:34:43 [./build/formal/fifo_bmc_d4] engine_0: 52 + : Var =   22081. Cla =    59363. Conf = 811095. Learn =  86049.    0 MB  29 MB    26.19 sec
+SBY 19:34:44 [./build/formal/fifo_bmc_d4] engine_0: 53 + : Var =   22511. Cla =    60523. Conf = 847063. Learn =  91312.    0 MB  31 MB    27.77 sec
+SBY 19:34:46 [./build/formal/fifo_bmc_d4] engine_0: 54 + : Var =   22941. Cla =    61683. Conf = 887548. Learn = 102696.    0 MB  37 MB    29.55 sec
+SBY 19:34:48 [./build/formal/fifo_bmc_d4] engine_0: 55 + : Var =   23371. Cla =    62843. Conf = 927198. Learn = 113159.    0 MB  42 MB    31.49 sec
+SBY 19:34:50 [./build/formal/fifo_bmc_d4] engine_0: 56 + : Var =   23801. Cla =    64003. Conf = 971828. Learn = 100056.    0 MB  35 MB    33.93 sec
+SBY 19:34:52 [./build/formal/fifo_bmc_d4] engine_0: 57 + : Var =   24231. Cla =    65163. Conf =1010866. Learn = 110434.    0 MB  41 MB    35.92 sec
+SBY 19:34:54 [./build/formal/fifo_bmc_d4] engine_0: 58 + : Var =   24661. Cla =    66323. Conf =1050904. Learn = 120163.    0 MB  45 MB    37.95 sec
+SBY 19:34:57 [./build/formal/fifo_bmc_d4] engine_0: 59 + : Var =   25091. Cla =    67483. Conf =1093438. Learn = 104085.    0 MB  36 MB    40.28 sec
+SBY 19:34:59 [./build/formal/fifo_bmc_d4] engine_0: 60 + : Var =   25521. Cla =    68643. Conf =1138151. Learn = 120580.    0 MB  46 MB    42.64 sec
+SBY 19:35:01 [./build/formal/fifo_bmc_d4] engine_0: 61 + : Var =   25951. Cla =    69803. Conf =1183081. Learn =  96086.    0 MB  35 MB    44.84 sec
+SBY 19:35:04 [./build/formal/fifo_bmc_d4] engine_0: 62 + : Var =   26381. Cla =    70963. Conf =1244299. Learn = 117970.    0 MB  47 MB    47.70 sec
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] engine_0: 63 + : Var =   26811. Cla =    72123. Conf =1300102. Learn = 133528.    0 MB  56 MB    50.47 sec
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] engine_0: Runtime:  CNF = 0.0 sec (0.0 %)  UNSAT = 50.4 sec (100.0 %)  SAT = 0.0 sec (0.0 %)  UNDEC = 0.0 sec (0.0 %)
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] engine_0: LStart(P) = 10000  LDelta(Q) = 2000  LRatio(R) = 80  ReduceDB = 65  Vars = 26811  Used = 26809 (99.99 %)
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] engine_0: Buffs = 7098. Dups = 0.   Hash hits = 0.  Hash misses = 16297.  UniProps = 0.
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] engine_0: No output asserted in 64 frames. Resource limit reached (conf limit 0). Time =    50.47 sec
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] engine_0: Counter-example is not available.
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] engine_0: finished (returncode=0)
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] engine_0: Status returned by engine: PASS
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:50 (50)
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:50 (50)
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] summary: engine_0 (abc bmc3) returned PASS
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] summary: engine_0 did not produce any traces
+SBY 19:35:07 [./build/formal/fifo_bmc_d4] DONE (PASS, rc=0)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] Removing directory './build/formal/fifo_cover_d4'.
+SBY 19:35:07 [./build/formal/fifo_cover_d4] Copy './formal/../rtl/core/sync_fifo.sv' to './build/formal/fifo_cover_d4/src/sync_fifo.sv'.
+SBY 19:35:07 [./build/formal/fifo_cover_d4] Copy './formal/fifo_harness.sv' to './build/formal/fifo_cover_d4/src/fifo_harness.sv'.
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: smtbmc bitwuzla
+SBY 19:35:07 [./build/formal/fifo_cover_d4] base: starting process "cd ./build/formal/fifo_cover_d4/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 19:35:07 [./build/formal/fifo_cover_d4] base: finished (returncode=0)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] prep: starting process "cd ./build/formal/fifo_cover_d4/model; yosys -ql design_prep.log design_prep.ys"
+SBY 19:35:07 [./build/formal/fifo_cover_d4] prep: finished (returncode=0)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] smt2: starting process "cd ./build/formal/fifo_cover_d4/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 19:35:07 [./build/formal/fifo_cover_d4] smt2: finished (returncode=0)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: starting process "cd ./build/formal/fifo_cover_d4; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 64  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Reached cover statement in step 4 at fifo_harness: fifo_harness.sv:90.9-90.71 (_witness_.check_cover_fifo_harness_sv_90_218)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Reached cover statement in step 6 at fifo_harness: fifo_harness.sv:86.9-86.56 (_witness_.check_cover_fifo_harness_sv_86_194)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Reached cover statement in step 6 at fifo_harness: fifo_harness.sv:87.9-87.71 (_witness_.check_cover_fifo_harness_sv_87_199)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Reached cover statement in step 8 at fifo_harness: fifo_harness.sv:88.9-88.65 (_witness_.check_cover_fifo_harness_sv_88_206)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Checking cover reachability in step 14..
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Reached cover statement in step 14 at fifo_harness: fifo_harness.sv:89.9-89.74 (_witness_.check_cover_fifo_harness_sv_89_212)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: ##   0:00:00  Status: passed
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: finished (returncode=0)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] engine_0: Status returned by engine: pass
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary: cover trace: ./build/formal/fifo_cover_d4/engine_0/trace0.vcd
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_90_218 at fifo_harness.sv:90.9-90.71 step 4
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary: cover trace: ./build/formal/fifo_cover_d4/engine_0/trace1.vcd
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_86_194 at fifo_harness.sv:86.9-86.56 step 6
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_87_199 at fifo_harness.sv:87.9-87.71 step 6
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary: cover trace: ./build/formal/fifo_cover_d4/engine_0/trace2.vcd
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_88_206 at fifo_harness.sv:88.9-88.65 step 8
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary: cover trace: ./build/formal/fifo_cover_d4/engine_0/trace3.vcd
+SBY 19:35:07 [./build/formal/fifo_cover_d4] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_89_212 at fifo_harness.sv:89.9-89.74 step 14
+SBY 19:35:07 [./build/formal/fifo_cover_d4] DONE (PASS, rc=0)
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] Removing directory './build/formal/fifo_bmc_d1'.
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] Copy './formal/../rtl/core/sync_fifo.sv' to './build/formal/fifo_bmc_d1/src/sync_fifo.sv'.
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] Copy './formal/fifo_harness.sv' to './build/formal/fifo_bmc_d1/src/fifo_harness.sv'.
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] engine_0: abc bmc3
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] base: starting process "cd ./build/formal/fifo_bmc_d1/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] base: finished (returncode=0)
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] prep: starting process "cd ./build/formal/fifo_bmc_d1/model; yosys -ql design_prep.log design_prep.ys"
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] prep: finished (returncode=0)
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] aig: starting process "cd ./build/formal/fifo_bmc_d1/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] aig: Warning: Treating undriven bit fifo_harness.\clk like $anyseq.
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] aig: Warning: Treating a total of 1 undriven bits in fifo_harness like $anyseq.
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] aig: finished (returncode=0)
+SBY 19:35:07 [./build/formal/fifo_bmc_d1] engine_0: starting process "cd ./build/formal/fifo_bmc_d1; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw'"
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: ======== ABC command line "read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw"
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: Running "bmc3". PI/PO/Reg = 106/13/73. And =    583. Lev =    11. ObjNums =   425.
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: Params: FramesMax = 64. Start = 0. ConfLimit = 0. TimeOut = 0. SolveAll = 0.
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 0 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 1 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 2 + : Var =     240. Cla =      539. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 3 + : Var =     434. Cla =     1065. Conf =     39. Learn =     35.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 4 + : Var =     628. Cla =     1591. Conf =    163. Learn =    153.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 5 + : Var =     822. Cla =     2117. Conf =    287. Learn =    271.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 6 + : Var =    1016. Cla =     2643. Conf =    418. Learn =    396.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 7 + : Var =    1210. Cla =     3169. Conf =    545. Learn =    517.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 8 + : Var =    1404. Cla =     3695. Conf =    659. Learn =    625.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 9 + : Var =    1598. Cla =     4221. Conf =    789. Learn =    749.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 10 + : Var =    1792. Cla =     4747. Conf =    903. Learn =    857.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 11 + : Var =    1986. Cla =     5273. Conf =   1027. Learn =    975.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 12 + : Var =    2180. Cla =     5799. Conf =   1152. Learn =   1094.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 13 + : Var =    2374. Cla =     6325. Conf =   1269. Learn =   1205.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 14 + : Var =    2568. Cla =     6851. Conf =   1383. Learn =   1313.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 15 + : Var =    2762. Cla =     7377. Conf =   1496. Learn =   1420.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 16 + : Var =    2956. Cla =     7903. Conf =   1615. Learn =   1533.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 17 + : Var =    3150. Cla =     8429. Conf =   1736. Learn =   1648.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 18 + : Var =    3344. Cla =     8955. Conf =   1850. Learn =   1756.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 19 + : Var =    3538. Cla =     9481. Conf =   1962. Learn =   1862.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 20 + : Var =    3732. Cla =    10007. Conf =   2084. Learn =   1978.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 21 + : Var =    3926. Cla =    10533. Conf =   2206. Learn =   2094.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 22 + : Var =    4120. Cla =    11059. Conf =   2333. Learn =   2215.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 23 + : Var =    4314. Cla =    11585. Conf =   2463. Learn =   2339.    0 MB   4 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 24 + : Var =    4508. Cla =    12111. Conf =   2592. Learn =   2462.    0 MB   4 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 25 + : Var =    4702. Cla =    12637. Conf =   2704. Learn =   2568.    0 MB   4 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 26 + : Var =    4896. Cla =    13163. Conf =   2820. Learn =   2678.    0 MB   4 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 27 + : Var =    5090. Cla =    13689. Conf =   2933. Learn =   2785.    0 MB   4 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 28 + : Var =    5284. Cla =    14215. Conf =   3067. Learn =   2913.    0 MB   4 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 29 + : Var =    5478. Cla =    14741. Conf =   3180. Learn =   3020.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 30 + : Var =    5672. Cla =    15267. Conf =   3306. Learn =   3140.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 31 + : Var =    5866. Cla =    15793. Conf =   3418. Learn =   3246.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 32 + : Var =    6060. Cla =    16319. Conf =   3534. Learn =   3356.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 33 + : Var =    6254. Cla =    16845. Conf =   3646. Learn =   3462.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 34 + : Var =    6448. Cla =    17371. Conf =   3768. Learn =   3578.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 35 + : Var =    6642. Cla =    17897. Conf =   3895. Learn =   3699.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 36 + : Var =    6836. Cla =    18423. Conf =   4023. Learn =   3821.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 37 + : Var =    7030. Cla =    18949. Conf =   4141. Learn =   3933.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 38 + : Var =    7224. Cla =    19475. Conf =   4256. Learn =   4042.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 39 + : Var =    7418. Cla =    20001. Conf =   4369. Learn =   4149.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 40 + : Var =    7612. Cla =    20527. Conf =   4493. Learn =   4267.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 41 + : Var =    7806. Cla =    21053. Conf =   4614. Learn =   4382.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 42 + : Var =    8000. Cla =    21579. Conf =   4728. Learn =   4490.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 43 + : Var =    8194. Cla =    22105. Conf =   4841. Learn =   4597.    0 MB   5 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 44 + : Var =    8388. Cla =    22631. Conf =   4968. Learn =   4718.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 45 + : Var =    8582. Cla =    23157. Conf =   5090. Learn =   4834.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 46 + : Var =    8776. Cla =    23683. Conf =   5204. Learn =   4942.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 47 + : Var =    8970. Cla =    24209. Conf =   5323. Learn =   5055.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 48 + : Var =    9164. Cla =    24735. Conf =   5437. Learn =   5163.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 49 + : Var =    9358. Cla =    25261. Conf =   5563. Learn =   5283.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 50 + : Var =    9552. Cla =    25787. Conf =   5676. Learn =   5390.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 51 + : Var =    9746. Cla =    26313. Conf =   5809. Learn =   5517.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 52 + : Var =    9940. Cla =    26839. Conf =   5923. Learn =   5625.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 53 + : Var =   10134. Cla =    27365. Conf =   6049. Learn =   5745.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 54 + : Var =   10328. Cla =    27891. Conf =   6163. Learn =   5853.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 55 + : Var =   10522. Cla =    28417. Conf =   6287. Learn =   5971.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 56 + : Var =   10716. Cla =    28943. Conf =   6402. Learn =   6080.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 57 + : Var =   10910. Cla =    29469. Conf =   6526. Learn =   6198.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 58 + : Var =   11104. Cla =    29995. Conf =   6649. Learn =   6315.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 59 + : Var =   11298. Cla =    30521. Conf =   6777. Learn =   6437.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 60 + : Var =   11492. Cla =    31047. Conf =   6891. Learn =   6545.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 61 + : Var =   11686. Cla =    31573. Conf =   7003. Learn =   6651.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 62 + : Var =   11880. Cla =    32099. Conf =   7128. Learn =   6770.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: 63 + : Var =   12074. Cla =    32625. Conf =   7256. Learn =   6892.    0 MB   5 MB     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: Runtime:  CNF = 0.0 sec (8.3 %)  UNSAT = 0.0 sec (59.3 %)  SAT = 0.0 sec (0.0 %)  UNDEC = 0.0 sec (0.0 %)
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: LStart(P) = 10000  LDelta(Q) = 2000  LRatio(R) = 80  ReduceDB = 0  Vars = 12074  Used = 11705 (96.94 %)
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: Buffs = 3446. Dups = 0.   Hash hits = 0.  Hash misses = 6452.  UniProps = 0.
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: No output asserted in 64 frames. Resource limit reached (conf limit 0). Time =     0.03 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: Counter-example is not available.
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] engine_0: Status returned by engine: PASS
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] summary: engine_0 (abc bmc3) returned PASS
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] summary: engine_0 did not produce any traces
+SBY 19:35:08 [./build/formal/fifo_bmc_d1] DONE (PASS, rc=0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] Removing directory './build/formal/fifo_cover_d1'.
+SBY 19:35:08 [./build/formal/fifo_cover_d1] Copy './formal/../rtl/core/sync_fifo.sv' to './build/formal/fifo_cover_d1/src/sync_fifo.sv'.
+SBY 19:35:08 [./build/formal/fifo_cover_d1] Copy './formal/fifo_harness.sv' to './build/formal/fifo_cover_d1/src/fifo_harness.sv'.
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: smtbmc bitwuzla
+SBY 19:35:08 [./build/formal/fifo_cover_d1] base: starting process "cd ./build/formal/fifo_cover_d1/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 19:35:08 [./build/formal/fifo_cover_d1] base: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] prep: starting process "cd ./build/formal/fifo_cover_d1/model; yosys -ql design_prep.log design_prep.ys"
+SBY 19:35:08 [./build/formal/fifo_cover_d1] prep: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] smt2: starting process "cd ./build/formal/fifo_cover_d1/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 19:35:08 [./build/formal/fifo_cover_d1] smt2: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: starting process "cd ./build/formal/fifo_cover_d1; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 64  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 3 at fifo_harness: fifo_harness.sv:86.9-86.56 (_witness_.check_cover_fifo_harness_sv_86_194)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 3 at fifo_harness: fifo_harness.sv:87.9-87.71 (_witness_.check_cover_fifo_harness_sv_87_199)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 4 at fifo_harness: fifo_harness.sv:90.9-90.71 (_witness_.check_cover_fifo_harness_sv_90_218)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 4 at fifo_harness: fifo_harness.sv:88.9-88.65 (_witness_.check_cover_fifo_harness_sv_88_206)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Reached cover statement in step 5 at fifo_harness: fifo_harness.sv:89.9-89.74 (_witness_.check_cover_fifo_harness_sv_89_212)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: ##   0:00:00  Status: passed
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] engine_0: Status returned by engine: pass
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: cover trace: ./build/formal/fifo_cover_d1/engine_0/trace0.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_86_194 at fifo_harness.sv:86.9-86.56 step 3
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_87_199 at fifo_harness.sv:87.9-87.71 step 3
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: cover trace: ./build/formal/fifo_cover_d1/engine_0/trace1.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_90_218 at fifo_harness.sv:90.9-90.71 step 4
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: cover trace: ./build/formal/fifo_cover_d1/engine_0/trace2.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_88_206 at fifo_harness.sv:88.9-88.65 step 4
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary: cover trace: ./build/formal/fifo_cover_d1/engine_0/trace3.vcd
+SBY 19:35:08 [./build/formal/fifo_cover_d1] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_89_212 at fifo_harness.sv:89.9-89.74 step 5
+SBY 19:35:08 [./build/formal/fifo_cover_d1] DONE (PASS, rc=0)
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] Removing directory './build/formal/fifo_bmc_d3'.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] Copy './formal/../rtl/core/sync_fifo.sv' to './build/formal/fifo_bmc_d3/src/sync_fifo.sv'.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] Copy './formal/fifo_harness.sv' to './build/formal/fifo_bmc_d3/src/fifo_harness.sv'.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: abc bmc3
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] base: starting process "cd ./build/formal/fifo_bmc_d3/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] base: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] prep: starting process "cd ./build/formal/fifo_bmc_d3/model; yosys -ql design_prep.log design_prep.ys"
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] prep: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: starting process "cd ./build/formal/fifo_bmc_d3/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.\clk like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [0] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [1] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [2] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [3] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [4] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [5] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [6] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [7] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [8] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [9] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [10] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [11] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [12] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [13] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [14] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating undriven bit fifo_harness.$memory\dut.mem$rdmux[0][1][1]$b$1315 [15] like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: Warning: Treating a total of 17 undriven bits in fifo_harness like $anyseq.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] aig: finished (returncode=0)
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: starting process "cd ./build/formal/fifo_bmc_d3; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw'"
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: ======== ABC command line "read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 64 -v; write_cex -a engine_0/trace.aiw"
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: Running "bmc3". PI/PO/Reg = 165/13/112. And =   1042. Lev =    14. ObjNums =   725.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: Params: FramesMax = 64. Start = 0. ConfLimit = 0. TimeOut = 0. SolveAll = 0.
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 0 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 1 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 2 + : Var =     539. Cla =     1209. Conf =      2. Learn =      1.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 3 + : Var =     932. Cla =     2220. Conf =     43. Learn =     38.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 4 + : Var =    1325. Cla =     3231. Conf =    208. Learn =    197.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 5 + : Var =    1718. Cla =     4242. Conf =    562. Learn =    544.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 6 + : Var =    2111. Cla =     5253. Conf =   1089. Learn =   1064.    0 MB   4 MB     0.01 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 7 + : Var =    2504. Cla =     6264. Conf =   1943. Learn =   1911.    0 MB   4 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 8 + : Var =    2897. Cla =     7275. Conf =   3111. Learn =   3073.    0 MB   4 MB     0.02 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 9 + : Var =    3290. Cla =     8286. Conf =   4788. Learn =   4743.    0 MB   4 MB     0.04 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 10 + : Var =    3683. Cla =     9297. Conf =   7299. Learn =   7247.    0 MB   5 MB     0.06 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 11 + : Var =    4076. Cla =    10308. Conf =  11563. Learn =   9513.    0 MB   6 MB     0.11 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 12 + : Var =    4469. Cla =    11319. Conf =  16227. Learn =  11781.    0 MB   6 MB     0.17 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 13 + : Var =    4862. Cla =    12330. Conf =  21403. Learn =  14174.    0 MB   6 MB     0.23 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 14 + : Var =    5255. Cla =    13341. Conf =  26443. Learn =  16000.    0 MB   7 MB     0.30 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 15 + : Var =    5648. Cla =    14352. Conf =  32111. Learn =  18117.    0 MB   7 MB     0.38 sec
+SBY 19:35:08 [./build/formal/fifo_bmc_d3] engine_0: 16 + : Var =    6041. Cla =    15363. Conf =  37476. Learn =  19445.    0 MB   7 MB     0.45 sec
+SBY 19:35:09 [./build/formal/fifo_bmc_d3] engine_0: 17 + : Var =    6434. Cla =    16374. Conf =  43782. Learn =  21398.    0 MB   7 MB     0.54 sec
+SBY 19:35:09 [./build/formal/fifo_bmc_d3] engine_0: 18 + : Var =    6827. Cla =    17385. Conf =  52978. Learn =  25859.    0 MB   9 MB     0.68 sec
+SBY 19:35:09 [./build/formal/fifo_bmc_d3] engine_0: 19 + : Var =    7220. Cla =    18396. Conf =  60080. Learn =  27684.    0 MB   9 MB     0.80 sec
+SBY 19:35:09 [./build/formal/fifo_bmc_d3] engine_0: 20 + : Var =    7613. Cla =    19407. Conf =  67542. Learn =  29568.    0 MB  10 MB     0.92 sec
+SBY 19:35:09 [./build/formal/fifo_bmc_d3] engine_0: 21 + : Var =    8006. Cla =    20418. Conf =  74483. Learn =  30544.    0 MB  10 MB     1.04 sec
+SBY 19:35:09 [./build/formal/fifo_bmc_d3] engine_0: 22 + : Var =    8399. Cla =    21429. Conf =  83122. Learn =  32731.    0 MB  10 MB     1.19 sec
+SBY 19:35:09 [./build/formal/fifo_bmc_d3] engine_0: 23 + : Var =    8792. Cla =    22440. Conf =  94324. Learn =  29135.    0 MB   9 MB     1.39 sec
+SBY 19:35:10 [./build/formal/fifo_bmc_d3] engine_0: 24 + : Var =    9185. Cla =    23451. Conf = 106200. Learn =  32099.    0 MB  10 MB     1.61 sec
+SBY 19:35:10 [./build/formal/fifo_bmc_d3] engine_0: 25 + : Var =    9578. Cla =    24462. Conf = 117022. Learn =  34043.    0 MB  11 MB     1.81 sec
+SBY 19:35:10 [./build/formal/fifo_bmc_d3] engine_0: 26 + : Var =    9971. Cla =    25473. Conf = 126772. Learn =  34801.    0 MB  11 MB     1.98 sec
+SBY 19:35:10 [./build/formal/fifo_bmc_d3] engine_0: 27 + : Var =   10364. Cla =    26484. Conf = 136337. Learn =  35122.    0 MB  11 MB     2.17 sec
+SBY 19:35:10 [./build/formal/fifo_bmc_d3] engine_0: 28 + : Var =   10757. Cla =    27495. Conf = 145222. Learn =  44000.    0 MB  14 MB     2.35 sec
+SBY 19:35:11 [./build/formal/fifo_bmc_d3] engine_0: 29 + : Var =   11150. Cla =    28506. Conf = 154204. Learn =  43591.    0 MB  13 MB     2.54 sec
+SBY 19:35:11 [./build/formal/fifo_bmc_d3] engine_0: 30 + : Var =   11543. Cla =    29517. Conf = 163681. Learn =  43444.    0 MB  13 MB     2.74 sec
+SBY 19:35:11 [./build/formal/fifo_bmc_d3] engine_0: 31 + : Var =   11936. Cla =    30528. Conf = 173617. Learn =  43486.    0 MB  13 MB     2.94 sec
+SBY 19:35:11 [./build/formal/fifo_bmc_d3] engine_0: 32 + : Var =   12329. Cla =    31539. Conf = 182418. Learn =  41921.    0 MB  13 MB     3.14 sec
+SBY 19:35:11 [./build/formal/fifo_bmc_d3] engine_0: 33 + : Var =   12722. Cla =    32550. Conf = 193837. Learn =  53333.    0 MB  17 MB     3.39 sec
+SBY 19:35:12 [./build/formal/fifo_bmc_d3] engine_0: 34 + : Var =   13115. Cla =    33561. Conf = 203996. Learn =  52795.    0 MB  16 MB     3.62 sec
+SBY 19:35:12 [./build/formal/fifo_bmc_d3] engine_0: 35 + : Var =   13508. Cla =    34572. Conf = 215255. Learn =  52832.    0 MB  17 MB     3.89 sec
+SBY 19:35:12 [./build/formal/fifo_bmc_d3] engine_0: 36 + : Var =   13901. Cla =    35583. Conf = 225889. Learn =  51772.    0 MB  17 MB     4.14 sec
+SBY 19:35:12 [./build/formal/fifo_bmc_d3] engine_0: 37 + : Var =   14294. Cla =    36594. Conf = 238604. Learn =  52605.    0 MB  17 MB     4.46 sec
+SBY 19:35:13 [./build/formal/fifo_bmc_d3] engine_0: 38 + : Var =   14687. Cla =    37605. Conf = 250321. Learn =  51929.    0 MB  17 MB     4.75 sec
+SBY 19:35:13 [./build/formal/fifo_bmc_d3] engine_0: 39 + : Var =   15080. Cla =    38616. Conf = 266442. Learn =  55395.    0 MB  17 MB     5.15 sec
+SBY 19:35:14 [./build/formal/fifo_bmc_d3] engine_0: 40 + : Var =   15473. Cla =    39627. Conf = 282553. Learn =  58367.    0 MB  18 MB     5.56 sec
+SBY 19:35:14 [./build/formal/fifo_bmc_d3] engine_0: 41 + : Var =   15866. Cla =    40638. Conf = 297677. Learn =  60089.    0 MB  19 MB     5.94 sec
+SBY 19:35:14 [./build/formal/fifo_bmc_d3] engine_0: 42 + : Var =   16259. Cla =    41649. Conf = 315026. Learn =  62780.    0 MB  20 MB     6.41 sec
+SBY 19:35:15 [./build/formal/fifo_bmc_d3] engine_0: 43 + : Var =   16652. Cla =    42660. Conf = 332368. Learn =  65872.    0 MB  21 MB     6.89 sec
+SBY 19:35:15 [./build/formal/fifo_bmc_d3] engine_0: 44 + : Var =   17045. Cla =    43671. Conf = 349995. Learn =  68712.    0 MB  22 MB     7.40 sec
+SBY 19:35:16 [./build/formal/fifo_bmc_d3] engine_0: 45 + : Var =   17438. Cla =    44682. Conf = 363247. Learn =  66939.    0 MB  21 MB     7.79 sec
+SBY 19:35:16 [./build/formal/fifo_bmc_d3] engine_0: 46 + : Var =   17831. Cla =    45693. Conf = 376541. Learn =  64839.    0 MB  20 MB     8.19 sec
+SBY 19:35:17 [./build/formal/fifo_bmc_d3] engine_0: 47 + : Var =   18224. Cla =    46704. Conf = 390694. Learn =  78985.    0 MB  26 MB     8.60 sec
+SBY 19:35:17 [./build/formal/fifo_bmc_d3] engine_0: 48 + : Var =   18617. Cla =    47715. Conf = 407266. Learn =  79594.    0 MB  26 MB     9.09 sec
+SBY 19:35:18 [./build/formal/fifo_bmc_d3] engine_0: 49 + : Var =   19010. Cla =    48726. Conf = 422183. Learn =  77449.    0 MB  25 MB     9.57 sec
+SBY 19:35:18 [./build/formal/fifo_bmc_d3] engine_0: 50 + : Var =   19403. Cla =    49737. Conf = 436827. Learn =  75550.    0 MB  25 MB    10.03 sec
+SBY 19:35:19 [./build/formal/fifo_bmc_d3] engine_0: 51 + : Var =   19796. Cla =    50748. Conf = 454646. Learn =  76425.    0 MB  25 MB    10.65 sec
+SBY 19:35:19 [./build/formal/fifo_bmc_d3] engine_0: 52 + : Var =   20189. Cla =    51759. Conf = 474762. Learn =  79150.    0 MB  26 MB    11.35 sec
+SBY 19:35:20 [./build/formal/fifo_bmc_d3] engine_0: 53 + : Var =   20582. Cla =    52770. Conf = 495036. Learn =  81662.    0 MB  27 MB    12.12 sec
+SBY 19:35:21 [./build/formal/fifo_bmc_d3] engine_0: 54 + : Var =   20975. Cla =    53781. Conf = 512848. Learn =  81064.    0 MB  28 MB    12.78 sec
+SBY 19:35:21 [./build/formal/fifo_bmc_d3] engine_0: 55 + : Var =   21368. Cla =    54792. Conf = 531222. Learn =  80628.    0 MB  26 MB    13.45 sec
+SBY 19:35:22 [./build/formal/fifo_bmc_d3] engine_0: 56 + : Var =   21761. Cla =    55803. Conf = 549132. Learn =  79560.    0 MB  25 MB    14.15 sec
+SBY 19:35:23 [./build/formal/fifo_bmc_d3] engine_0: 57 + : Var =   22154. Cla =    56814. Conf = 567046. Learn =  97468.    0 MB  35 MB    14.84 sec
+SBY 19:35:24 [./build/formal/fifo_bmc_d3] engine_0: 58 + : Var =   22547. Cla =    57825. Conf = 584011. Learn =  95091.    0 MB  33 MB    15.51 sec
+SBY 19:35:24 [./build/formal/fifo_bmc_d3] engine_0: 59 + : Var =   22940. Cla =    58836. Conf = 602721. Learn =  94103.    0 MB  32 MB    16.26 sec
+SBY 19:35:25 [./build/formal/fifo_bmc_d3] engine_0: 60 + : Var =   23333. Cla =    59847. Conf = 622918. Learn =  94232.    0 MB  33 MB    17.12 sec
+SBY 19:35:26 [./build/formal/fifo_bmc_d3] engine_0: 61 + : Var =   23726. Cla =    60858. Conf = 646462. Learn =  95934.    0 MB  32 MB    18.10 sec
+SBY 19:35:27 [./build/formal/fifo_bmc_d3] engine_0: 62 + : Var =   24119. Cla =    61869. Conf = 667672. Learn =  95973.    0 MB  34 MB    18.98 sec
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] engine_0: 63 + : Var =   24512. Cla =    62880. Conf = 688466. Learn =  95511.    0 MB  32 MB    19.87 sec
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] engine_0: Runtime:  CNF = 0.0 sec (0.0 %)  UNSAT = 19.8 sec (99.9 %)  SAT = 0.0 sec (0.0 %)  UNDEC = 0.0 sec (0.0 %)
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] engine_0: LStart(P) = 10000  LDelta(Q) = 2000  LRatio(R) = 80  ReduceDB = 50  Vars = 24512  Used = 24458 (99.78 %)
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] engine_0: Buffs = 5901. Dups = 0.   Hash hits = 0.  Hash misses = 14187.  UniProps = 0.
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] engine_0: No output asserted in 64 frames. Resource limit reached (conf limit 0). Time =    19.87 sec
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] engine_0: Counter-example is not available.
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] engine_0: finished (returncode=0)
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] engine_0: Status returned by engine: PASS
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:20 (20)
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:19 (19)
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] summary: engine_0 (abc bmc3) returned PASS
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] summary: engine_0 did not produce any traces
+SBY 19:35:28 [./build/formal/fifo_bmc_d3] DONE (PASS, rc=0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] Removing directory './build/formal/fifo_cover_d3'.
+SBY 19:35:28 [./build/formal/fifo_cover_d3] Copy './formal/../rtl/core/sync_fifo.sv' to './build/formal/fifo_cover_d3/src/sync_fifo.sv'.
+SBY 19:35:28 [./build/formal/fifo_cover_d3] Copy './formal/fifo_harness.sv' to './build/formal/fifo_cover_d3/src/fifo_harness.sv'.
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: smtbmc bitwuzla
+SBY 19:35:28 [./build/formal/fifo_cover_d3] base: starting process "cd ./build/formal/fifo_cover_d3/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 19:35:28 [./build/formal/fifo_cover_d3] base: finished (returncode=0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] prep: starting process "cd ./build/formal/fifo_cover_d3/model; yosys -ql design_prep.log design_prep.ys"
+SBY 19:35:28 [./build/formal/fifo_cover_d3] prep: finished (returncode=0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] smt2: starting process "cd ./build/formal/fifo_cover_d3/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 19:35:28 [./build/formal/fifo_cover_d3] smt2: finished (returncode=0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: starting process "cd ./build/formal/fifo_cover_d3; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 64  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 4 at fifo_harness: fifo_harness.sv:90.9-90.71 (_witness_.check_cover_fifo_harness_sv_90_218)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 5 at fifo_harness: fifo_harness.sv:86.9-86.56 (_witness_.check_cover_fifo_harness_sv_86_194)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 5 at fifo_harness: fifo_harness.sv:87.9-87.71 (_witness_.check_cover_fifo_harness_sv_87_199)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 7 at fifo_harness: fifo_harness.sv:88.9-88.65 (_witness_.check_cover_fifo_harness_sv_88_206)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Reached cover statement in step 11 at fifo_harness: fifo_harness.sv:89.9-89.74 (_witness_.check_cover_fifo_harness_sv_89_212)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: ##   0:00:00  Status: passed
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: finished (returncode=0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] engine_0: Status returned by engine: pass
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: cover trace: ./build/formal/fifo_cover_d3/engine_0/trace0.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_90_218 at fifo_harness.sv:90.9-90.71 step 4
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: cover trace: ./build/formal/fifo_cover_d3/engine_0/trace1.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_86_194 at fifo_harness.sv:86.9-86.56 step 5
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_87_199 at fifo_harness.sv:87.9-87.71 step 5
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: cover trace: ./build/formal/fifo_cover_d3/engine_0/trace2.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_88_206 at fifo_harness.sv:88.9-88.65 step 7
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary: cover trace: ./build/formal/fifo_cover_d3/engine_0/trace3.vcd
+SBY 19:35:28 [./build/formal/fifo_cover_d3] summary:   reached cover statement fifo_harness._witness_.check_cover_fifo_harness_sv_89_212 at fifo_harness.sv:89.9-89.74 step 11
+SBY 19:35:28 [./build/formal/fifo_cover_d3] DONE (PASS, rc=0)
+./build/formal/fifo_results.json

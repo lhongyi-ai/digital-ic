@@ -1,0 +1,16 @@
+{
+  "task": "normal-reference commissioning, not zero-shot",
+  "input_sha256": "a195495dd5a85a7e992104c02450f07fdd68058420a372e2a5448134c6007155",
+  "source_sha256": "b7f13a40d46dfa2639f33c3010a719720303f9756d33758471c341afa5d3a3ce",
+  "features": "32 uniform log power bands, five consecutive frames, 192 ms",
+  "fit": "existing 150 source plus 3 target normal reference files; every fourth context",
+  "model": "source-reference standardization then LedoitWolf covariance",
+  "pooling": [
+    "mean",
+    "top10"
+  ],
+  "threshold": "maximum of 50 source-normal calibration scores",
+  "evaluation": "same 400 development records per section, unchanged",
+  "final_test_opened": false,
+  "gate": "recall > .90, fpr < .05, auc >= .90 for all sections"
+}

@@ -1,0 +1,21 @@
+spectrum-linear_1-00 AUC 0.9014 TP/FP 28 2
+spectrum-linear_1-02 AUC 1.0 TP/FP 32 3
+spectrum-linear_1-04 AUC 1.0 TP/FP 32 0
+spectrum-trees-00 AUC 0.9336 TP/FP 16 0
+spectrum-trees-02 AUC 0.998 TP/FP 32 3
+spectrum-trees-04 AUC 1.0 TP/FP 32 2
+identity spectrum 1.0
+temporal-linear_1-00 AUC 0.7031 TP/FP 9 1
+temporal-linear_1-02 AUC 0.8633 TP/FP 12 2
+temporal-linear_1-04 AUC 0.7998 TP/FP 13 1
+temporal-trees-00 AUC 0.7959 TP/FP 10 0
+temporal-trees-02 AUC 0.9536 TP/FP 23 2
+temporal-trees-04 AUC 0.9556 TP/FP 20 1
+identity temporal 0.734375
+combined-linear_1-00 AUC 0.7119 TP/FP 10 0
+combined-linear_1-02 AUC 0.957 TP/FP 28 1
+combined-linear_1-04 AUC 0.9023 TP/FP 19 2
+combined-trees-00 AUC 0.7744 TP/FP 12 2
+combined-trees-02 AUC 0.9961 TP/FP 29 1
+combined-trees-04 AUC 0.9819 TP/FP 30 2
+identity combined 0.9010416666666666

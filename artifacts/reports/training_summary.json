@@ -1,0 +1,545 @@
+{
+  "schema_version": 1,
+  "seconds": 1.633760929107666,
+  "python": "3.12.14",
+  "numpy": "2.5.2",
+  "torch": "2.14.0",
+  "train_windows": 2134,
+  "validation_windows": 1066,
+  "test_windows": 1070,
+  "selected_bins": [
+    80,
+    177,
+    188,
+    207,
+    300,
+    308,
+    315,
+    321,
+    328,
+    339,
+    346,
+    355,
+    439,
+    451,
+    457,
+    469
+  ],
+  "hidden_shift": 8,
+  "validation": {
+    "selected_frequency_candidate": "train_fisher_separated",
+    "selection_basis": "maximum validation macro-F1 among deployable 16-bin MLP models; offline band baseline excluded",
+    "floating_mlp": {
+      "accuracy": 0.8836772983114447,
+      "balanced_accuracy": 0.8836340138207522,
+      "macro_f1": 0.8813891853025244,
+      "per_class_recall": [
+        0.9887323943661972,
+        0.7323943661971831,
+        0.9297752808988764
+      ],
+      "confusion_matrix": [
+        [
+          351,
+          0,
+          4
+        ],
+        [
+          54,
+          260,
+          41
+        ],
+        [
+          25,
+          0,
+          331
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "floating_mlp_quantized_feature_input": {
+      "accuracy": 0.8808630393996247,
+      "balanced_accuracy": 0.8807933744790842,
+      "macro_f1": 0.8769176133472962,
+      "per_class_recall": [
+        0.9859154929577465,
+        0.7014084507042253,
+        0.9550561797752809
+      ],
+      "confusion_matrix": [
+        [
+          350,
+          0,
+          5
+        ],
+        [
+          53,
+          249,
+          53
+        ],
+        [
+          16,
+          0,
+          340
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "floating_frontend_floating_mlp": {
+      "accuracy": 0.8921200750469043,
+      "balanced_accuracy": 0.8920504299203461,
+      "macro_f1": 0.888670185278731,
+      "per_class_recall": [
+        0.9859154929577465,
+        0.723943661971831,
+        0.9662921348314607
+      ],
+      "confusion_matrix": [
+        [
+          350,
+          2,
+          3
+        ],
+        [
+          53,
+          257,
+          45
+        ],
+        [
+          12,
+          0,
+          344
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "ptq": {
+      "accuracy": 0.8714821763602252,
+      "balanced_accuracy": 0.8714274410507992,
+      "macro_f1": 0.8681619650899508,
+      "per_class_recall": [
+        0.9830985915492958,
+        0.7014084507042253,
+        0.9297752808988764
+      ],
+      "confusion_matrix": [
+        [
+          349,
+          0,
+          6
+        ],
+        [
+          53,
+          249,
+          53
+        ],
+        [
+          25,
+          0,
+          331
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "ptq_accuracy_drop_percentage_points": 1.2195121951219523,
+    "deployed_integer": {
+      "accuracy": 0.8714821763602252,
+      "balanced_accuracy": 0.8714274410507992,
+      "macro_f1": 0.8681619650899508,
+      "per_class_recall": [
+        0.9830985915492958,
+        0.7014084507042253,
+        0.9297752808988764
+      ],
+      "confusion_matrix": [
+        [
+          349,
+          0,
+          6
+        ],
+        [
+          53,
+          249,
+          53
+        ],
+        [
+          25,
+          0,
+          331
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "deployed_accuracy_drop_percentage_points": 1.2195121951219523,
+    "quantization_target_met_on_validation": true,
+    "qat": null,
+    "rms_three_leaf_threshold_baseline": {
+      "accuracy": 0.7551594746716698,
+      "balanced_accuracy": 0.755056179775281,
+      "macro_f1": 0.7505751372107999,
+      "per_class_recall": [
+        0.8394366197183099,
+        0.5605633802816902,
+        0.8651685393258427
+      ],
+      "confusion_matrix": [
+        [
+          298,
+          21,
+          36
+        ],
+        [
+          38,
+          199,
+          118
+        ],
+        [
+          48,
+          0,
+          308
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "linear": {
+      "accuracy": 0.8048780487804879,
+      "balanced_accuracy": 0.8048530885688665,
+      "macro_f1": 0.8001767289531072,
+      "per_class_recall": [
+        0.9408450704225352,
+        0.6422535211267606,
+        0.8314606741573034
+      ],
+      "confusion_matrix": [
+        [
+          334,
+          2,
+          19
+        ],
+        [
+          57,
+          228,
+          70
+        ],
+        [
+          14,
+          46,
+          296
+        ]
+      ],
+      "windows": 1066,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "integer_vs_float_feature_mean_abs_error": 0.0014054225041316105,
+    "feature_saturation_fraction_validation": 0.0004104127579737336
+  },
+  "test": {
+    "evaluation_count": 1,
+    "evaluated_utc": "2026-09-06T02:30:47.160254+00:00",
+    "frozen_model_sha256": "a43243dfb2045cc455093c465d646b432a81eef3bce90691cf41250f53daa588",
+    "test_used_for_model_selection": false,
+    "rms_three_leaf_threshold_baseline": {
+      "accuracy": 0.7710280373831776,
+      "balanced_accuracy": 0.7710529904845833,
+      "macro_f1": 0.7616693672496774,
+      "per_class_recall": [
+        0.9831932773109243,
+        0.5322128851540616,
+        0.797752808988764
+      ],
+      "confusion_matrix": [
+        [
+          351,
+          0,
+          6
+        ],
+        [
+          48,
+          190,
+          119
+        ],
+        [
+          72,
+          0,
+          284
+        ]
+      ],
+      "windows": 1070,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "linear": {
+      "accuracy": 0.7691588785046729,
+      "balanced_accuracy": 0.7690885342901206,
+      "macro_f1": 0.7717848875097869,
+      "per_class_recall": [
+        0.9131652661064426,
+        0.7002801120448179,
+        0.6938202247191011
+      ],
+      "confusion_matrix": [
+        [
+          326,
+          5,
+          26
+        ],
+        [
+          71,
+          250,
+          36
+        ],
+        [
+          109,
+          0,
+          247
+        ]
+      ],
+      "windows": 1070,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "floating_mlp": {
+      "accuracy": 0.7644859813084112,
+      "balanced_accuracy": 0.7643386942792098,
+      "macro_f1": 0.7680987737210012,
+      "per_class_recall": [
+        0.957983193277311,
+        0.7282913165266106,
+        0.6067415730337079
+      ],
+      "confusion_matrix": [
+        [
+          342,
+          6,
+          9
+        ],
+        [
+          87,
+          260,
+          10
+        ],
+        [
+          140,
+          0,
+          216
+        ]
+      ],
+      "windows": 1070,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "floating_frontend_floating_mlp": {
+      "accuracy": 0.7644859813084112,
+      "balanced_accuracy": 0.7643439398231203,
+      "macro_f1": 0.7679116444635965,
+      "per_class_recall": [
+        0.9551820728291317,
+        0.7254901960784313,
+        0.6123595505617978
+      ],
+      "confusion_matrix": [
+        [
+          341,
+          5,
+          11
+        ],
+        [
+          85,
+          259,
+          13
+        ],
+        [
+          138,
+          0,
+          218
+        ]
+      ],
+      "windows": 1070,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "deployed_integer": {
+      "accuracy": 0.7682242990654206,
+      "balanced_accuracy": 0.7680840126312697,
+      "macro_f1": 0.7712562992825814,
+      "per_class_recall": [
+        0.957983193277311,
+        0.7282913165266106,
+        0.6179775280898876
+      ],
+      "confusion_matrix": [
+        [
+          342,
+          4,
+          11
+        ],
+        [
+          81,
+          260,
+          16
+        ],
+        [
+          136,
+          0,
+          220
+        ]
+      ],
+      "windows": 1070,
+      "class_names": [
+        "inner_race",
+        "outer_race",
+        "ball"
+      ]
+    },
+    "quantization_accuracy_drop_percentage_points": -0.37383177570093906,
+    "per_record_integer": [
+      {
+        "record_id": 108,
+        "true_class": 0,
+        "windows": 120,
+        "accuracy": 0.9666666666666667,
+        "predicted_class_counts": [
+          116,
+          4,
+          0
+        ]
+      },
+      {
+        "record_id": 121,
+        "true_class": 2,
+        "windows": 118,
+        "accuracy": 0.847457627118644,
+        "predicted_class_counts": [
+          18,
+          0,
+          100
+        ]
+      },
+      {
+        "record_id": 133,
+        "true_class": 1,
+        "windows": 119,
+        "accuracy": 1.0,
+        "predicted_class_counts": [
+          0,
+          119,
+          0
+        ]
+      },
+      {
+        "record_id": 172,
+        "true_class": 0,
+        "windows": 118,
+        "accuracy": 0.9152542372881356,
+        "predicted_class_counts": [
+          108,
+          0,
+          10
+        ]
+      },
+      {
+        "record_id": 188,
+        "true_class": 2,
+        "windows": 119,
+        "accuracy": 0.6638655462184874,
+        "predicted_class_counts": [
+          40,
+          0,
+          79
+        ]
+      },
+      {
+        "record_id": 200,
+        "true_class": 1,
+        "windows": 119,
+        "accuracy": 0.2773109243697479,
+        "predicted_class_counts": [
+          70,
+          33,
+          16
+        ]
+      },
+      {
+        "record_id": 212,
+        "true_class": 0,
+        "windows": 119,
+        "accuracy": 0.9915966386554622,
+        "predicted_class_counts": [
+          118,
+          0,
+          1
+        ]
+      },
+      {
+        "record_id": 225,
+        "true_class": 2,
+        "windows": 119,
+        "accuracy": 0.3445378151260504,
+        "predicted_class_counts": [
+          78,
+          0,
+          41
+        ]
+      },
+      {
+        "record_id": 237,
+        "true_class": 1,
+        "windows": 119,
+        "accuracy": 0.907563025210084,
+        "predicted_class_counts": [
+          11,
+          108,
+          0
+        ]
+      }
+    ],
+    "limitation": "held-out operating load/records on the same public rig, not independently unseen bearing specimens or field validation",
+    "physical_board_tested": false
+  }
+}

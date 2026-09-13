@@ -1,0 +1,11 @@
+{
+  "source_sha256": {
+    "./formal/run_sva_smoke.py": "bf69e86c8e61ab0b9397cca73a24bd75802014ef6f9cc1b3617bc5089ef1198e",
+    "./formal/sva_smoke.sv": "9e86a680b9b99980797339aced5d9052df8661ee969e734440dc5f6181c27773"
+  },
+  "verilator": "Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)",
+  "subset": "clocked assert property, disable iff, |=>, $past",
+  "positive_pass": true,
+  "negative_control_detected": true,
+  "negative_returncode": 1
+}

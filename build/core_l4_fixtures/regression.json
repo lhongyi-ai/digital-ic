@@ -1,0 +1,14 @@
+{
+  "n": 1024,
+  "lanes": 4,
+  "frames": 5,
+  "debug_frames": 5,
+  "status": "passed",
+  "cycles": {
+    "cycles_pre": 3073,
+    "cycles_dft": 24616,
+    "cycles_power": 80,
+    "cycles_nn": 265,
+    "cycles_total": 28034
+  }
+}

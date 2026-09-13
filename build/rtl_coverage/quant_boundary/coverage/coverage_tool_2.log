@@ -1,0 +1,11 @@
+COMMAND ["./.tools/oss-cad-suite/bin/verilator_coverage", "--annotate", "./build/rtl_coverage/quant_boundary/coverage/annotated", "--annotate-all", "--annotate-min", "1", "--annotate-points", "./build/rtl_coverage/quant_boundary/coverage/merged.dat"]
+Coverage Summary:
+  line      : 89.2% (  83/  93)
+  toggle    : 70.8% (3718/5250)
+  branch    : 87.7% ( 135/ 154)
+  expr      : 83.0% ( 161/ 194)
+  fsm_state : 0.0% (   0/   0)
+  fsm_arc   : 0.0% (   0/   0)
+Annotation Summary:
+  lines with all attached points covered : 78.00%  (254/325)
+See lines with '%00' in ./build/rtl_coverage/quant_boundary/coverage/annotated

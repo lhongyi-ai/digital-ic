@@ -1,0 +1,67 @@
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] Removing directory './build/replay_fifo_upgrade/cover'.
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] Copy './formal/../rtl/upduino_replay.sv' to './build/replay_fifo_upgrade/cover/src/upduino_replay.sv'.
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] Copy './formal/replay_fifo_harness.sv' to './build/replay_fifo_upgrade/cover/src/replay_fifo_harness.sv'.
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] engine_0: smtbmc bitwuzla
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] base: starting process "cd ./build/replay_fifo_upgrade/cover/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] base: finished (returncode=0)
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] prep: starting process "cd ./build/replay_fifo_upgrade/cover/model; yosys -ql design_prep.log design_prep.ys"
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] prep: finished (returncode=0)
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] smt2: starting process "cd ./build/replay_fifo_upgrade/cover/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] smt2: finished (returncode=0)
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] engine_0: starting process "cd ./build/replay_fifo_upgrade/cover; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 64  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 18:00:37 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Reached cover statement in step 4 at replay_fifo_harness: replay_fifo_harness.sv:73.9-73.71 (_witness_.check_cover_replay_fifo_harness_sv_73_98)
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Reached cover statement in step 4 at replay_fifo_harness: replay_fifo_harness.sv:69.9-69.52 (_witness_.check_cover_replay_fifo_harness_sv_69_74)
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Reached cover statement in step 4 at replay_fifo_harness: replay_fifo_harness.sv:70.9-70.67 (_witness_.check_cover_replay_fifo_harness_sv_70_79)
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Reached cover statement in step 6 at replay_fifo_harness: replay_fifo_harness.sv:71.9-71.65 (_witness_.check_cover_replay_fifo_harness_sv_71_86)
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Reached cover statement in step 8 at replay_fifo_harness: replay_fifo_harness.sv:72.9-72.68 (_witness_.check_cover_replay_fifo_harness_sv_72_92)
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: ##   0:00:00  Status: passed
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: finished (returncode=0)
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] engine_0: Status returned by engine: pass
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary: cover trace: ./build/replay_fifo_upgrade/cover/engine_0/trace0.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary:   reached cover statement replay_fifo_harness._witness_.check_cover_replay_fifo_harness_sv_73_98 at replay_fifo_harness.sv:73.9-73.71 step 4
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary: cover trace: ./build/replay_fifo_upgrade/cover/engine_0/trace1.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary:   reached cover statement replay_fifo_harness._witness_.check_cover_replay_fifo_harness_sv_69_74 at replay_fifo_harness.sv:69.9-69.52 step 4
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary: cover trace: ./build/replay_fifo_upgrade/cover/engine_0/trace2.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary:   reached cover statement replay_fifo_harness._witness_.check_cover_replay_fifo_harness_sv_70_79 at replay_fifo_harness.sv:70.9-70.67 step 4
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary: cover trace: ./build/replay_fifo_upgrade/cover/engine_0/trace3.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary:   reached cover statement replay_fifo_harness._witness_.check_cover_replay_fifo_harness_sv_71_86 at replay_fifo_harness.sv:71.9-71.65 step 6
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary: cover trace: ./build/replay_fifo_upgrade/cover/engine_0/trace4.vcd
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] summary:   reached cover statement replay_fifo_harness._witness_.check_cover_replay_fifo_harness_sv_72_92 at replay_fifo_harness.sv:72.9-72.68 step 8
+SBY 18:00:38 [./build/replay_fifo_upgrade/cover] DONE (PASS, rc=0)

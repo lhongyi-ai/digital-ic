@@ -1,0 +1,22 @@
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.dylib'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library './.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-darwin.so'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1789020377
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from ./.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Verilator version 5.051 devel
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_flash_system.flash_wakes_before_direct_read (1/2)
+                                                            Reproduce all-FF reads without wake, then prove reset wakes the chip.
+ 10406.00ns INFO     cocotb.regression                  test_flash_system.flash_wakes_before_direct_read passed
+ 10406.00ns INFO     cocotb.regression                  running test_flash_system.flash_roundtrip_and_guards (2/2)
+55119431.00ns INFO     cocotb.regression                  test_flash_system.flash_roundtrip_and_guards passed
+55119431.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_flash_system.flash_wakes_before_direct_read   PASS       10406.00           0.02     503322.31  **
+                                                        ** test_flash_system.flash_roundtrip_and_guards       PASS    55109025.00           7.07    7798361.55  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                               55119431.00           7.09    7776251.52  **
+                                                        **********************************************************************************************************
+- :0: Verilog $finish

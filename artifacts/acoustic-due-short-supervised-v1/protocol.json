@@ -1,0 +1,16 @@
+{
+  "source_results_sha256": "ce9ef27473bfe7e04da8254413f7964d580cd85f043dbf0a4c10756031622fad",
+  "script_sha256": "b0ce87b80bc61c529632141f96a057f6eb77b53c7c8dfdc8cf64f4275223f4ee",
+  "feature_source_sha256": "b7f13a40d46dfa2639f33c3010a719720303f9756d33758471c341afa5d3a3ce",
+  "feature": "32 log power bands, 5 consecutive spectra, 192 ms",
+  "model": "ExtraTrees 200 trees, max_depth 12, min_samples_leaf 8, max_features .5, seed 71",
+  "sampling": "every eighth context for fit and evaluation alike",
+  "pooling": [
+    "mean",
+    "top10"
+  ],
+  "threshold": "maximum source-section normal calibration score",
+  "split": "existing whole-section 3-fold indices unchanged",
+  "warning": "record labels assigned to contexts; localized fault context labels may be noisy",
+  "final_test_opened": false
+}

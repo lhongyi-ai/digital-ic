@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "machine": "00",
+      "exact_score_reload": true,
+      "tp": 156,
+      "fp": 155,
+      "auc": 0.5705078125
+    },
+    {
+      "machine": "02",
+      "exact_score_reload": true,
+      "tp": 82,
+      "fp": 55,
+      "auc": 0.6027734375
+    },
+    {
+      "machine": "04",
+      "exact_score_reload": true,
+      "tp": 6,
+      "fp": 0,
+      "auc": 0.8470703125
+    }
+  ],
+  "test_opened": false,
+  "bindings_sha256": "4d7e591c038984bd909a8c235c0bc4bebc615a23491f1420d030a33a411e83ba"
+}

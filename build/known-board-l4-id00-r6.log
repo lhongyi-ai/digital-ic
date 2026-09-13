@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "./scripts/build_known_board.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./scripts/build_known_board.py", line 32, in main
+    run(['nextpnr-ice40','--up5k','--package','sg48','--freq','13.2','--seed','1','--pre-pack',str(clock),
+  File "./scripts/build_known_probe.py", line 11, in run
+    if r.returncode:raise RuntimeError(f'{cmd[0]} failed({r.returncode}); see {path}')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: nextpnr-ice40 failed(125); see ./build/known-board/l4-id00-r6/place_route.log

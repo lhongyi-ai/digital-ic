@@ -1,0 +1,14 @@
+{
+  "test": "sensor_capture",
+  "half_period": 6,
+  "rate_code": 10,
+  "cycles": 36159,
+  "initialization": "PASS",
+  "signed_xyz_burst": "PASS",
+  "output_stall_and_drop_counter": "PASS",
+  "sensor_overrun_flag": "PASS",
+  "random_samples": 32,
+  "reset_mid_spi_and_reinitialize": "PASS",
+  "wrong_device_id_rejected": "PASS",
+  "hardware_measured": false
+}

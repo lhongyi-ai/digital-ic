@@ -1,0 +1,260 @@
+{
+  "train": [
+    {
+      "record_id": 105,
+      "samples": 121265,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 433
+    },
+    {
+      "record_id": 106,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    },
+    {
+      "record_id": 118,
+      "samples": 122571,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 715
+    },
+    {
+      "record_id": 119,
+      "samples": 121410,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 578
+    },
+    {
+      "record_id": 130,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    },
+    {
+      "record_id": 131,
+      "samples": 122426,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 570
+    },
+    {
+      "record_id": 169,
+      "samples": 121846,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 1014
+    },
+    {
+      "record_id": 170,
+      "samples": 121846,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 1014
+    },
+    {
+      "record_id": 185,
+      "samples": 121846,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 1014
+    },
+    {
+      "record_id": 186,
+      "samples": 122136,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 280
+    },
+    {
+      "record_id": 197,
+      "samples": 121846,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 1014
+    },
+    {
+      "record_id": 198,
+      "samples": 122136,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 280
+    },
+    {
+      "record_id": 209,
+      "samples": 122136,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 280
+    },
+    {
+      "record_id": 210,
+      "samples": 121556,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 724
+    },
+    {
+      "record_id": 222,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    },
+    {
+      "record_id": 223,
+      "samples": 121701,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 869
+    },
+    {
+      "record_id": 234,
+      "samples": 122426,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 570
+    },
+    {
+      "record_id": 235,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    }
+  ],
+  "validation": [
+    {
+      "record_id": 107,
+      "samples": 122136,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 280
+    },
+    {
+      "record_id": 120,
+      "samples": 121556,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 724
+    },
+    {
+      "record_id": 132,
+      "samples": 121410,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 578
+    },
+    {
+      "record_id": 171,
+      "samples": 121846,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 1014
+    },
+    {
+      "record_id": 187,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    },
+    {
+      "record_id": 199,
+      "samples": 121846,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 1014
+    },
+    {
+      "record_id": 211,
+      "samples": 121846,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 1014
+    },
+    {
+      "record_id": 224,
+      "samples": 122136,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 280
+    },
+    {
+      "record_id": 236,
+      "samples": 122281,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 425
+    }
+  ],
+  "test": [
+    {
+      "record_id": 108,
+      "samples": 122917,
+      "clipped_samples": 0,
+      "windows": 120,
+      "discarded_tail_samples": 37
+    },
+    {
+      "record_id": 121,
+      "samples": 121556,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 724
+    },
+    {
+      "record_id": 133,
+      "samples": 122571,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 715
+    },
+    {
+      "record_id": 172,
+      "samples": 121701,
+      "clipped_samples": 0,
+      "windows": 118,
+      "discarded_tail_samples": 869
+    },
+    {
+      "record_id": 188,
+      "samples": 122136,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 280
+    },
+    {
+      "record_id": 200,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    },
+    {
+      "record_id": 212,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    },
+    {
+      "record_id": 225,
+      "samples": 122136,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 280
+    },
+    {
+      "record_id": 237,
+      "samples": 121991,
+      "clipped_samples": 0,
+      "windows": 119,
+      "discarded_tail_samples": 135
+    }
+  ]
+}

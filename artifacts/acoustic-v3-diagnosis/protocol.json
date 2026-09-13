@@ -1,0 +1,29 @@
+{
+  "representations": [
+    "log1p",
+    "logshape",
+    "logshape_level"
+  ],
+  "models": [
+    "centroid",
+    "covariance",
+    "kmeans4"
+  ],
+  "pooling": [
+    "mean",
+    "top10",
+    "max4"
+  ],
+  "goal": "test transient dilution, common loudness and correlated bands; 27 fixed candidates",
+  "normalization": "train-normal only; centroid on log1p unstandardized for exact v2 baseline; other inputs standardized using normal training",
+  "threshold": "normal validation empirical 5%, strict greater",
+  "seed": 7,
+  "test_opened": false,
+  "inputs": {
+    "./artifacts/acoustic-v2-study/receipt.json": "e1ea376c50d6754343cdf886fa7163a4778c7f1927615b44e1d77782d849bb60"
+  },
+  "source_sha256": {
+    "scripts/diagnose_acoustic_v3.py": "7c5aa203af6d60fead03352cdc2c8b25204cd44938e2c25b16a8f2568dc4b76e",
+    "src/vibfpga/acoustic_experiment.py": "20dd072692ca9af0dbe852376b2030fa7fcc4f924e87d2f22bf69324a8615495"
+  }
+}

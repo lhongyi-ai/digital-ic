@@ -1,0 +1,12 @@
+Compiler cache MISS fcec8c20c211 (1.577s)
+Traceback (most recent call last):
+  File "./scripts/test_known_core.py", line 41, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./scripts/test_known_core.py", line 34, in main
+    runner.test(hdl_toplevel='known_spectral_core',test_module='test_known_core',test_dir=out,results_xml=out/'results.xml',log_file=out/'test.log',
+  File "./scripts/build_support.py", line 234, in test
+    require_xml_passed(xml)
+  File "./scripts/build_support.py", line 146, in require_xml_passed
+    raise RuntimeError(f"Fresh executed passing cocotb tests required: {path}")
+RuntimeError: Fresh executed passing cocotb tests required: ./build/known-core/small-l4-r2/results.xml

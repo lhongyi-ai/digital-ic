@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "manifest_sha256": {
+    "data/mimii-known-machines-v1/development.json": "7aeaf5b87a9168369f658c61ba9e90cafe3978d60b16a30e025d20c19a5f1fd0",
+    "data/mimii-known-extra00-v1/development.json": "8bdca5e3a5e0b910c765db351203c01bc3df677b76360ec81905331c60bf8ac9",
+    "data/mimii-known-calibration00-v1/development.json": "d04460f87d7f859ca9e2d5a92da659b31ac30a5a3bbfcf4f1ca0d81764d7aa2c"
+  },
+  "source_sha256": "6ab281e1fa4bcfca0f1857c62af3fb06d9060c7cdf7cf0dea6477ebd8ea3a3ab",
+  "helper_sha256": "53f092f07358ba0d63852210e7c098903a26768e37d74b1b7903374353f64366",
+  "screened": 65536,
+  "raw_review": [
+    {
+      "a": "fan/id_00/normal/00000124.wav",
+      "b": "fan/id_00/normal/00000703.wav",
+      "correlation": -0.2848782495366461,
+      "lag": -127904,
+      "overlap": 32096,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000124.wav",
+      "b": "fan/id_00/normal/00000893.wav",
+      "correlation": 0.26834072134722114,
+      "lag": -123756,
+      "overlap": 36244,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000124.wav",
+      "b": "fan/id_00/normal/00000709.wav",
+      "correlation": 0.27418673661196186,
+      "lag": -125051,
+      "overlap": 34949,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000629.wav",
+      "b": "fan/id_00/normal/00000893.wav",
+      "correlation": 0.30506073448386684,
+      "lag": -123483,
+      "overlap": 36517,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000428.wav",
+      "b": "fan/id_00/normal/00000893.wav",
+      "correlation": 0.25785936671277715,
+      "lag": 122626,
+      "overlap": 37374,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000857.wav",
+      "b": "fan/id_00/normal/00000283.wav",
+      "correlation": 0.3364512149666378,
+      "lag": -127617,
+      "overlap": 32383,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000525.wav",
+      "b": "fan/id_00/normal/00000893.wav",
+      "correlation": 0.31074068180428804,
+      "lag": 127014,
+      "overlap": 32986,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000857.wav",
+      "b": "fan/id_00/normal/00000703.wav",
+      "correlation": -0.25883212893242924,
+      "lag": -123463,
+      "overlap": 36537,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000132.wav",
+      "b": "fan/id_00/normal/00000893.wav",
+      "correlation": 0.3262984417801619,
+      "lag": 120318,
+      "overlap": 39682,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000629.wav",
+      "b": "fan/id_00/normal/00000703.wav",
+      "correlation": 0.30885697947713164,
+      "lag": -127999,
+      "overlap": 32001,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000714.wav",
+      "b": "fan/id_00/normal/00000703.wav",
+      "correlation": 0.2828915196526007,
+      "lag": -121988,
+      "overlap": 38012,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000737.wav",
+      "b": "fan/id_00/normal/00000819.wav",
+      "correlation": 0.276875105750518,
+      "lag": -127842,
+      "overlap": 32158,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000295.wav",
+      "b": "fan/id_00/normal/00000893.wav",
+      "correlation": 0.32544342410269816,
+      "lag": 126531,
+      "overlap": 33469,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000309.wav",
+      "b": "fan/id_00/normal/00000995.wav",
+      "correlation": 0.4640478857250235,
+      "lag": -93858,
+      "overlap": 66142,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000156.wav",
+      "b": "fan/id_00/normal/00000703.wav",
+      "correlation": 0.3042378514506533,
+      "lag": -121759,
+      "overlap": 38241,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000132.wav",
+      "b": "fan/id_00/normal/00000356.wav",
+      "correlation": 0.3614317480675645,
+      "lag": 117542,
+      "overlap": 42458,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000428.wav",
+      "b": "fan/id_00/normal/00000534.wav",
+      "correlation": 0.2827105239222816,
+      "lag": 127867,
+      "overlap": 32133,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000737.wav",
+      "b": "fan/id_00/normal/00000893.wav",
+      "correlation": -0.3634494765507295,
+      "lag": 106946,
+      "overlap": 53054,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000525.wav",
+      "b": "fan/id_00/normal/00000703.wav",
+      "correlation": 0.27490711181512845,
+      "lag": -94848,
+      "overlap": 65152,
+      "flag": false
+    },
+    {
+      "a": "fan/id_00/normal/00000235.wav",
+      "b": "fan/id_00/normal/00000356.wav",
+      "correlation": 0.36206833729515087,
+      "lag": -123000,
+      "overlap": 37000,
+      "flag": false
+    }
+  ],
+  "exact_duplicates": [],
+  "exact_chunks": [],
+  "final_audio_read": false,
+  "limits": ">=2s500Hzscreen, all>.8plus top20 rawreview; exact1schunks; not proof of independent acquisition batches"
+}

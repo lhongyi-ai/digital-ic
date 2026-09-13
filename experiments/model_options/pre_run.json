@@ -1,0 +1,390 @@
+{
+  "started_utc": "2026-09-06T03:54:37.342086+00:00",
+  "protocol_sha256": "b533919a0f9b9064176660b7cadde43e6743cd3ac98eb0501e9a9c9511a4771e",
+  "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+  "manifest_sha256": "cb638c4a0dbb7dd9e217eef5168d3fcd68275ff0a76335e7425a88ab79434588",
+  "source_model_snapshot_sha256": {
+    "artifacts/model_neighbor/model.json": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
+    "experiments/model_options/run.py": "f98c46f814b639f71109e8ebce01eecf6476a97a23daf9450e5a19be39484277",
+    "experiments/model_options/protocol.md": "b533919a0f9b9064176660b7cadde43e6743cd3ac98eb0501e9a9c9511a4771e",
+    "src/vibfpga/fixed.py": "517410ce70646dd84c447d567bb142ec71bf91c79ea72aa45df0a4cb2a13685d",
+    "src/vibfpga/training.py": "a8f06356f7b1c3800665866ef07c1ce97ebb4aadab79f221ea246d257edfc1ef",
+    "src/vibfpga/dataset.py": "796956ac48825aea5ef28746c262a511c208feebe477122660bcb25a63716a49"
+  },
+  "configurations": {
+    "A": {
+      "hidden": 16,
+      "lr": 0.025,
+      "weight_decay": 1e-05
+    },
+    "B": {
+      "hidden": 16,
+      "lr": 0.01,
+      "weight_decay": 0.001
+    },
+    "C": {
+      "hidden": 32,
+      "lr": 0.01,
+      "weight_decay": 0.001
+    }
+  },
+  "seeds": [
+    7,
+    17,
+    29
+  ],
+  "epochs": 450,
+  "validation_every_epochs": 10,
+  "python": "3.12.14",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "libraries": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "torch": "2.14.0",
+    "scikit-learn": "1.9.0"
+  },
+  "existing_model_report_stat_inventory": {
+    "artifacts/model/model.json": [
+      18967,
+      1788662317743397470
+    ],
+    "artifacts/model/float_parameters.npz": [
+      2098,
+      1788661847108704841
+    ],
+    "artifacts/model/model_config.svh": [
+      220,
+      1788662317744623729
+    ],
+    "artifacts/model/float_model.pt": [
+      3781,
+      1788661847108376838
+    ],
+    "artifacts/model/weights_l4_1.hex": [
+      240,
+      1788662317744446852
+    ],
+    "artifacts/model/w1.hex": [
+      768,
+      1788662317744032266
+    ],
+    "artifacts/model/hann_quarter.hex": [
+      1280,
+      1788662317743859723
+    ],
+    "artifacts/model/weights_l4_0.hex": [
+      240,
+      1788662317744386852
+    ],
+    "artifacts/model/b1.hex": [
+      144,
+      1788662317744082308
+    ],
+    "artifacts/model/weights_l4_2.hex": [
+      240,
+      1788662317744507228
+    ],
+    "artifacts/model/w2.hex": [
+      144,
+      1788662317744160142
+    ],
+    "artifacts/model/bins.hex": [
+      80,
+      1788662317743488012
+    ],
+    "artifacts/model/weights_l4_3.hex": [
+      240,
+      1788662317744573437
+    ],
+    "artifacts/model/b2.hex": [
+      27,
+      1788662317744206309
+    ],
+    "artifacts/model/weights_l1_0.hex": [
+      912,
+      1788662317744316643
+    ],
+    "artifacts/model/cos_quarter.hex": [
+      1280,
+      1788662317743939224
+    ],
+    "artifacts/model/feature_shifts.hex": [
+      48,
+      1788662317743545638
+    ],
+    "artifacts/model/hann.hex": [
+      5120,
+      1788662317743742723
+    ],
+    "artifacts/model_neighbor/model.json": [
+      16387,
+      1788662761065958326
+    ],
+    "artifacts/model_neighbor/float_parameters.npz": [
+      2101,
+      1788662761069178408
+    ],
+    "artifacts/model_neighbor/model_config.svh": [
+      251,
+      1788662761067241701
+    ],
+    "artifacts/model_neighbor/float_model.pt": [
+      3781,
+      1788662761068839575
+    ],
+    "artifacts/model_neighbor/weights_l4_1.hex": [
+      240,
+      1788662761067015076
+    ],
+    "artifacts/model_neighbor/w1.hex": [
+      768,
+      1788662761066609742
+    ],
+    "artifacts/model_neighbor/hann_quarter.hex": [
+      1280,
+      1788662761066402826
+    ],
+    "artifacts/model_neighbor/weights_l4_0.hex": [
+      240,
+      1788662761066954409
+    ],
+    "artifacts/model_neighbor/b1.hex": [
+      144,
+      1788662761066665326
+    ],
+    "artifacts/model_neighbor/weights_l4_2.hex": [
+      240,
+      1788662761067075242
+    ],
+    "artifacts/model_neighbor/w2.hex": [
+      144,
+      1788662761066718201
+    ],
+    "artifacts/model_neighbor/dft_bins.hex": [
+      240,
+      1788662761067193784
+    ],
+    "artifacts/model_neighbor/bins.hex": [
+      80,
+      1788662761066037201
+    ],
+    "artifacts/model_neighbor/weights_l4_3.hex": [
+      240,
+      1788662761067135617
+    ],
+    "artifacts/model_neighbor/b2.hex": [
+      27,
+      1788662761066770201
+    ],
+    "artifacts/model_neighbor/weights_l1_0.hex": [
+      912,
+      1788662761066890451
+    ],
+    "artifacts/model_neighbor/cos_quarter.hex": [
+      1280,
+      1788662761066503034
+    ],
+    "artifacts/model_neighbor/feature_shifts.hex": [
+      48,
+      1788662761066101743
+    ],
+    "artifacts/model_neighbor/hann.hex": [
+      5120,
+      1788662761066311576
+    ],
+    "artifacts/reports/architecture.md": [
+      2375,
+      1788663858842797936
+    ],
+    "artifacts/reports/test_evaluation.json": [
+      4990,
+      1788662062756558856
+    ],
+    "artifacts/reports/test_predictions.npz": [
+      31429,
+      1788661847187966890
+    ],
+    "artifacts/reports/baseline_models.json": [
+      2245,
+      1788661847118191031
+    ],
+    "artifacts/reports/selection_frozen.json": [
+      440,
+      1788662088003660612
+    ],
+    "artifacts/reports/neighbor_comparison.json": [
+      10548,
+      1788663063511840656
+    ],
+    "artifacts/reports/training_summary.json": [
+      10785,
+      1788662062757035818
+    ],
+    "artifacts/reports/architecture.json": [
+      13064,
+      1788663858842618019
+    ],
+    "artifacts/reports/raw_input_clipping.json": [
+      5392,
+      1788661847188238600
+    ],
+    "artifacts/reports/validation.json": [
+      4349,
+      1788661847109477305
+    ],
+    "artifacts/reports/training_results.svg": [
+      74825,
+      1788661988193272959
+    ],
+    "artifacts/reports/window_manifest_train_validation.json": [
+      694143,
+      1788661847117948905
+    ],
+    "artifacts/reports/training_results.png": [
+      124924,
+      1788661988136614983
+    ],
+    "artifacts/reports/window_manifest_test.json": [
+      207850,
+      1788661847184334073
+    ],
+    "artifacts/reports/frequency_comparison.json": [
+      33309,
+      1788661847109340179
+    ],
+    "artifacts/reports/neighbor_test/predictions.csv": [
+      147832,
+      1788664928673063410
+    ],
+    "artifacts/reports/neighbor_test/predictions.npz": [
+      139370,
+      1788664928667746366
+    ],
+    "artifacts/reports/neighbor_test/records.json": [
+      5137,
+      1788664928653341831
+    ],
+    "artifacts/reports/neighbor_test/preflight.json": [
+      308,
+      1788664927875236448
+    ],
+    "artifacts/reports/neighbor_test/evaluation.json": [
+      7313,
+      1788664928676809108
+    ],
+    "artifacts/reports/neighbor_test/completion.json": [
+      4081,
+      1788664928678392163
+    ],
+    "artifacts/reports/neighbor_test/freeze.json": [
+      13093,
+      1788664927897850676
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/scripts/evaluate_neighbor.py": [
+      1028,
+      1788664927877906178
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/scripts/compare_neighbor_features.py": [
+      6370,
+      1788664927877797927
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/model.json": [
+      16387,
+      1788664927876630084
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/float_parameters.npz": [
+      2101,
+      1788664927876225498
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/model_config.svh": [
+      251,
+      1788664927876741794
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/float_model.pt": [
+      3781,
+      1788664927876119830
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/weights_l4_1.hex": [
+      240,
+      1788664927877266048
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/w1.hex": [
+      768,
+      1788664927876842461
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/hann_quarter.hex": [
+      1280,
+      1788664927876487208
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/weights_l4_0.hex": [
+      240,
+      1788664927877164089
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/b1.hex": [
+      144,
+      1788664927875414283
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/weights_l4_2.hex": [
+      240,
+      1788664927877369466
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/w2.hex": [
+      144,
+      1788664927876944254
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/dft_bins.hex": [
+      240,
+      1788664927875890078
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/bins.hex": [
+      80,
+      1788664927875659535
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/weights_l4_3.hex": [
+      240,
+      1788664927877476675
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/b2.hex": [
+      27,
+      1788664927875538992
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/weights_l1_0.hex": [
+      912,
+      1788664927877053088
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/cos_quarter.hex": [
+      1280,
+      1788664927875772744
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/feature_shifts.hex": [
+      48,
+      1788664927875994121
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/artifacts/model_neighbor/hann.hex": [
+      5120,
+      1788664927876333915
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/data/cwru/manifest.json": [
+      33646,
+      1788664927877654718
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/src/vibfpga/neighbor_evaluation.py": [
+      33045,
+      1788664927878395307
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/src/vibfpga/fixed.py": [
+      9861,
+      1788664927878244431
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/src/vibfpga/dataset.py": [
+      8538,
+      1788664927878063596
+    ],
+    "artifacts/reports/neighbor_test/frozen_inputs/src/vibfpga/training.py": [
+      23008,
+      1788664927878533558
+    ]
+  },
+  "test_waveform_or_prediction_access_permitted": false,
+  "scope": "Validation exploration only; no deployment and no new test result."
+}

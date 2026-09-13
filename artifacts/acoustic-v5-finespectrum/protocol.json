@@ -1,0 +1,33 @@
+{
+  "n": [
+    1024,
+    4096,
+    16384
+  ],
+  "representation": [
+    "logpower",
+    "logshape"
+  ],
+  "models": [
+    "diagonal",
+    "nearest5",
+    "pca_residual16",
+    "ridge_covariance"
+  ],
+  "candidate_count": 24,
+  "training": "normal records only, statistics on recording-average full spectra",
+  "threshold": "normal validation empirical 5%",
+  "gate": {
+    "tp": 27,
+    "max_fp": 2,
+    "auc": 0.9
+  },
+  "test_opened": false,
+  "plan_sha256": "fbd5ddd101a6cefdf42f950216f303b7a07db1b54bebf6cac57c84ad324267df",
+  "source_sha256": {
+    "scripts/experiment_acoustic_finespectrum.py": "2f642a231767f93ec1a412aa232815fc58c6fd3b674b48a8f73ea0606b2bda02",
+    "scripts/experiment_acoustic_v2.py": "e21283eb970c3b82c0f9b69614dd7fcb48933232cbd0a18352459c6ab5a5b36b",
+    "scripts/diagnose_acoustic_v3.py": "7c5aa203af6d60fead03352cdc2c8b25204cd44938e2c25b16a8f2568dc4b76e",
+    "src/vibfpga/acoustic_experiment.py": "20dd072692ca9af0dbe852376b2030fa7fcc4f924e87d2f22bf69324a8615495"
+  }
+}
