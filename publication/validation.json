@@ -81,5 +81,19 @@
     },
     "staged_diff_whitespace": "passed"
   },
-  "laboratory_results": "Completed before translation; original release/physical/final receipts remain historical and are not silently rebound to translated sources."
+  "laboratory_results": "Completed before translation; original release/physical/final receipts remain historical and are not silently rebound to translated sources.",
+  "readme_review": {
+    "date": "2026-10-06",
+    "input_readme_sha256": "0e0b468e97638732973a9c30bfebd381ca5ba755c94c4d4bf5a87633c67baeb8",
+    "revised_readme_sha256": "96ed4a68b5c0ced41c2649a95c38620dbcfcd769f64cfbe2b60797d3ea4ca605",
+    "result": "Rewritten to describe the current accelerator, portability/timing/cycle/resource tradeoffs, complete replay/verification, historical research and separate sensor firmware, and limits/reproduction boundaries.",
+    "local_markdown_links_checked": 53,
+    "missing_links": [],
+    "cjk_findings": 0,
+    "numeric_and_scope_cross_checks": "passed against saved comparison, physical audit, final acceptance, final quality report, RTL, and command-line definitions",
+    "runtime_changes": false,
+    "new_hardware_operations": false,
+    "new_training_or_final_evaluation": false,
+    "engineering_tests": "Prior 312 passing Python checks retained; documentation change validated through content, references, and publication integrity."
+  }
 }
