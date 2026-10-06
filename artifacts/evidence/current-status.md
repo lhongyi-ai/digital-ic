@@ -1,3 +1,21 @@
+# Current engineering status: October 6, 2026
+
+The planned cross-FPGA experiment is complete. Candidate C passed the laboratory release gate, all 39 required report slots, the independent physical audit, and final acceptance. Original source/evidence bytes are preserved locally; this English publication has its own manifest and verification gate.
+
+| Platform | B delay ns | C delay ns | Reduction | Validation |
+| --- | ---: | ---: | ---: | --- |
+| AMD ID00, default implementation | 16.888 | 15.018 | 11.07% | Vivado 2024.2 OOC, 50 MHz; no board test |
+| iCE40 ID00, seed 1 | 71.220 | 58.507 | 17.85% | Full UPduino application, 13.2 MHz implementation constraint |
+
+All three prescribed iCE40 seeds improve. Final AMD implementations for ID00/02/04/06 pass setup and hold checks with no unconstrained paths or black boxes. The pipeline adds 512 NN/total activity cycles per recording; pre-processing, DFT, and power activity are unchanged. Fixed input cadence is retained.
+
+Local full-core simulations cover 5304 windows. Vivado covers 1716 full-recording windows and 5,282,827 intermediate numerical checks. Eleven new passing physical replays cover 1248 four-MAC and 468 one-MAC windows; overload failure and same-bitstream recovery are retained. Each normal startup processes 156 consecutive windows. These are separate runs, rather than one 1716-window physical stream.
+
+See `artifacts/vivado-portability-v1/report.md`, `comparison.json`, `physical-report.md`, `hardware-audit.json`, and `acceptance-r2.json`. The first post-physical acceptance receipt remains archived and was superseded by the corrected final report labeling. The actual worst paths include debug registers.
+
+English output text and private path redactions change some file digests. Original receipt fields such as `passed` and `current` below describe their saved laboratory snapshot, not a fresh check of this published tree. Use `publication/manifest.json` and `scripts/verify_publication.py` for current publication integrity. No new model-quality evaluation or USB operation was performed for translation. Physical frequency and power remain unmeasured, and HFOSC remains nominal 12 MHz.
+
+
 # Current project status
 
 Generated: 2026-09-13T09:32:23.580686+00:00

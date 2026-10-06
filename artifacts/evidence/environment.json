@@ -21,7 +21,7 @@
       "available": true,
       "executable": "./.tools/oss-cad-suite/bin/nextpnr-ice40",
       "returncode": 0,
-      "version_output": "mkdir: /home/researcher/.config/yosyshq: Operation not permitted\nmkdir: /home/researcher/.local/share/yosyshq: Operation not permitted\n\"nextpnr-ice40\" -- Next Generation Place and Route (Version nextpnr-0.11.1-19-g8dbcee5c)",
+      "version_output": "mkdir: BUILD_HOME/.config/yosyshq: Operation not permitted\nmkdir: BUILD_HOME/.local/share/yosyshq: Operation not permitted\n\"nextpnr-ice40\" -- Next Generation Place and Route (Version nextpnr-0.11.1-19-g8dbcee5c)",
       "executable_sha256": "652f967a5937700cd1b1934d041674fd9c492565349418691972424b46de7569"
     },
     "sby": {

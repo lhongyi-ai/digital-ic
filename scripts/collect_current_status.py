@@ -573,6 +573,37 @@ def collect(root=ROOT):
         a=read_json(physical_audit)
         data["known_physical_audit"]={k:a[k] for k in ("passed","physical_runs","unique_recordings","windows_by_lanes","main_machines","overload")}
         data["known_physical_audit"]["current"]=a["passed"] and matched(root/"scripts/audit_known_hardware.py",a["source_sha256"]) and all(matched(root/p,h) for p,h in a["sha256"].items())
+    portability = root / "artifacts/vivado-portability-v1"
+    if (portability / "protocol.json").exists():
+        p = {"stage": "experiment_in_progress", "reports": []}
+        index_path = portability / "evidence-index.json"
+        if index_path.exists():
+            for slot, name in read_json(index_path).items():
+                path = root / name
+                report = read_json(path) if path.exists() else {}
+                bindings = report.get("bindings", report.get("input_sha256", {}))
+                current = bool(report.get("passed") and bindings) and all(matched(root / n, h) for n, h in bindings.items())
+                p["reports"].append({"slot": slot, "path": name, "current": current})
+        historical = root / "artifacts/evidence/known-hardware-historical-audit.json"
+        if historical.exists():
+            audit = read_json(historical)
+            p["historical_physical_audit"] = {k: audit.get(k) for k in ("passed", "physical_runs", "current_source_claim")}
+        p["release_manifest_present"] = (portability / "release.json").exists()
+        audit_path = portability / "hardware-audit.json"
+        if audit_path.exists():
+            audit = read_json(audit_path)
+            current = bool(audit.get("passed")) and matched(root / "scripts/audit_known_hardware.py", audit.get("source_sha256")) and matched(portability / "release.json", audit.get("deployment_sha256")) and all(matched(root / name, value) for name, value in audit.get("sha256", {}).items())
+            p["physical_audit"] = {key: audit.get(key) for key in ("passed", "physical_runs", "unique_recordings", "windows_by_lanes", "overload")}
+            p["physical_audit"]["current"] = current
+            if current:
+                p["stage"] = "accepted"
+        for name in ("acceptance-r2.json", "acceptance.json"):
+            acceptance_path = portability / name
+            if acceptance_path.exists():
+                acceptance = read_json(acceptance_path)
+                p["final_acceptance"] = {"path": str(acceptance_path.relative_to(root)), "current": bool(acceptance.get("passed")) and all(matched(root / name, value) for name, value in acceptance.get("sha256", {}).items())}
+                break
+        data["vivado_portability"] = p
     return data
 
 
@@ -583,11 +614,11 @@ def markdown(data):
         "final_evaluation_started":"Final evaluation of the frozen version has started; results are incomplete",
         "final_evaluation_finished":"The frozen version completed one final evaluation; results appear below"}.get(data.get("known_final",{}).get("stage"),"The 720 final recordings have not been read")
     physical=data.get("known_physical_progress",{})
-    physical_status=f"Hardware testing of the new version has started, with {physical.get('saved_passes',0)} saved passing runs; see the independent audit below" if physical.get("started") else "The new version has not yet been tested on hardware"
-    lines = ["# Current project status", "", f"Generated: {data['generated_utc']}", "", f"Project directory: `{data['project_root']}`.", "",
-             "This page checks saved evidence and current hashes only. It does not start hardware, builds, training, or model inference.", "",
-             f"Saved physical replay passes bound to the current source: **{data['current_physical_passes']}**; representing **{data['current_physical_trial_count']}** actual replays and **{data['current_physical_unique_frames']}** deduplicated frames. Retained failed attempts: **{data['failed_attempts_retained']}**. Read-only recovery belongs to the original replay and does not add an independent trial.", "",
-             "## Configurations and models", "", "| Profile | N / Hz / MAC | Model and recorded digest match | Status |", "| --- | --- | --- | --- |"]
+    physical_status="Saved known replay records include historical versions; see the separate cross-FPGA physical audit for this experiment" if physical.get("started") else "The new version has not yet been tested on the physical board"
+    lines = ["# Current engineering status", "", f"Generated: {data['generated_utc']}", "", f"Engineering root: `{data['project_root']}`.", "",
+             "This page checks saved evidence and current digests only; it does not run hardware, builds, training, or model inference.", "",
+             f"Current passing generic replay manifests: **{data['current_physical_passes']}**, representing **{data['current_physical_trial_count']}** physical trials and **{data['current_physical_unique_frames']}** deduplicated frames. The known portability replay is audited separately. Retained failed attempts: **{data['failed_attempts_retained']}**. Read-only recovery of a prior replay does not add an independent trial.", "",
+             "## Configurations and models", "", "| Configuration | N / Hz / MAC | Model matches recorded digest | Status |", "| --- | --- | --- | --- |"]
     for p in data["profiles"]:
         lines.append(f"| {p['name']} | {p.get('n', '?')} / {p.get('sample_rate_hz', '?')} / {p.get('lanes', '?')} | {p.get('matches_recorded_model_digest')} | {p.get('model_training_status', p.get('error'))} |")
     if "known_machine_protocol" in data:
@@ -648,7 +679,7 @@ def markdown(data):
         if a.get("recovery_of_existing_trial"):
             note += "; read-only recovery of the original replay, with no new run"
         if a.get("current_physical_pass") and a.get("readback_evidence"):
-            note += "; " + a["readback_evidence"]
+            note += "；" + a["readback_evidence"]
         lines.append(f"| {Path(a['manifest']).parent.name} | {a.get('status')} | {a['current_physical_pass']} | {note} |")
     lines += ["", "Passing score claims come from saved integer-reference comparison receipts. This check verifies their binding to the same model, input, and output-log hashes and normal counters; it does not rerun inference.", "",
               "## Replay firmware builds", "", "This table checks upduino_replay only. Other SEN1/FCL1 reports are listed separately under other_build_reports in the JSON and are not evaluated using the replay-firmware input rules.", "",
@@ -735,6 +766,21 @@ def markdown(data):
             lines += [f"Six paired-spectrum restoration experiments complete; all pass: {d['paired_all_passed']}. Machine 02 shows a local improvement; this does not satisfy all three-machine acceptance gates.", ""]
         if "overlap_pairs" in d:
             lines += [f"Normal-reference versus development overlap screening: {d['overlap_pairs']} pairs; high-correlation raw-waveform flags: {d['overlap_flags']} pairs. Method limitations are in the report; this does not prove acquisition-batch independence.", ""]
+    if "vivado_portability" in data:
+        p = data["vivado_portability"]
+        count = sum(r["current"] for r in p["reports"])
+        lines += ["", "## Cross-FPGA implementation and quantization pipeline", "",
+            f"Registered reports: {len(p['reports'])}; current bindings: {count}. Release manifest present: {p['release_manifest_present']}. This index does not replace release-gate acceptance.", "",
+            "Original deployment and quality evidence was archived with its original bindings. Historical physical records describe the original version. Experiment entry: artifacts/vivado-portability-v1/protocol.json.", "",
+            "| Check | Report | Current inputs match |", "| --- | --- | --- |"]
+        lines += [f"| {r['slot']} | {r['path']} | {r['current']} |" for r in p["reports"]]
+        if "final_acceptance" in p:
+            a = p["final_acceptance"]
+            lines += ["", f"Final acceptance manifest: {a['path']}; current binding valid={a['current']}."]
+        if "physical_audit" in p:
+            a = p["physical_audit"]
+            lines += ["", f"Separate physical audit: passed={a['passed']}, current binding valid={a['current']}; {a['physical_runs']} replays, windows by MAC count {a['windows_by_lanes']}. This audit is authoritative for this experiment."]
+
     return "\n".join(lines)
 
 

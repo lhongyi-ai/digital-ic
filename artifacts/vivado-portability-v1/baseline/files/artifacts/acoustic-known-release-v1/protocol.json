@@ -1,0 +1,11 @@
+{
+  "source_sha256": "3646956323b7b1c0dbaefab4e0092c01b19160d377b97fc0e98649c8819bc558",
+  "fixed_source_sha256": "ca842868a4b79f1687f8e88bf5daa82f415681aca592aec7c053d62b0cc4beb4",
+  "development_audit_sha256": "f1c99b65a6b3e33e2b1c97440b6cdf94e43cfda92204c90cb696f75f82ae91a9",
+  "dsp_receipt_sha256": "fc814ebc8184ee73555f4e703fca91120f530dd6954e0eebeffe23285142a68d",
+  "plan_sha256": "cbce6ce6b5bf5c94a6264dbd37e75a6ba801f3d5b158a6a4a301faf8b80bf72b",
+  "selection": "original_fit full512 per-ID L2 logistic C1; all192 CV records per ID; extra fit256 excluded",
+  "threshold": "normal calibration only alpha=.04; ID00 n160 rank155, others n32 rank32; integer scores",
+  "stage": "final model constants, NOT final-test authorization until RTL/implementation freeze",
+  "final_test_opened": false
+}

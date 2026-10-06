@@ -33,7 +33,7 @@ Module replay_fifo_harness directly or indirectly contains formal properties -> 
 === replay_fifo ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        38 wires
       523 wire bits
        15 public wires
@@ -58,7 +58,7 @@ Module replay_fifo_harness directly or indirectly contains formal properties -> 
 === replay_fifo_harness ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        48 wires
       157 wire bits
        16 public wires
@@ -86,12 +86,12 @@ Module replay_fifo_harness directly or indirectly contains formal properties -> 
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
        84 replay_fifo_harness
        34 replay_fifo
 
         +----------Count including submodules.
-        | 
+        |
        86 wires
       680 wire bits
        31 public wires

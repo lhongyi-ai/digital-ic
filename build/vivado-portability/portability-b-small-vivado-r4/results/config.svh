@@ -1,0 +1,9 @@
+`define N 16
+`define WINDOWS 2
+`define LANES 4
+`define QUANT_PIPELINE 0
+`define BIAS 441
+`define THRESHOLD -1029
+`define LOG_CONSTANT 53248
+`define LOG_FLOOR -163279
+`define CLIPS 2

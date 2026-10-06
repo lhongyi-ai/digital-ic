@@ -334,7 +334,7 @@ Finding unused cells or wires in module \replay_fifo_harness..
 === replay_fifo ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        37 wires
       522 wire bits
        15 public wires
@@ -357,7 +357,7 @@ Finding unused cells or wires in module \replay_fifo_harness..
 === replay_fifo_harness ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
       100 wires
       413 wire bits
        21 public wires
@@ -387,12 +387,12 @@ Finding unused cells or wires in module \replay_fifo_harness..
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
       143 replay_fifo_harness
        32 replay_fifo
 
         +----------Count including submodules.
-        | 
+        |
       137 wires
       935 wire bits
        36 public wires

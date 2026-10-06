@@ -22,3 +22,12 @@ external/EfficientAT/resources/*.pt
 third_party/panns/*.pth
 measurements/**/original-flash-*.bin
 publication/verification-latest.json
+
+# Local evidence archives and connection/account configuration are never published.
+.local-evidence/
+.ssh/
+*.pem
+*.key
+**/association.log
+**/submission.log
+docs/token-usage-audit-*

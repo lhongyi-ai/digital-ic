@@ -1,0 +1,17 @@
+vivado v2024.2 (64-bit)
+Tool Version Limit: 2024.11
+SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-small-vivado-r2/rtl/core/vib_coeff_rom.sv" into library work
+INFO: [VRFC 10-311] analyzing module vib_coeff_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-small-vivado-r2/rtl/platform/spram16k.sv" into library work
+INFO: [VRFC 10-311] analyzing module spram16k
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-small-vivado-r2/rtl/core/known_capture.sv" into library work
+INFO: [VRFC 10-311] analyzing module known_capture
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-small-vivado-r2/rtl/core/known_spectral_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module known_spectral_core
+ERROR: [VRFC 10-3380] identifier 'point' is used before its declaration [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-small-vivado-r2/rtl/core/known_spectral_core.sv:32]
+ERROR: [VRFC 10-8530] module 'known_spectral_core' is ignored due to previous errors [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-small-vivado-r2/rtl/core/known_spectral_core.sv:3]

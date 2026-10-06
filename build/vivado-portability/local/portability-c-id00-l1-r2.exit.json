@@ -1,0 +1,19 @@
+{
+  "command": [
+    "LOCAL_PRIVATE_PATH 2026/digital ic/.venv/bin/python",
+    "LOCAL_PRIVATE_PATH 2026/digital ic/scripts/test_known_native.py",
+    "--machine",
+    "00",
+    "--clips",
+    "7",
+    "--lanes",
+    "1",
+    "--period",
+    "1500",
+    "--quant-pipeline",
+    "1",
+    "--run-id",
+    "portability-c-id00-l1-r2"
+  ],
+  "returncode": 0
+}

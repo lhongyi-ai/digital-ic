@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "input_sha256": {
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/platform/spram16k.sv": "563c79e4efc57f543e73fb9fc8c6875b9ac9068921e6e4894e7061c267955574",
+    "rtl/core/known_capture.sv": "4fef3ba24b5ec1c0ad21ffeba551c0c1f903b17ff9e5231f5dad35c804540206",
+    "rtl/core/known_spectral_core.sv": "afb90d08ebf0a92ac7cb45849506f8bdb151dee5fd2aedaf77c95ae92d4280cc",
+    "rtl/io/spi_master.sv": "392525a7f2b7dd5f227df4e196f90ba2ab5756e00b554312e9fb7c31af896bdb",
+    "rtl/io/flash_stream.sv": "77fefc32bd58387227e0ef517261f55d0067588c2bd08c1e460f82c153f3c18b",
+    "rtl/io/known_replay_controller.sv": "ceacafcf11d51f2b4ef9349796e584acb4cde7c2426de69d186e5f04c70a47e1",
+    "rtl/upduino_known.sv": "9f56ba2f10f98fb145b7b7568efc51f614d80a73cc189fa06178dbd00c99dfa9",
+    "artifacts/acoustic-known-release-v1/id06/gain_q24.hex": "aa68b9b16b36800cbf00ea36d3d410c0073f0a2076b1bdd47b96a5b1279ca032",
+    "artifacts/acoustic-known-release-v1/id06/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "artifacts/acoustic-known-release-v1/id06/weights.hex": "189b1251fdc7035b2eec7d5fd60aa510fa16b23b8c2ca3b6b164463a09b0485e",
+    "artifacts/acoustic-known-release-v1/id06/mean_q12.hex": "2a9747b9ba52cff57f6920b095a14d31136393ac543ddc312ddd7c47f7a8b815",
+    "artifacts/acoustic-known-release-v1/id06/cos_quarter.hex": "0de47092858c84fcd5384d0e10092250c533958ca93a59b2c6f2f039365294d9",
+    "artifacts/acoustic-known-release-v1/id06/model.json": "77079c236512ee262a51109569bb93f35b3add6e8fd815617fe158296321a7bc",
+    "artifacts/acoustic-known-release-v1/model-freeze.json": "a628b7cfc1b1bcd04566bb24bb7ae1214a7a7b53b8b22b66af54fb8323f6c5c7",
+    "configs/upduino-known.pcf": "644f44a8138747fa62ab75196f7ba5068bb86966dfb683bcffd9e997cc1b6315",
+    "scripts/build_known_board.py": "c1f2224d2f733aacd44965659ef874f5b490a0b13550e8bad09e7a545dff65dd",
+    "scripts/build_known_probe.py": "e3bb4586c7bf7715745363361cb5485486497096546500a585a34cbe057fd4a8",
+    "build/known-board/l4-id06-dff-r1/clock.py": "33f5c34ffa03a3fce5919514187722e30fd0429e9d5a3dcaccc13d78a3c55581"
+  },
+  "machine": "06",
+  "lanes": 4,
+  "utilization": {
+    "ICESTORM_DSP": {
+      "available": 8,
+      "used": 4
+    },
+    "ICESTORM_HFOSC": {
+      "available": 1,
+      "used": 1
+    },
+    "ICESTORM_LC": {
+      "available": 5280,
+      "used": 5180
+    },
+    "ICESTORM_LFOSC": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_PLL": {
+      "available": 1,
+      "used": 0
+    },
+    "ICESTORM_RAM": {
+      "available": 30,
+      "used": 28
+    },
+    "ICESTORM_SPRAM": {
+      "available": 4,
+      "used": 1
+    },
+    "IO_I3C": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_GB": {
+      "available": 8,
+      "used": 8
+    },
+    "SB_I2C": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_IO": {
+      "available": 39,
+      "used": 7
+    },
+    "SB_LEDDA_IP": {
+      "available": 1,
+      "used": 0
+    },
+    "SB_RGBA_DRV": {
+      "available": 1,
+      "used": 0
+    },
+    "SB_SPI": {
+      "available": 2,
+      "used": 0
+    },
+    "SB_WARMBOOT": {
+      "available": 1,
+      "used": 0
+    }
+  },
+  "fmax": {
+    "clk": {
+      "achieved": 14.241971969604492,
+      "constraint": 13.20009994506836
+    }
+  },
+  "bitstream_sha256": "a44528ee083f7384181864a49fa019432991f5c223758bc3b1b99a2e1d1c1a38",
+  "model_sha256": "77079c236512ee262a51109569bb93f35b3add6e8fd815617fe158296321a7bc",
+  "nominal_clock_hz": 12000000,
+  "clock_frequency_measured": false,
+  "physical_hardware": false,
+  "abc_dff": true,
+  "scope": "complete Flash replay application; not yet authorized by final-test gate"
+}

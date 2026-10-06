@@ -630,7 +630,7 @@ Finding unused cells or wires in module \quant_serial_harness..
 === quant_serial_harness ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
       185 wires
       713 wire bits
        26 public wires
@@ -659,7 +659,7 @@ Finding unused cells or wires in module \quant_serial_harness..
 === quant_serial_kernel ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        87 wires
       816 wire bits
        26 public wires
@@ -684,12 +684,12 @@ Finding unused cells or wires in module \quant_serial_harness..
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
       303 quant_serial_harness
        77 quant_serial_kernel
 
         +----------Count including submodules.
-        | 
+        |
       272 wires
      1529 wire bits
        52 public wires

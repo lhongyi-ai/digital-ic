@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_utc": "2026-09-13T09:32:23.580686+00:00",
-  "project_root": ".",
+  "generated_utc": "2026-10-06T20:59:53.878601+00:00",
+  "project_root": "PROJECT_ROOT",
   "collection_scope": "saved evidence only; no hardware I/O, builds, training, inference or test waveform loading",
   "migration": {
-    "evidence": "./artifacts/evidence/migration-2026-09-10.json",
+    "evidence": "PROJECT_ROOT/artifacts/evidence/migration-2026-09-10.json",
     "moved_at_utc": "2026-09-10T05:51:32.656358+00:00",
-    "compatibility_path": ".",
+    "compatibility_path": "LOCAL_PRIVATE_PATH",
     "compatibility_symlink_valid": true
   },
   "profiles": [
@@ -16,7 +16,7 @@
       "n": 1024,
       "sample_rate_hz": 12000,
       "lanes": 4,
-      "model": "./artifacts/model_neighbor/model.json",
+      "model": "PROJECT_ROOT/artifacts/model_neighbor/model.json",
       "model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
       "model_training_status": "trained_on_official_cwru_train_validation_only_candidate",
       "recorded_model_sha256": "12abcdfd4a9072903915135e771c1fb9be0d430275e28acbf545660e1d7fa117",
@@ -28,7 +28,7 @@
       "n": 256,
       "sample_rate_hz": 800,
       "lanes": 1,
-      "model": "./artifacts/sensor_spectrum/model/model.json",
+      "model": "PROJECT_ROOT/artifacts/sensor_spectrum/model/model.json",
       "model_sha256": "e4b47d14ec2eec60c102e147d58d9514269323b52e67326dd0756c7944a96459",
       "model_training_status": "not_a_classifier_DSP_coefficient_profile",
       "recorded_model_sha256": "e4b47d14ec2eec60c102e147d58d9514269323b52e67326dd0756c7944a96459",
@@ -40,7 +40,7 @@
       "n": 256,
       "sample_rate_hz": 800,
       "lanes": 1,
-      "model": "./build/field_fixture/trained/model/model.json",
+      "model": "PROJECT_ROOT/build/field_fixture/trained/model/model.json",
       "model_sha256": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe",
       "model_training_status": "synthetic_fixture_not_for_deployment",
       "recorded_model_sha256": "7881d621cc8075cbc2e280771a628f4662c234011830650dbf2fcc5ec12a61fe",
@@ -64,7 +64,7 @@
     "flash_id": "EF4016",
     "flash_bytes": 4194304,
     "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
-    "evidence_directory": "./measurements/2026-09-10-upduino31",
+    "evidence_directory": "PROJECT_ROOT/measurements/2026-09-10-upduino31",
     "independent_backup_comparison_recorded": true,
     "evidence_sha256": {
       "usb-identification.json": "28ae38c9e569633c881b11368921684598c6c27b971edf4b2e9002abc277b6ca",
@@ -74,7 +74,7 @@
   },
   "builds": [
     {
-      "report": "./build/hardware-2026-09-10/runs/l1/board_neighbor_l1_hfosc12/report.json",
+      "report": "PROJECT_ROOT/build/hardware-2026-09-10/runs/l1/board_neighbor_l1_hfosc12/report.json",
       "current": false,
       "errors": [
         "build source/model inputs are stale or missing"
@@ -157,13 +157,16 @@
       "timing_is_place_route_estimate": true,
       "clock_frequency_measured": false,
       "changed_or_missing_inputs": [
-        "./rtl/io/flash_stream.sv"
+        "PROJECT_ROOT/rtl/platform/spram16k.sv",
+        "PROJECT_ROOT/rtl/io/flash_stream.sv"
       ]
     },
     {
-      "report": "./build/hardware-2026-09-10/runs/l1-wake/board_neighbor_l1_hfosc12/report.json",
-      "current": true,
-      "errors": [],
+      "report": "PROJECT_ROOT/build/hardware-2026-09-10/runs/l1-wake/board_neighbor_l1_hfosc12/report.json",
+      "current": false,
+      "errors": [
+        "build source/model inputs are stale or missing"
+      ],
       "report_sha256": "f1c2012ac20704675d9596bbd824dde01b84098075f8de0bbe89c2330b61f768",
       "built_utc": "2026-09-10T06:02:57.631325+00:00",
       "lanes": 1,
@@ -241,10 +244,12 @@
       "target_clock_mhz": 13.2,
       "timing_is_place_route_estimate": true,
       "clock_frequency_measured": false,
-      "changed_or_missing_inputs": []
+      "changed_or_missing_inputs": [
+        "PROJECT_ROOT/rtl/platform/spram16k.sv"
+      ]
     },
     {
-      "report": "./build/hardware-2026-09-10/runs/l4-v2/board_neighbor_l4_hfosc12/report.json",
+      "report": "PROJECT_ROOT/build/hardware-2026-09-10/runs/l4-v2/board_neighbor_l4_hfosc12/report.json",
       "current": false,
       "errors": [
         "build source/model inputs are stale or missing",
@@ -328,12 +333,13 @@
       "timing_is_place_route_estimate": true,
       "clock_frequency_measured": false,
       "changed_or_missing_inputs": [
-        "./rtl/io/flash_stream.sv",
-        "./scripts/build_board.py"
+        "PROJECT_ROOT/rtl/platform/spram16k.sv",
+        "PROJECT_ROOT/rtl/io/flash_stream.sv",
+        "PROJECT_ROOT/scripts/build_board.py"
       ]
     },
     {
-      "report": "./build/hardware-2026-09-10/runs/l4-v3/board_neighbor_l4_hfosc12/report.json",
+      "report": "PROJECT_ROOT/build/hardware-2026-09-10/runs/l4-v3/board_neighbor_l4_hfosc12/report.json",
       "current": false,
       "errors": [
         "build source/model inputs are stale or missing"
@@ -416,13 +422,16 @@
       "timing_is_place_route_estimate": true,
       "clock_frequency_measured": false,
       "changed_or_missing_inputs": [
-        "./rtl/io/flash_stream.sv"
+        "PROJECT_ROOT/rtl/platform/spram16k.sv",
+        "PROJECT_ROOT/rtl/io/flash_stream.sv"
       ]
     },
     {
-      "report": "./build/hardware-2026-09-10/runs/l4-wake/board_neighbor_l4_hfosc12/report.json",
-      "current": true,
-      "errors": [],
+      "report": "PROJECT_ROOT/build/hardware-2026-09-10/runs/l4-wake/board_neighbor_l4_hfosc12/report.json",
+      "current": false,
+      "errors": [
+        "build source/model inputs are stale or missing"
+      ],
       "report_sha256": "14e7825743d0a4610b8182062e9b421645f0645b7bd97b035657822464fae441",
       "built_utc": "2026-09-10T06:03:04.439723+00:00",
       "lanes": 4,
@@ -500,26 +509,30 @@
       "target_clock_mhz": 13.2,
       "timing_is_place_route_estimate": true,
       "clock_frequency_measured": false,
-      "changed_or_missing_inputs": []
+      "changed_or_missing_inputs": [
+        "PROJECT_ROOT/rtl/platform/spram16k.sv"
+      ]
     }
   ],
   "other_build_reports": [
     {
-      "report": "./build/hardware-2026-09-10/runs/fcl1-wake/field_board_l1/report.json",
+      "report": "PROJECT_ROOT/build/hardware-2026-09-10/runs/fcl1-wake/field_board_l1/report.json",
       "top": "upduino_field",
       "scope": "not checked by this replay-build status table"
     },
     {
-      "report": "./build/hardware-2026-09-10/runs/sen1-wake/sensor_board_800hz_spectrum/report.json",
+      "report": "PROJECT_ROOT/build/hardware-2026-09-10/runs/sen1-wake/sensor_board_800hz_spectrum/report.json",
       "top": "upduino_sensor",
       "scope": "not checked by this replay-build status table"
     }
   ],
   "physical_attempts": [
     {
-      "manifest": "./measurements/2026-09-10-upduino31/l1-1000/manifest.json",
-      "current_physical_pass": true,
-      "errors": [],
+      "manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l1-1000/manifest.json",
+      "current_physical_pass": false,
+      "errors": [
+        "attempt's build is stale or invalid against current inputs"
+      ],
       "inference_rerun": false,
       "recovery_of_existing_trial": false,
       "physical_trial_id": "7ecf4475-ac06-4be9-a980-4dc203345f8b",
@@ -545,8 +558,10 @@
         "read-log-02.bin",
         "read-log-03.bin"
       ],
-      "build_current": true,
-      "build_errors": [],
+      "build_current": false,
+      "build_errors": [
+        "build source/model inputs are stale or missing"
+      ],
       "lanes": 1,
       "counters": {
         "record_count": 1000,
@@ -590,10 +605,10 @@
         }
       },
       "score_claim": "saved integer-reference comparison; same input/model/log hashes validated, inference not rerun",
-      "claim": "provenance_validated_saved_physical_replay"
+      "claim": "saved pass is not current evidence"
     },
     {
-      "manifest": "./measurements/2026-09-10-upduino31/l1-overload/manifest.json",
+      "manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l1-overload/manifest.json",
       "current_physical_pass": false,
       "errors": [],
       "inference_rerun": false,
@@ -619,9 +634,11 @@
       "claim": "failed, dry or incomplete attempt; no current passing claim"
     },
     {
-      "manifest": "./measurements/2026-09-10-upduino31/l1-post-overload-5/manifest.json",
-      "current_physical_pass": true,
-      "errors": [],
+      "manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l1-post-overload-5/manifest.json",
+      "current_physical_pass": false,
+      "errors": [
+        "attempt's build is stale or invalid against current inputs"
+      ],
       "inference_rerun": false,
       "recovery_of_existing_trial": false,
       "physical_trial_id": "f7167614-eaed-4f82-be30-ba744debf6e9",
@@ -647,8 +664,10 @@
         "read-log-01.bin",
         "read-log-02.bin"
       ],
-      "build_current": true,
-      "build_errors": [],
+      "build_current": false,
+      "build_errors": [
+        "build source/model inputs are stale or missing"
+      ],
       "lanes": 1,
       "counters": {
         "record_count": 5,
@@ -692,10 +711,10 @@
         }
       },
       "score_claim": "saved integer-reference comparison; same input/model/log hashes validated, inference not rerun",
-      "claim": "provenance_validated_saved_physical_replay"
+      "claim": "saved pass is not current evidence"
     },
     {
-      "manifest": "./measurements/2026-09-10-upduino31/l4-1000/manifest.json",
+      "manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l4-1000/manifest.json",
       "current_physical_pass": false,
       "errors": [],
       "inference_rerun": false,
@@ -721,9 +740,11 @@
       "claim": "failed, dry or incomplete attempt; no current passing claim"
     },
     {
-      "manifest": "./measurements/2026-09-10-upduino31/l4-1000-readback-recovery/manifest.json",
-      "current_physical_pass": true,
-      "errors": [],
+      "manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l4-1000-readback-recovery/manifest.json",
+      "current_physical_pass": false,
+      "errors": [
+        "attempt's build is stale or invalid against current inputs"
+      ],
       "inference_rerun": false,
       "recovery_of_existing_trial": true,
       "physical_trial_id": "origin-manifest-sha256:7183122a20956a7322c7cfeac7cda70f6184b5b2d72851c8d19a645ea98d57dc",
@@ -749,10 +770,12 @@
         "read-log-01.bin",
         "read-log-02.bin"
       ],
-      "recovery_origin_manifest": "./measurements/2026-09-10-upduino31/l4-1000/manifest.json",
+      "recovery_origin_manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l4-1000/manifest.json",
       "recovery_origin_manifest_sha256": "7183122a20956a7322c7cfeac7cda70f6184b5b2d72851c8d19a645ea98d57dc",
-      "build_current": true,
-      "build_errors": [],
+      "build_current": false,
+      "build_errors": [
+        "build source/model inputs are stale or missing"
+      ],
       "lanes": 4,
       "counters": {
         "record_count": 1000,
@@ -796,10 +819,10 @@
         }
       },
       "score_claim": "saved integer-reference comparison; same input/model/log hashes validated, inference not rerun",
-      "claim": "provenance_validated_readback_recovery_of_same_physical_trial"
+      "claim": "saved pass is not current evidence"
     },
     {
-      "manifest": "./measurements/2026-09-10-upduino31/l4-5/manifest.json",
+      "manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l4-5/manifest.json",
       "current_physical_pass": false,
       "errors": [],
       "inference_rerun": false,
@@ -825,7 +848,7 @@
       "claim": "failed, dry or incomplete attempt; no current passing claim"
     },
     {
-      "manifest": "./measurements/2026-09-10-upduino31/l4-5-preview/manifest.json",
+      "manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l4-5-preview/manifest.json",
       "current_physical_pass": false,
       "errors": [],
       "inference_rerun": false,
@@ -851,9 +874,11 @@
       "claim": "failed, dry or incomplete attempt; no current passing claim"
     },
     {
-      "manifest": "./measurements/2026-09-10-upduino31/l4-5-wake/manifest.json",
-      "current_physical_pass": true,
-      "errors": [],
+      "manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l4-5-wake/manifest.json",
+      "current_physical_pass": false,
+      "errors": [
+        "attempt's build is stale or invalid against current inputs"
+      ],
       "inference_rerun": false,
       "recovery_of_existing_trial": false,
       "physical_trial_id": "origin-manifest-sha256:3b15a9e849dfcc0687f06dc8266180fd0249f455acf3218c65dfc6ea4891094a",
@@ -875,8 +900,10 @@
         "source_frames": 9
       },
       "readback_evidence": "legacy single saved read; no two-read consensus receipt",
-      "build_current": true,
-      "build_errors": [],
+      "build_current": false,
+      "build_errors": [
+        "build source/model inputs are stale or missing"
+      ],
       "lanes": 4,
       "counters": {
         "record_count": 5,
@@ -920,12 +947,14 @@
         }
       },
       "score_claim": "saved integer-reference comparison; same input/model/log hashes validated, inference not rerun",
-      "claim": "provenance_validated_saved_physical_replay"
+      "claim": "saved pass is not current evidence"
     },
     {
-      "manifest": "./measurements/2026-09-10-upduino31/l4-final-5/manifest.json",
-      "current_physical_pass": true,
-      "errors": [],
+      "manifest": "PROJECT_ROOT/measurements/2026-09-10-upduino31/l4-final-5/manifest.json",
+      "current_physical_pass": false,
+      "errors": [
+        "attempt's build is stale or invalid against current inputs"
+      ],
       "inference_rerun": false,
       "recovery_of_existing_trial": false,
       "physical_trial_id": "f260ccc9-ed05-4614-a71b-d539ddb8491e",
@@ -951,8 +980,10 @@
         "read-log-01.bin",
         "read-log-02.bin"
       ],
-      "build_current": true,
-      "build_errors": [],
+      "build_current": false,
+      "build_errors": [
+        "build source/model inputs are stale or missing"
+      ],
       "lanes": 4,
       "counters": {
         "record_count": 5,
@@ -996,11 +1027,11 @@
         }
       },
       "score_claim": "saved integer-reference comparison; same input/model/log hashes validated, inference not rerun",
-      "claim": "provenance_validated_saved_physical_replay"
+      "claim": "saved pass is not current evidence"
     }
   ],
   "field_fixture": {
-    "output": "./build/field_fixture/trained",
+    "output": "PROJECT_ROOT/build/field_fixture/trained",
     "read_only": true,
     "test_waveforms_opened": false,
     "training_or_evaluation_run": false,
@@ -1029,46 +1060,10 @@
     "valid": true,
     "verification": "passed"
   },
-  "current_physical_passes": 5,
-  "current_physical_trials": [
-    {
-      "physical_trial_id": "7ecf4475-ac06-4be9-a980-4dc203345f8b",
-      "frames": 1000,
-      "receipts": [
-        "./measurements/2026-09-10-upduino31/l1-1000/manifest.json"
-      ]
-    },
-    {
-      "physical_trial_id": "f7167614-eaed-4f82-be30-ba744debf6e9",
-      "frames": 5,
-      "receipts": [
-        "./measurements/2026-09-10-upduino31/l1-post-overload-5/manifest.json"
-      ]
-    },
-    {
-      "physical_trial_id": "origin-manifest-sha256:7183122a20956a7322c7cfeac7cda70f6184b5b2d72851c8d19a645ea98d57dc",
-      "frames": 1000,
-      "receipts": [
-        "./measurements/2026-09-10-upduino31/l4-1000-readback-recovery/manifest.json"
-      ]
-    },
-    {
-      "physical_trial_id": "origin-manifest-sha256:3b15a9e849dfcc0687f06dc8266180fd0249f455acf3218c65dfc6ea4891094a",
-      "frames": 5,
-      "receipts": [
-        "./measurements/2026-09-10-upduino31/l4-5-wake/manifest.json"
-      ]
-    },
-    {
-      "physical_trial_id": "f260ccc9-ed05-4614-a71b-d539ddb8491e",
-      "frames": 5,
-      "receipts": [
-        "./measurements/2026-09-10-upduino31/l4-final-5/manifest.json"
-      ]
-    }
-  ],
-  "current_physical_trial_count": 5,
-  "current_physical_unique_frames": 2015,
+  "current_physical_passes": 0,
+  "current_physical_trials": [],
+  "current_physical_trial_count": 0,
+  "current_physical_unique_frames": 0,
   "failed_attempts_retained": 3,
   "acoustic": {
     "freeze_current": true,
@@ -1361,9 +1356,11 @@
     "microphone_tested": false,
     "builds": [
       {
-        "report": "./build/runs/acoustic-v1/acoustic_board_neighbor_l1_hfosc12/report.json",
-        "current": true,
-        "errors": [],
+        "report": "PROJECT_ROOT/build/runs/acoustic-v1/acoustic_board_neighbor_l1_hfosc12/report.json",
+        "current": false,
+        "errors": [
+          "build source/model inputs are stale or missing"
+        ],
         "report_sha256": "8960102c3c0e4a78e52f9ae6be4d8823b63a021664ce03ee95e101ed66d5eb16",
         "built_utc": "2026-09-11T05:05:12.961043+00:00",
         "lanes": 1,
@@ -1441,14 +1438,18 @@
         "target_clock_mhz": 13.2,
         "timing_is_place_route_estimate": true,
         "clock_frequency_measured": false,
-        "changed_or_missing_inputs": []
+        "changed_or_missing_inputs": [
+          "PROJECT_ROOT/rtl/platform/spram16k.sv"
+        ]
       }
     ],
     "physical_attempts": [
       {
-        "manifest": "./measurements/2026-09-11-acoustic/l1-1000/manifest.json",
-        "current_physical_pass": true,
-        "errors": [],
+        "manifest": "PROJECT_ROOT/measurements/2026-09-11-acoustic/l1-1000/manifest.json",
+        "current_physical_pass": false,
+        "errors": [
+          "attempt's build is stale or invalid against current inputs"
+        ],
         "inference_rerun": false,
         "recovery_of_existing_trial": false,
         "physical_trial_id": "7b9856ae-3a83-4eed-b213-3ec297d04840",
@@ -1474,8 +1475,10 @@
           "read-log-02.bin",
           "read-log-03.bin"
         ],
-        "build_current": true,
-        "build_errors": [],
+        "build_current": false,
+        "build_errors": [
+          "build source/model inputs are stale or missing"
+        ],
         "lanes": 1,
         "counters": {
           "record_count": 1000,
@@ -1519,12 +1522,14 @@
           }
         },
         "score_claim": "saved integer-reference comparison; same input/model/log hashes validated, inference not rerun",
-        "claim": "provenance_validated_saved_physical_replay"
+        "claim": "saved pass is not current evidence"
       },
       {
-        "manifest": "./measurements/2026-09-11-acoustic/l1-5/manifest.json",
-        "current_physical_pass": true,
-        "errors": [],
+        "manifest": "PROJECT_ROOT/measurements/2026-09-11-acoustic/l1-5/manifest.json",
+        "current_physical_pass": false,
+        "errors": [
+          "attempt's build is stale or invalid against current inputs"
+        ],
         "inference_rerun": false,
         "recovery_of_existing_trial": false,
         "physical_trial_id": "329e8c7b-ceb4-4816-9664-e6ab9eb89aef",
@@ -1550,8 +1555,10 @@
           "read-log-01.bin",
           "read-log-02.bin"
         ],
-        "build_current": true,
-        "build_errors": [],
+        "build_current": false,
+        "build_errors": [
+          "build source/model inputs are stale or missing"
+        ],
         "lanes": 1,
         "counters": {
           "record_count": 5,
@@ -1595,10 +1602,10 @@
           }
         },
         "score_claim": "saved integer-reference comparison; same input/model/log hashes validated, inference not rerun",
-        "claim": "provenance_validated_saved_physical_replay"
+        "claim": "saved pass is not current evidence"
       },
       {
-        "manifest": "./measurements/2026-09-11-acoustic/l1-preview/manifest.json",
+        "manifest": "PROJECT_ROOT/measurements/2026-09-11-acoustic/l1-preview/manifest.json",
         "current_physical_pass": false,
         "errors": [],
         "inference_rerun": false,
@@ -1667,8 +1674,8 @@
         "caveats": "FFT count omits memory/control overhead and scaling; real-input/pruned FFT can differ. Neither cycle count nor fit established. Existing sparse DFT expanded directly is unattractive."
       },
       "studies": {
-        "./artifacts/acoustic-v2-study/receipt.json": "e1ea376c50d6754343cdf886fa7163a4778c7f1927615b44e1d77782d849bb60",
-        "./artifacts/acoustic-v2-logpower/receipt.json": "ca40e2eae67305cdba3c61235e31dd2dbcb22ab84d3d00184081851ebaca56b2"
+        "PROJECT_ROOT/artifacts/acoustic-v2-study/receipt.json": "e1ea376c50d6754343cdf886fa7163a4778c7f1927615b44e1d77782d849bb60",
+        "PROJECT_ROOT/artifacts/acoustic-v2-logpower/receipt.json": "ca40e2eae67305cdba3c61235e31dd2dbcb22ab84d3d00184081851ebaca56b2"
       }
     }
   },
@@ -12024,7 +12031,7 @@
     "reports": [
       {
         "path": "build/known-core/compact-l1-final/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "fixture": true,
         "lanes": 1,
@@ -12033,7 +12040,7 @@
       },
       {
         "path": "build/known-core/compact-l4-final/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "fixture": true,
         "lanes": 4,
@@ -12057,6 +12064,78 @@
         "lanes": 4,
         "windows": 3,
         "intermediate_checks": 12291
+      },
+      {
+        "path": "build/known-core/portability-b-small-l1/report.json",
+        "current": false,
+        "passed": true,
+        "fixture": true,
+        "lanes": 1,
+        "windows": 6,
+        "intermediate_checks": 339
+      },
+      {
+        "path": "build/known-core/portability-b-small-l1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "fixture": true,
+        "lanes": 1,
+        "windows": 6,
+        "intermediate_checks": 339
+      },
+      {
+        "path": "build/known-core/portability-b-small-l4/report.json",
+        "current": false,
+        "passed": true,
+        "fixture": true,
+        "lanes": 4,
+        "windows": 6,
+        "intermediate_checks": 339
+      },
+      {
+        "path": "build/known-core/portability-b-small-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "fixture": true,
+        "lanes": 4,
+        "windows": 6,
+        "intermediate_checks": 339
+      },
+      {
+        "path": "build/known-core/portability-c-small-l1/report.json",
+        "current": false,
+        "passed": true,
+        "fixture": true,
+        "lanes": 1,
+        "windows": 6,
+        "intermediate_checks": 339
+      },
+      {
+        "path": "build/known-core/portability-c-small-l1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "fixture": true,
+        "lanes": 1,
+        "windows": 6,
+        "intermediate_checks": 339
+      },
+      {
+        "path": "build/known-core/portability-c-small-l4/report.json",
+        "current": false,
+        "passed": true,
+        "fixture": true,
+        "lanes": 4,
+        "windows": 6,
+        "intermediate_checks": 339
+      },
+      {
+        "path": "build/known-core/portability-c-small-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "fixture": true,
+        "lanes": 4,
+        "windows": 6,
+        "intermediate_checks": 339
       },
       {
         "path": "build/known-core/small-l1-r1/report.json",
@@ -12096,7 +12175,7 @@
       },
       {
         "path": "build/known-native/l1-1092-backpressure-r2/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "lanes": 1,
         "windows": 1092,
@@ -12114,7 +12193,7 @@
       },
       {
         "path": "build/known-native/l4-1092-fixed16k-r2/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "lanes": 4,
         "windows": 1092,
@@ -12122,8 +12201,88 @@
         "intermediate_checks": 3361799
       },
       {
-        "path": "build/known-flash/full-id00-l1-r1/report.json",
+        "path": "build/known-native/portability-b-id00-l1/report.json",
+        "current": false,
+        "passed": true,
+        "lanes": 1,
+        "machine": "00",
+        "windows": 1092,
+        "samples": 1118208,
+        "intermediate_checks": 3361799
+      },
+      {
+        "path": "build/known-native/portability-b-id00-l1-r2/report.json",
         "current": true,
+        "passed": true,
+        "lanes": 1,
+        "machine": "00",
+        "windows": 1092,
+        "samples": 1118208,
+        "intermediate_checks": 3361799
+      },
+      {
+        "path": "build/known-native/portability-b-id00-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "windows": 1092,
+        "samples": 1118208,
+        "intermediate_checks": 3361799
+      },
+      {
+        "path": "build/known-native/portability-c-id00-l1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 1,
+        "machine": "00",
+        "windows": 1092,
+        "samples": 1118208,
+        "intermediate_checks": 3361799
+      },
+      {
+        "path": "build/known-native/portability-c-id00-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "windows": 1092,
+        "samples": 1118208,
+        "intermediate_checks": 3361799
+      },
+      {
+        "path": "build/known-native/portability-c-id02-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "02",
+        "windows": 312,
+        "samples": 319488,
+        "intermediate_checks": 960514
+      },
+      {
+        "path": "build/known-native/portability-c-id04-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "04",
+        "windows": 312,
+        "samples": 319488,
+        "intermediate_checks": 960514
+      },
+      {
+        "path": "build/known-native/portability-c-id06-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "06",
+        "windows": 312,
+        "samples": 319488,
+        "intermediate_checks": 960514
+      },
+      {
+        "path": "build/known-flash/full-id00-l1-r1/report.json",
+        "current": false,
         "passed": true,
         "fixture": false,
         "lanes": 1,
@@ -12133,7 +12292,7 @@
       },
       {
         "path": "build/known-flash/full-id00-l4-r1/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "fixture": false,
         "lanes": 4,
@@ -12143,7 +12302,7 @@
       },
       {
         "path": "build/known-flash/full-id02-l4-r1/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "fixture": false,
         "lanes": 4,
@@ -12153,7 +12312,7 @@
       },
       {
         "path": "build/known-flash/full-id04-l4-r1/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "fixture": false,
         "lanes": 4,
@@ -12163,6 +12322,65 @@
       },
       {
         "path": "build/known-flash/full-id06-l4-r1/report.json",
+        "current": false,
+        "passed": true,
+        "fixture": false,
+        "lanes": 4,
+        "machine": "06",
+        "windows": 156,
+        "samples": 159744
+      },
+      {
+        "path": "build/known-flash/portability-c-flash-fixture-r2/report.json",
+        "current": true,
+        "passed": true,
+        "fixture": true,
+        "lanes": 4,
+        "machine": "00",
+        "windows": 4
+      },
+      {
+        "path": "build/known-flash/portability-c-flash-id00-l1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "fixture": false,
+        "lanes": 1,
+        "machine": "00",
+        "windows": 156,
+        "samples": 159744
+      },
+      {
+        "path": "build/known-flash/portability-c-flash-id00-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "fixture": false,
+        "lanes": 4,
+        "machine": "00",
+        "windows": 156,
+        "samples": 159744
+      },
+      {
+        "path": "build/known-flash/portability-c-flash-id02-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "fixture": false,
+        "lanes": 4,
+        "machine": "02",
+        "windows": 156,
+        "samples": 159744
+      },
+      {
+        "path": "build/known-flash/portability-c-flash-id04-l4-r2/report.json",
+        "current": true,
+        "passed": true,
+        "fixture": false,
+        "lanes": 4,
+        "machine": "04",
+        "windows": 156,
+        "samples": 159744
+      },
+      {
+        "path": "build/known-flash/portability-c-flash-id06-l4-r2/report.json",
         "current": true,
         "passed": true,
         "fixture": false,
@@ -12194,14 +12412,14 @@
       },
       {
         "path": "build/known-flash/small-r4/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "fixture": true,
         "windows": 4
       },
       {
         "path": "build/known-board/l1-id00-dff-r1/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "lanes": 1,
         "machine": "00",
@@ -12276,7 +12494,7 @@
       },
       {
         "path": "build/known-board/l4-id00-r8/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "lanes": 4,
         "machine": "00",
@@ -12351,7 +12569,7 @@
       },
       {
         "path": "build/known-board/l4-id02-dff-r1/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "lanes": 4,
         "machine": "02",
@@ -12426,7 +12644,7 @@
       },
       {
         "path": "build/known-board/l4-id04-dff-r1/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "lanes": 4,
         "machine": "04",
@@ -12501,7 +12719,7 @@
       },
       {
         "path": "build/known-board/l4-id06-dff-r1/report.json",
-        "current": true,
+        "current": false,
         "passed": true,
         "lanes": 4,
         "machine": "06",
@@ -12523,6 +12741,906 @@
           "ICESTORM_LC": {
             "available": 5280,
             "used": 5180
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-b-id00-l4-s1/report.json",
+        "current": false,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "fmax": {
+          "clk": {
+            "achieved": 14.040999412536621,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5168
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-b-id00-l4-s1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "fmax": {
+          "clk": {
+            "achieved": 14.040999412536621,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5168
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-b-id00-l4-s2-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "fmax": {
+          "clk": {
+            "achieved": 13.770121574401855,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5168
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-b-id00-l4-s3-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "fmax": {
+          "clk": {
+            "achieved": 14.004817962646484,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5168
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-c-id00-l1-s1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 1,
+        "machine": "00",
+        "fmax": {
+          "clk": {
+            "achieved": 16.952600479125977,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 1
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 4765
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 25
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-c-id00-l4-s1/report.json",
+        "current": false,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "fmax": {
+          "clk": {
+            "achieved": 17.09197235107422,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5221
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-c-id00-l4-s1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "fmax": {
+          "clk": {
+            "achieved": 17.09197235107422,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5221
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-c-id00-l4-s2-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "fmax": {
+          "clk": {
+            "achieved": 17.13796043395996,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5221
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-c-id00-l4-s3-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "00",
+        "fmax": {
+          "clk": {
+            "achieved": 17.40553092956543,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5221
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-c-id02-l4-s1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "02",
+        "fmax": {
+          "clk": {
+            "achieved": 18.103479385375977,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5223
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-c-id04-l4-s1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "04",
+        "fmax": {
+          "clk": {
+            "achieved": 17.84153175354004,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5212
+          },
+          "ICESTORM_LFOSC": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_PLL": {
+            "available": 1,
+            "used": 0
+          },
+          "ICESTORM_RAM": {
+            "available": 30,
+            "used": 28
+          },
+          "ICESTORM_SPRAM": {
+            "available": 4,
+            "used": 1
+          },
+          "IO_I3C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_GB": {
+            "available": 8,
+            "used": 8
+          },
+          "SB_I2C": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_IO": {
+            "available": 39,
+            "used": 7
+          },
+          "SB_LEDDA_IP": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_RGBA_DRV": {
+            "available": 1,
+            "used": 0
+          },
+          "SB_SPI": {
+            "available": 2,
+            "used": 0
+          },
+          "SB_WARMBOOT": {
+            "available": 1,
+            "used": 0
+          }
+        }
+      },
+      {
+        "path": "build/known-board/portability-c-id06-l4-s1-r2/report.json",
+        "current": true,
+        "passed": true,
+        "lanes": 4,
+        "machine": "06",
+        "fmax": {
+          "clk": {
+            "achieved": 17.79011344909668,
+            "constraint": 13.20009994506836
+          }
+        },
+        "utilization": {
+          "ICESTORM_DSP": {
+            "available": 8,
+            "used": 4
+          },
+          "ICESTORM_HFOSC": {
+            "available": 1,
+            "used": 1
+          },
+          "ICESTORM_LC": {
+            "available": 5280,
+            "used": 5228
           },
           "ICESTORM_LFOSC": {
             "available": 1,
@@ -12676,7 +13794,7 @@
     "audit_current": true
   },
   "known_physical_progress": {
-    "saved_passes": 22,
+    "saved_passes": 33,
     "started": true
   },
   "known_physical_audit": {
@@ -12721,6 +13839,261 @@
       "recovery_attempt": "measurements/known-replay/id00-l1-recovery-r1/manifest.json",
       "scope": "intentional single-MAC input backpressure at period750, reset and normal period1500 recovery"
     },
-    "current": true
+    "current": false
+  },
+  "vivado_portability": {
+    "stage": "accepted",
+    "reports": [
+      {
+        "slot": "ram-contract",
+        "path": "build/vivado-portability/contract-r5/report.json",
+        "current": true
+      },
+      {
+        "slot": "edge-contract",
+        "path": "build/vivado-portability/edge-contract-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "native-B-00-l1",
+        "path": "build/known-native/portability-b-id00-l1-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "flash-fixture",
+        "path": "build/known-flash/portability-c-flash-fixture-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "flash-C-00-l4",
+        "path": "build/known-flash/portability-c-flash-id00-l4-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "flash-C-02-l4",
+        "path": "build/known-flash/portability-c-flash-id02-l4-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-B-00-l4-s1",
+        "path": "build/known-board/portability-b-id00-l4-s1-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "flash-C-04-l4",
+        "path": "build/known-flash/portability-c-flash-id04-l4-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "flash-C-06-l4",
+        "path": "build/known-flash/portability-c-flash-id06-l4-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-B-00-l4-s2",
+        "path": "build/known-board/portability-b-id00-l4-s2-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "flash-C-00-l1",
+        "path": "build/known-flash/portability-c-flash-id00-l1-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-B-00-l4-s3",
+        "path": "build/known-board/portability-b-id00-l4-s3-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-C-00-l4-s1",
+        "path": "build/known-board/portability-c-id00-l4-s1-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "native-B-00-l4",
+        "path": "build/known-native/portability-b-id00-l4-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-C-00-l4-s2",
+        "path": "build/known-board/portability-c-id00-l4-s2-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-C-00-l4-s3",
+        "path": "build/known-board/portability-c-id00-l4-s3-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "native-C-00-l1",
+        "path": "build/known-native/portability-c-id00-l1-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-C-02-l4-s1",
+        "path": "build/known-board/portability-c-id02-l4-s1-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-C-04-l4-s1",
+        "path": "build/known-board/portability-c-id04-l4-s1-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "native-C-00-l4",
+        "path": "build/known-native/portability-c-id00-l4-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "native-C-02-l4",
+        "path": "build/known-native/portability-c-id02-l4-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-C-06-l4-s1",
+        "path": "build/known-board/portability-c-id06-l4-s1-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "native-C-04-l4",
+        "path": "build/known-native/portability-c-id04-l4-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "native-C-06-l4",
+        "path": "build/known-native/portability-c-id06-l4-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "ice-C-00-l1-s1",
+        "path": "build/known-board/portability-c-id00-l1-s1-r2/report.json",
+        "current": true
+      },
+      {
+        "slot": "xsim-B-small",
+        "path": "build/vivado-portability/portability-b-small-vivado-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "xsim-C-small",
+        "path": "build/vivado-portability/portability-c-small-vivado-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "amd-B-00-l4",
+        "path": "build/vivado-portability/portability-b-id00-l4-vivado-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "amd-C-00-l4",
+        "path": "build/vivado-portability/portability-c-id00-l4-vivado-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "amd-C-02-l4",
+        "path": "build/vivado-portability/portability-c-id02-l4-vivado-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "amd-C-04-l4",
+        "path": "build/vivado-portability/portability-c-id04-l4-vivado-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "amd-C-06-l4",
+        "path": "build/vivado-portability/portability-c-id06-l4-vivado-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "amd-C-00-l1",
+        "path": "build/vivado-portability/portability-c-id00-l1-vivado-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "xsim-B-00-l4",
+        "path": "build/vivado-portability/portability-b-id00-l4-sim-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "xsim-C-00-l4",
+        "path": "build/vivado-portability/portability-c-id00-l4-sim-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "xsim-C-02-l4",
+        "path": "build/vivado-portability/portability-c-id02-l4-sim-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "xsim-C-04-l4",
+        "path": "build/vivado-portability/portability-c-id04-l4-sim-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "xsim-C-06-l4",
+        "path": "build/vivado-portability/portability-c-id06-l4-sim-r4/report.json",
+        "current": true
+      },
+      {
+        "slot": "xsim-C-00-l1",
+        "path": "build/vivado-portability/portability-c-id00-l1-sim-r4/report.json",
+        "current": true
+      }
+    ],
+    "historical_physical_audit": {
+      "passed": true,
+      "physical_runs": 22,
+      "current_source_claim": false
+    },
+    "release_manifest_present": true,
+    "physical_audit": {
+      "passed": true,
+      "physical_runs": 11,
+      "unique_recordings": 8,
+      "windows_by_lanes": {
+        "1": 468,
+        "4": 1248
+      },
+      "overload": {
+        "passed": true,
+        "attempt": "portability-c-r2-id00-l1-r0-overload",
+        "result": {
+          "errors": 16,
+          "generated": 5121,
+          "accepted": 5120,
+          "protocol_errors": 0,
+          "score": 0,
+          "threshold": -1029,
+          "classification": 0,
+          "core_error": 0,
+          "frame_id": 0,
+          "cycles_pre": 0,
+          "cycles_dft": 0,
+          "cycles_power": 0,
+          "cycles_nn": 0,
+          "cycles_total": 0,
+          "first_sample_tick": 84992,
+          "last_sample_tick": 0,
+          "output_tick": 0,
+          "expected_crc": 3493500942,
+          "actual_crc": 2663543723,
+          "max_queue": 256
+        },
+        "recovery_attempt": "measurements/known-replay/portability-c-r2-id00-l1-r0-recovery/manifest.json",
+        "scope": "intentional single-MAC input backpressure at period750, reset and normal period1500 recovery"
+      },
+      "current": true
+    },
+    "final_acceptance": {
+      "path": "artifacts/vivado-portability-v1/acceptance-r2.json",
+      "current": true
+    }
+  },
+  "publication_scope": {
+    "date": "2026-10-06",
+    "historical_current_flags": "Describe original saved laboratory snapshot; do not imply English derivatives match original byte-level gates.",
+    "experiment_report": "artifacts/vivado-portability-v1/report.md",
+    "final_acceptance": "artifacts/vivado-portability-v1/acceptance-r2.json",
+    "publication_verifier": "scripts/verify_publication.py"
   }
 }

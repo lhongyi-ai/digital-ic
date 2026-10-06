@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "pairs": [
+    {
+      "archive_report": "artifacts/vivado-portability-v1/baseline/files/build/known-native/l1-1092-backpressure-r2/report.json",
+      "current_report": "build/known-native/portability-b-id00-l1-r2/report.json",
+      "numerical_check_counts_and_records_equal": true,
+      "active_stage_counts_equal": true,
+      "clips": 7,
+      "lanes": 1,
+      "old_sample_period": 0,
+      "new_sample_period": 1500
+    },
+    {
+      "archive_report": "artifacts/vivado-portability-v1/baseline/files/build/known-native/l4-1092-fixed16k-r2/report.json",
+      "current_report": "build/known-native/portability-b-id00-l4-r2/report.json",
+      "numerical_check_counts_and_records_equal": true,
+      "active_stage_counts_equal": true,
+      "clips": 7,
+      "lanes": 4,
+      "old_sample_period": 750,
+      "new_sample_period": 750
+    }
+  ],
+  "bindings": {
+    "artifacts/vivado-portability-v1/baseline/files/build/known-native/l1-1092-backpressure-r2/report.json": "e164a5fada13dc5a83c436eef0702f7bd188c6aeaf599f24d2b6ae77d78a68a8",
+    "build/known-native/portability-b-id00-l1-r2/report.json": "6e5a5a0d37d1b6635c3c7688f0f46ee39077d0a561e266eabb44f7bbae63c115",
+    "artifacts/vivado-portability-v1/baseline/files/build/known-native/l4-1092-fixed16k-r2/report.json": "0eed7e60b44559eca9c3484020a9082fb3c11bd98a31069ad5ea244ed7a6c055",
+    "build/known-native/portability-b-id00-l4-r2/report.json": "0b70a0005f51169fb1638fddcfaa40e7c101ec085c10b0b8e289b1365981fc77"
+  },
+  "meaning": "A/B share recordings, bit-exact reference checks, all five active counters. Historical A single-MAC test used ready/valid ASAP; wall elapsed latency and backpressure are deliberately not equated to the new fixed-1500 cadence test."
+}

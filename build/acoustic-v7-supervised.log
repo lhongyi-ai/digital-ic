@@ -11,7 +11,7 @@ Traceback (most recent call last):
     assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
   File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
     raise AssertionError(msg)
-AssertionError: 
+AssertionError:
 Arrays are not equal
 
 Mismatched elements: 10 / 70 (14.3%)

@@ -1,0 +1,277 @@
+{
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "baseline_manifest_sha256": "d7d7a6af78eed840555df84c30a78518af44009a24fdff06d422709aac853dbf",
+  "bitstream_sha256": "a48365fcedf7f53c9b4d3017bb4ada8b1c4f2e24b2774c68b16c629d14780d67",
+  "build_report_sha256": "02465943bf06e6a55cb07258fc31472826a2fd34957772ce6b7f064566b1b355",
+  "commands": [
+    [
+      "jedec",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ]
+    ],
+    [
+      "configuration",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/board.bin"
+      ]
+    ],
+    [
+      "input",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "1048576",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/input.bin"
+      ]
+    ],
+    [
+      "clear_log_and_start",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/erased-log.bin"
+      ]
+    ]
+  ],
+  "deployment_manifest": "artifacts/vivado-portability-v1/release.json",
+  "deployment_sha256": "73b842a0bea9d18721fd62aef2bd3b4ed588279b6ad2e8b8988a539f22feee7d",
+  "expected_score": -41845,
+  "final_audit_sha256": "d0738c03729e145d040aa11355061d37ff82a396f08d74bc8e4ccd9518d938d0",
+  "finished_utc": "2026-10-06T20:49:46.214804+00:00",
+  "hardware_operations_started": true,
+  "input_sha256": "ba0c360bb4fd269ba582e3f43dc310e0cfb7199cfa55774f5e41533f6dbff137",
+  "lanes": 4,
+  "machine": "02",
+  "model_sha256": "6ebe515b50ae1ba0962d2123e4e15d9f320ffbef5496a0643ca2d681187342d2",
+  "period": 750,
+  "physical_hardware": true,
+  "profile_sha256": "3e0cbd8dafa9ffc122d6bc2305925cefa0bec273566a4d28af1e79bbf6f7b4e5",
+  "quant_pipeline": 1,
+  "read_consensus": [
+    "read-2.bin",
+    "read-3.bin"
+  ],
+  "reads": [
+    {
+      "error": "JEDEC mismatch: observed ['FFEF40'], expected EF4016",
+      "file": "read-1.bin",
+      "valid": false
+    },
+    {
+      "file": "read-2.bin",
+      "sha256": "d5aa276438f1bc66001563632c62635e8d388223037f6c1c746ca18b3e479581",
+      "valid": true
+    },
+    {
+      "file": "read-3.bin",
+      "sha256": "d5aa276438f1bc66001563632c62635e8d388223037f6c1c746ca18b3e479581",
+      "valid": true
+    }
+  ],
+  "record": {
+    "compressed": 1906318,
+    "crc": 1267867030,
+    "fold": 0,
+    "label": 0,
+    "local": "data/mimii-multimachine/pcm/02_normal_00000433.npy",
+    "machine": "02",
+    "method": 8,
+    "name": "fan/id_02/normal/00000433.wav",
+    "npy_sha256": "162b54befb9ad99b8fb2cec0800a03fa91aea3999f0a9898dee8a282a527fa5f",
+    "offset": 4100191223,
+    "role": "cv",
+    "size": 2560080
+  },
+  "result": {
+    "accepted": 159744,
+    "actual_crc": 499930768,
+    "classification": 0,
+    "core_error": 0,
+    "cycles_dft": 41174016,
+    "cycles_nn": 19545,
+    "cycles_power": 2551452,
+    "cycles_pre": 479232,
+    "cycles_total": 44224245,
+    "errors": 0,
+    "expected_crc": 499930768,
+    "first_sample_tick": 84992,
+    "frame_id": 0,
+    "generated": 159744,
+    "last_sample_tick": 119892242,
+    "max_queue": 256,
+    "output_tick": 120195182,
+    "protocol_errors": 0,
+    "score": -41845,
+    "threshold": -10671
+  },
+  "result_sha256": "d5aa276438f1bc66001563632c62635e8d388223037f6c1c746ca18b3e479581",
+  "source_sha256": "cd47bcff5a2b0834999b3e429812df202a1f3ac773aca4dd3d7f5592c8d9e0bf",
+  "started_utc": "2026-10-06T20:48:59.934817+00:00",
+  "status": "passed",
+  "steps": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "elapsed_seconds": 0.6687770000426099,
+      "finished_utc": "2026-10-06T20:49:01.120434+00:00",
+      "name": "jedec",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-10-06T20:49:00.451200+00:00",
+      "transcript": "jedec.txt",
+      "transcript_sha256": "d35361e4e3604a85d981ef65c07d8f6d21d8ed1fc0b4cfbaa058d9ff88ba0d43"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/board.bin"
+      ],
+      "elapsed_seconds": 7.2655750419944525,
+      "finished_utc": "2026-10-06T20:49:08.387206+00:00",
+      "input_file": "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/board.bin",
+      "input_sha256": "a48365fcedf7f53c9b4d3017bb4ada8b1c4f2e24b2774c68b16c629d14780d67",
+      "name": "configuration",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-10-06T20:49:01.121247+00:00",
+      "transcript": "configuration.txt",
+      "transcript_sha256": "8f1767f7c955b985cdc83c74714deaee365b1b84005e606c3b1a94d48410a3ab"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "1048576",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/input.bin"
+      ],
+      "elapsed_seconds": 20.720423208083957,
+      "finished_utc": "2026-10-06T20:49:29.111249+00:00",
+      "input_file": "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/input.bin",
+      "input_sha256": "ba0c360bb4fd269ba582e3f43dc310e0cfb7199cfa55774f5e41533f6dbff137",
+      "name": "input",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-10-06T20:49:08.389853+00:00",
+      "transcript": "input.txt",
+      "transcript_sha256": "86c617ceb560eb1cc67059b0cca25883a244435bb60ba613d16d366457d1f307"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/erased-log.bin"
+      ],
+      "elapsed_seconds": 0.9443227499723434,
+      "finished_utc": "2026-10-06T20:49:30.060976+00:00",
+      "input_file": "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/erased-log.bin",
+      "input_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+      "name": "clear_log_and_start",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-10-06T20:49:29.115780+00:00",
+      "transcript": "clear_log_and_start.txt",
+      "transcript_sha256": "392c96df6a3083be75acf13e4e0c095c09b67971d0c5b3349bca64a0ee0b519f"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "4096",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/read-1.bin"
+      ],
+      "elapsed_seconds": 0.6867545829154551,
+      "finished_utc": "2026-10-06T20:49:44.753142+00:00",
+      "name": "read-1",
+      "observed_flash_id": "FFEF40",
+      "returncode": 0,
+      "started_utc": "2026-10-06T20:49:44.064461+00:00",
+      "transcript": "read-1.txt",
+      "transcript_sha256": "49e9249f492091b9101c0cee487b7d6499e994920dbd80955d118956989b61b5"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "4096",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/read-2.bin"
+      ],
+      "elapsed_seconds": 0.7313623330555856,
+      "finished_utc": "2026-10-06T20:49:45.486770+00:00",
+      "name": "read-2",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-10-06T20:49:44.754698+00:00",
+      "transcript": "read-2.txt",
+      "transcript_sha256": "53a1167b6d583cfa24ca92feda8c4401efb2f983cb891c916545b58644aeac27"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-o",
+        "3145728",
+        "-R",
+        "4096",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r2-id02-l4-r0/read-3.bin"
+      ],
+      "elapsed_seconds": 0.7231175829656422,
+      "finished_utc": "2026-10-06T20:49:46.212289+00:00",
+      "name": "read-3",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-10-06T20:49:45.488566+00:00",
+      "transcript": "read-3.txt",
+      "transcript_sha256": "53a1167b6d583cfa24ca92feda8c4401efb2f983cb891c916545b58644aeac27"
+    }
+  ],
+  "usb_product": "UPduino v3.1",
+  "wait_seconds": 14
+}

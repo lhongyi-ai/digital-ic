@@ -1,0 +1,20 @@
+{
+  "command": [
+    "LOCAL_PRIVATE_PATH 2026/digital ic/.venv/bin/python",
+    "LOCAL_PRIVATE_PATH 2026/digital ic/scripts/test_known_flash.py",
+    "--production",
+    "--machine",
+    "02",
+    "--label",
+    "0",
+    "--lanes",
+    "4",
+    "--period",
+    "750",
+    "--quant-pipeline",
+    "1",
+    "--run-id",
+    "portability-c-flash-id02-l4-r2"
+  ],
+  "returncode": 0
+}

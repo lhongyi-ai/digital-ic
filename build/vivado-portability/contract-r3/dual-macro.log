@@ -1,0 +1,5 @@
+PROJECT_ROOT/rtl/platform/spram16k.sv:9: error: Unknown module type: INVALID_SIMULTANEOUS_RAM_BACKENDS
+2 error(s) during elaboration.
+*** These modules were missing:
+        INVALID_SIMULTANEOUS_RAM_BACKENDS referenced 1 times.
+***

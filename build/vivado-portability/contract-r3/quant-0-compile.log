@@ -1,0 +1,4 @@
+PROJECT_ROOT/rtl/core/known_spectral_core.sv:32: error: Unable to bind wire/reg/memory `point' in `quant_tb.dut'
+PROJECT_ROOT/rtl/core/known_spectral_core.sv:34:      : A symbol with that name was declared here. Check for declaration after use.
+PROJECT_ROOT/rtl/core/known_spectral_core.sv:32: error: Unable to elaborate r-value: (((state)==(PRE_STORE))&&((point)==((N)-('sd1))))&&(!(rst))
+2 error(s) during elaboration.

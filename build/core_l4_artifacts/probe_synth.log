@@ -5053,22 +5053,22 @@ Extracted 7749 AND gates and 26340 wires from module `core_pnr_probe' to a netli
 5.50.15.5. Executing ABC9.
 Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
-ABC: + read_lut <abc-temp-dir>/input.lut 
-ABC: + read_box <abc-temp-dir>/input.box 
-ABC: + &read <abc-temp-dir>/input.xaig 
-ABC: + &ps 
+ABC: + read_lut <abc-temp-dir>/input.lut
+ABC: + read_box <abc-temp-dir>/input.box
+ABC: + &read <abc-temp-dir>/input.xaig
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =   1489/   3644  and =    6585  lev =   19 (0.89)  mem = 0.38 MB  box = 4589  bb = 3508
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 12 carries.
-ABC: + &scorr 
+ABC: + &scorr
 ABC: Warning: The network is combinational.
-ABC: + &sweep 
-ABC: + &dc2 
-ABC: + &dch -f -r 
-ABC: + &ps 
+ABC: + &sweep
+ABC: + &dc2
+ABC: + &dch -f -r
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =   1489/   3644  and =    8784  lev =   29 (0.76)  mem = 0.40 MB  ch = 1303  box = 4533  bb = 3508
 ABC: cst =       0  cls =   1149  lit =    1303  unused =   13379  proof =     0
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 5 carries.
-ABC: + &if -W 250 -v 
+ABC: + &if -W 250 -v
 ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
 ABC: Node =    8784.  Ch =  1149.  Total mem =    4.29 MB. Peak cut mem =    0.11 MB.
 ABC: P:  Del = 10671.00.  Ar =    2279.0.  Edge =     7908.  Cut =    51914.  T =     0.00 sec
@@ -5078,17 +5078,17 @@ ABC: F:  Del = 10671.00.  Ar =    1840.0.  Edge =     6113.  Cut =    52496.  T 
 ABC: A:  Del = 10671.00.  Ar =    1803.0.  Edge =     5861.  Cut =    53465.  T =     0.01 sec
 ABC: A:  Del = 10671.00.  Ar =    1802.0.  Edge =     5858.  Cut =    53680.  T =     0.01 sec
 ABC: Total time =     0.03 sec
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &mfs 
-ABC: + &ps -l 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &mfs
+ABC: + &ps -l
 ABC: <abc-temp-dir>/input : i/o =   1489/   3644  and =    5700  lev =   24 (0.74)  mem = 0.36 MB  box = 4491  bb = 3508
 ABC: Mapping (K=4)  :  lut =   1715  edge =    5508  lev =   12 (0.52)  levB =   51  mem = 0.13 MB
 ABC: LUT = 1715 : 2=315 18.4 %  3=722 42.1 %  4=678 39.5 %  Ave = 3.21
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 1 carries.
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &verify 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &verify
 ABC: Networks are equivalent.  Time =     0.13 sec
-ABC: + time 
+ABC: + time
 ABC: elapse: 1.22 seconds, total: 1.22 seconds
 
 5.50.15.6. Executing AIGER frontend.
@@ -5490,7 +5490,7 @@ Removed 0 unused modules.
 === core_pnr_probe ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      3185 wires
      8721 wire bits
      3185 public wires
@@ -5513,11 +5513,11 @@ Removed 0 unused modules.
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
        35 core_pnr_probe
 
         +----------Count including submodules.
-        | 
+        |
      3185 wires
      8721 wire bits
      3185 public wires
@@ -5551,7 +5551,7 @@ Found and reported 0 problems.
 === core_pnr_probe ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      3185 wires
      8721 wire bits
      3185 public wires

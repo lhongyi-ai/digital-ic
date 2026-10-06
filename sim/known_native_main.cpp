@@ -14,12 +14,13 @@ struct Clip {std::vector<int16_t> raw,windowed;std::vector<int32_t> real,imag,lo
 
 int main(int argc,char** argv) {
  try {
-    if(argc!=5)throw std::runtime_error("vector report lanes sample_period_cycles");
+    if(argc!=6)throw std::runtime_error("vector report lanes sample_period_cycles quant_pipeline");
     std::ifstream f(argv[1],std::ios::binary);if(!f)throw std::runtime_error("missing vectors");
     if(word<uint32_t>(f)!=0x3150534b)throw std::runtime_error("bad format/endian");
     const uint32_t n=word<uint32_t>(f),windows=word<uint32_t>(f),count=word<uint32_t>(f);
     const int32_t threshold=word<int32_t>(f);const uint32_t bands=n/2;
-    const uint32_t lanes=std::stoul(argv[3]),period=std::stoul(argv[4]);
+    const uint32_t lanes=std::stoul(argv[3]),period=std::stoul(argv[4]),quant_pipeline=std::stoul(argv[5]);
+    if(quant_pipeline>1)throw std::runtime_error("invalid quant_pipeline");
     std::vector<Clip> clips;
     for(uint32_t c=0;c<count;c++) {
         Clip v;v.raw=array<int16_t>(f,n*windows);v.windowed=array<int16_t>(f,n*windows);
@@ -39,7 +40,8 @@ int main(int argc,char** argv) {
     bool pending=false,hold=false;uint64_t release=0,stall_events=0;std::array<uint32_t,8> held{};
     const uint64_t limit=period?samples*period+frames*(n*n/lanes+200*n)+100000:
         frames*(n*n/lanes+200*n)+samples*3+100000;
-    while(received<count&&cycle<limit) {
+    const uint64_t pipeline_budget=uint64_t(quant_pipeline)*bands*count;
+    while(received<count&&cycle<limit+pipeline_budget) {
         d.clk=0;d.eval();
         if(d.out_valid&&!hold) {
             hold=true;release=cycle+17;first_output[received]=cycle;

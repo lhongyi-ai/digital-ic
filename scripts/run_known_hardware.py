@@ -47,7 +47,7 @@ def check_usb():
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--build-report',type=Path,required=True);p.add_argument('--run-id',required=True)
-    p.add_argument('--record-index',type=int,default=0);p.add_argument('--period',type=int,default=750);p.add_argument('--execute',action='store_true');a=p.parse_args()
+    p.add_argument('--deployment-manifest',type=Path);p.add_argument('--record-index',type=int,default=0);p.add_argument('--period',type=int,default=750);p.add_argument('--execute',action='store_true');a=p.parse_args()
     report_path=a.build_report.resolve();report=verified_report(report_path)
     model=ROOT/f'artifacts/acoustic-known-release-v1/id{report["machine"]}/model.json';model_bytes=model.read_bytes();m=json.loads(model_bytes)
     assert sha(model)==report['model_sha256']
@@ -84,7 +84,14 @@ def main():
     save_json(out/'manifest.json',manifest)
     if not a.execute:print('Prepared; no USB access:',out);return
     try:
-        audit_hash,freeze_hash=final_gate(report_path);manifest.update(final_audit_sha256=audit_hash,deployment_sha256=freeze_hash)
+        if a.deployment_manifest:
+            from portability_release import verify_manifest,BASE
+            release_path=a.deployment_manifest.resolve();release=verify_manifest(release_path,ROOT,report_path)
+            manifest.update(deployment_manifest=str(release_path.relative_to(ROOT)),deployment_sha256=sha(release_path),
+                baseline_manifest_sha256=release['baseline_manifest_sha256'],quant_pipeline=report['quant_pipeline'],
+                final_audit_sha256=sha(ROOT/BASE/'baseline/files/artifacts/acoustic-known-final-v1/audit.json'))
+        else:
+            audit_hash,freeze_hash=final_gate(report_path);manifest.update(final_audit_sha256=audit_hash,deployment_sha256=freeze_hash)
         with (ROOT/'build/known-usb.lock').open('w') as lock:
             fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);manifest['usb_product']=check_usb()
             for name,command in commands:

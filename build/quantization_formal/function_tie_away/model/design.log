@@ -382,7 +382,7 @@ Removed 0 unused cells and 1 unused wires.
 === $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000 ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        45 wires
      1083 wire bits
        19 public wires
@@ -406,7 +406,7 @@ Removed 0 unused cells and 1 unused wires.
 === quant_functions_harness ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
       122 wires
      1492 wire bits
        26 public wires
@@ -436,12 +436,12 @@ Removed 0 unused cells and 1 unused wires.
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
       156 quant_functions_harness
        30 $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000
 
         +----------Count including submodules.
-        | 
+        |
       167 wires
      2575 wire bits
        45 public wires

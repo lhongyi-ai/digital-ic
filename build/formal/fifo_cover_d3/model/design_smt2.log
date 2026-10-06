@@ -33,7 +33,7 @@ Module fifo_harness directly or indirectly contains formal properties -> setting
 === $paramod$705d5f3feb09dae2898ba1ab4983200ce98a39b8\sync_fifo ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        44 wires
       183 wire bits
        17 public wires
@@ -60,7 +60,7 @@ Module fifo_harness directly or indirectly contains formal properties -> setting
 === fifo_harness ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        48 wires
       114 wire bits
        16 public wires
@@ -87,12 +87,12 @@ Module fifo_harness directly or indirectly contains formal properties -> setting
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
        90 fifo_harness
        40 $paramod$705d5f3feb09dae2898ba1ab4983200ce98a39b8\sync_fifo
 
         +----------Count including submodules.
-        | 
+        |
        92 wires
       297 wire bits
        33 public wires

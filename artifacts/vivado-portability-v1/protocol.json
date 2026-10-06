@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "part": "xc7a35tcpg236-1",
+  "vivado": "2024.2",
+  "vivado_build": "5239630",
+  "clock_period_ns": 20,
+  "io_delay_ns": 2,
+  "n": 1024,
+  "windows": 156,
+  "records": {
+    "00": [
+      {
+        "name": "fan/id_00/normal/00000304.wav",
+        "offset": 1300214316,
+        "compressed": 1782348,
+        "size": 2560080,
+        "crc": 3279980453,
+        "method": 8,
+        "machine": "00",
+        "label": 0,
+        "role": "cv",
+        "fold": 0,
+        "local": "data/mimii/pcm/normal_00000304.npy",
+        "npy_sha256": "991aa41b728cb988a43b82ed8f0e3ead69b7b8fc3034b552ea8e6b9e6ba3757e"
+      },
+      {
+        "name": "fan/id_00/abnormal/00000094.wav",
+        "offset": 173715715,
+        "compressed": 1818553,
+        "size": 2560080,
+        "crc": 1156463613,
+        "method": 8,
+        "machine": "00",
+        "label": 1,
+        "role": "cv",
+        "fold": 0,
+        "local": "data/mimii-supervised/pcm/abnormal_00000094.npy",
+        "npy_sha256": "ac094cf769c1d333e6568af3fe3b4b92b4a402043727d51a701ac941c5d92136"
+      },
+      {
+        "name": "fan/id_00/normal/00000778.wav",
+        "offset": 2165039196,
+        "compressed": 1797033,
+        "size": 2560080,
+        "crc": 2707901535,
+        "method": 8,
+        "machine": "00",
+        "label": 0,
+        "role": "cv",
+        "fold": 1,
+        "local": "data/mimii/pcm/normal_00000778.npy",
+        "npy_sha256": "e40c01a9e2b5b11b1c2b3a61b2b3ea2eb79cacf40e4f62001e032a4fd519862d"
+      },
+      {
+        "name": "fan/id_00/abnormal/00000391.wav",
+        "offset": 715903353,
+        "compressed": 1822435,
+        "size": 2560080,
+        "crc": 3173778918,
+        "method": 8,
+        "machine": "00",
+        "label": 1,
+        "role": "cv",
+        "fold": 1,
+        "local": "data/mimii/pcm/abnormal_00000391.npy",
+        "npy_sha256": "73ffcf9fb952405590fa3b1b92be4fea3d24be6b5369d7d89d90a9fbfc6e6e6b"
+      },
+      {
+        "name": "fan/id_00/normal/00000259.wav",
+        "offset": 1217939916,
+        "compressed": 1808974,
+        "size": 2560080,
+        "crc": 3290964716,
+        "method": 8,
+        "machine": "00",
+        "label": 0,
+        "role": "cv",
+        "fold": 2,
+        "local": "data/mimii/pcm/normal_00000259.npy",
+        "npy_sha256": "5e7015ccc3956a206864718fa67deb39d2b99e8ddee2d99ac08d52baea7cf007"
+      },
+      {
+        "name": "fan/id_00/abnormal/00000372.wav",
+        "offset": 681258208,
+        "compressed": 1842145,
+        "size": 2560080,
+        "crc": 3243358500,
+        "method": 8,
+        "machine": "00",
+        "label": 1,
+        "role": "cv",
+        "fold": 2,
+        "local": "data/mimii-supervised/pcm/abnormal_00000372.npy",
+        "npy_sha256": "8b547c0841e2f5e7ae830794ec853a537c1defa7b4fa80663ad423dd967cf7c9"
+      },
+      {
+        "name": "fan/id_00/normal/00000892.wav",
+        "offset": 2372503636,
+        "compressed": 1840252,
+        "size": 2560080,
+        "crc": 1279090986,
+        "method": 8,
+        "machine": "00",
+        "label": 0,
+        "role": "cv",
+        "fold": 0,
+        "local": "data/mimii/pcm/normal_00000892.npy",
+        "npy_sha256": "896fc6f30379d7097cbc1d98f26f772e16d8e25415c0244c9ba1e811f9beb902"
+      }
+    ],
+    "02": [
+      {
+        "name": "fan/id_02/normal/00000433.wav",
+        "offset": 4100191223,
+        "compressed": 1906318,
+        "size": 2560080,
+        "crc": 1267867030,
+        "method": 8,
+        "machine": "02",
+        "label": 0,
+        "role": "cv",
+        "fold": 0,
+        "local": "data/mimii-multimachine/pcm/02_normal_00000433.npy",
+        "npy_sha256": "162b54befb9ad99b8fb2cec0800a03fa91aea3999f0a9898dee8a282a527fa5f"
+      },
+      {
+        "name": "fan/id_02/abnormal/00000048.wav",
+        "offset": 2677630404,
+        "compressed": 1823575,
+        "size": 2560080,
+        "crc": 2448142962,
+        "method": 8,
+        "machine": "02",
+        "label": 1,
+        "role": "cv",
+        "fold": 0,
+        "local": "data/mimii-multimachine/pcm/02_abnormal_00000048.npy",
+        "npy_sha256": "040c05f6fd1b978b1813f8f7c8b5a9139740b7da8ebb74e417fb3adf43489086"
+      }
+    ],
+    "04": [
+      {
+        "name": "fan/id_04/normal/00000998.wav",
+        "offset": 7753879563,
+        "compressed": 1889601,
+        "size": 2560080,
+        "crc": 2013547923,
+        "method": 8,
+        "machine": "04",
+        "label": 0,
+        "role": "cv",
+        "fold": 0,
+        "local": "data/mimii-multimachine/pcm/04_normal_00000998.npy",
+        "npy_sha256": "6c61ae66b91970a3e2c814f15d364106b1249506484017196aeeb7d99509432c"
+      },
+      {
+        "name": "fan/id_04/abnormal/00000256.wav",
+        "offset": 5698549027,
+        "compressed": 1902877,
+        "size": 2560080,
+        "crc": 149313612,
+        "method": 8,
+        "machine": "04",
+        "label": 1,
+        "role": "cv",
+        "fold": 0,
+        "local": "data/mimii-multimachine/pcm/04_abnormal_00000256.npy",
+        "npy_sha256": "9996168a2d1a4713ed768bdac5a8d26a6a4d427925261493f184c0cc1b496c8c"
+      }
+    ],
+    "06": [
+      {
+        "name": "fan/id_06/normal/00000568.wav",
+        "offset": 9565198639,
+        "compressed": 1878483,
+        "size": 2560080,
+        "crc": 1884673855,
+        "method": 8,
+        "machine": "06",
+        "label": 0,
+        "role": "cv",
+        "fold": 0,
+        "local": "data/mimii-known-machines-v1/pcm/06_0_00000568.npy",
+        "npy_sha256": "4a3bbb1a700f128a93b8bd76aa5e3ed057e25c7080cd0abde920fbc996122e8a"
+      },
+      {
+        "name": "fan/id_06/abnormal/00000294.wav",
+        "offset": 8366296127,
+        "compressed": 1817063,
+        "size": 2560080,
+        "crc": 2158463858,
+        "method": 8,
+        "machine": "06",
+        "label": 1,
+        "role": "cv",
+        "fold": 0,
+        "local": "data/mimii-known-machines-v1/pcm/06_1_00000294.npy",
+        "npy_sha256": "56f633c69356900c0dbbe15da17f8b1d66bcb04d222468414bb79181f95cacef"
+      }
+    ]
+  },
+  "models": {
+    "00": "23e303fd55a484fe0704089e61e83df2cf4ddfa3a4077e0fa16c4dfa843e39e1",
+    "02": "6ebe515b50ae1ba0962d2123e4e15d9f320ffbef5496a0643ca2d681187342d2",
+    "04": "52eb97ede147bef2a4b516b7afd35cdff1c6a521be9f666e7a6618451819b1b2",
+    "06": "77079c236512ee262a51109569bb93f35b3add6e8fd815617fe158296321a7bc"
+  },
+  "baseline_manifest_sha256": "d7d7a6af78eed840555df84c30a78518af44009a24fdff06d422709aac853dbf",
+  "goals": {
+    "amd_delay_reduction_min": 0.1,
+    "ice40_delay_regression_max": 0.02,
+    "cycles_increase_max": 0.01
+  },
+  "scope": "development recordings only; no holdout access or training"
+}

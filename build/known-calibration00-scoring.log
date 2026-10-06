@@ -8,7 +8,7 @@ Traceback (most recent call last):
     assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
   File "./.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
     raise AssertionError(msg)
-AssertionError: 
+AssertionError:
 Not equal to tolerance rtol=0, atol=1e-10
 
 Mismatched elements: 61 / 64 (95.3%)

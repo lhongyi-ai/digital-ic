@@ -108,7 +108,7 @@
   "place_route_completed": true,
   "tool_versions": {
     "yosys": "Yosys 0.68+195 (git sha1 435977e97-dirty, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)",
-    "nextpnr-ice40": "mkdir: /home/researcher/.config/yosyshq: Operation not permitted\nmkdir: /home/researcher/.local/share/yosyshq: Operation not permitted\n\"nextpnr-ice40\" -- Next Generation Place and Route (Version nextpnr-0.11.1-19-g8dbcee5c)"
+    "nextpnr-ice40": "mkdir: BUILD_HOME/.config/yosyshq: Operation not permitted\nmkdir: BUILD_HOME/.local/share/yosyshq: Operation not permitted\n\"nextpnr-ice40\" -- Next Generation Place and Route (Version nextpnr-0.11.1-19-g8dbcee5c)"
   },
   "bitstream_sha256": "caa9f45f23375e2423eefa41dd52c1f80c9cd026e00e29f369e3c540c8209f25",
   "physical_board_programmed": false,

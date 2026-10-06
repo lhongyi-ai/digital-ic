@@ -1,0 +1,13 @@
+{
+  "command": [
+    "LOCAL_PRIVATE_PATH 2026/digital ic/.venv/bin/python",
+    "LOCAL_PRIVATE_PATH 2026/digital ic/scripts/test_known_core.py",
+    "--lanes",
+    "1",
+    "--quant-pipeline",
+    "1",
+    "--run-id",
+    "portability-c-small-l1-r2"
+  ],
+  "returncode": 0
+}

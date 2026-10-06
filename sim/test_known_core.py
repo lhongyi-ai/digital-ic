@@ -6,6 +6,7 @@ from cocotb.clock import Clock
 from cocotb.triggers import ClockCycles,FallingEdge,RisingEdge,Timer,with_timeout
 from vibfpga.known_fixed import prepare_windows,tables,rne_shift,integer_power,power_log_q12
 
+QUANT_PIPELINE=int(os.environ.get('KNOWN_QUANT_PIPELINE','0'))
 M=json.loads(Path(os.environ['KNOWN_MODEL']).read_text());N=M['n'];WINDOWS=M['windows'];F=N//2
 
 def reference(pcm):
@@ -41,7 +42,9 @@ async def receive(d,expected,ident):
     assert int(d.cycles_total.value)==sum(int(getattr(d,'cycles_'+s).value) for s in ('pre','dft','power','nn'))
     fields=['out_score','out_frame_id','out_class','out_error','cycles_total'];snapshot=[int(getattr(d,k).value) for k in fields]
     await ClockCycles(d.clk,17);await Timer(1,unit='ns');assert snapshot==[int(getattr(d,k).value) for k in fields]
+    counters={s:int(getattr(d,'cycles_'+s).value) for s in ('pre','dft','power','nn','total')}
     await FallingEdge(d.clk);d.out_ready.value=1;await RisingEdge(d.clk);await FallingEdge(d.clk);d.out_ready.value=0
+    return counters
 
 @cocotb.test()
 async def stages_and_backpressure(d):
@@ -69,22 +72,68 @@ async def stages_and_backpressure(d):
     async def produce():
         for k,x in enumerate(clips):await send(d,x,k*WINDOWS)
     producer=cocotb.start_soon(produce())
-    for k,r in enumerate(refs):await receive(d,r['score'],k*WINDOWS)
+    cycle_records=[]
+    for k,r in enumerate(refs):cycle_records.append(await receive(d,r['score'],k*WINDOWS))
     await producer;running=False;await monitor
     assert seen==set(expected),(len(seen),len(expected));assert int(d.protocol_errors.value)==0
     Path(os.environ['KNOWN_REPORT']).write_text(json.dumps(dict(stages_passed=True,clips=len(clips),windows=len(clips)*WINDOWS,
-        intermediate_checks=len(seen),physical_hardware=False,n=N,clip_windows=WINDOWS),indent=2))
+        intermediate_checks=len(seen),physical_hardware=False,n=N,clip_windows=WINDOWS,
+        quant_pipeline=QUANT_PIPELINE,stage_cycles=cycle_records),indent=2))
 
 @cocotb.test()
 async def reset_cancels_transactions(d):
     x=np.random.default_rng(91).integers(-16000,16000,N*WINDOWS,dtype=np.int16);ref=reference(x)
     cocotb.start_soon(Clock(d.clk,10,unit='ns').start())
-    for phase in ('input','processing','blocked_output'):
+    phases=['input','processing','blocked_output']+(['norm_quant'] if QUANT_PIPELINE else [])
+    for phase in phases:
         await reset(d)
         if phase=='input':await send(d,x[:N//2],100,False,True)
         elif phase=='processing':await send(d,x[:N],100,False);await ClockCycles(d.clk,10)
+        elif phase=='norm_quant':
+            t=cocotb.start_soon(send(d,x,100,False))
+            for _ in range(4*N*N*WINDOWS+300*N*WINDOWS):
+                await RisingEdge(d.clk);await Timer(1,unit='ns')
+                if int(d.state.value)==24:break
+            else:raise AssertionError('NORM_QUANT state was never reached')
+            t.cancel()
         else:
             t=cocotb.start_soon(send(d,x,100,False));await with_timeout(RisingEdge(d.out_valid),1000,'ms');await t
         await reset(d);await ClockCycles(d.clk,5);assert not int(d.out_valid.value)
         t=cocotb.start_soon(send(d,x,200,False));await receive(d,ref['score'],200);await t
-    p=Path(os.environ['KNOWN_REPORT']);r=json.loads(p.read_text());r['reset_phases']=['input','processing','blocked_output'];p.write_text(json.dumps(r,indent=2))
+    p=Path(os.environ['KNOWN_REPORT']);r=json.loads(p.read_text());r['reset_phases']=phases;p.write_text(json.dumps(r,indent=2))
+
+@cocotb.test()
+async def malformed_input_and_recovery(d):
+    """Reject a malformed window and resume with a fresh complete transaction."""
+    x=np.zeros(N*WINDOWS,dtype=np.int16);ref=reference(x)
+    cocotb.start_soon(Clock(d.clk,10,unit='ns').start())
+    for failure in ('frame_id','early_last','missing_last'):
+        await reset(d)
+        count=N if failure=='missing_last' else 2
+        for i in range(count):
+            await FallingEdge(d.clk)
+            d.in_valid.value=1;d.in_sample.value=0
+            d.in_frame_id.value=10+(failure=='frame_id' and i==1)
+            d.in_last.value=(failure=='early_last' and i==1)
+            await Timer(1,unit='ns');assert int(d.in_ready.value)
+            await RisingEdge(d.clk)
+        # Drain an invalid window to its declared boundary.
+        if failure!='early_last':
+            await FallingEdge(d.clk);d.in_last.value=1
+            await RisingEdge(d.clk)
+        await FallingEdge(d.clk);d.in_valid.value=0;d.in_last.value=0
+        await ClockCycles(d.clk,3);await Timer(1,unit='ns')
+        assert int(d.protocol_errors.value)==1 and not int(d.out_valid.value)
+        # Recovery before reset must not emit an old/partial window.
+        t=cocotb.start_soon(send(d,x,200,False))
+        if not int(d.out_valid.value):await with_timeout(RisingEdge(d.out_valid),1000,'ms')
+        await Timer(1,unit='ns')
+        assert d.out_score.value.to_signed()==ref['score']
+        assert int(d.out_frame_id.value)==200 and int(d.protocol_errors.value)==1
+        await t
+        await reset(d)
+        t=cocotb.start_soon(send(d,x,300,False))
+        await receive(d,ref['score'],300);await t
+    p=Path(os.environ['KNOWN_REPORT']);r=json.loads(p.read_text())
+    r['protocol_scenarios']=['frame_id','early_last','missing_last','recovery_without_reset','recovery_after_reset']
+    p.write_text(json.dumps(r,indent=2))

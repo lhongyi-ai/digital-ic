@@ -1,5 +1,5 @@
-mkdir: /home/researcher/.config/yosyshq: Operation not permitted
-mkdir: /home/researcher/.local/share/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.config/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.local/share/yosyshq: Operation not permitted
 Info: constrained 'clk12' to bel 'X19/Y0/io1'
 Info: constrained 'flash_cs_n' to bel 'X24/Y0/io1'
 Info: constrained 'flash_sclk' to bel 'X24/Y0/io0'
@@ -96,7 +96,7 @@ Info:   at iteration #20: temp = 0.000000, timing cost = 992, wirelen = 23233
 Info:   at iteration #25: temp = 0.000000, timing cost = 981, wirelen = 23057
 Info:   at iteration #30: temp = 0.000000, timing cost = 981, wirelen = 22977
 Info:   at iteration #35: temp = 0.000000, timing cost = 979, wirelen = 22939
-Info:   at iteration #37: temp = 0.000000, timing cost = 981, wirelen = 22929 
+Info:   at iteration #37: temp = 0.000000, timing cost = 981, wirelen = 22929
 Info: SA placement time 2.43s
 
 Info: Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 19.24 MHz (PASS at 12.00 MHz)
@@ -120,7 +120,7 @@ Info: [ 48369,  50800) |*+
 Info: [ 50800,  53231) |********+
 Info: [ 53231,  55662) |**************************+
 Info: [ 55662,  58093) |*********************+
-Info: [ 58093,  60524) |************************************************************ 
+Info: [ 58093,  60524) |************************************************************
 Info: [ 60524,  62955) |*********************************+
 Info: [ 62955,  65386) |*******************+
 Info: [ 65386,  67817) |***********************+
@@ -549,7 +549,7 @@ Info: [ 50767,  53151) |***+
 Info: [ 53151,  55535) |*********+
 Info: [ 55535,  57919) |***********+
 Info: [ 57919,  60303) |******************+
-Info: [ 60303,  62687) |************************************************************ 
+Info: [ 60303,  62687) |************************************************************
 Info: [ 62687,  65071) |***************+
 Info: [ 65071,  67455) |**************+
 Info: [ 67455,  69839) |********+

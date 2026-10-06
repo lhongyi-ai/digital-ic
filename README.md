@@ -10,9 +10,21 @@ The frozen implementation completed **22 passing hardware replays across 13 dist
 
 Cross-machine generalization has **not** met the acceptance criteria. Physical clock frequency, power, actual ADXL345 acquisition, and a real field-trained model remain unmeasured or incomplete. The [current evidence index](artifacts/evidence/current-status.md) distinguishes saved results, failed attempts, and outstanding work.
 
+## October 6, 2026: cross-FPGA portability and timing optimization
+
+The same frozen fixed-point core now has verified iCE40 SPRAM, AMD inferred-BRAM, and reference memory backends. A compile-time normalization pipeline separates final wide accumulation from ties-to-even quantization, symmetric saturation, and sign restoration.
+
+On matched ID00 four-MAC implementations, routed worst internal delay fell from **16.888 to 15.018 ns on AMD (11.07%)** and **71.220 to 58.507 ns on iCE40 seed 1 (17.85%)**. AMD uses Vivado 2024.2, `xc7a35tcpg236-1`, and a 50 MHz OOC constraint; all four final models pass setup/hold checks. All three prescribed iCE40 seeds improve, and final applications fit the UP5K at the 13.2 MHz implementation constraint. The pipeline adds **512 activity cycles per recording**, with unchanged input cadence.
+
+Verification covers **5304 local full-core windows**, **1716 Vivado windows with 5,282,827 intermediate numerical checks**, and **11 additional passing physical UPduino replays (1716 windows)**. An expected one-MAC overload failure and successful reset recovery are retained. These new runs are separate from the historical 22 passing runs described above. Models and thresholds were unchanged; final test recordings were not revisited.
+
+The physical clock remains nominal 12 MHz. The improvement establishes timing margin, rather than higher measured processing throughput. AMD validation is simulation and OOC implementation; no AMD board was used. The actual worst paths include retained debug-output registers.
+
+Read the [complete experiment report](artifacts/vivado-portability-v1/report.md), [physical replay report](artifacts/vivado-portability-v1/physical-report.md), [comparison data](artifacts/vivado-portability-v1/comparison.json), and [remote Vivado guide](docs/vivado-remote.md). Historical byte-level receipts bind the preserved laboratory originals; English/path-redacted copies are independently bound by the publication manifest.
+
 ## English publication snapshot
 
-This is an English publication snapshot of engineering work completed through September 13, 2026. Documentation, generated report text, interface labels, metadata, and the published commit history are English. Original local records and history remain preserved separately.
+This is an English publication snapshot of engineering work completed through October 6, 2026. Documentation, generated report text, interface labels, metadata, and the published commit history are English. Original local records and history remain preserved separately.
 
 Read the [publication scope](docs/repository-snapshot.md), [third-party notices](THIRD_PARTY_NOTICES.md), and [publication integrity guide](publication/README.md). Bulk public data caches, private machine records, local tool environments, the pre-project Flash backup, and downloaded third-party checkpoints are excluded. Relevant provenance and restoration instructions are retained.
 

@@ -33,7 +33,7 @@ Module quant_serial_harness directly or indirectly contains formal properties ->
 === quant_serial_harness ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        84 wires
       408 wire bits
        19 public wires
@@ -65,7 +65,7 @@ Module quant_serial_harness directly or indirectly contains formal properties ->
 === quant_serial_kernel ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        92 wires
       871 wire bits
        35 public wires
@@ -92,12 +92,12 @@ Module quant_serial_harness directly or indirectly contains formal properties ->
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
       171 quant_serial_harness
        83 quant_serial_kernel
 
         +----------Count including submodules.
-        | 
+        |
       176 wires
      1279 wire bits
        54 public wires

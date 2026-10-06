@@ -1,0 +1,77 @@
+{
+  "models": {
+    "00": {
+      "model_sha256": "23e303fd55a484fe0704089e61e83df2cf4ddfa3a4077e0fa16c4dfa843e39e1",
+      "train_count": 192,
+      "calibration_count": 160,
+      "bias": 441,
+      "threshold": -1029,
+      "max_gain": 132110,
+      "max_mean": 45272
+    },
+    "02": {
+      "model_sha256": "6ebe515b50ae1ba0962d2123e4e15d9f320ffbef5496a0643ca2d681187342d2",
+      "train_count": 192,
+      "calibration_count": 32,
+      "bias": 1490,
+      "threshold": -10671,
+      "max_gain": 175412,
+      "max_mean": 32566
+    },
+    "04": {
+      "model_sha256": "52eb97ede147bef2a4b516b7afd35cdff1c6a521be9f666e7a6618451819b1b2",
+      "train_count": 192,
+      "calibration_count": 32,
+      "bias": -389,
+      "threshold": -10077,
+      "max_gain": 192201,
+      "max_mean": 35905
+    },
+    "06": {
+      "model_sha256": "77079c236512ee262a51109569bb93f35b3add6e8fd815617fe158296321a7bc",
+      "train_count": 192,
+      "calibration_count": 32,
+      "bias": -64,
+      "threshold": -6387,
+      "max_gain": 109200,
+      "max_mean": 37503
+    }
+  },
+  "sha256": {
+    "artifacts/acoustic-known-release-v1/protocol.json": "f55edd55653ad49d0ab547fd00f4790073e527a14190a647799bd3d3a27c6457",
+    "artifacts/acoustic-known-release-v1/id02/gain_q24.hex": "f4d16c6935463efa7cacd517b27fdffb99482bb0ac1abb6641b3d4f2579e5b8d",
+    "artifacts/acoustic-known-release-v1/id02/model.json": "6ebe515b50ae1ba0962d2123e4e15d9f320ffbef5496a0643ca2d681187342d2",
+    "artifacts/acoustic-known-release-v1/id02/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "artifacts/acoustic-known-release-v1/id02/development-scores.npy": "50b1c998a35a8913f613d47b002f43b71df666574c62e555c344aeb56679f02d",
+    "artifacts/acoustic-known-release-v1/id02/weights.hex": "27f2e44345703119fcb88003139a9aecf191c055cfbb2048e9babb7ae5557f3b",
+    "artifacts/acoustic-known-release-v1/id02/float.joblib": "151de59ba6b8d5e27f53b45fe0c1d4b2c4b61f0986ae5fa3cef661a12c5310fd",
+    "artifacts/acoustic-known-release-v1/id02/mean_q12.hex": "894762b29be6e24fe68ecad792e8ea282be765b7d37eb6d3623f0cd40588ade3",
+    "artifacts/acoustic-known-release-v1/id02/cos_quarter.hex": "0de47092858c84fcd5384d0e10092250c533958ca93a59b2c6f2f039365294d9",
+    "artifacts/acoustic-known-release-v1/id04/gain_q24.hex": "740f2a0be6765fbbc8be3060570cd82404e5dff30b6828889daaec9a5b504641",
+    "artifacts/acoustic-known-release-v1/id04/model.json": "52eb97ede147bef2a4b516b7afd35cdff1c6a521be9f666e7a6618451819b1b2",
+    "artifacts/acoustic-known-release-v1/id04/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "artifacts/acoustic-known-release-v1/id04/development-scores.npy": "b6ebd15fbd9a6cb79ea69320e27472c4c435dff2444b71f30e4add897a3e0f77",
+    "artifacts/acoustic-known-release-v1/id04/weights.hex": "895d03462e7c1bc975a56f2c4a00448afd25c2f985122e867bc4407a637574f6",
+    "artifacts/acoustic-known-release-v1/id04/float.joblib": "55b967bc5b0e9373837544e4f9ad7dade4217a708f60efc615c760372f50fb77",
+    "artifacts/acoustic-known-release-v1/id04/mean_q12.hex": "e8fb1ef233cd743dd0220c41bea9d866db23407a8db18d72b65837294bdaebf9",
+    "artifacts/acoustic-known-release-v1/id04/cos_quarter.hex": "0de47092858c84fcd5384d0e10092250c533958ca93a59b2c6f2f039365294d9",
+    "artifacts/acoustic-known-release-v1/id06/gain_q24.hex": "aa68b9b16b36800cbf00ea36d3d410c0073f0a2076b1bdd47b96a5b1279ca032",
+    "artifacts/acoustic-known-release-v1/id06/model.json": "77079c236512ee262a51109569bb93f35b3add6e8fd815617fe158296321a7bc",
+    "artifacts/acoustic-known-release-v1/id06/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "artifacts/acoustic-known-release-v1/id06/development-scores.npy": "eca673deee4c2a5c99c87a2703f06aab4cd0fef4a930b7710f7f387462a1a0cb",
+    "artifacts/acoustic-known-release-v1/id06/weights.hex": "189b1251fdc7035b2eec7d5fd60aa510fa16b23b8c2ca3b6b164463a09b0485e",
+    "artifacts/acoustic-known-release-v1/id06/float.joblib": "26772a7704511312277d14ec46c8706a20822656ba4e5ae3cf919011c67bf98b",
+    "artifacts/acoustic-known-release-v1/id06/mean_q12.hex": "2a9747b9ba52cff57f6920b095a14d31136393ac543ddc312ddd7c47f7a8b815",
+    "artifacts/acoustic-known-release-v1/id06/cos_quarter.hex": "0de47092858c84fcd5384d0e10092250c533958ca93a59b2c6f2f039365294d9",
+    "artifacts/acoustic-known-release-v1/id00/gain_q24.hex": "273476a7ecdb6ca94c04dafb4c87cefcd6cd1849530f66ffb11c10be40d1678e",
+    "artifacts/acoustic-known-release-v1/id00/model.json": "23e303fd55a484fe0704089e61e83df2cf4ddfa3a4077e0fa16c4dfa843e39e1",
+    "artifacts/acoustic-known-release-v1/id00/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "artifacts/acoustic-known-release-v1/id00/development-scores.npy": "b80d29783fe4df51624dc28a7a7161837ebd73b40b5bee4c8b0116813cbc3833",
+    "artifacts/acoustic-known-release-v1/id00/weights.hex": "a36cc3167d147a4c890e99dd57c6831c361185c8ad9e9644af0fa9ec69efe3f2",
+    "artifacts/acoustic-known-release-v1/id00/float.joblib": "601383b63113d3279a367d5d4aa0fc8593e7fea4f92b0c2edbcc06a0d7e49937",
+    "artifacts/acoustic-known-release-v1/id00/mean_q12.hex": "a6a8099eb0dc6ea43fef1e8c90c228be8a75595bae751ad66f28c594f555808f",
+    "artifacts/acoustic-known-release-v1/id00/cos_quarter.hex": "0de47092858c84fcd5384d0e10092250c533958ca93a59b2c6f2f039365294d9"
+  },
+  "meaning": "weights/parameters frozen only; final test remains locked pending RTL validation",
+  "final_test_opened": false
+}

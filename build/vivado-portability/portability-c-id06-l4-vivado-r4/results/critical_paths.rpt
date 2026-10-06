@@ -1,0 +1,2092 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Tue Oct  6 05:28:22 2026
+| Host         : LAB_HOST.engr.wustl.edu running 64-bit Rocky Linux release 8.10 (Green Obsidian)
+| Command      : report_timing -from [all_registers -clock clk] -to [all_registers -clock clk] -max_paths 20 -path_type full_clock_expanded -file critical_paths.rpt
+| Design       : known_spectral_core
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.549ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[56]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.448ns  (logic 7.076ns (48.975%)  route 7.372ns (51.025%))
+  Logic Levels:           25  (CARRY4=16 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.652 r  power_ram/wide_acc_reg[51]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.652    power_ram/wide_acc_reg[51]_i_3_n_0
+    SLICE_X34Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.769 r  power_ram/wide_acc_reg[55]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.769    power_ram/wide_acc_reg[55]_i_3_n_0
+    SLICE_X34Y64         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.254    14.023 r  power_ram/wide_acc_reg[56]_i_3/CO[0]
+                         net (fo=3, routed)           0.456    14.479    power_ram_n_124
+    SLICE_X37Y65         LUT6 (Prop_lut6_I5_O)        0.367    14.846 r  dbg_value[56]_i_2/O
+                         net (fo=1, routed)           0.452    15.297    dbg_value[56]_i_2_n_0
+    SLICE_X38Y65         LUT5 (Prop_lut5_I4_O)        0.124    15.421 r  dbg_value[56]_i_1/O
+                         net (fo=1, routed)           0.000    15.421    dbg_value[56]_i_1_n_0
+    SLICE_X38Y65         FDRE                                         r  dbg_value_reg[56]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X38Y65         FDRE                                         r  dbg_value_reg[56]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X38Y65         FDRE (Setup_fdre_C_D)        0.081    20.970    dbg_value_reg[56]
+  -------------------------------------------------------------------
+                         required time                         20.970
+                         arrival time                         -15.421
+  -------------------------------------------------------------------
+                         slack                                  5.549
+
+Slack (MET) :             5.561ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[48]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.384ns  (logic 6.735ns (46.823%)  route 7.649ns (53.177%))
+  Logic Levels:           23  (CARRY4=14 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.754 r  power_ram/wide_acc_reg[51]_i_3/O[0]
+                         net (fo=3, routed)           0.717    14.471    power_ram_n_119
+    SLICE_X39Y63         LUT6 (Prop_lut6_I5_O)        0.295    14.766 r  dbg_value[48]_i_2/O
+                         net (fo=1, routed)           0.467    15.233    dbg_value[48]_i_2_n_0
+    SLICE_X40Y63         LUT5 (Prop_lut5_I4_O)        0.124    15.357 r  dbg_value[48]_i_1/O
+                         net (fo=1, routed)           0.000    15.357    dbg_value[48]_i_1_n_0
+    SLICE_X40Y63         FDRE                                         r  dbg_value_reg[48]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X40Y63         FDRE                                         r  dbg_value_reg[48]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X40Y63         FDRE (Setup_fdre_C_D)        0.029    20.918    dbg_value_reg[48]
+  -------------------------------------------------------------------
+                         required time                         20.918
+                         arrival time                         -15.357
+  -------------------------------------------------------------------
+                         slack                                  5.561
+
+Slack (MET) :             5.648ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[54]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.345ns  (logic 6.878ns (47.946%)  route 7.467ns (52.054%))
+  Logic Levels:           24  (CARRY4=15 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.652 r  power_ram/wide_acc_reg[51]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.652    power_ram/wide_acc_reg[51]_i_3_n_0
+    SLICE_X34Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    13.891 r  power_ram/wide_acc_reg[55]_i_3/O[2]
+                         net (fo=3, routed)           0.593    14.484    power_ram_n_121
+    SLICE_X37Y65         LUT6 (Prop_lut6_I5_O)        0.301    14.785 r  dbg_value[54]_i_2/O
+                         net (fo=1, routed)           0.409    15.194    dbg_value[54]_i_2_n_0
+    SLICE_X38Y65         LUT5 (Prop_lut5_I4_O)        0.124    15.318 r  dbg_value[54]_i_1/O
+                         net (fo=1, routed)           0.000    15.318    dbg_value[54]_i_1_n_0
+    SLICE_X38Y65         FDRE                                         r  dbg_value_reg[54]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X38Y65         FDRE                                         r  dbg_value_reg[54]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X38Y65         FDRE (Setup_fdre_C_D)        0.077    20.966    dbg_value_reg[54]
+  -------------------------------------------------------------------
+                         required time                         20.966
+                         arrival time                         -15.318
+  -------------------------------------------------------------------
+                         slack                                  5.648
+
+Slack (MET) :             5.705ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[47]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.243ns  (logic 6.726ns (47.224%)  route 7.517ns (52.776%))
+  Logic Levels:           22  (CARRY4=13 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    13.733 r  power_ram/wide_acc_reg[47]_i_3/O[3]
+                         net (fo=3, routed)           0.628    14.361    power_ram_n_111
+    SLICE_X39Y61         LUT6 (Prop_lut6_I5_O)        0.307    14.668 r  dbg_value[47]_i_2/O
+                         net (fo=1, routed)           0.424    15.092    dbg_value[47]_i_2_n_0
+    SLICE_X40Y61         LUT5 (Prop_lut5_I4_O)        0.124    15.216 r  dbg_value[47]_i_1/O
+                         net (fo=1, routed)           0.000    15.216    dbg_value[47]_i_1_n_0
+    SLICE_X40Y61         FDRE                                         r  dbg_value_reg[47]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X40Y61         FDRE                                         r  dbg_value_reg[47]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X40Y61         FDRE (Setup_fdre_C_D)        0.032    20.921    dbg_value_reg[47]
+  -------------------------------------------------------------------
+                         required time                         20.921
+                         arrival time                         -15.216
+  -------------------------------------------------------------------
+                         slack                                  5.705
+
+Slack (MET) :             5.722ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[53]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.223ns  (logic 6.967ns (48.985%)  route 7.256ns (51.015%))
+  Logic Levels:           24  (CARRY4=15 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.652 r  power_ram/wide_acc_reg[51]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.652    power_ram/wide_acc_reg[51]_i_3_n_0
+    SLICE_X34Y63         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.975 r  power_ram/wide_acc_reg[55]_i_3/O[1]
+                         net (fo=3, routed)           0.637    14.612    power_ram_n_122
+    SLICE_X37Y66         LUT6 (Prop_lut6_I5_O)        0.306    14.918 r  dbg_value[53]_i_2/O
+                         net (fo=1, routed)           0.154    15.072    dbg_value[53]_i_2_n_0
+    SLICE_X37Y66         LUT5 (Prop_lut5_I4_O)        0.124    15.196 r  dbg_value[53]_i_1/O
+                         net (fo=1, routed)           0.000    15.196    dbg_value[53]_i_1_n_0
+    SLICE_X37Y66         FDRE                                         r  dbg_value_reg[53]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X37Y66         FDRE                                         r  dbg_value_reg[53]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X37Y66         FDRE (Setup_fdre_C_D)        0.029    20.918    dbg_value_reg[53]
+  -------------------------------------------------------------------
+                         required time                         20.918
+                         arrival time                         -15.196
+  -------------------------------------------------------------------
+                         slack                                  5.722
+
+Slack (MET) :             5.752ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[55]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.195ns  (logic 6.960ns (49.031%)  route 7.235ns (50.969%))
+  Logic Levels:           24  (CARRY4=15 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.652 r  power_ram/wide_acc_reg[51]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.652    power_ram/wide_acc_reg[51]_i_3_n_0
+    SLICE_X34Y63         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    13.967 r  power_ram/wide_acc_reg[55]_i_3/O[3]
+                         net (fo=3, routed)           0.335    14.302    power_ram_n_120
+    SLICE_X37Y63         LUT6 (Prop_lut6_I5_O)        0.307    14.609 r  dbg_value[55]_i_2/O
+                         net (fo=1, routed)           0.435    15.044    dbg_value[55]_i_2_n_0
+    SLICE_X37Y66         LUT5 (Prop_lut5_I4_O)        0.124    15.168 r  dbg_value[55]_i_1/O
+                         net (fo=1, routed)           0.000    15.168    dbg_value[55]_i_1_n_0
+    SLICE_X37Y66         FDRE                                         r  dbg_value_reg[55]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X37Y66         FDRE                                         r  dbg_value_reg[55]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X37Y66         FDRE (Setup_fdre_C_D)        0.031    20.920    dbg_value_reg[55]
+  -------------------------------------------------------------------
+                         required time                         20.920
+                         arrival time                         -15.168
+  -------------------------------------------------------------------
+                         slack                                  5.752
+
+Slack (MET) :             5.762ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[49]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.231ns  (logic 6.850ns (48.133%)  route 7.381ns (51.867%))
+  Logic Levels:           23  (CARRY4=14 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.858 r  power_ram/wide_acc_reg[51]_i_3/O[1]
+                         net (fo=3, routed)           0.610    14.468    power_ram_n_118
+    SLICE_X38Y63         LUT6 (Prop_lut6_I5_O)        0.306    14.774 r  dbg_value[49]_i_2/O
+                         net (fo=1, routed)           0.306    15.080    dbg_value[49]_i_2_n_0
+    SLICE_X38Y64         LUT5 (Prop_lut5_I4_O)        0.124    15.204 r  dbg_value[49]_i_1/O
+                         net (fo=1, routed)           0.000    15.204    dbg_value[49]_i_1_n_0
+    SLICE_X38Y64         FDRE                                         r  dbg_value_reg[49]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X38Y64         FDRE                                         r  dbg_value_reg[49]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X38Y64         FDRE (Setup_fdre_C_D)        0.077    20.966    dbg_value_reg[49]
+  -------------------------------------------------------------------
+                         required time                         20.966
+                         arrival time                         -15.204
+  -------------------------------------------------------------------
+                         slack                                  5.762
+
+Slack (MET) :             5.808ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[46]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.137ns  (logic 6.644ns (46.997%)  route 7.493ns (53.003%))
+  Logic Levels:           22  (CARRY4=13 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    13.657 r  power_ram/wide_acc_reg[47]_i_3/O[2]
+                         net (fo=3, routed)           0.604    14.261    power_ram_n_112
+    SLICE_X38Y62         LUT6 (Prop_lut6_I5_O)        0.301    14.562 r  dbg_value[46]_i_2/O
+                         net (fo=1, routed)           0.424    14.986    dbg_value[46]_i_2_n_0
+    SLICE_X40Y62         LUT5 (Prop_lut5_I4_O)        0.124    15.110 r  dbg_value[46]_i_1/O
+                         net (fo=1, routed)           0.000    15.110    dbg_value[46]_i_1_n_0
+    SLICE_X40Y62         FDRE                                         r  dbg_value_reg[46]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X40Y62         FDRE                                         r  dbg_value_reg[46]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X40Y62         FDRE (Setup_fdre_C_D)        0.029    20.918    dbg_value_reg[46]
+  -------------------------------------------------------------------
+                         required time                         20.918
+                         arrival time                         -15.110
+  -------------------------------------------------------------------
+                         slack                                  5.808
+
+Slack (MET) :             5.812ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[50]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.135ns  (logic 6.761ns (47.831%)  route 7.374ns (52.169%))
+  Logic Levels:           23  (CARRY4=14 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    13.774 r  power_ram/wide_acc_reg[51]_i_3/O[2]
+                         net (fo=3, routed)           0.604    14.378    power_ram_n_117
+    SLICE_X39Y63         LUT6 (Prop_lut6_I5_O)        0.301    14.679 r  dbg_value[50]_i_2/O
+                         net (fo=1, routed)           0.305    14.984    dbg_value[50]_i_2_n_0
+    SLICE_X40Y63         LUT5 (Prop_lut5_I4_O)        0.124    15.108 r  dbg_value[50]_i_1/O
+                         net (fo=1, routed)           0.000    15.108    dbg_value[50]_i_1_n_0
+    SLICE_X40Y63         FDRE                                         r  dbg_value_reg[50]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X40Y63         FDRE                                         r  dbg_value_reg[50]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X40Y63         FDRE (Setup_fdre_C_D)        0.031    20.920    dbg_value_reg[50]
+  -------------------------------------------------------------------
+                         required time                         20.920
+                         arrival time                         -15.108
+  -------------------------------------------------------------------
+                         slack                                  5.812
+
+Slack (MET) :             5.828ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[44]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.119ns  (logic 6.618ns (46.873%)  route 7.501ns (53.127%))
+  Logic Levels:           22  (CARRY4=13 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.637 r  power_ram/wide_acc_reg[47]_i_3/O[0]
+                         net (fo=3, routed)           0.608    14.245    power_ram_n_114
+    SLICE_X39Y61         LUT6 (Prop_lut6_I5_O)        0.295    14.540 r  dbg_value[44]_i_2/O
+                         net (fo=1, routed)           0.428    14.968    dbg_value[44]_i_2_n_0
+    SLICE_X40Y61         LUT5 (Prop_lut5_I4_O)        0.124    15.092 r  dbg_value[44]_i_1/O
+                         net (fo=1, routed)           0.000    15.092    dbg_value[44]_i_1_n_0
+    SLICE_X40Y61         FDRE                                         r  dbg_value_reg[44]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X40Y61         FDRE                                         r  dbg_value_reg[44]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X40Y61         FDRE (Setup_fdre_C_D)        0.031    20.920    dbg_value_reg[44]
+  -------------------------------------------------------------------
+                         required time                         20.920
+                         arrival time                         -15.092
+  -------------------------------------------------------------------
+                         slack                                  5.828
+
+Slack (MET) :             5.870ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[38]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.075ns  (logic 6.410ns (45.541%)  route 7.665ns (54.459%))
+  Logic Levels:           20  (CARRY4=11 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    13.423 r  power_ram/wide_acc_reg[39]_i_3/O[2]
+                         net (fo=3, routed)           0.767    14.190    power_ram_n_104
+    SLICE_X43Y59         LUT6 (Prop_lut6_I1_O)        0.301    14.491 r  dbg_value[38]_i_2/O
+                         net (fo=1, routed)           0.433    14.924    dbg_value[38]_i_2_n_0
+    SLICE_X43Y59         LUT5 (Prop_lut5_I4_O)        0.124    15.048 r  dbg_value[38]_i_1/O
+                         net (fo=1, routed)           0.000    15.048    dbg_value[38]_i_1_n_0
+    SLICE_X43Y59         FDRE                                         r  dbg_value_reg[38]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X43Y59         FDRE                                         r  dbg_value_reg[38]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X43Y59         FDRE (Setup_fdre_C_D)        0.029    20.918    dbg_value_reg[38]
+  -------------------------------------------------------------------
+                         required time                         20.918
+                         arrival time                         -15.048
+  -------------------------------------------------------------------
+                         slack                                  5.870
+
+Slack (MET) :             5.871ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[37]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.124ns  (logic 6.499ns (46.012%)  route 7.625ns (53.988%))
+  Logic Levels:           20  (CARRY4=11 DSP48E1=1 LUT2=1 LUT4=3 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.507 r  power_ram/wide_acc_reg[39]_i_3/O[1]
+                         net (fo=3, routed)           0.714    14.221    power_ram_n_105
+    SLICE_X41Y59         LUT6 (Prop_lut6_I1_O)        0.306    14.527 r  dbg_value[37]_i_5/O
+                         net (fo=1, routed)           0.446    14.973    dbg_value[37]_i_5_n_0
+    SLICE_X42Y59         LUT6 (Prop_lut6_I4_O)        0.124    15.097 r  dbg_value[37]_i_1/O
+                         net (fo=1, routed)           0.000    15.097    dbg_value[37]_i_1_n_0
+    SLICE_X42Y59         FDRE                                         r  dbg_value_reg[37]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X42Y59         FDRE                                         r  dbg_value_reg[37]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X42Y59         FDRE (Setup_fdre_C_D)        0.079    20.968    dbg_value_reg[37]
+  -------------------------------------------------------------------
+                         required time                         20.968
+                         arrival time                         -15.097
+  -------------------------------------------------------------------
+                         slack                                  5.871
+
+Slack (MET) :             5.873ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[36]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.124ns  (logic 6.384ns (45.200%)  route 7.740ns (54.800%))
+  Logic Levels:           20  (CARRY4=11 DSP48E1=1 LUT2=1 LUT4=3 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.403 r  power_ram/wide_acc_reg[39]_i_3/O[0]
+                         net (fo=3, routed)           0.636    14.039    power_ram_n_106
+    SLICE_X42Y59         LUT6 (Prop_lut6_I1_O)        0.295    14.334 r  dbg_value[36]_i_2/O
+                         net (fo=1, routed)           0.638    14.973    dbg_value[36]_i_2_n_0
+    SLICE_X42Y59         LUT6 (Prop_lut6_I4_O)        0.124    15.097 r  dbg_value[36]_i_1/O
+                         net (fo=1, routed)           0.000    15.097    dbg_value[36]_i_1_n_0
+    SLICE_X42Y59         FDRE                                         r  dbg_value_reg[36]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X42Y59         FDRE                                         r  dbg_value_reg[36]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X42Y59         FDRE (Setup_fdre_C_D)        0.081    20.970    dbg_value_reg[36]
+  -------------------------------------------------------------------
+                         required time                         20.970
+                         arrival time                         -15.097
+  -------------------------------------------------------------------
+                         slack                                  5.873
+
+Slack (MET) :             5.890ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[45]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.057ns  (logic 6.733ns (47.899%)  route 7.324ns (52.101%))
+  Logic Levels:           22  (CARRY4=13 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.741 r  power_ram/wide_acc_reg[47]_i_3/O[1]
+                         net (fo=3, routed)           0.433    14.174    power_ram_n_113
+    SLICE_X37Y61         LUT6 (Prop_lut6_I5_O)        0.306    14.480 r  dbg_value[45]_i_2/O
+                         net (fo=1, routed)           0.426    14.906    dbg_value[45]_i_2_n_0
+    SLICE_X40Y61         LUT5 (Prop_lut5_I4_O)        0.124    15.030 r  dbg_value[45]_i_1/O
+                         net (fo=1, routed)           0.000    15.030    dbg_value[45]_i_1_n_0
+    SLICE_X40Y61         FDRE                                         r  dbg_value_reg[45]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X40Y61         FDRE                                         r  dbg_value_reg[45]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X40Y61         FDRE (Setup_fdre_C_D)        0.031    20.920    dbg_value_reg[45]
+  -------------------------------------------------------------------
+                         required time                         20.920
+                         arrival time                         -15.030
+  -------------------------------------------------------------------
+                         slack                                  5.890
+
+Slack (MET) :             5.891ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[52]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.104ns  (logic 6.852ns (48.581%)  route 7.252ns (51.419%))
+  Logic Levels:           24  (CARRY4=15 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.652 r  power_ram/wide_acc_reg[51]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.652    power_ram/wide_acc_reg[51]_i_3_n_0
+    SLICE_X34Y63         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    13.871 r  power_ram/wide_acc_reg[55]_i_3/O[0]
+                         net (fo=3, routed)           0.485    14.356    power_ram_n_123
+    SLICE_X38Y63         LUT6 (Prop_lut6_I5_O)        0.295    14.651 r  dbg_value[52]_i_2/O
+                         net (fo=1, routed)           0.302    14.953    dbg_value[52]_i_2_n_0
+    SLICE_X38Y64         LUT5 (Prop_lut5_I4_O)        0.124    15.077 r  dbg_value[52]_i_1/O
+                         net (fo=1, routed)           0.000    15.077    dbg_value[52]_i_1_n_0
+    SLICE_X38Y64         FDRE                                         r  dbg_value_reg[52]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X38Y64         FDRE                                         r  dbg_value_reg[52]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X38Y64         FDRE (Setup_fdre_C_D)        0.079    20.968    dbg_value_reg[52]
+  -------------------------------------------------------------------
+                         required time                         20.968
+                         arrival time                         -15.077
+  -------------------------------------------------------------------
+                         slack                                  5.891
+
+Slack (MET) :             5.906ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[51]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.091ns  (logic 6.843ns (48.564%)  route 7.248ns (51.436%))
+  Logic Levels:           23  (CARRY4=14 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    13.850 r  power_ram/wide_acc_reg[51]_i_3/O[3]
+                         net (fo=3, routed)           0.471    14.321    power_ram_n_116
+    SLICE_X37Y63         LUT6 (Prop_lut6_I5_O)        0.307    14.628 r  dbg_value[51]_i_2/O
+                         net (fo=1, routed)           0.312    14.940    dbg_value[51]_i_2_n_0
+    SLICE_X38Y64         LUT5 (Prop_lut5_I4_O)        0.124    15.064 r  dbg_value[51]_i_1/O
+                         net (fo=1, routed)           0.000    15.064    dbg_value[51]_i_1_n_0
+    SLICE_X38Y64         FDRE                                         r  dbg_value_reg[51]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X38Y64         FDRE                                         r  dbg_value_reg[51]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X38Y64         FDRE (Setup_fdre_C_D)        0.081    20.970    dbg_value_reg[51]
+  -------------------------------------------------------------------
+                         required time                         20.970
+                         arrival time                         -15.064
+  -------------------------------------------------------------------
+                         slack                                  5.906
+
+Slack (MET) :             5.912ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[35]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.033ns  (logic 6.375ns (45.429%)  route 7.658ns (54.571%))
+  Logic Levels:           19  (CARRY4=10 DSP48E1=1 LUT2=1 LUT4=3 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    13.382 r  power_ram/wide_acc_reg[35]_i_3/O[3]
+                         net (fo=3, routed)           0.760    14.142    power_ram_n_99
+    SLICE_X45Y58         LUT6 (Prop_lut6_I1_O)        0.307    14.449 r  dbg_value[35]_i_2/O
+                         net (fo=1, routed)           0.433    14.882    dbg_value[35]_i_2_n_0
+    SLICE_X45Y58         LUT6 (Prop_lut6_I4_O)        0.124    15.006 r  dbg_value[35]_i_1/O
+                         net (fo=1, routed)           0.000    15.006    dbg_value[35]_i_1_n_0
+    SLICE_X45Y58         FDRE                                         r  dbg_value_reg[35]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X45Y58         FDRE                                         r  dbg_value_reg[35]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X45Y58         FDRE (Setup_fdre_C_D)        0.029    20.918    dbg_value_reg[35]
+  -------------------------------------------------------------------
+                         required time                         20.918
+                         arrival time                         -15.006
+  -------------------------------------------------------------------
+                         slack                                  5.912
+
+Slack (MET) :             5.981ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[41]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.964ns  (logic 6.616ns (47.378%)  route 7.348ns (52.622%))
+  Logic Levels:           21  (CARRY4=12 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.624 r  power_ram/wide_acc_reg[43]_i_3/O[1]
+                         net (fo=3, routed)           0.572    14.196    power_ram_n_109
+    SLICE_X39Y61         LUT6 (Prop_lut6_I5_O)        0.306    14.502 r  dbg_value[41]_i_2/O
+                         net (fo=1, routed)           0.312    14.813    dbg_value[41]_i_2_n_0
+    SLICE_X40Y61         LUT5 (Prop_lut5_I4_O)        0.124    14.937 r  dbg_value[41]_i_1/O
+                         net (fo=1, routed)           0.000    14.937    dbg_value[41]_i_1_n_0
+    SLICE_X40Y61         FDRE                                         r  dbg_value_reg[41]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X40Y61         FDRE                                         r  dbg_value_reg[41]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X40Y61         FDRE (Setup_fdre_C_D)        0.029    20.918    dbg_value_reg[41]
+  -------------------------------------------------------------------
+                         required time                         20.918
+                         arrival time                         -14.937
+  -------------------------------------------------------------------
+                         slack                                  5.981
+
+Slack (MET) :             6.035ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            dbg_value_reg[43]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.910ns  (logic 6.609ns (47.512%)  route 7.301ns (52.488%))
+  Logic Levels:           21  (CARRY4=12 DSP48E1=1 LUT2=1 LUT4=3 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    13.616 r  power_ram/wide_acc_reg[43]_i_3/O[3]
+                         net (fo=3, routed)           0.493    14.109    power_ram_n_107
+    SLICE_X40Y60         LUT6 (Prop_lut6_I5_O)        0.307    14.416 r  dbg_value[43]_i_2/O
+                         net (fo=1, routed)           0.343    14.759    dbg_value[43]_i_2_n_0
+    SLICE_X41Y60         LUT5 (Prop_lut5_I4_O)        0.124    14.883 r  dbg_value[43]_i_1/O
+                         net (fo=1, routed)           0.000    14.883    dbg_value[43]_i_1_n_0
+    SLICE_X41Y60         FDRE                                         r  dbg_value_reg[43]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X41Y60         FDRE                                         r  dbg_value_reg[43]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X41Y60         FDRE (Setup_fdre_C_D)        0.029    20.918    dbg_value_reg[43]
+  -------------------------------------------------------------------
+                         required time                         20.918
+                         arrival time                         -14.883
+  -------------------------------------------------------------------
+                         slack                                  6.035
+
+Slack (MET) :             6.058ns  (required time - arrival time)
+  Source:                 purpose_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            wide_acc_reg[56]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk rise@20.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.887ns  (logic 6.952ns (50.062%)  route 6.935ns (49.938%))
+  Logic Levels:           24  (CARRY4=16 DSP48E1=1 LUT2=1 LUT4=4 LUT6=2)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 )
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=1331, unset)         0.973     0.973    clk
+    SLICE_X44Y65         FDRE                                         r  purpose_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y65         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  purpose_reg[1]/Q
+                         net (fo=10, routed)          1.093     2.522    lanes[0].rom/cycles_nn[17]_i_3
+    SLICE_X44Y63         LUT2 (Prop_lut2_I0_O)        0.124     2.646 r  lanes[0].rom/cycles_power[23]_i_5/O
+                         net (fo=18, routed)          0.966     3.612    lanes[0].rom/purpose_reg[1]
+    SLICE_X39Y50         LUT6 (Prop_lut6_I4_O)        0.124     3.736 f  lanes[0].rom/p_6_out_i_112/O
+                         net (fo=2, routed)           1.152     4.888    lanes[0].rom_n_18
+    SLICE_X30Y52         LUT4 (Prop_lut4_I3_O)        0.152     5.040 r  unsigned_product_i_2/O
+                         net (fo=1, routed)           1.074     6.114    unsigned_product_i_2_n_0
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_B[16]_P[0])
+                                                      2.281     8.395 r  unsigned_product/P[0]
+                         net (fo=3, routed)           1.037     9.432    power_ram/P[0]
+    SLICE_X35Y50         LUT4 (Prop_lut4_I3_O)        0.124     9.556 r  power_ram/wide_acc[3]_i_7/O
+                         net (fo=1, routed)           0.000     9.556    power_ram/wide_acc[3]_i_7_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    10.162 r  power_ram/wide_acc_reg[3]_i_2/O[3]
+                         net (fo=2, routed)           0.833    10.995    power_ram/wide_acc_reg[3][3]
+    SLICE_X33Y50         LUT4 (Prop_lut4_I3_O)        0.306    11.301 f  power_ram/wide_acc[3]_i_9/O
+                         net (fo=1, routed)           0.310    11.611    power_ram/wide_acc[3]_i_9_n_0
+    SLICE_X34Y50         LUT6 (Prop_lut6_I0_O)        0.124    11.735 r  power_ram/wide_acc[3]_i_8/O
+                         net (fo=1, routed)           0.000    11.735    power_ram/wide_acc[3]_i_8_n_0
+    SLICE_X34Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    12.248 r  power_ram/wide_acc_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.248    power_ram/wide_acc_reg[3]_i_3_n_0
+    SLICE_X34Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.365 r  power_ram/wide_acc_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.365    power_ram/wide_acc_reg[7]_i_3_n_0
+    SLICE_X34Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.482 r  power_ram/wide_acc_reg[11]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.482    power_ram/wide_acc_reg[11]_i_3_n_0
+    SLICE_X34Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.599 r  power_ram/wide_acc_reg[15]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.599    power_ram/wide_acc_reg[15]_i_3_n_0
+    SLICE_X34Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.716 r  power_ram/wide_acc_reg[19]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.716    power_ram/wide_acc_reg[19]_i_3_n_0
+    SLICE_X34Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.833 r  power_ram/wide_acc_reg[23]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.833    power_ram/wide_acc_reg[23]_i_3_n_0
+    SLICE_X34Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.950 r  power_ram/wide_acc_reg[27]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.950    power_ram/wide_acc_reg[27]_i_3_n_0
+    SLICE_X34Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.067 r  power_ram/wide_acc_reg[31]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.067    power_ram/wide_acc_reg[31]_i_3_n_0
+    SLICE_X34Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.184 r  power_ram/wide_acc_reg[35]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.184    power_ram/wide_acc_reg[35]_i_3_n_0
+    SLICE_X34Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.301 r  power_ram/wide_acc_reg[39]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.301    power_ram/wide_acc_reg[39]_i_3_n_0
+    SLICE_X34Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.418 r  power_ram/wide_acc_reg[43]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.418    power_ram/wide_acc_reg[43]_i_3_n_0
+    SLICE_X34Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.535 r  power_ram/wide_acc_reg[47]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.535    power_ram/wide_acc_reg[47]_i_3_n_0
+    SLICE_X34Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.652 r  power_ram/wide_acc_reg[51]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.652    power_ram/wide_acc_reg[51]_i_3_n_0
+    SLICE_X34Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.769 r  power_ram/wide_acc_reg[55]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    13.769    power_ram/wide_acc_reg[55]_i_3_n_0
+    SLICE_X34Y64         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.254    14.023 r  power_ram/wide_acc_reg[56]_i_3/CO[0]
+                         net (fo=3, routed)           0.470    14.493    power_ram_n_124
+    SLICE_X37Y65         LUT4 (Prop_lut4_I3_O)        0.367    14.860 r  wide_acc[56]_i_2/O
+                         net (fo=1, routed)           0.000    14.860    wide_acc[56]_i_2_n_0
+    SLICE_X37Y65         FDRE                                         r  wide_acc_reg[56]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       20.000    20.000 r
+                                                      0.000    20.000 r  clk (IN)
+                         net (fo=1331, unset)         0.924    20.924    clk
+    SLICE_X37Y65         FDRE                                         r  wide_acc_reg[56]/C
+                         clock pessimism              0.000    20.924
+                         clock uncertainty           -0.035    20.889
+    SLICE_X37Y65         FDRE (Setup_fdre_C_D)        0.029    20.918    wide_acc_reg[56]
+  -------------------------------------------------------------------
+                         required time                         20.918
+                         arrival time                         -14.860
+  -------------------------------------------------------------------
+                         slack                                  6.058

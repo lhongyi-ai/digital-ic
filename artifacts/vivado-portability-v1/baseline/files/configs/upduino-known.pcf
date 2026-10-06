@@ -1,0 +1,8 @@
+# Same PCB-verified Flash and status pins as upduino-replay.pcf; internal HFOSC.
+set_io flash_cs_n 16
+set_io flash_sclk 15
+set_io flash_mosi 14
+set_io flash_miso 17
+set_io status_done 21
+set_io status_error 12
+set_io status_running 13

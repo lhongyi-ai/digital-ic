@@ -362,7 +362,7 @@ Finding unused cells or wires in module \quant_functions_harness..
 === $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000000000 ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        38 wires
       881 wire bits
        16 public wires
@@ -387,7 +387,7 @@ Finding unused cells or wires in module \quant_functions_harness..
 === quant_functions_harness ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
       120 wires
      1498 wire bits
        26 public wires
@@ -417,12 +417,12 @@ Finding unused cells or wires in module \quant_functions_harness..
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
       150 quant_functions_harness
        26 $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000000000
 
         +----------Count including submodules.
-        | 
+        |
       158 wires
      2379 wire bits
        42 public wires

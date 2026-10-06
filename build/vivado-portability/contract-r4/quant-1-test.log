@@ -1,0 +1,9 @@
+WARNING: PROJECT_ROOT/rtl/core/vib_coeff_rom.sv:24: $readmemh(artifacts/acoustic-known-release-v1/id00/cos_quarter.hex): Too many words in the file for the requested range [0:3].
+WARNING: PROJECT_ROOT/rtl/core/vib_coeff_rom.sv:24: $readmemh(artifacts/acoustic-known-release-v1/id00/cos_quarter.hex): Too many words in the file for the requested range [0:3].
+WARNING: PROJECT_ROOT/rtl/core/vib_coeff_rom.sv:24: $readmemh(artifacts/acoustic-known-release-v1/id00/cos_quarter.hex): Too many words in the file for the requested range [0:3].
+WARNING: PROJECT_ROOT/rtl/core/vib_coeff_rom.sv:24: $readmemh(artifacts/acoustic-known-release-v1/id00/cos_quarter.hex): Too many words in the file for the requested range [0:3].
+WARNING: PROJECT_ROOT/build/vivado-portability/contract-r4/known_spectral_core_icarus.sv:51: $readmemh(artifacts/acoustic-known-release-v1/id00/mean_q12.hex): Too many words in the file for the requested range [0:7].
+WARNING: PROJECT_ROOT/build/vivado-portability/contract-r4/known_spectral_core_icarus.sv:52: $readmemh(artifacts/acoustic-known-release-v1/id00/gain_q24.hex): Too many words in the file for the requested range [0:7].
+WARNING: PROJECT_ROOT/build/vivado-portability/contract-r4/known_spectral_core_icarus.sv:53: $readmemh(artifacts/acoustic-known-release-v1/id00/weights.hex): Too many words in the file for the requested range [0:7].
+ARITHMETIC_UNIT_PASS
+PROJECT_ROOT/build/vivado-portability/contract-r4/quant-1.sv:35: $finish called at 30000 (1ps)

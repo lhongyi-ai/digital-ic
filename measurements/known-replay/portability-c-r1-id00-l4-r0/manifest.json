@@ -1,0 +1,130 @@
+{
+  "backup_sha256": "6d3e407f7f6e7e3135ee794063646823c17ca5cec734b40b8c8d25a3a47ed77b",
+  "baseline_manifest_sha256": "d7d7a6af78eed840555df84c30a78518af44009a24fdff06d422709aac853dbf",
+  "bitstream_sha256": "9476f18bae19accaada9c5d6dd301ab34c8013b6539850bf7d5f04a4bc6816ee",
+  "build_report_sha256": "4fad04febf640bafb42d2cc0479cd1f0c7fb1f1413b07241184140682a636c91",
+  "commands": [
+    [
+      "jedec",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ]
+    ],
+    [
+      "configuration",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r1-id00-l4-r0/board.bin"
+      ]
+    ],
+    [
+      "input",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "1048576",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r1-id00-l4-r0/input.bin"
+      ]
+    ],
+    [
+      "clear_log_and_start",
+      [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "3145728",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r1-id00-l4-r0/erased-log.bin"
+      ]
+    ]
+  ],
+  "deployment_manifest": "artifacts/vivado-portability-v1/release.json",
+  "deployment_sha256": "73b842a0bea9d18721fd62aef2bd3b4ed588279b6ad2e8b8988a539f22feee7d",
+  "error": "AssertionError: configuration failed; see retained transcript",
+  "expected_score": -6361,
+  "final_audit_sha256": "d0738c03729e145d040aa11355061d37ff82a396f08d74bc8e4ccd9518d938d0",
+  "finished_utc": "2026-10-06T11:01:26.749601+00:00",
+  "hardware_operations_started": true,
+  "input_sha256": "165262f969e4a4a6a789cd8ceedfa54e7092eff06063953a4dbabf2f3e011226",
+  "lanes": 4,
+  "machine": "00",
+  "model_sha256": "23e303fd55a484fe0704089e61e83df2cf4ddfa3a4077e0fa16c4dfa843e39e1",
+  "period": 750,
+  "physical_hardware": false,
+  "profile_sha256": "3e0cbd8dafa9ffc122d6bc2305925cefa0bec273566a4d28af1e79bbf6f7b4e5",
+  "quant_pipeline": 1,
+  "record": {
+    "compressed": 1782348,
+    "crc": 3279980453,
+    "fold": 0,
+    "label": 0,
+    "local": "data/mimii/pcm/normal_00000304.npy",
+    "machine": "00",
+    "method": 8,
+    "name": "fan/id_00/normal/00000304.wav",
+    "npy_sha256": "991aa41b728cb988a43b82ed8f0e3ead69b7b8fc3034b552ea8e6b9e6ba3757e",
+    "offset": 1300214316,
+    "role": "cv",
+    "size": 2560080
+  },
+  "source_sha256": "cd47bcff5a2b0834999b3e429812df202a1f3ac773aca4dd3d7f5592c8d9e0bf",
+  "started_utc": "2026-10-06T11:01:13.769914+00:00",
+  "status": "failed",
+  "steps": [
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-t"
+      ],
+      "elapsed_seconds": 0.7155564170097932,
+      "finished_utc": "2026-10-06T11:01:15.008822+00:00",
+      "name": "jedec",
+      "observed_flash_id": "EF4016",
+      "returncode": 0,
+      "started_utc": "2026-10-06T11:01:14.292728+00:00",
+      "transcript": "jedec.txt",
+      "transcript_sha256": "d35361e4e3604a85d981ef65c07d8f6d21d8ed1fc0b4cfbaa058d9ff88ba0d43"
+    },
+    {
+      "argv": [
+        "iceprog",
+        "-d",
+        "i:0x0403:0x6014:0",
+        "-i",
+        "4",
+        "-o",
+        "0",
+        "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r1-id00-l4-r0/board.bin"
+      ],
+      "elapsed_seconds": 11.736147916992195,
+      "finished_utc": "2026-10-06T11:01:26.748317+00:00",
+      "input_file": "LOCAL_PRIVATE_PATH 2026/digital ic/measurements/known-replay/portability-c-r1-id00-l4-r0/board.bin",
+      "input_sha256": "9476f18bae19accaada9c5d6dd301ab34c8013b6539850bf7d5f04a4bc6816ee",
+      "name": "configuration",
+      "observed_flash_id": "EF4016",
+      "returncode": 2,
+      "started_utc": "2026-10-06T11:01:15.011281+00:00",
+      "transcript": "configuration.txt",
+      "transcript_sha256": "75647b0e48f2f6c3e822a652876383d4f319d095cdd937e36a3b602986332979"
+    }
+  ],
+  "usb_product": "UPduino v3.1",
+  "wait_seconds": 14
+}

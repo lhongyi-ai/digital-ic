@@ -11,10 +11,10 @@ assert 250 == -451
   File "./sim/test_known_core.py", line 90, in reset_cancels_transactions
     p=Path(os.environ['KNOWN_REPORT']);r=json.loads(p.read_text());r['reset_phases']=['input','processing','blocked_output'];p.write_text(json.dumps(r,indent=2))
                                                     ^^^^^^^^^^^^^
-  File "/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1027, in read_text
+  File "BUILD_HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1027, in read_text
     with self.open(mode='r', encoding=encoding, errors=errors) as f:
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/researcher/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+  File "BUILD_HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
     return io.open(self, mode, buffering, encoding, errors, newline)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: './build/known-core/small-l4-r2/report.json'

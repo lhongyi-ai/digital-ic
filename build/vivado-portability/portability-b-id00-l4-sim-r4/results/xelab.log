@@ -1,0 +1,17 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /project/engineering/xilinx/2024.2/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab known_vivado_tb -timescale 1ns/1ps -mt 2 -s known_sim
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.known_capture_default
+Compiling module work.spram16k
+Compiling module work.vib_coeff_rom(MODEL_DIR="model")
+Compiling module work.known_spectral_core(MODEL_DIR="m...
+Compiling module work.known_vivado_tb
+Built simulation snapshot known_sim

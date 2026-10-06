@@ -12,7 +12,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 CJK = re.compile(r"[\u3400-\u9fff\uf900-\ufaff\u3040-\u30ff\uac00-\ud7af]")
-PRIVATE = re.compile(r"/Users/|\.chatgpt-projects/|/private/var/folders/|/var/folders/")
+PRIVATE = re.compile(r"/Users/|\.chatgpt-projects/|/private/var/folders/|/var/folders/|/(?:home|homes)/[^/\s]+|[?&](?:password|token)=", re.IGNORECASE)
 SECRETS = {
     "private_key": re.compile(r"-----BEGIN (?:RSA |EC |DSA |OPENSSH |ENCRYPTED )?PRIVATE KEY-----"),
     "github_token": re.compile(r"\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{50,})\b"),

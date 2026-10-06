@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "slurm_state": "300343|FAILED|1:0",
+  "remote_job": {
+    "job_id": "300343",
+    "remote_dir": "digital_ic_vivado/portability-b-id00-l4-vivado-r2",
+    "recovered_from_sbatch_stdout": true
+  },
+  "raw_results": "LOCAL_PRIVATE_PATH 2026/digital ic/build/vivado-portability/portability-b-id00-l4-vivado-r2/results"
+}

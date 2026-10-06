@@ -1,6 +1,6 @@
 # Publication integrity and reproduction
 
-This is a generated English publication artifact, not a replacement for the original laboratory archive. The local source archive remains at commit `c36464fe24600fcf4a44828278496ac68ea40903`; it is intentionally not part of this published Git history.
+This is the October 6, 2026 English publication update, built on the existing English GitHub history. It is not a replacement for the original laboratory archive. The local source archive remains at commit `c36464fe24600fcf4a44828278496ac68ea40903`; it is intentionally not part of this published Git history.
 
 ## Validate the publication
 
@@ -22,4 +22,10 @@ RTL, model parameters, numerical arrays, bitstreams, and raw result-readback pay
 
 Bulk datasets, external checkpoints, and the pre-project Flash recovery image are deliberately absent. Source manifests and licenses explain how to restore downloads. A recovery image must be made and verified for the actual target board; an archived board profile is not proof that a new board is connected or safe to program.
 
-The sole publication code adjustment beyond English output/path handling lets the EfficientAT training script read its pinned source commit from the included provenance file when vendored without nested Git metadata. It does not change model computation.
+The publication now also makes the remote SSH destination configurable through `VIVADO_SSH_HOST`, without including a personal alias. The earlier publication code adjustment beyond English output/path handling lets the EfficientAT training script read its pinned source commit from the included provenance file when vendored without nested Git metadata. It does not change model computation.
+
+## October portability evidence
+
+The completed cross-FPGA experiment and physical runs predate this translation. Their receipts preserve original experimental hashes. The manifest separately binds published English/redacted bytes. Private scheduler-account logs, connection identity, checkpoints with local metadata, and device recovery images are omitted. Required report summaries, timing/resource reports, failed-attempt evidence, model parameters, and raw physical result bytes are included. Regenerable bulk vectors and compiler state remain local.
+
+Software tests were rerun on the exported English tree. These tests and the publication scan do not reopen final recordings, retrain models, or access the board. See `publication/validation.json` for the current checks; earlier publication findings are retained there as historical context.

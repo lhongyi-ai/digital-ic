@@ -100,7 +100,7 @@ Info:   at iteration #5: temp = 0.000000, timing cost = 1819, wirelen = 23716
 Info:   at iteration #10: temp = 0.000000, timing cost = 1833, wirelen = 22720
 Info:   at iteration #15: temp = 0.000000, timing cost = 1908, wirelen = 22170
 Info:   at iteration #20: temp = 0.000000, timing cost = 1897, wirelen = 22016
-Info:   at iteration #23: temp = 0.000000, timing cost = 1892, wirelen = 21976 
+Info:   at iteration #23: temp = 0.000000, timing cost = 1892, wirelen = 21976
 Info: SA placement time 1.73s
 
 Info: Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 16.89 MHz (PASS at 12.00 MHz)
@@ -121,11 +121,11 @@ Info: [ 35374,  38185) |****+
 Info: [ 38185,  40996) |**********+
 Info: [ 40996,  43807) |******+
 Info: [ 43807,  46618) |*******+
-Info: [ 46618,  49429) |*************** 
+Info: [ 46618,  49429) |***************
 Info: [ 49429,  52240) |*************+
 Info: [ 52240,  55051) |*********+
 Info: [ 55051,  57862) |**********+
-Info: [ 57862,  60673) |************************************************************ 
+Info: [ 57862,  60673) |************************************************************
 Info: [ 60673,  63484) |****************************************************+
 Info: [ 63484,  66295) |*********************+
 Info: [ 66295,  69106) |******************+
@@ -193,88 +193,88 @@ Info:    routing  3.06  4.45 Net system.write_position[7] (17,7) -> (17,12)
 Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_LC.I2
 Info:                          Defined in:
 Info:                               rtl/upduino_sensor.sv:327.37-327.56
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  1.21  5.65 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_LC.O
 Info:    routing  1.76  7.41 Net system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I3[2] (17,12) -> (18,12)
 Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_I3_1_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  8.29 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_I3_1_LC.O
 Info:    routing  4.90  13.18 Net system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_I3_1_O[1] (18,12) -> (20,25)
 Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_I3_O_SB_LUT4_O_1_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  14.06 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_I3_O_SB_LUT4_O_1_LC.O
 Info:    routing  3.06  17.11 Net system.transport.spi.tx_shift_SB_DFFESR_Q_1_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O_I3[1] (20,25) -> (21,29)
 Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  17.99 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.O
 Info:    routing  1.76  19.75 Net system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3[2] (21,29) -> (21,29)
 Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.I2
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  1.21  20.95 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.O
 Info:    routing  1.76  22.72 Net system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O_I3[3] (21,29) -> (21,29)
 Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  23.59 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O_LC.O
 Info:    routing  1.76  25.35 Net system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3[3] (21,29) -> (21,28)
 Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  26.22 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2_SB_LUT4_O_LC.O
 Info:    routing  1.76  27.99 Net system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_I2[2] (21,28) -> (21,27)
 Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_LC.I2
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  1.21  29.19 Source system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O_SB_LUT4_O_1_LC.O
 Info:    routing  1.76  30.95 Net system.transport.spi.tx_shift_SB_DFFESR_Q_6_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1_O_SB_LUT4_I1_I2_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_1_O[2] (21,27) -> (20,26)
 Info:                          Sink system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_LC.I2
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  1.21  32.16 Source system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_LC.O
 Info:    routing  4.25  36.40 Net system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_1_I3[3] (20,26) -> (17,16)
 Info:                          Sink system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_1_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  37.28 Source system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_1_LC.O
 Info:    routing  4.35  41.63 Net system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I2[3] (17,16) -> (16,2)
 Info:                          Sink system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  42.51 Source system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_LC.O
 Info:    routing  1.76  44.27 Net system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3[1] (16,2) -> (16,1)
 Info:                          Sink system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  45.14 Source system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.O
 Info:    routing  1.76  46.90 Net system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_I3[3] (16,1) -> (16,1)
 Info:                          Sink system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  47.78 Source system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_LC.O
 Info:    routing  1.76  49.54 Net system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_I3[1] (16,1) -> (16,2)
 Info:                          Sink system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  50.41 Source system.transport.spi.mosi_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_I3_O_SB_LUT4_O_LC.O
 Info:    routing  2.41  52.82 Net system.transport.spi.divider_SB_LUT4_I1_I3_SB_LUT4_O_I2_SB_LUT4_I2_1_O_SB_LUT4_O_I3_SB_LUT4_I3_O[1] (16,2) -> (16,5)
 Info:                          Sink system.transport.spi.tx_shift_SB_DFFESR_Q_3_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  53.69 Source system.transport.spi.tx_shift_SB_DFFESR_Q_3_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_O_1_LC.O
 Info:    routing  1.76  55.45 Net system.crc_SB_DFFESS_Q_12_D_SB_LUT4_O_I1[1] (16,5) -> (17,4)
 Info:                          Sink system.crc_SB_DFFESS_Q_3_D_SB_LUT4_O_I2_SB_LUT4_I2_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  56.33 Source system.crc_SB_DFFESS_Q_3_D_SB_LUT4_O_I2_SB_LUT4_I2_LC.O
 Info:    routing  1.76  58.09 Net system.crc_SB_DFFESS_Q_3_D_SB_LUT4_O_I2_SB_LUT4_I2_O[3] (17,4) -> (18,4)
 Info:                          Sink system.crc_SB_DFFESS_Q_1_DFFLC.I0
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      setup  1.23  59.32 Source system.crc_SB_DFFESS_Q_1_DFFLC.I0
 Info: 17.93 ns logic, 41.39 ns routing
 
@@ -294,17 +294,17 @@ Info:   clk-to-q  1.39  1.39 Source system.error_flags_SB_DFFESR_Q_DFFLC.O
 Info:    routing  2.99  4.38 Net system.error_flags[6] (18,3) -> (18,11)
 Info:                          Sink status_error_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.I1
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  1.23  5.61 Source status_error_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.O
 Info:    routing  1.76  7.37 Net status_error_SB_LUT4_O_I3_SB_LUT4_O_I3[3] (18,11) -> (18,11)
 Info:                          Sink status_error_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  8.25 Source status_error_SB_LUT4_O_I3_SB_LUT4_O_LC.O
 Info:    routing  1.76  10.01 Net status_error_SB_LUT4_O_I3[1] (18,11) -> (18,11)
 Info:                          Sink status_error_SB_LUT4_O_LC.I3
 Info:                          Defined in:
-Info:                               /home/researcher/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:                               BUILD_HOME/Desktop/￿FFE6￿FF95￿FF99￿FFE6￿FF9D￿FF90/Fall 2026/digital ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
 Info:      logic  0.87  10.88 Source status_error_SB_LUT4_O_LC.O
 Info:    routing  3.70  14.59 Net status_error$SB_IO_OUT (18,11) -> (18,0)
 Info:                          Sink status_error$sb_io.D_OUT_0
@@ -336,7 +336,7 @@ Info: [ 52050,  54854) |*****+
 Info: [ 54854,  57658) |*****+
 Info: [ 57658,  60462) |********+
 Info: [ 60462,  63266) |****************+
-Info: [ 63266,  66070) |************************************************************ 
+Info: [ 63266,  66070) |************************************************************
 Info: [ 66070,  68874) |********+
 Info: [ 68874,  71678) |**********+
 Info: [ 71678,  74482) |*************+

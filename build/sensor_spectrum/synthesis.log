@@ -3986,22 +3986,22 @@ Extracted 3359 AND gates and 11875 wires from module `sensor_spectrum_probe' to 
 6.50.15.5. Executing ABC9.
 Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
-ABC: + read_lut <abc-temp-dir>/input.lut 
-ABC: + read_box <abc-temp-dir>/input.box 
-ABC: + &read <abc-temp-dir>/input.xaig 
-ABC: + &ps 
+ABC: + read_lut <abc-temp-dir>/input.lut
+ABC: + read_box <abc-temp-dir>/input.box
+ABC: + &read <abc-temp-dir>/input.xaig
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =    678/   1489  and =    2845  lev =   18 (0.72)  mem = 0.18 MB  box = 2039  bb = 1421
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 9 carries.
-ABC: + &scorr 
+ABC: + &scorr
 ABC: Warning: The network is combinational.
-ABC: + &sweep 
-ABC: + &dc2 
-ABC: + &dch -f -r 
-ABC: + &ps 
+ABC: + &sweep
+ABC: + &dc2
+ABC: + &dch -f -r
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =    678/   1489  and =    3984  lev =   24 (0.58)  mem = 0.19 MB  ch =  555  box = 2008  bb = 1421
 ABC: cst =       0  cls =    478  lit =     555  unused =    6224  proof =     0
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 3 carries.
-ABC: + &if -W 250 -v 
+ABC: + &if -W 250 -v
 ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
 ABC: Node =    3984.  Ch =   478.  Total mem =    2.00 MB. Peak cut mem =    0.08 MB.
 ABC: P:  Del = 9362.00.  Ar =    1221.0.  Edge =     3979.  Cut =    19713.  T =     0.00 sec
@@ -4011,16 +4011,16 @@ ABC: F:  Del = 9362.00.  Ar =     905.0.  Edge =     2900.  Cut =    19819.  T =
 ABC: A:  Del = 9362.00.  Ar =     890.0.  Edge =     2850.  Cut =    19878.  T =     0.00 sec
 ABC: A:  Del = 9362.00.  Ar =     890.0.  Edge =     2850.  Cut =    19921.  T =     0.00 sec
 ABC: Total time =     0.01 sec
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &mfs 
-ABC: + &ps -l 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &mfs
+ABC: + &ps -l
 ABC: <abc-temp-dir>/input : i/o =    678/   1489  and =    2471  lev =   17 (0.53)  mem = 0.17 MB  box = 1991  bb = 1421
 ABC: Mapping (K=4)  :  lut =    857  edge =    2700  lev =   10 (0.33)  levB =   50  mem = 0.06 MB
 ABC: LUT = 857 : 2=191 22.3 %  3=346 40.4 %  4=320 37.3 %  Ave = 3.15
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &verify 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &verify
 ABC: Networks are equivalent.  Time =     0.06 sec
-ABC: + time 
+ABC: + time
 ABC: elapse: 0.40 seconds, total: 0.40 seconds
 
 6.50.15.6. Executing AIGER frontend.
@@ -4313,7 +4313,7 @@ Removed 0 unused modules.
 === sensor_spectrum_probe ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      1682 wires
      4395 wire bits
      1682 public wires
@@ -4335,11 +4335,11 @@ Removed 0 unused modules.
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
        14 sensor_spectrum_probe
 
         +----------Count including submodules.
-        | 
+        |
      1682 wires
      4395 wire bits
      1682 public wires
@@ -4372,7 +4372,7 @@ Found and reported 0 problems.
 === sensor_spectrum_probe ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      1682 wires
      4395 wire bits
      1682 public wires

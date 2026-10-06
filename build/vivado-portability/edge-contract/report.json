@@ -1,0 +1,145 @@
+{
+  "passed": true,
+  "quant_pipeline": 1,
+  "physical_hardware": false,
+  "fixture": true,
+  "n": 16,
+  "clip_windows": 2,
+  "cases": [
+    "rne",
+    "saturation",
+    "stall",
+    "reset_quant",
+    "frame_id",
+    "back_to_back"
+  ],
+  "evidence_kind": "aggregate_of_isolated_arithmetic_and_cocotb_xml_passes",
+  "cycle_comparisons": [
+    {
+      "lanes": 1,
+      "clip": 0,
+      "n": 16,
+      "deltas": {
+        "pre": 0,
+        "dft": 0,
+        "power": 0,
+        "nn": 8,
+        "total": 8
+      }
+    },
+    {
+      "lanes": 1,
+      "clip": 1,
+      "n": 16,
+      "deltas": {
+        "pre": 0,
+        "dft": 0,
+        "power": 0,
+        "nn": 8,
+        "total": 8
+      }
+    },
+    {
+      "lanes": 1,
+      "clip": 2,
+      "n": 16,
+      "deltas": {
+        "pre": 0,
+        "dft": 0,
+        "power": 0,
+        "nn": 8,
+        "total": 8
+      }
+    },
+    {
+      "lanes": 4,
+      "clip": 0,
+      "n": 16,
+      "deltas": {
+        "pre": 0,
+        "dft": 0,
+        "power": 0,
+        "nn": 8,
+        "total": 8
+      }
+    },
+    {
+      "lanes": 4,
+      "clip": 1,
+      "n": 16,
+      "deltas": {
+        "pre": 0,
+        "dft": 0,
+        "power": 0,
+        "nn": 8,
+        "total": 8
+      }
+    },
+    {
+      "lanes": 4,
+      "clip": 2,
+      "n": 16,
+      "deltas": {
+        "pre": 0,
+        "dft": 0,
+        "power": 0,
+        "nn": 8,
+        "total": 8
+      }
+    }
+  ],
+  "bindings": {
+    "rtl/platform/spram16k.sv": "1d3268aa179ba25f599bdc6bb958ecd157714dd7c35a4fb7ad04857bbffc5b1e",
+    "sim/spram_contract_tb.sv": "83f61e42c6cc68e8c0b81e83eca3ea1b27b6fd5e41fb71aa7faa50d7c4e382a0",
+    "scripts/test_portability_contracts.py": "aeab795b3e329bb8bdd09d86d2e5ed9714eedb1cd01c96024958a221145cde0d",
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/core/known_capture.sv": "4fef3ba24b5ec1c0ad21ffeba551c0c1f903b17ff9e5231f5dad35c804540206",
+    "rtl/core/known_spectral_core.sv": "e4e2941be21b10780a4ac18b1fa655d2e6c84ad8afded32ea72407121af47b89",
+    ".tools/oss-cad-suite/share/yosys/ice40/cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+    "artifacts/acoustic-known-release-v1/id00/gain_q24.hex": "273476a7ecdb6ca94c04dafb4c87cefcd6cd1849530f66ffb11c10be40d1678e",
+    "artifacts/acoustic-known-release-v1/id00/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "artifacts/acoustic-known-release-v1/id00/weights.hex": "a36cc3167d147a4c890e99dd57c6831c361185c8ad9e9644af0fa9ec69efe3f2",
+    "artifacts/acoustic-known-release-v1/id00/mean_q12.hex": "a6a8099eb0dc6ea43fef1e8c90c228be8a75595bae751ad66f28c594f555808f",
+    "artifacts/acoustic-known-release-v1/id00/cos_quarter.hex": "0de47092858c84fcd5384d0e10092250c533958ca93a59b2c6f2f039365294d9",
+    "build/vivado-portability/contract-r4/report.json": "56b42bef3bd44e0ed22b793f3153478976efd023aa97130e3c8edef605b13ab7",
+    "scripts/test_known_core.py": "3f49b840add26e343b0895d733f0022dd8f3a4f198a8025699521bfe74f409b0",
+    "sim/test_known_core.py": "73820eacee9bd57e8a9d7a4dc1b2e586df1c219469d1d99cb91aa9353b6a82bc",
+    "src/vibfpga/known_fixed.py": "ca842868a4b79f1687f8e88bf5daa82f415681aca592aec7c053d62b0cc4beb4",
+    "build/known-core/portability-b-small-l1/model/gain_q24.hex": "db5bbc1a83394379fdcd8487eecee892e031b1e6651c36566fce58e21662b77a",
+    "build/known-core/portability-b-small-l1/model/model.json": "e0155e3d452267a99ff50294108ccdb856932ce4949ebabf8cac1a63de2f0849",
+    "build/known-core/portability-b-small-l1/model/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "build/known-core/portability-b-small-l1/model/weights.hex": "4c566393e31c1c604cd393e2d0c62e24d2ad9734b76c19742af3daf2d5956e42",
+    "build/known-core/portability-b-small-l1/model/mean_q12.hex": "f0d818da9560a45c84ad98dbec4cc293799a34f261a5dff48a8396e3549826b6",
+    "build/known-core/portability-b-small-l1/model/cos_quarter.hex": "09a6cd1e68d071df09bc45e0f4c06e358ae72d724a44823401578264da1b2427",
+    "build/known-core/portability-b-small-l1/report.json": "2e821d5b1a6e21d0a72b70448aa7f62eb455f6f40d730a310f12e4f78516e12c",
+    "build/known-core/portability-b-small-l1/results.xml": "28c94bb7519012e5dcb5254a1562ee122c12328b81d713a6c1bb32253004bbce",
+    "build/known-core/portability-b-small-l1/test.log": "8ff02f43e79927dfe6db73f969303cab2e31081873175b34223a5b9e7f6a1906",
+    "build/known-core/portability-c-small-l1/model/gain_q24.hex": "db5bbc1a83394379fdcd8487eecee892e031b1e6651c36566fce58e21662b77a",
+    "build/known-core/portability-c-small-l1/model/model.json": "31d1c2b373d04c9a390701192c45942132a811077aa36fe19b121781c3e451a1",
+    "build/known-core/portability-c-small-l1/model/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "build/known-core/portability-c-small-l1/model/weights.hex": "4c566393e31c1c604cd393e2d0c62e24d2ad9734b76c19742af3daf2d5956e42",
+    "build/known-core/portability-c-small-l1/model/mean_q12.hex": "f0d818da9560a45c84ad98dbec4cc293799a34f261a5dff48a8396e3549826b6",
+    "build/known-core/portability-c-small-l1/model/cos_quarter.hex": "09a6cd1e68d071df09bc45e0f4c06e358ae72d724a44823401578264da1b2427",
+    "build/known-core/portability-c-small-l1/report.json": "c629e62d308766d6e06f206927c336278b741a5052c58736a6f807b81aab2793",
+    "build/known-core/portability-c-small-l1/results.xml": "fd5c4142f69fa136e7741e6a049f18f347b96457851315c017a32b5f1ec18b0f",
+    "build/known-core/portability-c-small-l1/test.log": "5d5ec2e1222efce03ac49c0cedcb93c4bb69e122caf6691750640a1784663009",
+    "build/known-core/portability-b-small-l4/model/gain_q24.hex": "db5bbc1a83394379fdcd8487eecee892e031b1e6651c36566fce58e21662b77a",
+    "build/known-core/portability-b-small-l4/model/model.json": "2f960c33ba19fd84b671c0dfdcb8d1424cbdd0d464cef8dac5b036b259a0b378",
+    "build/known-core/portability-b-small-l4/model/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "build/known-core/portability-b-small-l4/model/weights.hex": "4c566393e31c1c604cd393e2d0c62e24d2ad9734b76c19742af3daf2d5956e42",
+    "build/known-core/portability-b-small-l4/model/mean_q12.hex": "f0d818da9560a45c84ad98dbec4cc293799a34f261a5dff48a8396e3549826b6",
+    "build/known-core/portability-b-small-l4/model/cos_quarter.hex": "09a6cd1e68d071df09bc45e0f4c06e358ae72d724a44823401578264da1b2427",
+    "build/known-core/portability-b-small-l4/report.json": "d062ac424e4cb36a842e4190a73ebd56e87794a1da0e45fe306805fbdd108910",
+    "build/known-core/portability-b-small-l4/results.xml": "28691431f631a3ab48bb0e8d9e71547851f2e6b053fb7e414bec610a7b13392d",
+    "build/known-core/portability-b-small-l4/test.log": "3b9c94b6da69068e6f0774ec4a78314612f5af8bcc0d041769170c0669b799ba",
+    "build/known-core/portability-c-small-l4/model/gain_q24.hex": "db5bbc1a83394379fdcd8487eecee892e031b1e6651c36566fce58e21662b77a",
+    "build/known-core/portability-c-small-l4/model/model.json": "f2e1c784f8b6d59c9a767045423f1ce7561e1bc09b70eb5d835b005c41ccd9f6",
+    "build/known-core/portability-c-small-l4/model/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "build/known-core/portability-c-small-l4/model/weights.hex": "4c566393e31c1c604cd393e2d0c62e24d2ad9734b76c19742af3daf2d5956e42",
+    "build/known-core/portability-c-small-l4/model/mean_q12.hex": "f0d818da9560a45c84ad98dbec4cc293799a34f261a5dff48a8396e3549826b6",
+    "build/known-core/portability-c-small-l4/model/cos_quarter.hex": "09a6cd1e68d071df09bc45e0f4c06e358ae72d724a44823401578264da1b2427",
+    "build/known-core/portability-c-small-l4/report.json": "81c1f599228fc2a340972ce3c609459579f8e8d0a0e7e519bd34d4fbaa7e2093",
+    "build/known-core/portability-c-small-l4/results.xml": "feb59b8ff61dc121deb5bfe5e1ccc0ccc014066badaa8f35d2cffbd75d6870e5",
+    "build/known-core/portability-c-small-l4/test.log": "e3a60508f0254c8bb855f5180edc52a3b378f5294f1b49dce36baf2548529c16"
+  }
+}

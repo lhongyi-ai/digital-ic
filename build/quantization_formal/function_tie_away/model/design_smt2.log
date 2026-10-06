@@ -33,7 +33,7 @@ Module quant_functions_harness directly or indirectly contains formal properties
 === $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000 ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        32 wires
       571 wire bits
         6 public wires
@@ -57,7 +57,7 @@ Module quant_functions_harness directly or indirectly contains formal properties
 === quant_functions_harness ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        66 wires
       787 wire bits
         9 public wires
@@ -88,12 +88,12 @@ Module quant_functions_harness directly or indirectly contains formal properties
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
       104 quant_functions_harness
        30 $paramod\quant_functions_kernel\HIDDEN_SHIFT=s32'00000000000000000000000000001000
 
         +----------Count including submodules.
-        | 
+        |
        98 wires
      1358 wire bits
        15 public wires

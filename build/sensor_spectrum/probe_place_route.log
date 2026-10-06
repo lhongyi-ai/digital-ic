@@ -1,5 +1,5 @@
-mkdir: /home/researcher/.config/yosyshq: Operation not permitted
-mkdir: /home/researcher/.local/share/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.config/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.local/share/yosyshq: Operation not permitted
 Warning: No PCF file specified; IO pins will be placed automatically
 
 Info: Packing constants..
@@ -91,7 +91,7 @@ Info:   at iteration #15: temp = 0.000000, timing cost = 492, wirelen = 6467
 Info:   at iteration #20: temp = 0.000000, timing cost = 490, wirelen = 6344
 Info:   at iteration #25: temp = 0.000000, timing cost = 490, wirelen = 6314
 Info:   at iteration #30: temp = 0.000000, timing cost = 490, wirelen = 6285
-Info:   at iteration #32: temp = 0.000000, timing cost = 489, wirelen = 6282 
+Info:   at iteration #32: temp = 0.000000, timing cost = 489, wirelen = 6282
 Info: SA placement time 0.51s
 
 Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 21.95 MHz (PASS at 12.00 MHz)
@@ -124,7 +124,7 @@ Info: [ 69171,  71264) |********************+
 Info: [ 71264,  73357) |**************+
 Info: [ 73357,  75450) |********************************+
 Info: [ 75450,  77543) |*****************************************************+
-Info: [ 77543,  79636) |************************************************************ 
+Info: [ 77543,  79636) |************************************************************
 Info: Checksum: 0xb9923a56
 
 Info: Routing..
@@ -572,7 +572,7 @@ Info: [ 34169,  36448) |+
 Info: [ 36448,  38727) |*+
 Info: [ 38727,  41006) |*********+
 Info: [ 41006,  43285) |****+
-Info: [ 43285,  45564) | 
+Info: [ 43285,  45564) |
 Info: [ 45564,  47843) |+
 Info: [ 47843,  50122) |+
 Info: [ 50122,  52401) |+
@@ -587,7 +587,7 @@ Info: [ 68354,  70633) |***************+
 Info: [ 70633,  72912) |*********************+
 Info: [ 72912,  75191) |************************+
 Info: [ 75191,  77470) |***************************************+
-Info: [ 77470,  79749) |************************************************************ 
+Info: [ 77470,  79749) |************************************************************
 1 warning, 0 errors
 
 Info: Program finished normally.

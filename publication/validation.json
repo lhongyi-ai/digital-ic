@@ -1,40 +1,85 @@
 {
-  "counts": {
-    "identical_rtl": 20,
-    "identical_binary_payloads": 1182,
-    "json_numeric_comparisons": 6946
+  "publication_date": "2026-10-06",
+  "historical_september_publication": {
+    "counts": {
+      "identical_rtl": 20,
+      "identical_binary_payloads": 1182,
+      "json_numeric_comparisons": 6946
+    },
+    "python_files_with_text_changes": [
+      "scripts/audit_known_hardware.py",
+      "scripts/trace_known_recording.py",
+      "scripts/collect_evidence.py",
+      "scripts/experiment_known_machine_balanced.py",
+      "scripts/report_architecture.py",
+      "scripts/collect_current_status.py",
+      "scripts/train_pretrained_acoustic.py",
+      "scripts/finalize_known_model.py",
+      "scripts/audit_known_overfitting.py"
+    ],
+    "python_changes_beyond_string_constants": [
+      "scripts/train_pretrained_acoustic.py"
+    ],
+    "json_numerical_changes": [],
+    "focused_tests": {
+      "passed": 31,
+      "failed": 0,
+      "command": "python -m pytest -q tests/test_known_fixed.py tests/test_known_board.py tests/test_current_status.py",
+      "scope": "Synthetic fixed-point arithmetic, Flash contracts, and saved-evidence status behavior; no final dataset evaluation."
+    },
+    "documents": {
+      "translated_technical_documents": 54,
+      "cjk_findings": 0,
+      "personal_home_path_findings": 0,
+      "relative_markdown_links": "All resolved after manifest creation; links to future runtime outputs remain prose/code references."
+    },
+    "html": {
+      "template_language": "en",
+      "embedded_javascript_syntax": "passed",
+      "generated_page_data_preserved": true
+    },
+    "reviewed_python_metadata_adjustment": "EfficientAT upstream commit is read from included provenance when the vendored code lacks nested Git metadata."
   },
-  "python_files_with_text_changes": [
-    "scripts/audit_known_hardware.py",
-    "scripts/trace_known_recording.py",
-    "scripts/collect_evidence.py",
-    "scripts/experiment_known_machine_balanced.py",
-    "scripts/report_architecture.py",
-    "scripts/collect_current_status.py",
-    "scripts/train_pretrained_acoustic.py",
-    "scripts/finalize_known_model.py",
-    "scripts/audit_known_overfitting.py"
-  ],
-  "python_changes_beyond_string_constants": [
-    "scripts/train_pretrained_acoustic.py"
-  ],
-  "json_numerical_changes": [],
-  "focused_tests": {
-    "passed": 31,
-    "failed": 0,
-    "command": "python -m pytest -q tests/test_known_fixed.py tests/test_known_board.py tests/test_current_status.py",
-    "scope": "Synthetic fixed-point arithmetic, Flash contracts, and saved-evidence status behavior; no final dataset evaluation."
+  "current_checks": {
+    "counts": {
+      "byte_identical_rtl": 326,
+      "json_numerical_comparisons": 396,
+      "byte_identical_payloads": 484
+    },
+    "rtl_byte_mismatches": [],
+    "payload_byte_mismatches": [],
+    "python_files_with_text_changes": [
+      "scripts/audit_known_hardware.py",
+      "scripts/run_known_vivado.py",
+      "scripts/trace_known_recording.py",
+      "scripts/collect_evidence.py",
+      "scripts/summarize_portability.py",
+      "scripts/experiment_known_machine_balanced.py",
+      "scripts/report_architecture.py",
+      "scripts/collect_current_status.py",
+      "scripts/finalize_known_model.py",
+      "scripts/audit_known_overfitting.py"
+    ],
+    "python_changes_beyond_string_constants": [
+      "scripts/run_known_vivado.py"
+    ],
+    "reviewed_configuration_change": "Remote SSH destination uses VIVADO_SSH_HOST rather than a personal hard-coded alias; arithmetic and RTL unchanged by translation.",
+    "python_tests": {
+      "passed": 312,
+      "failed": 0,
+      "command": "PYTHONPATH=src python -m pytest -q",
+      "duration_seconds": 5.67,
+      "scope": "All repository Python tests; no final data evaluation, retraining, or hardware access."
+    },
+    "language_and_privacy": {
+      "passed": true,
+      "files_checked": 12029,
+      "text_files_checked": 11185,
+      "archives_checked": 110,
+      "findings": [],
+      "scope": "Publication integrity, text language, path hygiene, known credential patterns, and JSON/Python syntax; not a new engineering or hardware validation."
+    },
+    "staged_diff_whitespace": "passed"
   },
-  "documents": {
-    "translated_technical_documents": 54,
-    "cjk_findings": 0,
-    "personal_home_path_findings": 0,
-    "relative_markdown_links": "All resolved after manifest creation; links to future runtime outputs remain prose/code references."
-  },
-  "html": {
-    "template_language": "en",
-    "embedded_javascript_syntax": "passed",
-    "generated_page_data_preserved": true
-  },
-  "reviewed_python_metadata_adjustment": "EfficientAT upstream commit is read from included provenance when the vendored code lacks nested Git metadata."
+  "laboratory_results": "Completed before translation; original release/physical/final receipts remain historical and are not silently rebound to translated sources."
 }

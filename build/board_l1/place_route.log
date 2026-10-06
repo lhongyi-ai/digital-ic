@@ -1,5 +1,5 @@
-mkdir: /home/researcher/.config/yosyshq: Operation not permitted
-mkdir: /home/researcher/.local/share/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.config/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.local/share/yosyshq: Operation not permitted
 Info: constrained 'clk12' to bel 'X19/Y0/io1'
 Info: constrained 'flash_cs_n' to bel 'X24/Y0/io1'
 Info: constrained 'flash_sclk' to bel 'X24/Y0/io0'
@@ -99,7 +99,7 @@ Info:   at iteration #10: temp = 0.000000, timing cost = 914, wirelen = 16204
 Info:   at iteration #15: temp = 0.000000, timing cost = 895, wirelen = 15683
 Info:   at iteration #20: temp = 0.000000, timing cost = 901, wirelen = 15475
 Info:   at iteration #25: temp = 0.000000, timing cost = 899, wirelen = 15413
-Info:   at iteration #28: temp = 0.000000, timing cost = 896, wirelen = 15399 
+Info:   at iteration #28: temp = 0.000000, timing cost = 896, wirelen = 15399
 Info: SA placement time 1.72s
 
 Info: Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 22.92 MHz (PASS at 12.00 MHz)
@@ -124,7 +124,7 @@ Info: [ 55604,  57592) |*******************+
 Info: [ 57592,  59580) |***************+
 Info: [ 59580,  61568) |****************************+
 Info: [ 61568,  63556) |**************************************************+
-Info: [ 63556,  65544) |************************************************************ 
+Info: [ 63556,  65544) |************************************************************
 Info: [ 65544,  67532) |**********+
 Info: [ 67532,  69520) |*****************+
 Info: [ 69520,  71508) |**********+
@@ -549,11 +549,11 @@ Info: [ 45877,  48110) |*+
 Info: [ 48110,  50343) |*+
 Info: [ 50343,  52576) |****+
 Info: [ 52576,  54809) |********+
-Info: [ 54809,  57042) |********** 
+Info: [ 54809,  57042) |**********
 Info: [ 57042,  59275) |************+
 Info: [ 59275,  61508) |****************************+
-Info: [ 61508,  63741) |******************** 
-Info: [ 63741,  65974) |************************************************************ 
+Info: [ 61508,  63741) |********************
+Info: [ 63741,  65974) |************************************************************
 Info: [ 65974,  68207) |*******+
 Info: [ 68207,  70440) |*****+
 Info: [ 70440,  72673) |************+

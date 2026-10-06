@@ -4166,22 +4166,22 @@ Extracted 6086 AND gates and 21185 wires from module `core_pnr_probe' to a netli
 5.50.15.5. Executing ABC9.
 Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
-ABC: + read_lut <abc-temp-dir>/input.lut 
-ABC: + read_box <abc-temp-dir>/input.box 
-ABC: + &read <abc-temp-dir>/input.xaig 
-ABC: + &ps 
+ABC: + read_lut <abc-temp-dir>/input.lut
+ABC: + read_box <abc-temp-dir>/input.box
+ABC: + &read <abc-temp-dir>/input.xaig
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =   1228/   3046  and =    5260  lev =   20 (0.79)  mem = 0.31 MB  box = 3882  bb = 2973
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 12 carries.
-ABC: + &scorr 
+ABC: + &scorr
 ABC: Warning: The network is combinational.
-ABC: + &sweep 
-ABC: + &dc2 
-ABC: + &dch -f -r 
-ABC: + &ps 
+ABC: + &sweep
+ABC: + &dc2
+ABC: + &dch -f -r
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =   1228/   3046  and =    7223  lev =   29 (0.71)  mem = 0.33 MB  ch = 1033  box = 3828  bb = 2973
 ABC: cst =       0  cls =    909  lit =    1033  unused =   11192  proof =     0
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 5 carries.
-ABC: + &if -W 250 -v 
+ABC: + &if -W 250 -v
 ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
 ABC: Node =    7223.  Ch =   909.  Total mem =    3.57 MB. Peak cut mem =    0.08 MB.
 ABC: P:  Del = 9418.00.  Ar =    1831.0.  Edge =     6433.  Cut =    44981.  T =     0.00 sec
@@ -4191,17 +4191,17 @@ ABC: F:  Del = 9418.00.  Ar =    1401.0.  Edge =     4674.  Cut =    46392.  T =
 ABC: A:  Del = 9418.00.  Ar =    1368.0.  Edge =     4500.  Cut =    47544.  T =     0.01 sec
 ABC: A:  Del = 9418.00.  Ar =    1365.0.  Edge =     4497.  Cut =    47621.  T =     0.01 sec
 ABC: Total time =     0.03 sec
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &mfs 
-ABC: + &ps -l 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &mfs
+ABC: + &ps -l
 ABC: <abc-temp-dir>/input : i/o =   1228/   3046  and =    4673  lev =   26 (0.69)  mem = 0.30 MB  box = 3786  bb = 2973
 ABC: Mapping (K=4)  :  lut =   1289  edge =    4181  lev =   12 (0.51)  levB =   50  mem = 0.10 MB
 ABC: LUT = 1289 : 2=251 19.5 %  3=473 36.7 %  4=565 43.8 %  Ave = 3.24
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 1 carries.
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &verify 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &verify
 ABC: Networks are equivalent.  Time =     0.15 sec
-ABC: + time 
+ABC: + time
 ABC: elapse: 0.94 seconds, total: 0.94 seconds
 
 5.50.15.6. Executing AIGER frontend.
@@ -4579,7 +4579,7 @@ Removed 0 unused modules.
 === core_pnr_probe ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      2471 wires
      6712 wire bits
      2471 public wires
@@ -4602,11 +4602,11 @@ Removed 0 unused modules.
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
        23 core_pnr_probe
 
         +----------Count including submodules.
-        | 
+        |
      2471 wires
      6712 wire bits
      2471 public wires
@@ -4640,7 +4640,7 @@ Found and reported 0 problems.
 === core_pnr_probe ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      2471 wires
      6712 wire bits
      2471 public wires
@@ -4659,8 +4659,8 @@ Found and reported 0 problems.
         1   SB_MAC16
        19   SB_RAM40_4K
 
-mkdir: /home/researcher/.config/yosyshq: Operation not permitted
-mkdir: /home/researcher/.local/share/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.config/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.local/share/yosyshq: Operation not permitted
 Warning: No PCF file specified; IO pins will be placed automatically
 
 Info: Packing constants..
@@ -4754,7 +4754,7 @@ Info:   at iteration #15: temp = 0.000000, timing cost = 1167, wirelen = 11702
 Info:   at iteration #20: temp = 0.000000, timing cost = 1182, wirelen = 11486
 Info:   at iteration #25: temp = 0.000000, timing cost = 1175, wirelen = 11428
 Info:   at iteration #30: temp = 0.000000, timing cost = 1176, wirelen = 11408
-Info:   at iteration #31: temp = 0.000000, timing cost = 1175, wirelen = 11406 
+Info:   at iteration #31: temp = 0.000000, timing cost = 1175, wirelen = 11406
 Info: SA placement time 1.09s
 
 Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 22.39 MHz (PASS at 12.00 MHz)
@@ -4787,7 +4787,7 @@ Info: [ 69265,  71305) |***********+
 Info: [ 71305,  73345) |**********+
 Info: [ 73345,  75385) |***************+
 Info: [ 75385,  77425) |***********+
-Info: [ 77425,  79465) |************************************************************ 
+Info: [ 77425,  79465) |************************************************************
 Info: Checksum: 0x9bdd591d
 
 Info: Routing..
@@ -5251,7 +5251,7 @@ Info: [ 68984,  71098) |***************+
 Info: [ 71098,  73212) |**************+
 Info: [ 73212,  75326) |*************+
 Info: [ 75326,  77440) |****************+
-Info: [ 77440,  79554) |************************************************************ 
+Info: [ 77440,  79554) |************************************************************
 1 warning, 0 errors
 
 Info: Program finished normally.

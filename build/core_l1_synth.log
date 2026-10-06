@@ -3872,22 +3872,22 @@ Extracted 6343 AND gates and 22505 wires from module `vibration_core' to a netli
 4.50.15.5. Executing ABC9.
 Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
-ABC: + read_lut <abc-temp-dir>/input.lut 
-ABC: + read_box <abc-temp-dir>/input.box 
-ABC: + &read <abc-temp-dir>/input.xaig 
-ABC: + &ps 
+ABC: + read_lut <abc-temp-dir>/input.lut
+ABC: + read_box <abc-temp-dir>/input.box
+ABC: + &read <abc-temp-dir>/input.xaig
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =   1324/   3732  and =    5364  lev =   19 (0.75)  mem = 0.37 MB  box = 4451  bb = 3272
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 12 carries.
-ABC: + &scorr 
+ABC: + &scorr
 ABC: Warning: The network is combinational.
-ABC: + &sweep 
-ABC: + &dc2 
-ABC: + &dch -f -r 
-ABC: + &ps 
+ABC: + &sweep
+ABC: + &dc2
+ABC: + &dch -f -r
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =   1324/   3732  and =    6154  lev =   35 (0.65)  mem = 0.37 MB  ch =  908  box = 4371  bb = 3272
 ABC: cst =       0  cls =    824  lit =     908  unused =   11216  proof =     0
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 5 carries.
-ABC: + &if -W 250 -v 
+ABC: + &if -W 250 -v
 ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
 ABC: Node =    6154.  Ch =   824.  Total mem =    3.88 MB. Peak cut mem =    0.08 MB.
 ABC: P:  Del = 13751.00.  Ar =    1873.0.  Edge =     6561.  Cut =    34088.  T =     0.00 sec
@@ -3897,17 +3897,17 @@ ABC: F:  Del = 13751.00.  Ar =    1383.0.  Edge =     4640.  Cut =    34103.  T 
 ABC: A:  Del = 13751.00.  Ar =    1364.0.  Edge =     4499.  Cut =    34776.  T =     0.01 sec
 ABC: A:  Del = 13751.00.  Ar =    1363.0.  Edge =     4498.  Cut =    34741.  T =     0.01 sec
 ABC: Total time =     0.03 sec
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &mfs 
-ABC: + &ps -l 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &mfs
+ABC: + &ps -l
 ABC: <abc-temp-dir>/input : i/o =   1324/   3732  and =    3707  lev =   18 (0.63)  mem = 0.33 MB  box = 4329  bb = 3272
 ABC: Mapping (K=4)  :  lut =   1293  edge =    4205  lev =   11 (0.41)  levB =   75  mem = 0.11 MB
 ABC: LUT = 1293 : 2=219 16.9 %  3=529 40.9 %  4=545 42.2 %  Ave = 3.25
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 1 carries.
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &verify 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &verify
 ABC: Networks are equivalent.  Time =     0.16 sec
-ABC: + time 
+ABC: + time
 ABC: elapse: 0.84 seconds, total: 0.84 seconds
 
 4.50.15.6. Executing AIGER frontend.
@@ -4271,7 +4271,7 @@ Removed 0 unused modules.
 === vibration_core ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      2766 wires
      7089 wire bits
      2766 public wires
@@ -4294,11 +4294,11 @@ Removed 0 unused modules.
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
        24 vibration_core
 
         +----------Count including submodules.
-        | 
+        |
      2766 wires
      7089 wire bits
      2766 public wires
@@ -4332,7 +4332,7 @@ Found and reported 0 problems.
 === vibration_core ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      2766 wires
      7089 wire bits
      2766 public wires

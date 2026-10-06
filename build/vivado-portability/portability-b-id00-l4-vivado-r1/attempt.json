@@ -1,0 +1,46 @@
+{
+  "stage": "impl",
+  "machine": "00",
+  "params": {
+    "N": 1024,
+    "WINDOWS": 156,
+    "LANES": 4,
+    "QUANT_PIPELINE": 0,
+    "MODEL_DIR": "model",
+    "BIAS": 441,
+    "THRESHOLD": -1029,
+    "LOG_CONSTANT": 128145,
+    "LOG_FLOOR": -163279
+  },
+  "records": [],
+  "bindings": {
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/platform/spram16k.sv": "1d3268aa179ba25f599bdc6bb958ecd157714dd7c35a4fb7ad04857bbffc5b1e",
+    "rtl/core/known_capture.sv": "4fef3ba24b5ec1c0ad21ffeba551c0c1f903b17ff9e5231f5dad35c804540206",
+    "rtl/core/known_spectral_core.sv": "e4e2941be21b10780a4ac18b1fa655d2e6c84ad8afded32ea72407121af47b89",
+    "sim/known_vivado_tb.sv": "3f6a2de8bbe810d858423480617c9f8d4d034319ca664fd804b5c6ce3e5759fc",
+    "vivado/implement.tcl": "56465f632cb3992879a417813b60a8b0d79d204db7f23d408adcd2705b29db1e",
+    "vivado/core.xdc": "f86ad8f719a66cfdd6250b5b1669dc554e8d2978cc05606d10cb18842a8c2fad",
+    "scripts/run_known_vivado.py": "8cf1f54df88b1f66e7258f0ad587db1d0f286d5f6df6bc985711e69e0554b786",
+    "scripts/known_vivado_support.py": "74f90fd946d97fcf4c58b7e519bfa2aae8817fb062ed1813e4dd73d2f359dee7",
+    "src/vibfpga/known_fixed.py": "ca842868a4b79f1687f8e88bf5daa82f415681aca592aec7c053d62b0cc4beb4"
+  },
+  "package_bindings": {
+    "config.tcl": "e8a95860da97e0a4cddb8558141e7be19902211fc41d8e4b4d21fa484c9d9e43",
+    "core.xdc": "f86ad8f719a66cfdd6250b5b1669dc554e8d2978cc05606d10cb18842a8c2fad",
+    "implement.tcl": "56465f632cb3992879a417813b60a8b0d79d204db7f23d408adcd2705b29db1e",
+    "job.sh": "64867bae050fdeab8af17ffe10ce0b12c5a9ed14be21bb4763b1398733cb9d5a",
+    "known_vivado_tb.sv": "3f6a2de8bbe810d858423480617c9f8d4d034319ca664fd804b5c6ce3e5759fc",
+    "model/cos_quarter.hex": "0de47092858c84fcd5384d0e10092250c533958ca93a59b2c6f2f039365294d9",
+    "model/gain_q24.hex": "273476a7ecdb6ca94c04dafb4c87cefcd6cd1849530f66ffb11c10be40d1678e",
+    "model/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "model/mean_q12.hex": "a6a8099eb0dc6ea43fef1e8c90c228be8a75595bae751ad66f28c594f555808f",
+    "model/weights.hex": "a36cc3167d147a4c890e99dd57c6831c361185c8ad9e9644af0fa9ec69efe3f2",
+    "rtl/core/known_capture.sv": "4fef3ba24b5ec1c0ad21ffeba551c0c1f903b17ff9e5231f5dad35c804540206",
+    "rtl/core/known_spectral_core.sv": "e4e2941be21b10780a4ac18b1fa655d2e6c84ad8afded32ea72407121af47b89",
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/platform/spram16k.sv": "1d3268aa179ba25f599bdc6bb958ecd157714dd7c35a4fb7ad04857bbffc5b1e"
+  },
+  "remote_dir": "digital_ic_vivado/portability-b-id00-l4-vivado-r1",
+  "preparation": "prepared"
+}

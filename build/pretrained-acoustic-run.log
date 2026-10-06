@@ -388,7 +388,7 @@ Note: you can still call torch.view_as_real on the complex output to recover the
 ./external/EfficientAT/models/preprocess.py:56: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch.cuda.amp.autocast(enabled=False):
 
-Warning: FMAX is None setting to 15000 
+Warning: FMAX is None setting to 15000
 embedded 120
 embedded 240
 embedded 360

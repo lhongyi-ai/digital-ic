@@ -1,0 +1,25 @@
+{
+  "schema": "portability-acceptance-v1",
+  "passed": true,
+  "candidate": "C",
+  "pre_programming_release_sha256": "73b842a0bea9d18721fd62aef2bd3b4ed588279b6ad2e8b8988a539f22feee7d",
+  "physical_audit_sha256": "ae982e8834b7c3e8c490710560156683765a896a6ee9d32453ebdf2b8df3008a",
+  "physical_runs": 11,
+  "windows_by_lanes": {
+    "1": 468,
+    "4": 1248
+  },
+  "amd_board_tested": false,
+  "hfosc_increased": false,
+  "sha256": {
+    "artifacts/vivado-portability-v1/release.json": "73b842a0bea9d18721fd62aef2bd3b4ed588279b6ad2e8b8988a539f22feee7d",
+    "artifacts/vivado-portability-v1/hardware-audit.json": "ae982e8834b7c3e8c490710560156683765a896a6ee9d32453ebdf2b8df3008a",
+    "artifacts/vivado-portability-v1/baseline-compatibility.json": "0e22a13d41caf031bff8aab4b18c3a6226627e9bb7359cdfd52c001f07c4b433",
+    "artifacts/vivado-portability-v1/comparison.json": "5b19cb57900ebb9609d69a7be69385310ba654001f1cce6743ccf27c09843778",
+    "artifacts/vivado-portability-v1/report.md": "89e8a4e55b2b71086a5a679680e0a33ddcb69e185a640f4d7d9b70f41b620601",
+    "artifacts/vivado-portability-v1/physical-report.md": "ac042987617cf35f2bad7199e9f729664baf68fc2757b776f972403ad2f7006e",
+    "scripts/finalize_portability.py": "48718d8ea5d2266944b9ee2bed1300845bae4e25bbce0a6b19a6986967a17435",
+    "scripts/summarize_portability.py": "cdb60c0c11132d30165fd0ac27dc2099ead32f21c5f3889732eadc9d48a2880c",
+    "scripts/run_portability_hardware.py": "643af28a5449a469032cadc8aeb6896f2fdde0be2ba581ba63a208b75b38330c"
+  }
+}

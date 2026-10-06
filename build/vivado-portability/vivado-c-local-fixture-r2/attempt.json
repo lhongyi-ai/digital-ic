@@ -1,0 +1,82 @@
+{
+  "stage": "sim",
+  "machine": "00",
+  "params": {
+    "N": 16,
+    "WINDOWS": 2,
+    "LANES": 4,
+    "QUANT_PIPELINE": 1,
+    "MODEL_DIR": "model",
+    "BIAS": 441,
+    "THRESHOLD": -1029,
+    "LOG_CONSTANT": 53248,
+    "LOG_FLOOR": -163279
+  },
+  "records": [
+    {
+      "name": "fan/id_00/normal/00000304.wav",
+      "offset": 1300214316,
+      "compressed": 1782348,
+      "size": 2560080,
+      "crc": 3279980453,
+      "method": 8,
+      "machine": "00",
+      "label": 0,
+      "role": "cv",
+      "fold": 0,
+      "local": "data/mimii/pcm/normal_00000304.npy",
+      "npy_sha256": "991aa41b728cb988a43b82ed8f0e3ead69b7b8fc3034b552ea8e6b9e6ba3757e"
+    },
+    {
+      "name": "fan/id_00/abnormal/00000094.wav",
+      "offset": 173715715,
+      "compressed": 1818553,
+      "size": 2560080,
+      "crc": 1156463613,
+      "method": 8,
+      "machine": "00",
+      "label": 1,
+      "role": "cv",
+      "fold": 0,
+      "local": "data/mimii-supervised/pcm/abnormal_00000094.npy",
+      "npy_sha256": "ac094cf769c1d333e6568af3fe3b4b92b4a402043727d51a701ac941c5d92136"
+    }
+  ],
+  "bindings": {
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/platform/spram16k.sv": "1d3268aa179ba25f599bdc6bb958ecd157714dd7c35a4fb7ad04857bbffc5b1e",
+    "rtl/core/known_capture.sv": "4fef3ba24b5ec1c0ad21ffeba551c0c1f903b17ff9e5231f5dad35c804540206",
+    "rtl/core/known_spectral_core.sv": "e4e2941be21b10780a4ac18b1fa655d2e6c84ad8afded32ea72407121af47b89",
+    "sim/known_vivado_tb.sv": "3f6a2de8bbe810d858423480617c9f8d4d034319ca664fd804b5c6ce3e5759fc",
+    "vivado/implement.tcl": "56465f632cb3992879a417813b60a8b0d79d204db7f23d408adcd2705b29db1e",
+    "vivado/core.xdc": "f86ad8f719a66cfdd6250b5b1669dc554e8d2978cc05606d10cb18842a8c2fad",
+    "scripts/run_known_vivado.py": "8cf1f54df88b1f66e7258f0ad587db1d0f286d5f6df6bc985711e69e0554b786",
+    "scripts/known_vivado_support.py": "74f90fd946d97fcf4c58b7e519bfa2aae8817fb062ed1813e4dd73d2f359dee7",
+    "src/vibfpga/known_fixed.py": "ca842868a4b79f1687f8e88bf5daa82f415681aca592aec7c053d62b0cc4beb4",
+    "data/mimii/pcm/normal_00000304.npy": "991aa41b728cb988a43b82ed8f0e3ead69b7b8fc3034b552ea8e6b9e6ba3757e",
+    "data/mimii-supervised/pcm/abnormal_00000094.npy": "ac094cf769c1d333e6568af3fe3b4b92b4a402043727d51a701ac941c5d92136"
+  },
+  "package_bindings": {
+    "config.svh": "3c0ba0df0f0f1a242dc747e95ed453ea834a6e3716b9bbfa82d92d0b23389267",
+    "config.tcl": "b35973ca8a2b54a543cba23d5f0b7b63ef995def54df5926538c997517b8b949",
+    "core.xdc": "f86ad8f719a66cfdd6250b5b1669dc554e8d2978cc05606d10cb18842a8c2fad",
+    "expected.hex": "514e97e1516622b9712ebebb222d50c75959ba234e54193bde260a3f36d52bf4",
+    "implement.tcl": "56465f632cb3992879a417813b60a8b0d79d204db7f23d408adcd2705b29db1e",
+    "job.sh": "7dea3128f952b7e2abbc553d0733763be4de3b2f19c7c4c3a9231c58cc368c15",
+    "known_vivado_tb.sv": "3f6a2de8bbe810d858423480617c9f8d4d034319ca664fd804b5c6ce3e5759fc",
+    "model/cos_quarter.hex": "09a6cd1e68d071df09bc45e0f4c06e358ae72d724a44823401578264da1b2427",
+    "model/gain_q24.hex": "db5bbc1a83394379fdcd8487eecee892e031b1e6651c36566fce58e21662b77a",
+    "model/log_lut.hex": "8da2991680d74b27f56874eb357aef8a23707644a098dea1419cbdb3a70bdc56",
+    "model/mean_q12.hex": "f0d818da9560a45c84ad98dbec4cc293799a34f261a5dff48a8396e3549826b6",
+    "model/weights.hex": "4c566393e31c1c604cd393e2d0c62e24d2ad9734b76c19742af3daf2d5956e42",
+    "raw.hex": "db1b7b3f0e8d2c5f76b3fe6ce68623db72789268d7924c89bcec0116d1ed3e7d",
+    "rtl/core/known_capture.sv": "4fef3ba24b5ec1c0ad21ffeba551c0c1f903b17ff9e5231f5dad35c804540206",
+    "rtl/core/known_spectral_core.sv": "e4e2941be21b10780a4ac18b1fa655d2e6c84ad8afded32ea72407121af47b89",
+    "rtl/core/vib_coeff_rom.sv": "cc6f846864facbb0fd9a619175a3366d28d5febaaa8214afe95cd5758ad70b50",
+    "rtl/platform/spram16k.sv": "1d3268aa179ba25f599bdc6bb958ecd157714dd7c35a4fb7ad04857bbffc5b1e",
+    "scores.hex": "8953145b87744bda868d2a900cc298c2c553a6cb6ef84f2fb47973a97dee638a",
+    "sim.tcl": "6218ffa4f2392f3c61113605d4ab2cd023186e11f1da826b920e510a9a797efb"
+  },
+  "remote_dir": "digital_ic_vivado/vivado-c-local-fixture-r2",
+  "preparation": "prepared"
+}

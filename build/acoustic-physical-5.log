@@ -14,38 +14,38 @@ flash ID: 0xEF 0x40 0x16 0x00
 cdone: high
 Bye.
 Starting configuration...
-                      
+
 addr 0x019600  99%
-                      
+
 VERIFY OK
 cdone: high
 Bye.
 Starting input...
-                      
+
 addr 0x043F00  98%
-                      
+
 VERIFY OK
 cdone: high
 Bye.
 Starting clear_log_and_start...
-                      
+
 addr 0x31FF00  99%
-                      
+
 VERIFY OK
 cdone: high
 Bye.
 Replay running: waiting 7 seconds before verified log readback.
 Starting read_log_1...
-                      
+
 addr 0x31FF00  99%
-                      
+
 done.
 cdone: high
 Bye.
 Starting read_log_2...
-                      
+
 addr 0x31FF00  99%
-                      
+
 done.
 cdone: high
 Bye.

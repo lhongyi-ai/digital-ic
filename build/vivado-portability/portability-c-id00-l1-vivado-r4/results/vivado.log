@@ -1,0 +1,468 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Oct  6 05:26:44 2026
+# Process ID         : 921874
+# Current directory  : LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4
+# Command line       : vivado -mode batch -source implement.tcl -log vivado.log -journal vivado.jou
+# Log file           : LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/vivado.log
+# Journal file       : LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/vivado.jou
+# Running On         : LAB_HOST.engr.wustl.edu
+# Platform           : Rocky
+# Operating System   : Rocky Linux release 8.10 (Green Obsidian)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+# CPU Frequency      : 2806.826 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 134527 MB
+# Swap memory        : 7999 MB
+# Total Virtual      : 142526 MB
+# Available Virtual  : 119818 MB
+#-----------------------------------------------------------
+source implement.tcl
+# set_param general.maxThreads 2
+# source config.tcl
+## set stage synth
+## set sources {rtl/core/vib_coeff_rom.sv rtl/platform/spram16k.sv rtl/core/known_capture.sv rtl/core/known_spectral_core.sv}
+## set generics {N=1024 WINDOWS=156 LANES=1 QUANT_PIPELINE=1 MODEL_DIR=model BIAS=441 THRESHOLD=-1029 LOG_CONSTANT=128145 LOG_FLOOR=-163279}
+# set_property verilog_define AMD_FPGA [current_fileset]
+# foreach path $sources {read_verilog -sv $path}
+# synth_design -top known_spectral_core -part xc7a35tcpg236-1 -mode out_of_context -generic $generics
+Command: synth_design -top known_spectral_core -part xc7a35tcpg236-1 -mode out_of_context -generic {N=1024 WINDOWS=156 LANES=1 QUANT_PIPELINE=1 MODEL_DIR=model BIAS=441 THRESHOLD=-1029 LOG_CONSTANT=128145 LOG_FLOOR=-163279}
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 922024
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1772.352 ; gain = 379.855 ; free physical = 30757 ; free virtual = 112334
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'known_spectral_core' [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/known_spectral_core.sv:3]
+	Parameter N bound to: 1024 - type: integer
+	Parameter LANES bound to: 1 - type: integer
+	Parameter WINDOWS bound to: 156 - type: integer
+	Parameter QUANT_PIPELINE bound to: 1 - type: integer
+	Parameter MODEL_DIR bound to: model - type: string
+	Parameter BIAS bound to: 32'sb00000000000000000000000110111001
+	Parameter THRESHOLD bound to: 32'sb11111111111111111111101111111011
+	Parameter LOG_CONSTANT bound to: 32'sb00000000000000011111010010010001
+	Parameter LOG_FLOOR bound to: 32'sb11111111111111011000001000110001
+INFO: [Synth 8-3876] $readmem data file 'model/mean_q12.hex' is read successfully [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/known_spectral_core.sv:50]
+INFO: [Synth 8-3876] $readmem data file 'model/gain_q24.hex' is read successfully [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/known_spectral_core.sv:51]
+INFO: [Synth 8-3876] $readmem data file 'model/weights.hex' is read successfully [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/known_spectral_core.sv:52]
+INFO: [Synth 8-3876] $readmem data file 'model/log_lut.hex' is read successfully [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/known_spectral_core.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'vib_coeff_rom' [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/vib_coeff_rom.sv:3]
+	Parameter N bound to: 1024 - type: integer
+	Parameter MODEL_DIR bound to: model - type: string
+INFO: [Synth 8-3876] $readmem data file 'model/cos_quarter.hex' is read successfully [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/vib_coeff_rom.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'vib_coeff_rom' (0#1) [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/vib_coeff_rom.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'known_capture' [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/known_capture.sv:2]
+	Parameter N bound to: 1024 - type: integer
+INFO: [Synth 8-6155] done synthesizing module 'known_capture' (0#1) [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/known_capture.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'spram16k' [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/platform/spram16k.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'spram16k' (0#1) [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/platform/spram16k.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'known_spectral_core' (0#1) [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/known_spectral_core.sv:3]
+WARNING: [Synth 8-6014] Unused sequential element log_value_reg was removed.  [LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/rtl/core/known_spectral_core.sv:262]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1862.320 ; gain = 469.824 ; free physical = 30630 ; free virtual = 112210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1874.195 ; gain = 481.699 ; free physical = 30480 ; free virtual = 112060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1882.199 ; gain = 489.703 ; free physical = 30477 ; free virtual = 112059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1907.121 ; gain = 514.625 ; free physical = 30363 ; free virtual = 111946
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics
+---------------------------------------------------------------------------------
+Detailed RTL Component Info :
++---Adders :
+	   2 Input   65 Bit       Adders := 1
+	   2 Input   64 Bit       Adders := 4
+	   2 Input   40 Bit       Adders := 1
+	   2 Input   32 Bit       Adders := 5
+	   3 Input   32 Bit       Adders := 2
+	   2 Input   30 Bit       Adders := 1
+	   2 Input   29 Bit       Adders := 1
+	   2 Input   24 Bit       Adders := 1
+	   2 Input   20 Bit       Adders := 1
+	   2 Input   18 Bit       Adders := 1
+	   3 Input   17 Bit       Adders := 1
+	   2 Input   17 Bit       Adders := 1
+	   2 Input   16 Bit       Adders := 4
+	   2 Input   12 Bit       Adders := 1
+	   2 Input   11 Bit       Adders := 4
+	   2 Input   10 Bit       Adders := 2
+	   3 Input   10 Bit       Adders := 1
+	   2 Input    8 Bit       Adders := 4
+	   2 Input    2 Bit       Adders := 2
+	   2 Input    1 Bit       Adders := 1
++---Registers :
+	               64 Bit    Registers := 5
+	               48 Bit    Registers := 1
+	               32 Bit    Registers := 20
+	               30 Bit    Registers := 1
+	               29 Bit    Registers := 1
+	               24 Bit    Registers := 1
+	               20 Bit    Registers := 1
+	               18 Bit    Registers := 1
+	               16 Bit    Registers := 7
+	               12 Bit    Registers := 1
+	               11 Bit    Registers := 3
+	               10 Bit    Registers := 1
+	                9 Bit    Registers := 4
+	                8 Bit    Registers := 6
+	                5 Bit    Registers := 1
+	                4 Bit    Registers := 1
+	                2 Bit    Registers := 5
+	                1 Bit    Registers := 14
++---RAMs :
+	             256K Bit	(16384 X 16 bit)          RAMs := 1
+	              16K Bit	(1024 X 16 bit)          RAMs := 3
++---ROMs :
+	                    ROMs := 5
++---Muxes :
+	   2 Input   64 Bit        Muxes := 5
+	  26 Input   64 Bit        Muxes := 1
+	  26 Input   48 Bit        Muxes := 1
+	   2 Input   32 Bit        Muxes := 9
+	  26 Input   32 Bit        Muxes := 1
+	   2 Input   30 Bit        Muxes := 2
+	   2 Input   29 Bit        Muxes := 2
+	   2 Input   24 Bit        Muxes := 2
+	   2 Input   20 Bit        Muxes := 2
+	   2 Input   18 Bit        Muxes := 2
+	   2 Input   16 Bit        Muxes := 7
+	  26 Input   11 Bit        Muxes := 3
+	  26 Input   10 Bit        Muxes := 1
+	   2 Input    8 Bit        Muxes := 2
+	  26 Input    8 Bit        Muxes := 3
+	   2 Input    7 Bit        Muxes := 2
+	   2 Input    6 Bit        Muxes := 1
+	   2 Input    5 Bit        Muxes := 4
+	   3 Input    5 Bit        Muxes := 1
+	   2 Input    4 Bit        Muxes := 1
+	   2 Input    2 Bit        Muxes := 11
+	  26 Input    2 Bit        Muxes := 2
+	   2 Input    1 Bit        Muxes := 29
+	  26 Input    1 Bit        Muxes := 28
+	   5 Input    1 Bit        Muxes := 1
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP p_0_out, operation Mode is: C+(A*B)'.
+DSP Report: register lanes[0].product_reg[0] is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP lanes[0].product_reg[0], operation Mode is: (A*B)'.
+DSP Report: register lanes[0].product_reg[0] is absorbed into DSP lanes[0].product_reg[0].
+DSP Report: operator p_0_out is absorbed into DSP lanes[0].product_reg[0].
+DSP Report: Generating DSP unsigned_product, operation Mode is: PCIN+A:B+C.
+DSP Report: operator unsigned_product is absorbed into DSP unsigned_product.
+DSP Report: Generating DSP score0, operation Mode is: C+(A*B)'.
+DSP Report: register lanes[0].product_reg[0] is absorbed into DSP score0.
+DSP Report: operator p_0_out is absorbed into DSP score0.
+DSP Report: operator score0 is absorbed into DSP score0.
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[31] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[30] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[29] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[28] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[27] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[26] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[25] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[24] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[23] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[22] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[21] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_pre[20] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_dft[31] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_dft[30] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_dft[29] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_power[31] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_power[30] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_power[29] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_power[28] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_power[27] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_power[26] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_power[25] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_power[24] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[31] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[30] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[29] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[28] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[27] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[26] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[25] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[24] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[23] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[22] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[21] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[20] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[19] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_nn[18] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_total[31] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port cycles_total[30] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port dbg_kind[3] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port dbg_index[15] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port dbg_index[14] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port dbg_index[13] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port dbg_index[12] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port dbg_index[11] driven by constant 0
+WARNING: [Synth 8-3917] design known_spectral_core has port dbg_index[10] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2085.207 ; gain = 692.711 ; free physical = 29782 ; free virtual = 111364
+---------------------------------------------------------------------------------
+ Sort Area is  lanes[0].product_reg[0]_2 : 0 0 : 1969 2221 : Used 1 time 0
+ Sort Area is  lanes[0].product_reg[0]_2 : 0 1 : 252 2221 : Used 1 time 0
+ Sort Area is  p_0_out_0 : 0 0 : 2129 2129 : Used 1 time 0
+ Sort Area is  score0_5 : 0 0 : 2064 2064 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 |
++--------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|capture             | raw0_reg             | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |
+|capture             | raw1_reg             | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |
+|known_spectral_core | power_ram/memory_reg | 2 K x 16(NO_CHANGE)    | W | R |                        |   |   | Port A           | 0      | 1      |
+|known_spectral_core | windowed_reg         | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |
++--------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG |
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|known_spectral_core | C+(A*B)'    | 16     | 16     | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 1    | 0    |
+|known_spectral_core | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    |
+|known_spectral_core | PCIN+A:B+C  | 14     | 18     | 32     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    |
+|known_spectral_core | C+(A*B)'    | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    |
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2085.207 ; gain = 692.711 ; free physical = 29787 ; free virtual = 111370
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 |
++--------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|capture             | raw0_reg             | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |
+|capture             | raw1_reg             | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |
+|known_spectral_core | power_ram/memory_reg | 2 K x 16(NO_CHANGE)    | W | R |                        |   |   | Port A           | 0      | 1      |
+|known_spectral_core | windowed_reg         | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |
++--------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance lanes[0].rom/magnitude_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance capture/raw0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance capture/raw1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance power_ram/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance windowed_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2085.207 ; gain = 692.711 ; free physical = 29788 ; free virtual = 111370
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2162.020 ; gain = 769.523 ; free physical = 29765 ; free virtual = 111348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2162.020 ; gain = 769.523 ; free physical = 29765 ; free virtual = 111348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2162.020 ; gain = 769.523 ; free physical = 29765 ; free virtual = 111347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2162.020 ; gain = 769.523 ; free physical = 29765 ; free virtual = 111347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2164.988 ; gain = 772.492 ; free physical = 29757 ; free virtual = 111339
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2164.988 ; gain = 772.492 ; free physical = 29757 ; free virtual = 111339
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG |
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|known_spectral_core | C'+(A*B)'   | 30     | 18     | 48     | -      | 48     | 0    | 0    | 1    | -    | -     | 1    | 0    |
+|known_spectral_core | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    |
+|known_spectral_core | PCIN+A:B+C  | 14     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    |
+|known_spectral_core | C+(A*B)'    | 30     | 18     | 48     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    |
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes:
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage:
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   243|
+|2     |DSP48E1  |     4|
+|3     |LUT1     |   176|
+|4     |LUT2     |   551|
+|5     |LUT3     |   191|
+|6     |LUT4     |   215|
+|7     |LUT5     |   282|
+|8     |LUT6     |   385|
+|9     |MUXF7    |     3|
+|10    |RAMB18E1 |     8|
+|11    |RAMB36E1 |     1|
+|12    |FDRE     |  1143|
+|13    |FDSE     |     6|
++------+---------+------+
+
+Report Instance Areas:
++------+-----------------+--------------+------+
+|      |Instance         |Module        |Cells |
++------+-----------------+--------------+------+
+|1     |top              |              |  3208|
+|2     |  capture        |known_capture |   937|
+|3     |  \lanes[0].rom  |vib_coeff_rom |   127|
+|4     |  power_ram      |spram16k      |   263|
++------+-----------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2164.988 ; gain = 772.492 ; free physical = 29757 ; free virtual = 111339
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2164.988 ; gain = 772.492 ; free physical = 29755 ; free virtual = 111338
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2164.996 ; gain = 772.492 ; free physical = 29755 ; free virtual = 111338
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2184.949 ; gain = 0.000 ; free physical = 29910 ; free virtual = 111493
+INFO: [Netlist 29-17] Analyzing 259 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2276.609 ; gain = 0.000 ; free physical = 29752 ; free virtual = 111335
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 995b12bb
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2276.609 ; gain = 884.121 ; free physical = 29752 ; free virtual = 111335
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1460.792; main = 1449.037; forked = 235.576
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3033.504; main = 2276.613; forked = 948.293
+# report_utilization -file utilization.rpt
+# write_checkpoint -force synthesized.dcp
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2558.578 ; gain = 0.000 ; free physical = 29326 ; free virtual = 110909
+INFO: [Common 17-1381] The checkpoint 'LAB_HOME/LAB_USER/digital_ic_vivado/portability-c-id00-l1-vivado-r4/synthesized.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2558.578 ; gain = 281.969 ; free physical = 29305 ; free virtual = 110888
+# if {$stage eq "impl"} {
+#     read_xdc core.xdc
+#     opt_design
+#     place_design
+#     route_design
+#     report_timing_summary -delay_type min_max -report_unconstrained -file timing_summary.rpt
+#     report_timing -from [all_registers -clock clk] -to [all_registers -clock clk] -max_paths 20 -path_type full_clock_expanded -file critical_paths.rpt
+#     report_timing -delay_type min -max_paths 20 -file hold_paths.rpt
+#     check_timing -verbose -file check_timing.rpt
+#     report_drc -file drc.rpt
+#     report_utilization -file utilization.rpt
+#     write_checkpoint -force routed.dcp
+#     set internal [get_timing_paths -from [all_registers -clock clk] -to [all_registers -clock clk] -max_paths 1]
+#     set setup [get_timing_paths -delay_type max -max_paths 100000]
+#     set hold [get_timing_paths -delay_type min -max_paths 100000]
+#     if {[llength $internal]==0 || [llength $setup]==0 || [llength $hold]==0} {error "Missing timed paths"}
+#     set tns 0.0; foreach p $setup {set s [get_property SLACK $p]; if {$s<0} {set tns [expr {$tns+$s}]}}
+#     set htns 0.0; foreach p $hold {set s [get_property SLACK $p]; if {$s<0} {set htns [expr {$htns+$s}]}}
+#     set unconstrained 0
+#     set cf [open check_timing.rpt r]; set constraint_report [read $cf]; close $cf
+#     foreach name {no_clock unconstrained_internal_endpoints no_input_delay no_output_delay} {
+#         if {![regexp [format {checking %s \(([0-9]+)\)} $name] $constraint_report unused count]} {error "Missing constraint check $name"}
+#         incr unconstrained $count
+#     }
+#     set blackboxes [llength [get_cells -hier -filter {IS_BLACKBOX == 1}]]
+#     set brams [llength [get_cells -hier -filter {REF_NAME =~ RAMB*}]]
+#     set fd [open metrics.json w]
+#     puts $fd [format {{"internal_delay_ns":%s,"wns_ns":%s,"tns_ns":%s,"hold_wns_ns":%s,"hold_tns_ns":%s,"path_start":"%s","path_end":"%s","unconstrained_paths":%d,"blackboxes":%d,"bram_count":%d}} [get_property DATAPATH_DELAY $internal] [get_property SLACK [lindex $setup 0]] $tns [get_property SLACK [lindex $hold 0]] $htns [get_property STARTPOINT_PIN $internal] [get_property ENDPOINT_PIN $internal] $unconstrained $blackboxes $brams]
+#     close $fd
+# }
+# puts VIVADO_PORTABILITY_COMPLETE
+VIVADO_PORTABILITY_COMPLETE
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 05:27:43 2026...

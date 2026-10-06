@@ -1,0 +1,18 @@
+{
+  "command": [
+    "LOCAL_PRIVATE_PATH 2026/digital ic/.venv/bin/python",
+    "LOCAL_PRIVATE_PATH 2026/digital ic/scripts/build_known_board.py",
+    "--machine",
+    "00",
+    "--lanes",
+    "1",
+    "--abc-dff",
+    "--seed",
+    "1",
+    "--quant-pipeline",
+    "1",
+    "--run-id",
+    "portability-c-id00-l1-s1-r2"
+  ],
+  "returncode": 0
+}

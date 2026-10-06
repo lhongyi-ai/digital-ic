@@ -1,0 +1,18 @@
+{
+  "artifacts/vivado-portability-v1/comparison.json": {
+    "archive": "artifacts/vivado-portability-v1/acceptance-r1-files/comparison.json",
+    "sha256": "5b19cb57900ebb9609d69a7be69385310ba654001f1cce6743ccf27c09843778"
+  },
+  "artifacts/vivado-portability-v1/report.md": {
+    "archive": "artifacts/vivado-portability-v1/acceptance-r1-files/report.md",
+    "sha256": "89e8a4e55b2b71086a5a679680e0a33ddcb69e185a640f4d7d9b70f41b620601"
+  },
+  "scripts/finalize_portability.py": {
+    "archive": "artifacts/vivado-portability-v1/acceptance-r1-files/finalize_portability.py",
+    "sha256": "48718d8ea5d2266944b9ee2bed1300845bae4e25bbce0a6b19a6986967a17435"
+  },
+  "scripts/summarize_portability.py": {
+    "archive": "artifacts/vivado-portability-v1/acceptance-r1-files/summarize_portability.py",
+    "sha256": "cdb60c0c11132d30165fd0ac27dc2099ead32f21c5f3889732eadc9d48a2880c"
+  }
+}

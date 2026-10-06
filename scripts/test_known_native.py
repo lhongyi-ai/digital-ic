@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--machine',default='00');p.add_argument('--clips',type=int,default=7)
-    p.add_argument('--lanes',type=int,choices=(1,4),default=4);p.add_argument('--period',type=int,default=0);p.add_argument('--run-id',required=True);a=p.parse_args()
+    p.add_argument('--lanes',type=int,choices=(1,4),default=4);p.add_argument('--period',type=int,default=0);p.add_argument('--quant-pipeline',type=int,choices=(0,1),default=0);p.add_argument('--run-id',required=True);a=p.parse_args()
     model=ROOT/f'artifacts/acoustic-known-release-v1/id{a.machine}';m=json.loads((model/'model.json').read_text())
     freeze=json.loads((model.parent/'model-freeze.json').read_text());assert all(sha(ROOT/p)==h for p,h in freeze['sha256'].items())
     out=ROOT/'build/known-native'/a.run_id;out.mkdir(parents=True,exist_ok=False);vector=out/'vectors.bin'
@@ -30,18 +30,18 @@ def main():
             for v,dtype in [(raw,'<i2'),(windowed,'<i2'),(re,'<i4'),(im,'<i4'),(powers,'<u8'),(sums,'<u8'),(qlog,'<i4'),(qx,'i1')]:f.write(np.asarray(v,dtype=dtype).tobytes())
             f.write(struct.pack('<i',score))
     sources=[ROOT/s for s in ['rtl/core/vib_coeff_rom.sv','rtl/platform/spram16k.sv','rtl/core/known_capture.sv','rtl/core/known_spectral_core.sv','sim/known_native_main.cpp']]
-    params=dict(N=1024,WINDOWS=156,LANES=a.lanes,MODEL_DIR=f'"{model}"',BIAS=m['bias'],THRESHOLD=m['threshold'],LOG_CONSTANT=m['log_constant_q12'],LOG_FLOOR=m['log_floor_q12'])
+    params=dict(N=1024,WINDOWS=156,LANES=a.lanes,QUANT_PIPELINE=a.quant_pipeline,MODEL_DIR=f'"{model}"',BIAS=m['bias'],THRESHOLD=m['threshold'],LOG_CONSTANT=m['log_constant_q12'],LOG_FLOOR=m['log_floor_q12'])
     flags=['--cc','--exe','-O3','--assert','-DVIB_ASSERT','-Wno-fatal','-Wno-WIDTHEXPAND','-Wno-WIDTHTRUNC','--top-module','known_spectral_core','-CFLAGS','-std=c++17 -O3']
     for path in [*sources,Path(__file__),ROOT/'src/vibfpga/known_fixed.py',*model.glob('*.hex'),model/'model.json',vector]:bindings[str(path.relative_to(ROOT))]=sha(path)
     dump(out/'attempt.json',dict(stage='started',bindings=bindings,records=rows,physical_hardware=False))
     exe,_=cached_native_build(ROOT/'build',out/'native',sources,params,flags,
         lambda directory:['verilator',*flags,'--Mdir',str(directory),*[f'-G{k}={v}' for k,v in params.items()],*map(str,sources)],'known_spectral_core')
     report=out/'report.json'
-    with (out/'test.log').open('w') as f:result=subprocess.run([str(exe),str(vector),str(report),str(a.lanes),str(a.period)],cwd=ROOT,stdout=f,stderr=subprocess.STDOUT)
+    with (out/'test.log').open('w') as f:result=subprocess.run([str(exe),str(vector),str(report),str(a.lanes),str(a.period),str(a.quant_pipeline)],cwd=ROOT,stdout=f,stderr=subprocess.STDOUT)
     if result.returncode:raise RuntimeError(f'native failure {result.returncode}: {out/"test.log"}')
     assert all(sha(ROOT/p)==h for p,h in bindings.items())
     data=json.loads(report.read_text());assert data['passed'] and data['windows']==156*a.clips
-    data.update(bindings=bindings,records=rows);dump(report,data)
+    data.update(bindings=bindings,records=rows,machine=a.machine,lanes=a.lanes,quant_pipeline=a.quant_pipeline,n=1024,clip_windows=156);dump(report,data)
     print(json.dumps({k:v for k,v in data.items() if k not in ('bindings','records')}))
 if __name__=='__main__':
     with threadpool_limits(limits=2):main()

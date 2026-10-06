@@ -1,0 +1,160 @@
+%Warning-TIMESCALEMOD: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/vib_coeff_rom.sv:3:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    3 | module vib_coeff_rom #(
+      |        ^~~~~~~~~~~~~
+                       sim/known_vivado_tb.sv:3:8: ... Location of module with timescale
+    3 | module known_vivado_tb;
+      |        ^~~~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/TIMESCALEMOD?v=5.051
+                       ... Use "/* verilator lint_off TIMESCALEMOD */" and lint_on around source to disable this message.
+%Warning-TIMESCALEMOD: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/platform/spram16k.sv:4:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    4 | module spram16k(input wire clk, input wire [13:0] address,
+      |        ^~~~~~~~
+                       sim/known_vivado_tb.sv:3:8: ... Location of module with timescale
+    3 | module known_vivado_tb;
+      |        ^~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_capture.sv:2:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    2 | module known_capture #(parameter integer N=1024)(
+      |        ^~~~~~~~~~~~~
+                       sim/known_vivado_tb.sv:3:8: ... Location of module with timescale
+    3 | module known_vivado_tb;
+      |        ^~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:3:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    3 | module known_spectral_core #(
+      |        ^~~~~~~~~~~~~~~~~~~
+                       sim/known_vivado_tb.sv:3:8: ... Location of module with timescale
+    3 | module known_vivado_tb;
+      |        ^~~~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_capture.sv:24:33: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'position' generates 4 bits.
+                                                                                                                : ... note: In instance 'known_vivado_tb.dut.capture'
+   24 |     wire bad=(in_last!=(position==N-1)) || (position!=0 && in_frame_id!=current_id);
+      |                                 ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.051
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_capture.sv:51:43: Operator ADD expects 32 bits on the RHS, but RHS's SIGNED generates 16 bits.
+                                                                                                                : ... note: In instance 'known_vivado_tb.dut.capture'
+   51 |                         sums[wr_bank]<=sum+$signed(shifted);ids[wr_bank]<=in_frame_id;
+      |                                           ^
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_capture.sv:53:68: Operator ADD expects 32 bits on the RHS, but RHS's SIGNED generates 16 bits.
+                                                                                                                : ... note: In instance 'known_vivado_tb.dut.capture'
+   53 |                     end else begin position<=position+1'b1;sum<=sum+$signed(shifted);end
+      |                                                                    ^
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_capture.sv:50:32: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'position' generates 4 bits.
+                                                                                                                : ... note: In instance 'known_vivado_tb.dut.capture'
+   50 |                     if(position==N-1) begin
+      |                                ^~
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:32:46: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'point' generates 4 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+   32 |     wire release_bank=state==PRE_STORE&&point==N-1&&!rst;
+      |                                              ^~
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:61:40: Operator ADD expects 5 bits on the RHS, but RHS's VARREF 'lane_store' generates 2 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+   61 |     wire [P:0] component=component_base+lane_store;
+      |                                        ^
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:69:40: Operator LT expects 32 bits on the LHS, but LHS's VARREF 'issued' generates 5 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+   69 |     wire issue=state==DFT_RUN && issued<N;
+      |                                        ^
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:70:47: Operator SUB expects 32 bits on the LHS, but LHS's SIGNED generates 16 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+   70 |     wire signed [31:0] centered=$signed(raw_q)-$signed(mean);
+      |                                               ^
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:70:47: Operator SUB expects 32 bits on the RHS, but RHS's SIGNED generates 16 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+   70 |     wire signed [31:0] centered=$signed(raw_q)-$signed(mean);
+      |                                               ^
+%Warning-WIDTHTRUNC: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:102:44: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's VARREF 'QUANT_PIPELINE' generates 32 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+  102 |     wire [63:0] quant_value=QUANT_PIPELINE ? wide_acc : wide_result;
+      |                                            ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.051
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:113:55: Operator SHIFTL expects 32 bits on the LHS, but LHS's SIGNED generates 8 bits.
+                                                                                                                       : ... note: In instance 'known_vivado_tb.dut'
+  113 |     wire signed [31:0] computed_log=($signed(exponent)<<<12)+$signed({20'd0,log_q})-LOG_CONSTANT;
+      |                                                       ^~~
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:185:29: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'point' generates 4 bits.
+                                                                                                                       : ... note: In instance 'known_vivado_tb.dut'
+  185 |                     if(point==N-1) begin component_base<=0;state<=DFT_INIT;end
+      |                             ^~
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:192:74: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'component_base' generates 5 bits.
+                                                                                                                       : ... note: In instance 'known_vivado_tb.dut'
+  192 |                         if(LANES==1||(i%2)==0)phases[i]<=((component_base+i)&1)?P'(N/4):P'(0);
+      |                                                                          ^
+%Warning-WIDTHTRUNC: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:192:80: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+  192 |                         if(LANES==1||(i%2)==0)phases[i]<=((component_base+i)&1)?P'(N/4):P'(0);
+      |                                                                                ^
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:200:109: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'component_base' generates 5 bits.
+                                                                                                                        : ... note: In instance 'known_vivado_tb.dut'
+  200 |                         for(i=0;i<LANES;i=i+1)if(LANES==1||(i%2)==0)phases[i]<=phases[i]+P'(((component_base+i)>>1)+1);
+      |                                                                                                             ^
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:205:35: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'retired' generates 5 bits.
+                                                                                                                       : ... note: In instance 'known_vivado_tb.dut'
+  205 |                         if(retired==N-1) begin lane_store<=0;state<=DFT_SAVE;end
+      |                                   ^~
+%Warning-WIDTHTRUNC: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:211:88: Operator ASSIGNDLY expects 3 bits on the Assign RHS, but Assign RHS's SHIFTR generates 5 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+  211 |                     if(component[0]) begin imag_part<=rounded_component[31:0];bin_index<=(component>>1);state<=REAL_INIT;end
+      |                                                                                        ^~
+%Warning-WIDTHTRUNC: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:229:30: Logical operator IF expects 1 bit on the If, but If's VARREF 'QUANT_PIPELINE' generates 32 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+  229 |                     end else if(QUANT_PIPELINE) begin
+      |                              ^~
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:257:43: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'clip_window' generates 8 bits.
+                                                                                                                       : ... note: In instance 'known_vivado_tb.dut'
+  257 |                         state<=clip_window==WINDOWS-1?LOG_INIT:NEXT_COMPONENT;
+      |                                           ^~
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:282:89: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'component_base' generates 5 bits.
+                                                                                                                       : ... note: In instance 'known_vivado_tb.dut'
+  282 |                     else if(component_base+LANES<N) begin component_base<=component_base+LANES;state<=DFT_INIT;end
+      |                                                                                         ^
+%Warning-WIDTHTRUNC: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:282:73: Operator ASSIGNDLY expects 5 bits on the Assign RHS, but Assign RHS's ADD generates 32 bits.
+                                                                                                                      : ... note: In instance 'known_vivado_tb.dut'
+  282 |                     else if(component_base+LANES<N) begin component_base<=component_base+LANES;state<=DFT_INIT;end
+      |                                                                         ^~
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:282:43: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'component_base' generates 5 bits.
+                                                                                                                       : ... note: In instance 'known_vivado_tb.dut'
+  282 |                     else if(component_base+LANES<N) begin component_base<=component_base+LANES;state<=DFT_INIT;end
+      |                                           ^
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:281:34: Operator NEQ expects 32 bits on the LHS, but LHS's VARREF 'lane_store' generates 2 bits.
+                                                                                                                       : ... note: In instance 'known_vivado_tb.dut'
+  281 |                     if(lane_store!=LANES-1) begin lane_store<=lane_store+1'b1;state<=DFT_SAVE;end
+      |                                  ^~
+%Warning-WIDTHEXPAND: build/vivado-portability/vivado-c-local-fixture-r2/package/rtl/core/known_spectral_core.sv:287:35: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'clip_window' generates 8 bits.
+                                                                                                                       : ... note: In instance 'known_vivado_tb.dut'
+  287 |                     if(clip_window==WINDOWS-1) begin
+      |                                   ^~
+%Warning-WIDTHEXPAND: sim/known_vivado_tb.sv:18:27: Operator ASSIGNW expects 234 bits on the Assign RHS, but Assign RHS's REPLICATE generates 233 bits.
+                                                  : ... note: In instance 'known_vivado_tb'
+   18 | wire [233:0] output_fields={out_score,out_frame_id,out_class,out_error,cycles_pre,cycles_dft,cycles_power,cycles_nn,cycles_total};
+      |                           ^
+%Warning-WIDTHEXPAND: sim/known_vivado_tb.sv:42:65: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'dbg_index' generates 16 bits.
+                                                  : ... note: In instance 'known_vivado_tb'
+   42 |             if(dbg_kind==0&&dbg_index<N)offset=dbg_frame*(N+4*F)+dbg_index;
+      |                                                                 ^
+%Warning-WIDTHEXPAND: sim/known_vivado_tb.sv:43:95: Operator SUB expects 32 bits on the LHS, but LHS's VARREF 'dbg_kind' generates 4 bits.
+                                                  : ... note: In instance 'known_vivado_tb'
+   43 |             else if(dbg_kind>=1&&dbg_kind<=4&&dbg_index<F)offset=dbg_frame*(N+4*F)+N+(dbg_kind-1)*F+dbg_index;
+      |                                                                                               ^
+%Warning-WIDTHEXPAND: sim/known_vivado_tb.sv:43:100: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'dbg_index' generates 16 bits.
+                                                   : ... note: In instance 'known_vivado_tb'
+   43 |             else if(dbg_kind>=1&&dbg_kind<=4&&dbg_index<F)offset=dbg_frame*(N+4*F)+N+(dbg_kind-1)*F+dbg_index;
+      |                                                                                                    ^
+%Warning-WIDTHEXPAND: sim/known_vivado_tb.sv:46:58: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'dbg_index' generates 16 bits.
+                                                  : ... note: In instance 'known_vivado_tb'
+   46 |                 if(dbg_kind==5&&dbg_index<F)offset=offset+dbg_index;
+      |                                                          ^
+%Warning-WIDTHEXPAND: sim/known_vivado_tb.sv:47:65: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'dbg_index' generates 16 bits.
+                                                  : ... note: In instance 'known_vivado_tb'
+   47 |                 else if(dbg_kind==6&&dbg_index<F)offset=offset+F+dbg_index;
+      |                                                                 ^
+g++ -Os  -I.  -MMD -ILOCAL_TEMP_PATH -ILOCAL_TEMP_PATH -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fbracket-depth=4096 -fcf-protection=none -Xclang -fno-pch-timestamp -Qunused-arguments  -Wno-c++11-narrowing -Wno-constant-logical-operand -Wno-int-in-bool-context -Wno-non-pod-varargs -Wno-parentheses-equality -Wno-shadow -Wno-sign-compare  -Wno-tautological-compare -Wno-uninitialized -Wno-unnecessary-virtual-specifier -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-vla-cxx-extension    -DVL_TIME_CONTEXT   -std=gnu++20 -c -o verilated.o LOCAL_TEMP_PATH
+g++ -Os  -I.  -MMD -ILOCAL_TEMP_PATH -ILOCAL_TEMP_PATH -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fbracket-depth=4096 -fcf-protection=none -Xclang -fno-pch-timestamp -Qunused-arguments  -Wno-c++11-narrowing -Wno-constant-logical-operand -Wno-int-in-bool-context -Wno-non-pod-varargs -Wno-parentheses-equality -Wno-shadow -Wno-sign-compare  -Wno-tautological-compare -Wno-uninitialized -Wno-unnecessary-virtual-specifier -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-vla-cxx-extension    -DVL_TIME_CONTEXT   -std=gnu++20 -c -o verilated_timing.o LOCAL_TEMP_PATH
+g++ -Os  -I.  -MMD -ILOCAL_TEMP_PATH -ILOCAL_TEMP_PATH -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fbracket-depth=4096 -fcf-protection=none -Xclang -fno-pch-timestamp -Qunused-arguments  -Wno-c++11-narrowing -Wno-constant-logical-operand -Wno-int-in-bool-context -Wno-non-pod-varargs -Wno-parentheses-equality -Wno-shadow -Wno-sign-compare  -Wno-tautological-compare -Wno-uninitialized -Wno-unnecessary-virtual-specifier -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-vla-cxx-extension    -DVL_TIME_CONTEXT   -std=gnu++20 -c -o verilated_threads.o LOCAL_TEMP_PATH
+python3 LOCAL_TEMP_PATH -DVL_INCLUDE_OPT=include Vknown_vivado_tb.cpp Vknown_vivado_tb___024root__0.cpp Vknown_vivado_tb__main.cpp Vknown_vivado_tb___024root__Slow.cpp Vknown_vivado_tb___024root__0__Slow.cpp Vknown_vivado_tb__Syms__Slow.cpp > Vknown_vivado_tb__ALL.cpp
+g++ -Os  -I.  -MMD -ILOCAL_TEMP_PATH -ILOCAL_TEMP_PATH -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fbracket-depth=4096 -fcf-protection=none -Xclang -fno-pch-timestamp -Qunused-arguments  -Wno-c++11-narrowing -Wno-constant-logical-operand -Wno-int-in-bool-context -Wno-non-pod-varargs -Wno-parentheses-equality -Wno-shadow -Wno-sign-compare  -Wno-tautological-compare -Wno-uninitialized -Wno-unnecessary-virtual-specifier -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-vla-cxx-extension    -DVL_TIME_CONTEXT   -std=gnu++20 -c -o Vknown_vivado_tb__ALL.o Vknown_vivado_tb__ALL.cpp
+g++  -Wl,-U,__Z15vl_time_stamp64v,-U,__Z13sc_time_stampv,-U,_vlog_startup_routines   verilated.o verilated_timing.o verilated_threads.o Vknown_vivado_tb__ALL.a    -pthread -lpthread   -o Vknown_vivado_tb
+rm Vknown_vivado_tb__ALL.verilator_deplist.tmp
+- V e r i l a t i o n   R e p o r t: Verilator 5.051 devel rev v5.050-312-gb1c06fdb0 (mod)
+- Verilator: Built from 0.169 MB sources in 6 modules, into 0.213 MB in 6 C++ files needing 0.001 MB
+- Verilator: Walltime 7.048 s (elab=0.005, cvt=0.013, bld=7.023); cpu 0.025 s on 1 threads; allocated 16.719 MB

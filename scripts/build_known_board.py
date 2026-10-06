@@ -12,7 +12,7 @@ SOURCES=['rtl/core/vib_coeff_rom.sv','rtl/platform/spram16k.sv','rtl/core/known_
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--machine',choices=('00','02','04','06'),default='00')
-    p.add_argument('--lanes',type=int,choices=(1,4),default=4);p.add_argument('--run-id',required=True)
+    p.add_argument('--lanes',type=int,choices=(1,4),default=4);p.add_argument('--seed',type=int,default=1);p.add_argument('--quant-pipeline',type=int,choices=(0,1),default=0);p.add_argument('--run-id',required=True)
     p.add_argument('--abc-dff',action='store_true',help='Include flip-flops in ABC9 mapping');a=p.parse_args()
     model=ROOT/f'artifacts/acoustic-known-release-v1/id{a.machine}';m=json.loads((model/'model.json').read_text())
     freeze=json.loads((model.parent/'model-freeze.json').read_text())
@@ -23,21 +23,21 @@ def main():
               model.parent/'model-freeze.json',ROOT/'configs/upduino-known.pcf',Path(__file__),ROOT/'scripts/build_known_probe.py',clock]}
     params=dict(BIAS=m['bias'],THRESHOLD=m['threshold'],LOG_CONSTANT=m['log_constant_q12'],LOG_FLOOR=m['log_floor_q12'])
     script='read_verilog -defer -sv -DICE40 '+' '.join(SOURCES)+';\n'
-    script+=f'chparam -set LANES {a.lanes} -set MODEL_DIR "{model}" '
+    script+=f'chparam -set QUANT_PIPELINE {a.quant_pipeline} -set LANES {a.lanes} -set MODEL_DIR "{model}" '
     script+=' '.join(f"-set {k} 32'h{v&0xffffffff:08x}" for k,v in params.items())
     script+=f" -set MODEL_HASH 256'h{bytes.fromhex(sha(model/'model.json'))[::-1].hex()} upduino_known;\n"
     script+=f'synth_ice40 -dsp {"-dff" if a.abc_dff else ""} -top upduino_known -json {yosys_quote(out/"netlist.json")};\nstat\n'
     (out/'synth.ys').write_text(script);dump(out/'attempt.json',dict(stage='started',input_sha256=bindings))
     try:
         run(['yosys','-Q','-T','-s',str(out/'synth.ys')],out/'synthesis.log')
-        run(['nextpnr-ice40','--up5k','--package','sg48','--freq','13.2','--seed','1','--pre-pack',str(clock),
+        run(['nextpnr-ice40','--up5k','--package','sg48','--freq','13.2','--seed',str(a.seed),'--pre-pack',str(clock),
              '--pcf',str(ROOT/'configs/upduino-known.pcf'),'--json',str(out/'netlist.json'),
              '--asc',str(out/'board.asc'),'--report',str(out/'timing.json')],out/'place_route.log')
         timing=json.loads((out/'timing.json').read_text())
         assert timing['fmax'] and all(v['achieved']>=13.2 and v['constraint']>=13.199 for v in timing['fmax'].values())
         run(['icepack',str(out/'board.asc'),str(out/'board.bin')],out/'icepack.log')
         assert all(sha(ROOT/p)==h for p,h in bindings.items())
-        report=dict(passed=True,input_sha256=bindings,machine=a.machine,lanes=a.lanes,utilization=timing['utilization'],
+        report=dict(passed=True,input_sha256=bindings,machine=a.machine,lanes=a.lanes,quant_pipeline=a.quant_pipeline,seed=a.seed,utilization=timing['utilization'],
                     fmax=timing['fmax'],bitstream_sha256=sha(out/'board.bin'),model_sha256=sha(model/'model.json'),
                     nominal_clock_hz=12000000,clock_frequency_measured=False,physical_hardware=False,abc_dff=a.abc_dff,
                     scope='complete Flash replay application; not yet authorized by final-test gate')

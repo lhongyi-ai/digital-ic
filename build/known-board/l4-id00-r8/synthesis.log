@@ -5129,7 +5129,7 @@ Successfully finished Verilog frontend.
 Cleaned up 0 empty switches.
 
 10.50.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197 in module SB_DFFESR.
+Marked 1 switch rules as full_case in process $proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197 in module SB_DFFESR.
 Removed a total of 0 dead cases.
 
 10.50.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -5137,7 +5137,7 @@ Removed 0 redundant assignments.
 Promoted 1 assignment to connection.
 
 10.50.2.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\SB_DFFESR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:599$203'.
+Found init rule in `\SB_DFFESR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:599$203'.
   Set init value: \Q = 1'0
 
 10.50.2.5. Executing PROC_ARST pass (detect async resets in processes).
@@ -5147,22 +5147,22 @@ Converted 0 switches.
 <suppressed ~2 debug messages>
 
 10.50.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\SB_DFFESR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:599$203'.
-Creating decoders for process `\SB_DFFESR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197'.
+Creating decoders for process `\SB_DFFESR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:599$203'.
+Creating decoders for process `\SB_DFFESR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197'.
      1/1: $0\Q[0:0]
 
 10.50.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 10.50.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\SB_DFFESR.\Q' using process `\SB_DFFESR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197'.
+Creating register for signal `\SB_DFFESR.\Q' using process `\SB_DFFESR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197'.
   created $dff cell `$procdff$55493' with positive edge clock.
 
 10.50.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 10.50.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `SB_DFFESR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:599$203'.
-Found and cleaned up 2 empty switches in `\SB_DFFESR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197'.
-Removing empty process `SB_DFFESR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197'.
+Removing empty process `SB_DFFESR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:599$203'.
+Found and cleaned up 2 empty switches in `\SB_DFFESR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197'.
+Removing empty process `SB_DFFESR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:601$197'.
 Cleaned up 2 empty switches.
 
 10.50.3. Executing PROC pass (convert processes to netlists).
@@ -5171,7 +5171,7 @@ Cleaned up 2 empty switches.
 Cleaned up 0 empty switches.
 
 10.50.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208 in module SB_DFFESS.
+Marked 1 switch rules as full_case in process $proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208 in module SB_DFFESS.
 Removed a total of 0 dead cases.
 
 10.50.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -5179,7 +5179,7 @@ Removed 0 redundant assignments.
 Promoted 1 assignment to connection.
 
 10.50.3.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\SB_DFFESS.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:740$214'.
+Found init rule in `\SB_DFFESS.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:740$214'.
   Set init value: \Q = 1'0
 
 10.50.3.5. Executing PROC_ARST pass (detect async resets in processes).
@@ -5189,22 +5189,22 @@ Converted 0 switches.
 <suppressed ~2 debug messages>
 
 10.50.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\SB_DFFESS.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:740$214'.
-Creating decoders for process `\SB_DFFESS.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208'.
+Creating decoders for process `\SB_DFFESS.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:740$214'.
+Creating decoders for process `\SB_DFFESS.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208'.
      1/1: $0\Q[0:0]
 
 10.50.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 10.50.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\SB_DFFESS.\Q' using process `\SB_DFFESS.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208'.
+Creating register for signal `\SB_DFFESS.\Q' using process `\SB_DFFESS.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208'.
   created $dff cell `$procdff$55499' with positive edge clock.
 
 10.50.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 10.50.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `SB_DFFESS.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:740$214'.
-Found and cleaned up 2 empty switches in `\SB_DFFESS.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208'.
-Removing empty process `SB_DFFESS.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208'.
+Removing empty process `SB_DFFESS.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:740$214'.
+Found and cleaned up 2 empty switches in `\SB_DFFESS.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208'.
+Removing empty process `SB_DFFESS.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:742$208'.
 Cleaned up 2 empty switches.
 
 10.50.4. Executing PROC pass (convert processes to netlists).
@@ -5220,7 +5220,7 @@ Removed 0 redundant assignments.
 Promoted 1 assignment to connection.
 
 10.50.4.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\SB_DFFE.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:309$184'.
+Found init rule in `\SB_DFFE.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:309$184'.
   Set init value: \Q = 1'0
 
 10.50.4.5. Executing PROC_ARST pass (detect async resets in processes).
@@ -5230,22 +5230,22 @@ Converted 0 switches.
 <suppressed ~1 debug messages>
 
 10.50.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\SB_DFFE.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:309$184'.
-Creating decoders for process `\SB_DFFE.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:311$183'.
+Creating decoders for process `\SB_DFFE.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:309$184'.
+Creating decoders for process `\SB_DFFE.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:311$183'.
      1/1: $0\Q[0:0]
 
 10.50.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 10.50.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\SB_DFFE.\Q' using process `\SB_DFFE.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:311$183'.
+Creating register for signal `\SB_DFFE.\Q' using process `\SB_DFFE.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:311$183'.
   created $dff cell `$procdff$55502' with positive edge clock.
 
 10.50.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 10.50.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `SB_DFFE.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:309$184'.
-Found and cleaned up 1 empty switch in `\SB_DFFE.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:311$183'.
-Removing empty process `SB_DFFE.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:311$183'.
+Removing empty process `SB_DFFE.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:309$184'.
+Found and cleaned up 1 empty switch in `\SB_DFFE.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:311$183'.
+Removing empty process `SB_DFFE.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:311$183'.
 Cleaned up 1 empty switch.
 
 10.50.5. Executing PROC pass (convert processes to netlists).
@@ -5254,7 +5254,7 @@ Cleaned up 1 empty switch.
 Cleaned up 0 empty switches.
 
 10.50.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185 in module SB_DFFSR.
+Marked 1 switch rules as full_case in process $proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185 in module SB_DFFSR.
 Removed a total of 0 dead cases.
 
 10.50.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -5262,7 +5262,7 @@ Removed 1 redundant assignment.
 Promoted 1 assignment to connection.
 
 10.50.5.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\SB_DFFSR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:354$187'.
+Found init rule in `\SB_DFFSR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:354$187'.
   Set init value: \Q = 1'0
 
 10.50.5.5. Executing PROC_ARST pass (detect async resets in processes).
@@ -5272,22 +5272,22 @@ Converted 0 switches.
 <suppressed ~1 debug messages>
 
 10.50.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\SB_DFFSR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:354$187'.
-Creating decoders for process `\SB_DFFSR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185'.
+Creating decoders for process `\SB_DFFSR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:354$187'.
+Creating decoders for process `\SB_DFFSR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185'.
      1/1: $0\Q[0:0]
 
 10.50.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 10.50.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\SB_DFFSR.\Q' using process `\SB_DFFSR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185'.
+Creating register for signal `\SB_DFFSR.\Q' using process `\SB_DFFSR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185'.
   created $dff cell `$procdff$55506' with positive edge clock.
 
 10.50.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 10.50.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `SB_DFFSR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:354$187'.
-Found and cleaned up 1 empty switch in `\SB_DFFSR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185'.
-Removing empty process `SB_DFFSR.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185'.
+Removing empty process `SB_DFFSR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:354$187'.
+Found and cleaned up 1 empty switch in `\SB_DFFSR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185'.
+Removing empty process `SB_DFFSR.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:356$185'.
 Cleaned up 1 empty switch.
 
 10.50.6. Executing PROC pass (convert processes to netlists).
@@ -5303,7 +5303,7 @@ Removed 0 redundant assignments.
 Promoted 2 assignments to connections.
 
 10.50.6.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\SB_DFF.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:269$182'.
+Found init rule in `\SB_DFF.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:269$182'.
   Set init value: \Q = 1'0
 
 10.50.6.5. Executing PROC_ARST pass (detect async resets in processes).
@@ -5312,20 +5312,20 @@ Found init rule in `\SB_DFF.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fa
 Converted 0 switches.
 
 10.50.6.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\SB_DFF.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:269$182'.
-Creating decoders for process `\SB_DFF.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:271$181'.
+Creating decoders for process `\SB_DFF.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:269$182'.
+Creating decoders for process `\SB_DFF.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:271$181'.
 
 10.50.6.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 10.50.6.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\SB_DFF.\Q' using process `\SB_DFF.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:271$181'.
+Creating register for signal `\SB_DFF.\Q' using process `\SB_DFF.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:271$181'.
   created $dff cell `$procdff$55507' with positive edge clock.
 
 10.50.6.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 10.50.6.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `SB_DFF.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:269$182'.
-Removing empty process `SB_DFF.$proc$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:271$181'.
+Removing empty process `SB_DFF.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:269$182'.
+Removing empty process `SB_DFF.$proc$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:271$181'.
 Cleaned up 0 empty switches.
 
 10.50.7. Executing ABC9_OPS pass (helper functions for ABC9).
@@ -5577,9 +5577,9 @@ Creating submodule $abc9_flop (\SB_DFFESR_$abc9_flop) of module \SB_DFFESR.
   signal \E: input \E
   signal \D: input \D
   signal \C: input \C
-  signal $logic_not$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:612$198_Y: internal
-  signal $logic_and$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:618$200_Y: internal
-  signal $logic_and$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:612$199_Y: internal
+  signal $logic_not$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:612$198_Y: internal
+  signal $logic_and$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:618$200_Y: internal
+  signal $logic_and$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:612$199_Y: internal
   signal $0\Q[0:0]: internal
   signal $procmux$55489_Y: internal
   cell $specify$45 ($specify3)
@@ -5600,9 +5600,9 @@ Creating submodule $abc9_flop (\SB_DFFESS_$abc9_flop) of module \SB_DFFESS.
   signal \E: input \E
   signal \D: input \D
   signal \C: input \C
-  signal $logic_not$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:753$209_Y: internal
-  signal $logic_and$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:759$211_Y: internal
-  signal $logic_and$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:753$210_Y: internal
+  signal $logic_not$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:753$209_Y: internal
+  signal $logic_and$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:759$211_Y: internal
+  signal $logic_and$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:753$210_Y: internal
   signal $0\Q[0:0]: internal
   signal $procmux$55495_Y: internal
   cell $specify$55 ($specify3)
@@ -5622,7 +5622,7 @@ Creating submodule $abc9_flop (\SB_DFFSR_$abc9_flop) of module \SB_DFFSR.
   signal \Q: input \Q
   signal \D: input \D
   signal \C: input \C
-  signal $logic_not$/home/researcher/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:370$186_Y: internal
+  signal $logic_not$BUILD_HOME/Desktop/$e6$95$99$e6$9d$90/Fall$202026/digital$20ic/.tools/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:370$186_Y: internal
   signal $0\Q[0:0]: internal
   cell $specify$28 ($specify3)
   cell $specify$27 ($specify3)
@@ -5882,21 +5882,21 @@ Extracted 13526 AND gates and 43166 wires from module `upduino_known' to a netli
 10.50.23.5. Executing ABC9.
 Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
-ABC: + read_lut <abc-temp-dir>/input.lut 
-ABC: + read_box <abc-temp-dir>/input.box 
-ABC: + &read <abc-temp-dir>/input.xaig 
-ABC: + &ps 
+ABC: + read_lut <abc-temp-dir>/input.lut
+ABC: + read_box <abc-temp-dir>/input.box
+ABC: + &read <abc-temp-dir>/input.xaig
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =    341/   1757  boxff =1714(1)  and =   11374  lev =   38 (1.15)  mem = 0.61 MB  box = 3444  bb = 1624
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 948 carries.
-ABC: + &scorr 
-ABC: + &sweep 
-ABC: + &dc2 
-ABC: + &dch -f -r 
-ABC: + &ps 
+ABC: + &scorr
+ABC: + &sweep
+ABC: + &dc2
+ABC: + &dch -f -r
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =    341/   1757  boxff =1653(1)  and =   12684  lev =   36 (0.96)  mem = 0.61 MB  ch = 1644  box = 3410  bb = 1624
 ABC: cst =       0  cls =   1450  lit =    1644  unused =   18433  proof =     0
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 886 carries.
-ABC: + &if -W 250 -v 
+ABC: + &if -W 250 -v
 ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
 ABC: Node =   12684.  Ch =  1450.  Total mem =    6.58 MB. Peak cut mem =    0.17 MB.
 ABC: P:  Del = 15824.00.  Ar =    3943.0.  Edge =    13493.  Cut =    69994.  T =     0.01 sec
@@ -5906,17 +5906,17 @@ ABC: F:  Del = 15824.00.  Ar =    2937.0.  Edge =     9887.  Cut =    74351.  T 
 ABC: A:  Del = 15824.00.  Ar =    2844.0.  Edge =     9431.  Cut =    73519.  T =     0.01 sec
 ABC: A:  Del = 15824.00.  Ar =    2838.0.  Edge =     9424.  Cut =    73545.  T =     0.01 sec
 ABC: Total time =     0.05 sec
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &mfs 
-ABC: + &ps -l 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &mfs
+ABC: + &ps -l
 ABC: <abc-temp-dir>/input : i/o =    341/   1757  boxff =1653(1)  and =    7933  lev =   30 (1.01)  mem = 0.55 MB  box = 3315  bb = 1624
 ABC: Mapping (K=4)  :  lut =   2767  edge =    9090  lev =   17 (0.69)  levB =   77  mem = 0.20 MB
 ABC: LUT = 2767 : 2=503 18.2 %  3=972 35.1 %  4=1292 46.7 %  Ave = 3.29
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 884 carries.
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &verify -s 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &verify -s
 ABC: Networks are equivalent.  Time =    20.87 sec
-ABC: + time 
+ABC: + time
 ABC: elapse: 23.99 seconds, total: 23.99 seconds
 
 10.50.23.6. Executing AIGER frontend.
@@ -6408,7 +6408,7 @@ Removed 0 unused modules.
 === upduino_known ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      5302 wires
     14734 wire bits
      5302 public wires
@@ -6433,11 +6433,11 @@ Removed 0 unused modules.
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
        45 upduino_known
 
         +----------Count including submodules.
-        | 
+        |
      5302 wires
     14734 wire bits
      5302 public wires
@@ -6473,7 +6473,7 @@ Found and reported 0 problems.
 === upduino_known ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      5302 wires
     14734 wire bits
      5302 public wires

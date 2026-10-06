@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Oct  6 05:20:03 2026
+# Process ID         : 909953
+# Current directory  : LAB_HOME/LAB_USER/digital_ic_vivado/portability-b-id00-l4-vivado-r2
+# Command line       : vivado -mode batch -source implement.tcl -log vivado.log -journal vivado.jou
+# Log file           : LAB_HOME/LAB_USER/digital_ic_vivado/portability-b-id00-l4-vivado-r2/vivado.log
+# Journal file       : LAB_HOME/LAB_USER/digital_ic_vivado/portability-b-id00-l4-vivado-r2/vivado.jou
+# Running On         : LAB_HOST.engr.wustl.edu
+# Platform           : Rocky
+# Operating System   : Rocky Linux release 8.10 (Green Obsidian)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+# CPU Frequency      : 2727.008 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 134527 MB
+# Swap memory        : 7999 MB
+# Total Virtual      : 142526 MB
+# Available Virtual  : 121102 MB
+#-----------------------------------------------------------
+source implement.tcl
+# set_param general.maxThreads 2
+# source config.tcl
+## set stage impl
+## set sources {rtl/core/vib_coeff_rom.sv rtl/platform/spram16k.sv rtl/core/known_capture.sv rtl/core/known_spectral_core.sv}
+## set generics {N=1024 WINDOWS=156 LANES=4 QUANT_PIPELINE=0 MODEL_DIR=model BIAS=441 THRESHOLD=-1029 LOG_CONSTANT=128145 LOG_FLOOR=-163279}
+# foreach path $sources {read_verilog -sv -define AMD_FPGA $path}
+ERROR: [Common 17-69] Command failed: '-define' is only supported when is_compile_unit_mode is enabled on the source fileset
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 05:20:16 2026...

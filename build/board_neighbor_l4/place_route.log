@@ -1,5 +1,5 @@
-mkdir: /home/researcher/.config/yosyshq: Operation not permitted
-mkdir: /home/researcher/.local/share/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.config/yosyshq: Operation not permitted
+mkdir: BUILD_HOME/.local/share/yosyshq: Operation not permitted
 Info: constrained 'clk12' to bel 'X19/Y0/io1'
 Info: constrained 'flash_cs_n' to bel 'X24/Y0/io1'
 Info: constrained 'flash_sclk' to bel 'X24/Y0/io0'
@@ -101,7 +101,7 @@ Info:   at iteration #5: temp = 0.000000, timing cost = 762, wirelen = 26378
 Info:   at iteration #10: temp = 0.000000, timing cost = 757, wirelen = 24960
 Info:   at iteration #15: temp = 0.000000, timing cost = 702, wirelen = 24460
 Info:   at iteration #20: temp = 0.000000, timing cost = 687, wirelen = 24035
-Info:   at iteration #20: temp = 0.000000, timing cost = 684, wirelen = 24040 
+Info:   at iteration #20: temp = 0.000000, timing cost = 684, wirelen = 24040
 Info: SA placement time 1.55s
 
 Info: Max frequency for clock 'clk12$SB_IO_IN_$glb_clk': 17.81 MHz (PASS at 12.00 MHz)
@@ -127,7 +127,7 @@ Info: [ 50702,  53316) |*********+
 Info: [ 53316,  55930) |****************+
 Info: [ 55930,  58544) |****************************+
 Info: [ 58544,  61158) |****************************************+
-Info: [ 61158,  63772) |************************************************************ 
+Info: [ 61158,  63772) |************************************************************
 Info: [ 63772,  66386) |*****************************+
 Info: [ 66386,  69000) |**********************+
 Info: [ 69000,  71614) |*************+
@@ -321,7 +321,7 @@ Info: [ 52068,  54575) |***********+
 Info: [ 54575,  57082) |*********+
 Info: [ 57082,  59589) |*************************+
 Info: [ 59589,  62096) |********************+
-Info: [ 62096,  64603) |************************************************************ 
+Info: [ 62096,  64603) |************************************************************
 Info: [ 64603,  67110) |**************+
 Info: [ 67110,  69617) |**************+
 Info: [ 69617,  72124) |***********+

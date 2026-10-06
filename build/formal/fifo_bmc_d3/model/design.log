@@ -373,7 +373,7 @@ Finding unused cells or wires in module \fifo_harness..
 === $paramod$705d5f3feb09dae2898ba1ab4983200ce98a39b8\sync_fifo ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
        39 wires
       146 wire bits
        13 public wires
@@ -397,7 +397,7 @@ Finding unused cells or wires in module \fifo_harness..
 === fifo_harness ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
       104 wires
       242 wire bits
        21 public wires
@@ -426,12 +426,12 @@ Finding unused cells or wires in module \fifo_harness..
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
       152 fifo_harness
        34 $paramod$705d5f3feb09dae2898ba1ab4983200ce98a39b8\sync_fifo
 
         +----------Count including submodules.
-        | 
+        |
       143 wires
       388 wire bits
        34 public wires

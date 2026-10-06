@@ -6641,22 +6641,22 @@ Extracted 9470 AND gates and 34088 wires from module `upduino_sensor' to a netli
 11.50.15.5. Executing ABC9.
 Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
-ABC: + read_lut <abc-temp-dir>/input.lut 
-ABC: + read_box <abc-temp-dir>/input.box 
-ABC: + &read <abc-temp-dir>/input.xaig 
-ABC: + &ps 
+ABC: + read_lut <abc-temp-dir>/input.lut
+ABC: + read_box <abc-temp-dir>/input.box
+ABC: + &read <abc-temp-dir>/input.xaig
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =   1953/   3979  and =    8403  lev =   43 (0.66)  mem = 0.50 MB  box = 5649  bb = 3803
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 1418 carries.
-ABC: + &scorr 
+ABC: + &scorr
 ABC: Warning: The network is combinational.
-ABC: + &sweep 
-ABC: + &dc2 
-ABC: + &dch -f -r 
-ABC: + &ps 
+ABC: + &sweep
+ABC: + &dc2
+ABC: + &dch -f -r
+ABC: + &ps
 ABC: <abc-temp-dir>/input : i/o =   1953/   3979  and =   10832  lev =   63 (0.49)  mem = 0.51 MB  ch = 1205  box = 5493  bb = 3803
 ABC: cst =       0  cls =   1075  lit =    1205  unused =   17688  proof =     0
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 1412 carries.
-ABC: + &if -W 250 -v 
+ABC: + &if -W 250 -v
 ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
 ABC: Node =   10832.  Ch =  1075.  Total mem =    5.52 MB. Peak cut mem =    0.14 MB.
 ABC: P:  Del = 11955.00.  Ar =    3547.0.  Edge =    11343.  Cut =    58199.  T =     0.01 sec
@@ -6666,17 +6666,17 @@ ABC: F:  Del = 11955.00.  Ar =    2716.0.  Edge =     8827.  Cut =    57784.  T 
 ABC: A:  Del = 11955.00.  Ar =    2622.0.  Edge =     8503.  Cut =    59274.  T =     0.01 sec
 ABC: A:  Del = 11955.00.  Ar =    2613.0.  Edge =     8491.  Cut =    59014.  T =     0.01 sec
 ABC: Total time =     0.04 sec
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &mfs 
-ABC: + &ps -l 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &mfs
+ABC: + &ps -l
 ABC: <abc-temp-dir>/input : i/o =   1953/   3979  and =    6535  lev =   33 (0.51)  mem = 0.46 MB  box = 5454  bb = 3803
 ABC: Mapping (K=4)  :  lut =   2533  edge =    8113  lev =   17 (0.30)  levB =   71  mem = 0.17 MB
 ABC: LUT = 2533 : 2=658 26.0 %  3=703 27.8 %  4=1172 46.3 %  Ave = 3.20
 ABC: Warning: AIG with boxes has internal fanout in 0 complex flops and 1409 carries.
-ABC: + &write -n <abc-temp-dir>/output.aig 
-ABC: + &verify 
+ABC: + &write -n <abc-temp-dir>/output.aig
+ABC: + &verify
 ABC: Networks are equivalent.  Time =     0.20 sec
-ABC: + time 
+ABC: + time
 ABC: elapse: 1.37 seconds, total: 1.37 seconds
 
 11.50.15.6. Executing AIGER frontend.
@@ -7131,7 +7131,7 @@ Removed 0 unused modules.
 === upduino_sensor ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      4598 wires
     13894 wire bits
      4598 public wires
@@ -7156,11 +7156,11 @@ Removed 0 unused modules.
 === design hierarchy ===
 
         +----------Count including submodules.
-        | 
+        |
        26 upduino_sensor
 
         +----------Count including submodules.
-        | 
+        |
      4598 wires
     13894 wire bits
      4598 public wires
@@ -7196,7 +7196,7 @@ Found and reported 0 problems.
 === upduino_sensor ===
 
         +----------Local Count, excluding submodules.
-        | 
+        |
      4598 wires
     13894 wire bits
      4598 public wires

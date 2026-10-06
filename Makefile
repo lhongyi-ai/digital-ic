@@ -150,6 +150,13 @@ endif
 
 verify: release
 
+.PHONY: portability-check portability-release
+portability-check: python-test
+	python scripts/portability_release.py --check
+
+portability-release: portability-check
+	python scripts/portability_release.py --freeze
+
 
 .PHONY: acoustic
 # Acoustic checks only; never downloads, retrains or programs hardware.
